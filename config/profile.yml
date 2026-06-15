@@ -1,0 +1,131 @@
+profile:
+  name: Souhail Morocco Real Estate Radar
+  currency: MAD
+  cash_ready: 1500000
+  max_budget: 3000000
+  max_delivery_months: 24
+  strategy:
+    - rental_4_5_years
+    - future_primary_residence
+    - capital_gain
+  min_target_yield_percent: 7
+
+asset_preferences:
+  villa: 100
+  land_r4_plus: 95
+  penthouse: 85
+  apartment_3_bed: 75
+  apartment_2_bed: 60
+  studio: 25
+
+cities:
+  tangier:
+    label: Tanger
+    priority: 100
+    zones:
+      premium_keep:
+        weight: 75
+        names: [Malabata, Cap Spartel, Iberia, Achakar, California]
+      transformation_priority:
+        weight: 100
+        names: ["Nouvelle Gare", "Gare Al Boraq", "Tanger Ville", "Tanja Balia", "Tanger Balia", Moujahidine, Ziaten, Mesnana, Gzenaya, "Route de Tétouan", "Tanger Med", "Aouama", "Boukhalef"]
+  casablanca:
+    label: Casablanca
+    priority: 95
+    zones:
+      premium_keep:
+        weight: 75
+        names: ["Ain Diab", "Anfa", "Anfa Supérieur", "Casa Finance City", Dar Bouazza, Bouskoura, Californie]
+      transformation_priority:
+        weight: 100
+        names: ["Sidi Maarouf", Nouaceur, Tamaris, "Dar Bouazza intérieur", "Bouskoura périphérie", "Tit Mellil", "Ain Sebaa", "Zenata", "Rocade", "Casa Sud", "Lissasfa", "Hay Hassani"]
+  rabat:
+    label: Rabat
+    priority: 85
+    zones:
+      premium_keep:
+        weight: 80
+        names: [Hay Riad, Souissi, Harhoura, Prestigia]
+      transformation_priority:
+        weight: 90
+        names: ["Sala Al Jadida", Tamesna, Temara, Skhirat, "Rabat Agdal", "Rabat Ville"]
+  agadir:
+    label: Agadir
+    priority: 80
+    zones:
+      premium_keep:
+        weight: 85
+        names: [Founty, Sonaba, "Agadir Bay", Illigh]
+      transformation_priority:
+        weight: 95
+        names: [Taghazout, Aourir, "Hay Mohammadi", "Cité Suisse", Dakhla, Tikiouine, Anza]
+  marrakech:
+    label: Marrakech
+    priority: 70
+    zones:
+      premium_keep:
+        weight: 75
+        names: [Hivernage, Gueliz, Prestigia, Palmeraie]
+      transformation_priority:
+        weight: 85
+        names: ["Route de Casablanca", "Route d’Ourika", Agdal, Targa, Mhamid]
+
+scoring:
+  trigger_threshold: 75
+  urgent_threshold: 88
+  weights:
+    city_priority: 12
+    asset_type: 18
+    zone: 15
+    early_signal: 20
+    budget_fit: 12
+    sea_proximity: 8
+    infrastructure: 8
+    yield_keywords: 4
+    promoter_signal: 3
+
+keywords:
+  early_signals:
+    - lancement
+    - pré-commercialisation
+    - pre-commercialisation
+    - préinscription
+    - réservation
+    - ouverture des ventes
+    - commercialisation
+    - nouveau projet
+    - projet neuf
+    - lotissement
+    - permis de construire
+    - permis de lotir
+    - autorisation
+    - vefa
+    - livraison
+  asset_types:
+    villa: [villa, villas]
+    land_r4_plus: [terrain, lot, lots, lotissement, r+4, r4, r+5, r5, immeuble]
+    penthouse: [penthouse, duplex, terrasse]
+    apartment_3_bed: ["3 chambres", "3ch", "3 ch", f4, "4 pièces"]
+    apartment_2_bed: ["2 chambres", "2ch", "2 ch", f3, "3 pièces"]
+    studio: [studio]
+  sea: [mer, plage, corniche, waterfront, marina, océan, ocean, littoral]
+  infrastructure: [gare, tgv, al boraq, tramway, rocade, autoroute, port, marina, aéroport, aeroport, mall, université, hopital, hôpital]
+  negative: [vendu, épuisé, epuise, sold out, indisponible]
+
+sources:
+  # Keep sources configurable. Add/remove URLs without touching code.
+  web_pages:
+    - name: Al Omrane
+      url: https://www.alomrane.gov.ma/
+    - name: CGI
+      url: https://www.cgi.ma/
+    - name: Addoha
+      url: https://www.addoha.ma/
+    - name: Alliances
+      url: https://www.alliances.co.ma/
+    - name: Chaabi Lil Iskane
+      url: https://www.liliskane.com/
+    - name: Mubawab Tanger New
+      url: https://www.mubawab.ma/fr/st/tanger/appartements-a-vendre
+    - name: Mubawab Casablanca New
+      url: https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre
