@@ -3,7 +3,7 @@ profile:
   currency: MAD
   cash_ready: 1500000
   max_budget: 3000000
-  max_delivery_months: 24
+  max_delivery_months: 36
   strategy:
     - rental_4_5_years
     - future_primary_residence
@@ -71,7 +71,7 @@ cities:
         names: ["Route de Casablanca", "Route d’Ourika", Agdal, Targa, Mhamid]
 
 scoring:
-  trigger_threshold: 75
+  trigger_threshold: 30
   urgent_threshold: 88
   weights:
     city_priority: 12
