@@ -71,7 +71,7 @@ cities:
         names: ["Route de Casablanca", "Route d’Ourika", Agdal, Targa, Mhamid]
 
 scoring:
-  trigger_threshold: 30
+  trigger_threshold: 45
   urgent_threshold: 88
   weights:
     city_priority: 12
