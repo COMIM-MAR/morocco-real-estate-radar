@@ -3,7 +3,11 @@ from __future__ import annotations
 import re
 from .models import Opportunity
 
-PRICE_RE = re.compile(r"(?:(\d+[\s.,]?\d*)\s*(?:dh|dhs|mad|dirhams))", re.I)
+PRICE_PATTERNS = [
+    r"(\d[\d\s.,]{4,})\s*(?:dh|dhs|mad|dirhams)",
+    r"(?:à partir de|a partir de|prix à partir de|prix)\s*(?:de)?\s*(\d[\d\s.,]{4,})",
+    r"(\d+(?:[.,]\d+)?)\s*(?:mdh|million|millions)",
+]
 
 
 def contains_any(text: str, words: list[str]) -> str | None:
@@ -20,43 +24,82 @@ def detect_city_zone(text: str, config: dict) -> tuple[str | None, str | None, i
     best_zone = None
     best_zone_weight = 0
     reasons = []
+
     for city_key, city in config["cities"].items():
         city_hit = city_key in t or city["label"].lower() in t
-        for group_name, group in city.get("zones", {}).items():
-            for zone in group.get("names", []):
-                if zone.lower() in t:
-                    best_city = city_key
-                    best_zone = zone
-                    best_zone_weight = max(best_zone_weight, int(group.get("weight", 0)))
-                    reasons.append(f"zone détectée: {city['label']} / {zone} ({group_name})")
+
         if city_hit and not best_city:
             best_city = city_key
             reasons.append(f"ville détectée: {city['label']}")
+
+        for group_name, group in city.get("zones", {}).items():
+            for zone in group.get("names", []):
+                if zone.lower() in t:
+                    if int(group.get("weight", 0)) >= best_zone_weight:
+                        best_city = city_key
+                        best_zone = zone
+                        best_zone_weight = int(group.get("weight", 0))
+                    reasons.append(f"zone détectée: {city['label']} / {zone} ({group_name})")
+
     return best_city, best_zone, best_zone_weight, reasons
 
 
 def detect_asset(text: str, config: dict) -> tuple[str | None, int, list[str]]:
+    t = text.lower()
     reasons = []
     prefs = config["asset_preferences"]
-    for asset, words in config["keywords"]["asset_types"].items():
-        if contains_any(text, words):
-            reasons.append(f"type détecté: {asset}")
-            return asset, int(prefs.get(asset, 0)), reasons
+
+    if re.search(r"\b(villa|villas)\b", t):
+        return "villa", int(prefs.get("villa", 0)), ["type détecté: villa"]
+
+    if re.search(r"\b(r\+4|r4|r\+5|r5|immeuble|terrain|lotissement|lot de terrain|lots de terrain)\b", t):
+        return "land_r4_plus", int(prefs.get("land_r4_plus", 0)), ["type détecté: land_r4_plus"]
+
+    if re.search(r"\b(penthouse|duplex|terrasse)\b", t):
+        return "penthouse", int(prefs.get("penthouse", 0)), ["type détecté: penthouse"]
+
+    if re.search(r"\b(3 chambres|3ch|3 ch|f4|4 pièces|4 pieces)\b", t):
+        return "apartment_3_bed", int(prefs.get("apartment_3_bed", 0)), ["type détecté: apartment_3_bed"]
+
+    if re.search(r"\b(2 chambres|2ch|2 ch|f3|3 pièces|3 pieces)\b", t):
+        return "apartment_2_bed", int(prefs.get("apartment_2_bed", 0)), ["type détecté: apartment_2_bed"]
+
+    if re.search(r"\bstudio\b", t):
+        return "studio", int(prefs.get("studio", 0)), ["type détecté: studio"]
+
+    if re.search(r"\b(appartement|appart|résidence|residence)\b", t):
+        return "apartment_unknown", 40, ["type détecté: appartement, nombre de chambres à confirmer"]
+
     return None, 0, reasons
 
 
 def extract_price(text: str) -> int | None:
-    # Lightweight extraction. Avoid making decisions if price text is ambiguous.
-    m = PRICE_RE.search(text)
-    if not m:
-        return None
-    raw = re.sub(r"\D", "", m.group(1))
-    if not raw:
-        return None
-    value = int(raw)
-    if value < 10000:
-        return None
-    return value
+    t = text.lower().replace("\u202f", " ").replace("\xa0", " ")
+
+    for pattern in PRICE_PATTERNS:
+        m = re.search(pattern, t, re.I)
+        if not m:
+            continue
+
+        raw = m.group(1).strip()
+
+        if "mdh" in m.group(0) or "million" in m.group(0):
+            raw = raw.replace(",", ".")
+            try:
+                return int(float(raw) * 1_000_000)
+            except ValueError:
+                continue
+
+        digits = re.sub(r"\D", "", raw)
+        if not digits:
+            continue
+
+        value = int(digits)
+
+        if 100_000 <= value <= 30_000_000:
+            return value
+
+    return None
 
 
 def score_opportunity(op: Opportunity, config: dict) -> Opportunity:
@@ -68,15 +111,18 @@ def score_opportunity(op: Opportunity, config: dict) -> Opportunity:
     city, zone, zone_weight, rz = detect_city_zone(text, config)
     op.city, op.zone = city, zone
     reasons += rz
+
     if city:
         city_priority = int(config["cities"][city]["priority"])
         score += round(weights["city_priority"] * city_priority / 100)
+
     if zone_weight:
         score += round(weights["zone"] * zone_weight / 100)
 
     asset, asset_weight, ra = detect_asset(text, config)
     op.asset_type = asset
     reasons += ra
+
     if asset_weight:
         score += round(weights["asset_type"] * asset_weight / 100)
 
@@ -103,8 +149,10 @@ def score_opportunity(op: Opportunity, config: dict) -> Opportunity:
 
     price = extract_price(text)
     op.price_mad = price
+
     max_budget = int(config["profile"]["max_budget"])
     cash_ready = int(config["profile"]["cash_ready"])
+
     if price:
         if price <= cash_ready:
             score += weights["budget_fit"]
@@ -121,8 +169,10 @@ def score_opportunity(op: Opportunity, config: dict) -> Opportunity:
         reasons.append("signal négatif: vendu/épuisé/indisponible")
 
     op.score = max(0, min(100, int(score)))
+
     urgent = int(config["scoring"]["urgent_threshold"])
     trigger = int(config["scoring"]["trigger_threshold"])
     op.urgency = "urgent" if op.score >= urgent else "alert" if op.score >= trigger else "watch"
     op.reasons = reasons
+
     return op
