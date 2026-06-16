@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "source": "Al Omrane",
+    "title": "Nouveau Tamesna LOTISSEMENT PMP 1 La Société Al Omrane Rabat Salé Kénitra met en vente à guichet ouvert, avec cahier de char... Plus d'infos",
+    "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-pmp-1",
+    "text": "Nouveau Tamesna LOTISSEMENT PMP 1 La Société Al Omrane Rabat Salé Kénitra met en vente à guichet ouvert, avec cahier de char... Plus d'infos",
+    "city": "rabat",
+    "zone": "Tamesna",
+    "asset_type": "land_r4_plus",
+    "price_mad": null,
+    "score": 49,
+    "urgency": "alert",
+    "reasons": [
+      "ville détectée: Rabat",
+      "zone détectée: Rabat / Tamesna (transformation_priority)",
+      "type détecté: land_r4_plus",
+      "signal amont: lotissement"
+    ],
+    "detected_at": "2026-06-16T18:57:33.443362+00:00"
+  },
+  {
+    "source": "Mubawab Tanger New",
+    "title": "Villa à vendre avec vue sur mer à Achakar",
+    "url": "https://www.mubawab.ma/fr/a/8258124/villa-%C3%A0-vendre-avec-vue-sur-mer-%C3%A0-achakar",
+    "text": "Villa à vendre avec vue sur mer à Achakar",
+    "city": "tangier",
+    "zone": "Achakar",
+    "asset_type": "villa",
+    "price_mad": null,
+    "score": 49,
+    "urgency": "alert",
+    "reasons": [
+      "zone détectée: Tanger / Achakar (premium_keep)",
+      "type détecté: villa",
+      "bonus mer/plage"
+    ],
+    "detected_at": "2026-06-16T18:57:33.443362+00:00"
+  },
+  {
+    "source": "Chaabi Lil Iskane",
+    "title": "Dyar Al Bahia 2 Temara à partir de 830 000 DHS EN SAVOIR PLUS + En lancement",
+    "url": "https://www.liliskane.com/projet/161/dyar-al-bahia-2",
+    "text": "Dyar Al Bahia 2 Temara à partir de 830 000 DHS EN SAVOIR PLUS + En lancement",
+    "city": "rabat",
+    "zone": "Temara",
+    "asset_type": null,
+    "price_mad": 830000,
+    "score": 44,
+    "urgency": "watch",
+    "reasons": [
+      "zone détectée: Rabat / Temara (transformation_priority)",
+      "signal amont: lancement",
+      "prix compatible cash disponible"
+    ],
+    "detected_at": "2026-06-16T18:57:33.443362+00:00"
+  },
+  {
+    "source": "Mubawab Tanger New",
+    "title": "S. Duplex de 128m² avec Terrasse à Vendre Malabata",
+    "url": "https://www.mubawab.ma/fr/a/8254999/s-duplex-de-128m%C2%B2-avec-terrasse-%C3%A0-vendre-malabata",
+    "text": "S. Duplex de 128m² avec Terrasse à Vendre Malabata",
+    "city": "tangier",
+    "zone": "Malabata",
+    "asset_type": "penthouse",
+    "price_mad": null,
+    "score": 38,
+    "urgency": "watch",
+    "reasons": [
+      "zone détectée: Tanger / Malabata (premium_keep)",
+      "type détecté: penthouse"
+    ],
+    "detected_at": "2026-06-16T18:57:33.443362+00:00"
+  },
+  {
+    "source": "Al Omrane",
+    "title": "Had Soualem CHADA LOTISSEMENT Al Omrane Casablanca-Settat vous propose des lots de de villas, au projet CHADA LOTISSEMEN... Plus d'infos",
+    "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-casablanca-settat/Produits/Projets/Chada-lotissement",
+    "text": "Had Soualem CHADA LOTISSEMENT Al Omrane Casablanca-Settat vous propose des lots de de villas, au projet CHADA LOTISSEMEN... Plus d'infos",
+    "city": "casablanca",
+    "zone": null,
+    "asset_type": "villa",
+    "price_mad": null,
+    "score": 37,
+    "urgency": "watch",
+    "reasons": [
+      "ville détectée: Casablanca",
+      "type détecté: villa",
+      "signal amont: lotissement"
+    ],
+    "detected_at": "2026-06-16T18:57:33.443362+00:00"
+  }
+]
