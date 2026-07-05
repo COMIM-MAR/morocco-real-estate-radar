@@ -125,7 +125,11 @@ sources:
       url: https://www.alliances.co.ma/
     - name: Chaabi Lil Iskane
       url: https://www.liliskane.com/
-    - name: Mubawab Tanger New
-      url: https://www.mubawab.ma/fr/st/tanger/appartements-a-vendre
-    - name: Mubawab Casablanca New
-      url: https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre
+- name: Mubawab Tanger Vente
+  url: https://www.mubawab.ma/fr/st/tanger/appartements-a-vendre
+- name: Mubawab Tanger Villas
+  url: https://www.mubawab.ma/fr/st/tanger/villas-et-maisons-de-luxe-a-vendre
+- name: Mubawab Casablanca Vente
+  url: https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre
+- name: Mubawab Casablanca Villas
+  url: https://www.mubawab.ma/fr/st/casablanca/villas-et-maisons-de-luxe-a-vendre
