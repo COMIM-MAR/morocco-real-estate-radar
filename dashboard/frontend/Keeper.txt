@@ -1,0 +1,1 @@
+Planned frontend workspace for the future React dashboard.

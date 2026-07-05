@@ -1,11 +1,42 @@
-# Morocco Real Estate Intelligence V3
+# Morocco Real Estate Intelligence Engine
 
-GitHub Actions + dashboard GitHub Pages + email via existing SMTP secrets.
+This repository is now structured as a project-level intelligence engine instead of a listing radar.
 
-Required secrets already compatible with your current repo:
-- SMTP_HOST
-- SMTP_PORT
-- SMTP_USER
-- SMTP_PASSWORD
-- ALERT_EMAIL_FROM
-- ALERT_EMAIL_TO
+Current foundation implemented in this repo:
+- modular collectors under `collectors/` for promoters, Google, Meta Ads, news, social, urbanism, and listings
+- project-level entity resolution and fusion
+- SQLite persistence at `data/intelligence.db`
+- dashboard publishing in `docs/index.html`
+- email alerts that trigger only for high-confidence new project signals
+- GitHub Actions workflow using the existing SMTP secrets unchanged
+
+Core flow:
+1. Collect raw signals from multiple channels
+2. Enrich each signal with city, zone, promoter, asset type, and price hints
+3. Merge signals into projects
+4. Score projects with launch, confidence, investment, and urgency scores
+5. Persist projects/signals to SQLite and publish the dashboard
+6. Email only the strongest new project opportunities
+
+Existing SMTP secrets remain unchanged:
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASSWORD`
+- `ALERT_EMAIL_FROM`
+- `ALERT_EMAIL_TO`
+
+Run locally:
+
+```bash
+python -m pip install -r requirements.txt
+python run.py
+```
+
+Outputs:
+- `data/intelligence.db`
+- `data/all_signals.json`
+- `data/projects.json`
+- `data/latest_alerts.json`
+- `docs/index.html`
+- `docs/projects.json`

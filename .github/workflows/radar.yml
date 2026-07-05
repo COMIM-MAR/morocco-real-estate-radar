@@ -32,7 +32,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run radar
+      - name: Run intelligence engine
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -47,6 +47,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data docs || true
-          git diff --cached --quiet || git commit -m "Update radar data and dashboard"
+          git diff --cached --quiet || git commit -m "Update intelligence data and dashboard"
           git pull --rebase origin main
           git push

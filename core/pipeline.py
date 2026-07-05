@@ -1,30 +1,47 @@
 import json
-from .config import load_config, DATA_DIR
-from .scoring import score
-from .storage import is_new
-from .notifier import notify
+
+from collectors import collect_all
+from .config import DATA_DIR, load_config
 from .dashboard import build
-from collectors.web import collect_source
-from collectors.meta_ads import collect as collect_meta
+from .database import existing_project_ids, init_db, upsert_projects
+from .entity_resolution import resolve_projects
+from .notifier import notify
+
 
 def run():
-    cfg=load_config(); DATA_DIR.mkdir(exist_ok=True)
-    events=[]
-    for s in cfg.get("sources",{}).get("promoters",[]): events += collect_source("promoter", s)
-    for s in cfg.get("sources",{}).get("listings",[]): events += collect_source("listing", s)
-    events += collect_meta(cfg)
-    scored=[score(e,cfg) for e in events]
-    scored=sorted(scored,key=lambda e:e.total_score,reverse=True)
-    (DATA_DIR/"all_events.json").write_text(json.dumps([e.to_dict() for e in scored],ensure_ascii=False,indent=2),encoding="utf-8")
-    build(scored[:100])
-    min_score=cfg["alerts"]["min_score_immediate"]; max_items=cfg["alerts"]["max_items_per_email"]
-    alerts=[]
-    for e in scored:
-        if e.total_score < min_score: continue
-        if cfg["alerts"].get("suppress_seen_urls",True) and not is_new(e.channel,e.url): continue
-        alerts.append(e)
-        if len(alerts)>=max_items: break
-    if alerts: notify(alerts)
-    else: print("No new high-quality signal to email")
-    (DATA_DIR/"latest_alerts.json").write_text(json.dumps([e.to_dict() for e in alerts],ensure_ascii=False,indent=2),encoding="utf-8")
-    print(f"Collected={len(events)} Scored={len(scored)} Alerts={len(alerts)}")
+    config = load_config()
+    DATA_DIR.mkdir(exist_ok=True)
+    init_db()
+    known_project_ids = existing_project_ids()
+    signals = collect_all(config)
+    projects = resolve_projects(signals, config)
+    upsert_projects(projects)
+    (DATA_DIR / "all_signals.json").write_text(
+        json.dumps([signal.to_dict() for signal in signals], ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    (DATA_DIR / "projects.json").write_text(
+        json.dumps([project.to_dict() for project in projects], ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    build(projects[:100])
+    alerts = []
+    for project in projects:
+        if project.project_id in known_project_ids:
+            continue
+        if project.confidence_score < config["alerts"]["immediate_confidence_threshold"]:
+            continue
+        if not any(signal.is_primary for signal in project.signals):
+            continue
+        alerts.append(project)
+        if len(alerts) >= config["alerts"]["max_items_per_email"]:
+            break
+    if alerts:
+        notify(alerts)
+    else:
+        print("No new high-confidence project to email")
+    (DATA_DIR / "latest_alerts.json").write_text(
+        json.dumps([project.to_dict() for project in alerts], ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"Collected={len(signals)} Projects={len(projects)} Alerts={len(alerts)}")

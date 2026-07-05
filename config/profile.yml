@@ -1,5 +1,5 @@
 profile:
-  name: Souhail Morocco Real Estate Intelligence
+  name: Morocco Real Estate Intelligence Engine
   currency: MAD
   cash_ready: 1500000
   max_budget: 3000000
@@ -9,9 +9,9 @@ profile:
 
 alerts:
   max_items_per_email: 5
-  min_score_immediate: 68
+  immediate_confidence_threshold: 90
+  digest_confidence_threshold: 70
   digest_when_no_alerts: false
-  suppress_seen_urls: true
 
 asset_preferences:
   villa: 100
@@ -44,7 +44,7 @@ cities:
     zones: [Hivernage, Gueliz, Prestigia, Palmeraie, Route de Casablanca, Route d’Ourika, Agdal, Targa, Mhamid]
 
 promoters:
-  national:
+  tracked:
     - Al Omrane
     - CGI
     - Addoha
@@ -81,9 +81,26 @@ sources:
     - {name: Mubawab Casablanca Villas, url: "https://www.mubawab.ma/fr/st/casablanca/villas-et-maisons-de-luxe-a-vendre"}
     - {name: Mubawab Rabat, url: "https://www.mubawab.ma/fr/st/rabat/appartements-a-vendre"}
     - {name: Mubawab Agadir, url: "https://www.mubawab.ma/fr/st/agadir/appartements-a-vendre"}
+    - {name: Avito Immobilier, url: "https://www.avito.ma/fr/maroc/appartements-%C3%A0_vendre"}
+  urbanism:
+    - {name: Agence Urbaine de Tanger, url: "https://www.autanger.ma/", description: "Permis, plans et appels à consultation"}
+    - {name: Agence Urbaine de Casablanca, url: "https://www.auc.ma/", description: "Urbanisme, planification, autorisations"}
+  google_search_queries:
+    - "site:addoha.ma projet immobilier maroc"
+    - "site:cgi.ma tanger projet immobilier"
+    - "site:alliances.co.ma casablanca residence"
+    - "site:prestigia-golf.com tanger"
   meta_ad_library_searches:
     - "lancement immobilier Tanger"
     - "pré-commercialisation Tanger"
     - "nouveau projet immobilier Casablanca"
     - "résidence neuve Maroc"
     - "lotissement villa Tanger"
+  news_queries:
+    - "nouveau projet immobilier Maroc"
+    - "pré-commercialisation immobilier Tanger"
+    - "promotion immobilière Casablanca"
+  social_queries:
+    - "site:facebook.com promoteur immobilier Tanger"
+    - "site:instagram.com projet immobilier Maroc"
+    - "site:linkedin.com immobilier Maroc lancement"
