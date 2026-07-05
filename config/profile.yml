@@ -83,13 +83,13 @@ sources:
     - {name: Mubawab Agadir, url: "https://www.mubawab.ma/fr/st/agadir/appartements-a-vendre"}
     - {name: Avito Immobilier, url: "https://www.avito.ma/fr/maroc/appartements-%C3%A0_vendre"}
   urbanism:
-    - {name: Agence Urbaine de Tanger, url: "https://www.autanger.ma/", description: "Permis, plans et appels à consultation"}
-    - {name: Agence Urbaine de Casablanca, url: "https://www.auc.ma/", description: "Urbanisme, planification, autorisations"}
+    - {name: Agence Urbaine de Tanger, url: "https://www.autanger.ma/", description: "Permis, plans et appels à consultation", keywords: ["permis", "lotissement", "projet", "plan d'aménagement", "résidence"], max_results: 12}
+    - {name: Agence Urbaine de Casablanca, url: "https://www.auc.ma/", description: "Urbanisme, planification, autorisations", keywords: ["autorisation", "plan d'aménagement", "lotissement", "projet", "enquête publique"], max_results: 12}
   google_search_queries:
-    - "site:addoha.ma projet immobilier maroc"
-    - "site:cgi.ma tanger projet immobilier"
-    - "site:alliances.co.ma casablanca residence"
-    - "site:prestigia-golf.com tanger"
+    - {query: "site:addoha.ma projet immobilier maroc", preferred_domain: "https://www.addoha.ma/", max_results: 8}
+    - {query: "site:cgi.ma tanger projet immobilier", preferred_domain: "https://www.cgi.ma/", max_results: 8}
+    - {query: "site:alliances.co.ma casablanca residence", preferred_domain: "https://www.alliances.co.ma/", max_results: 8}
+    - {query: "site:prestigia-golf.com tanger", preferred_domain: "https://www.prestigia-golf.com/", max_results: 8}
   meta_ad_library_searches:
     - "lancement immobilier Tanger"
     - "pré-commercialisation Tanger"

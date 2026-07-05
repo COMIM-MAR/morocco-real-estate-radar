@@ -18,6 +18,10 @@ def detail_like(url: str) -> bool:
     return any(marker in urlparse(url).path.lower() for marker in DETAIL_MARKERS)
 
 
+def domain(url: str) -> str:
+    return urlparse(url).netloc.lower().removeprefix("www.")
+
+
 def fetch(url: str) -> tuple[BeautifulSoup, str]:
     response = requests.get(url, headers=HEADERS, timeout=20)
     response.raise_for_status()
@@ -38,6 +42,15 @@ def fetch(url: str) -> tuple[BeautifulSoup, str]:
     return soup, clean(" ".join(parts))[:9000]
 
 
+def same_domain(left: str, right: str) -> bool:
+    return domain(left) == domain(right)
+
+
+def keyword_hits(text: str, keywords: list[str]) -> list[str]:
+    lowered = clean(text).lower()
+    return [keyword for keyword in keywords if keyword.lower() in lowered]
+
+
 def collect_detail_pages(source_url: str, max_links: int = 80) -> list[tuple[str, str]]:
     soup, page_text = fetch(source_url)
     links: list[tuple[str, str]] = []
@@ -56,4 +69,3 @@ def collect_detail_pages(source_url: str, max_links: int = 80) -> list[tuple[str
         seen.add(url)
         unique.append((url, title))
     return unique
-

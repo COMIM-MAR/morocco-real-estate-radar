@@ -107,6 +107,12 @@ def enrich_signal(signal: SignalEvent, config: dict) -> SignalEvent:
         signal.launch_weight += 12
         signal.confidence_weight += 8
         signal.reasons.append("marqueur de lancement détecté")
+    if signal.channel == "google_discovery" and signal.signal_type == "search_result":
+        signal.confidence_weight += 6
+        signal.reasons.append("page détectée via Google")
+    if signal.channel == "urbanism":
+        signal.launch_weight += 6
+        signal.reasons.append("source urbanisme prioritaire")
     if asset_weight:
         signal.confidence_weight += round(asset_weight * 0.05)
     return signal
