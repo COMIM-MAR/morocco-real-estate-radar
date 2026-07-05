@@ -1,5 +1,123 @@
 [
   {
+    "project_id": "91597a0164454f8a39f031ec9ac183ca316fe13f",
+    "name": "Appartement %c3%a0 Vendre %c3%a0",
+    "city": "Marrakech",
+    "zone": "Temara",
+    "promoter": "Chaabi Lil Iskane",
+    "asset_type": "land_r4_plus",
+    "first_detected_at": "2026-07-05T19:14:13.699533+00:00",
+    "last_updated_at": "2026-07-05T19:16:19.195257+00:00",
+    "launch_score": 100,
+    "confidence_score": 100,
+    "investment_score": 100,
+    "urgency_score": 100,
+    "recommendation": "Buy",
+    "status": "urgent",
+    "summary": "Appartement %c3%a0 Vendre %c3%a0 | Promoteur: Chaabi Lil Iskane | Ville: Marrakech | Zone: Temara | Confirmations: confirmation en cours | Prix observés entre 313000 et 313000 MAD.",
+    "prices": {
+      "min": 313000,
+      "max": 850000000
+    },
+    "aliases": [
+      "Riad Garden I Marrakech à partir de 2 450 000 DHS EN SAVOIR PLUS +",
+      "Riad Garden I",
+      "Amaïa Marrakech à partir de 1 130 000 DHS EN SAVOIR PLUS +",
+      "Océane Sidi Rahal à partir de 1 962 000 DHS EN SAVOIR PLUS +",
+      "Riad Garden II Marrakech à partir de 1 830 000 DHS EN SAVOIR PLUS +",
+      "Riad Garden Ii"
+    ],
+    "channels": [
+      "listing",
+      "project_discovery"
+    ],
+    "sources": [
+      "Chaabi Lil Iskane",
+      "Mubawab Casablanca Appartements",
+      "Mubawab Casablanca Villas",
+      "Mubawab Tanger Appartements",
+      "Mubawab Tanger Villas"
+    ],
+    "source_urls": [
+      "https://www.liliskane.com/projet/95/riad-garden-i",
+      "https://www.liliskane.com/projet/211/amaia",
+      "https://www.liliskane.com/projet/190/oceane",
+      "https://www.liliskane.com/projet/209/riad-garden-ii",
+      "https://www.liliskane.com/projet/220/odyssee-studios",
+      "https://www.liliskane.com/projet/219/odyssee",
+      "https://www.liliskane.com/projet/160/bougainvillier",
+      "https://www.liliskane.com/projet/218/izdihar",
+      "https://www.liliskane.com/projet/161/dyar-al-bahia-2",
+      "https://www.liliskane.com/projet/175/al-youssoufia-r-2",
+      "https://www.liliskane.com/projet/176/al-youssoufia-r-3",
+      "https://www.liliskane.com/projet/143/al-maamora-r-1"
+    ],
+    "evidence": {
+      "signal_count": 38,
+      "primary_signal_count": 13,
+      "listing_signal_count": 25,
+      "source_count": 5,
+      "channel_count": 2,
+      "primary_channels": [
+        "project_discovery"
+      ],
+      "secondary_channels": [
+        "listing"
+      ],
+      "confirmations": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 31.6295,
+        "lng": -7.9811,
+        "sea_distance_km": 180,
+        "station_distance_km": 5,
+        "highway_distance_km": 6
+      },
+      "price_band": "cash_ready",
+      "price_evolution": {
+        "trend": "stable",
+        "summary": "Prix observés entre 313000 et 313000 MAD."
+      },
+      "roi": {
+        "label": "Élevé",
+        "five_year_upside_score": 97
+      },
+      "project_slug": "appartement-c3-a0-vendre-c3-a0-91597a01",
+      "infrastructure": {
+        "sea_distance_km": 180,
+        "station_distance_km": 5,
+        "highway_distance_km": 6
+      },
+      "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+      "changes": [],
+      "is_new_project": true
+    },
+    "reasons": [
+      "nouvelle page promoteur",
+      "prix détecté: 2450000 MAD",
+      "type: land_r4_plus",
+      "ville: Marrakech",
+      "prix détecté: 1130000 MAD",
+      "marqueur de lancement détecté",
+      "prix détecté: 1962000 MAD",
+      "type: villa",
+      "prix détecté: 1830000 MAD",
+      "prix détecté: 555000 MAD"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-05T19:16:19.195257+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 100,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      }
+    ],
+    "signals": []
+  },
+  {
     "project_id": "244df8dacaa1e818e58c7c7ae04e77d124a63aa1",
     "name": "Appartement %c3%a0 Achat %c3%a0",
     "city": "Marrakech",
@@ -127,7 +245,7 @@
     "promoter": "Al Omrane",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-05T16:06:07.330422+00:00",
-    "last_updated_at": "2026-07-05T16:06:37.498576+00:00",
+    "last_updated_at": "2026-07-05T19:13:59.944353+00:00",
     "launch_score": 100,
     "confidence_score": 100,
     "investment_score": 91,
@@ -137,7 +255,7 @@
     "summary": "Plus d'infos | Promoteur: Al Omrane | Ville: Rabat | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 100000 et 100000 MAD.",
     "prices": {
       "min": 100000,
-      "max": 1962000
+      "max": 100000
     },
     "aliases": [
       "Plus d'infos",
@@ -151,8 +269,7 @@
       "project_discovery"
     ],
     "sources": [
-      "Al Omrane",
-      "Chaabi Lil Iskane"
+      "Al Omrane"
     ],
     "source_urls": [
       "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-souss-massa/Produits/Projets/Showroom",
@@ -169,10 +286,10 @@
       "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-al-janoub/Produits/Projets/Lotissement-jnane-al-wifaq"
     ],
     "evidence": {
-      "signal_count": 21,
-      "primary_signal_count": 21,
+      "signal_count": 19,
+      "primary_signal_count": 19,
       "listing_signal_count": 0,
-      "source_count": 2,
+      "source_count": 1,
       "channel_count": 1,
       "primary_channels": [
         "project_discovery"
@@ -204,7 +321,7 @@
       },
       "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -215,10 +332,18 @@
       "ville: Tanger",
       "ville: Marrakech",
       "ville: Casablanca",
-      "prix détecté: 100000 MAD",
-      "prix détecté: 1962000 MAD"
+      "prix détecté: 100000 MAD"
     ],
     "timeline": [
+      {
+        "observed_at": "2026-07-05T19:13:59.944353+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 91,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
       {
         "observed_at": "2026-07-05T16:06:37.498576+00:00",
         "launch_score": 100,
@@ -239,7 +364,7 @@
     "promoter": "CGI",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-05T16:06:16.396907+00:00",
-    "last_updated_at": "2026-07-05T16:06:21.345708+00:00",
+    "last_updated_at": "2026-07-05T19:14:07.080887+00:00",
     "launch_score": 100,
     "confidence_score": 100,
     "investment_score": 86,
@@ -310,7 +435,7 @@
       },
       "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -321,6 +446,15 @@
       "marqueur de lancement détecté"
     ],
     "timeline": [
+      {
+        "observed_at": "2026-07-05T19:14:07.080887+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 86,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
       {
         "observed_at": "2026-07-05T16:06:21.345708+00:00",
         "launch_score": 100,
@@ -341,7 +475,7 @@
     "promoter": null,
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-05T16:06:39.770894+00:00",
-    "last_updated_at": "2026-07-05T16:06:39.770979+00:00",
+    "last_updated_at": "2026-07-05T19:14:23.521244+00:00",
     "launch_score": 100,
     "confidence_score": 100,
     "investment_score": 81,
@@ -414,7 +548,7 @@
       },
       "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "signal urbanisme détecté",
@@ -427,6 +561,15 @@
       "source urbanisme prioritaire"
     ],
     "timeline": [
+      {
+        "observed_at": "2026-07-05T19:14:23.521244+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 81,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
       {
         "observed_at": "2026-07-05T16:06:39.770979+00:00",
         "launch_score": 100,
@@ -447,7 +590,7 @@
     "promoter": "CGI",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-05T16:06:37.644547+00:00",
-    "last_updated_at": "2026-07-05T16:06:37.997380+00:00",
+    "last_updated_at": "2026-07-05T19:14:21.970947+00:00",
     "launch_score": 100,
     "confidence_score": 100,
     "investment_score": 61,
@@ -532,7 +675,7 @@
       },
       "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta + indexation Google",
@@ -549,6 +692,15 @@
       "ville: Casablanca"
     ],
     "timeline": [
+      {
+        "observed_at": "2026-07-05T19:14:21.970947+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 61,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
       {
         "observed_at": "2026-07-05T16:06:37.997380+00:00",
         "launch_score": 100,
@@ -569,7 +721,7 @@
     "promoter": "Chaabi Lil Iskane",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-05T16:06:24.287725+00:00",
-    "last_updated_at": "2026-07-05T16:06:28.621563+00:00",
+    "last_updated_at": "2026-07-05T19:14:12.959858+00:00",
     "launch_score": 100,
     "confidence_score": 100,
     "investment_score": 53,
@@ -640,7 +792,7 @@
       },
       "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -652,6 +804,15 @@
       "marqueur de lancement détecté"
     ],
     "timeline": [
+      {
+        "observed_at": "2026-07-05T19:14:12.959858+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 53,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
       {
         "observed_at": "2026-07-05T16:06:28.621563+00:00",
         "launch_score": 100,
@@ -672,7 +833,7 @@
     "promoter": "Addoha",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-05T16:06:37.576318+00:00",
-    "last_updated_at": "2026-07-05T16:06:37.777689+00:00",
+    "last_updated_at": "2026-07-05T19:14:21.873521+00:00",
     "launch_score": 78,
     "confidence_score": 100,
     "investment_score": 43,
@@ -751,7 +912,7 @@
       },
       "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "fallback Google watch query",
@@ -763,6 +924,15 @@
       "surveillance sociale complémentaire"
     ],
     "timeline": [
+      {
+        "observed_at": "2026-07-05T19:14:21.873521+00:00",
+        "launch_score": 78,
+        "confidence_score": 100,
+        "investment_score": 43,
+        "urgency_score": 86,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
       {
         "observed_at": "2026-07-05T16:06:37.777689+00:00",
         "launch_score": 78,
@@ -783,7 +953,7 @@
     "promoter": "CGI",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-05T16:06:14.527166+00:00",
-    "last_updated_at": "2026-07-05T16:06:15.668577+00:00",
+    "last_updated_at": "2026-07-05T19:14:02.558949+00:00",
     "launch_score": 60,
     "confidence_score": 82,
     "investment_score": 46,
@@ -845,7 +1015,7 @@
       },
       "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -855,6 +1025,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-05T19:14:02.558949+00:00",
+        "launch_score": 60,
+        "confidence_score": 82,
+        "investment_score": 46,
+        "urgency_score": 65,
+        "status": "watch",
+        "recommendation": "Watch"
+      },
+      {
         "observed_at": "2026-07-05T16:06:15.668577+00:00",
         "launch_score": 60,
         "confidence_score": 82,
@@ -862,6 +1041,237 @@
         "urgency_score": 65,
         "status": "watch",
         "recommendation": "Watch"
+      }
+    ],
+    "signals": []
+  },
+  {
+    "project_id": "17dd56ad354ceb26508e877077779f277a1da380",
+    "name": "Appartements %c3%a0 Vendre",
+    "city": "Tanger",
+    "zone": "Malabata",
+    "promoter": "Chaabi Lil Iskane",
+    "asset_type": "land_r4_plus",
+    "first_detected_at": "2026-07-05T19:14:17.555858+00:00",
+    "last_updated_at": "2026-07-05T19:15:28.002605+00:00",
+    "launch_score": 39,
+    "confidence_score": 59,
+    "investment_score": 100,
+    "urgency_score": 61,
+    "recommendation": "Monitor",
+    "status": "monitor",
+    "summary": "Appartements %c3%a0 Vendre | Promoteur: Chaabi Lil Iskane | Ville: Tanger | Zone: Malabata | Confirmations: confirmation en cours | Prix observés entre 420000 et 420000 MAD.",
+    "prices": {
+      "min": 420000,
+      "max": 61000000
+    },
+    "aliases": [
+      "Assalam TG Tanger à partir de 1 760 000 DHS EN SAVOIR PLUS +",
+      "Appartements %c3%a0 Vendre Pr%c3%a8s",
+      "Appartements à vendre près du stade Ibn Batouta",
+      "Appartements %C3%A0 Vendre Pr%C3%A8S Du Stade Ibn Batouta",
+      "Appartement %c3%a0 Vendre Tanger",
+      "Appartement à vendre Tanger"
+    ],
+    "channels": [
+      "listing",
+      "project_discovery"
+    ],
+    "sources": [
+      "Chaabi Lil Iskane",
+      "Mubawab Tanger Appartements",
+      "Mubawab Tanger Villas"
+    ],
+    "source_urls": [
+      "https://www.liliskane.com/projet/72/assalam-tg",
+      "https://www.mubawab.ma/fr/pa/8250952/appartements-%C3%A0-vendre-pr%C3%A8s-du-stade-ibn-batouta",
+      "https://www.mubawab.ma/fr/a/8292829/appartement-%C3%A0-vendre-tanger",
+      "https://www.mubawab.ma/fr/a/8287795/appartements-%C3%A0-vendre-tanger",
+      "https://www.mubawab.ma/fr/a/8377046/appartements-%C3%A0-vendre",
+      "https://www.mubawab.ma/fr/a/8367279/appartement-de-standing-meubl%C3%A9-%D8%B4%D9%82%D8%A9-%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%85%D9%81%D8%B1%D9%88%D8%B4%D8%A9",
+      "https://www.mubawab.ma/fr/pa/7875022/malabata-hills-appartement-haut-standing-51-m%C2%B2",
+      "https://www.mubawab.ma/fr/a/8359979/4-appartements-en-rez-de-chauss%C3%A9e-%C3%A0-vendre",
+      "https://www.mubawab.ma/fr/pa/8250508/appartement-3-chambres-de-84-m%C2%B2-%C3%A0-vendre-livr%C3%A9",
+      "https://www.mubawab.ma/fr/pa/7595991/appartement-en-vente-%C3%A0-view-tower-3-chambres-agr%C3%A9ables",
+      "https://www.mubawab.ma/fr/a/8376192/appartement-%C3%A0-vendre",
+      "https://www.mubawab.ma/fr/pa/8074347/r%C3%A9sidences-s%C3%A9curis%C3%A9-avec-piscine-%C3%A0-tanger"
+    ],
+    "evidence": {
+      "signal_count": 41,
+      "primary_signal_count": 1,
+      "listing_signal_count": 40,
+      "source_count": 3,
+      "channel_count": 2,
+      "primary_channels": [
+        "project_discovery"
+      ],
+      "secondary_channels": [
+        "listing"
+      ],
+      "confirmations": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 35.783,
+        "lng": -5.7603,
+        "sea_distance_km": 1,
+        "station_distance_km": 4,
+        "highway_distance_km": 5
+      },
+      "price_band": "cash_ready",
+      "price_evolution": {
+        "trend": "stable",
+        "summary": "Prix observés entre 420000 et 420000 MAD."
+      },
+      "roi": {
+        "label": "Élevé",
+        "five_year_upside_score": 92
+      },
+      "project_slug": "appartements-c3-a0-vendre-17dd56ad",
+      "infrastructure": {
+        "sea_distance_km": 1,
+        "station_distance_km": 4,
+        "highway_distance_km": 5
+      },
+      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
+      "changes": [],
+      "is_new_project": true
+    },
+    "reasons": [
+      "nouvelle page promoteur",
+      "prix détecté: 1760000 MAD",
+      "type: land_r4_plus",
+      "ville: Tanger",
+      "signal listing secondaire",
+      "prix détecté: 18680000 MAD",
+      "type: apartment_3_bed",
+      "prix détecté: 5830000 MAD",
+      "type: apartment_2_bed",
+      "marqueur de lancement détecté"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-05T19:15:28.002605+00:00",
+        "launch_score": 39,
+        "confidence_score": 59,
+        "investment_score": 100,
+        "urgency_score": 61,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      }
+    ],
+    "signals": []
+  },
+  {
+    "project_id": "cbe90436748cba8bbeffd3aac7dc577cda592392",
+    "name": "Appartement %c3%a0 Achat %c3%a0",
+    "city": "Tanger",
+    "zone": "Ziaten",
+    "promoter": "Chaabi Lil Iskane",
+    "asset_type": "apartment_2_bed",
+    "first_detected_at": "2026-07-05T19:14:25.820706+00:00",
+    "last_updated_at": "2026-07-05T19:17:25.808597+00:00",
+    "launch_score": 9,
+    "confidence_score": 24,
+    "investment_score": 100,
+    "urgency_score": 32,
+    "recommendation": "Monitor",
+    "status": "monitor",
+    "summary": "Appartement %c3%a0 Achat %c3%a0 | Promoteur: Chaabi Lil Iskane | Ville: Tanger | Zone: Ziaten | Confirmations: confirmation en cours | Prix observés entre 100000 et 100000 MAD.",
+    "prices": {
+      "min": 100000,
+      "max": 24000000
+    },
+    "aliases": [
+      "Appartement Vente Superficie M%c2%b2",
+      "Appartement en vente. Superficie 77 m²",
+      "Appartement En Vente Superficie 77 M%C2%B2",
+      "3 Chambres 2 SDB Residence avec Piscines au coeur de Tanger",
+      "Vend Appartement %c3%a0 Hay",
+      "Vend appartement à Hay Hassani. 2 chambres. Salon typique..."
+    ],
+    "channels": [
+      "listing"
+    ],
+    "sources": [
+      "Mubawab Agadir",
+      "Mubawab Casablanca Appartements",
+      "Mubawab Casablanca Villas",
+      "Mubawab Rabat",
+      "Mubawab Tanger Appartements"
+    ],
+    "source_urls": [
+      "https://www.mubawab.ma/fr/pa/7952117/appartement-en-vente-superficie-77-m%C2%B2",
+      "https://www.mubawab.ma/fr/pa/8074346/3-chambres-2-sdb-residence-avec-piscines-au-coeur-de-tanger",
+      "https://www.mubawab.ma/fr/a/8364505/vend-appartement-%C3%A0-hay-hassani-2-chambres-salon-typique-marocain-r%C3%A9sidence-s%C3%A9curis%C3%A9e",
+      "https://www.mubawab.ma/fr/pa/7215355/appartement-%C3%A0-l-achat-%C3%A0-tanger-quartier-ziaten-superficie-130-m%C2%B2-prestation-de-conciergerie-belle-piscine",
+      "https://www.mubawab.ma/fr/a/8325642/appartement-meubl%C3%A9-%C3%A0-louer-en-plein-centre-ville",
+      "https://www.mubawab.ma/fr/a/8372725/appartement-%C3%A0-louer-meubl%C3%A9-residence-lotinord",
+      "https://www.mubawab.ma/fr/pa/8319803/appartement-%C3%A0-vendre-%C3%A0-riviera-superficie-61-m%C2%B2",
+      "https://www.mubawab.ma/fr/pa/8299839/appartement-de-78m%C2%B2-%C3%A0-vendre-%C3%A0-riviera",
+      "https://www.mubawab.ma/fr/a/8336856/vente-appartement-%C3%A0-quartier-des-h%C3%B4pitaux",
+      "https://www.mubawab.ma/fr/pa/8048375/appartement-%C3%A0-l-achat-%C3%A0-californie-2-chambres-agr%C3%A9ables",
+      "https://www.mubawab.ma/fr/a/8106013/studio-premium-avec-terrasse",
+      "https://www.mubawab.ma/fr/a/8361499/2-ch-dernier-%C3%A9tage-avec-terrasse-%C3%A0-r%C3%A9nover-invest"
+    ],
+    "evidence": {
+      "signal_count": 83,
+      "primary_signal_count": 0,
+      "listing_signal_count": 83,
+      "source_count": 5,
+      "channel_count": 1,
+      "primary_channels": [],
+      "secondary_channels": [
+        "listing"
+      ],
+      "confirmations": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 35.7595,
+        "lng": -5.834,
+        "sea_distance_km": 3,
+        "station_distance_km": 4,
+        "highway_distance_km": 5
+      },
+      "price_band": "cash_ready",
+      "price_evolution": {
+        "trend": "stable",
+        "summary": "Prix observés entre 100000 et 100000 MAD."
+      },
+      "roi": {
+        "label": "Élevé",
+        "five_year_upside_score": 92
+      },
+      "project_slug": "appartement-c3-a0-achat-c3-a0-cbe90436",
+      "infrastructure": {
+        "sea_distance_km": 3,
+        "station_distance_km": 4,
+        "highway_distance_km": 5
+      },
+      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
+      "changes": [],
+      "is_new_project": true
+    },
+    "reasons": [
+      "signal listing secondaire",
+      "prix détecté: 6600000 MAD",
+      "type: apartment_2_bed",
+      "ville: Tanger",
+      "prix détecté: 1514800 MAD",
+      "type: apartment_3_bed",
+      "prix détecté: 915000 MAD",
+      "type: land_r4_plus",
+      "zone: Ziaten",
+      "prix détecté: 157000 MAD"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-05T19:17:25.808597+00:00",
+        "launch_score": 9,
+        "confidence_score": 24,
+        "investment_score": 100,
+        "urgency_score": 32,
+        "status": "monitor",
+        "recommendation": "Monitor"
       }
     ],
     "signals": []
@@ -1095,6 +1505,119 @@
     "signals": []
   },
   {
+    "project_id": "ed3163beca111291e29c666e6cdb41d3f42f9acc",
+    "name": "Villa Haut Standing %c3%a0",
+    "city": "Tanger",
+    "zone": "Achakar",
+    "promoter": null,
+    "asset_type": "villa",
+    "first_detected_at": "2026-07-05T19:15:01.787290+00:00",
+    "last_updated_at": "2026-07-05T19:16:36.163907+00:00",
+    "launch_score": 9,
+    "confidence_score": 18,
+    "investment_score": 83,
+    "urgency_score": 27,
+    "recommendation": "Monitor",
+    "status": "monitor",
+    "summary": "Villa Haut Standing %c3%a0 | Promoteur: à confirmer | Ville: Tanger | Zone: Achakar | Confirmations: confirmation en cours | Prix observés entre 4100000 et 4100000 MAD.",
+    "prices": {
+      "min": 4100000,
+      "max": 28000000
+    },
+    "aliases": [
+      "Splendide Villa %c3%a0 Vendre",
+      "Splendide villa à vendre à Achakar. Surface de 546 m². Place...",
+      "Splendide Villa %C3%A0 Vendre %C3%A0 Achakar Surface De 546 M%C2%B2 Places De Stationnement Et Jardin",
+      "Villa Haut Standing %c3%a0",
+      "Villa de haut standing à vendre à Achakar. Surface totale 31...",
+      "Villa De Haut Standing %C3%A0 Vendre %C3%A0 Achakar Surface Totale 310 M%C2%B2"
+    ],
+    "channels": [
+      "listing"
+    ],
+    "sources": [
+      "Mubawab Casablanca Villas",
+      "Mubawab Rabat",
+      "Mubawab Tanger Villas"
+    ],
+    "source_urls": [
+      "https://www.mubawab.ma/fr/pa/8342988/splendide-villa-%C3%A0-vendre-%C3%A0-achakar-surface-de-546-m%C2%B2-places-de-stationnement-et-jardin",
+      "https://www.mubawab.ma/fr/pa/8342983/villa-de-haut-standing-%C3%A0-vendre-%C3%A0-achakar-surface-totale-310-m%C2%B2",
+      "https://www.mubawab.ma/fr/a/8367642/villa-de-prestige-%C3%A0-vendre-%E2%80%93-rahrah-tanger",
+      "https://www.mubawab.ma/fr/a/8376118/villa-de-prestige-%C3%A0-vendre-%E2%80%93-souriyenne-tanger",
+      "https://www.mubawab.ma/fr/a/8375805/villa-de-haut-standing-%C3%A0-vendre-avec-piscine",
+      "https://www.mubawab.ma/fr/a/8266692/villa-commercial-%C3%A0-vendre-cil",
+      "https://www.mubawab.ma/fr/a/8359379/a-vendre-villa-de-375m%C2%B2-de-terrain-laymoune-casa",
+      "https://www.mubawab.ma/fr/a/8363480/a-vendre-villa-de-970-m%C2%B2-terrain-%C3%A0-oasis",
+      "https://www.mubawab.ma/fr/a/8350770/emplacement-prime-pour-cette-villa-commerciale",
+      "https://www.mubawab.ma/fr/a/8376114/vrai-anfa-sup-superbe-terrain-plein-sud",
+      "https://www.mubawab.ma/fr/a/8362212/villa-1150m-a-californie",
+      "https://www.mubawab.ma/fr/a/8333791/villa-de-prestige-%C3%A0-vendre-%E2%80%93-californie"
+    ],
+    "evidence": {
+      "signal_count": 28,
+      "primary_signal_count": 0,
+      "listing_signal_count": 28,
+      "source_count": 3,
+      "channel_count": 1,
+      "primary_channels": [],
+      "secondary_channels": [
+        "listing"
+      ],
+      "confirmations": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 35.7595,
+        "lng": -5.834,
+        "sea_distance_km": 3,
+        "station_distance_km": 4,
+        "highway_distance_km": 5
+      },
+      "price_band": "above_budget",
+      "price_evolution": {
+        "trend": "stable",
+        "summary": "Prix observés entre 4100000 et 4100000 MAD."
+      },
+      "roi": {
+        "label": "Élevé",
+        "five_year_upside_score": 76
+      },
+      "project_slug": "villa-haut-standing-c3-a0-ed3163be",
+      "infrastructure": {
+        "sea_distance_km": 3,
+        "station_distance_km": 4,
+        "highway_distance_km": 5
+      },
+      "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
+      "changes": [],
+      "is_new_project": true
+    },
+    "reasons": [
+      "signal listing secondaire",
+      "type: villa",
+      "ville: Tanger",
+      "zone: Achakar",
+      "prix détecté: 9000000 MAD",
+      "prix détecté: 7000000 MAD",
+      "prix détecté: 7500000 MAD",
+      "prix détecté: 12000000 MAD",
+      "ville: Casablanca",
+      "prix détecté: 6250000 MAD"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-05T19:16:36.163907+00:00",
+        "launch_score": 9,
+        "confidence_score": 18,
+        "investment_score": 83,
+        "urgency_score": 27,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      }
+    ],
+    "signals": []
+  },
+  {
     "project_id": "12163b322709e53267c7d5f451d94f9c4f773da7",
     "name": "Appartements %c3%a0 Vendre",
     "city": "Tanger",
@@ -1207,6 +1730,121 @@
     "signals": []
   },
   {
+    "project_id": "0c9d58a64d14057927558a7f5731050f55486f5f",
+    "name": "Appart Oulad Mtaa 100m%c2%b2",
+    "city": "Rabat",
+    "zone": "Hay Riad",
+    "promoter": null,
+    "asset_type": "apartment_2_bed",
+    "first_detected_at": "2026-07-05T16:09:25.967951+00:00",
+    "last_updated_at": "2026-07-05T19:16:55.603962+00:00",
+    "launch_score": 9,
+    "confidence_score": 6,
+    "investment_score": 86,
+    "urgency_score": 23,
+    "recommendation": "Monitor",
+    "status": "monitor",
+    "summary": "Appart Oulad Mtaa 100m%c2%b2 | Promoteur: à confirmer | Ville: Rabat | Zone: Hay Riad | Confirmations: confirmation en cours | Prix observés entre 1550000 et 1550000 MAD.",
+    "prices": {
+      "min": 1550000,
+      "max": 5700000
+    },
+    "aliases": [
+      "Appart Oulad Mtaa 100m%c2%b2",
+      "Appart Oulad mtaa 100m²",
+      "Appartement %c3%a0 Vendre Sur",
+      "Appartement à vendre sur Hay Riad",
+      "Appartement %C3%A0 Vendre Sur Hay Riad",
+      "Appartement %c3%a0 Vendre Hassan"
+    ],
+    "channels": [
+      "listing"
+    ],
+    "sources": [
+      "Mubawab Rabat"
+    ],
+    "source_urls": [
+      "https://www.mubawab.ma/fr/a/8258599/appart-oulad-mtaa-100m%C2%B2",
+      "https://www.mubawab.ma/fr/a/8328284/appartement-%C3%A0-vendre",
+      "https://www.mubawab.ma/fr/a/8331365/appartement-%C3%A0-vendre-sur-hay-riad",
+      "https://www.mubawab.ma/fr/a/8377035/appartement-%C3%A0-vendre-en-hassan-centre-ville-surface-totale-113-m%C2%B2-places-de-stationnement-et-terrasse",
+      "https://www.mubawab.ma/fr/a/8376797/appartement-vue-panoramique",
+      "https://www.mubawab.ma/fr/a/8376320/appartement-de-360m%C2%B2-en-vente-sur-le-haut-agdal",
+      "https://www.mubawab.ma/fr/a/8376289/duplex-renov%C3%A9"
+    ],
+    "evidence": {
+      "signal_count": 7,
+      "primary_signal_count": 0,
+      "listing_signal_count": 7,
+      "source_count": 1,
+      "channel_count": 1,
+      "primary_channels": [],
+      "secondary_channels": [
+        "listing"
+      ],
+      "confirmations": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 33.9701,
+        "lng": -6.8616,
+        "sea_distance_km": 12,
+        "station_distance_km": 6,
+        "highway_distance_km": 4
+      },
+      "price_band": "within_budget",
+      "price_evolution": {
+        "trend": "stable",
+        "summary": "Prix observés entre 1550000 et 1550000 MAD."
+      },
+      "roi": {
+        "label": "Élevé",
+        "five_year_upside_score": 79
+      },
+      "project_slug": "appart-oulad-mtaa-100m-c2-b2-0c9d58a6",
+      "infrastructure": {
+        "sea_distance_km": 12,
+        "station_distance_km": 6,
+        "highway_distance_km": 4
+      },
+      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
+      "changes": [],
+      "is_new_project": false
+    },
+    "reasons": [
+      "signal listing secondaire",
+      "prix détecté: 1550000 MAD",
+      "type: apartment_2_bed",
+      "ville: Rabat",
+      "prix détecté: 2000000 MAD",
+      "type: land_r4_plus",
+      "signal de location, faible priorité",
+      "prix détecté: 4200000 MAD",
+      "type: villa",
+      "zone: Hay Riad"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-05T19:16:55.603962+00:00",
+        "launch_score": 9,
+        "confidence_score": 6,
+        "investment_score": 86,
+        "urgency_score": 23,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-05T16:09:40.680152+00:00",
+        "launch_score": 9,
+        "confidence_score": 6,
+        "investment_score": 70,
+        "urgency_score": 20,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      }
+    ],
+    "signals": []
+  },
+  {
     "project_id": "20a7cea9542342f12484f7863862a5c8bbe282e1",
     "name": "Villa à vendre Val fleuri",
     "city": "Tanger",
@@ -1214,7 +1852,7 @@
     "promoter": null,
     "asset_type": "villa",
     "first_detected_at": "2026-07-05T16:07:26.678725+00:00",
-    "last_updated_at": "2026-07-05T16:07:52.408294+00:00",
+    "last_updated_at": "2026-07-05T19:15:27.002027+00:00",
     "launch_score": 9,
     "confidence_score": 6,
     "investment_score": 83,
@@ -1289,7 +1927,7 @@
       },
       "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -1305,115 +1943,20 @@
     ],
     "timeline": [
       {
-        "observed_at": "2026-07-05T16:07:52.408294+00:00",
+        "observed_at": "2026-07-05T19:15:27.002027+00:00",
         "launch_score": 9,
         "confidence_score": 6,
         "investment_score": 83,
         "urgency_score": 23,
         "status": "monitor",
         "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "0c9d58a64d14057927558a7f5731050f55486f5f",
-    "name": "Appart Oulad Mtaa 100m%c2%b2",
-    "city": "Rabat",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_2_bed",
-    "first_detected_at": "2026-07-05T16:09:25.967951+00:00",
-    "last_updated_at": "2026-07-05T16:09:40.680152+00:00",
-    "launch_score": 9,
-    "confidence_score": 6,
-    "investment_score": 70,
-    "urgency_score": 20,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Appart Oulad Mtaa 100m%c2%b2 | Promoteur: à confirmer | Ville: Rabat | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 1550000 et 1550000 MAD.",
-    "prices": {
-      "min": 1550000,
-      "max": 2900000
-    },
-    "aliases": [
-      "Appart Oulad Mtaa 100m%c2%b2",
-      "Appart Oulad mtaa 100m²",
-      "Appartement %c3%a0 Vendre Hassan",
-      "Appartement à vendre en Hassan Centre Ville. Surface totale...",
-      "Appartement %C3%A0 Vendre En Hassan Centre Ville Surface Totale 113 M%C2%B2 Places De Stationnement Et Terrasse",
-      "Appartement Vue Panoramique"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Rabat"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8258599/appart-oulad-mtaa-100m%C2%B2",
-      "https://www.mubawab.ma/fr/a/8328284/appartement-%C3%A0-vendre",
-      "https://www.mubawab.ma/fr/a/8377035/appartement-%C3%A0-vendre-en-hassan-centre-ville-surface-totale-113-m%C2%B2-places-de-stationnement-et-terrasse",
-      "https://www.mubawab.ma/fr/a/8376797/appartement-vue-panoramique",
-      "https://www.mubawab.ma/fr/a/8376289/duplex-renov%C3%A9"
-    ],
-    "evidence": {
-      "signal_count": 5,
-      "primary_signal_count": 0,
-      "listing_signal_count": 5,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 34.0209,
-        "lng": -6.8416,
-        "sea_distance_km": 7,
-        "station_distance_km": 4,
-        "highway_distance_km": 4
       },
-      "price_band": "within_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 1550000 et 1550000 MAD."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 64
-      },
-      "project_slug": "appart-oulad-mtaa-100m-c2-b2-0c9d58a6",
-      "infrastructure": {
-        "sea_distance_km": 7,
-        "station_distance_km": 4,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "changes": [],
-      "is_new_project": true
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 1550000 MAD",
-      "type: apartment_2_bed",
-      "ville: Rabat",
-      "prix détecté: 2000000 MAD",
-      "type: land_r4_plus",
-      "signal de location, faible priorité",
-      "prix détecté: 2900000 MAD",
-      "prix détecté: 1700000 MAD",
-      "type: apartment_3_bed"
-    ],
-    "timeline": [
       {
-        "observed_at": "2026-07-05T16:09:40.680152+00:00",
+        "observed_at": "2026-07-05T16:07:52.408294+00:00",
         "launch_score": 9,
         "confidence_score": 6,
-        "investment_score": 70,
-        "urgency_score": 20,
+        "investment_score": 83,
+        "urgency_score": 23,
         "status": "monitor",
         "recommendation": "Monitor"
       }
