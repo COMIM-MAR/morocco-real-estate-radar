@@ -7,7 +7,7 @@ Current foundation implemented in this repo:
 - project-level entity resolution and fusion
 - SQLite persistence at `data/intelligence.db`
 - project dossiers with aliases, evidence, channels, URLs, and update history
-- dashboard publishing in `docs/index.html`
+- dashboard publishing in `docs/index.html` with filters, favorites, dossier view, and timeline exploration
 - immediate alerts for high-confidence new project signals plus digest-style updates for meaningful project evolution
 - GitHub Actions workflow using the existing SMTP secrets unchanged
 
