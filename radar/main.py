@@ -8,6 +8,9 @@ from .storage import is_new_and_mark, init_db
 from .notifiers import notify
 
 
+MAX_EMAIL_ITEMS = 5
+
+
 def run() -> list[dict]:
     config = load_config()
     init_db()
@@ -22,13 +25,13 @@ def run() -> list[dict]:
     for op in scored_sorted:
         if op.score < trigger:
             continue
+
+        # Do not send repeated products
         if is_new_and_mark(op.source, op.title, op.url):
             alerts.append(op)
 
-    # If no new alert, still send a diagnostic email with top scored items
-    if not alerts and scored_sorted:
-        print("No new alerts. Sending top 5 scored opportunities for diagnostic.")
-        alerts = scored_sorted[:5]
+        if len(alerts) >= MAX_EMAIL_ITEMS:
+            break
 
     DATA_DIR.mkdir(exist_ok=True)
     latest = DATA_DIR / "latest_alerts.json"
@@ -37,7 +40,11 @@ def run() -> list[dict]:
         encoding="utf-8",
     )
 
-    notify(alerts)
+    if alerts:
+        notify(alerts)
+    else:
+        print("No new high-quality opportunities to notify")
+
     print(f"Collected={len(raw)} Scored={len(scored)} Alerts={len(alerts)}")
     return [a.to_dict() for a in alerts]
 
