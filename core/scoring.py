@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 
+from core.enrichment import enrich_project_intelligence
 from core.models import ProjectRecord, SignalEvent
 
 RENTAL_MARKERS = ["à louer", "a louer", "location", "par mois", "/mois", "mensuel"]
@@ -210,17 +211,20 @@ def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
     else:
         project.status = "monitor"
         project.recommendation = "Monitor"
+    enrich_project_intelligence(project, config)
     project.summary = build_summary(project)
     return project
 
 
 def build_summary(project: ProjectRecord) -> str:
     confirmation_text = ", ".join(project.evidence.get("confirmations", [])[:3]) or "confirmation en cours"
+    price_text = project.evidence.get("price_evolution", {}).get("summary", "prix à confirmer")
     parts = [
         project.name,
         f"Promoteur: {project.promoter or 'à confirmer'}",
         f"Ville: {project.city or 'à confirmer'}",
         f"Zone: {project.zone or 'à confirmer'}",
         f"Confirmations: {confirmation_text}",
+        price_text,
     ]
     return " | ".join(parts)
