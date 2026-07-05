@@ -11,7 +11,8 @@ alerts:
   max_items_per_email: 5
   immediate_confidence_threshold: 90
   digest_confidence_threshold: 70
-  digest_when_no_alerts: false
+  digest_min_change_count: 2
+  digest_when_no_alerts: true
 
 asset_preferences:
   villa: 100

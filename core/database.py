@@ -279,6 +279,10 @@ def load_projects() -> list[ProjectRecord]:
     ]
 
 
+def load_project_map() -> dict[str, ProjectRecord]:
+    return {project.project_id: project for project in load_projects()}
+
+
 def load_project_timeline(project_id: str, limit: int = 20) -> list[dict]:
     with connect() as connection:
         rows = connection.execute(

@@ -26,8 +26,24 @@ def fmt(project):
     )
 
 
-def notify(projects):
-    if not projects:
+def fmt_digest(project):
+    changes = project.evidence.get("changes", [])
+    change_lines = "\n".join(f"- {change}" for change in changes[:8]) or "- Pas de changement détaillé"
+    return (
+        "📬 Évolution projet\n"
+        f"Nom: {project.name}\n"
+        f"Ville: {project.city or 'à confirmer'}\n"
+        f"Promoteur: {project.promoter or 'à confirmer'}\n"
+        f"Confidence Score: {project.confidence_score}/100\n"
+        f"Investment Score: {project.investment_score}/100\n"
+        f"Urgency Score: {project.urgency_score}/100\n"
+        f"Résumé: {project.summary}\n\n"
+        f"Évolutions:\n{change_lines}"
+    )
+
+
+def send_email(subject: str, body: str):
+    if not body.strip():
         print("No email to send")
         return
     host = os.getenv("SMTP_HOST")
@@ -39,11 +55,31 @@ def notify(projects):
         print("Email not configured")
         return
     msg = EmailMessage()
-    msg["Subject"] = f"Real Estate Intelligence: {len(projects)} new project signal(s)"
+    msg["Subject"] = subject
     msg["From"] = frm
     msg["To"] = to
-    msg.set_content("\n\n---\n\n".join(fmt(project) for project in projects))
+    msg.set_content(body)
     with smtplib.SMTP(host, int(os.getenv("SMTP_PORT", "587"))) as smtp:
         smtp.starttls()
         smtp.login(user, pwd)
         smtp.send_message(msg)
+
+
+def notify_immediate(projects):
+    if not projects:
+        print("No immediate email to send")
+        return
+    send_email(
+        f"Real Estate Intelligence: {len(projects)} new project signal(s)",
+        "\n\n---\n\n".join(fmt(project) for project in projects),
+    )
+
+
+def notify_digest(projects):
+    if not projects:
+        print("No digest email to send")
+        return
+    send_email(
+        f"Real Estate Intelligence Digest: {len(projects)} project update(s)",
+        "\n\n---\n\n".join(fmt_digest(project) for project in projects),
+    )

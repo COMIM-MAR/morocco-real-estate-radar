@@ -8,7 +8,7 @@ Current foundation implemented in this repo:
 - SQLite persistence at `data/intelligence.db`
 - project dossiers with aliases, evidence, channels, URLs, and update history
 - dashboard publishing in `docs/index.html`
-- email alerts that trigger only for high-confidence new project signals
+- immediate alerts for high-confidence new project signals plus digest-style updates for meaningful project evolution
 - GitHub Actions workflow using the existing SMTP secrets unchanged
 
 Core flow:
@@ -18,7 +18,7 @@ Core flow:
 4. Enrich project dossiers with aliases, evidence, and observation history
 5. Score projects with launch, confidence, investment, and urgency scores
 6. Persist projects/signals to SQLite and publish the dashboard
-7. Email only the strongest new project opportunities
+7. Email only the strongest new project opportunities and digest-worthy evolutions
 
 Existing SMTP secrets remain unchanged:
 - `SMTP_HOST`
