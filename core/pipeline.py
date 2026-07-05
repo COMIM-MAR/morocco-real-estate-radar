@@ -3,7 +3,7 @@ import json
 from collectors import collect_all
 from .config import DATA_DIR, load_config
 from .dashboard import build
-from .database import existing_project_ids, init_db, upsert_projects
+from .database import existing_project_ids, init_db, load_projects, upsert_projects
 from .entity_resolution import resolve_projects
 from .notifier import notify
 
@@ -16,6 +16,7 @@ def run():
     signals = collect_all(config)
     projects = resolve_projects(signals, config)
     upsert_projects(projects)
+    persisted_projects = load_projects()
     (DATA_DIR / "all_signals.json").write_text(
         json.dumps([signal.to_dict() for signal in signals], ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -24,7 +25,11 @@ def run():
         json.dumps([project.to_dict() for project in projects], ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    build(projects[:100])
+    (DATA_DIR / "knowledge_base.json").write_text(
+        json.dumps([project.to_dict() for project in persisted_projects], ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    build(persisted_projects[:100])
     alerts = []
     for project in projects:
         if project.project_id in known_project_ids:

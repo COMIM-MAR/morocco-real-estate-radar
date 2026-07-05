@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import sqlite3
-from pathlib import Path
 
 from core.config import DATABASE_PATH
 from core.models import ProjectRecord, SignalEvent
@@ -38,7 +37,11 @@ def init_db() -> None:
                 source_count INTEGER NOT NULL,
                 signal_count INTEGER NOT NULL,
                 prices_json TEXT NOT NULL,
+                aliases_json TEXT NOT NULL DEFAULT '[]',
+                channels_json TEXT NOT NULL DEFAULT '[]',
                 sources_json TEXT NOT NULL,
+                source_urls_json TEXT NOT NULL DEFAULT '[]',
+                evidence_json TEXT NOT NULL DEFAULT '{}',
                 reasons_json TEXT NOT NULL
             );
 
@@ -60,8 +63,34 @@ def init_db() -> None:
                 reasons_json TEXT NOT NULL,
                 FOREIGN KEY(project_id) REFERENCES projects(project_id)
             );
+
+            CREATE TABLE IF NOT EXISTS project_updates (
+                update_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                project_id TEXT NOT NULL,
+                observed_at TEXT NOT NULL,
+                launch_score INTEGER NOT NULL,
+                confidence_score INTEGER NOT NULL,
+                investment_score INTEGER NOT NULL,
+                urgency_score INTEGER NOT NULL,
+                source_count INTEGER NOT NULL,
+                signal_count INTEGER NOT NULL,
+                status TEXT NOT NULL,
+                recommendation TEXT NOT NULL,
+                reasons_json TEXT NOT NULL,
+                FOREIGN KEY(project_id) REFERENCES projects(project_id)
+            );
             """
         )
+        ensure_column(connection, "projects", "aliases_json", "TEXT NOT NULL DEFAULT '[]'")
+        ensure_column(connection, "projects", "channels_json", "TEXT NOT NULL DEFAULT '[]'")
+        ensure_column(connection, "projects", "source_urls_json", "TEXT NOT NULL DEFAULT '[]'")
+        ensure_column(connection, "projects", "evidence_json", "TEXT NOT NULL DEFAULT '{}'")
+
+
+def ensure_column(connection: sqlite3.Connection, table: str, column: str, definition: str) -> None:
+    columns = {row["name"] for row in connection.execute(f"PRAGMA table_info({table})").fetchall()}
+    if column not in columns:
+        connection.execute(f"ALTER TABLE {table} ADD COLUMN {column} {definition}")
 
 
 def existing_project_ids() -> set[str]:
@@ -80,8 +109,9 @@ def upsert_projects(projects: list[ProjectRecord]) -> None:
                     first_detected_at, last_updated_at, launch_score,
                     confidence_score, investment_score, urgency_score,
                     recommendation, status, summary, source_count,
-                    signal_count, prices_json, sources_json, reasons_json
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    signal_count, prices_json, aliases_json, channels_json,
+                    sources_json, source_urls_json, evidence_json, reasons_json
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(project_id) DO UPDATE SET
                     name=excluded.name,
                     city=excluded.city,
@@ -99,7 +129,11 @@ def upsert_projects(projects: list[ProjectRecord]) -> None:
                     source_count=excluded.source_count,
                     signal_count=excluded.signal_count,
                     prices_json=excluded.prices_json,
+                    aliases_json=excluded.aliases_json,
+                    channels_json=excluded.channels_json,
                     sources_json=excluded.sources_json,
+                    source_urls_json=excluded.source_urls_json,
+                    evidence_json=excluded.evidence_json,
                     reasons_json=excluded.reasons_json
                 """,
                 (
@@ -121,12 +155,17 @@ def upsert_projects(projects: list[ProjectRecord]) -> None:
                     len(project.sources),
                     len(project.signals),
                     json.dumps(project.prices, ensure_ascii=False),
+                    json.dumps(project.aliases, ensure_ascii=False),
+                    json.dumps(project.channels, ensure_ascii=False),
                     json.dumps(project.sources, ensure_ascii=False),
+                    json.dumps(project.source_urls, ensure_ascii=False),
+                    json.dumps(project.evidence, ensure_ascii=False),
                     json.dumps(project.reasons, ensure_ascii=False),
                 ),
             )
             for signal in project.signals:
                 upsert_signal(connection, project.project_id, signal)
+            insert_project_update(connection, project)
 
 
 def upsert_signal(connection: sqlite3.Connection, project_id: str, signal: SignalEvent) -> None:
@@ -164,6 +203,37 @@ def upsert_signal(connection: sqlite3.Connection, project_id: str, signal: Signa
     )
 
 
+def insert_project_update(connection: sqlite3.Connection, project: ProjectRecord) -> None:
+    existing = connection.execute(
+        "SELECT 1 FROM project_updates WHERE project_id = ? AND observed_at = ? LIMIT 1",
+        (project.project_id, project.last_updated_at),
+    ).fetchone()
+    if existing:
+        return
+    connection.execute(
+        """
+        INSERT INTO project_updates (
+            project_id, observed_at, launch_score, confidence_score,
+            investment_score, urgency_score, source_count, signal_count,
+            status, recommendation, reasons_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        (
+            project.project_id,
+            project.last_updated_at,
+            project.launch_score,
+            project.confidence_score,
+            project.investment_score,
+            project.urgency_score,
+            len(project.sources),
+            len(project.signals),
+            project.status,
+            project.recommendation,
+            json.dumps(project.reasons, ensure_ascii=False),
+        ),
+    )
+
+
 def load_projects() -> list[ProjectRecord]:
     with connect() as connection:
         rows = connection.execute(
@@ -172,7 +242,8 @@ def load_projects() -> list[ProjectRecord]:
                    first_detected_at, last_updated_at, launch_score,
                    confidence_score, investment_score, urgency_score,
                    recommendation, status, summary, prices_json,
-                   sources_json, reasons_json
+                   aliases_json, channels_json, sources_json,
+                   source_urls_json, evidence_json, reasons_json
             FROM projects
             ORDER BY confidence_score DESC, investment_score DESC, last_updated_at DESC
             """
@@ -195,10 +266,41 @@ def load_projects() -> list[ProjectRecord]:
             status=row["status"],
             summary=row["summary"],
             prices=json.loads(row["prices_json"]),
+            aliases=json.loads(row["aliases_json"]),
+            channels=json.loads(row["channels_json"]),
             sources=json.loads(row["sources_json"]),
+            source_urls=json.loads(row["source_urls_json"]),
+            evidence=json.loads(row["evidence_json"]),
             reasons=json.loads(row["reasons_json"]),
+            timeline=load_project_timeline(row["project_id"]),
             signals=[],
         )
         for row in rows
     ]
 
+
+def load_project_timeline(project_id: str, limit: int = 20) -> list[dict]:
+    with connect() as connection:
+        rows = connection.execute(
+            """
+            SELECT observed_at, launch_score, confidence_score, investment_score,
+                   urgency_score, status, recommendation
+            FROM project_updates
+            WHERE project_id = ?
+            ORDER BY observed_at DESC
+            LIMIT ?
+            """,
+            (project_id, limit),
+        ).fetchall()
+    return [
+        {
+            "observed_at": row["observed_at"],
+            "launch_score": row["launch_score"],
+            "confidence_score": row["confidence_score"],
+            "investment_score": row["investment_score"],
+            "urgency_score": row["urgency_score"],
+            "status": row["status"],
+            "recommendation": row["recommendation"],
+        }
+        for row in rows
+    ]

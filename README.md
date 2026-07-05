@@ -6,6 +6,7 @@ Current foundation implemented in this repo:
 - modular collectors under `collectors/` for promoters, Google, Meta Ads, news, social, urbanism, and listings
 - project-level entity resolution and fusion
 - SQLite persistence at `data/intelligence.db`
+- project dossiers with aliases, evidence, channels, URLs, and update history
 - dashboard publishing in `docs/index.html`
 - email alerts that trigger only for high-confidence new project signals
 - GitHub Actions workflow using the existing SMTP secrets unchanged
@@ -14,9 +15,10 @@ Core flow:
 1. Collect raw signals from multiple channels
 2. Enrich each signal with city, zone, promoter, asset type, and price hints
 3. Merge signals into projects
-4. Score projects with launch, confidence, investment, and urgency scores
-5. Persist projects/signals to SQLite and publish the dashboard
-6. Email only the strongest new project opportunities
+4. Enrich project dossiers with aliases, evidence, and observation history
+5. Score projects with launch, confidence, investment, and urgency scores
+6. Persist projects/signals to SQLite and publish the dashboard
+7. Email only the strongest new project opportunities
 
 Existing SMTP secrets remain unchanged:
 - `SMTP_HOST`
@@ -37,6 +39,7 @@ Outputs:
 - `data/intelligence.db`
 - `data/all_signals.json`
 - `data/projects.json`
+- `data/knowledge_base.json`
 - `data/latest_alerts.json`
 - `docs/index.html`
 - `docs/projects.json`

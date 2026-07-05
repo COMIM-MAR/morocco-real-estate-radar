@@ -28,6 +28,7 @@ class SignalEvent:
     zone_hint: str | None = None
     promoter_hint: str | None = None
     asset_type_hint: str | None = None
+    project_name_hint: str | None = None
     price_mad: int | None = None
     signal_id: str = field(init=False)
 
@@ -56,12 +57,16 @@ class ProjectRecord:
     status: str
     summary: str
     prices: dict
+    aliases: list[str]
+    channels: list[str]
     sources: list[str]
+    source_urls: list[str]
+    evidence: dict
     reasons: list[str]
+    timeline: list[dict] = field(default_factory=list)
     signals: list[SignalEvent] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         payload = asdict(self)
         payload["signals"] = [signal.to_dict() for signal in self.signals]
         return payload
-

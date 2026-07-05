@@ -142,6 +142,13 @@ def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
     project.confidence_score = min(100, max(0, confidence_score))
     project.investment_score = min(100, max(0, investment_score))
     project.urgency_score = min(100, max(0, urgency_score))
+    project.evidence = {
+        "signal_count": len(project.signals),
+        "primary_signal_count": len(primary_signals),
+        "listing_signal_count": len(listing_signals),
+        "source_count": len(project.sources),
+        "channel_count": len(project.channels),
+    }
     if project.confidence_score >= config["alerts"]["immediate_confidence_threshold"]:
         project.status = "urgent"
         project.recommendation = "Buy"
@@ -164,4 +171,3 @@ def build_summary(project: ProjectRecord) -> str:
         f"Sources: {', '.join(project.sources[:4])}",
     ]
     return " | ".join(parts)
-

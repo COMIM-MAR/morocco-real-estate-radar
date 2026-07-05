@@ -12,7 +12,7 @@ def build(projects):
         f"<td>{html.escape(project.name)}</td><td>{html.escape(project.city or '')}</td>"
         f"<td>{html.escape(project.promoter or '')}</td><td>{html.escape(project.asset_type or '')}</td>"
         f"<td>{project.prices.get('min') or ''}</td><td>{html.escape(', '.join(project.sources[:4]))}</td>"
-        f"<td>{html.escape(project.status)}</td></tr>"
+        f"<td>{project.evidence.get('signal_count', 0)}</td><td>{html.escape(project.status)}</td></tr>"
         for project in projects
     )
     urgent_cards = "".join(
@@ -23,8 +23,16 @@ def build(projects):
     ) or "<article class='card'><p>Aucun nouveau projet urgent pour le moment.</p></article>"
     timeline = "".join(
         f"<li><strong>{html.escape(project.name)}</strong> · {html.escape(project.last_updated_at[:10])} · "
-        f"{html.escape(', '.join(project.sources[:3]))}</li>"
+        f"{html.escape(project.recommendation)} · {project.evidence.get('source_count', 0)} sources</li>"
         for project in projects[:12]
+    )
+    dossier_cards = "".join(
+        f"<article class='card'><p class='eyebrow'>Knowledge Base</p><h3>{html.escape(project.name)}</h3>"
+        f"<p>{html.escape(', '.join(project.aliases[:3]) or project.name)}</p>"
+        f"<p class='meta'>{project.evidence.get('source_count', 0)} sources · "
+        f"{project.evidence.get('channel_count', 0)} channels · "
+        f"{len(project.timeline)} updates</p></article>"
+        for project in projects[:4]
     )
     page = f"""<!doctype html>
 <html lang='fr'>
@@ -74,6 +82,7 @@ def build(projects):
         <div class='panel'><h3>🔥 Nouveaux projets</h3><p>{len(urgent)} signaux urgents à haute confiance.</p></div>
         <div class='panel'><h3>📍 Carte</h3><p>Fondation prête pour enrichissement GPS, quartiers et mobilité.</p></div>
         <div class='panel'><h3>📅 Timeline</h3><p>Chaque projet conserve première détection et dernières évolutions.</p></div>
+        <div class='panel'><h3>🧠 Knowledge Base</h3><p>Chaque projet devient une fiche enrichie avec alias, sources, historique et signaux.</p></div>
       </div>
     </section>
 
@@ -89,11 +98,16 @@ def build(projects):
       <div class='cards'>{urgent_cards}</div>
     </section>
 
+    <section style='margin-top: 24px;'>
+      <h2>🧠 Project Dossiers</h2>
+      <div class='cards'>{dossier_cards}</div>
+    </section>
+
     <section class='sections' style='margin-top: 24px;'>
       <div class='panel'>
         <h2>📊 Intelligence Projects</h2>
         <table>
-          <tr><th>Confidence</th><th>Investment</th><th>Projet</th><th>Ville</th><th>Promoteur</th><th>Type</th><th>Prix min</th><th>Sources</th><th>Statut</th></tr>
+          <tr><th>Confidence</th><th>Investment</th><th>Projet</th><th>Ville</th><th>Promoteur</th><th>Type</th><th>Prix min</th><th>Sources</th><th>Signals</th><th>Statut</th></tr>
           {rows}
         </table>
       </div>
