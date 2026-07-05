@@ -1,0 +1,89 @@
+profile:
+  name: Souhail Morocco Real Estate Intelligence
+  currency: MAD
+  cash_ready: 1500000
+  max_budget: 3000000
+  max_delivery_months: 36
+  min_target_yield_percent: 7
+  strategy: [rental_4_5_years, future_primary_residence, capital_gain]
+
+alerts:
+  max_items_per_email: 5
+  min_score_immediate: 68
+  digest_when_no_alerts: false
+  suppress_seen_urls: true
+
+asset_preferences:
+  villa: 100
+  land_r4_plus: 95
+  penthouse: 85
+  apartment_3_bed: 75
+  apartment_2_bed: 60
+  studio: 20
+
+cities:
+  tangier:
+    label: Tanger
+    priority: 100
+    zones: [Malabata, Cap Spartel, Iberia, Achakar, California, Nouvelle Gare, Gare Al Boraq, Tanger Ville, Tanja Balia, Tanger Balia, Moujahidine, Ziaten, Mesnana, Gzenaya, Route de Tétouan, Tanger Med, Aouama, Boukhalef]
+  casablanca:
+    label: Casablanca
+    priority: 95
+    zones: [Ain Diab, Anfa, Anfa Supérieur, Casa Finance City, Dar Bouazza, Bouskoura, Californie, Sidi Maarouf, Nouaceur, Tamaris, Tit Mellil, Ain Sebaa, Zenata, Rocade, Casa Sud, Lissasfa, Hay Hassani]
+  rabat:
+    label: Rabat
+    priority: 85
+    zones: [Hay Riad, Souissi, Harhoura, Prestigia, Sala Al Jadida, Tamesna, Temara, Skhirat, Agdal]
+  agadir:
+    label: Agadir
+    priority: 80
+    zones: [Founty, Sonaba, Agadir Bay, Illigh, Taghazout, Aourir, Hay Mohammadi, Cité Suisse, Dakhla, Tikiouine, Anza]
+  marrakech:
+    label: Marrakech
+    priority: 70
+    zones: [Hivernage, Gueliz, Prestigia, Palmeraie, Route de Casablanca, Route d’Ourika, Agdal, Targa, Mhamid]
+
+promoters:
+  national:
+    - Al Omrane
+    - CGI
+    - Addoha
+    - Alliances
+    - Chaabi Lil Iskane
+    - Espaces Saada
+    - Prestigia
+    - Yamed
+    - Mfadel
+    - Eagle Hills Morocco
+    - Palmeraie Développement
+    - Perla Immobilier
+    - Groupe Jamaï
+    - Onapar
+    - Ametys
+    - Saham Immobilier
+    - KLK Living
+    - Kettani Immobilier
+    - Miftah Immobilier
+    - TGCC Immobilier
+    - Résidences Dar Saada
+    - Palm Immobilier
+
+sources:
+  promoters:
+    - {name: Al Omrane, url: "https://www.alomrane.gov.ma/"}
+    - {name: CGI, url: "https://www.cgi.ma/"}
+    - {name: Alliances, url: "https://www.alliances.co.ma/"}
+    - {name: Chaabi Lil Iskane, url: "https://www.liliskane.com/"}
+  listings:
+    - {name: Mubawab Tanger Appartements, url: "https://www.mubawab.ma/fr/st/tanger/appartements-a-vendre"}
+    - {name: Mubawab Tanger Villas, url: "https://www.mubawab.ma/fr/st/tanger/villas-et-maisons-de-luxe-a-vendre"}
+    - {name: Mubawab Casablanca Appartements, url: "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre"}
+    - {name: Mubawab Casablanca Villas, url: "https://www.mubawab.ma/fr/st/casablanca/villas-et-maisons-de-luxe-a-vendre"}
+    - {name: Mubawab Rabat, url: "https://www.mubawab.ma/fr/st/rabat/appartements-a-vendre"}
+    - {name: Mubawab Agadir, url: "https://www.mubawab.ma/fr/st/agadir/appartements-a-vendre"}
+  meta_ad_library_searches:
+    - "lancement immobilier Tanger"
+    - "pré-commercialisation Tanger"
+    - "nouveau projet immobilier Casablanca"
+    - "résidence neuve Maroc"
+    - "lotissement villa Tanger"
