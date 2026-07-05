@@ -83,6 +83,56 @@ class EntityResolutionTests(unittest.TestCase):
         self.assertIn("project_discovery", project.channels)
         self.assertGreaterEqual(project.evidence["signal_count"], 3)
         self.assertGreaterEqual(project.confidence_score, 60)
+        self.assertGreaterEqual(project.evidence["confirmation_count"], 1)
+        self.assertTrue(any("page promoteur" in reason or "publicité Meta" in reason for reason in project.reasons))
+
+    def test_rewards_multi_source_confirmation(self):
+        signals = [
+            SignalEvent(
+                collector="promoters.websites",
+                channel="project_discovery",
+                source="CGI",
+                signal_type="promoter_page",
+                title="Résidence Horizon Tanger",
+                url="https://cgi.example/projet/horizon",
+                text="Nouveau projet résidence Horizon Tanja Balia CGI",
+                is_primary=True,
+                launch_weight=25,
+                confidence_weight=24,
+                metadata={"promoter_hint": "CGI"},
+            ),
+            SignalEvent(
+                collector="google.search",
+                channel="google_discovery",
+                source="Google Search",
+                signal_type="search_result",
+                title="Résidence Horizon - CGI Tanger",
+                url="https://search.example/horizon",
+                text="Résidence Horizon CGI Tanger",
+                is_primary=True,
+                launch_weight=18,
+                confidence_weight=20,
+                metadata={"promoter_hint": "CGI"},
+            ),
+            SignalEvent(
+                collector="urbanism.watch",
+                channel="urbanism",
+                source="Agence Urbaine de Tanger",
+                signal_type="urbanism_page",
+                title="Permis résidence Horizon Tanja Balia",
+                url="https://urban.example/horizon",
+                text="Permis lotissement résidence Horizon Tanger",
+                is_primary=True,
+                launch_weight=20,
+                confidence_weight=16,
+            ),
+        ]
+
+        project = resolve_projects(signals, TEST_CONFIG)[0]
+
+        self.assertGreaterEqual(project.evidence["confirmation_count"], 2)
+        self.assertIn("google_discovery", project.evidence["primary_channels"])
+        self.assertGreaterEqual(project.confidence_score, 80)
 
 
 if __name__ == "__main__":

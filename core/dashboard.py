@@ -12,13 +12,13 @@ def build(projects):
         f"<td>{html.escape(project.name)}</td><td>{html.escape(project.city or '')}</td>"
         f"<td>{html.escape(project.promoter or '')}</td><td>{html.escape(project.asset_type or '')}</td>"
         f"<td>{project.prices.get('min') or ''}</td><td>{html.escape(', '.join(project.sources[:4]))}</td>"
-        f"<td>{project.evidence.get('signal_count', 0)}</td><td>{html.escape(project.status)}</td></tr>"
+        f"<td>{project.evidence.get('confirmation_count', 0)}</td><td>{project.evidence.get('signal_count', 0)}</td><td>{html.escape(project.status)}</td></tr>"
         for project in projects
     )
     urgent_cards = "".join(
         f"<article class='card'><p class='eyebrow'>🔥 Nouveau projet</p><h3>{html.escape(project.name)}</h3>"
         f"<p>{html.escape(project.summary)}</p><p class='meta'>Confidence {project.confidence_score}/100 · "
-        f"Investment {project.investment_score}/100</p></article>"
+        f"Investment {project.investment_score}/100 · {project.evidence.get('confirmation_count', 0)} confirmations</p></article>"
         for project in urgent
     ) or "<article class='card'><p>Aucun nouveau projet urgent pour le moment.</p></article>"
     timeline = "".join(
@@ -31,7 +31,14 @@ def build(projects):
         f"<p>{html.escape(', '.join(project.aliases[:3]) or project.name)}</p>"
         f"<p class='meta'>{project.evidence.get('source_count', 0)} sources · "
         f"{project.evidence.get('channel_count', 0)} channels · "
-        f"{len(project.timeline)} updates</p></article>"
+        f"{len(project.timeline)} updates · "
+        f"{project.evidence.get('confirmation_count', 0)} confirmations</p></article>"
+        for project in projects[:4]
+    )
+    confirmation_cards = "".join(
+        f"<article class='card'><p class='eyebrow'>Confidence Engine</p><h3>{html.escape(project.name)}</h3>"
+        f"<p>{html.escape(', '.join(project.evidence.get('confirmations', [])[:3]) or 'Aucune confirmation forte')}</p>"
+        f"<p class='meta'>{html.escape(', '.join(project.evidence.get('primary_channels', [])) or 'n/a')}</p></article>"
         for project in projects[:4]
     )
     page = f"""<!doctype html>
@@ -103,11 +110,16 @@ def build(projects):
       <div class='cards'>{dossier_cards}</div>
     </section>
 
+    <section style='margin-top: 24px;'>
+      <h2>🔗 Confirmations</h2>
+      <div class='cards'>{confirmation_cards}</div>
+    </section>
+
     <section class='sections' style='margin-top: 24px;'>
       <div class='panel'>
         <h2>📊 Intelligence Projects</h2>
         <table>
-          <tr><th>Confidence</th><th>Investment</th><th>Projet</th><th>Ville</th><th>Promoteur</th><th>Type</th><th>Prix min</th><th>Sources</th><th>Signals</th><th>Statut</th></tr>
+          <tr><th>Confidence</th><th>Investment</th><th>Projet</th><th>Ville</th><th>Promoteur</th><th>Type</th><th>Prix min</th><th>Sources</th><th>Conf.</th><th>Signals</th><th>Statut</th></tr>
           {rows}
         </table>
       </div>

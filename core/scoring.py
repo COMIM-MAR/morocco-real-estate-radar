@@ -85,6 +85,42 @@ def detect_promoter(text: str, config: dict) -> str | None:
     return None
 
 
+def channel_label(channel: str) -> str:
+    labels = {
+        "project_discovery": "page promoteur",
+        "advertising": "publicité Meta",
+        "google_discovery": "indexation Google",
+        "urbanism": "document urbanisme",
+        "news": "presse",
+        "social": "social",
+        "listing": "listing",
+    }
+    return labels.get(channel, channel)
+
+
+def confirmation_matrix(project: ProjectRecord) -> dict:
+    primary_channels = sorted({signal.channel for signal in project.signals if signal.is_primary})
+    secondary_channels = sorted({signal.channel for signal in project.signals if not signal.is_primary})
+    strong_pairs = [
+        ("project_discovery", "advertising"),
+        ("project_discovery", "google_discovery"),
+        ("project_discovery", "urbanism"),
+        ("advertising", "google_discovery"),
+        ("urbanism", "google_discovery"),
+        ("news", "project_discovery"),
+    ]
+    confirmations = []
+    channel_set = set(primary_channels)
+    for left, right in strong_pairs:
+        if left in channel_set and right in channel_set:
+            confirmations.append(f"{channel_label(left)} + {channel_label(right)}")
+    return {
+        "primary_channels": primary_channels,
+        "secondary_channels": secondary_channels,
+        "confirmations": confirmations,
+    }
+
+
 def enrich_signal(signal: SignalEvent, config: dict) -> SignalEvent:
     text = f"{signal.title} {signal.text}".lower()
     signal.price_mad = detect_price(text)
@@ -121,8 +157,12 @@ def enrich_signal(signal: SignalEvent, config: dict) -> SignalEvent:
 def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
     primary_signals = [signal for signal in project.signals if signal.is_primary]
     listing_signals = [signal for signal in project.signals if signal.channel == "listing"]
-    launch_score = sum(signal.launch_weight for signal in primary_signals) + min(len(listing_signals) * 3, 9)
-    confidence_score = sum(signal.confidence_weight for signal in primary_signals) + min(len(project.sources) * 6, 24)
+    matrix = confirmation_matrix(project)
+    confirmation_bonus = min(len(matrix["confirmations"]) * 14, 35)
+    primary_bonus = min(len(matrix["primary_channels"]) * 6, 24)
+    listing_bonus = min(len(listing_signals) * 3, 9)
+    launch_score = sum(signal.launch_weight for signal in primary_signals) + listing_bonus + round(confirmation_bonus * 0.6)
+    confidence_score = sum(signal.confidence_weight for signal in primary_signals) + min(len(project.sources) * 6, 24) + confirmation_bonus + primary_bonus
     investment_score = 0
     if project.city:
         city_config = next(
@@ -154,7 +194,13 @@ def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
         "listing_signal_count": len(listing_signals),
         "source_count": len(project.sources),
         "channel_count": len(project.channels),
+        "primary_channels": matrix["primary_channels"],
+        "secondary_channels": matrix["secondary_channels"],
+        "confirmations": matrix["confirmations"],
+        "confirmation_count": len(matrix["confirmations"]),
     }
+    if matrix["confirmations"]:
+        project.reasons = matrix["confirmations"][:4] + project.reasons
     if project.confidence_score >= config["alerts"]["immediate_confidence_threshold"]:
         project.status = "urgent"
         project.recommendation = "Buy"
@@ -169,11 +215,12 @@ def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
 
 
 def build_summary(project: ProjectRecord) -> str:
+    confirmation_text = ", ".join(project.evidence.get("confirmations", [])[:3]) or "confirmation en cours"
     parts = [
         project.name,
         f"Promoteur: {project.promoter or 'à confirmer'}",
         f"Ville: {project.city or 'à confirmer'}",
         f"Zone: {project.zone or 'à confirmer'}",
-        f"Sources: {', '.join(project.sources[:4])}",
+        f"Confirmations: {confirmation_text}",
     ]
     return " | ".join(parts)

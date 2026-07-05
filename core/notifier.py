@@ -5,6 +5,8 @@ def fmt(project):
     reasons = "\n".join(f"- {reason}" for reason in project.reasons[:8])
     prices = project.prices.get("min") or "non détecté"
     sources = ", ".join(project.sources[:6])
+    confirmations = "\n".join(f"✅ {item}" for item in project.evidence.get("confirmations", [])[:5]) or "✅ Première détection à confirmer"
+    roi_hint = "Élevé" if project.investment_score >= 75 else "Moyen" if project.investment_score >= 55 else "À qualifier"
     return (
         "🔥 Nouveau projet détecté\n"
         f"Nom: {project.name}\n"
@@ -16,8 +18,10 @@ def fmt(project):
         f"Confidence Score: {project.confidence_score}/100\n"
         f"Investment Score: {project.investment_score}/100\n"
         f"Urgency Score: {project.urgency_score}/100\n"
+        f"ROI Hint: {roi_hint}\n"
         f"Sources: {sources}\n"
         f"Résumé: {project.summary}\n\n"
+        f"Détecté grâce à:\n{confirmations}\n\n"
         f"Pourquoi c'est intéressant:\n{reasons}"
     )
 
