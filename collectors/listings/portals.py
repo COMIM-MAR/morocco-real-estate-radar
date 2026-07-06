@@ -1,12 +1,16 @@
 from __future__ import annotations
 
+import os
+
 from collectors.common import clean, collect_detail_pages, fetch
 from core.models import SignalEvent
+
+LISTING_SOURCE_LIMIT = int(os.getenv("LISTING_SOURCE_LIMIT", "4"))
 
 
 def collect(config: dict) -> list[SignalEvent]:
     signals: list[SignalEvent] = []
-    for source in config.get("sources", {}).get("listings", []):
+    for source in config.get("sources", {}).get("listings", [])[:LISTING_SOURCE_LIMIT]:
         try:
             links = collect_detail_pages(source["url"])
         except Exception as error:
@@ -37,4 +41,3 @@ def collect(config: dict) -> list[SignalEvent]:
                 )
             )
     return signals
-

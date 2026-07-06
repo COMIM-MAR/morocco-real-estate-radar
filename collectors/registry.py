@@ -20,6 +20,8 @@ def collect_all(config: dict):
         collect_urbanism,
         collect_listings,
     ):
-        signals.extend(collector(config))
+        try:
+            signals.extend(collector(config))
+        except Exception as error:
+            print(f"WARN collector failed: {collector.__name__} => {error}")
     return signals
-

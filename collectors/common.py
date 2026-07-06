@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import re
 from urllib.parse import urljoin, urlparse
 
@@ -8,6 +9,10 @@ from bs4 import BeautifulSoup
 
 HEADERS = {"User-Agent": "Mozilla/5.0 MoroccoRealEstateIntelligence/4.0"}
 DETAIL_MARKERS = ("/a/", "/pa/", "/projet/", "/projets/", "/residence/", "/programmes/")
+CONNECT_TIMEOUT_SECONDS = float(os.getenv("COLLECTOR_CONNECT_TIMEOUT_SECONDS", "5"))
+READ_TIMEOUT_SECONDS = float(os.getenv("COLLECTOR_READ_TIMEOUT_SECONDS", "8"))
+DETAIL_PAGE_LIMIT = int(os.getenv("COLLECTOR_DETAIL_PAGE_LIMIT", "12"))
+MAX_RESPONSE_BYTES = int(os.getenv("COLLECTOR_MAX_RESPONSE_BYTES", "400000"))
 
 
 def clean(text: str | None) -> str:
@@ -23,9 +28,25 @@ def domain(url: str) -> str:
 
 
 def fetch(url: str) -> tuple[BeautifulSoup, str]:
-    response = requests.get(url, headers=HEADERS, timeout=20)
+    response = requests.get(
+        url,
+        headers=HEADERS,
+        stream=True,
+        timeout=(CONNECT_TIMEOUT_SECONDS, READ_TIMEOUT_SECONDS),
+    )
     response.raise_for_status()
-    soup = BeautifulSoup(response.text, "lxml")
+    chunks: list[bytes] = []
+    total_bytes = 0
+    for chunk in response.iter_content(chunk_size=16384):
+        if not chunk:
+            continue
+        chunks.append(chunk)
+        total_bytes += len(chunk)
+        if total_bytes >= MAX_RESPONSE_BYTES:
+            break
+    response.close()
+    html = b"".join(chunks).decode(response.encoding or "utf-8", errors="ignore")
+    soup = BeautifulSoup(html, "lxml")
     for tag in soup(["script", "style", "svg", "noscript"]):
         tag.decompose()
     parts: list[str] = []
@@ -51,7 +72,7 @@ def keyword_hits(text: str, keywords: list[str]) -> list[str]:
     return [keyword for keyword in keywords if keyword.lower() in lowered]
 
 
-def collect_detail_pages(source_url: str, max_links: int = 80) -> list[tuple[str, str]]:
+def collect_detail_pages(source_url: str, max_links: int = DETAIL_PAGE_LIMIT) -> list[tuple[str, str]]:
     soup, page_text = fetch(source_url)
     links: list[tuple[str, str]] = []
     if detail_like(source_url):

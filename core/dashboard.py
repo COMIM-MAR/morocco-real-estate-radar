@@ -5,6 +5,43 @@ from pathlib import Path
 from .config import DOCS_DIR
 
 
+ALL_STATUSES = [
+    ("urgent", "Signal très fort avec niveau de confiance élevé."),
+    ("watch", "Projet crédible à surveiller activement."),
+    ("monitor", "Projet faible ou encore trop tôt à qualifier."),
+]
+
+STATUS_LABELS = {
+    "urgent": "Urgent",
+    "watch": "À surveiller",
+    "monitor": "En observation",
+}
+
+ALL_ASSET_TYPES = [
+    ("villa", "Villa"),
+    ("land_r4_plus", "Terrain / Immeuble R+4+"),
+    ("penthouse", "Penthouse"),
+    ("apartment_3_bed", "Appartement 3 chambres"),
+    ("apartment_2_bed", "Appartement 2 chambres"),
+    ("studio", "Studio"),
+    ("apartment_unknown", "Appartement"),
+]
+
+KPI_EXPLANATIONS = {
+    "projects": "Nombre total de projets actuellement présents dans la base affichée.",
+    "urgent": "Nombre de projets dépassant le seuil de confiance immédiat.",
+    "watch": "Nombre de projets crédibles mais encore à surveiller.",
+    "sources": "Total des sources distinctes fusionnées dans les projets visibles.",
+    "signals": "Total des signaux bruts utilisés pour construire les projets visibles.",
+    "launch": "Score de lancement = poids des signaux primaires + bonus listings + bonus confirmations. Plus il monte, plus le projet ressemble à un vrai lancement commercial.",
+    "confidence": "Score de confiance = poids de crédibilité des signaux primaires + bonus diversité de sources + bonus confirmations multi-canaux + bonus canaux primaires.",
+    "investment": "Score investissement = priorité de la ville + bonus zone + bonus type d'actif + ajustement selon budget/prix détecté.",
+    "roi": "ROI 5 ans = estimation simplifiée dérivée du score investissement, légèrement renforcée si la confiance est élevée.",
+    "confirmations": "Nombre de confirmations fortes entre plusieurs canaux indépendants.",
+    "timeline": "Historique des runs où le projet a été observé et mis à jour. Chaque ligne correspond à un passage du moteur de veille.",
+}
+
+
 def esc(value):
     return html.escape(str(value or ""))
 
@@ -21,90 +58,258 @@ def build(projects):
     (projects_dir / "index.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+def tooltip(label: str, text: str) -> str:
+    return (
+        f"{esc(label)}"
+        f"<span class='tip' tabindex='0' data-tip='{esc(text)}'>i</span>"
+    )
+
+
+def status_display(status: str | None) -> str:
+    return STATUS_LABELS.get(status or "", status or "À confirmer")
+
+
+def source_list(items) -> str:
+    if not items:
+        return "<li>Aucune source disponible dans cette catégorie.</li>"
+    return "".join(
+        f"<li><strong>{esc(item.get('kind_label'))}</strong> · {esc(item.get('label'))}<br>"
+        f"<span>{esc(item.get('description'))}</span><br>"
+        f"<span>Niveau: {esc('preuve directe' if item.get('proof_level') == 'direct' else 'veille / indice')}</span><br>"
+        f"<a href='{esc(item.get('url'))}' target='_blank' rel='noreferrer'>ouvrir la source</a></li>"
+        for item in items
+    )
+
+
+def value_or_na(value):
+    return "n/a" if value in (None, "") else value
+
+
+def confirmation_list(items) -> str:
+    if not items:
+        return "<li>Aucune confirmation forte.</li>"
+    blocks = []
+    for item in items:
+        proofs = item.get("proofs", [])
+        proofs_html = "".join(
+            f"<li><strong>{esc(proof.get('channel_label'))}</strong> · {esc(proof.get('title'))}<br>"
+            f"<span>{esc(proof.get('proof_note'))}</span><br>"
+            f"<a href='{esc(proof.get('url'))}' target='_blank' rel='noreferrer'>ouvrir la preuve</a></li>"
+            for proof in proofs
+        ) or "<li>Aucune preuve attachée.</li>"
+        blocks.append(
+            f"<li><strong>{esc(item.get('label'))}</strong><br>"
+            f"<span>Preuves attachées :</span>"
+            f"<ul class='list' style='margin-top:8px;'>{proofs_html}</ul></li>"
+        )
+    return "".join(blocks)
+
+
 def write_project_page(project, projects_dir: Path):
     slug = project.evidence.get("project_slug", project.project_id)
     infra = project.evidence.get("infrastructure", {})
     roi = project.evidence.get("roi", {})
     evolution = project.evidence.get("price_evolution", {})
-    confirmations = "".join(f"<li>{esc(item)}</li>" for item in project.evidence.get("confirmations", [])[:8]) or "<li>Aucune confirmation forte.</li>"
+    practical = project.evidence.get("practical", {})
+    ai_analysis = project.evidence.get("ai_analysis", {})
+    geo = project.evidence.get("geo", {})
+    confirmations = confirmation_list(project.evidence.get("confirmation_details", [])[:8])
     changes = "".join(f"<li>{esc(item)}</li>" for item in project.evidence.get("changes", [])[:8]) or "<li>Aucune évolution récente.</li>"
     timeline = "".join(
-        f"<li><strong>{esc(item.get('observed_at') or item.get('detected_at'))}</strong><br>{esc(item.get('title') or item.get('status') or item.get('recommendation'))}</li>"
+        f"<li><strong>{esc(item.get('observed_at') or item.get('detected_at'))}</strong><br>"
+        f"<span>{esc(item.get('title') or status_display(item.get('status')) or item.get('recommendation'))}</span><br>"
+        f"<span>Launch {esc(item.get('launch_score'))} · Confidence {esc(item.get('confidence_score'))} · Investment {esc(item.get('investment_score'))}</span></li>"
         for item in project.timeline[:10]
     ) or "<li>Aucune timeline.</li>"
-    sources = "".join(f"<li><a href='{esc(url)}' target='_blank' rel='noreferrer'>{esc(url)}</a></li>" for url in project.source_urls[:12]) or "<li>Aucune URL.</li>"
+    official_sources = source_list(project.evidence.get("official_links", []))
+    social_sources = source_list(project.evidence.get("social_links", []))
+    listing_sources = source_list(project.evidence.get("listing_links", []))
+    news_sources = source_list(project.evidence.get("news_links", []))
+    urbanism_sources = source_list(project.evidence.get("urbanism_links", []))
+    images = project.evidence.get("images", [])
+    image_block = "".join(
+        f"<img src='{esc(url)}' alt='image projet' class='gallery-image'>"
+        for url in images[:6]
+    ) or "<p class='muted'>Aucune image exploitable n'a été détectée automatiquement pour le moment.</p>"
     page = f"""<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{esc(project.name)} · Morocco Real Estate Intelligence</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
   <style>
-    body {{ margin:0; font-family: Georgia, "Times New Roman", serif; background:#f7f0e5; color:#1d2935; }}
-    main {{ max-width: 1080px; margin: 0 auto; padding: 28px 18px 56px; display:grid; gap:18px; }}
-    .panel {{ background:#fffaf2; border:1px solid #e5d7c0; border-radius:22px; padding:20px; }}
-    .grid {{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }}
-    .score {{ font-size:30px; color:#ad5c18; }}
-    .pill {{ display:inline-block; padding:6px 10px; border-radius:999px; background:#f3eadb; border:1px solid #e5d7c0; margin:4px 8px 0 0; }}
-    ul {{ margin:0; padding-left:18px; color:#5c6876; }}
-    a {{ color:#ad5c18; }}
-    p {{ color:#5c6876; }}
+    :root {{
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --panel-soft: #fafbfc;
+      --line: #e5e7eb;
+      --ink: #111827;
+      --muted: #6b7280;
+      --accent: #c05621;
+      --radius: 18px;
+    }}
+    * {{ box-sizing: border-box; }}
+    body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
+    main {{ max-width: 980px; margin: 0 auto; padding: 20px 16px 48px; display: grid; gap: 16px; }}
+    .panel {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }}
+    .grid, .facts, .metrics {{ display: grid; gap: 12px; }}
+    .metrics {{ grid-template-columns: repeat(4, 1fr); }}
+    .facts {{ grid-template-columns: 1fr 1fr; }}
+    .metric, .fact-box {{ border: 1px solid var(--line); border-radius: 14px; background: var(--panel-soft); padding: 14px; }}
+    .metric strong {{ display: block; font-size: 28px; color: var(--accent); margin-top: 4px; }}
+    .label {{ font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }}
+    .muted, p, li {{ color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }}
+    .pill {{ display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: #f3f4f6; border: 1px solid var(--line); color: var(--muted); margin: 4px 8px 0 0; font-size: 13px; }}
+    .tip {{
+      display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px;
+      margin-left: 6px; border-radius: 999px; border: 1px solid var(--line); font-size: 11px; color: var(--muted); cursor: help; position: relative;
+    }}
+    .tip:hover::after, .tip:focus::after {{
+      content: attr(data-tip); position: absolute; left: 50%; top: calc(100% + 8px); transform: translateX(-50%);
+      width: 260px; padding: 10px 12px; background: #111827; color: #fff; border-radius: 10px; font-size: 12px; line-height: 1.4; white-space: normal; z-index: 10;
+    }}
+    .tip:hover::before, .tip:focus::before {{
+      content: ""; position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+      border: 6px solid transparent; border-bottom-color: #111827;
+    }}
+    .list {{ list-style: none; padding: 0; margin: 12px 0 0 0; display: grid; gap: 8px; }}
+    .list li {{ padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }}
+    .map-wrap {{ display: grid; gap: 10px; }}
+    #projectMap {{ width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }}
+    .gallery {{ display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }}
+    .gallery-image {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }}
+    a {{ color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }}
+    a:hover {{ text-decoration: underline; }}
+    @media (max-width: 860px) {{ .metrics, .facts {{ grid-template-columns: 1fr 1fr; }} }}
+    @media (max-width: 640px) {{ .metrics, .facts {{ grid-template-columns: 1fr; }} }}
   </style>
 </head>
 <body>
   <main>
     <section class="panel">
-      <p><a href="../index.html">← Retour dashboard</a></p>
-      <h1>{esc(project.name)}</h1>
-      <p>{esc(project.summary)}</p>
-      <div>
-        <span class="pill">{esc(project.status)}</span>
+      <p class="label"><a href="../index.html">Retour à la recherche</a></p>
+      <h1 style="margin-top:8px;">{esc(project.name)}</h1>
+      <p style="margin-top:8px;">{esc(project.summary)}</p>
+      <div style="margin-top:12px;">
+        <span class="pill">{esc(status_display(project.status))}</span>
         <span class="pill">{esc(project.city or "Ville à confirmer")}</span>
         <span class="pill">{esc(project.promoter or "Promoteur à confirmer")}</span>
-        <span class="pill">{esc(project.asset_type or "Type à confirmer")}</span>
+        <span class="pill">{esc(practical.get("asset_label"))}</span>
       </div>
     </section>
-    <section class="grid">
-      <div class="panel"><div class="score">{project.launch_score}</div><p>Launch</p></div>
-      <div class="panel"><div class="score">{project.confidence_score}</div><p>Confidence</p></div>
-      <div class="panel"><div class="score">{project.investment_score}</div><p>Investment</p></div>
-      <div class="panel"><div class="score">{project.urgency_score}</div><p>Urgency</p></div>
+
+    <section class="metrics">
+      <div class="metric"><span class="label">{tooltip("Launch", KPI_EXPLANATIONS["launch"])}</span><strong>{project.launch_score}</strong></div>
+      <div class="metric"><span class="label">{tooltip("Confidence", KPI_EXPLANATIONS["confidence"])}</span><strong>{project.confidence_score}</strong></div>
+      <div class="metric"><span class="label">{tooltip("Investment", KPI_EXPLANATIONS["investment"])}</span><strong>{project.investment_score}</strong></div>
+      <div class="metric"><span class="label">{tooltip("ROI 5 ans", KPI_EXPLANATIONS["roi"])}</span><strong>{esc(roi.get("five_year_upside_score"))}</strong></div>
     </section>
-    <section class="grid">
-      <div class="panel">
-        <h3>Carte & mobilité</h3>
-        <ul>
-          <li>Latitude: {esc(project.evidence.get("geo", {}).get("lat"))}</li>
-          <li>Longitude: {esc(project.evidence.get("geo", {}).get("lng"))}</li>
-          <li>Distance mer: {esc(infra.get("sea_distance_km"))} km</li>
-          <li>Distance gare: {esc(infra.get("station_distance_km"))} km</li>
-          <li>Distance autoroute: {esc(infra.get("highway_distance_km"))} km</li>
+
+    <section class="facts">
+      <div class="fact-box">
+        <h3>Décision rapide</h3>
+        <p style="margin-top:10px;">{esc(ai_analysis.get("summary") or project.evidence.get("recommendation_narrative"))}</p>
+        <ul class="list">
+          <li>Statut: {esc(status_display(project.status))}</li>
+          <li>Type détecté: {esc(practical.get("asset_label"))}</li>
+          <li>Disponibilité: {esc(practical.get("public_status"))}</li>
+          <li>Prix min: {esc(value_or_na(practical.get("price_min")))} MAD</li>
+          <li>Prix max: {esc(value_or_na(practical.get("price_max")))} MAD</li>
+          <li>Évolution prix: {esc(evolution.get("summary"))}</li>
         </ul>
       </div>
-      <div class="panel">
-        <h3>Marché</h3>
-        <ul>
-          <li>Prix min: {esc(project.prices.get("min"))} MAD</li>
-          <li>Prix max: {esc(project.prices.get("max"))} MAD</li>
-          <li>Bande prix: {esc(project.evidence.get("price_band"))}</li>
-          <li>Évolution: {esc(evolution.get("summary"))}</li>
-          <li>ROI 5 ans: {esc(roi.get("label"))} · {esc(roi.get("five_year_upside_score"))}/100</li>
+      <div class="fact-box">
+        <h3>Analyse AI</h3>
+        <ul class="list">
+          <li><strong>Pourquoi c'est intéressant</strong><br>{esc(" / ".join(ai_analysis.get("strengths", [])) or "Pas assez de signaux différenciants pour conclure fortement.")}</li>
+          <li><strong>Points de vigilance</strong><br>{esc(" / ".join(ai_analysis.get("risks", [])) or "Aucun risque majeur détecté automatiquement.")}</li>
+          <li><strong>Actions conseillées</strong><br>{esc(" / ".join(ai_analysis.get("next_steps", [])))}</li>
         </ul>
       </div>
-      <div class="panel">
-        <h3>Recommandation</h3>
-        <p>{esc(project.evidence.get("recommendation_narrative"))}</p>
+    </section>
+
+    <section class="panel map-wrap">
+      <h3>Localisation pratique</h3>
+      <p class="muted">La carte interactive sert à situer rapidement le projet. Les distances mer / gare / autoroute sont des estimations de proximité.</p>
+      <div id="projectMap"></div>
+      <ul class="list">
+        <li>Zone: {esc(project.zone or "à confirmer")}</li>
+        <li>Mer: {esc(infra.get("sea_distance_km"))} km · Gare: {esc(infra.get("station_distance_km"))} km · Autoroute: {esc(infra.get("highway_distance_km"))} km</li>
+      </ul>
+    </section>
+
+    <section class="facts">
+      <div class="fact-box">
+        <h3>{tooltip("Confirmations", KPI_EXPLANATIONS["confirmations"])}</h3>
+        <ul class="list">{confirmations}</ul>
+      </div>
+      <div class="fact-box">
+        <h3>Évolutions récentes</h3>
+        <ul class="list">{changes}</ul>
       </div>
     </section>
-    <section class="grid">
-      <div class="panel"><h3>Confirmations</h3><ul>{confirmations}</ul></div>
-      <div class="panel"><h3>Changements</h3><ul>{changes}</ul></div>
+
+    <section class="panel">
+      <h3>{tooltip("Timeline", KPI_EXPLANATIONS["timeline"])}</h3>
+      <p class="muted">La timeline correspond aux différents runs du moteur où ce projet a été observé ou mis à jour.</p>
+      <ul class="list">{timeline}</ul>
     </section>
-    <section class="grid">
-      <div class="panel"><h3>Timeline</h3><ul>{timeline}</ul></div>
-      <div class="panel"><h3>Sources</h3><ul>{sources}</ul></div>
+
+    <section class="facts">
+      <div class="fact-box">
+        <h3>Site officiel / sources promoteur</h3>
+        <ul class="list">{official_sources}</ul>
+      </div>
+      <div class="fact-box">
+        <h3>Réseaux / publicité</h3>
+        <ul class="list">{social_sources}</ul>
+      </div>
+    </section>
+
+    <section class="facts">
+      <div class="fact-box">
+        <h3>Portails / disponibilités</h3>
+        <ul class="list">{listing_sources}</ul>
+      </div>
+      <div class="fact-box">
+        <h3>Presse / urbanisme</h3>
+        <ul class="list">{news_sources}{urbanism_sources}</ul>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Images détectées</h3>
+      <div class="gallery" style="margin-top:12px;">{image_block}</div>
     </section>
   </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script>
+    (function() {{
+      const lat = {json.dumps(geo.get("lat"))};
+      const lng = {json.dumps(geo.get("lng"))};
+      if (!window.L || typeof lat !== "number" || typeof lng !== "number") {{
+        document.getElementById("projectMap").innerHTML = "<div style='padding:16px;color:#6b7280;'>Carte indisponible pour ce projet.</div>";
+        return;
+      }}
+      const map = L.map("projectMap", {{ scrollWheelZoom: false }}).setView([lat, lng], 12);
+      L.tileLayer("https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png", {{
+        maxZoom: 19,
+        attribution: "&copy; OpenStreetMap"
+      }}).addTo(map);
+      L.marker([lat, lng]).addTo(map).bindPopup({json.dumps(project.name, ensure_ascii=False)});
+    }})();
+  </script>
 </body>
 </html>"""
     (projects_dir / f"{slug}.html").write_text(page, encoding="utf-8")
@@ -115,106 +320,197 @@ def write_index(projects, payload):
     watch_count = len([project for project in projects if project.status == "watch"])
     source_count = sum(len(project.sources) for project in projects)
     signal_count = sum(project.evidence.get("signal_count", len(project.signals)) for project in projects)
+    status_help = " · ".join(f"{status_display(name)}: {desc}" for name, desc in ALL_STATUSES)
+    type_help = " · ".join(f"{label}" for _, label in ALL_ASSET_TYPES)
     page = f"""<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Morocco Real Estate Intelligence</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
   <style>
     :root {{
-      --bg: #f2eadb; --paper: rgba(255,250,242,.9); --card: #fff8ef; --ink:#1d2935; --muted:#5c6876; --line:#e6d9c5; --accent:#ad5c18; --ok:#17633d; --warn:#8f4d1f; --pill:#f4ecdd; --shadow:0 18px 45px rgba(35,43,56,.08);
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --panel-soft: #fafbfc;
+      --line: #e5e7eb;
+      --ink: #111827;
+      --muted: #6b7280;
+      --accent: #c05621;
+      --urgent: #fff1ec;
+      --watch: #fff8e7;
+      --monitor: #edf7f0;
+      --radius: 18px;
     }}
-    * {{ box-sizing:border-box; }}
-    body {{ margin:0; font-family: Georgia, "Times New Roman", serif; color:var(--ink); background: radial-gradient(circle at top left, rgba(255,255,255,.75), transparent 35%), linear-gradient(180deg, #f8f2e9 0%, #f0e4d1 100%); }}
-    main {{ max-width:1380px; margin:0 auto; padding:28px 18px 56px; }}
-    h1,h2,h3,h4,p {{ margin:0; }}
-    button,input,select {{ font:inherit; }}
-    .hero,.panel {{ border:1px solid var(--line); border-radius:24px; background:var(--paper); box-shadow:var(--shadow); }}
-    .hero {{ padding:28px; display:grid; gap:20px; }}
-    .eyebrow {{ color:var(--accent); text-transform:uppercase; letter-spacing:.08em; font-size:12px; }}
-    .hero-grid,.stats,.project-grid,.mini-grid {{ display:grid; gap:16px; }}
-    .hero-grid {{ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }}
-    .stats {{ grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin-top:8px; }}
-    .panel {{ padding:20px; }}
-    .stat-value {{ font-size:34px; color:var(--accent); }}
-    .layout {{ display:grid; grid-template-columns:minmax(0,1.35fr) minmax(340px,.9fr); gap:18px; margin-top:22px; align-items:start; }}
-    .toolbar {{ display:grid; grid-template-columns:1.6fr repeat(4,minmax(120px,1fr)) auto; gap:12px; margin-top:16px; }}
-    .field,.toggle {{ border:1px solid var(--line); background:#fffdf8; border-radius:16px; padding:12px 14px; color:var(--ink); width:100%; }}
-    .toggle {{ cursor:pointer; }}
-    .project-grid {{ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top:18px; }}
-    .project-card {{ border:1px solid var(--line); background:var(--card); border-radius:22px; padding:18px; box-shadow:var(--shadow); display:grid; gap:12px; cursor:pointer; transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease; }}
-    .project-card:hover {{ transform:translateY(-2px); border-color:#d7bf9b; }}
-    .project-card.active {{ border-color:var(--accent); box-shadow:0 18px 40px rgba(173,92,24,.18); }}
-    .project-card.favorite {{ background: linear-gradient(180deg,#fff9f1 0%,#fff1db 100%); }}
-    .card-head,.detail-head,.pill-row {{ display:flex; gap:10px; justify-content:space-between; align-items:start; }}
-    .pill-row {{ flex-wrap:wrap; justify-content:flex-start; }}
-    .pill {{ display:inline-flex; align-items:center; gap:6px; background:var(--pill); border:1px solid var(--line); border-radius:999px; padding:6px 10px; color:var(--muted); font-size:13px; }}
-    .status-urgent {{ color:#7a2200; background:#ffe3d4; }} .status-watch {{ color:var(--warn); background:#fff0d3; }} .status-monitor {{ color:var(--ok); background:#e7f5ec; }}
-    .meta,.muted {{ color:var(--muted); font-size:14px; }}
-    .score-grid {{ display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; }}
-    .score-box {{ border:1px solid var(--line); border-radius:18px; padding:12px; background:#fffdf8; }}
-    .score-box strong {{ display:block; color:var(--accent); font-size:26px; }}
-    .mini-grid {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
-    .list,.timeline {{ list-style:none; padding:0; margin:0; display:grid; gap:10px; }}
-    .list li,.timeline li {{ border:1px solid var(--line); border-radius:16px; background:#fffdf8; padding:12px 14px; }}
-    .detail-empty {{ min-height:520px; display:grid; place-items:center; text-align:center; color:var(--muted); }}
-    .summary {{ line-height:1.5; color:var(--muted); }}
-    .section-stack {{ display:grid; gap:18px; }} .footer-note {{ margin-top:14px; color:var(--muted); font-size:13px; }}
-    @media (max-width:1120px) {{ .layout {{ grid-template-columns:1fr; }} .toolbar {{ grid-template-columns:1fr 1fr; }} }}
-    @media (max-width:720px) {{ .toolbar {{ grid-template-columns:1fr; }} .score-grid,.mini-grid {{ grid-template-columns:1fr 1fr; }} .project-grid {{ grid-template-columns:1fr; }} }}
+    * {{ box-sizing: border-box; }}
+    body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
+    main {{ max-width: 1320px; margin: 0 auto; padding: 24px 16px 40px; }}
+    h1, h2, h3, h4, p {{ margin: 0; }}
+    input, select, button {{ font: inherit; }}
+    .hero, .panel, .metric, .project-card {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }}
+    .hero {{ padding: 24px; }}
+    .hero-top {{ display: flex; justify-content: space-between; gap: 20px; align-items: end; flex-wrap: wrap; }}
+    .label {{ font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }}
+    .muted, .helper {{ color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }}
+    .tip {{
+      display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px;
+      margin-left: 6px; border-radius: 999px; border: 1px solid var(--line); font-size: 11px; color: var(--muted); cursor: help; position: relative;
+    }}
+    .tip:hover::after, .tip:focus::after {{
+      content: attr(data-tip); position: absolute; left: 50%; top: calc(100% + 8px); transform: translateX(-50%);
+      width: 260px; padding: 10px 12px; background: #111827; color: #fff; border-radius: 10px; font-size: 12px; line-height: 1.4; white-space: normal; z-index: 10;
+    }}
+    .tip:hover::before, .tip:focus::before {{
+      content: ""; position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+      border: 6px solid transparent; border-bottom-color: #111827;
+    }}
+    .stats {{ display: grid; gap: 12px; grid-template-columns: repeat(5, 1fr); margin-top: 18px; }}
+    .metric {{ padding: 16px; background: var(--panel-soft); }}
+    .metric strong {{ display: block; font-size: 30px; color: var(--accent); margin-top: 4px; }}
+    .overview {{ display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; margin-top: 18px; }}
+    .panel {{ padding: 18px; }}
+    .layout {{ display: grid; gap: 18px; margin-top: 18px; }}
+    .toolbar {{ display: grid; grid-template-columns: 1.8fr repeat(3, minmax(130px, 1fr)) minmax(140px, 1fr) auto; gap: 10px; margin-top: 16px; }}
+    .field, .toggle {{
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 10px 12px;
+      background: #fff;
+      color: var(--ink);
+    }}
+    .toggle {{ cursor: pointer; background: var(--panel-soft); }}
+    .project-grid {{ display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 16px; }}
+    .project-card {{ padding: 16px; display: grid; gap: 10px; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }}
+    .project-card:hover {{ transform: translateY(-1px); border-color: #d1d5db; box-shadow: 0 8px 24px rgba(17,24,39,.06); }}
+    .project-card.favorite {{ outline: 2px solid #f7d9c7; }}
+    .card-top {{ display: flex; justify-content: space-between; gap: 12px; align-items: start; }}
+    .card-title {{ font-size: 18px; font-weight: 700; }}
+    .pill-row {{ display: flex; flex-wrap: wrap; gap: 8px; }}
+    .pill {{
+      display: inline-flex; align-items: center; padding: 5px 10px; border-radius: 999px;
+      background: #f3f4f6; color: var(--muted); font-size: 12px; border: 1px solid var(--line);
+    }}
+    .pill.urgent {{ background: var(--urgent); color: #9a3412; }}
+    .pill.watch {{ background: var(--watch); color: #a16207; }}
+    .pill.monitor {{ background: var(--monitor); color: #166534; }}
+    .scores {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }}
+    .score {{ border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); padding: 10px; }}
+    .score span {{ display: block; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }}
+    .score strong {{ display: block; font-size: 20px; margin-top: 4px; color: var(--ink); }}
+    .map-panel {{ min-height: 420px; }}
+    #overviewMap {{ width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; margin-top: 12px; }}
+    .list {{ list-style: none; padding: 0; margin: 12px 0 0 0; display: grid; gap: 8px; }}
+    .list li {{ color: var(--muted); padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }}
+    .recent-list li {{ display: flex; justify-content: space-between; gap: 12px; align-items: start; }}
+    .card-actions {{ display: flex; gap: 8px; flex-wrap: wrap; }}
+    .link-btn {{
+      display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px;
+      border-radius: 12px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none; font-weight: 600;
+    }}
+    .link-btn.primary {{ background: var(--ink); color: #fff; border-color: var(--ink); }}
+    a {{ color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }}
+    a:hover {{ text-decoration: underline; }}
+    @media (max-width: 1180px) {{ .overview {{ grid-template-columns: 1fr; }} }}
+    @media (max-width: 840px) {{
+      .stats {{ grid-template-columns: 1fr 1fr; }}
+      .toolbar {{ grid-template-columns: 1fr 1fr; }}
+    }}
+    @media (max-width: 640px) {{
+      .stats, .toolbar, .scores {{ grid-template-columns: 1fr; }}
+      .project-grid {{ grid-template-columns: 1fr; }}
+    }}
   </style>
 </head>
 <body>
   <main>
     <section class="hero">
-      <div><p class="eyebrow">Morocco Real Estate Intelligence Engine</p><h1>Explorer les projets, pas les annonces.</h1><p class="summary">Le dashboard devient une surface d'exploration avec enrichissement géo, détails projet dédiés, favoris locaux et intelligence marché.</p></div>
-      <div class="hero-grid">
-        <div class="panel"><h3>🔥 Nouveaux projets</h3><p class="meta">{urgent_count} projets urgents à haute confiance.</p></div>
-        <div class="panel"><h3>📍 Geo hints</h3><p class="meta">Coordonnées et distances infrastructures estimées pour chaque dossier.</p></div>
-        <div class="panel"><h3>📈 Price evolution</h3><p class="meta">Résumé d'évolution prix et bande budget par projet.</p></div>
-        <div class="panel"><h3>🔎 Recherche</h3><p class="meta">Recherche texte, ville, statut, type d'actif et favoris uniquement.</p></div>
+      <div class="hero-top">
+        <div>
+          <p class="label">Morocco Real Estate Intelligence</p>
+          <h1 style="margin-top:6px;">Recherche projets & KPIs</h1>
+          <p style="margin-top:8px; max-width:760px;">Cette page sert à explorer les projets disponibles, voir les KPI globaux, la couverture géographique et ouvrir une fiche projet séparée.</p>
+        </div>
+        <div class="pill">Page index / recherche</div>
       </div>
       <div class="stats">
-        <div class="panel"><div class="stat-value">{len(projects)}</div><p class="meta">Projets suivis</p></div>
-        <div class="panel"><div class="stat-value">{source_count}</div><p class="meta">Sources fusionnées</p></div>
-        <div class="panel"><div class="stat-value">{signal_count}</div><p class="meta">Signaux totalisés</p></div>
-        <div class="panel"><div class="stat-value">{watch_count}</div><p class="meta">À surveiller</p></div>
+        <div class="metric"><span class="label">{tooltip("Projets", KPI_EXPLANATIONS["projects"])}</span><strong>{len(projects)}</strong></div>
+        <div class="metric"><span class="label">{tooltip("Urgents", KPI_EXPLANATIONS["urgent"])}</span><strong>{urgent_count}</strong></div>
+        <div class="metric"><span class="label">{tooltip("À surveiller", KPI_EXPLANATIONS["watch"])}</span><strong>{watch_count}</strong></div>
+        <div class="metric"><span class="label">{tooltip("Sources", KPI_EXPLANATIONS["sources"])}</span><strong>{source_count}</strong></div>
+        <div class="metric"><span class="label">{tooltip("Signaux", KPI_EXPLANATIONS["signals"])}</span><strong>{signal_count}</strong></div>
       </div>
     </section>
-    <section class="layout">
-      <div class="section-stack">
-        <section class="panel">
-          <div class="card-head"><div><p class="eyebrow">Intelligence Browser</p><h2>Catalogue projets</h2></div><div class="pill">Top 100 projets synchronisés</div></div>
-          <div class="toolbar">
-            <input id="searchInput" class="field" placeholder="Rechercher un projet, un promoteur, une zone..." />
-            <select id="cityFilter" class="field"><option value="">Toutes les villes</option></select>
-            <select id="statusFilter" class="field"><option value="">Tous les statuts</option></select>
-            <select id="assetFilter" class="field"><option value="">Tous les types</option></select>
-            <select id="sortFilter" class="field">
-              <option value="confidence">Trier par confidence</option>
-              <option value="investment">Trier par investment</option>
-              <option value="updated">Trier par date</option>
-              <option value="confirmations">Trier par confirmations</option>
-            </select>
-            <button id="favoritesOnly" class="toggle" type="button">Afficher favoris</button>
-          </div>
-          <div id="projectCount" class="footer-note"></div>
-          <div id="projectGrid" class="project-grid"></div>
-        </section>
+
+    <section class="overview">
+      <section class="panel map-panel">
+        <p class="label">Carte</p>
+        <h2 style="margin-top:4px;">Couverture des projets</h2>
+        <p class="helper">Carte interactive des villes visibles dans les résultats filtrés. Clique un marqueur pour voir le nombre de projets dans la ville.</p>
+        <div id="overviewMap"></div>
+      </section>
+
+      <section class="panel">
+        <p class="label">Repères</p>
+        <h2 style="margin-top:4px;">Aide de lecture</h2>
+        <ul class="list">
+          <li><strong>Statuts possibles</strong><br>{esc(status_help)}</li>
+          <li><strong>Types possibles</strong><br>{esc(type_help)}</li>
+          <li><strong>Launch</strong><br>{esc(KPI_EXPLANATIONS["launch"])}</li>
+          <li><strong>Confidence</strong><br>{esc(KPI_EXPLANATIONS["confidence"])}</li>
+          <li><strong>Investment</strong><br>{esc(KPI_EXPLANATIONS["investment"])}</li>
+          <li><strong>Timeline</strong><br>{esc(KPI_EXPLANATIONS["timeline"])}</li>
+        </ul>
+        <p class="helper" style="margin-top:12px;">Tu peux aussi survoler les petits “i” à côté des KPI pour voir leur explication.</p>
+      </section>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <p class="label">Recherche</p>
+      <h2 style="margin-top:4px;">Projets disponibles</h2>
+      <p class="helper">Filtre la liste, puis ouvre le projet sur sa page complète. Ici on n’affiche pas la fiche détaillée pour garder une page de recherche simple.</p>
+      <div class="toolbar">
+        <input id="searchInput" class="field" placeholder="Recherche: projet, promoteur, zone..." />
+        <select id="cityFilter" class="field"><option value="">Toutes les villes</option></select>
+        <select id="statusFilter" class="field"><option value="">Tous les statuts</option></select>
+        <select id="assetFilter" class="field"><option value="">Tous les types</option></select>
+        <select id="sortFilter" class="field">
+          <option value="confidence">Trier: confidence</option>
+          <option value="investment">Trier: investment</option>
+          <option value="updated">Trier: date</option>
+          <option value="confirmations">Trier: confirmations</option>
+        </select>
+        <button id="favoritesOnly" class="toggle" type="button">Favoris uniquement</button>
       </div>
-      <aside class="section-stack">
-        <section id="detailPanel" class="panel detail-empty"><div><p class="eyebrow">Project Dossier</p><h2>Sélectionne un projet</h2><p class="summary">Le panneau de droite affiche le dossier complet, les enrichissements géo/marché, les liens sources et la timeline d'évolution.</p></div></section>
-      </aside>
+      <div id="projectCount" class="helper"></div>
+      <div id="projectGrid" class="project-grid"></div>
+    </section>
+
+    <section class="panel" style="margin-top:18px;">
+      <p class="label">Récents</p>
+      <h2 style="margin-top:4px;">Derniers projets visibles</h2>
+      <ul id="recentProjects" class="list recent-list"></ul>
     </section>
   </main>
+
   <script id="project-data" type="application/json">{json.dumps(payload, ensure_ascii=False)}</script>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
   <script>
     const projects = JSON.parse(document.getElementById("project-data").textContent);
     const favoriteKey = "morocco-real-estate-intelligence:favorites";
     const favoriteIds = new Set(JSON.parse(localStorage.getItem(favoriteKey) || "[]"));
     const projectGrid = document.getElementById("projectGrid");
-    const detailPanel = document.getElementById("detailPanel");
     const projectCount = document.getElementById("projectCount");
     const searchInput = document.getElementById("searchInput");
     const cityFilter = document.getElementById("cityFilter");
@@ -222,15 +518,55 @@ def write_index(projects, payload):
     const assetFilter = document.getElementById("assetFilter");
     const sortFilter = document.getElementById("sortFilter");
     const favoritesOnly = document.getElementById("favoritesOnly");
-    let selectedId = projects[0] ? projects[0].project_id : null;
+    const recentProjects = document.getElementById("recentProjects");
     let onlyFavorites = false;
-    function uniqueValues(field) {{ return [...new Set(projects.map(project => project[field]).filter(Boolean))].sort((left, right) => left.localeCompare(right)); }}
-    function populateSelect(select, values) {{ values.forEach(value => {{ const option = document.createElement("option"); option.value = value; option.textContent = value; select.appendChild(option); }}); }}
-    populateSelect(cityFilter, uniqueValues("city")); populateSelect(statusFilter, uniqueValues("status")); populateSelect(assetFilter, uniqueValues("asset_type"));
-    function saveFavorites() {{ localStorage.setItem(favoriteKey, JSON.stringify([...favoriteIds])); }}
+    let overviewMap = null;
+    let mapLayer = null;
+
+    const allStatuses = {json.dumps([{"value": name, "label": status_display(name)} for name, _ in ALL_STATUSES], ensure_ascii=False)};
+    const allAssetTypes = {json.dumps([{"value": name, "label": label} for name, label in ALL_ASSET_TYPES], ensure_ascii=False)};
+
+    function uniqueValues(field) {{
+      return [...new Set(projects.map(project => project[field]).filter(Boolean))].sort((left, right) => left.localeCompare(right));
+    }}
+
+    function populateSelect(select, values) {{
+      values.forEach(value => {{
+        const option = document.createElement("option");
+        if (typeof value === "string") {{
+          option.value = value;
+          option.textContent = value;
+        }} else {{
+          option.value = value.value;
+          option.textContent = value.label;
+        }}
+        select.appendChild(option);
+      }});
+    }}
+
+    populateSelect(cityFilter, uniqueValues("city"));
+    populateSelect(statusFilter, allStatuses);
+    populateSelect(assetFilter, allAssetTypes);
+
+    function saveFavorites() {{
+      localStorage.setItem(favoriteKey, JSON.stringify([...favoriteIds]));
+    }}
+
+    function escapeHtml(value) {{
+      return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+    }}
+
     function projectMatches(project) {{
       const query = searchInput.value.trim().toLowerCase();
-      const haystack = [project.name, project.promoter, project.city, project.zone, project.asset_type, ...(project.aliases || []), ...(project.sources || [])].filter(Boolean).join(" ").toLowerCase();
+      const haystack = [
+        project.name,
+        project.promoter,
+        project.city,
+        project.zone,
+        project.asset_type,
+        ...(project.aliases || []),
+        ...(project.sources || []),
+      ].filter(Boolean).join(" ").toLowerCase();
       if (query && !haystack.includes(query)) return false;
       if (cityFilter.value && project.city !== cityFilter.value) return false;
       if (statusFilter.value && project.status !== statusFilter.value) return false;
@@ -238,6 +574,7 @@ def write_index(projects, payload):
       if (onlyFavorites && !favoriteIds.has(project.project_id)) return false;
       return true;
     }}
+
     function sortProjects(list) {{
       const sorted = [...list];
       const mode = sortFilter.value;
@@ -249,123 +586,139 @@ def write_index(projects, payload):
       }});
       return sorted;
     }}
-    function escapeHtml(value) {{ return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"); }}
+
+    function buildCityStats(list) {{
+      const map = new Map();
+      list.forEach(project => {{
+        const city = project.city || "À confirmer";
+        if (!map.has(city)) {{
+          map.set(city, {{
+            name: city,
+            count: 0,
+            lat: project.evidence?.geo?.lat,
+            lng: project.evidence?.geo?.lng,
+          }});
+        }}
+        map.get(city).count += 1;
+      }});
+      return [...map.values()].filter(city => typeof city.lat === "number" && typeof city.lng === "number");
+    }}
+
+    function ensureMap() {{
+      if (!window.L) {{
+        document.getElementById("overviewMap").innerHTML = "<div style='padding:16px;color:#6b7280;'>Carte interactive indisponible ici.</div>";
+        return null;
+      }}
+      if (overviewMap) return overviewMap;
+      overviewMap = L.map("overviewMap", {{ scrollWheelZoom: false }}).setView([31.8, -7.2], 5.5);
+      L.tileLayer("https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png", {{
+        maxZoom: 19,
+        attribution: "&copy; OpenStreetMap"
+      }}).addTo(overviewMap);
+      mapLayer = L.layerGroup().addTo(overviewMap);
+      return overviewMap;
+    }}
+
+    function renderMap(filtered) {{
+      const map = ensureMap();
+      if (!map || !mapLayer) return;
+      mapLayer.clearLayers();
+      const cities = buildCityStats(filtered);
+      if (!cities.length) return;
+      const bounds = [];
+      cities.forEach(city => {{
+        const marker = L.circleMarker([city.lat, city.lng], {{
+          radius: Math.max(8, Math.min(18, 6 + city.count * 2)),
+          color: "#c05621",
+          fillColor: "#f7d9c7",
+          fillOpacity: 0.8,
+          weight: 2,
+        }}).addTo(mapLayer);
+        marker.bindPopup(`<strong>${{escapeHtml(city.name)}}</strong><br>${{city.count}} projet(s)`);
+        bounds.push([city.lat, city.lng]);
+      }});
+      if (bounds.length === 1) map.setView(bounds[0], 8);
+      else map.fitBounds(bounds, {{ padding: [20, 20] }});
+    }}
+
     function renderProjectCard(project) {{
       const favorite = favoriteIds.has(project.project_id);
+      const slug = project.evidence.project_slug || project.project_id;
+      const statusClass = project.status === "urgent" ? "urgent" : project.status === "watch" ? "watch" : "monitor";
       const card = document.createElement("article");
-      card.className = "project-card" + (selectedId === project.project_id ? " active" : "") + (favorite ? " favorite" : "");
-      const confirmations = (project.evidence.confirmations || []).slice(0, 2).join(", ") || "Confirmation en cours";
-      const geo = project.evidence.geo || {{}};
+      card.className = "project-card" + (favorite ? " favorite" : "");
       card.innerHTML = `
-        <div class="card-head">
-          <div><p class="eyebrow">${{favorite ? "Favori" : "Projet"}}</p><h3>${{escapeHtml(project.name)}}</h3></div>
-          <button class="toggle" type="button" data-action="favorite">${{favorite ? "★" : "☆"}}</button>
+        <div class="card-top">
+          <div>
+            <div class="card-title">${{escapeHtml(project.name)}}</div>
+            <div class="muted" style="margin-top:4px;">${{escapeHtml(project.promoter || "Promoteur à confirmer")}}</div>
+          </div>
+          <button class="toggle" type="button" data-action="favorite" style="width:auto; min-height:auto; padding:8px 10px;">${{favorite ? "★" : "☆"}}</button>
         </div>
         <div class="pill-row">
-          <span class="pill status-${{project.status}}">${{escapeHtml(project.status)}}</span>
+          <span class="pill ${{statusClass}}">${{escapeHtml(({json.dumps(STATUS_LABELS, ensure_ascii=False)})[project.status] || project.status)}}</span>
           <span class="pill">${{escapeHtml(project.city || "Ville à confirmer")}}</span>
-          <span class="pill">${{escapeHtml(project.asset_type || "Type à confirmer")}}</span>
+          <span class="pill">${{escapeHtml((project.evidence.practical || {{}}).asset_label || project.asset_type || "Type à confirmer")}}</span>
         </div>
-        <p class="summary">${{escapeHtml(project.summary)}}</p>
-        <div class="score-grid">
-          <div class="score-box"><span class="meta">Confidence</span><strong>${{project.confidence_score}}</strong></div>
-          <div class="score-box"><span class="meta">Investment</span><strong>${{project.investment_score}}</strong></div>
-          <div class="score-box"><span class="meta">ROI</span><strong>${{(project.evidence.roi || {{}}).five_year_upside_score || "n/a"}}</strong></div>
-          <div class="score-box"><span class="meta">Conf.</span><strong>${{project.evidence.confirmation_count || 0}}</strong></div>
+        <p class="muted">${{escapeHtml((project.evidence.ai_analysis || {{}}).summary || project.evidence.recommendation_narrative || project.summary)}}</p>
+        <div class="scores">
+          <div class="score"><span>Confidence</span><strong>${{project.confidence_score}}</strong></div>
+          <div class="score"><span>Investment</span><strong>${{project.investment_score}}</strong></div>
+          <div class="score"><span>Confirm.</span><strong>${{project.evidence.confirmation_count || 0}}</strong></div>
+          <div class="score"><span>ROI 5 ans</span><strong>${{(project.evidence.roi || {{}}).five_year_upside_score || "n/a"}}</strong></div>
         </div>
-        <p class="meta">${{escapeHtml(confirmations)}}</p>
-        <p class="meta">Mer ~ ${{escapeHtml((project.evidence.infrastructure || {{}}).sea_distance_km || "n/a")}} km · Gare ~ ${{escapeHtml((project.evidence.infrastructure || {{}}).station_distance_km || "n/a")}} km</p>
+        <div class="card-actions">
+          <a class="link-btn primary" href="projects/${{escapeHtml(slug)}}.html">Ouvrir le projet</a>
+          <a class="link-btn" href="projects/${{escapeHtml(slug)}}.html" target="_blank" rel="noreferrer">Nouvel onglet</a>
+        </div>
       `;
-      card.addEventListener("click", (event) => {{ if (event.target.dataset.action === "favorite") return; selectedId = project.project_id; render(); }});
-      card.querySelector("[data-action='favorite']").addEventListener("click", (event) => {{ event.stopPropagation(); if (favoriteIds.has(project.project_id)) favoriteIds.delete(project.project_id); else favoriteIds.add(project.project_id); saveFavorites(); render(); }});
+      card.querySelector("[data-action='favorite']").addEventListener("click", (event) => {{
+        event.preventDefault();
+        event.stopPropagation();
+        if (favoriteIds.has(project.project_id)) favoriteIds.delete(project.project_id);
+        else favoriteIds.add(project.project_id);
+        saveFavorites();
+        render();
+      }});
       return card;
     }}
-    function renderDetail(project) {{
-      if (!project) {{
-        detailPanel.className = "panel detail-empty";
-        detailPanel.innerHTML = `<div><p class="eyebrow">Project Dossier</p><h2>Aucun projet visible</h2><p class="summary">Ajuste les filtres ou désactive le mode favoris pour revoir des projets.</p></div>`;
-        return;
-      }}
-      const favorite = favoriteIds.has(project.project_id);
-      const timeline = (project.timeline || []).slice(0, 8).map(item => `<li><strong>${{escapeHtml(item.observed_at || item.detected_at || "")}}</strong><br><span class="meta">${{escapeHtml(item.status || item.channel || "")}}</span><br><span>${{escapeHtml(item.title || item.recommendation || "")}}</span></li>`).join("");
-      const sourceLinks = (project.source_urls || []).slice(0, 8).map(url => `<li><a href="${{escapeHtml(url)}}" target="_blank" rel="noreferrer">${{escapeHtml(url)}}</a></li>`).join("");
-      const reasons = (project.reasons || []).slice(0, 8).map(reason => `<li>${{escapeHtml(reason)}}</li>`).join("");
-      const changes = (project.evidence.changes || []).slice(0, 8).map(change => `<li>${{escapeHtml(change)}}</li>`).join("") || "<li>Aucune évolution notable sur ce run.</li>";
-      const confirmations = (project.evidence.confirmations || []).slice(0, 8).map(item => `<li>${{escapeHtml(item)}}</li>`).join("") || "<li>Aucune confirmation forte.</li>";
-      const infra = project.evidence.infrastructure || {{}};
-      const geo = project.evidence.geo || {{}};
-      const roi = project.evidence.roi || {{}};
-      const pageSlug = project.evidence.project_slug || project.project_id;
-      detailPanel.className = "section-stack";
-      detailPanel.innerHTML = `
-        <section class="panel">
-          <div class="detail-head">
+
+    function renderRecent(filtered) {{
+      const recent = [...filtered].sort((a, b) => String(b.last_updated_at).localeCompare(String(a.last_updated_at))).slice(0, 6);
+      recentProjects.innerHTML = recent.map(project => {{
+        const slug = project.evidence.project_slug || project.project_id;
+        return `
+          <li>
             <div>
-              <p class="eyebrow">Project Dossier</p>
-              <h2>${{escapeHtml(project.name)}}</h2>
-              <p class="summary">${{escapeHtml(project.summary)}}</p>
+              <strong>${{escapeHtml(project.name)}}</strong><br>
+              <span class="muted">${{escapeHtml(project.city || "Ville à confirmer")}} · ${{escapeHtml(project.promoter || "Promoteur à confirmer")}}</span>
             </div>
-            <div class="pill-row">
-              <button id="detailFavorite" class="toggle" type="button">${{favorite ? "Retirer favori" : "Ajouter favori"}}</button>
-              <a class="toggle" href="projects/${{escapeHtml(pageSlug)}}.html" target="_blank" rel="noreferrer">Ouvrir la fiche</a>
-            </div>
-          </div>
-          <div class="pill-row" style="margin-top: 14px;">
-            <span class="pill status-${{project.status}}">${{escapeHtml(project.status)}}</span>
-            <span class="pill">${{escapeHtml(project.city || "Ville à confirmer")}}</span>
-            <span class="pill">${{escapeHtml(project.promoter || "Promoteur à confirmer")}}</span>
-            <span class="pill">${{escapeHtml(project.asset_type || "Type à confirmer")}}</span>
-          </div>
-          <div class="score-grid" style="margin-top: 16px;">
-            <div class="score-box"><span class="meta">Launch</span><strong>${{project.launch_score}}</strong></div>
-            <div class="score-box"><span class="meta">Confidence</span><strong>${{project.confidence_score}}</strong></div>
-            <div class="score-box"><span class="meta">Investment</span><strong>${{project.investment_score}}</strong></div>
-            <div class="score-box"><span class="meta">ROI 5y</span><strong>${{roi.five_year_upside_score || "n/a"}}</strong></div>
-          </div>
-          <div class="mini-grid" style="margin-top: 16px;">
-            <div class="panel">
-              <h4>Fiche</h4>
-              <ul class="list" style="margin-top: 10px;">
-                <li>Aliases: ${{escapeHtml((project.aliases || []).join(", ") || "n/a")}}</li>
-                <li>Prix min: ${{escapeHtml(project.prices.min || "n/a")}}</li>
-                <li>Prix max: ${{escapeHtml(project.prices.max || "n/a")}}</li>
-                <li>Première détection: ${{escapeHtml(project.first_detected_at)}}</li>
-                <li>Dernière mise à jour: ${{escapeHtml(project.last_updated_at)}}</li>
-              </ul>
-            </div>
-            <div class="panel">
-              <h4>Geo & infra</h4>
-              <ul class="list" style="margin-top: 10px;">
-                <li>Latitude: ${{escapeHtml(geo.lat || "n/a")}}</li>
-                <li>Longitude: ${{escapeHtml(geo.lng || "n/a")}}</li>
-                <li>Mer: ${{escapeHtml(infra.sea_distance_km || "n/a")}} km</li>
-                <li>Gare: ${{escapeHtml(infra.station_distance_km || "n/a")}} km</li>
-                <li>Autoroute: ${{escapeHtml(infra.highway_distance_km || "n/a")}} km</li>
-              </ul>
-            </div>
-          </div>
-          <div class="mini-grid" style="margin-top: 16px;">
-            <div class="panel"><h4>Market</h4><ul class="list" style="margin-top: 10px;"><li>Price band: ${{escapeHtml(project.evidence.price_band || "n/a")}}</li><li>${{escapeHtml((project.evidence.price_evolution || {{}}).summary || "n/a")}}</li><li>ROI hint: ${{escapeHtml(roi.label || "n/a")}}</li></ul></div>
-            <div class="panel"><h4>Recommendation</h4><p class="summary">${{escapeHtml(project.evidence.recommendation_narrative || "n/a")}}</p></div>
-          </div>
-        </section>
-        <section class="panel"><p class="eyebrow">Confirmations</p><h3>Pourquoi ce projet monte</h3><ul class="list" style="margin-top: 12px;">${{confirmations}}</ul></section>
-        <section class="panel"><p class="eyebrow">Evolution</p><h3>Changements récents</h3><ul class="list" style="margin-top: 12px;">${{changes}}</ul></section>
-        <section class="panel"><p class="eyebrow">Timeline</p><h3>Historique projet</h3><ul class="timeline" style="margin-top: 12px;">${{timeline || "<li>Aucune timeline disponible.</li>"}}</ul></section>
-        <section class="panel"><p class="eyebrow">Sources</p><h3>Liens et raisons</h3><div class="mini-grid" style="margin-top: 12px;"><div><h4>URLs</h4><ul class="list" style="margin-top: 10px;">${{sourceLinks || "<li>Aucune URL enregistrée.</li>"}}</ul></div><div><h4>Raisons</h4><ul class="list" style="margin-top: 10px;">${{reasons || "<li>Aucune raison.</li>"}}</ul></div></div></section>
-      `;
-      document.getElementById("detailFavorite").addEventListener("click", () => {{ if (favoriteIds.has(project.project_id)) favoriteIds.delete(project.project_id); else favoriteIds.add(project.project_id); saveFavorites(); render(); }});
+            <a href="projects/${{escapeHtml(slug)}}.html">Ouvrir</a>
+          </li>
+        `;
+      }}).join("") || "<li>Aucun projet visible.</li>";
     }}
+
     function render() {{
-      favoritesOnly.textContent = onlyFavorites ? "Afficher tout" : "Afficher favoris";
+      favoritesOnly.textContent = onlyFavorites ? "Voir tous les projets" : "Favoris uniquement";
       const filtered = sortProjects(projects.filter(projectMatches));
-      if (!filtered.some(project => project.project_id === selectedId)) selectedId = filtered[0] ? filtered[0].project_id : null;
-      projectGrid.innerHTML = ""; filtered.forEach(project => projectGrid.appendChild(renderProjectCard(project)));
-      projectCount.textContent = `${{filtered.length}} projet(s) visibles sur ${{projects.length}}.`;
-      renderDetail(filtered.find(project => project.project_id === selectedId) || null);
+      projectGrid.innerHTML = "";
+      filtered.forEach(project => projectGrid.appendChild(renderProjectCard(project)));
+      projectCount.textContent = `${{filtered.length}} projet(s) affiché(s) sur ${{projects.length}}.`;
+      renderRecent(filtered);
+      renderMap(filtered);
     }}
-    [searchInput, cityFilter, statusFilter, assetFilter, sortFilter].forEach(control => {{ control.addEventListener("input", render); control.addEventListener("change", render); }});
-    favoritesOnly.addEventListener("click", () => {{ onlyFavorites = !onlyFavorites; render(); }});
+
+    [searchInput, cityFilter, statusFilter, assetFilter, sortFilter].forEach(control => {{
+      control.addEventListener("input", render);
+      control.addEventListener("change", render);
+    }});
+
+    favoritesOnly.addEventListener("click", () => {{
+      onlyFavorites = !onlyFavorites;
+      render();
+    }});
+
     render();
   </script>
 </body>

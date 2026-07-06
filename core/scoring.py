@@ -99,8 +99,107 @@ def channel_label(channel: str) -> str:
     return labels.get(channel, channel)
 
 
+def normalized_contains(haystack: str | None, needle: str | None) -> bool:
+    if not haystack or not needle:
+        return False
+    return re.sub(r"\s+", " ", needle.lower()).strip() in re.sub(r"\s+", " ", haystack.lower()).strip()
+
+
+def signal_matches_project(signal: SignalEvent, project: ProjectRecord) -> bool:
+    promoter_sensitive_channels = {"advertising", "project_discovery", "google_discovery", "social", "news"}
+    promoter_ok = True
+    if project.promoter:
+        if signal.channel in promoter_sensitive_channels:
+            promoter_ok = (
+                (signal.promoter_hint or "").lower() == project.promoter.lower()
+                or normalized_contains(signal.title, project.promoter)
+                or normalized_contains(signal.text, project.promoter)
+                or normalized_contains(signal.url, project.promoter)
+                or normalized_contains(signal.source, project.promoter)
+            )
+    city_ok = True
+    if project.city:
+        city_ok = (
+            (signal.city_hint or "").lower() == project.city.lower()
+            or normalized_contains(signal.title, project.city)
+            or normalized_contains(signal.text, project.city)
+            or normalized_contains(signal.url, project.city)
+            or normalized_contains(signal.source, project.city)
+        )
+    zone_ok = True
+    if project.zone:
+        if signal.zone_hint:
+            zone_ok = (signal.zone_hint or "").lower() == project.zone.lower()
+        else:
+            zone_ok = True
+    return promoter_ok and city_ok and zone_ok
+
+
+def signal_proof_level(signal: SignalEvent) -> str:
+    if signal.signal_type in {"search_result", "urbanism_page", "project_page", "promoter_page", "listing_page", "listing_detail", "news_result", "social_post", "meta_ad"}:
+        return "direct"
+    return "watch"
+
+
+def signal_proof_note(signal: SignalEvent) -> str:
+    if signal.signal_type == "meta_ad":
+        ad_id = signal.metadata.get("ad_id") if isinstance(signal.metadata, dict) else None
+        return f"Publicité Meta exacte détectée{f' (ad_id {ad_id})' if ad_id else ''}."
+    if signal.signal_type == "meta_watch":
+        return "Recherche Meta Ad Library, pas encore publicité unitaire extraite."
+    if signal.signal_type == "search_watch":
+        return "Requête Google de veille, pas encore résultat cible confirmé."
+    if signal.signal_type == "urbanism_watch":
+        return "Source urbanisme surveillée, sans document précis extrait sur ce run."
+    if signal.signal_type == "search_result":
+        return "Résultat Google réellement détecté."
+    if signal.signal_type == "urbanism_page":
+        return "Page ou document urbanisme réellement détecté."
+    return "Signal détecté par le moteur."
+
+
+def proof_payload(signal: SignalEvent) -> dict:
+    return {
+        "title": signal.title,
+        "url": signal.url,
+        "source": signal.source,
+        "channel": signal.channel,
+        "channel_label": channel_label(signal.channel),
+        "signal_type": signal.signal_type,
+        "proof_level": signal_proof_level(signal),
+        "proof_note": signal_proof_note(signal),
+    }
+
+
+def representative_signals(project: ProjectRecord, channel: str, limit: int = 2) -> list[dict]:
+    filtered = [
+        signal
+        for signal in project.signals
+        if signal.channel == channel
+        and signal.is_primary
+        and signal_proof_level(signal) == "direct"
+        and signal_matches_project(signal, project)
+    ]
+    filtered.sort(
+        key=lambda signal: (
+            0 if signal_proof_level(signal) == "direct" else 1,
+            -signal.confidence_weight,
+            -signal.launch_weight,
+        )
+    )
+    return [proof_payload(signal) for signal in filtered[:limit]]
+
+
 def confirmation_matrix(project: ProjectRecord) -> dict:
-    primary_channels = sorted({signal.channel for signal in project.signals if signal.is_primary})
+    project_primary_signals = [
+        signal
+        for signal in project.signals
+        if signal.is_primary and signal_matches_project(signal, project)
+    ]
+    direct_project_signals = [
+        signal for signal in project_primary_signals if signal_proof_level(signal) == "direct"
+    ]
+    primary_channels = sorted({signal.channel for signal in project_primary_signals})
     secondary_channels = sorted({signal.channel for signal in project.signals if not signal.is_primary})
     strong_pairs = [
         ("project_discovery", "advertising"),
@@ -111,14 +210,27 @@ def confirmation_matrix(project: ProjectRecord) -> dict:
         ("news", "project_discovery"),
     ]
     confirmations = []
-    channel_set = set(primary_channels)
+    confirmation_details = []
+    direct_channel_set = {signal.channel for signal in direct_project_signals}
     for left, right in strong_pairs:
-        if left in channel_set and right in channel_set:
-            confirmations.append(f"{channel_label(left)} + {channel_label(right)}")
+        left_proofs = representative_signals(project, left)
+        right_proofs = representative_signals(project, right)
+        if left in direct_channel_set and right in direct_channel_set and left_proofs and right_proofs:
+            label = f"{channel_label(left)} + {channel_label(right)}"
+            confirmations.append(label)
+            confirmation_details.append(
+                {
+                    "id": f"{left}__{right}",
+                    "label": label,
+                    "channels": [left, right],
+                    "proofs": left_proofs + right_proofs,
+                }
+            )
     return {
         "primary_channels": primary_channels,
         "secondary_channels": secondary_channels,
         "confirmations": confirmations,
+        "confirmation_details": confirmation_details,
     }
 
 
@@ -198,6 +310,7 @@ def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
         "primary_channels": matrix["primary_channels"],
         "secondary_channels": matrix["secondary_channels"],
         "confirmations": matrix["confirmations"],
+        "confirmation_details": matrix["confirmation_details"],
         "confirmation_count": len(matrix["confirmations"]),
     }
     if matrix["confirmations"]:

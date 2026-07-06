@@ -83,8 +83,8 @@ class EntityResolutionTests(unittest.TestCase):
         self.assertIn("project_discovery", project.channels)
         self.assertGreaterEqual(project.evidence["signal_count"], 3)
         self.assertGreaterEqual(project.confidence_score, 60)
-        self.assertGreaterEqual(project.evidence["confirmation_count"], 1)
-        self.assertTrue(any("page promoteur" in reason or "publicité Meta" in reason for reason in project.reasons))
+        self.assertEqual(project.evidence["confirmation_count"], 0)
+        self.assertTrue(any("surveillance" in reason or "marqueur" in reason or "ville:" in reason for reason in project.reasons))
 
     def test_rewards_multi_source_confirmation(self):
         signals = [
