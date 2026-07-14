@@ -122,6 +122,21 @@ class MetaAdsParsingTests(unittest.TestCase):
         self.assertEqual(len(filtered), 1)
         self.assertEqual(filtered[0]["ad_id"], "1")
 
+    def test_filters_out_travel_ad_even_if_query_tokens_match(self):
+        entries = [
+            {
+                "ad_id": "998493906457053",
+                "page_name": "Driss Travel ادريس ترافل",
+                "body": "Offres voyage et billetterie",
+                "caption": "",
+                "landing_page_url": "https://drisstravel.example.com/",
+                "snapshot_url": detail_url("998493906457053"),
+            }
+        ]
+        context = {"query": "Driss Travel", "promoter": None, "city": None, "zone": None}
+        filtered = filter_relevant_entries(entries, context)
+        self.assertEqual(filtered, [])
+
 
 if __name__ == "__main__":
     unittest.main()

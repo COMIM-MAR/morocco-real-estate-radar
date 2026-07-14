@@ -25,6 +25,8 @@ META_AD_SEARCH_BASE = (
 META_AD_DETAIL_BASE = "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id="
 REAL_ESTATE_KEYWORDS = [
     "immobilier",
+    "résidentiel",
+    "residentiel",
     "résidence",
     "residence",
     "appartement",
@@ -42,6 +44,21 @@ REAL_ESTATE_KEYWORDS = [
     "pré-commercialisation",
     "pre-commercialisation",
     "lancement",
+]
+NON_REAL_ESTATE_BLOCKLIST = [
+    "travel",
+    "voyage",
+    "tourisme",
+    "tourist",
+    "billetterie",
+    "visa",
+    "omra",
+    "umrah",
+    "hajj",
+    "hotel",
+    "hôtel",
+    "vol",
+    "flight",
 ]
 PROJECT_QUERY_STOPWORDS = {
     "maroc",
@@ -444,6 +461,11 @@ def real_estate_relevance(entry: dict, context: dict) -> int:
     query_tokens = slug_tokens(context.get("query", ""))
     score += sum(4 for token in query_tokens if token in haystack)
     landing = entry.get("landing_page_url", "").lower()
+    landing_real_estate_hits = [
+        token
+        for token in ["immo", "immobilier", "residence", "résidence", "lotissement", "villa", "appartement", "bureau"]
+        if token in landing
+    ]
     if any(token in landing for token in ["ma/", ".ma", "immo", "residence", "greenlotus", "cgi", "addoha", "alliances", "prestigia"]):
         score += 8
     if "sponsorisé" in haystack:
@@ -452,6 +474,10 @@ def real_estate_relevance(entry: dict, context: dict) -> int:
     visible_query_hits = [token for token in query_tokens if token in visible_haystack]
     page_name_query_hits = [token for token in query_tokens if token in page_name_haystack]
     if not visible_keyword_hits and not visible_query_hits:
+        return 0
+    if any(token in haystack for token in NON_REAL_ESTATE_BLOCKLIST) and not keyword_hits and not landing_real_estate_hits:
+        return 0
+    if not visible_keyword_hits and not landing_real_estate_hits:
         return 0
     if query_tokens and len(query_tokens) <= 3 and not page_name_query_hits:
         return 0

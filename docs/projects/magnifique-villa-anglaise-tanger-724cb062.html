@@ -4,71 +4,178 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Magnifique Villa Anglaise Tanger · Morocco Real Estate Intelligence</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
   <style>
-    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f7f0e5; color:#1d2935; }
-    main { max-width: 1080px; margin: 0 auto; padding: 28px 18px 56px; display:grid; gap:18px; }
-    .panel { background:#fffaf2; border:1px solid #e5d7c0; border-radius:22px; padding:20px; }
-    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-    .score { font-size:30px; color:#ad5c18; }
-    .pill { display:inline-block; padding:6px 10px; border-radius:999px; background:#f3eadb; border:1px solid #e5d7c0; margin:4px 8px 0 0; }
-    ul { margin:0; padding-left:18px; color:#5c6876; }
-    a { color:#ad5c18; }
-    p { color:#5c6876; }
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --panel-soft: #fafbfc;
+      --line: #e5e7eb;
+      --ink: #111827;
+      --muted: #6b7280;
+      --accent: #c05621;
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; min-width: 0; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { max-width: 980px; margin: 0 auto; padding: 20px 16px 48px; display: grid; gap: 16px; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+    .grid, .facts, .metrics { display: grid; gap: 12px; }
+    .metrics { grid-template-columns: repeat(4, 1fr); }
+    .facts { grid-template-columns: 1fr 1fr; }
+    .metric, .fact-box { border: 1px solid var(--line); border-radius: 14px; background: var(--panel-soft); padding: 14px; }
+    .metric strong { display: block; font-size: 28px; color: var(--accent); margin-top: 4px; }
+    .label { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+    .muted, p, li { color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }
+    .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: #f3f4f6; border: 1px solid var(--line); color: var(--muted); margin: 4px 8px 0 0; font-size: 13px; }
+    .tip {
+      display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px;
+      margin-left: 6px; border-radius: 999px; border: 1px solid var(--line); font-size: 11px; color: var(--muted); cursor: help; position: relative;
+    }
+    .tip:hover::after, .tip:focus::after {
+      content: attr(data-tip); position: absolute; left: 50%; top: calc(100% + 8px); transform: translateX(-50%);
+      width: 260px; padding: 10px 12px; background: #111827; color: #fff; border-radius: 10px; font-size: 12px; line-height: 1.4; white-space: normal; z-index: 10;
+    }
+    .tip:hover::before, .tip:focus::before {
+      content: ""; position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+      border: 6px solid transparent; border-bottom-color: #111827;
+    }
+    .list { list-style: none; padding: 0; margin: 12px 0 0 0; display: grid; gap: 8px; }
+    .list li { padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+    .map-wrap { display: grid; gap: 10px; }
+    #projectMap { width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }
+    .gallery { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .gallery-image { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }
+    a { color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 860px) { .metrics, .facts { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 640px) { .metrics, .facts { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
   <main>
     <section class="panel">
-      <p><a href="../index.html">← Retour dashboard</a></p>
-      <h1>Magnifique Villa Anglaise Tanger</h1>
-      <p>Magnifique Villa Anglaise Tanger | Promoteur: à confirmer | Ville: Tanger | Zone: Moujahidine | Confirmations: confirmation en cours | Prix observés entre 2500000 et 2500000 MAD.</p>
-      <div>
-        <span class="pill">monitor</span>
+      <p class="label"><a href="../index.html">Retour à la recherche</a></p>
+      <h1 style="margin-top:8px;">Magnifique Villa Anglaise Tanger</h1>
+      <p style="margin-top:8px;">Magnifique Villa Anglaise Tanger | Promoteur: à confirmer | Ville: Tanger | Zone: Malabata | Confirmations: confirmation en cours | Prix observés entre 915000 et 915000 MAD.</p>
+      <div style="margin-top:12px;">
+        <span class="pill">En observation</span>
         <span class="pill">Tanger</span>
         <span class="pill">Promoteur à confirmer</span>
-        <span class="pill">villa</span>
+        <span class="pill">Appartement 3 chambres</span>
       </div>
     </section>
-    <section class="grid">
-      <div class="panel"><div class="score">9</div><p>Launch</p></div>
-      <div class="panel"><div class="score">6</div><p>Confidence</p></div>
-      <div class="panel"><div class="score">100</div><p>Investment</p></div>
-      <div class="panel"><div class="score">28</div><p>Urgency</p></div>
+
+    <section class="metrics">
+      <div class="metric"><span class="label">Launch<span class='tip' tabindex='0' data-tip='Score de lancement = poids des signaux primaires + bonus listings + bonus confirmations. Plus il monte, plus le projet ressemble à un vrai lancement commercial.'>i</span></span><strong>9</strong></div>
+      <div class="metric"><span class="label">Confidence<span class='tip' tabindex='0' data-tip='Score de confiance = poids de crédibilité des signaux primaires + bonus diversité de sources + bonus confirmations multi-canaux + bonus canaux primaires.'>i</span></span><strong>18</strong></div>
+      <div class="metric"><span class="label">Investment<span class='tip' tabindex='0' data-tip='Score investissement = priorité de la ville + bonus zone + bonus type d&#x27;actif + ajustement selon budget/prix détecté.'>i</span></span><strong>100</strong></div>
+      <div class="metric"><span class="label">ROI 5 ans<span class='tip' tabindex='0' data-tip='ROI 5 ans = estimation simplifiée dérivée du score investissement, légèrement renforcée si la confiance est élevée.'>i</span></span><strong>92</strong></div>
     </section>
-    <section class="grid">
-      <div class="panel">
-        <h3>Carte & mobilité</h3>
-        <ul>
-          <li>Latitude: 35.7595</li>
-          <li>Longitude: -5.834</li>
-          <li>Distance mer: 3 km</li>
-          <li>Distance gare: 4 km</li>
-          <li>Distance autoroute: 5 km</li>
+
+    <section class="facts">
+      <div class="fact-box">
+        <h3>Décision rapide</h3>
+        <p style="margin-top:10px;">Garder en observation jusqu&#x27;à nouvelles confirmations.</p>
+        <ul class="list">
+          <li>Statut: En observation</li>
+          <li>Type détecté: Appartement 3 chambres</li>
+          <li>Disponibilité: 14 signal(s) listing détecté(s), disponibilités à confirmer.</li>
+          <li>Prix min: 915000 MAD</li>
+          <li>Prix max: 28911774 MAD</li>
+          <li>Évolution prix: Prix observés entre 915000 et 915000 MAD.</li>
         </ul>
       </div>
-      <div class="panel">
-        <h3>Marché</h3>
-        <ul>
-          <li>Prix min: 2500000 MAD</li>
-          <li>Prix max: 20000000 MAD</li>
-          <li>Bande prix: within_budget</li>
-          <li>Évolution: Prix observés entre 2500000 et 2500000 MAD.</li>
-          <li>ROI 5 ans: Élevé · 92/100</li>
+      <div class="fact-box">
+        <h3>Analyse AI</h3>
+        <ul class="list">
+          <li><strong>Pourquoi c'est intéressant</strong><br>Le potentiel investissement ressort comme intéressant selon le profil configuré.</li>
+          <li><strong>Points de vigilance</strong><br>Aucun risque majeur détecté automatiquement.</li>
+          <li><strong>Actions conseillées</strong><br>Vérifier le site officiel et les pages sociales du promoteur. / Confirmer les disponibilités et le ticket d&#x27;entrée réel. / Surveiller si de nouveaux documents urbanisme ou listings apparaissent.</li>
         </ul>
       </div>
-      <div class="panel">
-        <h3>Recommandation</h3>
-        <p>Garder en observation jusqu&#x27;à nouvelles confirmations.</p>
+    </section>
+
+    <section class="panel map-wrap">
+      <h3>Localisation pratique</h3>
+      <p class="muted">La carte interactive sert à situer rapidement le projet. Les distances mer / gare / autoroute sont des estimations de proximité.</p>
+      <div id="projectMap"></div>
+      <ul class="list">
+        <li>Zone: Malabata</li>
+        <li>Mer: 1 km · Gare: 4 km · Autoroute: 5 km</li>
+      </ul>
+    </section>
+
+    <section class="facts">
+      <div class="fact-box">
+        <h3>Confirmations<span class='tip' tabindex='0' data-tip='Nombre de confirmations fortes entre plusieurs canaux indépendants.'>i</span></h3>
+        <ul class="list"><li>Aucune confirmation forte.</li></ul>
+      </div>
+      <div class="fact-box">
+        <h3>Évolutions récentes</h3>
+        <ul class="list"><li>Aucune évolution récente.</li></ul>
       </div>
     </section>
-    <section class="grid">
-      <div class="panel"><h3>Confirmations</h3><ul><li>Aucune confirmation forte.</li></ul></div>
-      <div class="panel"><h3>Changements</h3><ul><li>Aucune évolution récente.</li></ul></div>
+
+    <section class="panel">
+      <h3>Timeline<span class='tip' tabindex='0' data-tip='Historique des runs où le projet a été observé et mis à jour. Chaque ligne correspond à un passage du moteur de veille.'>i</span></h3>
+      <p class="muted">La timeline correspond aux différents runs du moteur où ce projet a été observé ou mis à jour.</p>
+      <ul class="list"><li><strong>2026-07-14T12:06:40.451810+00:00</strong><br><span>En observation</span><br><span>Launch 9 · Confidence 18 · Investment 100</span></li></ul>
     </section>
-    <section class="grid">
-      <div class="panel"><h3>Timeline</h3><ul><li><strong>2026-07-06T19:54:32.053744+00:00</strong><br>monitor</li><li><strong>2026-07-06T17:43:15.188788+00:00</strong><br>monitor</li><li><strong>2026-07-06T12:46:39.592418+00:00</strong><br>monitor</li></ul></div>
-      <div class="panel"><h3>Sources</h3><ul><li><a href='https://www.mubawab.ma/fr/a/8336400/magnifique-villa-anglaise-a-tanger' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8336400/magnifique-villa-anglaise-a-tanger</a></li><li><a href='https://www.mubawab.ma/fr/a/8143378/vente-villa-1040-m%C2%B2-boubana-tanger-ref-va401' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8143378/vente-villa-1040-m%C2%B2-boubana-tanger-ref-va401</a></li><li><a href='https://www.mubawab.ma/fr/a/8159271/villa-de-luxe-%C3%A0-vendre-%C3%A0-boubana-tanger' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8159271/villa-de-luxe-%C3%A0-vendre-%C3%A0-boubana-tanger</a></li><li><a href='https://www.mubawab.ma/fr/a/8351943/villa-jbel-kbir' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8351943/villa-jbel-kbir</a></li><li><a href='https://www.mubawab.ma/fr/a/8365922/villa-%C3%A0-vendre-val-fleuri' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8365922/villa-%C3%A0-vendre-val-fleuri</a></li><li><a href='https://www.mubawab.ma/fr/a/8367642/villa-de-prestige-%C3%A0-vendre-%E2%80%93-rahrah-tanger' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8367642/villa-de-prestige-%C3%A0-vendre-%E2%80%93-rahrah-tanger</a></li><li><a href='https://www.mubawab.ma/fr/a/8366235/une-villa-confortable-dans-un-%C3%A9crin-de-verdure' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8366235/une-villa-confortable-dans-un-%C3%A9crin-de-verdure</a></li><li><a href='https://www.mubawab.ma/fr/a/8283006/villa-neuve-a-vendre-%C3%A0-boubana-tanger' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8283006/villa-neuve-a-vendre-%C3%A0-boubana-tanger</a></li><li><a href='https://www.mubawab.ma/fr/a/8345990/villa-vide-a-vendre-mediouna-tanger' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8345990/villa-vide-a-vendre-mediouna-tanger</a></li><li><a href='https://www.mubawab.ma/fr/a/8348608/villa-a-vendre-moujahidine-tanger' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8348608/villa-a-vendre-moujahidine-tanger</a></li><li><a href='https://www.mubawab.ma/fr/a/8358946/magnifique-villa-%C3%A0-vendre-%C3%A0-manar-10-pi%C3%A8ces-confortables-bien-meubl%C3%A9' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/8358946/magnifique-villa-%C3%A0-vendre-%C3%A0-manar-10-pi%C3%A8ces-confortables-bien-meubl%C3%A9</a></li><li><a href='https://www.mubawab.ma/fr/a/7758335/palais-de-luxe-%C3%A0-jbel-lkbir-tanger' target='_blank' rel='noreferrer'>https://www.mubawab.ma/fr/a/7758335/palais-de-luxe-%C3%A0-jbel-lkbir-tanger</a></li></ul></div>
+
+    <section class="facts">
+      <div class="fact-box">
+        <h3>Site officiel / sources promoteur</h3>
+        <ul class="list"><li>Aucune source disponible dans cette catégorie.</li></ul>
+      </div>
+      <div class="fact-box">
+        <h3>Réseaux / publicité</h3>
+        <ul class="list"><li>Aucune source disponible dans cette catégorie.</li></ul>
+      </div>
+    </section>
+
+    <section class="facts">
+      <div class="fact-box">
+        <h3>Portails / disponibilités</h3>
+        <ul class="list"><li><strong>Portail immobilier</strong> · 4 Appartements en Rez de Chaussée à Vendre<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/a/8359979/4-appartements-en-rez-de-chauss%C3%A9e-%C3%A0-vendre' target='_blank' rel='noreferrer'>ouvrir la source</a></li><li><strong>Portail immobilier</strong> · Vend appartement à View Tower. Surface totale 88 m²<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/pa/7596444/vend-appartement-%C3%A0-view-tower-surface-totale-88-m%C2%B2' target='_blank' rel='noreferrer'>ouvrir la source</a></li><li><strong>Portail immobilier</strong> · Appartement d&#x27;exception à vendre – Rmilat, Tanger<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/a/8379024/appartement-d-exception-%C3%A0-vendre-%E2%80%93-rmilat-tanger' target='_blank' rel='noreferrer'>ouvrir la source</a></li><li><strong>Portail immobilier</strong> · Studio moderne à Route Nationale Assilah TANGER<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/pa/8218242/studio-moderne-%C3%A0-route-nationale-assilah-tanger' target='_blank' rel='noreferrer'>ouvrir la source</a></li><li><strong>Portail immobilier</strong> · Magnifique appartement à vendre dans une residence fermée av...<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/a/8267379/magnifique-appartement-%C3%A0-vendre-dans-une-residence-ferm%C3%A9e-avec-piscine-%C3%A0-malabata-tanger' target='_blank' rel='noreferrer'>ouvrir la source</a></li><li><strong>Portail immobilier</strong> · Appartement à vendre à Marjane route Rabat<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/a/8268175/appartement-%C3%A0-vendre-%C3%A0-marjane-route-rabat' target='_blank' rel='noreferrer'>ouvrir la source</a></li><li><strong>Portail immobilier</strong> · Appartement en vente à View Tower. 3 chambres agréables<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/pa/7595991/appartement-en-vente-%C3%A0-view-tower-3-chambres-agr%C3%A9ables' target='_blank' rel='noreferrer'>ouvrir la source</a></li><li><strong>Portail immobilier</strong> · Villa d’Exception à Vendre – Malabata, Tanger – Vue Panorami...<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/a/8368752/villa-d%E2%80%99exception-%C3%A0-vendre-%E2%80%93-malabata-tanger-%E2%80%93-vue-panoramique-sur-mer-et-espagne' target='_blank' rel='noreferrer'>ouvrir la source</a></li><li><strong>Portail immobilier</strong> · Magnifique villa anglaise a tanger<br><span>Portail immobilier servant surtout à confirmer prix et disponibilité.</span><br><span>Niveau: preuve directe</span><br><a href='https://www.mubawab.ma/fr/a/8336400/magnifique-villa-anglaise-a-tanger' target='_blank' rel='noreferrer'>ouvrir la source</a></li></ul>
+      </div>
+      <div class="fact-box">
+        <h3>Presse / urbanisme</h3>
+        <ul class="list"><li>Aucune source disponible dans cette catégorie.</li><li>Aucune source disponible dans cette catégorie.</li></ul>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Images détectées</h3>
+      <div class="gallery" style="margin-top:12px;"><p class='muted'>Aucune image exploitable n'a été détectée automatiquement pour le moment.</p></div>
     </section>
   </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script>
+    (function() {
+      const lat = 35.783;
+      const lng = -5.7603;
+      if (!window.L || typeof lat !== "number" || typeof lng !== "number") {
+        document.getElementById("projectMap").innerHTML = "<div style='padding:16px;color:#6b7280;'>Carte indisponible pour ce projet.</div>";
+        return;
+      }
+      const map = L.map("projectMap", { scrollWheelZoom: false }).setView([lat, lng], 12);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "&copy; OpenStreetMap"
+      }).addTo(map);
+      L.marker([lat, lng]).addTo(map).bindPopup("Magnifique Villa Anglaise Tanger");
+    })();
+  </script>
 </body>
 </html>

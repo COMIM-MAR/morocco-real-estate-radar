@@ -9,6 +9,15 @@ from core.models import ProjectRecord, SignalEvent
 from core.scoring import enrich_project, enrich_signal
 
 PROJECT_STOPWORDS = {
+    "le",
+    "la",
+    "les",
+    "de",
+    "des",
+    "du",
+    "d",
+    "by",
+    "avec",
     "maroc",
     "morocco",
     "immobilier",
@@ -22,6 +31,37 @@ PROJECT_STOPWORDS = {
     "villas",
     "villa",
     "lotissement",
+}
+GENERIC_AD_PORTAL_SOURCES = {
+    "avito immobilier neuf",
+    "avito neuf",
+    "mubawab maroc",
+    "mubawab",
+    "agenz",
+}
+GENERIC_META_SOURCE_PAGES = {
+    "lotti.ma",
+}
+GENERIC_PROJECT_TITLES = {
+    "je consulte",
+    "plus d infos",
+    "plus d'infos",
+    "plus d’infos",
+    "lire plus",
+    "en savoir plus",
+    "search",
+}
+GENERIC_PROMOTER_CATEGORY_URL_MARKERS = {
+    "/projet/type/",
+}
+GENERIC_NON_PROJECT_TITLES = {
+    "urbanisme planification autorisations",
+    "etudes projets",
+    "transformation digitale",
+    "gestion patrimoine",
+    "procédure autorisation construction",
+    "agence urbaine de casablanca",
+    "projet immobilier",
 }
 
 
@@ -37,7 +77,117 @@ def project_tokens(text: str) -> list[str]:
     return [word for word in words if len(word) > 2 and word not in PROJECT_STOPWORDS]
 
 
+def looks_like_specific_project_name(text: str | None) -> bool:
+    cleaned = clean_text(text)
+    if not cleaned:
+        return False
+    if len(project_tokens(cleaned)) >= 1:
+        return True
+    return bool(re.search(r"[A-Za-zÀ-ÿ].*\d|\d.*[A-Za-zÀ-ÿ]", cleaned))
+
+
+def extract_project_name_from_generic_ad(signal: SignalEvent) -> str | None:
+    source = normalize(signal.source or "")
+    title = normalize(signal.title or "")
+    if source not in GENERIC_AD_PORTAL_SOURCES and title not in GENERIC_AD_PORTAL_SOURCES:
+        return None
+    text = clean_text(signal.text)
+    for generic in GENERIC_AD_PORTAL_SOURCES:
+        text = re.sub(rf"^(?:{re.escape(generic)})\s+", "", text, flags=re.I)
+        text = re.sub(rf"^(?:{re.escape(generic)})\s+", "", text, flags=re.I)
+    patterns = [
+        r"(?:Découvrez|Decouvrez)\s+(?P<name>[A-ZÀ-ÿ0-9][^,:!.]{3,80}?)(?:\s+par|\s*,|\s*:)",
+        r"(?P<name>[A-ZÀ-ÿ0-9][^,:!.]{3,80}?)\s*,\s+votre nouvelle adresse",
+        r"(?P<name>Résidences?\s+[A-ZÀ-ÿ0-9][^,:!.]{2,80})(?:\s*:|\s*,)",
+        r"(?P<name>[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{3,80})\s*,\s+un projet résidentiel",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if not match:
+            continue
+        candidate = match.group("name").strip(" -–—")
+        if looks_like_specific_project_name(candidate):
+            return candidate
+    return None
+
+
+def extract_project_name_from_meta_signal(signal: SignalEvent) -> str | None:
+    if signal.collector != "ads.meta_ads":
+        return None
+    text = clean_text(signal.text)
+    page_name = clean_text(signal.project_name_hint or signal.source or "")
+    cleaned_page_name = re.sub(r"\s+by\s+.+$", "", page_name, flags=re.I).strip(" -–—")
+    if cleaned_page_name and looks_like_specific_project_name(cleaned_page_name) and " by " in page_name.lower():
+        return cleaned_page_name
+    patterns = [
+        r"(?:lancement du nouveau projet|nouveau projet)\s+(?P<name>[A-ZÀ-ÿ0-9][^,:!.]{2,80}?)(?:,|\s+signé|\s+signe|\s+situ[ée]|\s+à|\s+-)",
+        r"(?:découvrez|decouvrez)\s+(?P<name>[A-ZÀ-ÿ0-9][^,:!.]{2,80}?)(?:\s+par|\s+by|\s*:|,)",
+        r"\bà\s+(?P<name>Les\s+[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{2,80}?)(?:\.|,|\s+projet|\s+par)",
+        r"(?:projet|résidence|residence)\s+(?P<name>[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{2,80}?)(?:\s+par|\s+by|\s*:|,)",
+        r"(?P<name>Les\s+[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{2,80}?)(?:\s+par|\s+by|\s*:|,)",
+        r"(?P<name>[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{2,80}?)\s*,\s+sign[ée]\s+.+",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if not match:
+            continue
+        candidate = match.group("name").strip(" -–—")
+        if looks_like_specific_project_name(candidate) and normalize(candidate) not in GENERIC_AD_PORTAL_SOURCES:
+            return candidate
+    if page_name and looks_like_specific_project_name(page_name) and page_name.lower() not in GENERIC_META_SOURCE_PAGES:
+        return page_name
+    return None
+
+
+def clean_text(text: str | None) -> str:
+    return re.sub(r"\s+", " ", text or "").strip()
+
+
+def is_generic_project_title(value: str | None) -> bool:
+    return normalize(value or "") in GENERIC_PROJECT_TITLES
+
+
+def should_skip_signal(signal: SignalEvent) -> bool:
+    lowered_url = (signal.url or "").lower()
+    lowered_title = normalize(signal.title or "")
+    if signal.collector == "promoters.websites" and any(marker in lowered_url for marker in GENERIC_PROMOTER_CATEGORY_URL_MARKERS):
+        return True
+    lowered_text = normalize(signal.text or "")
+    lowered_source = normalize(signal.source or "")
+    if signal.collector == "ads.meta_ads":
+        if lowered_source in GENERIC_META_SOURCE_PAGES:
+            return True
+        if "google maps des terrains" in lowered_text or "carte interactive unique" in lowered_text:
+            return True
+    if signal.signal_type in {"search_watch", "meta_watch", "news_watch", "social_watch"} and "projet immobilier" in lowered_title:
+        return True
+    if signal.channel == "urbanism" and (
+        lowered_title in GENERIC_NON_PROJECT_TITLES
+        or lowered_url.rstrip("/") in {"https://www.auc.ma", "https://auc.ma", "https://www.autanger.ma", "https://autanger.ma"}
+        or "/etudes-projets/" in lowered_url
+        or "/gestion-urbaine/procedure" in lowered_url
+    ):
+        return True
+    return False
+
+
+def project_name_from_url_slug(url: str) -> str | None:
+    slug = urlparse(url).path.split("/")[-1]
+    slug_tokens = [token for token in slug.replace("-", " ").split() if len(token) > 2]
+    if not slug_tokens:
+        return None
+    return " ".join(word.capitalize() for word in slug_tokens[:6])
+
+
 def infer_project_name(signal: SignalEvent) -> str:
+    meta_project_name = extract_project_name_from_meta_signal(signal)
+    if meta_project_name:
+        return meta_project_name
+    generic_title = is_generic_project_title(signal.title) or is_generic_project_title(signal.project_name_hint)
+    if generic_title:
+        slug_name = project_name_from_url_slug(signal.url)
+        if slug_name:
+            return slug_name
     text = f"{signal.title} {signal.url}"
     patterns = [
         r"(sun[\s-]?hills?)",
@@ -51,10 +201,9 @@ def infer_project_name(signal: SignalEvent) -> str:
         match = re.search(pattern, normalize(text), re.I)
         if match:
             return match.group(1).replace("-", " ").title()
-    slug = urlparse(signal.url).path.split("/")[-1]
-    slug_tokens = [token for token in slug.replace("-", " ").split() if len(token) > 2]
-    if slug_tokens:
-        return " ".join(word.capitalize() for word in slug_tokens[:4])
+    slug_name = project_name_from_url_slug(signal.url)
+    if slug_name:
+        return slug_name
     tokens = project_tokens(signal.title)
     return " ".join(word.capitalize() for word in tokens[:4]) or signal.source
 
@@ -64,15 +213,25 @@ def canonical_name(name: str) -> str:
 
 
 def alias_candidates(signal: SignalEvent) -> list[str]:
-    candidates = [signal.project_name_hint or "", infer_project_name(signal), signal.title]
-    slug = urlparse(signal.url).path.split("/")[-1].replace("-", " ").strip()
-    if slug:
-        candidates.append(slug.title())
+    derived_project_name = extract_project_name_from_generic_ad(signal)
+    if derived_project_name:
+        candidates = [derived_project_name]
+    else:
+        meta_project_name = extract_project_name_from_meta_signal(signal)
+        if meta_project_name:
+            candidates = [meta_project_name]
+        else:
+            candidates = [signal.project_name_hint or "", infer_project_name(signal), signal.title]
+    slug_name = project_name_from_url_slug(signal.url)
+    if slug_name and not derived_project_name:
+        candidates.append(slug_name)
     aliases: list[str] = []
     seen: set[str] = set()
     for candidate in candidates:
         candidate = candidate.strip()
         if not candidate:
+            continue
+        if is_generic_project_title(candidate):
             continue
         key = normalize(candidate)
         if key in seen:
@@ -113,6 +272,8 @@ def score_group_match(group: dict, signal: SignalEvent) -> int:
     exactish_signals = {"meta_ad", "promoter_page", "project_page", "listing_detail", "search_result", "urbanism_page"}
     if signal.signal_type in exactish_signals and overlap == 0 and not name_match:
         return 0
+    if signal.signal_type in {"meta_ad", "promoter_page", "project_page"} and overlap < 2 and not name_match:
+        return 0
     if overlap >= 2:
         score += 50
     elif overlap == 1:
@@ -152,7 +313,7 @@ def best_group(groups: list[dict], signal: SignalEvent) -> dict | None:
 
 
 def resolve_projects(signals: list[SignalEvent], config: dict) -> list[ProjectRecord]:
-    enriched = [enrich_signal(signal, config) for signal in signals]
+    enriched = [enrich_signal(signal, config) for signal in signals if not should_skip_signal(signal)]
     enriched.sort(key=lambda signal: (signal.promoter_hint or "", signal.city_hint or "", signal.discovered_at))
     groups: list[dict] = []
     for signal in enriched:

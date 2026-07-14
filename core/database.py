@@ -166,6 +166,7 @@ def upsert_projects(projects: list[ProjectRecord]) -> None:
             for signal in project.signals:
                 upsert_signal(connection, project.project_id, signal)
             insert_project_update(connection, project)
+        prune_stale_projects(connection, {project.project_id for project in projects})
 
 
 def upsert_signal(connection: sqlite3.Connection, project_id: str, signal: SignalEvent) -> None:
@@ -231,6 +232,32 @@ def insert_project_update(connection: sqlite3.Connection, project: ProjectRecord
             project.recommendation,
             json.dumps(project.reasons, ensure_ascii=False),
         ),
+    )
+
+
+def prune_stale_projects(connection: sqlite3.Connection, active_project_ids: set[str]) -> None:
+    if not active_project_ids:
+        return
+    placeholders = ", ".join("?" for _ in active_project_ids)
+    stale_rows = connection.execute(
+        f"SELECT project_id FROM projects WHERE project_id NOT IN ({placeholders})",
+        tuple(active_project_ids),
+    ).fetchall()
+    stale_ids = [row["project_id"] for row in stale_rows]
+    if not stale_ids:
+        return
+    stale_placeholders = ", ".join("?" for _ in stale_ids)
+    connection.execute(
+        f"DELETE FROM signals WHERE project_id IN ({stale_placeholders})",
+        tuple(stale_ids),
+    )
+    connection.execute(
+        f"DELETE FROM project_updates WHERE project_id IN ({stale_placeholders})",
+        tuple(stale_ids),
+    )
+    connection.execute(
+        f"DELETE FROM projects WHERE project_id IN ({stale_placeholders})",
+        tuple(stale_ids),
     )
 
 

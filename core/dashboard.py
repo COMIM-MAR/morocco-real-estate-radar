@@ -32,7 +32,8 @@ KPI_EXPLANATIONS = {
     "urgent": "Nombre de projets dépassant le seuil de confiance immédiat.",
     "watch": "Nombre de projets crédibles mais encore à surveiller.",
     "sources": "Total des sources distinctes fusionnées dans les projets visibles.",
-    "signals": "Total des signaux bruts utilisés pour construire les projets visibles.",
+    "cities": "Nombre de villes couvertes par les projets actuellement visibles dans la base.",
+    "confirmations_global": "Total des confirmations fortes détectées entre plusieurs canaux indépendants sur l'ensemble des projets visibles.",
     "launch": "Score de lancement = poids des signaux primaires + bonus listings + bonus confirmations. Plus il monte, plus le projet ressemble à un vrai lancement commercial.",
     "confidence": "Score de confiance = poids de crédibilité des signaux primaires + bonus diversité de sources + bonus confirmations multi-canaux + bonus canaux primaires.",
     "investment": "Score investissement = priorité de la ville + bonus zone + bonus type d'actif + ajustement selon budget/prix détecté.",
@@ -318,8 +319,8 @@ def write_project_page(project, projects_dir: Path):
 def write_index(projects, payload):
     urgent_count = len([project for project in projects if project.status == "urgent"])
     watch_count = len([project for project in projects if project.status == "watch"])
-    source_count = sum(len(project.sources) for project in projects)
-    signal_count = sum(project.evidence.get("signal_count", len(project.signals)) for project in projects)
+    city_count = len({project.city for project in projects if project.city})
+    confirmation_count = sum(project.evidence.get("confirmation_count", 0) for project in projects)
     status_help = " · ".join(f"{status_display(name)}: {desc}" for name, desc in ALL_STATUSES)
     type_help = " · ".join(f"{label}" for _, label in ALL_ASSET_TYPES)
     page = f"""<!doctype html>
@@ -459,8 +460,8 @@ def write_index(projects, payload):
         <div class="metric"><span class="label">{tooltip("Projets", KPI_EXPLANATIONS["projects"])}</span><strong>{len(projects)}</strong></div>
         <div class="metric"><span class="label">{tooltip("Urgents", KPI_EXPLANATIONS["urgent"])}</span><strong>{urgent_count}</strong></div>
         <div class="metric"><span class="label">{tooltip("À surveiller", KPI_EXPLANATIONS["watch"])}</span><strong>{watch_count}</strong></div>
-        <div class="metric"><span class="label">{tooltip("Sources", KPI_EXPLANATIONS["sources"])}</span><strong>{source_count}</strong></div>
-        <div class="metric"><span class="label">{tooltip("Signaux", KPI_EXPLANATIONS["signals"])}</span><strong>{signal_count}</strong></div>
+        <div class="metric"><span class="label">{tooltip("Villes", KPI_EXPLANATIONS["cities"])}</span><strong>{city_count}</strong></div>
+        <div class="metric"><span class="label">{tooltip("Confirmations", KPI_EXPLANATIONS["confirmations_global"])}</span><strong>{confirmation_count}</strong></div>
       </div>
     </section>
 

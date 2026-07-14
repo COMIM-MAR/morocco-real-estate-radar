@@ -19,7 +19,6 @@ LAUNCH_MARKERS = [
 ]
 ASSET_PATTERNS = [
     ("villa", r"\b(villa|villas)\b"),
-    ("land_r4_plus", r"\b(r\+4|r4|r\+5|r5|terrain|lotissement|immeuble)\b"),
     ("penthouse", r"\bpenthouse\b"),
     ("apartment_3_bed", r"\b(3 chambres|3ch|3 ch|f4|4 pièces|4 pieces)\b"),
     ("apartment_2_bed", r"\b(2 chambres|2ch|2 ch|f3|3 pièces|3 pieces)\b"),
@@ -57,25 +56,38 @@ def detect_asset_type(text: str, preferences: dict) -> tuple[str | None, int]:
     for name, pattern in ASSET_PATTERNS:
         if re.search(pattern, lowered):
             return name, preferences.get(name, 0)
-    if re.search(r"\b(appartement|appart|résidence|residence)\b", lowered):
+    apartment_like = re.search(r"\b(appartement|appartements|appart|résidence|residence|résidences|residences)\b", lowered)
+    explicit_land = (
+        re.search(r"\b(r\+4|r4|r\+5|r5|lotissement|immeuble)\b", lowered)
+        or re.search(r"(?<![\w-])terrain(?![\w-])", lowered)
+    )
+    if apartment_like:
         return "apartment_unknown", 35
+    if explicit_land:
+        return "land_r4_plus", preferences.get("land_r4_plus", 0)
     return None, 0
 
 
 def detect_city_zone(text: str, config: dict) -> tuple[str | None, str | None]:
     lowered = text.lower()
+    best_city: str | None = None
+    best_zone: str | None = None
+    best_score = 0
     for city_key, city_cfg in config.get("cities", {}).items():
         city_label = city_cfg["label"].lower()
-        city_match = city_key in lowered or city_label in lowered
+        score = lowered.count(city_key) + lowered.count(city_label)
         zone_match = None
         for zone in city_cfg.get("zones", []):
-            if zone.lower() in lowered:
+            zone_score = lowered.count(zone.lower())
+            if zone_score:
                 zone_match = zone
-                city_match = True
+                score += zone_score * 3
                 break
-        if city_match:
-            return city_cfg["label"], zone_match
-    return None, None
+        if score > best_score:
+            best_score = score
+            best_city = city_cfg["label"]
+            best_zone = zone_match
+    return best_city, best_zone
 
 
 def detect_promoter(text: str, config: dict) -> str | None:
