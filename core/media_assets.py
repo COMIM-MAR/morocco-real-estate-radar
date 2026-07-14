@@ -119,6 +119,54 @@ def choose_best_media_locator(page):
     )
 
 
+def ad_card_clip(page, ad_id: str) -> dict | None:
+    try:
+        targets = page.locator(f"text={ad_id}")
+        count = min(targets.count(), 6)
+    except Exception:
+        return None
+    for index in range(count):
+        try:
+            clip = targets.nth(index).evaluate(
+                """
+                (el) => {
+                  el.scrollIntoView({block: 'center', inline: 'nearest'});
+                  const rect = el.getBoundingClientRect();
+                  const viewportWidth = window.innerWidth;
+                  const viewportHeight = window.innerHeight;
+                  if (!rect || rect.width <= 0 || rect.height <= 0) return null;
+                  const x = Math.max(0, rect.left - 12);
+                  const y = Math.max(0, rect.top - 56);
+                  const width = Math.min(viewportWidth - x - 16, 620);
+                  const height = Math.min(viewportHeight - y - 16, 820);
+                  if (width < 260 || height < 260) return null;
+                  return {
+                    x: x + window.scrollX,
+                    y: y + window.scrollY,
+                    width,
+                    height,
+                  };
+                }
+                """
+            )
+        except Exception:
+            clip = None
+        if clip:
+            return clip
+    return None
+
+
+def capture_ad_card(page, ad_id: str, asset_path: Path) -> bool:
+    clip = ad_card_clip(page, ad_id)
+    if not clip:
+        return False
+    try:
+        page.screenshot(path=str(asset_path), clip=clip)
+    except Exception:
+        return False
+    return asset_path.exists() and asset_path.stat().st_size > 0
+
+
 def capture_visible_page(page, asset_path: Path) -> bool:
     try:
         page.screenshot(path=str(asset_path), full_page=False)
@@ -127,7 +175,7 @@ def capture_visible_page(page, asset_path: Path) -> bool:
     return asset_path.exists() and asset_path.stat().st_size > 0
 
 
-def capture_meta_asset(context, source_url: str, asset_path: Path) -> bool:
+def capture_meta_asset(context, source_url: str, ad_id: str, asset_path: Path) -> bool:
     page = context.new_page()
     try:
         page.goto(source_url, wait_until="domcontentloaded", timeout=META_MEDIA_CAPTURE_TIMEOUT_MS)
@@ -136,6 +184,8 @@ def capture_meta_asset(context, source_url: str, asset_path: Path) -> bool:
         except PlaywrightTimeoutError:
             pass
         page.wait_for_timeout(META_MEDIA_CAPTURE_WAIT_MS)
+        if capture_ad_card(page, ad_id, asset_path):
+            return True
         return capture_visible_page(page, asset_path)
     except Exception:
         return False
@@ -196,7 +246,7 @@ def attach_meta_media_assets(projects: list) -> list:
         try:
             for project, ad_id, rel_url, asset_path in tasks:
                 candidate_url = f"https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id={ad_id}"
-                if capture_meta_asset(context, candidate_url, asset_path):
+                if capture_meta_asset(context, candidate_url, ad_id, asset_path):
                     project.evidence["images"] = [rel_url] + project.evidence.get("images", [])
         finally:
             context.close()

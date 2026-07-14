@@ -55,8 +55,30 @@
     .map-wrap { display: grid; gap: 10px; }
     #projectMap { width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }
     .gallery { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .gallery-card-wrap { border: 1px solid var(--line); border-radius: 14px; padding: 10px; background: #fff; display: grid; gap: 10px; align-content: start; }
+    .gallery-card {
+      display: grid; gap: 8px; padding: 0; border: 0; background: transparent; text-align: left; cursor: zoom-in;
+    }
     .gallery-image { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }
     .gallery-video { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); background: #000; }
+    .gallery-caption { font-size: 12px; color: var(--muted); }
+    .gallery-meta { display: grid; gap: 6px; }
+    .gallery-text { margin: 0; font-size: 13px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+    .lightbox {
+      position: fixed; inset: 0; background: rgba(17, 24, 39, .82); display: none; align-items: center; justify-content: center; padding: 24px; z-index: 2000;
+    }
+    .lightbox.is-open { display: flex; }
+    .lightbox-panel {
+      width: min(1180px, 100%); max-height: 92vh; background: #0f172a; border-radius: 18px; border: 1px solid rgba(255,255,255,.08); padding: 16px; display: grid; gap: 12px;
+    }
+    .lightbox-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #fff; }
+    .lightbox-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .lightbox-btn {
+      min-height: 38px; padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,.18); background: transparent; color: #fff; cursor: pointer;
+    }
+    .lightbox-media-wrap { overflow: auto; max-height: 76vh; border-radius: 12px; background: #020617; }
+    .lightbox-image { width: 100%; height: auto; display: block; }
+    .lightbox-video { width: 100%; max-height: 76vh; display: block; }
     .review-toolbar { display: grid; gap: 10px; margin-top: 14px; }
     .review-select {
       width: 100%; max-width: 280px; min-height: 42px; padding: 8px 12px;
@@ -207,9 +229,22 @@
     <section class="panel">
       <h3>Visuels détectés</h3>
       <p class="muted">Quand une publicité Meta contient une image ou une vidéo exploitable, on l’affiche ici automatiquement.</p>
-      <div class="gallery" style="margin-top:12px;"><img src='../assets/meta/meta-ad-1450548729595529.png' alt='image projet' class='gallery-image'></div>
+      <div class="gallery" style="margin-top:12px;"><article class='gallery-card-wrap'><button type='button' class='gallery-card' data-media-src='../assets/meta/meta-ad-1450548729595529.png' data-media-type='image' aria-label='Ouvrir le visuel en grand'><img src='../assets/meta/meta-ad-1450548729595529.png' alt='image projet' class='gallery-image'></button><div class='gallery-meta'><strong>Oumel Résidence</strong><br><span class='gallery-caption'>ad_id 1450548729595529 · cliquer pour agrandir</span><p class='gallery-text'>Oumel Résidence Oumel Résidence Vivez au cœur de Casablanca Oumel Résidence – un cadre moderne et raffiné Studios à partir de 1 MDh Appartements 2ch + salon à partir de 1.4 MDh Ferme Bretonne – Casablanca 05 20 19 19 64 </p><a href='https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=MA&amp;id=1450548729595529' target='_blank' rel='noreferrer'>Ouvrir la source Meta</a></div></article></div>
     </section>
   </main>
+
+  <div id="mediaLightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Visuel publicité">
+      <div class="lightbox-head">
+        <strong>Preuve publicitaire</strong>
+        <div class="lightbox-actions">
+          <a id="mediaOpenNew" class="lightbox-btn" href="#" target="_blank" rel="noreferrer">Ouvrir l’image</a>
+          <button id="mediaClose" type="button" class="lightbox-btn">Fermer</button>
+        </div>
+      </div>
+      <div id="mediaLightboxBody" class="lightbox-media-wrap"></div>
+    </div>
+  </div>
 
   <script src="../supabase-config.js"></script>
   <script
@@ -233,6 +268,10 @@
       const manualStatusLabel = document.getElementById("manualStatusLabel");
       const manualCreatedAt = document.getElementById("manualCreatedAt");
       const manualUpdatedAt = document.getElementById("manualUpdatedAt");
+      const mediaLightbox = document.getElementById("mediaLightbox");
+      const mediaLightboxBody = document.getElementById("mediaLightboxBody");
+      const mediaOpenNew = document.getElementById("mediaOpenNew");
+      const mediaClose = document.getElementById("mediaClose");
 
       function nowIso() {
         return new Date().toISOString();
@@ -265,6 +304,23 @@
         const date = new Date(value);
         if (Number.isNaN(date.getTime())) return value;
         return date.toLocaleString("fr-FR");
+      }
+
+      function openMediaLightbox(src, type) {
+        if (!src || !mediaLightbox || !mediaLightboxBody || !mediaOpenNew) return;
+        mediaOpenNew.href = src;
+        mediaLightboxBody.innerHTML = type === "video"
+          ? `<video class="lightbox-video" controls autoplay preload="metadata" playsinline><source src="${src}"></video>`
+          : `<img class="lightbox-image" src="${src}" alt="Preuve publicitaire">`;
+        mediaLightbox.classList.add("is-open");
+        mediaLightbox.setAttribute("aria-hidden", "false");
+      }
+
+      function closeMediaLightbox() {
+        if (!mediaLightbox || !mediaLightboxBody) return;
+        mediaLightbox.classList.remove("is-open");
+        mediaLightbox.setAttribute("aria-hidden", "true");
+        mediaLightboxBody.innerHTML = "";
       }
 
       function parseCommentsFromNotes(notes) {

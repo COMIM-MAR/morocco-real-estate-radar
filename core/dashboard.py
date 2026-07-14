@@ -1,5 +1,6 @@
 import html
 import json
+import re
 from pathlib import Path
 
 from .config import DOCS_DIR
@@ -106,6 +107,47 @@ def project_media_url(url: str) -> str:
     return f"../{url.lstrip('./')}"
 
 
+def media_signal_map(project) -> dict[str, object]:
+    mapping = {}
+    for signal in project.signals:
+        metadata = signal.metadata or {}
+        ad_id = str(metadata.get("ad_id") or "").strip()
+        if ad_id:
+            mapping[ad_id] = signal
+    return mapping
+
+
+def media_ad_id(url: str) -> str | None:
+    match = re.search(r"meta-ad-(\d+)\.png$", url or "")
+    return match.group(1) if match else None
+
+
+def render_image_card(url: str, signal) -> str:
+    media_url = project_media_url(url)
+    ad_id = (signal.metadata or {}).get("ad_id") if signal else media_ad_id(url) or "n/a"
+    title = (signal.metadata or {}).get("page_name") if signal else None
+    title = title or (signal.source if signal else "Capture publicitaire")
+    excerpt = (signal.text or "")[:220] if signal else ""
+    source_link = (
+        f"<a href='{esc(signal.url)}' target='_blank' rel='noreferrer'>Ouvrir la source Meta</a>"
+        if signal
+        else ""
+    )
+    return (
+        f"<article class='gallery-card-wrap'>"
+        f"<button type='button' class='gallery-card' data-media-src='{esc(media_url)}' data-media-type='image' aria-label='Ouvrir le visuel en grand'>"
+        f"<img src='{esc(media_url)}' alt='image projet' class='gallery-image'>"
+        f"</button>"
+        f"<div class='gallery-meta'>"
+        f"<strong>{esc(title)}</strong><br>"
+        f"<span class='gallery-caption'>ad_id {esc(ad_id)} · cliquer pour agrandir</span>"
+        f"<p class='gallery-text'>{esc(excerpt)}</p>"
+        f"{source_link}"
+        f"</div>"
+        f"</article>"
+    )
+
+
 def confirmation_list(items) -> str:
     if not items:
         return "<li>Aucune confirmation forte.</li>"
@@ -149,15 +191,16 @@ def write_project_page(project, projects_dir: Path):
     urbanism_sources = source_list(project.evidence.get("urbanism_links", []))
     images = project.evidence.get("images", [])
     videos = project.evidence.get("videos", [])
-    image_block = "".join(
-        f"<img src='{esc(project_media_url(url))}' alt='image projet' class='gallery-image'>"
-        for url in images[:6]
-    )
+    signal_by_ad_id = media_signal_map(project)
+    image_block = "".join(render_image_card(url, signal_by_ad_id.get(media_ad_id(url) or "")) for url in images[:6])
     video_block = "".join(
+        f"<button type='button' class='gallery-card' data-media-src='{esc(project_media_url(url))}' data-media-type='video' aria-label='Ouvrir la vidéo en grand'>"
         f"<video class='gallery-video' controls preload='metadata' playsinline>"
         f"<source src='{esc(project_media_url(url))}'>"
         "Votre navigateur ne supporte pas la lecture vidéo."
         "</video>"
+        f"<span class='gallery-caption'>Vidéo pub · cliquer pour agrandir</span>"
+        f"</button>"
         for url in videos[:4]
     )
     media_block = image_block + video_block or "<p class='muted'>Aucun visuel exploitable n'a été détecté automatiquement pour le moment.</p>"
@@ -218,8 +261,30 @@ def write_project_page(project, projects_dir: Path):
     .map-wrap {{ display: grid; gap: 10px; }}
     #projectMap {{ width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }}
     .gallery {{ display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }}
+    .gallery-card-wrap {{ border: 1px solid var(--line); border-radius: 14px; padding: 10px; background: #fff; display: grid; gap: 10px; align-content: start; }}
+    .gallery-card {{
+      display: grid; gap: 8px; padding: 0; border: 0; background: transparent; text-align: left; cursor: zoom-in;
+    }}
     .gallery-image {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }}
     .gallery-video {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); background: #000; }}
+    .gallery-caption {{ font-size: 12px; color: var(--muted); }}
+    .gallery-meta {{ display: grid; gap: 6px; }}
+    .gallery-text {{ margin: 0; font-size: 13px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }}
+    .lightbox {{
+      position: fixed; inset: 0; background: rgba(17, 24, 39, .82); display: none; align-items: center; justify-content: center; padding: 24px; z-index: 2000;
+    }}
+    .lightbox.is-open {{ display: flex; }}
+    .lightbox-panel {{
+      width: min(1180px, 100%); max-height: 92vh; background: #0f172a; border-radius: 18px; border: 1px solid rgba(255,255,255,.08); padding: 16px; display: grid; gap: 12px;
+    }}
+    .lightbox-head {{ display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #fff; }}
+    .lightbox-actions {{ display: flex; gap: 10px; flex-wrap: wrap; }}
+    .lightbox-btn {{
+      min-height: 38px; padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,.18); background: transparent; color: #fff; cursor: pointer;
+    }}
+    .lightbox-media-wrap {{ overflow: auto; max-height: 76vh; border-radius: 12px; background: #020617; }}
+    .lightbox-image {{ width: 100%; height: auto; display: block; }}
+    .lightbox-video {{ width: 100%; max-height: 76vh; display: block; }}
     .review-toolbar {{ display: grid; gap: 10px; margin-top: 14px; }}
     .review-select {{
       width: 100%; max-width: 280px; min-height: 42px; padding: 8px 12px;
@@ -374,6 +439,19 @@ def write_project_page(project, projects_dir: Path):
     </section>
   </main>
 
+  <div id="mediaLightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Visuel publicité">
+      <div class="lightbox-head">
+        <strong>Preuve publicitaire</strong>
+        <div class="lightbox-actions">
+          <a id="mediaOpenNew" class="lightbox-btn" href="#" target="_blank" rel="noreferrer">Ouvrir l’image</a>
+          <button id="mediaClose" type="button" class="lightbox-btn">Fermer</button>
+        </div>
+      </div>
+      <div id="mediaLightboxBody" class="lightbox-media-wrap"></div>
+    </div>
+  </div>
+
   <script src="../supabase-config.js"></script>
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -396,6 +474,10 @@ def write_project_page(project, projects_dir: Path):
       const manualStatusLabel = document.getElementById("manualStatusLabel");
       const manualCreatedAt = document.getElementById("manualCreatedAt");
       const manualUpdatedAt = document.getElementById("manualUpdatedAt");
+      const mediaLightbox = document.getElementById("mediaLightbox");
+      const mediaLightboxBody = document.getElementById("mediaLightboxBody");
+      const mediaOpenNew = document.getElementById("mediaOpenNew");
+      const mediaClose = document.getElementById("mediaClose");
 
       function nowIso() {{
         return new Date().toISOString();
@@ -428,6 +510,23 @@ def write_project_page(project, projects_dir: Path):
         const date = new Date(value);
         if (Number.isNaN(date.getTime())) return value;
         return date.toLocaleString("fr-FR");
+      }}
+
+      function openMediaLightbox(src, type) {{
+        if (!src || !mediaLightbox || !mediaLightboxBody || !mediaOpenNew) return;
+        mediaOpenNew.href = src;
+        mediaLightboxBody.innerHTML = type === "video"
+          ? `<video class="lightbox-video" controls autoplay preload="metadata" playsinline><source src="${{src}}"></video>`
+          : `<img class="lightbox-image" src="${{src}}" alt="Preuve publicitaire">`;
+        mediaLightbox.classList.add("is-open");
+        mediaLightbox.setAttribute("aria-hidden", "false");
+      }}
+
+      function closeMediaLightbox() {{
+        if (!mediaLightbox || !mediaLightboxBody) return;
+        mediaLightbox.classList.remove("is-open");
+        mediaLightbox.setAttribute("aria-hidden", "true");
+        mediaLightboxBody.innerHTML = "";
       }}
 
       function parseCommentsFromNotes(notes) {{
@@ -979,7 +1078,7 @@ def write_index(projects, payload):
       return new Date().toISOString();
     }}
 
-    function hasSupabaseConfig() {{
+      function hasSupabaseConfig() {{
       return Boolean(supabaseConfig && supabaseConfig.url && supabaseConfig.anonKey);
     }}
 
@@ -997,6 +1096,17 @@ def write_index(projects, payload):
         const text = await response.text();
         throw new Error(`Supabase error ${{response.status}}: ${{text}}`);
       }}
+
+      document.querySelectorAll(".gallery-card").forEach((node) => {{
+        node.addEventListener("click", () => openMediaLightbox(node.dataset.mediaSrc, node.dataset.mediaType || "image"));
+      }});
+      mediaClose?.addEventListener("click", closeMediaLightbox);
+      mediaLightbox?.addEventListener("click", (event) => {{
+        if (event.target === mediaLightbox) closeMediaLightbox();
+      }});
+      document.addEventListener("keydown", (event) => {{
+        if (event.key === "Escape") closeMediaLightbox();
+      }});
       if (response.status === 204) return null;
       return response.json();
     }}

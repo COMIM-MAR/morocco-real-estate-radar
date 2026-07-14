@@ -268,7 +268,7 @@
       return new Date().toISOString();
     }
 
-    function hasSupabaseConfig() {
+      function hasSupabaseConfig() {
       return Boolean(supabaseConfig && supabaseConfig.url && supabaseConfig.anonKey);
     }
 
@@ -286,6 +286,17 @@
         const text = await response.text();
         throw new Error(`Supabase error ${response.status}: ${text}`);
       }
+
+      document.querySelectorAll(".gallery-card").forEach((node) => {
+        node.addEventListener("click", () => openMediaLightbox(node.dataset.mediaSrc, node.dataset.mediaType || "image"));
+      });
+      mediaClose?.addEventListener("click", closeMediaLightbox);
+      mediaLightbox?.addEventListener("click", (event) => {
+        if (event.target === mediaLightbox) closeMediaLightbox();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeMediaLightbox();
+      });
       if (response.status === 204) return null;
       return response.json();
     }
