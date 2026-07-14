@@ -200,15 +200,24 @@ def write_project_page(project, projects_dir: Path):
     #projectMap {{ width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }}
     .gallery {{ display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }}
     .gallery-image {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }}
-    .review-toolbar {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }}
-    .review-btn {{
+    .review-toolbar {{ display: grid; gap: 10px; margin-top: 14px; }}
+    .review-select {{
+      width: 100%; max-width: 280px; min-height: 42px; padding: 8px 12px;
       border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink);
-      min-height: 40px; padding: 8px 12px; cursor: pointer;
     }}
-    .review-btn.active {{ background: var(--ink); color: #fff; border-color: var(--ink); }}
     .notes-box {{
-      width: 100%; min-height: 150px; margin-top: 12px; padding: 12px 14px; resize: vertical;
+      width: 100%; min-height: 110px; margin-top: 12px; padding: 12px 14px; resize: vertical;
       border: 1px solid var(--line); border-radius: 14px; background: #fff; color: var(--ink);
+    }}
+    .comment-actions {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }}
+    .comment-btn {{
+      min-height: 40px; padding: 8px 14px; border-radius: 12px; border: 1px solid var(--line);
+      background: var(--ink); color: #fff; cursor: pointer;
+    }}
+    .comment-entry-actions {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }}
+    .comment-entry-btn {{
+      min-height: 32px; padding: 6px 10px; border-radius: 10px; border: 1px solid var(--line);
+      background: #fff; color: var(--ink); cursor: pointer;
     }}
     .inline-meta {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }}
     .mini-card {{ border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 10px 12px; }}
@@ -232,11 +241,13 @@ def write_project_page(project, projects_dir: Path):
         <span id="reviewBadge" class="pill review-new">Nouveau</span>
       </div>
       <div class="review-toolbar">
-        <button class="review-btn" type="button" data-review="new">Nouveau</button>
-        <button class="review-btn" type="button" data-review="to_qualify">À qualifier</button>
-        <button class="review-btn" type="button" data-review="interested">Intéressé</button>
-        <button class="review-btn" type="button" data-review="in_contact">En contact</button>
-        <button class="review-btn" type="button" data-review="archived">Archivé</button>
+        <select id="reviewSelect" class="review-select" aria-label="Statut manuel projet">
+          <option value="new">Nouveau</option>
+          <option value="to_qualify">À qualifier</option>
+          <option value="interested">Intéressé</option>
+          <option value="in_contact">En contact</option>
+          <option value="archived">Archivé</option>
+        </select>
       </div>
     </section>
 
@@ -299,9 +310,13 @@ def write_project_page(project, projects_dir: Path):
         <div class="mini-card"><strong id="manualUpdatedAt">—</strong><br><span class="muted">Dernier changement</span></div>
       </div>
       <ul id="manualWorkflow" class="list"></ul>
-      <h4 style="margin-top:14px;">Notes / commentaires</h4>
-      <p class="muted">Utilise cet espace pour noter tes échanges, objections, prix discutés, raisons d’archivage ou prochaines actions.</p>
-      <textarea id="manualNotes" class="notes-box" placeholder="Ex: appelé le promoteur, visite prévue, prix annoncé, pourquoi ce projet m’intéresse ou non..."></textarea>
+      <h4 style="margin-top:14px;">Journal des commentaires</h4>
+      <p class="muted">Ajoute un commentaire à chaque étape: qualification manuelle, appel, réception des plans, visite, négociation, motif d’archivage, etc.</p>
+      <textarea id="manualCommentInput" class="notes-box" placeholder="Ex: appelé le promoteur, il m'envoie les plans demain. Ticket annoncé: 1,9 MDH."></textarea>
+      <div class="comment-actions">
+        <button id="manualCommentAdd" class="comment-btn" type="button">Ajouter le commentaire</button>
+      </div>
+      <ul id="manualComments" class="list"></ul>
     </section>
 
     <section class="panel">
@@ -352,9 +367,11 @@ def write_project_page(project, projects_dir: Path):
       const reviewLabels = {json.dumps(REVIEW_LABELS, ensure_ascii=False)};
       const projectId = {json.dumps(project.project_id)};
       const reviewBadge = document.getElementById("reviewBadge");
-      const reviewButtons = [...document.querySelectorAll("[data-review]")];
+      const reviewSelect = document.getElementById("reviewSelect");
       const workflowList = document.getElementById("manualWorkflow");
-      const notesBox = document.getElementById("manualNotes");
+      const commentInput = document.getElementById("manualCommentInput");
+      const commentAdd = document.getElementById("manualCommentAdd");
+      const commentsList = document.getElementById("manualComments");
       const manualStatusLabel = document.getElementById("manualStatusLabel");
       const manualCreatedAt = document.getElementById("manualCreatedAt");
       const manualUpdatedAt = document.getElementById("manualUpdatedAt");
@@ -392,6 +409,23 @@ def write_project_page(project, projects_dir: Path):
         return date.toLocaleString("fr-FR");
       }}
 
+      function parseCommentsFromNotes(notes) {{
+        if (!notes) return [];
+        if (typeof notes !== "string") return [];
+        try {{
+          const parsed = JSON.parse(notes);
+          if (parsed && Array.isArray(parsed.comments)) return parsed.comments;
+        }} catch (error) {{
+        }}
+        return notes.trim()
+          ? [{{ id: "legacy-note", text: notes.trim(), created_at: nowIso() }}]
+          : [];
+      }}
+
+      function serializeComments(comments) {{
+        return JSON.stringify({{ comments }});
+      }}
+
       function loadQualifications() {{
         try {{
           return JSON.parse(localStorage.getItem(qualificationKey) || "{{}}");
@@ -404,7 +438,8 @@ def write_project_page(project, projects_dir: Path):
         const createdAt = nowIso();
         return {{
           status: "new",
-          notes: "",
+          notes: serializeComments([]),
+          comments: [],
           created_at: createdAt,
           updated_at: createdAt,
           history: [{{ status: "new", at: createdAt }}],
@@ -416,7 +451,8 @@ def write_project_page(project, projects_dir: Path):
         const existing = data[projectId];
         if (existing && typeof existing === "object") {{
           existing.status = existing.status || "new";
-          existing.notes = existing.notes || "";
+          existing.comments = parseCommentsFromNotes(existing.notes || "");
+          existing.notes = serializeComments(existing.comments);
           existing.created_at = existing.created_at || nowIso();
           existing.updated_at = existing.updated_at || existing.created_at;
           existing.history = Array.isArray(existing.history) && existing.history.length
@@ -430,7 +466,10 @@ def write_project_page(project, projects_dir: Path):
       function normalizeRecord(record) {{
         const normalized = record && typeof record === "object" ? {{ ...record }} : defaultRecord();
         normalized.status = normalized.status || "new";
-        normalized.notes = normalized.notes || "";
+        normalized.comments = Array.isArray(normalized.comments)
+          ? normalized.comments
+          : parseCommentsFromNotes(normalized.notes || "");
+        normalized.notes = serializeComments(normalized.comments);
         normalized.created_at = normalized.created_at || nowIso();
         normalized.updated_at = normalized.updated_at || normalized.created_at;
         normalized.history = Array.isArray(normalized.history) && normalized.history.length
@@ -466,7 +505,7 @@ def write_project_page(project, projects_dir: Path):
         const payload = normalizeRecord({{
           project_id: projectId,
           status: record.status,
-          notes: record.notes || "",
+          notes: serializeComments(record.comments || []),
           history: record.history || [],
           created_at: record.created_at,
           updated_at: record.updated_at,
@@ -500,53 +539,101 @@ def write_project_page(project, projects_dir: Path):
         const status = record.status || "new";
         reviewBadge.textContent = reviewLabels[status] || "Nouveau";
         reviewBadge.className = `pill review-${{status}}`;
-        reviewButtons.forEach((button) => {{
-          button.classList.toggle("active", button.dataset.review === status);
-        }});
+        reviewSelect.value = status;
         manualStatusLabel.textContent = reviewLabels[status] || "Nouveau";
         manualCreatedAt.textContent = formatDate(record.created_at);
         manualUpdatedAt.textContent = formatDate(record.updated_at);
-        notesBox.value = record.notes || "";
         workflowList.innerHTML = (record.history || []).map((item) => `
           <li><strong>${{escapeHtml(reviewLabels[item.status] || item.status)}}</strong><br><span>${{escapeHtml(formatDate(item.at))}}</span></li>
         `).join("") || "<li>Aucun historique.</li>";
+        commentsList.innerHTML = [...(record.comments || [])]
+          .sort((left, right) => String(right.created_at || "").localeCompare(String(left.created_at || "")))
+          .map((item) => `
+            <li data-comment-id="${{escapeHtml(item.id || "")}}">
+              <strong>${{escapeHtml(formatDate(item.created_at))}}</strong><br>
+              <span>${{escapeHtml(item.text || "")}}</span>
+              <div class="comment-entry-actions">
+                <button class="comment-entry-btn" type="button" data-comment-action="edit" data-comment-id="${{escapeHtml(item.id || "")}}">Modifier</button>
+                <button class="comment-entry-btn" type="button" data-comment-action="delete" data-comment-id="${{escapeHtml(item.id || "")}}">Supprimer</button>
+              </div>
+            </li>
+          `).join("") || "<li>Aucun commentaire pour le moment.</li>";
+        commentsList.querySelectorAll("[data-comment-action]").forEach((button) => {{
+          button.addEventListener("click", async () => {{
+            const action = button.dataset.commentAction;
+            const commentId = button.dataset.commentId;
+            const current = normalizeRecord(getRecord());
+            const comments = Array.isArray(current.comments) ? [...current.comments] : [];
+            const index = comments.findIndex((item) => item.id === commentId);
+            if (index === -1) return;
+            if (action === "delete") {{
+              comments.splice(index, 1);
+            }} else if (action === "edit") {{
+              const nextText = window.prompt("Modifier le commentaire", comments[index].text || "");
+              if (nextText === null) return;
+              const trimmed = nextText.trim();
+              if (!trimmed) return;
+              comments[index] = {{
+                ...comments[index],
+                text: trimmed,
+                edited_at: nowIso(),
+              }};
+            }}
+            current.comments = comments;
+            current.notes = serializeComments(comments);
+            current.updated_at = nowIso();
+            saveRecord(current);
+            renderReview();
+            try {{
+              const synced = await persistRemoteRecord(current);
+              saveRecord(synced);
+              renderReview();
+            }} catch (error) {{
+              console.warn("Supabase comment sync failed, local cache kept.", error);
+            }}
+          }});
+        }});
       }}
 
       function escapeHtml(value) {{
         return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
       }}
 
-      reviewButtons.forEach((button) => {{
-        button.addEventListener("click", async () => {{
-          setStatus(button.dataset.review);
+      reviewSelect.addEventListener("change", async () => {{
+        setStatus(reviewSelect.value);
+        renderReview();
+        try {{
+          const synced = await persistRemoteRecord(getRecord());
+          saveRecord(synced);
           renderReview();
-          try {{
-            const synced = await persistRemoteRecord(getRecord());
-            saveRecord(synced);
-            renderReview();
-          }} catch (error) {{
-            console.warn("Supabase sync failed, local cache kept.", error);
-          }}
-        }});
+        }} catch (error) {{
+          console.warn("Supabase sync failed, local cache kept.", error);
+        }}
       }});
 
-      let notesSaveTimer = null;
-      notesBox.addEventListener("input", () => {{
-        const record = getRecord();
-        record.notes = notesBox.value;
-        record.updated_at = nowIso();
+      commentAdd.addEventListener("click", async () => {{
+        const text = (commentInput.value || "").trim();
+        if (!text) return;
+        const record = normalizeRecord(getRecord());
+        const createdAt = nowIso();
+        record.comments = Array.isArray(record.comments) ? record.comments : [];
+        record.comments.push({{
+          id: `comment-${{createdAt}}-${{Math.random().toString(36).slice(2, 8)}}`,
+          text,
+          created_at: createdAt,
+        }});
+        record.notes = serializeComments(record.comments);
+        record.updated_at = createdAt;
         saveRecord(record);
-        manualUpdatedAt.textContent = formatDate(record.updated_at);
-        if (notesSaveTimer) clearTimeout(notesSaveTimer);
-        notesSaveTimer = setTimeout(async () => {{
-          try {{
-            const synced = await persistRemoteRecord(getRecord());
-            saveRecord(synced);
-            renderReview();
-          }} catch (error) {{
-            console.warn("Supabase notes sync failed, local cache kept.", error);
-          }}
-        }}, 500);
+        commentInput.value = "";
+        renderReview();
+        try {{
+          const synced = await persistRemoteRecord(record);
+          saveRecord(synced);
+          renderReview();
+        }} catch (error) {{
+          console.warn("Supabase comment sync failed, local cache kept.", error);
+        }}
       }});
 
       const lat = {json.dumps(geo.get("lat"))};
@@ -707,12 +794,11 @@ def write_index(projects, payload):
     .list li {{ color: var(--muted); padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }}
     .recent-list li {{ display: flex; justify-content: space-between; gap: 12px; align-items: start; }}
     .card-actions {{ display: flex; gap: 8px; flex-wrap: wrap; }}
-    .review-actions {{ display: grid; gap: 8px; grid-template-columns: repeat(5, minmax(0, 1fr)); }}
-    .review-btn {{
-      min-height: 36px; padding: 6px 8px; border-radius: 10px; border: 1px solid var(--line);
-      background: #fff; color: var(--ink); cursor: pointer;
+    .review-actions {{ display: grid; gap: 8px; grid-template-columns: minmax(0, 1fr); }}
+    .review-select {{
+      width: 100%; min-height: 40px; padding: 8px 10px; border-radius: 10px;
+      border: 1px solid var(--line); background: #fff; color: var(--ink);
     }}
-    .review-btn.active {{ background: var(--ink); color: #fff; border-color: var(--ink); }}
     .link-btn {{
       display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px;
       border-radius: 12px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none; font-weight: 600;
@@ -731,7 +817,7 @@ def write_index(projects, payload):
     @media (max-width: 640px) {{
       .stats, .toolbar, .scores {{ grid-template-columns: 1fr; }}
       .project-grid {{ grid-template-columns: 1fr; }}
-      .review-actions {{ grid-template-columns: 1fr 1fr; }}
+      .review-actions {{ grid-template-columns: 1fr; }}
     }}
   </style>
 </head>
@@ -906,11 +992,29 @@ def write_index(projects, payload):
       const createdAt = nowIso();
       return {{
         status: "new",
-        notes: "",
+        notes: JSON.stringify({{ comments: [] }}),
+        comments: [],
         created_at: createdAt,
         updated_at: createdAt,
         history: [{{ status: "new", at: createdAt }}],
       }};
+    }}
+
+    function parseCommentsFromNotes(notes) {{
+      if (!notes) return [];
+      if (typeof notes !== "string") return [];
+      try {{
+        const parsed = JSON.parse(notes);
+        if (parsed && Array.isArray(parsed.comments)) return parsed.comments;
+      }} catch (error) {{
+      }}
+      return notes.trim()
+        ? [{{ id: "legacy-note", text: notes.trim(), created_at: nowIso() }}]
+        : [];
+    }}
+
+    function serializeComments(comments) {{
+      return JSON.stringify({{ comments }});
     }}
 
     function getQualification(projectId) {{
@@ -918,7 +1022,8 @@ def write_index(projects, payload):
       const existing = data[projectId];
       if (existing && typeof existing === "object") {{
         existing.status = existing.status || "new";
-        existing.notes = existing.notes || "";
+        existing.comments = parseCommentsFromNotes(existing.notes || "");
+        existing.notes = serializeComments(existing.comments);
         existing.created_at = existing.created_at || nowIso();
         existing.updated_at = existing.updated_at || existing.created_at;
         existing.history = Array.isArray(existing.history) && existing.history.length
@@ -932,7 +1037,10 @@ def write_index(projects, payload):
     function normalizeQualification(record) {{
       const normalized = record && typeof record === "object" ? {{ ...record }} : defaultQualification();
       normalized.status = normalized.status || "new";
-      normalized.notes = normalized.notes || "";
+      normalized.comments = Array.isArray(normalized.comments)
+        ? normalized.comments
+        : parseCommentsFromNotes(normalized.notes || "");
+      normalized.notes = serializeComments(normalized.comments);
       normalized.created_at = normalized.created_at || nowIso();
       normalized.updated_at = normalized.updated_at || normalized.created_at;
       normalized.history = Array.isArray(normalized.history) && normalized.history.length
@@ -977,7 +1085,7 @@ def write_index(projects, payload):
       const payload = normalizeQualification({{
         project_id: projectId,
         status: record.status,
-        notes: record.notes || "",
+        notes: serializeComments(record.comments || []),
         history: record.history || [],
         created_at: record.created_at,
         updated_at: record.updated_at,
@@ -1114,11 +1222,13 @@ def write_index(projects, payload):
           <div class="score"><span>ROI 5 ans</span><strong>${{(project.evidence.roi || {{}}).five_year_upside_score || "n/a"}}</strong></div>
         </div>
         <div class="review-actions">
-          <button class="review-btn ${{reviewStatus === "new" ? "active" : ""}}" type="button" data-review="new">Nouveau</button>
-          <button class="review-btn ${{reviewStatus === "to_qualify" ? "active" : ""}}" type="button" data-review="to_qualify">À qualifier</button>
-          <button class="review-btn ${{reviewStatus === "interested" ? "active" : ""}}" type="button" data-review="interested">Intéressé</button>
-          <button class="review-btn ${{reviewStatus === "in_contact" ? "active" : ""}}" type="button" data-review="in_contact">En contact</button>
-          <button class="review-btn ${{reviewStatus === "archived" ? "active" : ""}}" type="button" data-review="archived">Archivé</button>
+          <select class="review-select" data-review-select>
+            <option value="new" ${{reviewStatus === "new" ? "selected" : ""}}>Nouveau</option>
+            <option value="to_qualify" ${{reviewStatus === "to_qualify" ? "selected" : ""}}>À qualifier</option>
+            <option value="interested" ${{reviewStatus === "interested" ? "selected" : ""}}>Intéressé</option>
+            <option value="in_contact" ${{reviewStatus === "in_contact" ? "selected" : ""}}>En contact</option>
+            <option value="archived" ${{reviewStatus === "archived" ? "selected" : ""}}>Archivé</option>
+          </select>
         </div>
         <div class="card-actions">
           <a class="link-btn primary" href="projects/${{escapeHtml(slug)}}.html">Ouvrir le projet</a>
@@ -1133,20 +1243,18 @@ def write_index(projects, payload):
         saveFavorites();
         render();
       }});
-      card.querySelectorAll("[data-review]").forEach((button) => {{
-        button.addEventListener("click", async (event) => {{
-          event.preventDefault();
-          event.stopPropagation();
-          const record = saveProjectReview(project.project_id, button.dataset.review);
+      card.querySelector("[data-review-select]").addEventListener("change", async (event) => {{
+        event.preventDefault();
+        event.stopPropagation();
+        const record = saveProjectReview(project.project_id, event.target.value);
+        render();
+        try {{
+          const synced = await persistRemoteQualification(project.project_id, record);
+          saveQualificationRecord(project.project_id, synced);
           render();
-          try {{
-            const synced = await persistRemoteQualification(project.project_id, record);
-            saveQualificationRecord(project.project_id, synced);
-            render();
-          }} catch (error) {{
-            console.warn("Supabase sync failed, local cache kept.", error);
-          }}
-        }});
+        }} catch (error) {{
+          console.warn("Supabase sync failed, local cache kept.", error);
+        }}
       }});
       return card;
     }}

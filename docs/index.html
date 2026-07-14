@@ -104,12 +104,11 @@
     .list li { color: var(--muted); padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
     .recent-list li { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
     .card-actions { display: flex; gap: 8px; flex-wrap: wrap; }
-    .review-actions { display: grid; gap: 8px; grid-template-columns: repeat(5, minmax(0, 1fr)); }
-    .review-btn {
-      min-height: 36px; padding: 6px 8px; border-radius: 10px; border: 1px solid var(--line);
-      background: #fff; color: var(--ink); cursor: pointer;
+    .review-actions { display: grid; gap: 8px; grid-template-columns: minmax(0, 1fr); }
+    .review-select {
+      width: 100%; min-height: 40px; padding: 8px 10px; border-radius: 10px;
+      border: 1px solid var(--line); background: #fff; color: var(--ink);
     }
-    .review-btn.active { background: var(--ink); color: #fff; border-color: var(--ink); }
     .link-btn {
       display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px;
       border-radius: 12px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none; font-weight: 600;
@@ -128,7 +127,7 @@
     @media (max-width: 640px) {
       .stats, .toolbar, .scores { grid-template-columns: 1fr; }
       .project-grid { grid-template-columns: 1fr; }
-      .review-actions { grid-template-columns: 1fr 1fr; }
+      .review-actions { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -303,11 +302,29 @@
       const createdAt = nowIso();
       return {
         status: "new",
-        notes: "",
+        notes: JSON.stringify({ comments: [] }),
+        comments: [],
         created_at: createdAt,
         updated_at: createdAt,
         history: [{ status: "new", at: createdAt }],
       };
+    }
+
+    function parseCommentsFromNotes(notes) {
+      if (!notes) return [];
+      if (typeof notes !== "string") return [];
+      try {
+        const parsed = JSON.parse(notes);
+        if (parsed && Array.isArray(parsed.comments)) return parsed.comments;
+      } catch (error) {
+      }
+      return notes.trim()
+        ? [{ id: "legacy-note", text: notes.trim(), created_at: nowIso() }]
+        : [];
+    }
+
+    function serializeComments(comments) {
+      return JSON.stringify({ comments });
     }
 
     function getQualification(projectId) {
@@ -315,7 +332,8 @@
       const existing = data[projectId];
       if (existing && typeof existing === "object") {
         existing.status = existing.status || "new";
-        existing.notes = existing.notes || "";
+        existing.comments = parseCommentsFromNotes(existing.notes || "");
+        existing.notes = serializeComments(existing.comments);
         existing.created_at = existing.created_at || nowIso();
         existing.updated_at = existing.updated_at || existing.created_at;
         existing.history = Array.isArray(existing.history) && existing.history.length
@@ -329,7 +347,10 @@
     function normalizeQualification(record) {
       const normalized = record && typeof record === "object" ? { ...record } : defaultQualification();
       normalized.status = normalized.status || "new";
-      normalized.notes = normalized.notes || "";
+      normalized.comments = Array.isArray(normalized.comments)
+        ? normalized.comments
+        : parseCommentsFromNotes(normalized.notes || "");
+      normalized.notes = serializeComments(normalized.comments);
       normalized.created_at = normalized.created_at || nowIso();
       normalized.updated_at = normalized.updated_at || normalized.created_at;
       normalized.history = Array.isArray(normalized.history) && normalized.history.length
@@ -374,7 +395,7 @@
       const payload = normalizeQualification({
         project_id: projectId,
         status: record.status,
-        notes: record.notes || "",
+        notes: serializeComments(record.comments || []),
         history: record.history || [],
         created_at: record.created_at,
         updated_at: record.updated_at,
@@ -511,11 +532,13 @@
           <div class="score"><span>ROI 5 ans</span><strong>${(project.evidence.roi || {}).five_year_upside_score || "n/a"}</strong></div>
         </div>
         <div class="review-actions">
-          <button class="review-btn ${reviewStatus === "new" ? "active" : ""}" type="button" data-review="new">Nouveau</button>
-          <button class="review-btn ${reviewStatus === "to_qualify" ? "active" : ""}" type="button" data-review="to_qualify">À qualifier</button>
-          <button class="review-btn ${reviewStatus === "interested" ? "active" : ""}" type="button" data-review="interested">Intéressé</button>
-          <button class="review-btn ${reviewStatus === "in_contact" ? "active" : ""}" type="button" data-review="in_contact">En contact</button>
-          <button class="review-btn ${reviewStatus === "archived" ? "active" : ""}" type="button" data-review="archived">Archivé</button>
+          <select class="review-select" data-review-select>
+            <option value="new" ${reviewStatus === "new" ? "selected" : ""}>Nouveau</option>
+            <option value="to_qualify" ${reviewStatus === "to_qualify" ? "selected" : ""}>À qualifier</option>
+            <option value="interested" ${reviewStatus === "interested" ? "selected" : ""}>Intéressé</option>
+            <option value="in_contact" ${reviewStatus === "in_contact" ? "selected" : ""}>En contact</option>
+            <option value="archived" ${reviewStatus === "archived" ? "selected" : ""}>Archivé</option>
+          </select>
         </div>
         <div class="card-actions">
           <a class="link-btn primary" href="projects/${escapeHtml(slug)}.html">Ouvrir le projet</a>
@@ -530,20 +553,18 @@
         saveFavorites();
         render();
       });
-      card.querySelectorAll("[data-review]").forEach((button) => {
-        button.addEventListener("click", async (event) => {
-          event.preventDefault();
-          event.stopPropagation();
-          const record = saveProjectReview(project.project_id, button.dataset.review);
+      card.querySelector("[data-review-select]").addEventListener("change", async (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        const record = saveProjectReview(project.project_id, event.target.value);
+        render();
+        try {
+          const synced = await persistRemoteQualification(project.project_id, record);
+          saveQualificationRecord(project.project_id, synced);
           render();
-          try {
-            const synced = await persistRemoteQualification(project.project_id, record);
-            saveQualificationRecord(project.project_id, synced);
-            render();
-          } catch (error) {
-            console.warn("Supabase sync failed, local cache kept.", error);
-          }
-        });
+        } catch (error) {
+          console.warn("Supabase sync failed, local cache kept.", error);
+        }
       });
       return card;
     }
