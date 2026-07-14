@@ -57,13 +57,19 @@
     .gallery { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
     .gallery-card-wrap { border: 1px solid var(--line); border-radius: 14px; padding: 10px; background: #fff; display: grid; gap: 10px; align-content: start; }
     .gallery-card {
-      display: grid; gap: 8px; padding: 0; border: 0; background: transparent; text-align: left; cursor: zoom-in;
+      display: grid; gap: 8px; padding: 0; border: 0; background: transparent; text-align: left;
     }
-    .gallery-image { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }
-    .gallery-video { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); background: #000; }
+    .gallery-image { width: 100%; height: 320px; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: #f8fafc; }
+    .gallery-video { width: 100%; height: 320px; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: #000; }
     .gallery-caption { font-size: 12px; color: var(--muted); }
     .gallery-meta { display: grid; gap: 6px; }
     .gallery-text { margin: 0; font-size: 13px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+    .gallery-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .gallery-link {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 8px 12px;
+      border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none;
+    }
+    .gallery-link:hover { text-decoration: none; border-color: #cbd5e1; }
     .lightbox {
       position: fixed; inset: 0; background: rgba(17, 24, 39, .82); display: none; align-items: center; justify-content: center; padding: 24px; z-index: 2000;
     }
@@ -229,7 +235,7 @@
     <section class="panel">
       <h3>Visuels détectés</h3>
       <p class="muted">Quand une publicité Meta contient une image ou une vidéo exploitable, on l’affiche ici automatiquement.</p>
-      <div class="gallery" style="margin-top:12px;"><article class='gallery-card-wrap'><button type='button' class='gallery-card' data-media-src='../assets/meta/meta-ad-1620969222885314.png' data-media-type='image' aria-label='Ouvrir le visuel en grand'><img src='../assets/meta/meta-ad-1620969222885314.png' alt='image projet' class='gallery-image'></button><div class='gallery-meta'><strong>Mobilia Rabat</strong><br><span class='gallery-caption'>ad_id 1620969222885314 · cliquer pour agrandir</span><p class='gallery-text'>Mobilia Rabat Mobilia Rabat ✨ BON PLAN MOBILIA RABAT ✨ Vous cherchez à meubler votre maison avec style… sans exploser votre budget ? 👀 👉 Chez Mobilia Rabat, profitez d’une sélection exceptionnelle de mobilier moderne, co</p><a href='https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=MA&amp;id=1620969222885314' target='_blank' rel='noreferrer'>Ouvrir la source Meta</a></div></article></div>
+      <div class="gallery" style="margin-top:12px;"><article class='gallery-card-wrap'><a class='gallery-card' href='../assets/meta/meta-ad-1620969222885314.png' target='_blank' rel='noreferrer' aria-label='Ouvrir le visuel en grand'><img src='../assets/meta/meta-ad-1620969222885314.png' alt='image projet' class='gallery-image'></a><div class='gallery-meta'><strong>Mobilia Rabat</strong><br><span class='gallery-caption'>ad_id 1620969222885314 · cliquer pour agrandir</span><p class='gallery-text'>Mobilia Rabat Mobilia Rabat ✨ BON PLAN MOBILIA RABAT ✨ Vous cherchez à meubler votre maison avec style… sans exploser votre budget ? 👀 👉 Chez Mobilia Rabat, profitez d’une sélection exceptionnelle de mobilier moderne, co</p><div class='gallery-actions'><a class='gallery-link' href='../assets/meta/meta-ad-1620969222885314.png' target='_blank' rel='noreferrer'>Voir en grand</a><a href='https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=MA&amp;id=1620969222885314' target='_blank' rel='noreferrer'>Ouvrir la source Meta</a></div></div></article></div>
     </section>
   </main>
 

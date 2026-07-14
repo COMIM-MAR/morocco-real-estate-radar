@@ -135,14 +135,17 @@ def render_image_card(url: str, signal) -> str:
     )
     return (
         f"<article class='gallery-card-wrap'>"
-        f"<button type='button' class='gallery-card' data-media-src='{esc(media_url)}' data-media-type='image' aria-label='Ouvrir le visuel en grand'>"
+        f"<a class='gallery-card' href='{esc(media_url)}' target='_blank' rel='noreferrer' aria-label='Ouvrir le visuel en grand'>"
         f"<img src='{esc(media_url)}' alt='image projet' class='gallery-image'>"
-        f"</button>"
+        f"</a>"
         f"<div class='gallery-meta'>"
         f"<strong>{esc(title)}</strong><br>"
         f"<span class='gallery-caption'>ad_id {esc(ad_id)} · cliquer pour agrandir</span>"
         f"<p class='gallery-text'>{esc(excerpt)}</p>"
+        f"<div class='gallery-actions'>"
+        f"<a class='gallery-link' href='{esc(media_url)}' target='_blank' rel='noreferrer'>Voir en grand</a>"
         f"{source_link}"
+        f"</div>"
         f"</div>"
         f"</article>"
     )
@@ -194,13 +197,18 @@ def write_project_page(project, projects_dir: Path):
     signal_by_ad_id = media_signal_map(project)
     image_block = "".join(render_image_card(url, signal_by_ad_id.get(media_ad_id(url) or "")) for url in images[:6])
     video_block = "".join(
-        f"<button type='button' class='gallery-card' data-media-src='{esc(project_media_url(url))}' data-media-type='video' aria-label='Ouvrir la vidéo en grand'>"
+        f"<article class='gallery-card-wrap'>"
+        f"<div class='gallery-card'>"
         f"<video class='gallery-video' controls preload='metadata' playsinline>"
         f"<source src='{esc(project_media_url(url))}'>"
         "Votre navigateur ne supporte pas la lecture vidéo."
         "</video>"
-        f"<span class='gallery-caption'>Vidéo pub · cliquer pour agrandir</span>"
-        f"</button>"
+        f"</div>"
+        f"<div class='gallery-meta'>"
+        f"<span class='gallery-caption'>Vidéo pub</span>"
+        f"<div class='gallery-actions'><a class='gallery-link' href='{esc(project_media_url(url))}' target='_blank' rel='noreferrer'>Ouvrir la vidéo</a></div>"
+        f"</div>"
+        f"</article>"
         for url in videos[:4]
     )
     media_block = image_block + video_block or "<p class='muted'>Aucun visuel exploitable n'a été détecté automatiquement pour le moment.</p>"
@@ -263,13 +271,19 @@ def write_project_page(project, projects_dir: Path):
     .gallery {{ display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }}
     .gallery-card-wrap {{ border: 1px solid var(--line); border-radius: 14px; padding: 10px; background: #fff; display: grid; gap: 10px; align-content: start; }}
     .gallery-card {{
-      display: grid; gap: 8px; padding: 0; border: 0; background: transparent; text-align: left; cursor: zoom-in;
+      display: grid; gap: 8px; padding: 0; border: 0; background: transparent; text-align: left;
     }}
-    .gallery-image {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }}
-    .gallery-video {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); background: #000; }}
+    .gallery-image {{ width: 100%; height: 320px; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: #f8fafc; }}
+    .gallery-video {{ width: 100%; height: 320px; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: #000; }}
     .gallery-caption {{ font-size: 12px; color: var(--muted); }}
     .gallery-meta {{ display: grid; gap: 6px; }}
     .gallery-text {{ margin: 0; font-size: 13px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }}
+    .gallery-actions {{ display: flex; gap: 10px; flex-wrap: wrap; }}
+    .gallery-link {{
+      display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 8px 12px;
+      border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none;
+    }}
+    .gallery-link:hover {{ text-decoration: none; border-color: #cbd5e1; }}
     .lightbox {{
       position: fixed; inset: 0; background: rgba(17, 24, 39, .82); display: none; align-items: center; justify-content: center; padding: 24px; z-index: 2000;
     }}
