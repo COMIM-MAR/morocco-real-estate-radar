@@ -154,7 +154,7 @@ def write_project_page(project, projects_dir: Path):
       --accent: #c05621;
       --radius: 18px;
     }}
-    * {{ box-sizing: border-box; }}
+    * {{ box-sizing: border-box; min-width: 0; }}
     body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
     main {{ max-width: 980px; margin: 0 auto; padding: 20px 16px 48px; display: grid; gap: 16px; }}
     .panel {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }}
@@ -387,22 +387,34 @@ def write_index(projects, payload):
       color: var(--ink);
     }}
     .toggle {{ cursor: pointer; background: var(--panel-soft); }}
-    .project-grid {{ display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 16px; }}
-    .project-card {{ padding: 16px; display: grid; gap: 10px; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }}
+    .project-grid {{ display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top: 16px; }}
+    .project-card {{ padding: 16px; display: grid; gap: 10px; overflow: hidden; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }}
     .project-card:hover {{ transform: translateY(-1px); border-color: #d1d5db; box-shadow: 0 8px 24px rgba(17,24,39,.06); }}
     .project-card.favorite {{ outline: 2px solid #f7d9c7; }}
     .card-top {{ display: flex; justify-content: space-between; gap: 12px; align-items: start; }}
-    .card-title {{ font-size: 18px; font-weight: 700; }}
+    .card-top > div {{ flex: 1 1 auto; min-width: 0; }}
+    .card-title {{
+      font-size: 18px; font-weight: 700; line-height: 1.2;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }}
+    .card-subtitle {{
+      margin-top: 4px;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }}
     .pill-row {{ display: flex; flex-wrap: wrap; gap: 8px; }}
     .pill {{
       display: inline-flex; align-items: center; padding: 5px 10px; border-radius: 999px;
-      background: #f3f4f6; color: var(--muted); font-size: 12px; border: 1px solid var(--line);
+      max-width: 100%; background: #f3f4f6; color: var(--muted); font-size: 12px; border: 1px solid var(--line);
     }}
     .pill.urgent {{ background: var(--urgent); color: #9a3412; }}
     .pill.watch {{ background: var(--watch); color: #a16207; }}
     .pill.monitor {{ background: var(--monitor); color: #166534; }}
-    .scores {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }}
-    .score {{ border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); padding: 10px; }}
+    .project-summary {{
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+      min-height: 4.5em;
+    }}
+    .scores {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }}
+    .score {{ border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); padding: 10px; min-width: 0; }}
     .score span {{ display: block; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }}
     .score strong {{ display: block; font-size: 20px; margin-top: 4px; color: var(--ink); }}
     .map-panel {{ min-height: 420px; }}
@@ -419,6 +431,9 @@ def write_index(projects, payload):
     a {{ color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }}
     a:hover {{ text-decoration: underline; }}
     @media (max-width: 1180px) {{ .overview {{ grid-template-columns: 1fr; }} }}
+    @media (max-width: 1080px) {{
+      .project-grid {{ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }}
+    }}
     @media (max-width: 840px) {{
       .stats {{ grid-template-columns: 1fr 1fr; }}
       .toolbar {{ grid-template-columns: 1fr 1fr; }}
@@ -651,7 +666,7 @@ def write_index(projects, payload):
         <div class="card-top">
           <div>
             <div class="card-title">${{escapeHtml(project.name)}}</div>
-            <div class="muted" style="margin-top:4px;">${{escapeHtml(project.promoter || "Promoteur à confirmer")}}</div>
+            <div class="muted card-subtitle">${{escapeHtml(project.promoter || "Promoteur à confirmer")}}</div>
           </div>
           <button class="toggle" type="button" data-action="favorite" style="width:auto; min-height:auto; padding:8px 10px;">${{favorite ? "★" : "☆"}}</button>
         </div>
@@ -660,7 +675,7 @@ def write_index(projects, payload):
           <span class="pill">${{escapeHtml(project.city || "Ville à confirmer")}}</span>
           <span class="pill">${{escapeHtml((project.evidence.practical || {{}}).asset_label || project.asset_type || "Type à confirmer")}}</span>
         </div>
-        <p class="muted">${{escapeHtml((project.evidence.ai_analysis || {{}}).summary || project.evidence.recommendation_narrative || project.summary)}}</p>
+        <p class="muted project-summary">${{escapeHtml((project.evidence.ai_analysis || {{}}).summary || project.evidence.recommendation_narrative || project.summary)}}</p>
         <div class="scores">
           <div class="score"><span>Confidence</span><strong>${{project.confidence_score}}</strong></div>
           <div class="score"><span>Investment</span><strong>${{project.investment_score}}</strong></div>
