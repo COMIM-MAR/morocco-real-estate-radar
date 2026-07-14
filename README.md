@@ -73,6 +73,7 @@ GitHub Actions:
 - Meta exact ad extraction remains dependent on Meta Ad Library allowing automated access from the runner
 - the most reliable mode is Playwright + authenticated `storage_state`
 - if Meta still serves a client challenge, the collector falls back to watch links instead of producing fake confirmations
+- the scheduled workflow currently runs once per day at `05:00 UTC`
 
 Outputs:
 - `data/intelligence.db`
