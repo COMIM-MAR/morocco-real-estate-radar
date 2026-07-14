@@ -119,30 +119,12 @@ def choose_best_media_locator(page):
     )
 
 
-def capture_dialog(page, asset_path: Path) -> bool:
-    for selector in ("[role='dialog']", "[aria-modal='true']"):
-        locator = page.locator(selector)
-        try:
-            count = locator.count()
-        except Exception:
-            count = 0
-        for index in range(count):
-            item = locator.nth(index)
-            try:
-                box = item.bounding_box()
-            except Exception:
-                box = None
-            if not box:
-                continue
-            if box["width"] < 320 or box["height"] < 320:
-                continue
-            try:
-                item.screenshot(path=str(asset_path))
-            except Exception:
-                continue
-            if asset_path.exists() and asset_path.stat().st_size > 0:
-                return True
-    return False
+def capture_visible_page(page, asset_path: Path) -> bool:
+    try:
+        page.screenshot(path=str(asset_path), full_page=False)
+    except Exception:
+        return False
+    return asset_path.exists() and asset_path.stat().st_size > 0
 
 
 def capture_meta_asset(context, source_url: str, asset_path: Path) -> bool:
@@ -154,16 +136,7 @@ def capture_meta_asset(context, source_url: str, asset_path: Path) -> bool:
         except PlaywrightTimeoutError:
             pass
         page.wait_for_timeout(META_MEDIA_CAPTURE_WAIT_MS)
-        if capture_dialog(page, asset_path):
-            return True
-        tag = choose_best_media_locator(page)
-        if not tag:
-            return False
-        locator = page.locator("[data-radar-capture='1']").first
-        if locator.count() == 0:
-            return False
-        locator.screenshot(path=str(asset_path))
-        return asset_path.exists() and asset_path.stat().st_size > 0
+        return capture_visible_page(page, asset_path)
     except Exception:
         return False
     finally:
