@@ -138,10 +138,19 @@ def write_project_page(project, projects_dir: Path):
     news_sources = source_list(project.evidence.get("news_links", []))
     urbanism_sources = source_list(project.evidence.get("urbanism_links", []))
     images = project.evidence.get("images", [])
+    videos = project.evidence.get("videos", [])
     image_block = "".join(
         f"<img src='{esc(url)}' alt='image projet' class='gallery-image'>"
         for url in images[:6]
-    ) or "<p class='muted'>Aucune image exploitable n'a été détectée automatiquement pour le moment.</p>"
+    )
+    video_block = "".join(
+        f"<video class='gallery-video' controls preload='metadata' playsinline>"
+        f"<source src='{esc(url)}'>"
+        "Votre navigateur ne supporte pas la lecture vidéo."
+        "</video>"
+        for url in videos[:4]
+    )
+    media_block = image_block + video_block or "<p class='muted'>Aucun visuel exploitable n'a été détecté automatiquement pour le moment.</p>"
     page = f"""<!doctype html>
 <html lang="fr">
 <head>
@@ -200,6 +209,7 @@ def write_project_page(project, projects_dir: Path):
     #projectMap {{ width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }}
     .gallery {{ display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }}
     .gallery-image {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }}
+    .gallery-video {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); background: #000; }}
     .review-toolbar {{ display: grid; gap: 10px; margin-top: 14px; }}
     .review-select {{
       width: 100%; max-width: 280px; min-height: 42px; padding: 8px 12px;
@@ -348,8 +358,9 @@ def write_project_page(project, projects_dir: Path):
     </section>
 
     <section class="panel">
-      <h3>Images détectées</h3>
-      <div class="gallery" style="margin-top:12px;">{image_block}</div>
+      <h3>Visuels détectés</h3>
+      <p class="muted">Quand une publicité Meta contient une image ou une vidéo exploitable, on l’affiche ici automatiquement.</p>
+      <div class="gallery" style="margin-top:12px;">{media_block}</div>
     </section>
   </main>
 

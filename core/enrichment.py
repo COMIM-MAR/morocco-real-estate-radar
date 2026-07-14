@@ -310,6 +310,24 @@ def enrich_project_intelligence(project, config):
     source_catalog = build_source_catalog(project)
     practical = availability_summary(project)
     analysis = ai_analysis(project, band)
+    image_urls: list[str] = []
+    video_urls: list[str] = []
+    seen_images: set[str] = set()
+    seen_videos: set[str] = set()
+    for signal in project.signals:
+        metadata = signal.metadata or {}
+        for url in metadata.get("image_urls") or []:
+            if url and url not in seen_images:
+                seen_images.add(url)
+                image_urls.append(url)
+        for url in metadata.get("video_urls") or []:
+            if url and url not in seen_videos:
+                seen_videos.add(url)
+                video_urls.append(url)
+        snapshot_url = metadata.get("ad_snapshot_url")
+        if snapshot_url and not image_urls and snapshot_url not in seen_images:
+            seen_images.add(snapshot_url)
+            image_urls.append(snapshot_url)
     project.evidence["geo"] = geo
     project.evidence["price_band"] = band
     project.evidence["price_evolution"] = price_evolution
@@ -330,4 +348,6 @@ def enrich_project_intelligence(project, config):
     project.evidence["listing_links"] = [item for item in source_catalog if item["kind"] == "listing"]
     project.evidence["news_links"] = [item for item in source_catalog if item["kind"] == "google_news"]
     project.evidence["urbanism_links"] = [item for item in source_catalog if item["kind"] == "urbanism"]
+    project.evidence["images"] = image_urls
+    project.evidence["videos"] = video_urls
     return project

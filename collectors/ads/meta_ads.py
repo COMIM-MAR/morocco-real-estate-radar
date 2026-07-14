@@ -138,6 +138,35 @@ def clean(text: str | None) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
 
+def unique_preserve(values: list[str]) -> list[str]:
+    seen: set[str] = set()
+    result: list[str] = []
+    for value in values:
+        if not value or value in seen:
+            continue
+        seen.add(value)
+        result.append(value)
+    return result
+
+
+def extract_media_urls(window: str) -> tuple[list[str], list[str]]:
+    image_patterns = [
+        r'"(?:image_url|imageUrl|original_image_url|originalImageUrl|resized_image_url|resizedImageUrl|video_preview_image_url|videoPreviewImageUrl|watermarked_resized_image_uri|watermarkedResizedImageUri|image_uri|imageUri)":"([^"]+)"',
+    ]
+    video_patterns = [
+        r'"(?:video_hd_url|videoHdUrl|video_sd_url|videoSdUrl|video_url|videoUrl)":"([^"]+)"',
+    ]
+    image_urls: list[str] = []
+    video_urls: list[str] = []
+    for pattern in image_patterns:
+        image_urls.extend(decode_fragment(match) for match in re.findall(pattern, window))
+    for pattern in video_patterns:
+        video_urls.extend(decode_fragment(match) for match in re.findall(pattern, window))
+    image_urls = [url for url in image_urls if url.startswith("http")]
+    video_urls = [url for url in video_urls if url.startswith("http")]
+    return unique_preserve(image_urls), unique_preserve(video_urls)
+
+
 def slug_tokens(text: str) -> list[str]:
     return [token for token in re.split(r"[^a-z0-9àâçéèêëîïôùûüÿñæœ]+", (text or "").lower()) if len(token) >= 3]
 
@@ -357,12 +386,15 @@ def parse_text_blocks(page_text: str) -> list[dict]:
                 "caption": "",
                 "landing_page_url": "",
                 "snapshot_url": detail_url(ad_id),
+                "image_urls": [],
+                "video_urls": [],
             }
         )
     return entries
 
 
-def enrich_entries_with_links(entries: list[dict], links: list[dict]) -> list[dict]:
+def enrich_entries_with_links(entries: list[dict], links: list[dict], html: str = "") -> list[dict]:
+    regex_map = {entry["ad_id"]: entry for entry in regex_entries(html)} if html else {}
     for entry in entries:
         page_name = entry.get("page_name", "").strip().lower()
         page_link = next(
@@ -387,6 +419,15 @@ def enrich_entries_with_links(entries: list[dict], links: list[dict]) -> list[di
             entry["page_link"] = page_link
         if landing_link:
             entry["landing_page_url"] = landing_link
+        regex_entry = regex_map.get(entry.get("ad_id"))
+        if regex_entry:
+            entry["snapshot_url"] = regex_entry.get("snapshot_url") or entry.get("snapshot_url")
+            entry["ad_snapshot_url"] = regex_entry.get("snapshot_url") or entry.get("ad_snapshot_url")
+            entry["body"] = entry.get("body") or regex_entry.get("body") or ""
+            entry["caption"] = entry.get("caption") or regex_entry.get("caption") or ""
+            entry["landing_page_url"] = entry.get("landing_page_url") or regex_entry.get("landing_page_url") or ""
+            entry["image_urls"] = unique_preserve((entry.get("image_urls") or []) + (regex_entry.get("image_urls") or []))
+            entry["video_urls"] = unique_preserve((entry.get("video_urls") or []) + (regex_entry.get("video_urls") or []))
     return entries
 
 
@@ -539,13 +580,14 @@ def fetch_entries_with_playwright(url: str) -> list[dict]:
                 pass
             page.wait_for_timeout(META_PLAYWRIGHT_WAIT_MS)
             page_text = page.locator("body").inner_text()
+            html = page.content()
             links = page.locator("a").evaluate_all(
                 "els => els.map(a => ({text:(a.innerText||'').trim(), href:a.href})).filter(x => x.href)"
             )
         finally:
             context.close()
             browser.close()
-    return enrich_entries_with_links(parse_text_blocks(page_text), links)
+    return enrich_entries_with_links(parse_text_blocks(page_text), links, html)
 
 
 def regex_entries(html: str) -> list[dict]:
@@ -576,6 +618,7 @@ def regex_entries(html: str) -> list[dict]:
             body_match = re.search(r'"(?:ad_creative_body|body|adBody)":"([^"]{10,800})"', window)
             caption_match = re.search(r'"(?:link_caption|caption|linkCaption)":"([^"]{4,400})"', window)
             landing_match = re.search(r'"(?:link_url|linkUrl|landing_page_url|landingPageUrl)":"([^"]{8,800})"', window)
+            image_urls, video_urls = extract_media_urls(window)
             entries.append(
                 {
                     "ad_id": ad_id,
@@ -584,6 +627,8 @@ def regex_entries(html: str) -> list[dict]:
                     "body": decode_fragment(body_match.group(1) if body_match else ""),
                     "caption": decode_fragment(caption_match.group(1) if caption_match else ""),
                     "landing_page_url": decode_fragment(landing_match.group(1) if landing_match else ""),
+                    "image_urls": image_urls,
+                    "video_urls": video_urls,
                 }
             )
     return entries
@@ -600,6 +645,8 @@ def normalize_candidate(entry: dict, query: str, promoter: str | None) -> dict:
         "snapshot_url": detail_url(entry["ad_id"]),
         "ad_snapshot_url": entry.get("snapshot_url") or detail_url(entry["ad_id"]),
         "landing_page_url": entry.get("landing_page_url") or "",
+        "image_urls": unique_preserve(entry.get("image_urls") or []),
+        "video_urls": unique_preserve(entry.get("video_urls") or []),
         "body": body,
         "query": query,
         "title": " · ".join(bit for bit in title_bits if bit),
@@ -658,6 +705,8 @@ def meta_signal(entry: dict, promoter: str | None) -> SignalEvent:
             "page_name": entry.get("page_name"),
             "ad_snapshot_url": entry.get("ad_snapshot_url"),
             "landing_page_url": entry.get("landing_page_url"),
+            "image_urls": entry.get("image_urls") or [],
+            "video_urls": entry.get("video_urls") or [],
             "query": entry.get("query"),
             "city_hint": entry.get("city_hint"),
             "zone_hint": entry.get("zone_hint"),
@@ -691,6 +740,8 @@ def social_signal_from_meta(entry: dict, promoter: str | None) -> SignalEvent | 
             "page_name": entry.get("page_name"),
             "page_link": page_link,
             "landing_page_url": entry.get("landing_page_url"),
+            "image_urls": entry.get("image_urls") or [],
+            "video_urls": entry.get("video_urls") or [],
             "query": entry.get("query"),
             "city_hint": entry.get("city_hint"),
             "zone_hint": entry.get("zone_hint"),
