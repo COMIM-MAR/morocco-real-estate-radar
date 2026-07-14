@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+from urllib.parse import urlparse
 
 from .config import DOCS_DIR
 
@@ -45,6 +46,33 @@ def local_asset_exists(url: str | None) -> bool:
     return asset_path.exists() and asset_path.stat().st_size > 0
 
 
+def media_extension(url: str, default: str = ".jpg") -> str:
+    path = urlparse(url).path.lower()
+    for ext in (".jpg", ".jpeg", ".png", ".webp", ".gif", ".mp4", ".mov"):
+        if path.endswith(ext):
+            return ext
+    return default
+
+
+def download_media_url(context, url: str, asset_path: Path) -> bool:
+    if not url.startswith("http"):
+        return False
+    page = context.new_page()
+    try:
+        response = page.goto(url, wait_until="domcontentloaded", timeout=META_MEDIA_CAPTURE_TIMEOUT_MS)
+        if response is None:
+            return False
+        data = response.body()
+    except Exception:
+        return False
+    finally:
+        page.close()
+    if not data:
+        return False
+    asset_path.write_bytes(data)
+    return asset_path.exists() and asset_path.stat().st_size > 0
+
+
 def project_meta_candidates(project) -> list[dict]:
     seen: set[str] = set()
     candidates: list[dict] = []
@@ -63,119 +91,61 @@ def project_meta_candidates(project) -> list[dict]:
     return candidates[:META_MEDIA_CAPTURE_LIMIT]
 
 
-def choose_best_media_locator(page):
-    return page.locator("img, video").evaluate_all(
+def ad_media_candidates(page, ad_id: str) -> list[dict]:
+    return page.locator("img,video").evaluate_all(
         """
-        els => {
-          let best = null;
+        (els, adId) => {
+          const allNodes = [...document.querySelectorAll('body *')];
+          const anchors = allNodes
+            .filter((node) => (node.innerText || '').includes(adId))
+            .map((node) => {
+              const rect = node.getBoundingClientRect();
+              return { left: rect.left, top: rect.top, width: rect.width, height: rect.height };
+            })
+            .filter((rect) => rect.width > 0 && rect.height > 0);
+          if (!anchors.length) return [];
+          const anchor = anchors.sort((a, b) => a.top - b.top)[0];
+          const candidates = [];
           for (const el of els) {
             const style = window.getComputedStyle(el);
             const rect = el.getBoundingClientRect();
-            const src = el.currentSrc || el.src || el.getAttribute('poster') || '';
+            const src = el.currentSrc || el.src || '';
+            const poster = el.getAttribute('poster') || '';
+            const mediaUrl = src || poster;
             const visible =
               style.display !== 'none' &&
               style.visibility !== 'hidden' &&
-              rect.width >= 220 &&
-              rect.height >= 220 &&
-              rect.top < window.innerHeight &&
-              rect.bottom > 0;
+              rect.width >= 120 &&
+              rect.height >= 120;
             const invalid =
-              !src ||
-              src.startsWith('data:') ||
-              src.includes('emoji.php') ||
-              src.includes('static.xx.fbcdn.net/rsrc.php');
+              !mediaUrl ||
+              mediaUrl.startsWith('data:') ||
+              mediaUrl.includes('emoji.php') ||
+              mediaUrl.includes('static.xx.fbcdn.net/rsrc.php');
             if (!visible || invalid) continue;
-            const score = (rect.width * rect.height) + (el.tagName === 'VIDEO' ? 100000 : 0);
-            if (!best || score > best.score) {
-              best = { score, tag: el.tagName.toLowerCase() };
-            }
+            const sameColumn = Math.abs(rect.left - anchor.left) < 260;
+            const overlapX = rect.left <= anchor.left + 520 && rect.left + rect.width >= anchor.left - 40;
+            const underAnchor = rect.top >= anchor.top - 80 && rect.top <= anchor.top + 900;
+            if (!(sameColumn || overlapX) || !underAnchor) continue;
+            candidates.push({
+              tag: el.tagName.toLowerCase(),
+              url: mediaUrl,
+              poster,
+              width: Math.round(rect.width),
+              height: Math.round(rect.height),
+              left: Math.round(rect.left),
+              top: Math.round(rect.top),
+              score: Math.round(rect.width * rect.height - Math.abs(rect.left - anchor.left) * 10 - Math.abs(rect.top - anchor.top) * 2),
+            });
           }
-          if (!best) return null;
-          for (const el of els) {
-            const style = window.getComputedStyle(el);
-            const rect = el.getBoundingClientRect();
-            const src = el.currentSrc || el.src || el.getAttribute('poster') || '';
-            const score = (rect.width * rect.height) + (el.tagName === 'VIDEO' ? 100000 : 0);
-            const visible =
-              style.display !== 'none' &&
-              style.visibility !== 'hidden' &&
-              rect.width >= 220 &&
-              rect.height >= 220 &&
-              rect.top < window.innerHeight &&
-              rect.bottom > 0;
-            const invalid =
-              !src ||
-              src.startsWith('data:') ||
-              src.includes('emoji.php') ||
-              src.includes('static.xx.fbcdn.net/rsrc.php');
-            if (visible && !invalid && score === best.score) {
-              el.setAttribute('data-radar-capture', '1');
-              return best.tag;
-            }
-          }
-          return null;
+          return candidates.sort((a, b) => b.score - a.score).slice(0, 4);
         }
-        """
+        """,
+        ad_id,
     )
 
 
-def ad_card_clip(page, ad_id: str) -> dict | None:
-    try:
-        targets = page.locator(f"text={ad_id}")
-        count = min(targets.count(), 6)
-    except Exception:
-        return None
-    for index in range(count):
-        try:
-            clip = targets.nth(index).evaluate(
-                """
-                (el) => {
-                  el.scrollIntoView({block: 'center', inline: 'nearest'});
-                  const rect = el.getBoundingClientRect();
-                  const viewportWidth = window.innerWidth;
-                  const viewportHeight = window.innerHeight;
-                  if (!rect || rect.width <= 0 || rect.height <= 0) return null;
-                  const x = Math.max(0, rect.left - 12);
-                  const y = Math.max(0, rect.top - 56);
-                  const width = Math.min(viewportWidth - x - 16, 620);
-                  const height = Math.min(viewportHeight - y - 16, 820);
-                  if (width < 260 || height < 260) return null;
-                  return {
-                    x: x + window.scrollX,
-                    y: y + window.scrollY,
-                    width,
-                    height,
-                  };
-                }
-                """
-            )
-        except Exception:
-            clip = None
-        if clip:
-            return clip
-    return None
-
-
-def capture_ad_card(page, ad_id: str, asset_path: Path) -> bool:
-    clip = ad_card_clip(page, ad_id)
-    if not clip:
-        return False
-    try:
-        page.screenshot(path=str(asset_path), clip=clip)
-    except Exception:
-        return False
-    return asset_path.exists() and asset_path.stat().st_size > 0
-
-
-def capture_visible_page(page, asset_path: Path) -> bool:
-    try:
-        page.screenshot(path=str(asset_path), full_page=False)
-    except Exception:
-        return False
-    return asset_path.exists() and asset_path.stat().st_size > 0
-
-
-def capture_meta_asset(context, source_url: str, ad_id: str, asset_path: Path) -> bool:
+def fetch_meta_asset_url(context, source_url: str, ad_id: str) -> str | None:
     page = context.new_page()
     try:
         page.goto(source_url, wait_until="domcontentloaded", timeout=META_MEDIA_CAPTURE_TIMEOUT_MS)
@@ -184,11 +154,13 @@ def capture_meta_asset(context, source_url: str, ad_id: str, asset_path: Path) -
         except PlaywrightTimeoutError:
             pass
         page.wait_for_timeout(META_MEDIA_CAPTURE_WAIT_MS)
-        if capture_ad_card(page, ad_id, asset_path):
-            return True
-        return capture_visible_page(page, asset_path)
+        for candidate in ad_media_candidates(page, ad_id):
+            media_url = candidate.get("url") or candidate.get("poster") or ""
+            if media_url.startswith("http"):
+                return media_url
+        return None
     except Exception:
-        return False
+        return None
     finally:
         page.close()
 
@@ -207,19 +179,18 @@ def attach_meta_media_assets(projects: list) -> list:
     if not META_MEDIA_CAPTURE_ENABLED or sync_playwright is None:
         return projects
 
-    tasks: list[tuple[object, str, str, Path]] = []
+    tasks: list[tuple[object, str, str]] = []
     META_MEDIA_DIR.mkdir(parents=True, exist_ok=True)
 
     for project in projects:
         asset_urls: list[str] = []
         for candidate in project_meta_candidates(project):
             ad_id = candidate["ad_id"]
-            rel_url = f"assets/meta/meta-ad-{ad_id}.png"
-            asset_path = META_MEDIA_DIR / f"meta-ad-{ad_id}.png"
-            if asset_path.exists() and asset_path.stat().st_size > 0:
-                asset_urls.append(rel_url)
+            existing = sorted(META_MEDIA_DIR.glob(f"meta-ad-{ad_id}.*"))
+            if existing and existing[0].stat().st_size > 0:
+                asset_urls.append(f"assets/meta/{existing[0].name}")
             else:
-                tasks.append((project, ad_id, rel_url, asset_path))
+                tasks.append((project, ad_id, candidate["url"]))
         if asset_urls:
             project.evidence["images"] = asset_urls + project.evidence.get("images", [])
 
@@ -244,9 +215,14 @@ def attach_meta_media_assets(projects: list) -> list:
             context_kwargs["storage_state"] = META_STORAGE_STATE_PATH
         context = browser.new_context(**context_kwargs)
         try:
-            for project, ad_id, rel_url, asset_path in tasks:
-                candidate_url = f"https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id={ad_id}"
-                if capture_meta_asset(context, candidate_url, ad_id, asset_path):
+            for project, ad_id, candidate_url in tasks:
+                media_url = fetch_meta_asset_url(context, candidate_url, ad_id)
+                if not media_url:
+                    continue
+                ext = media_extension(media_url)
+                asset_path = META_MEDIA_DIR / f"meta-ad-{ad_id}{ext}"
+                rel_url = f"assets/meta/{asset_path.name}"
+                if download_media_url(context, media_url, asset_path):
                     project.evidence["images"] = [rel_url] + project.evidence.get("images", [])
         finally:
             context.close()

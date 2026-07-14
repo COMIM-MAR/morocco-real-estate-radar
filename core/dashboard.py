@@ -118,7 +118,7 @@ def media_signal_map(project) -> dict[str, object]:
 
 
 def media_ad_id(url: str) -> str | None:
-    match = re.search(r"meta-ad-(\d+)\.png$", url or "")
+    match = re.search(r"meta-ad-(\d+)\.(?:png|jpg|jpeg|webp|gif|mp4|mov)$", url or "")
     return match.group(1) if match else None
 
 
