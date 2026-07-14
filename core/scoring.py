@@ -238,7 +238,10 @@ def enrich_signal(signal: SignalEvent, config: dict) -> SignalEvent:
     text = f"{signal.title} {signal.text}".lower()
     signal.price_mad = detect_price(text)
     signal.asset_type_hint, asset_weight = detect_asset_type(text, config.get("asset_preferences", {}))
-    signal.city_hint, signal.zone_hint = detect_city_zone(f"{signal.source} {signal.title} {signal.url}", config)
+    signal.city_hint, signal.zone_hint = detect_city_zone(
+        f"{signal.source} {signal.title} {signal.text} {signal.url}",
+        config,
+    )
     signal.promoter_hint = signal.metadata.get("promoter_hint") or detect_promoter(text, config)
     if signal.price_mad:
         signal.reasons.append(f"prix détecté: {signal.price_mad} MAD")

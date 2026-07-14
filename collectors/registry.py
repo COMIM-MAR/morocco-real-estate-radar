@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import inspect
+
 from collectors.ads.meta_ads import collect as collect_meta_ads
 from collectors.google.google_search import collect as collect_google_search
 from collectors.listings.portals import collect as collect_listings
@@ -21,7 +23,11 @@ def collect_all(config: dict):
         collect_listings,
     ):
         try:
-            signals.extend(collector(config))
+            params = inspect.signature(collector).parameters
+            if len(params) >= 2:
+                signals.extend(collector(config, signals))
+            else:
+                signals.extend(collector(config))
         except Exception as error:
             print(f"WARN collector failed: {collector.__name__} => {error}")
     return signals

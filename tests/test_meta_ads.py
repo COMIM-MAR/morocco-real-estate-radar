@@ -2,12 +2,14 @@ import unittest
 
 from collectors.ads.meta_ads import (
     best_entries,
+    candidate_project_contexts,
     challenge_detected,
     detail_url,
     filter_relevant_entries,
     parse_text_blocks,
     query_contexts,
 )
+from core.models import SignalEvent
 
 
 class MetaAdsParsingTests(unittest.TestCase):
@@ -56,13 +58,45 @@ class MetaAdsParsingTests(unittest.TestCase):
                 "casablanca": {"label": "Casablanca", "zones": ["Sidi Maarouf", "Bouskoura"]},
                 "tangier": {"label": "Tanger", "zones": ["Malabata"]},
             },
-            "sources": {"meta_ad_library_searches": ["pré-commercialisation Tanger"]},
+            "sources": {
+                "meta_ad_library_searches": ["pré-commercialisation Tanger"],
+                "meta_project_seeds": [{"query": "Green Lotus", "city": "Casablanca"}],
+            },
         }
         queries = query_contexts(config)
         labels = [item["query"] for item in queries]
+        self.assertIn("Green Lotus", labels)
         self.assertIn("CGI Casablanca immobilier", labels)
         self.assertIn("CGI Sidi Maarouf", labels)
         self.assertIn("projet immobilier Tanger", labels)
+
+    def test_builds_exact_project_queries_from_seed_signals(self):
+        config = {
+            "promoters": {"tracked": ["CGI", "Addoha"]},
+            "cities": {
+                "casablanca": {"label": "Casablanca", "zones": ["Sidi Maarouf"]},
+            },
+            "sources": {"meta_ad_library_searches": []},
+        }
+        seed_signals = [
+            SignalEvent(
+                collector="promoters.websites",
+                channel="project_discovery",
+                source="CGI",
+                signal_type="promoter_page",
+                title="Green Lotus | Casablanca",
+                url="https://www.example.com/projets/green-lotus",
+                text="Green Lotus Casablanca",
+                is_primary=True,
+                promoter_hint="CGI",
+                city_hint="Casablanca",
+            )
+        ]
+        contexts = candidate_project_contexts(config, seed_signals)
+        labels = [item["query"] for item in contexts]
+        self.assertIn("Green Lotus", labels)
+        self.assertIn('"Green Lotus" immobilier Maroc', labels)
+        self.assertIn('"Green Lotus" Casablanca', labels)
 
     def test_filters_out_non_real_estate_entries(self):
         entries = [

@@ -17,6 +17,7 @@ META_PLAYWRIGHT_WAIT_MS = int(os.getenv("META_PLAYWRIGHT_WAIT_MS", "4500"))
 META_STORAGE_STATE_PATH = os.getenv("META_STORAGE_STATE_PATH")
 META_SSL_INSECURE = os.getenv("META_SSL_INSECURE", "0") == "1"
 META_QUERY_LIMIT = int(os.getenv("META_QUERY_LIMIT", "36"))
+META_PROJECT_QUERY_LIMIT = int(os.getenv("META_PROJECT_QUERY_LIMIT", "12"))
 META_AD_SEARCH_BASE = (
     "https://www.facebook.com/ads/library/?active_status=active"
     "&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q="
@@ -42,6 +43,62 @@ REAL_ESTATE_KEYWORDS = [
     "pre-commercialisation",
     "lancement",
 ]
+PROJECT_QUERY_STOPWORDS = {
+    "maroc",
+    "morocco",
+    "facebook",
+    "instagram",
+    "linkedin",
+    "youtube",
+    "tiktok",
+    "immobilier",
+    "immobiliere",
+    "immobilière",
+    "résidence",
+    "residence",
+    "projet",
+    "programme",
+    "appartement",
+    "appartements",
+    "villa",
+    "villas",
+    "lotissement",
+    "casablanca",
+    "tanger",
+    "rabat",
+    "agadir",
+    "marrakech",
+    "search",
+    "plus",
+    "infos",
+    "je",
+    "consulte",
+    "voir",
+    "procédure",
+    "procedure",
+    "autorisation",
+    "construction",
+    "economiques",
+    "économiques",
+    "moyen",
+    "standing",
+    "haut",
+    "ad",
+    "ads",
+    "watch",
+}
+GENERIC_PROJECT_PHRASES = {
+    "plus d infos",
+    "je consulte",
+    "projet immobilier",
+    "residence ad",
+    "résidence ad",
+    "meta ads watch projets",
+    "projets economiques",
+    "projets économiques",
+    "projets moyen standing",
+    "projets haut standing",
+}
 
 
 def search_url(query: str) -> str:
@@ -66,6 +123,108 @@ def clean(text: str | None) -> str:
 
 def slug_tokens(text: str) -> list[str]:
     return [token for token in re.split(r"[^a-z0-9àâçéèêëîïôùûüÿñæœ]+", (text or "").lower()) if len(token) >= 3]
+
+
+def display_name(text: str) -> str:
+    parts = []
+    for token in clean(text).split():
+        parts.append(token if token.isupper() and len(token) <= 5 else token.capitalize())
+    return " ".join(parts)
+
+
+def project_query_candidate(raw: str | None, config: dict) -> str | None:
+    if not raw:
+        return None
+    cleaned = clean(raw)
+    cleaned = re.sub(r"https?://\S+", " ", cleaned)
+    cleaned = re.sub(r"[|_/\\-]+", " ", cleaned)
+    cleaned = re.sub(r"\b(page|post|publication|reel|video|vidéo)\b", " ", cleaned, flags=re.I)
+    promoter_tokens = {
+        token
+        for promoter in config.get("promoters", {}).get("tracked", [])
+        for token in slug_tokens(promoter)
+    }
+    city_tokens = {
+        token
+        for city_cfg in config.get("cities", {}).values()
+        for token in slug_tokens(city_cfg.get("label", ""))
+    }
+    zone_tokens = {
+        token
+        for city_cfg in config.get("cities", {}).values()
+        for zone in city_cfg.get("zones", [])
+        for token in slug_tokens(zone)
+    }
+    ignored = PROJECT_QUERY_STOPWORDS | promoter_tokens | city_tokens | zone_tokens
+    tokens = [token for token in re.findall(r"[A-Za-zÀ-ÿ0-9']+", cleaned) if len(token) >= 3]
+    filtered = [token for token in tokens if token.lower() not in ignored]
+    if len(filtered) < 2:
+        return None
+    candidate = display_name(" ".join(filtered[:4]))
+    normalized_candidate = clean(candidate).lower()
+    normalized_candidate = re.sub(r"[^a-z0-9àâçéèêëîïôùûüÿñæœ]+", " ", normalized_candidate).strip()
+    if normalized_candidate in GENERIC_PROJECT_PHRASES:
+        return None
+    if len(slug_tokens(candidate)) < 2:
+        return None
+    return candidate
+
+
+def candidate_project_contexts(config: dict, seed_signals: list[SignalEvent] | None = None) -> list[dict]:
+    if not seed_signals:
+        return []
+    contexts: list[dict] = []
+    seen: set[str] = set()
+    interesting_channels = {"project_discovery", "google_discovery", "news", "urbanism"}
+    for signal in seed_signals:
+        if signal.channel not in interesting_channels:
+            continue
+        raw_candidates = [
+            signal.project_name_hint,
+            signal.title,
+            signal.metadata.get("page_name") if isinstance(signal.metadata, dict) else None,
+        ]
+        for raw in raw_candidates:
+            candidate = project_query_candidate(raw, config)
+            if not candidate:
+                continue
+            query_variants = [candidate, f'"{candidate}" immobilier Maroc']
+            if signal.city_hint:
+                query_variants.append(f'"{candidate}" {signal.city_hint}')
+            for query in query_variants:
+                key = query.lower()
+                if key in seen:
+                    continue
+                seen.add(key)
+                contexts.append(
+                    {
+                        "query": query,
+                        "promoter": signal.promoter_hint,
+                        "city": signal.city_hint,
+                        "zone": signal.zone_hint,
+                    }
+                )
+            break
+        if len(contexts) >= META_PROJECT_QUERY_LIMIT:
+            break
+    return contexts[:META_PROJECT_QUERY_LIMIT]
+
+
+def configured_project_contexts(config: dict) -> list[dict]:
+    contexts: list[dict] = []
+    for item in config.get("sources", {}).get("meta_project_seeds", []):
+        if isinstance(item, str):
+            contexts.append({"query": item, "promoter": None, "city": None, "zone": None})
+            continue
+        contexts.append(
+            {
+                "query": item.get("query", ""),
+                "promoter": item.get("promoter"),
+                "city": item.get("city"),
+                "zone": item.get("zone"),
+            }
+        )
+    return [context for context in contexts if context.get("query")]
 
 
 def fetch_html(url: str) -> str:
@@ -214,7 +373,7 @@ def enrich_entries_with_links(entries: list[dict], links: list[dict]) -> list[di
     return entries
 
 
-def query_contexts(config: dict) -> list[dict]:
+def query_contexts(config: dict, seed_signals: list[SignalEvent] | None = None) -> list[dict]:
     contexts: list[dict] = []
     seen: set[str] = set()
     cities = [cfg["label"] for cfg in config.get("cities", {}).values()]
@@ -223,13 +382,10 @@ def query_contexts(config: dict) -> list[dict]:
         label = cfg["label"]
         for zone in cfg.get("zones", [])[:4]:
             city_zones.append((label, zone))
-    for promoter in config.get("promoters", {}).get("tracked", []):
-        contexts.append({"query": f"{promoter} lancement immobilier Maroc", "promoter": promoter, "city": None, "zone": None})
-        for city in cities[:4]:
-            contexts.append({"query": f"{promoter} {city} immobilier", "promoter": promoter, "city": city, "zone": None})
-            contexts.append({"query": f"{promoter} {city} résidence", "promoter": promoter, "city": city, "zone": None})
-        for city, zone in city_zones[:10]:
-            contexts.append({"query": f"{promoter} {zone}", "promoter": promoter, "city": city, "zone": zone})
+    for context in configured_project_contexts(config):
+        contexts.append(context)
+    for context in candidate_project_contexts(config, seed_signals):
+        contexts.append(context)
     generic_queries = list(config.get("sources", {}).get("meta_ad_library_searches", []))
     for query in generic_queries:
         contexts.append({"query": query, "promoter": None, "city": None, "zone": None})
@@ -238,6 +394,13 @@ def query_contexts(config: dict) -> list[dict]:
         contexts.append({"query": f"résidence {city}", "promoter": None, "city": city, "zone": None})
     for city, zone in city_zones[:10]:
         contexts.append({"query": zone, "promoter": None, "city": city, "zone": zone})
+    for promoter in config.get("promoters", {}).get("tracked", []):
+        contexts.append({"query": f"{promoter} lancement immobilier Maroc", "promoter": promoter, "city": None, "zone": None})
+        for city in cities[:4]:
+            contexts.append({"query": f"{promoter} {city} immobilier", "promoter": promoter, "city": city, "zone": None})
+            contexts.append({"query": f"{promoter} {city} résidence", "promoter": promoter, "city": city, "zone": None})
+        for city, zone in city_zones[:10]:
+            contexts.append({"query": f"{promoter} {zone}", "promoter": promoter, "city": city, "zone": zone})
     unique_contexts: list[dict] = []
     for context in contexts:
         key = context["query"].lower()
@@ -257,8 +420,17 @@ def real_estate_relevance(entry: dict, context: dict) -> int:
             entry.get("landing_page_url", ""),
         ]
     ).lower()
+    visible_haystack = " ".join(
+        [
+            entry.get("page_name", ""),
+            entry.get("body", ""),
+            entry.get("caption", ""),
+        ]
+    ).lower()
+    page_name_haystack = (entry.get("page_name", "") or "").lower()
     score = 0
     keyword_hits = [keyword for keyword in REAL_ESTATE_KEYWORDS if keyword in haystack]
+    visible_keyword_hits = [keyword for keyword in REAL_ESTATE_KEYWORDS if keyword in visible_haystack]
     score += min(len(keyword_hits) * 5, 30)
     promoter = context.get("promoter")
     city = context.get("city")
@@ -276,6 +448,15 @@ def real_estate_relevance(entry: dict, context: dict) -> int:
         score += 8
     if "sponsorisé" in haystack:
         score += 4
+    query_tokens = slug_tokens(context.get("query", ""))
+    visible_query_hits = [token for token in query_tokens if token in visible_haystack]
+    page_name_query_hits = [token for token in query_tokens if token in page_name_haystack]
+    if not visible_keyword_hits and not visible_query_hits:
+        return 0
+    if query_tokens and len(query_tokens) <= 3 and not page_name_query_hits:
+        return 0
+    if (entry.get("page_name") or "").lower().startswith("récapitulatif "):
+        return 0
     return score
 
 
@@ -444,6 +625,7 @@ def meta_signal(entry: dict, promoter: str | None) -> SignalEvent:
         confidence_weight=40,
         city_hint=entry.get("city_hint"),
         zone_hint=entry.get("zone_hint"),
+        project_name_hint=entry.get("page_name"),
         metadata={
             "promoter_hint": promoter,
             "ad_id": entry["ad_id"],
@@ -455,6 +637,39 @@ def meta_signal(entry: dict, promoter: str | None) -> SignalEvent:
             "zone_hint": entry.get("zone_hint"),
         },
         reasons=[f"publicité Meta exacte détectée: ad_id {entry['ad_id']}"],
+    )
+
+
+def social_signal_from_meta(entry: dict, promoter: str | None) -> SignalEvent | None:
+    page_link = entry.get("page_link") or ""
+    if not page_link:
+        return None
+    text = clean(" ".join(part for part in [entry.get("page_name"), entry.get("body"), entry.get("landing_page_url")] if part))
+    return SignalEvent(
+        collector="ads.meta_ads",
+        channel="social",
+        source=entry.get("page_name") or "Meta page",
+        signal_type="social_post",
+        title=f"{entry.get('page_name') or 'Meta page'} · social page",
+        url=page_link,
+        text=text,
+        is_primary=True,
+        launch_weight=22,
+        confidence_weight=26,
+        city_hint=entry.get("city_hint"),
+        zone_hint=entry.get("zone_hint"),
+        project_name_hint=entry.get("page_name"),
+        metadata={
+            "promoter_hint": promoter,
+            "ad_id": entry["ad_id"],
+            "page_name": entry.get("page_name"),
+            "page_link": page_link,
+            "landing_page_url": entry.get("landing_page_url"),
+            "query": entry.get("query"),
+            "city_hint": entry.get("city_hint"),
+            "zone_hint": entry.get("zone_hint"),
+        },
+        reasons=[f"page sociale reliée à la publicité Meta: ad_id {entry['ad_id']}"],
     )
 
 
@@ -475,22 +690,25 @@ def watch_signal(query: str, promoter: str | None, reason: str) -> SignalEvent:
     )
 
 
-def collect(config: dict) -> list[SignalEvent]:
+def collect(config: dict, seed_signals: list[SignalEvent] | None = None) -> list[SignalEvent]:
     signals: list[SignalEvent] = []
-    for context in query_contexts(config):
+    seen_signal_ids: set[str] = set()
+    for context in query_contexts(config, seed_signals):
         query = context["query"]
         promoter = context.get("promoter")
         url = search_url(query)
         try:
             entries = []
             html = ""
+            used_playwright = False
             if playwright_ready():
                 try:
                     dom_entries = fetch_entries_with_playwright(url)
+                    used_playwright = True
                     entries = filter_relevant_entries(dom_entries, context)
                 except Exception as error:
                     print(f"WARN meta ads playwright failed: {query} => {error}")
-            if not entries:
+            if not entries and not used_playwright:
                 html = fetch_html(url)
                 if challenge_detected(html):
                     raise RuntimeError("HTTP Error 403: Client challenge")
@@ -499,12 +717,23 @@ def collect(config: dict) -> list[SignalEvent]:
             print(f"WARN meta ads failed: {query} => {error}")
             entries = []
         if entries:
-            signals.extend(meta_signal(entry, promoter) for entry in entries)
+            for entry in entries:
+                ad_signal = meta_signal(entry, promoter)
+                if ad_signal.signal_id not in seen_signal_ids:
+                    signals.append(ad_signal)
+                    seen_signal_ids.add(ad_signal.signal_id)
+                social_signal = social_signal_from_meta(entry, promoter)
+                if social_signal and social_signal.signal_id not in seen_signal_ids:
+                    signals.append(social_signal)
+                    seen_signal_ids.add(social_signal.signal_id)
             continue
         fallback_reason = "surveillance Meta Ad Library"
         if promoter is None:
             fallback_reason = "mot-clé Meta Ads à vérifier"
-        signals.append(watch_signal(query, promoter, fallback_reason))
+        watch = watch_signal(query, promoter, fallback_reason)
+        if watch.signal_id not in seen_signal_ids:
+            signals.append(watch)
+            seen_signal_ids.add(watch.signal_id)
     return signals
 
 

@@ -97,6 +97,9 @@ sources:
     - "nouveau projet immobilier Casablanca"
     - "résidence neuve Maroc"
     - "lotissement villa Tanger"
+  meta_project_seeds:
+    - {query: "Green Lotus", city: "Casablanca"}
+    - {query: "\"Green Lotus\" Casablanca", city: "Casablanca"}
   news_queries:
     - "nouveau projet immobilier Maroc"
     - "pré-commercialisation immobilier Tanger"

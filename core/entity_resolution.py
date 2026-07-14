@@ -109,6 +109,10 @@ def score_group_match(group: dict, signal: SignalEvent) -> int:
     score = 0
     group_tokens = group["tokens"]
     overlap = len(group_tokens & identity["tokens"])
+    name_match = any(canonical_name(alias) in group["alias_keys"] for alias in identity["aliases"])
+    exactish_signals = {"meta_ad", "promoter_page", "project_page", "listing_detail", "search_result", "urbanism_page"}
+    if signal.signal_type in exactish_signals and overlap == 0 and not name_match:
+        return 0
     if overlap >= 2:
         score += 50
     elif overlap == 1:
@@ -121,7 +125,6 @@ def score_group_match(group: dict, signal: SignalEvent) -> int:
         score += 8
     if group["source"] == identity["source"]:
         score += 5
-    name_match = any(canonical_name(alias) in group["alias_keys"] for alias in identity["aliases"])
     if name_match:
         score += 30
     return score
