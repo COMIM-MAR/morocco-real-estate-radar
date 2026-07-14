@@ -34,10 +34,12 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Restore Meta storage state
-        if: ${{ secrets.META_STORAGE_STATE_JSON_B64 != '' }}
+        env:
+          META_STORAGE_STATE_JSON_B64: ${{ secrets.META_STORAGE_STATE_JSON_B64 }}
         run: |
+          [ -n "$META_STORAGE_STATE_JSON_B64" ] || exit 0
           mkdir -p secrets
-          echo "${{ secrets.META_STORAGE_STATE_JSON_B64 }}" | base64 --decode > secrets/meta-storage-state.json
+          echo "$META_STORAGE_STATE_JSON_B64" | base64 --decode > secrets/meta-storage-state.json
 
       - name: Run intelligence engine
         env:
