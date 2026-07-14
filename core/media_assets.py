@@ -54,6 +54,28 @@ def media_extension(url: str, default: str = ".jpg") -> str:
     return default
 
 
+def should_refresh_existing_meta_asset(asset_path: Path) -> bool:
+    if not asset_path.exists() or asset_path.stat().st_size <= 0:
+        return True
+    return asset_path.suffix.lower() == ".png"
+
+
+def best_existing_meta_asset(ad_id: str) -> Path | None:
+    candidates = [path for path in META_MEDIA_DIR.glob(f"meta-ad-{ad_id}.*") if path.stat().st_size > 0]
+    if not candidates:
+        return None
+    ranked = sorted(
+        candidates,
+        key=lambda path: (
+            1 if path.suffix.lower() != ".png" else 0,
+            path.stat().st_mtime,
+            path.stat().st_size,
+        ),
+        reverse=True,
+    )
+    return ranked[0]
+
+
 def download_media_url(context, url: str, asset_path: Path) -> bool:
     if not url.startswith("http"):
         return False
@@ -274,9 +296,9 @@ def attach_meta_media_assets(projects: list) -> list:
         asset_urls: list[str] = []
         for candidate in project_meta_candidates(project):
             ad_id = candidate["ad_id"]
-            existing = sorted(META_MEDIA_DIR.glob(f"meta-ad-{ad_id}.*"))
-            if existing and existing[0].stat().st_size > 0:
-                asset_urls.append(f"assets/meta/{existing[0].name}")
+            existing = best_existing_meta_asset(ad_id)
+            if existing and not should_refresh_existing_meta_asset(existing):
+                asset_urls.append(f"assets/meta/{existing.name}")
             else:
                 tasks.append((project, ad_id, candidate["url"]))
         if asset_urls:
