@@ -75,7 +75,9 @@ def download_media_url(context, url: str, asset_path: Path) -> bool:
 
 def project_meta_candidates(project) -> list[dict]:
     seen: set[str] = set()
-    candidates: list[dict] = []
+    candidates: list[tuple[int, dict]] = []
+    aliases = [alias.lower() for alias in (project.aliases or []) if alias]
+    city = (project.city or "").lower()
     for signal in project.signals:
         if signal.collector != "ads.meta_ads":
             continue
@@ -87,8 +89,32 @@ def project_meta_candidates(project) -> list[dict]:
         source_url = metadata.get("ad_snapshot_url") or signal.url
         if not is_meta_library_url(source_url):
             continue
-        candidates.append({"ad_id": ad_id, "url": source_url})
-    return candidates[:META_MEDIA_CAPTURE_LIMIT]
+        text = " ".join(
+            part
+            for part in [
+                signal.title or "",
+                signal.text or "",
+                metadata.get("landing_page_url") or "",
+                metadata.get("page_name") or "",
+            ]
+            if part
+        ).lower()
+        score = 0
+        for alias in aliases:
+            if alias and alias in text:
+                score += 20
+        if city and city in text:
+            score += 6
+        if "get offer" in text:
+            score += 4
+        if "video" in text and "problèmes pour lire cette vidéo" in text:
+            score -= 8
+        for term in GENERIC_PROMO_TERMS:
+            if term in text:
+                score -= 18
+        candidates.append((score, {"ad_id": ad_id, "url": source_url}))
+    candidates.sort(key=lambda item: item[0], reverse=True)
+    return [candidate for _score, candidate in candidates[:META_MEDIA_CAPTURE_LIMIT]]
 
 
 def ad_media_candidates(page, ad_id: str) -> list[dict]:
@@ -145,6 +171,65 @@ def ad_media_candidates(page, ad_id: str) -> list[dict]:
     )
 
 
+def anchored_ad_media_url(page, ad_id: str) -> str | None:
+    try:
+        targets = page.locator(f"text={ad_id}")
+        count = min(targets.count(), 6)
+    except Exception:
+        return None
+    for index in range(count):
+        try:
+            media_url = targets.nth(index).evaluate(
+                """
+                (el) => {
+                  let node = el;
+                  while (node && node !== document.body) {
+                    const rect = node.getBoundingClientRect();
+                    const style = window.getComputedStyle(node);
+                    const text = node.innerText || '';
+                    const idMentions = (text.match(/ID dans la bibliothèque/g) || []).length;
+                    const visible =
+                      style.display !== 'none' &&
+                      style.visibility !== 'hidden' &&
+                      rect.width >= 260 &&
+                      rect.width <= 900 &&
+                      rect.height >= 220 &&
+                      rect.height <= 1800;
+                    const media = [...node.querySelectorAll('img,video')]
+                      .map((child) => {
+                        const childRect = child.getBoundingClientRect();
+                        const src = child.currentSrc || child.src || child.getAttribute('poster') || '';
+                        const childVisible =
+                          childRect.width >= 120 &&
+                          childRect.height >= 120 &&
+                          src &&
+                          !src.startsWith('data:') &&
+                          !src.includes('emoji.php') &&
+                          !src.includes('static.xx.fbcdn.net/rsrc.php');
+                        if (!childVisible) return null;
+                        return {
+                          url: src,
+                          area: childRect.width * childRect.height,
+                        };
+                      })
+                      .filter(Boolean)
+                      .sort((a, b) => b.area - a.area);
+                    if (visible && idMentions <= 1 && media.length) {
+                      return media[0].url;
+                    }
+                    node = node.parentElement;
+                  }
+                  return null;
+                }
+                """
+            )
+        except Exception:
+            media_url = None
+        if isinstance(media_url, str) and media_url.startswith("http"):
+            return media_url
+    return None
+
+
 def fetch_meta_asset_url(context, source_url: str, ad_id: str) -> str | None:
     page = context.new_page()
     try:
@@ -154,6 +239,9 @@ def fetch_meta_asset_url(context, source_url: str, ad_id: str) -> str | None:
         except PlaywrightTimeoutError:
             pass
         page.wait_for_timeout(META_MEDIA_CAPTURE_WAIT_MS)
+        anchored_url = anchored_ad_media_url(page, ad_id)
+        if anchored_url:
+            return anchored_url
         for candidate in ad_media_candidates(page, ad_id):
             media_url = candidate.get("url") or candidate.get("poster") or ""
             if media_url.startswith("http"):
@@ -239,3 +327,12 @@ def attach_meta_media_assets(projects: list) -> list:
         project.evidence["images"] = deduped
 
     return projects
+GENERIC_PROMO_TERMS = [
+    "tirage au sort",
+    "séjour",
+    "offre exclusive",
+    "coupe du monde",
+    "bon d'achat",
+    "pack électroménager",
+    "hotel escale smir",
+]
