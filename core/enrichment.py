@@ -324,10 +324,6 @@ def enrich_project_intelligence(project, config):
             if url and url not in seen_videos:
                 seen_videos.add(url)
                 video_urls.append(url)
-        snapshot_url = metadata.get("ad_snapshot_url")
-        if snapshot_url and not image_urls and snapshot_url not in seen_images:
-            seen_images.add(snapshot_url)
-            image_urls.append(snapshot_url)
     project.evidence["geo"] = geo
     project.evidence["price_band"] = band
     project.evidence["price_evolution"] = price_evolution

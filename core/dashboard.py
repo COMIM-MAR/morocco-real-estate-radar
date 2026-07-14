@@ -96,6 +96,16 @@ def value_or_na(value):
     return "n/a" if value in (None, "") else value
 
 
+def project_media_url(url: str) -> str:
+    if not url:
+        return ""
+    if url.startswith(("http://", "https://", "data:")):
+        return url
+    if url.startswith("../"):
+        return url
+    return f"../{url.lstrip('./')}"
+
+
 def confirmation_list(items) -> str:
     if not items:
         return "<li>Aucune confirmation forte.</li>"
@@ -140,12 +150,12 @@ def write_project_page(project, projects_dir: Path):
     images = project.evidence.get("images", [])
     videos = project.evidence.get("videos", [])
     image_block = "".join(
-        f"<img src='{esc(url)}' alt='image projet' class='gallery-image'>"
+        f"<img src='{esc(project_media_url(url))}' alt='image projet' class='gallery-image'>"
         for url in images[:6]
     )
     video_block = "".join(
         f"<video class='gallery-video' controls preload='metadata' playsinline>"
-        f"<source src='{esc(url)}'>"
+        f"<source src='{esc(project_media_url(url))}'>"
         "Votre navigateur ne supporte pas la lecture vidéo."
         "</video>"
         for url in videos[:4]

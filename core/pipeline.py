@@ -5,6 +5,7 @@ from .config import DATA_DIR, load_config
 from .dashboard import build
 from .database import existing_project_ids, init_db, load_project_map, load_projects, upsert_projects
 from .entity_resolution import resolve_projects
+from .media_assets import attach_meta_media_assets
 from .notifier import notify_digest, notify_immediate
 
 
@@ -19,6 +20,7 @@ def run():
     signals = collect_all(config)
     projects = resolve_projects(signals, config)
     projects = attach_changes(projects, previous_project_map)
+    projects = attach_meta_media_assets(projects)
     upsert_projects(projects)
     persisted_projects = load_projects()
     (DATA_DIR / "all_signals.json").write_text(
