@@ -83,3 +83,34 @@ Outputs:
 - `data/latest_alerts.json`
 - `docs/index.html`
 - `docs/projects.json`
+
+Supabase shared qualification storage:
+- the dashboard can now store manual qualification workflow and notes in Supabase instead of browser-only storage
+- statuses available for your manual workflow:
+  - `new`
+  - `to_qualify`
+  - `interested`
+  - `in_contact`
+  - `archived`
+- SQL setup file: `supabase/project_qualifications.sql`
+- public browser config file loaded by GitHub Pages: `docs/supabase-config.js`
+
+Supabase setup:
+1. Create a Supabase project
+2. In the SQL editor, run `supabase/project_qualifications.sql`
+3. Get:
+   - Project URL
+   - anon public key
+4. Edit `docs/supabase-config.js`
+   ```js
+   window.__RADAR_SUPABASE__ = {
+     url: "https://YOUR_PROJECT.supabase.co",
+     anonKey: "YOUR_SUPABASE_ANON_KEY",
+   };
+   ```
+5. Commit and push the repo so GitHub Pages serves the updated config
+
+Important security note:
+- this first implementation uses the Supabase anon key directly from the static site
+- that means anyone who can access the dashboard can also write qualifications if your RLS policies stay fully open
+- this is acceptable for a quick internal prototype, but for a production-grade setup you should add authentication and tighten policies

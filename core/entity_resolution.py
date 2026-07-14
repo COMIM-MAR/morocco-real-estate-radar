@@ -50,6 +50,45 @@ GENERIC_PROJECT_TITLES = {
     "lire plus",
     "en savoir plus",
     "search",
+    "les atouts du projet",
+}
+GENERIC_META_NAME_PHRASES = {
+    "ascenseur",
+    "les clés",
+    "recevez les prix",
+    "piscine",
+    "résidentiel",
+    "residentiel",
+    "résidence fermée",
+    "residence fermee",
+    "situé",
+    "situe",
+    "vue sur jardin",
+    "votre budget",
+    "ménage",
+    "menage",
+}
+GENERIC_META_NAME_MARKERS = {
+    "locaux commerciaux",
+    "plateaux bureaux",
+    "plateaux de bureaux",
+    "appartement à louer",
+    "appartement a louer",
+    "à louer par jour",
+    "a louer par jour",
+    "vue sur jardin",
+    "votre budget",
+    "recevez les prix",
+    "résidentiel",
+    "residentiel",
+    "résidence fermée",
+    "residence fermee",
+    "ménage",
+    "menage",
+    "ascenseur",
+    "piscine",
+    "situé",
+    "situe",
 }
 GENERIC_PROMOTER_CATEGORY_URL_MARKERS = {
     "/projet/type/",
@@ -62,6 +101,80 @@ GENERIC_NON_PROJECT_TITLES = {
     "procédure autorisation construction",
     "agence urbaine de casablanca",
     "projet immobilier",
+}
+NON_REAL_ESTATE_META_MARKERS = {
+    "acupuncture",
+    "analyses",
+    "allergies",
+    "biologie",
+    "bien être",
+    "bien etre",
+    "centre de biologie",
+    "chawarma",
+    "délice",
+    "delice",
+    "ftour",
+    "génétique",
+    "genetique",
+    "médecine chinoise",
+    "medecine chinoise",
+    "menu",
+    "msemen",
+    "clinique",
+    "harcha",
+    "patient",
+    "patients",
+    "hôtel",
+    "hotel",
+    "hospitalité",
+    "hospitalite",
+    "voyageurs d’affaires",
+    "voyageurs d affaires",
+    "déplacement professionnel",
+    "deplacement professionnel",
+    "séminaire",
+    "seminaire",
+    "restaurant",
+    "menu",
+    "whatsapp.com",
+}
+NON_REAL_ESTATE_META_SOURCE_MARKERS = {
+    "barcelo",
+    "barceló",
+    "biologie",
+    "clinique",
+    "hotel",
+    "hôtel",
+    "medecine",
+    "medicine",
+    "restaurant",
+    "travel",
+}
+REAL_ESTATE_META_MARKERS = {
+    "projet immobilier",
+    "programme immobilier",
+    "résidence",
+    "residence",
+    "appartement",
+    "appartements",
+    "villa",
+    "villas",
+    "lotissement",
+    "terrain",
+    "terrains",
+    "immeuble",
+    "bureaux",
+    "bureau",
+    "local commercial",
+    "locaux commerciaux",
+    "chambres",
+    "m²",
+    "visite",
+    "visiter",
+    "réserver",
+    "reserver",
+    "promoteur",
+    "standing",
 }
 
 
@@ -84,6 +197,39 @@ def looks_like_specific_project_name(text: str | None) -> bool:
     if len(project_tokens(cleaned)) >= 1:
         return True
     return bool(re.search(r"[A-Za-zÀ-ÿ].*\d|\d.*[A-Za-zÀ-ÿ]", cleaned))
+
+
+def is_generic_meta_candidate(text: str | None) -> bool:
+    normalized = normalize(text or "")
+    if not normalized:
+        return True
+    if normalized in GENERIC_META_NAME_PHRASES:
+        return True
+    return any(marker in normalized for marker in GENERIC_META_NAME_MARKERS)
+
+
+def meta_marker_count(text: str | None, markers: set[str]) -> int:
+    normalized = normalize(text or "")
+    return sum(1 for marker in markers if marker in normalized)
+
+
+def is_non_real_estate_meta_signal(signal: SignalEvent) -> bool:
+    if signal.collector != "ads.meta_ads":
+        return False
+    source_and_title = normalize(f"{signal.source} {signal.title}")
+    if any(marker in source_and_title for marker in NON_REAL_ESTATE_META_SOURCE_MARKERS):
+        return True
+    text = " ".join(
+        [
+            clean_text(signal.source),
+            clean_text(signal.title),
+            clean_text(signal.text),
+            clean_text((signal.metadata or {}).get("landing_page_url")),
+        ]
+    )
+    negative_hits = meta_marker_count(text, NON_REAL_ESTATE_META_MARKERS)
+    positive_hits = meta_marker_count(text, REAL_ESTATE_META_MARKERS)
+    return negative_hits >= 2 and positive_hits <= 1
 
 
 def extract_project_name_from_generic_ad(signal: SignalEvent) -> str | None:
@@ -117,9 +263,14 @@ def extract_project_name_from_meta_signal(signal: SignalEvent) -> str | None:
     text = clean_text(signal.text)
     page_name = clean_text(signal.project_name_hint or signal.source or "")
     cleaned_page_name = re.sub(r"\s+by\s+.+$", "", page_name, flags=re.I).strip(" -–—")
-    if cleaned_page_name and looks_like_specific_project_name(cleaned_page_name) and " by " in page_name.lower():
+    if cleaned_page_name and looks_like_specific_project_name(cleaned_page_name) and not is_generic_meta_candidate(cleaned_page_name) and " by " in page_name.lower():
         return cleaned_page_name
     patterns = [
+        r"(?P<name>[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{2,80}?)\s+est\s+(?:un|une)\s+",
+        r"(?P<name>JNANE\s+[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{2,80}?)\s+propose",
+        r"(?P<name>L['’]Orée\s+du\s+Palm)\b",
+        r"(?:avec|with)\s+(?P<name>[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{2,80}?)(?:,|\s+investissez|\s+profitez|\s+choisissez)",
+        r"(?:informations?\s+du\s+projet|prix,\s+plans\s+disponibles\s+et\s+informations?\s+du\s+projet)\s+(?P<name>[A-ZÀ-ÿ0-9][^,:!.]{2,80}?)(?:\s+en\s+remplissant|\s+learn more|$)",
         r"(?:lancement du nouveau projet|nouveau projet)\s+(?P<name>[A-ZÀ-ÿ0-9][^,:!.]{2,80}?)(?:,|\s+signé|\s+signe|\s+situ[ée]|\s+à|\s+-)",
         r"(?:découvrez|decouvrez)\s+(?P<name>[A-ZÀ-ÿ0-9][^,:!.]{2,80}?)(?:\s+par|\s+by|\s*:|,)",
         r"\bà\s+(?P<name>Les\s+[A-ZÀ-ÿ0-9][A-Za-zÀ-ÿ0-9'’ -]{2,80}?)(?:\.|,|\s+projet|\s+par)",
@@ -132,9 +283,20 @@ def extract_project_name_from_meta_signal(signal: SignalEvent) -> str | None:
         if not match:
             continue
         candidate = match.group("name").strip(" -–—")
-        if looks_like_specific_project_name(candidate) and normalize(candidate) not in GENERIC_AD_PORTAL_SOURCES:
+        if (
+            looks_like_specific_project_name(candidate)
+            and not is_generic_meta_candidate(candidate)
+            and not is_generic_project_title(candidate)
+            and normalize(candidate) not in GENERIC_AD_PORTAL_SOURCES
+        ):
             return candidate
-    if page_name and looks_like_specific_project_name(page_name) and page_name.lower() not in GENERIC_META_SOURCE_PAGES:
+    if (
+        page_name
+        and looks_like_specific_project_name(page_name)
+        and not is_generic_meta_candidate(page_name)
+        and normalize(page_name) not in GENERIC_AD_PORTAL_SOURCES
+        and page_name.lower() not in GENERIC_META_SOURCE_PAGES
+    ):
         return page_name
     return None
 
@@ -150,6 +312,8 @@ def is_generic_project_title(value: str | None) -> bool:
 def should_skip_signal(signal: SignalEvent) -> bool:
     lowered_url = (signal.url or "").lower()
     lowered_title = normalize(signal.title or "")
+    if signal.signal_type in {"meta_watch", "search_watch", "news_watch", "social_watch", "urbanism_watch"}:
+        return True
     if signal.collector == "promoters.websites" and any(marker in lowered_url for marker in GENERIC_PROMOTER_CATEGORY_URL_MARKERS):
         return True
     lowered_text = normalize(signal.text or "")
@@ -157,10 +321,23 @@ def should_skip_signal(signal: SignalEvent) -> bool:
     if signal.collector == "ads.meta_ads":
         if lowered_source in GENERIC_META_SOURCE_PAGES:
             return True
+        if is_non_real_estate_meta_signal(signal):
+            return True
+        if lowered_source in GENERIC_AD_PORTAL_SOURCES and extract_project_name_from_meta_signal(signal) is None:
+            return True
         if "google maps des terrains" in lowered_text or "carte interactive unique" in lowered_text:
             return True
-    if signal.signal_type in {"search_watch", "meta_watch", "news_watch", "social_watch"} and "projet immobilier" in lowered_title:
-        return True
+        if any(marker in lowered_text for marker in [
+            "facebook marketplace",
+            "à louer par jour",
+            "a louer par jour",
+            "location journalière",
+            "location journaliere",
+            "je peux vous aider à trouver le bien",
+            "envoyez-moi un message privé avec votre budget",
+            "recherchent un bien immobilier",
+        ]):
+            return True
     if signal.channel == "urbanism" and (
         lowered_title in GENERIC_NON_PROJECT_TITLES
         or lowered_url.rstrip("/") in {"https://www.auc.ma", "https://auc.ma", "https://www.autanger.ma", "https://autanger.ma"}

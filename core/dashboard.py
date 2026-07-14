@@ -26,6 +26,13 @@ ALL_ASSET_TYPES = [
     ("studio", "Studio"),
     ("apartment_unknown", "Appartement"),
 ]
+REVIEW_STATUSES = [
+    ("new", "Nouveau", "Projet détecté par le radar mais pas encore qualifié par toi."),
+    ("to_qualify", "À qualifier", "Projet ouvert ou repéré par toi, mais décision pas encore prise."),
+    ("interested", "Intéressé", "Projet que tu veux creuser, contacter ou visiter."),
+    ("in_contact", "En contact", "Projet pour lequel tu as déjà commencé des échanges ou actions."),
+    ("archived", "Archivé", "Projet vu, traité, mais que tu ne souhaites pas poursuivre."),
+]
 
 KPI_EXPLANATIONS = {
     "projects": "Nombre total de projets actuellement présents dans la base affichée.",
@@ -41,6 +48,9 @@ KPI_EXPLANATIONS = {
     "confirmations": "Nombre de confirmations fortes entre plusieurs canaux indépendants.",
     "timeline": "Historique des runs où le projet a été observé et mis à jour. Chaque ligne correspond à un passage du moteur de veille.",
 }
+
+REVIEW_LABELS = {value: label for value, label, _ in REVIEW_STATUSES}
+REVIEW_HELP = " · ".join(f"{label}: {description}" for _, label, description in REVIEW_STATUSES)
 
 
 def esc(value):
@@ -167,6 +177,11 @@ def write_project_page(project, projects_dir: Path):
     .label {{ font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }}
     .muted, p, li {{ color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }}
     .pill {{ display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: #f3f4f6; border: 1px solid var(--line); color: var(--muted); margin: 4px 8px 0 0; font-size: 13px; }}
+    .pill.review-new {{ background: #eef2ff; color: #3730a3; }}
+    .pill.review-to_qualify {{ background: #fff7ed; color: #9a3412; }}
+    .pill.review-interested {{ background: #ecfdf3; color: #166534; }}
+    .pill.review-in_contact {{ background: #ecfeff; color: #155e75; }}
+    .pill.review-archived {{ background: #f3f4f6; color: #4b5563; }}
     .tip {{
       display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px;
       margin-left: 6px; border-radius: 999px; border: 1px solid var(--line); font-size: 11px; color: var(--muted); cursor: help; position: relative;
@@ -185,6 +200,18 @@ def write_project_page(project, projects_dir: Path):
     #projectMap {{ width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }}
     .gallery {{ display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }}
     .gallery-image {{ width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }}
+    .review-toolbar {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }}
+    .review-btn {{
+      border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink);
+      min-height: 40px; padding: 8px 12px; cursor: pointer;
+    }}
+    .review-btn.active {{ background: var(--ink); color: #fff; border-color: var(--ink); }}
+    .notes-box {{
+      width: 100%; min-height: 150px; margin-top: 12px; padding: 12px 14px; resize: vertical;
+      border: 1px solid var(--line); border-radius: 14px; background: #fff; color: var(--ink);
+    }}
+    .inline-meta {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }}
+    .mini-card {{ border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 10px 12px; }}
     a {{ color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }}
     a:hover {{ text-decoration: underline; }}
     @media (max-width: 860px) {{ .metrics, .facts {{ grid-template-columns: 1fr 1fr; }} }}
@@ -202,6 +229,14 @@ def write_project_page(project, projects_dir: Path):
         <span class="pill">{esc(project.city or "Ville à confirmer")}</span>
         <span class="pill">{esc(project.promoter or "Promoteur à confirmer")}</span>
         <span class="pill">{esc(practical.get("asset_label"))}</span>
+        <span id="reviewBadge" class="pill review-new">Nouveau</span>
+      </div>
+      <div class="review-toolbar">
+        <button class="review-btn" type="button" data-review="new">Nouveau</button>
+        <button class="review-btn" type="button" data-review="to_qualify">À qualifier</button>
+        <button class="review-btn" type="button" data-review="interested">Intéressé</button>
+        <button class="review-btn" type="button" data-review="in_contact">En contact</button>
+        <button class="review-btn" type="button" data-review="archived">Archivé</button>
       </div>
     </section>
 
@@ -257,6 +292,19 @@ def write_project_page(project, projects_dir: Path):
     </section>
 
     <section class="panel">
+      <h3>Qualification manuelle</h3>
+      <div class="inline-meta">
+        <div class="mini-card"><strong id="manualStatusLabel">Nouveau</strong><br><span class="muted">Statut actuel</span></div>
+        <div class="mini-card"><strong id="manualCreatedAt">—</strong><br><span class="muted">Créé le</span></div>
+        <div class="mini-card"><strong id="manualUpdatedAt">—</strong><br><span class="muted">Dernier changement</span></div>
+      </div>
+      <ul id="manualWorkflow" class="list"></ul>
+      <h4 style="margin-top:14px;">Notes / commentaires</h4>
+      <p class="muted">Utilise cet espace pour noter tes échanges, objections, prix discutés, raisons d’archivage ou prochaines actions.</p>
+      <textarea id="manualNotes" class="notes-box" placeholder="Ex: appelé le promoteur, visite prévue, prix annoncé, pourquoi ce projet m’intéresse ou non..."></textarea>
+    </section>
+
+    <section class="panel">
       <h3>{tooltip("Timeline", KPI_EXPLANATIONS["timeline"])}</h3>
       <p class="muted">La timeline correspond aux différents runs du moteur où ce projet a été observé ou mis à jour.</p>
       <ul class="list">{timeline}</ul>
@@ -290,6 +338,7 @@ def write_project_page(project, projects_dir: Path):
     </section>
   </main>
 
+  <script src="../supabase-config.js"></script>
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
@@ -297,8 +346,237 @@ def write_project_page(project, projects_dir: Path):
   ></script>
   <script>
     (function() {{
+      const qualificationKey = "morocco-real-estate-intelligence:qualification";
+      const supabaseConfig = window.__RADAR_SUPABASE__ || {{}};
+      const supabaseTable = "project_qualifications";
+      const reviewLabels = {json.dumps(REVIEW_LABELS, ensure_ascii=False)};
+      const projectId = {json.dumps(project.project_id)};
+      const reviewBadge = document.getElementById("reviewBadge");
+      const reviewButtons = [...document.querySelectorAll("[data-review]")];
+      const workflowList = document.getElementById("manualWorkflow");
+      const notesBox = document.getElementById("manualNotes");
+      const manualStatusLabel = document.getElementById("manualStatusLabel");
+      const manualCreatedAt = document.getElementById("manualCreatedAt");
+      const manualUpdatedAt = document.getElementById("manualUpdatedAt");
+
+      function nowIso() {{
+        return new Date().toISOString();
+      }}
+
+      function hasSupabaseConfig() {{
+        return Boolean(supabaseConfig && supabaseConfig.url && supabaseConfig.anonKey);
+      }}
+
+      async function supabaseRequest(path, options = {{}}) {{
+        const response = await fetch(`${{String(supabaseConfig.url).replace(/\\/$/, "")}}/rest/v1/${{path}}`, {{
+          ...options,
+          headers: {{
+            apikey: supabaseConfig.anonKey,
+            Authorization: `Bearer ${{supabaseConfig.anonKey}}`,
+            "Content-Type": "application/json",
+            ...(options.headers || {{}}),
+          }},
+        }});
+        if (!response.ok) {{
+          const text = await response.text();
+          throw new Error(`Supabase error ${{response.status}}: ${{text}}`);
+        }}
+        if (response.status === 204) return null;
+        return response.json();
+      }}
+
+      function formatDate(value) {{
+        if (!value) return "—";
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return value;
+        return date.toLocaleString("fr-FR");
+      }}
+
+      function loadQualifications() {{
+        try {{
+          return JSON.parse(localStorage.getItem(qualificationKey) || "{{}}");
+        }} catch (error) {{
+          return {{}};
+        }}
+      }}
+
+      function defaultRecord() {{
+        const createdAt = nowIso();
+        return {{
+          status: "new",
+          notes: "",
+          created_at: createdAt,
+          updated_at: createdAt,
+          history: [{{ status: "new", at: createdAt }}],
+        }};
+      }}
+
+      function getRecord() {{
+        const data = loadQualifications();
+        const existing = data[projectId];
+        if (existing && typeof existing === "object") {{
+          existing.status = existing.status || "new";
+          existing.notes = existing.notes || "";
+          existing.created_at = existing.created_at || nowIso();
+          existing.updated_at = existing.updated_at || existing.created_at;
+          existing.history = Array.isArray(existing.history) && existing.history.length
+            ? existing.history
+            : [{{ status: existing.status, at: existing.created_at }}];
+          return existing;
+        }}
+        return defaultRecord();
+      }}
+
+      function normalizeRecord(record) {{
+        const normalized = record && typeof record === "object" ? {{ ...record }} : defaultRecord();
+        normalized.status = normalized.status || "new";
+        normalized.notes = normalized.notes || "";
+        normalized.created_at = normalized.created_at || nowIso();
+        normalized.updated_at = normalized.updated_at || normalized.created_at;
+        normalized.history = Array.isArray(normalized.history) && normalized.history.length
+          ? normalized.history
+          : [{{ status: normalized.status, at: normalized.created_at }}];
+        return normalized;
+      }}
+
+      function ensureRecord() {{
+        const data = loadQualifications();
+        if (!data[projectId]) {{
+          data[projectId] = defaultRecord();
+          localStorage.setItem(qualificationKey, JSON.stringify(data));
+        }}
+      }}
+
+      function saveRecord(record) {{
+        const data = loadQualifications();
+        data[projectId] = normalizeRecord(record);
+        localStorage.setItem(qualificationKey, JSON.stringify(data));
+      }}
+
+      async function loadRemoteRecord() {{
+        if (!hasSupabaseConfig()) return null;
+        const rows = await supabaseRequest(
+          `${{supabaseTable}}?select=project_id,status,notes,history,created_at,updated_at&project_id=eq.${{projectId}}`
+        );
+        return Array.isArray(rows) && rows.length ? normalizeRecord(rows[0]) : null;
+      }}
+
+      async function persistRemoteRecord(record) {{
+        if (!hasSupabaseConfig()) return normalizeRecord(record);
+        const payload = normalizeRecord({{
+          project_id: projectId,
+          status: record.status,
+          notes: record.notes || "",
+          history: record.history || [],
+          created_at: record.created_at,
+          updated_at: record.updated_at,
+        }});
+        const rows = await supabaseRequest(
+          `${{supabaseTable}}?on_conflict=project_id`,
+          {{
+            method: "POST",
+            headers: {{
+              Prefer: "return=representation,resolution=merge-duplicates",
+            }},
+            body: JSON.stringify([payload]),
+          }},
+        );
+        return Array.isArray(rows) && rows.length ? normalizeRecord(rows[0]) : payload;
+      }}
+
+      function setStatus(status) {{
+        const record = normalizeRecord(getRecord());
+        if (record.status !== status) {{
+          const changedAt = nowIso();
+          record.status = status;
+          record.updated_at = changedAt;
+          record.history.push({{ status, at: changedAt }});
+          saveRecord(record);
+        }}
+      }}
+
+      function renderReview() {{
+        const record = getRecord();
+        const status = record.status || "new";
+        reviewBadge.textContent = reviewLabels[status] || "Nouveau";
+        reviewBadge.className = `pill review-${{status}}`;
+        reviewButtons.forEach((button) => {{
+          button.classList.toggle("active", button.dataset.review === status);
+        }});
+        manualStatusLabel.textContent = reviewLabels[status] || "Nouveau";
+        manualCreatedAt.textContent = formatDate(record.created_at);
+        manualUpdatedAt.textContent = formatDate(record.updated_at);
+        notesBox.value = record.notes || "";
+        workflowList.innerHTML = (record.history || []).map((item) => `
+          <li><strong>${{escapeHtml(reviewLabels[item.status] || item.status)}}</strong><br><span>${{escapeHtml(formatDate(item.at))}}</span></li>
+        `).join("") || "<li>Aucun historique.</li>";
+      }}
+
+      function escapeHtml(value) {{
+        return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+      }}
+
+      reviewButtons.forEach((button) => {{
+        button.addEventListener("click", async () => {{
+          setStatus(button.dataset.review);
+          renderReview();
+          try {{
+            const synced = await persistRemoteRecord(getRecord());
+            saveRecord(synced);
+            renderReview();
+          }} catch (error) {{
+            console.warn("Supabase sync failed, local cache kept.", error);
+          }}
+        }});
+      }});
+
+      let notesSaveTimer = null;
+      notesBox.addEventListener("input", () => {{
+        const record = getRecord();
+        record.notes = notesBox.value;
+        record.updated_at = nowIso();
+        saveRecord(record);
+        manualUpdatedAt.textContent = formatDate(record.updated_at);
+        if (notesSaveTimer) clearTimeout(notesSaveTimer);
+        notesSaveTimer = setTimeout(async () => {{
+          try {{
+            const synced = await persistRemoteRecord(getRecord());
+            saveRecord(synced);
+            renderReview();
+          }} catch (error) {{
+            console.warn("Supabase notes sync failed, local cache kept.", error);
+          }}
+        }}, 500);
+      }});
+
       const lat = {json.dumps(geo.get("lat"))};
       const lng = {json.dumps(geo.get("lng"))};
+      ensureRecord();
+      renderReview();
+      loadRemoteRecord()
+        .then(async (remote) => {{
+          const local = normalizeRecord(getRecord());
+          if (!remote) {{
+            if (local.notes || local.status != "new" || (local.history || []).length > 1) {{
+              const synced = await persistRemoteRecord(local);
+              saveRecord(synced);
+              renderReview();
+            }}
+            return;
+          }}
+          const localUpdated = new Date(local.updated_at || 0).getTime();
+          const remoteUpdated = new Date(remote.updated_at || 0).getTime();
+          if (localUpdated > remoteUpdated && (local.notes || local.status != "new" || (local.history || []).length > 1)) {{
+            const synced = await persistRemoteRecord(local);
+            saveRecord(synced);
+          }} else {{
+            saveRecord(remote);
+          }}
+          renderReview();
+        }})
+        .catch((error) => {{
+          console.warn("Supabase unavailable, using local cache.", error);
+        }});
       if (!window.L || typeof lat !== "number" || typeof lng !== "number") {{
         document.getElementById("projectMap").innerHTML = "<div style='padding:16px;color:#6b7280;'>Carte indisponible pour ce projet.</div>";
         return;
@@ -377,7 +655,7 @@ def write_index(projects, payload):
     .overview {{ display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; margin-top: 18px; }}
     .panel {{ padding: 18px; }}
     .layout {{ display: grid; gap: 18px; margin-top: 18px; }}
-    .toolbar {{ display: grid; grid-template-columns: 1.8fr repeat(3, minmax(130px, 1fr)) minmax(140px, 1fr) auto; gap: 10px; margin-top: 16px; }}
+    .toolbar {{ display: grid; grid-template-columns: 1.8fr repeat(4, minmax(130px, 1fr)) minmax(140px, 1fr) auto; gap: 10px; margin-top: 16px; }}
     .field, .toggle {{
       width: 100%;
       min-height: 46px;
@@ -410,6 +688,11 @@ def write_index(projects, payload):
     .pill.urgent {{ background: var(--urgent); color: #9a3412; }}
     .pill.watch {{ background: var(--watch); color: #a16207; }}
     .pill.monitor {{ background: var(--monitor); color: #166534; }}
+    .pill.review-new {{ background: #eef2ff; color: #3730a3; }}
+    .pill.review-to_qualify {{ background: #fff7ed; color: #9a3412; }}
+    .pill.review-interested {{ background: #ecfdf3; color: #166534; }}
+    .pill.review-in_contact {{ background: #ecfeff; color: #155e75; }}
+    .pill.review-archived {{ background: #f3f4f6; color: #4b5563; }}
     .project-summary {{
       display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
       min-height: 4.5em;
@@ -424,6 +707,12 @@ def write_index(projects, payload):
     .list li {{ color: var(--muted); padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }}
     .recent-list li {{ display: flex; justify-content: space-between; gap: 12px; align-items: start; }}
     .card-actions {{ display: flex; gap: 8px; flex-wrap: wrap; }}
+    .review-actions {{ display: grid; gap: 8px; grid-template-columns: repeat(5, minmax(0, 1fr)); }}
+    .review-btn {{
+      min-height: 36px; padding: 6px 8px; border-radius: 10px; border: 1px solid var(--line);
+      background: #fff; color: var(--ink); cursor: pointer;
+    }}
+    .review-btn.active {{ background: var(--ink); color: #fff; border-color: var(--ink); }}
     .link-btn {{
       display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px;
       border-radius: 12px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none; font-weight: 600;
@@ -442,6 +731,7 @@ def write_index(projects, payload):
     @media (max-width: 640px) {{
       .stats, .toolbar, .scores {{ grid-template-columns: 1fr; }}
       .project-grid {{ grid-template-columns: 1fr; }}
+      .review-actions {{ grid-template-columns: 1fr 1fr; }}
     }}
   </style>
 </head>
@@ -483,6 +773,7 @@ def write_index(projects, payload):
           <li><strong>Confidence</strong><br>{esc(KPI_EXPLANATIONS["confidence"])}</li>
           <li><strong>Investment</strong><br>{esc(KPI_EXPLANATIONS["investment"])}</li>
           <li><strong>Timeline</strong><br>{esc(KPI_EXPLANATIONS["timeline"])}</li>
+          <li><strong>Qualification</strong><br>{esc(REVIEW_HELP)}</li>
         </ul>
         <p class="helper" style="margin-top:12px;">Tu peux aussi survoler les petits “i” à côté des KPI pour voir leur explication.</p>
       </section>
@@ -497,6 +788,7 @@ def write_index(projects, payload):
         <select id="cityFilter" class="field"><option value="">Toutes les villes</option></select>
         <select id="statusFilter" class="field"><option value="">Tous les statuts</option></select>
         <select id="assetFilter" class="field"><option value="">Tous les types</option></select>
+        <select id="reviewFilter" class="field"><option value="">Tous les suivis</option></select>
         <select id="sortFilter" class="field">
           <option value="confidence">Trier: confidence</option>
           <option value="investment">Trier: investment</option>
@@ -517,6 +809,7 @@ def write_index(projects, payload):
   </main>
 
   <script id="project-data" type="application/json">{json.dumps(payload, ensure_ascii=False)}</script>
+  <script src="supabase-config.js"></script>
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
@@ -525,6 +818,10 @@ def write_index(projects, payload):
   <script>
     const projects = JSON.parse(document.getElementById("project-data").textContent);
     const favoriteKey = "morocco-real-estate-intelligence:favorites";
+    const qualificationKey = "morocco-real-estate-intelligence:qualification";
+    const supabaseConfig = window.__RADAR_SUPABASE__ || {{}};
+    const supabaseTable = "project_qualifications";
+    const reviewLabels = {json.dumps(REVIEW_LABELS, ensure_ascii=False)};
     const favoriteIds = new Set(JSON.parse(localStorage.getItem(favoriteKey) || "[]"));
     const projectGrid = document.getElementById("projectGrid");
     const projectCount = document.getElementById("projectCount");
@@ -532,6 +829,7 @@ def write_index(projects, payload):
     const cityFilter = document.getElementById("cityFilter");
     const statusFilter = document.getElementById("statusFilter");
     const assetFilter = document.getElementById("assetFilter");
+    const reviewFilter = document.getElementById("reviewFilter");
     const sortFilter = document.getElementById("sortFilter");
     const favoritesOnly = document.getElementById("favoritesOnly");
     const recentProjects = document.getElementById("recentProjects");
@@ -541,6 +839,7 @@ def write_index(projects, payload):
 
     const allStatuses = {json.dumps([{"value": name, "label": status_display(name)} for name, _ in ALL_STATUSES], ensure_ascii=False)};
     const allAssetTypes = {json.dumps([{"value": name, "label": label} for name, label in ALL_ASSET_TYPES], ensure_ascii=False)};
+    const allReviewStatuses = {json.dumps([{"value": value, "label": label} for value, label, _ in REVIEW_STATUSES], ensure_ascii=False)};
 
     function uniqueValues(field) {{
       return [...new Set(projects.map(project => project[field]).filter(Boolean))].sort((left, right) => left.localeCompare(right));
@@ -563,9 +862,137 @@ def write_index(projects, payload):
     populateSelect(cityFilter, uniqueValues("city"));
     populateSelect(statusFilter, allStatuses);
     populateSelect(assetFilter, allAssetTypes);
+    populateSelect(reviewFilter, allReviewStatuses);
 
     function saveFavorites() {{
       localStorage.setItem(favoriteKey, JSON.stringify([...favoriteIds]));
+    }}
+
+    function nowIso() {{
+      return new Date().toISOString();
+    }}
+
+    function hasSupabaseConfig() {{
+      return Boolean(supabaseConfig && supabaseConfig.url && supabaseConfig.anonKey);
+    }}
+
+    async function supabaseRequest(path, options = {{}}) {{
+      const response = await fetch(`${{String(supabaseConfig.url).replace(/\\/$/, "")}}/rest/v1/${{path}}`, {{
+        ...options,
+        headers: {{
+          apikey: supabaseConfig.anonKey,
+          Authorization: `Bearer ${{supabaseConfig.anonKey}}`,
+          "Content-Type": "application/json",
+          ...(options.headers || {{}}),
+        }},
+      }});
+      if (!response.ok) {{
+        const text = await response.text();
+        throw new Error(`Supabase error ${{response.status}}: ${{text}}`);
+      }}
+      if (response.status === 204) return null;
+      return response.json();
+    }}
+
+    function loadQualifications() {{
+      try {{
+        return JSON.parse(localStorage.getItem(qualificationKey) || "{{}}");
+      }} catch (error) {{
+        return {{}};
+      }}
+    }}
+
+    function defaultQualification() {{
+      const createdAt = nowIso();
+      return {{
+        status: "new",
+        notes: "",
+        created_at: createdAt,
+        updated_at: createdAt,
+        history: [{{ status: "new", at: createdAt }}],
+      }};
+    }}
+
+    function getQualification(projectId) {{
+      const data = loadQualifications();
+      const existing = data[projectId];
+      if (existing && typeof existing === "object") {{
+        existing.status = existing.status || "new";
+        existing.notes = existing.notes || "";
+        existing.created_at = existing.created_at || nowIso();
+        existing.updated_at = existing.updated_at || existing.created_at;
+        existing.history = Array.isArray(existing.history) && existing.history.length
+          ? existing.history
+          : [{{ status: existing.status, at: existing.created_at }}];
+        return existing;
+      }}
+      return defaultQualification();
+    }}
+
+    function normalizeQualification(record) {{
+      const normalized = record && typeof record === "object" ? {{ ...record }} : defaultQualification();
+      normalized.status = normalized.status || "new";
+      normalized.notes = normalized.notes || "";
+      normalized.created_at = normalized.created_at || nowIso();
+      normalized.updated_at = normalized.updated_at || normalized.created_at;
+      normalized.history = Array.isArray(normalized.history) && normalized.history.length
+        ? normalized.history
+        : [{{ status: normalized.status, at: normalized.created_at }}];
+      return normalized;
+    }}
+
+    function projectReviewStatus(projectId) {{
+      return getQualification(projectId).status || "new";
+    }}
+
+    function saveProjectReview(projectId, status) {{
+      const data = loadQualifications();
+      const record = normalizeQualification(getQualification(projectId));
+      if (record.status !== status) {{
+        const changedAt = nowIso();
+        record.status = status;
+        record.updated_at = changedAt;
+        record.history.push({{ status, at: changedAt }});
+      }}
+      data[projectId] = record;
+      localStorage.setItem(qualificationKey, JSON.stringify(data));
+      return record;
+    }}
+
+    function saveQualificationRecord(projectId, record) {{
+      const data = loadQualifications();
+      data[projectId] = normalizeQualification(record);
+      localStorage.setItem(qualificationKey, JSON.stringify(data));
+    }}
+
+    async function loadRemoteQualifications(projectIds) {{
+      if (!hasSupabaseConfig() || !projectIds.length) return [];
+      const path = `${{supabaseTable}}?select=project_id,status,notes,history,created_at,updated_at&project_id=in.(${{projectIds.join(",")}})`;
+      const rows = await supabaseRequest(path);
+      return Array.isArray(rows) ? rows.map(normalizeQualification) : [];
+    }}
+
+    async function persistRemoteQualification(projectId, record) {{
+      if (!hasSupabaseConfig()) return normalizeQualification(record);
+      const payload = normalizeQualification({{
+        project_id: projectId,
+        status: record.status,
+        notes: record.notes || "",
+        history: record.history || [],
+        created_at: record.created_at,
+        updated_at: record.updated_at,
+      }});
+      const rows = await supabaseRequest(
+        `${{supabaseTable}}?on_conflict=project_id`,
+        {{
+          method: "POST",
+          headers: {{
+            Prefer: "return=representation,resolution=merge-duplicates",
+          }},
+          body: JSON.stringify([payload]),
+        }},
+      );
+      return Array.isArray(rows) && rows.length ? normalizeQualification(rows[0]) : payload;
     }}
 
     function escapeHtml(value) {{
@@ -587,6 +1014,7 @@ def write_index(projects, payload):
       if (cityFilter.value && project.city !== cityFilter.value) return false;
       if (statusFilter.value && project.status !== statusFilter.value) return false;
       if (assetFilter.value && project.asset_type !== assetFilter.value) return false;
+      if (reviewFilter.value && projectReviewStatus(project.project_id) !== reviewFilter.value) return false;
       if (onlyFavorites && !favoriteIds.has(project.project_id)) return false;
       return true;
     }}
@@ -659,6 +1087,7 @@ def write_index(projects, payload):
 
     function renderProjectCard(project) {{
       const favorite = favoriteIds.has(project.project_id);
+      const reviewStatus = projectReviewStatus(project.project_id);
       const slug = project.evidence.project_slug || project.project_id;
       const statusClass = project.status === "urgent" ? "urgent" : project.status === "watch" ? "watch" : "monitor";
       const card = document.createElement("article");
@@ -675,6 +1104,7 @@ def write_index(projects, payload):
           <span class="pill ${{statusClass}}">${{escapeHtml(({json.dumps(STATUS_LABELS, ensure_ascii=False)})[project.status] || project.status)}}</span>
           <span class="pill">${{escapeHtml(project.city || "Ville à confirmer")}}</span>
           <span class="pill">${{escapeHtml((project.evidence.practical || {{}}).asset_label || project.asset_type || "Type à confirmer")}}</span>
+          <span class="pill review-${{reviewStatus}}">${{escapeHtml(reviewLabels[reviewStatus] || "Nouveau")}}</span>
         </div>
         <p class="muted project-summary">${{escapeHtml((project.evidence.ai_analysis || {{}}).summary || project.evidence.recommendation_narrative || project.summary)}}</p>
         <div class="scores">
@@ -682,6 +1112,13 @@ def write_index(projects, payload):
           <div class="score"><span>Investment</span><strong>${{project.investment_score}}</strong></div>
           <div class="score"><span>Confirm.</span><strong>${{project.evidence.confirmation_count || 0}}</strong></div>
           <div class="score"><span>ROI 5 ans</span><strong>${{(project.evidence.roi || {{}}).five_year_upside_score || "n/a"}}</strong></div>
+        </div>
+        <div class="review-actions">
+          <button class="review-btn ${{reviewStatus === "new" ? "active" : ""}}" type="button" data-review="new">Nouveau</button>
+          <button class="review-btn ${{reviewStatus === "to_qualify" ? "active" : ""}}" type="button" data-review="to_qualify">À qualifier</button>
+          <button class="review-btn ${{reviewStatus === "interested" ? "active" : ""}}" type="button" data-review="interested">Intéressé</button>
+          <button class="review-btn ${{reviewStatus === "in_contact" ? "active" : ""}}" type="button" data-review="in_contact">En contact</button>
+          <button class="review-btn ${{reviewStatus === "archived" ? "active" : ""}}" type="button" data-review="archived">Archivé</button>
         </div>
         <div class="card-actions">
           <a class="link-btn primary" href="projects/${{escapeHtml(slug)}}.html">Ouvrir le projet</a>
@@ -695,6 +1132,21 @@ def write_index(projects, payload):
         else favoriteIds.add(project.project_id);
         saveFavorites();
         render();
+      }});
+      card.querySelectorAll("[data-review]").forEach((button) => {{
+        button.addEventListener("click", async (event) => {{
+          event.preventDefault();
+          event.stopPropagation();
+          const record = saveProjectReview(project.project_id, button.dataset.review);
+          render();
+          try {{
+            const synced = await persistRemoteQualification(project.project_id, record);
+            saveQualificationRecord(project.project_id, synced);
+            render();
+          }} catch (error) {{
+            console.warn("Supabase sync failed, local cache kept.", error);
+          }}
+        }});
       }});
       return card;
     }}
@@ -725,7 +1177,7 @@ def write_index(projects, payload):
       renderMap(filtered);
     }}
 
-    [searchInput, cityFilter, statusFilter, assetFilter, sortFilter].forEach(control => {{
+    [searchInput, cityFilter, statusFilter, assetFilter, reviewFilter, sortFilter].forEach(control => {{
       control.addEventListener("input", render);
       control.addEventListener("change", render);
     }});
@@ -736,6 +1188,27 @@ def write_index(projects, payload):
     }});
 
     render();
+    loadRemoteQualifications(projects.map((project) => project.project_id))
+      .then(async (rows) => {{
+        const remoteIds = new Set();
+        rows.forEach((row) => {{
+          remoteIds.add(row.project_id);
+          saveQualificationRecord(row.project_id, row);
+        }});
+        const syncPromises = projects.map(async (project) => {{
+          const local = normalizeQualification(getQualification(project.project_id));
+          if (remoteIds.has(project.project_id)) return;
+          if (local.notes || local.status !== "new" || (local.history || []).length > 1) {{
+            const synced = await persistRemoteQualification(project.project_id, local);
+            saveQualificationRecord(project.project_id, synced);
+          }}
+        }});
+        await Promise.all(syncPromises);
+        render();
+      }})
+      .catch((error) => {{
+        console.warn("Supabase unavailable, using local cache.", error);
+      }});
   </script>
 </body>
 </html>"""

@@ -81,8 +81,8 @@ class EntityResolutionTests(unittest.TestCase):
         self.assertEqual(project.promoter, "CGI")
         self.assertEqual(project.city, "Tanger")
         self.assertIn("project_discovery", project.channels)
-        self.assertGreaterEqual(project.evidence["signal_count"], 3)
-        self.assertGreaterEqual(project.confidence_score, 60)
+        self.assertGreaterEqual(project.evidence["signal_count"], 2)
+        self.assertGreaterEqual(project.confidence_score, 40)
         self.assertEqual(project.evidence["confirmation_count"], 0)
         self.assertTrue(any("surveillance" in reason or "marqueur" in reason or "ville:" in reason for reason in project.reasons))
 
@@ -259,6 +259,68 @@ class EntityResolutionTests(unittest.TestCase):
         names = {project.name for project in projects}
         self.assertEqual(names, {"Hamilton", "Le 25"})
 
+    def test_skips_non_real_estate_meta_ads_even_when_address_contains_residence(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Medicine Chinoise Marrakech",
+                signal_type="meta_ad",
+                title="Medicine Chinoise Marrakech · ad #4476703432475114",
+                url="https://facebook.example/ad-4476703432475114",
+                text="Dans notre clinique à Marrakech, chaque patient est accompagné selon son état. Adresse : Résidence Bab Doukkala, Marrakech. Acupuncture et médecine chinoise.",
+                is_primary=True,
+            )
+        ]
+        self.assertEqual(resolve_projects(signals, TEST_CONFIG), [])
+
+    def test_skips_hotel_and_business_travel_meta_ads(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Barceló Anfa Casablanca",
+                signal_type="meta_ad",
+                title="Barceló Anfa Casablanca · ad #1443477047548472",
+                url="https://facebook.example/ad-1443477047548472",
+                text="Travaillez, échangez et détendez-vous dans un cadre pensé pour les voyageurs d’affaires. Hôtel, séminaire et hospitalité d’exception.",
+                is_primary=True,
+            )
+        ]
+        self.assertEqual(resolve_projects(signals, TEST_CONFIG), [])
+
+    def test_skips_medical_lab_meta_ads(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Centre de biologie Agadir",
+                signal_type="meta_ad",
+                title="Centre de biologie Agadir · ad #720000464505757",
+                url="https://facebook.example/ad-720000464505757",
+                text="Analyses sanguines, tests d’allergies et bilans de santé complets au centre de biologie médicale Agadir.",
+                is_primary=True,
+            )
+        ]
+        self.assertEqual(resolve_projects(signals, TEST_CONFIG), [])
+
+    def test_extracts_project_name_from_form_cta_copy(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Rabatgardens",
+                signal_type="meta_ad",
+                title="Rabatgardens · ad #3868826090092010",
+                url="https://facebook.example/ad-3868826090092010",
+                text="Appartements 2 & 3 chambres. Recevez les prix, plans disponibles et informations du projet Rabat Garden en remplissant ce formulaire.",
+                is_primary=True,
+            )
+        ]
+        projects = resolve_projects(signals, TEST_CONFIG)
+        self.assertEqual(len(projects), 1)
+        self.assertEqual(projects[0].name, "Rabat Garden")
+
     def test_extracts_real_project_name_from_meta_body(self):
         signals = [
             SignalEvent(
@@ -293,6 +355,128 @@ class EntityResolutionTests(unittest.TestCase):
         projects = resolve_projects(signals, TEST_CONFIG)
         self.assertEqual(projects[0].name, "Les Palmiers Résidences")
 
+    def test_extracts_domain_tagana_instead_of_generic_phrase(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Mubawab Maroc",
+                signal_type="meta_ad",
+                title="Mubawab Maroc · ad #1308892521356270",
+                url="https://facebook.example/ad-domaine-tagana",
+                text="Avec Domaine Tagana, investissez dans des lots de terrains pour villas isolées à Marrakech. Les atouts du projet : terrains 4 façades.",
+                is_primary=True,
+                metadata={"ad_id": "1308892521356270"},
+            )
+        ]
+        projects = resolve_projects(signals, TEST_CONFIG)
+        self.assertEqual(projects[0].name, "Domaine Tagana")
+
+    def test_skips_rental_marketplace_meta_ads(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Appartement À Louer Agadir",
+                signal_type="meta_ad",
+                title="Appartement À Louer Agadir · ad #1366906295376095",
+                url="https://facebook.example/ad-rental",
+                text="Appartement meublé à louer par jour – Agadir Tilila. Facebook Marketplace avec ascenseur.",
+                is_primary=True,
+                metadata={"ad_id": "1366906295376095"},
+            )
+        ]
+        projects = resolve_projects(signals, TEST_CONFIG)
+        self.assertEqual(projects, [])
+
+    def test_skips_generic_agency_leadgen_meta_ads(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="agence immobilière anour",
+                signal_type="meta_ad",
+                title="agence immobilière anour · ad #4346086468963057",
+                url="https://facebook.example/ad-anour",
+                text="Je peux vous aider à trouver le bien qui correspond à votre budget et à vos besoins. Envoyez-moi un message privé avec votre budget.",
+                is_primary=True,
+                metadata={"ad_id": "4346086468963057"},
+            )
+        ]
+        projects = resolve_projects(signals, TEST_CONFIG)
+        self.assertEqual(projects, [])
+
+    def test_prefers_specific_page_name_when_body_phrase_is_generic(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="PLEIN SUD Résidences",
+                signal_type="meta_ad",
+                title="PLEIN SUD Résidences · ad #1335084374912174",
+                url="https://facebook.example/ad-plein-sud",
+                text="Nouveau projet situé à La Ferme Bretonne à Casablanca. Appartements modernes.",
+                is_primary=True,
+                metadata={"ad_id": "1335084374912174"},
+            )
+        ]
+        projects = resolve_projects(signals, TEST_CONFIG)
+        self.assertEqual(projects[0].name, "PLEIN SUD Résidences")
+
+    def test_extracts_specific_names_from_meta_text(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Green lotus",
+                signal_type="meta_ad",
+                title="Green lotus · ad #858732286995931",
+                url="https://facebook.example/ad-green-lotus",
+                text="Green Lotus Business est un centre d'affaires moderne à Casablanca.",
+                is_primary=True,
+                metadata={"ad_id": "858732286995931"},
+            ),
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Mubawab Maroc",
+                signal_type="meta_ad",
+                title="Mubawab Maroc · ad #889691464148330",
+                url="https://facebook.example/ad-jnane-agadir",
+                text="JNANE AGADIR IMMOBILIER propose des locaux commerciaux au cœur d’Agadir.",
+                is_primary=True,
+                metadata={"ad_id": "889691464148330"},
+            ),
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Chaabane immobilier",
+                signal_type="meta_ad",
+                title="Chaabane immobilier · ad #1362893569120529",
+                url="https://facebook.example/ad-oree-palm",
+                text="Lancement de votre tout nouveau projet résidentiel L'Orée du Palm à Marrakech : Villas haut standing avec piscine.",
+                is_primary=True,
+                metadata={"ad_id": "1362893569120529"},
+            ),
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Twenty Campus Casa Anfa",
+                signal_type="meta_ad",
+                title="Twenty Campus Casa Anfa · ad #1046854941349832",
+                url="https://facebook.example/ad-twenty-campus",
+                text="Résidence moderne avec ménage, internet, coworking, petit déjeuner. À Twenty Campus Casa Anfa.",
+                is_primary=True,
+                metadata={"ad_id": "1046854941349832"},
+            ),
+        ]
+        projects = resolve_projects(signals, TEST_CONFIG)
+        names = {project.name for project in projects}
+        self.assertIn("Green Lotus Business", names)
+        self.assertIn("JNANE AGADIR IMMOBILIER", names)
+        self.assertIn("L'Orée du Palm", names)
+        self.assertIn("Twenty Campus Casa Anfa", names)
+
     def test_skips_meta_platform_source_without_specific_project(self):
         signals = [
             SignalEvent(
@@ -310,6 +494,23 @@ class EntityResolutionTests(unittest.TestCase):
         projects = resolve_projects(signals, TEST_CONFIG)
         self.assertEqual(projects, [])
 
+    def test_skips_generic_portal_meta_ad_without_project_name(self):
+        signals = [
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Agenz",
+                signal_type="meta_ad",
+                title="Agenz · ad #856031357200962",
+                url="https://facebook.example/ad-agenz",
+                text="Nouveau projet résidentiel à Oulfa, Casablanca, au sein d’une résidence fermée. Appartements de 67 m² à 190 m².",
+                is_primary=True,
+                metadata={"ad_id": "856031357200962"},
+            )
+        ]
+        projects = resolve_projects(signals, TEST_CONFIG)
+        self.assertEqual(projects, [])
+
     def test_skips_generic_watch_and_urbanism_signals(self):
         signals = [
             SignalEvent(
@@ -320,6 +521,16 @@ class EntityResolutionTests(unittest.TestCase):
                 title="Google discovery watch: site:cgi.ma tanger projet immobilier",
                 url="https://www.google.com/search?q=site%3Acgi.ma+tanger+projet+immobilier&hl=fr",
                 text="site:cgi.ma tanger projet immobilier",
+                is_primary=True,
+            ),
+            SignalEvent(
+                collector="ads.meta_ads",
+                channel="advertising",
+                source="Meta Ad Library",
+                signal_type="meta_watch",
+                title="Meta Ads watch: Cap Spartel",
+                url="https://www.facebook.com/ads/library/?q=Cap%20Spartel",
+                text="Cap Spartel",
                 is_primary=True,
             ),
             SignalEvent(

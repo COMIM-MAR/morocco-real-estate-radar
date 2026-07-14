@@ -136,7 +136,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1470832837415483",
@@ -322,7 +324,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -350,8 +354,216 @@
     "signals": []
   },
   {
-    "project_id": "907e4e39cd314ea2f0e9c30c469a1c07642c5cab",
-    "name": "Les atouts du projet",
+    "project_id": "7c2ffa4ca01b305d0bce4fe283a087a3e1932876",
+    "name": "Green lotus Green lotus Green Lotus Business",
+    "city": "Casablanca",
+    "zone": "Bouskoura",
+    "promoter": null,
+    "asset_type": "apartment_3_bed",
+    "first_detected_at": "2026-07-14T12:00:56.992880+00:00",
+    "last_updated_at": "2026-07-14T12:00:56.993029+00:00",
+    "launch_score": 100,
+    "confidence_score": 100,
+    "investment_score": 89,
+    "urgency_score": 100,
+    "recommendation": "Buy",
+    "status": "urgent",
+    "summary": "Green lotus Green lotus Green Lotus Business | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "prices": {
+      "min": null,
+      "max": null
+    },
+    "aliases": [
+      "Green lotus Green lotus Green Lotus Business",
+      "Green lotus",
+      "Green lotus Green lotus Green Lotus"
+    ],
+    "channels": [
+      "advertising"
+    ],
+    "sources": [
+      "Green lotus"
+    ],
+    "source_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=858732286995931",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1045194494744103",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
+    ],
+    "evidence": {
+      "signal_count": 4,
+      "primary_signal_count": 4,
+      "listing_signal_count": 0,
+      "source_count": 1,
+      "channel_count": 1,
+      "primary_channels": [
+        "advertising"
+      ],
+      "secondary_channels": [],
+      "confirmations": [],
+      "confirmation_details": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 33.5731,
+        "lng": -7.5898,
+        "sea_distance_km": 6,
+        "station_distance_km": 5,
+        "highway_distance_km": 4
+      },
+      "price_band": "unknown",
+      "price_evolution": {
+        "trend": "unknown",
+        "summary": "Aucune série de prix fiable pour le moment."
+      },
+      "roi": {
+        "label": "Élevé",
+        "five_year_upside_score": 86
+      },
+      "project_slug": "green-lotus-green-lotus-green-lotus-business-7c2ffa4c",
+      "infrastructure": {
+        "sea_distance_km": 6,
+        "station_distance_km": 5,
+        "highway_distance_km": 4
+      },
+      "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+      "source_catalog": [
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Green lotus · ad #858732286995931",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=858732286995931",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Green lotus · ad #1045194494744103",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1045194494744103",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Green lotus · ad #1796362918002528",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Green lotus · ad #1039379112368362",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        }
+      ],
+      "practical": {
+        "asset_label": "Appartement 3 chambres",
+        "public_status": "Aucune disponibilité publique détectée pour le moment.",
+        "price_min": null,
+        "price_max": null
+      },
+      "ai_analysis": {
+        "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "strengths": [
+          "Le score de confiance est élevé, donc le signal paraît crédible.",
+          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+        ],
+        "risks": [
+          "Le prix public n'est pas encore confirmé.",
+          "Aucune disponibilité publique confirmée sur portail pour l'instant."
+        ],
+        "next_steps": [
+          "Vérifier le site officiel et les pages sociales du promoteur.",
+          "Confirmer les disponibilités et le ticket d'entrée réel.",
+          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+        ]
+      },
+      "official_links": [],
+      "social_links": [
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Green lotus · ad #858732286995931",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=858732286995931",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Green lotus · ad #1045194494744103",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1045194494744103",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Green lotus · ad #1796362918002528",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Green lotus · ad #1039379112368362",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        }
+      ],
+      "listing_links": [],
+      "news_links": [],
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
+    },
+    "reasons": [
+      "publicité Meta exacte détectée: ad_id 858732286995931",
+      "ville: Casablanca",
+      "zone: Bouskoura",
+      "publicité Meta exacte détectée: ad_id 1045194494744103",
+      "publicité Meta exacte détectée: ad_id 1796362918002528",
+      "type: apartment_3_bed",
+      "publicité Meta exacte détectée: ad_id 1039379112368362"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-14T12:00:56.993029+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 89,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      }
+    ],
+    "signals": []
+  },
+  {
+    "project_id": "50fc71a81369eeacf45fcfc9fd642222fa23fda1",
+    "name": "Domaine Tagana",
     "city": "Marrakech",
     "zone": null,
     "promoter": null,
@@ -364,13 +576,13 @@
     "urgency_score": 100,
     "recommendation": "Buy",
     "status": "urgent",
-    "summary": "Les atouts du projet | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "Domaine Tagana | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
     "prices": {
       "min": null,
       "max": null
     },
     "aliases": [
-      "Les atouts du projet"
+      "Domaine Tagana"
     ],
     "channels": [
       "advertising"
@@ -412,7 +624,7 @@
         "label": "Moyen",
         "five_year_upside_score": 71
       },
-      "project_slug": "les-atouts-du-projet-907e4e39",
+      "project_slug": "domaine-tagana-50fc71a8",
       "infrastructure": {
         "sea_distance_km": 180,
         "station_distance_km": 5,
@@ -508,7 +720,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1308892521356270",
@@ -729,7 +943,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1396804362274198",
@@ -757,705 +973,8 @@
     "signals": []
   },
   {
-    "project_id": "8c1c96bcdc3f6b8a3a5d3162383baa9d34edadae",
-    "name": "Meta Ad Library",
-    "city": "Tanger",
-    "zone": "Cap Spartel",
-    "promoter": null,
-    "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:01:15.464589+00:00",
-    "last_updated_at": "2026-07-14T12:05:51.735260+00:00",
-    "launch_score": 100,
-    "confidence_score": 100,
-    "investment_score": 61,
-    "urgency_score": 100,
-    "recommendation": "Buy",
-    "status": "urgent",
-    "summary": "Meta Ad Library | Promoteur: à confirmer | Ville: Tanger | Zone: Cap Spartel | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Meta Ad Library"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Meta Ad Library"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=Lots%20Terrains",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=Locaux%20Commerciaux",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=Plateaux%20Bureaux",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=%C3%89quipements%20Sociaux",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=%22%C3%89quipements%20Sociaux%22%20immobilier%20Maroc",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=Garden%20Partir%20450%20000",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=%22Garden%20Partir%20450%20000%22%20immobilier%20Maroc",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=Ama%C3%AFa%20Partir%20130%20000",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=%22Ama%C3%AFa%20Partir%20130%20000%22%20immobilier%20Maroc",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=lancement%20immobilier%20Tanger",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=pr%C3%A9-commercialisation%20Tanger",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=r%C3%A9sidence%20neuve%20Maroc"
-    ],
-    "evidence": {
-      "signal_count": 17,
-      "primary_signal_count": 17,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 61
-      },
-      "project_slug": "meta-ad-library-8c1c96bc",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Meta Ads watch: lancement immobilier Tanger",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=lancement%20immobilier%20Tanger",
-          "source": "Meta Ad Library",
-          "signal_type": "meta_watch",
-          "proof_level": "watch"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Meta Ads watch: pré-commercialisation Tanger",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=pr%C3%A9-commercialisation%20Tanger",
-          "source": "Meta Ad Library",
-          "signal_type": "meta_watch",
-          "proof_level": "watch"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Meta Ads watch: lotissement villa Tanger",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=lotissement%20villa%20Tanger",
-          "source": "Meta Ad Library",
-          "signal_type": "meta_watch",
-          "proof_level": "watch"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Meta Ads watch: Cap Spartel",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=Cap%20Spartel",
-          "source": "Meta Ad Library",
-          "signal_type": "meta_watch",
-          "proof_level": "watch"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "strengths": [
-          "Le score de confiance est élevé, donc le signal paraît crédible."
-        ],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Meta Ads watch: lancement immobilier Tanger",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=lancement%20immobilier%20Tanger",
-          "source": "Meta Ad Library",
-          "signal_type": "meta_watch",
-          "proof_level": "watch"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Meta Ads watch: pré-commercialisation Tanger",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=pr%C3%A9-commercialisation%20Tanger",
-          "source": "Meta Ad Library",
-          "signal_type": "meta_watch",
-          "proof_level": "watch"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Meta Ads watch: lotissement villa Tanger",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=lotissement%20villa%20Tanger",
-          "source": "Meta Ad Library",
-          "signal_type": "meta_watch",
-          "proof_level": "watch"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Meta Ads watch: Cap Spartel",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&media_type=all&search_type=keyword_unordered&q=Cap%20Spartel",
-          "source": "Meta Ad Library",
-          "signal_type": "meta_watch",
-          "proof_level": "watch"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "mot-clé Meta Ads à vérifier",
-      "ville: Tanger",
-      "marqueur de lancement détecté",
-      "type: apartment_unknown",
-      "type: villa",
-      "zone: Cap Spartel",
-      "zone: Achakar",
-      "ville: Casablanca",
-      "zone: Ain Diab",
-      "zone: Anfa"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:05:51.735260+00:00",
-        "launch_score": 100,
-        "confidence_score": 100,
-        "investment_score": 61,
-        "urgency_score": 100,
-        "status": "urgent",
-        "recommendation": "Buy"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "5ef7f2a167727a8358fcab65c0ea66e8d28025f2",
-    "name": "Bab Doukkala",
-    "city": "Marrakech",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:04:51.386717+00:00",
-    "last_updated_at": "2026-07-14T12:04:51.386801+00:00",
-    "launch_score": 76,
-    "confidence_score": 100,
-    "investment_score": 32,
-    "urgency_score": 76,
-    "recommendation": "Buy",
-    "status": "urgent",
-    "summary": "Bab Doukkala | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Bab Doukkala"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Medicine Chinoise Marrakech"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203"
-    ],
-    "evidence": {
-      "signal_count": 2,
-      "primary_signal_count": 2,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 31.6295,
-        "lng": -7.9811,
-        "sea_distance_km": 180,
-        "station_distance_km": 5,
-        "highway_distance_km": 6
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 34
-      },
-      "project_slug": "bab-doukkala-5ef7f2a1",
-      "infrastructure": {
-        "sea_distance_km": 180,
-        "station_distance_km": 5,
-        "highway_distance_km": 6
-      },
-      "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Medicine Chinoise Marrakech · ad #4476703432475114",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114",
-          "source": "Medicine Chinoise Marrakech",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Medicine Chinoise Marrakech · ad #1029884529789203",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203",
-          "source": "Medicine Chinoise Marrakech",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "strengths": [
-          "Le score de confiance est élevé, donc le signal paraît crédible."
-        ],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Medicine Chinoise Marrakech · ad #4476703432475114",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114",
-          "source": "Medicine Chinoise Marrakech",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Medicine Chinoise Marrakech · ad #1029884529789203",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203",
-          "source": "Medicine Chinoise Marrakech",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 4476703432475114",
-      "type: apartment_unknown",
-      "ville: Marrakech",
-      "publicité Meta exacte détectée: ad_id 1029884529789203"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:04:51.386801+00:00",
-        "launch_score": 76,
-        "confidence_score": 100,
-        "investment_score": 32,
-        "urgency_score": 76,
-        "status": "urgent",
-        "recommendation": "Buy"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "8b34847d4945aff0479cfe130f6a9148bde4767e",
-    "name": "Barceló Anfa Casablanca",
-    "city": "Casablanca",
-    "zone": "Anfa",
-    "promoter": null,
-    "asset_type": null,
-    "first_detected_at": "2026-07-14T12:05:44.527004+00:00",
-    "last_updated_at": "2026-07-14T12:05:44.527037+00:00",
-    "launch_score": 76,
-    "confidence_score": 92,
-    "investment_score": 59,
-    "urgency_score": 78,
-    "recommendation": "Buy",
-    "status": "urgent",
-    "summary": "Barceló Anfa Casablanca | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Barceló Anfa Casablanca"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Barceló Anfa Casablanca"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975"
-    ],
-    "evidence": {
-      "signal_count": 2,
-      "primary_signal_count": 2,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 59
-      },
-      "project_slug": "barcel-anfa-casablanca-8b34847d",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Barceló Anfa Casablanca · ad #1443477047548472",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472",
-          "source": "Barceló Anfa Casablanca",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Barceló Anfa Casablanca · ad #1321574962881975",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975",
-          "source": "Barceló Anfa Casablanca",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Type à confirmer",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "strengths": [
-          "Le score de confiance est élevé, donc le signal paraît crédible."
-        ],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Barceló Anfa Casablanca · ad #1443477047548472",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472",
-          "source": "Barceló Anfa Casablanca",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Barceló Anfa Casablanca · ad #1321574962881975",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975",
-          "source": "Barceló Anfa Casablanca",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1443477047548472",
-      "ville: Casablanca",
-      "zone: Anfa",
-      "publicité Meta exacte détectée: ad_id 1321574962881975"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:05:44.527128+00:00",
-        "launch_score": 100,
-        "confidence_score": 100,
-        "investment_score": 59,
-        "urgency_score": 100,
-        "status": "urgent",
-        "recommendation": "Buy"
-      },
-      {
-        "observed_at": "2026-07-14T12:05:44.527037+00:00",
-        "launch_score": 76,
-        "confidence_score": 92,
-        "investment_score": 59,
-        "urgency_score": 78,
-        "status": "urgent",
-        "recommendation": "Buy"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "38e8843345894eecc97f957d560ce881c90242d3",
-    "name": "les clés",
-    "city": "Casablanca",
-    "zone": "Bouskoura",
-    "promoter": null,
-    "asset_type": null,
-    "first_detected_at": "2026-07-14T12:00:56.992880+00:00",
-    "last_updated_at": "2026-07-14T12:00:56.992944+00:00",
-    "launch_score": 76,
-    "confidence_score": 92,
-    "investment_score": 59,
-    "urgency_score": 78,
-    "recommendation": "Buy",
-    "status": "urgent",
-    "summary": "les clés | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "les clés"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Green lotus"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=858732286995931",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1045194494744103"
-    ],
-    "evidence": {
-      "signal_count": 2,
-      "primary_signal_count": 2,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 59
-      },
-      "project_slug": "les-cl-s-38e88433",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Green lotus · ad #858732286995931",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=858732286995931",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Green lotus · ad #1045194494744103",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1045194494744103",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Type à confirmer",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "strengths": [
-          "Le score de confiance est élevé, donc le signal paraît crédible."
-        ],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Green lotus · ad #858732286995931",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=858732286995931",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Green lotus · ad #1045194494744103",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1045194494744103",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 858732286995931",
-      "ville: Casablanca",
-      "zone: Bouskoura",
-      "publicité Meta exacte détectée: ad_id 1045194494744103"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:00:56.992944+00:00",
-        "launch_score": 76,
-        "confidence_score": 92,
-        "investment_score": 59,
-        "urgency_score": 78,
-        "status": "urgent",
-        "recommendation": "Buy"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "2a9c5f0ca6211c29ddf452f6835361032ece0ab7",
-    "name": "Mubawab Maroc",
+    "project_id": "ac9524e7cef1ef8ff0d82d56011f78652e282cfe",
+    "name": "JNANE AGADIR IMMOBILIER",
     "city": "Agadir",
     "zone": null,
     "promoter": null,
@@ -1468,13 +987,13 @@
     "urgency_score": 74,
     "recommendation": "Buy",
     "status": "urgent",
-    "summary": "Mubawab Maroc | Promoteur: à confirmer | Ville: Agadir | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "JNANE AGADIR IMMOBILIER | Promoteur: à confirmer | Ville: Agadir | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
     "prices": {
       "min": null,
       "max": null
     },
     "aliases": [
-      "Mubawab Maroc"
+      "JNANE AGADIR IMMOBILIER"
     ],
     "channels": [
       "advertising"
@@ -1515,7 +1034,7 @@
         "label": "Prudent",
         "five_year_upside_score": 38
       },
-      "project_slug": "mubawab-maroc-2a9c5f0c",
+      "project_slug": "jnane-agadir-immobilier-ac9524e7",
       "infrastructure": {
         "sea_distance_km": 4,
         "station_distance_km": 9,
@@ -1590,7 +1109,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 889691464148330",
@@ -1748,7 +1269,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -1770,8 +1293,8 @@
     "signals": []
   },
   {
-    "project_id": "9e9eb3203b3259ae8e68c24d6b5681de0cfec7f4",
-    "name": "résidentiel L'Orée du Palm",
+    "project_id": "57caa09f6fdfefb79d3d46aa636ae5ff0199fbc4",
+    "name": "L'Orée du Palm",
     "city": "Marrakech",
     "zone": "Agdal",
     "promoter": null,
@@ -1784,13 +1307,13 @@
     "urgency_score": 69,
     "recommendation": "Watch",
     "status": "watch",
-    "summary": "résidentiel L'Orée du Palm | Promoteur: à confirmer | Ville: Marrakech | Zone: Agdal | Confirmations: confirmation en cours | Prix observés entre 3600000 et 3600000 MAD.",
+    "summary": "L'Orée du Palm | Promoteur: à confirmer | Ville: Marrakech | Zone: Agdal | Confirmations: confirmation en cours | Prix observés entre 3600000 et 3600000 MAD.",
     "prices": {
       "min": 3600000,
       "max": 3600000
     },
     "aliases": [
-      "résidentiel L'Orée du Palm"
+      "L'Orée du Palm"
     ],
     "channels": [
       "advertising"
@@ -1830,7 +1353,7 @@
         "label": "Moyen",
         "five_year_upside_score": 64
       },
-      "project_slug": "r-sidentiel-l-or-e-du-palm-9e9eb320",
+      "project_slug": "l-or-e-du-palm-57caa09f",
       "infrastructure": {
         "sea_distance_km": 180,
         "station_distance_km": 5,
@@ -1885,7 +1408,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1362893569120529",
@@ -2023,7 +1548,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 2264047820669323",
@@ -2046,143 +1573,8 @@
     "signals": []
   },
   {
-    "project_id": "21051ca9ad6452678745e572dbaafa150996c0db",
-    "name": "résidence fermée",
-    "city": "Casablanca",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:02:59.412075+00:00",
-    "last_updated_at": "2026-07-14T12:02:59.412075+00:00",
-    "launch_score": 62,
-    "confidence_score": 72,
-    "investment_score": 43,
-    "urgency_score": 62,
-    "recommendation": "Watch",
-    "status": "watch",
-    "summary": "résidence fermée | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "résidence fermée"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Agenz"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=856031357200962"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 40
-      },
-      "project_slug": "r-sidence-ferm-e-21051ca9",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Agenz · ad #856031357200962",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=856031357200962",
-          "source": "Agenz",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Agenz · ad #856031357200962",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=856031357200962",
-          "source": "Agenz",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 856031357200962",
-      "type: apartment_unknown",
-      "ville: Casablanca",
-      "marqueur de lancement détecté"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:02:59.412075+00:00",
-        "launch_score": 62,
-        "confidence_score": 72,
-        "investment_score": 43,
-        "urgency_score": 62,
-        "status": "watch",
-        "recommendation": "Watch"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "9dc6a4c6638464b445ebb9e5fd6e1de59a666429",
-    "name": "situé",
+    "project_id": "66da8a99b97f8413ce2c2807f7c52710373ccdf5",
+    "name": "PLEIN SUD Résidences",
     "city": "Casablanca",
     "zone": null,
     "promoter": null,
@@ -2195,13 +1587,13 @@
     "urgency_score": 61,
     "recommendation": "Watch",
     "status": "watch",
-    "summary": "situé | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "PLEIN SUD Résidences | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
     "prices": {
       "min": null,
       "max": null
     },
     "aliases": [
-      "situé"
+      "PLEIN SUD Résidences"
     ],
     "channels": [
       "advertising"
@@ -2241,7 +1633,7 @@
         "label": "Prudent",
         "five_year_upside_score": 40
       },
-      "project_slug": "situ-9dc6a4c6",
+      "project_slug": "plein-sud-r-sidences-66da8a99",
       "infrastructure": {
         "sea_distance_km": 6,
         "station_distance_km": 5,
@@ -2294,7 +1686,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1335084374912174",
@@ -2431,7 +1825,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -2570,7 +1966,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -2709,7 +2107,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -2846,7 +2246,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -2984,7 +2386,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -3122,7 +2526,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -3260,7 +2666,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -3398,7 +2806,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -3536,7 +2946,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -3674,7 +3086,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -3811,7 +3225,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -3948,7 +3364,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -4086,7 +3504,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 3705538012919384",
@@ -4108,8 +3528,8 @@
     "signals": []
   },
   {
-    "project_id": "e9aafd1df7f4a1006f2b1e590f2cbaeea9bb3004",
-    "name": "les Recevez les prix",
+    "project_id": "b4eed01948bfa23395253873ab1aca49cbd2fbbd",
+    "name": "Rabat Garden",
     "city": "Rabat",
     "zone": "Harhoura",
     "promoter": null,
@@ -4122,13 +3542,13 @@
     "urgency_score": 56,
     "recommendation": "Monitor",
     "status": "monitor",
-    "summary": "les Recevez les prix | Promoteur: à confirmer | Ville: Rabat | Zone: Harhoura | Confirmations: confirmation en cours | Prix observés entre 2000000 et 2000000 MAD.",
+    "summary": "Rabat Garden | Promoteur: à confirmer | Ville: Rabat | Zone: Harhoura | Confirmations: confirmation en cours | Prix observés entre 2000000 et 2000000 MAD.",
     "prices": {
       "min": 2000000,
       "max": 2000000
     },
     "aliases": [
-      "les Recevez les prix"
+      "Rabat Garden"
     ],
     "channels": [
       "advertising"
@@ -4168,7 +3588,7 @@
         "label": "Élevé",
         "five_year_upside_score": 85
       },
-      "project_slug": "les-recevez-les-prix-e9aafd1d",
+      "project_slug": "rabat-garden-b4eed019",
       "infrastructure": {
         "sea_distance_km": 7,
         "station_distance_km": 4,
@@ -4222,7 +3642,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 3868826090092010",
@@ -4360,7 +3782,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 3025329327674204",
@@ -4497,7 +3921,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1273513244771641",
@@ -4512,305 +3938,6 @@
         "confidence_score": 60,
         "investment_score": 89,
         "urgency_score": 56,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "e5f5c55cf91a1f2e1b6ffa65b5ba8ca54014ff1d",
-    "name": "Green lotus",
-    "city": "Casablanca",
-    "zone": "Bouskoura",
-    "promoter": null,
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-06T21:53:35.385939+00:00",
-    "last_updated_at": "2026-07-14T12:00:56.992976+00:00",
-    "launch_score": 38,
-    "confidence_score": 60,
-    "investment_score": 89,
-    "urgency_score": 56,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Green lotus | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Green lotus"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Green lotus"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 82
-      },
-      "project_slug": "green-lotus-e5f5c55c",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Green lotus · ad #1796362918002528",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Green lotus · ad #1796362918002528",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1796362918002528",
-      "type: apartment_3_bed",
-      "ville: Casablanca",
-      "zone: Bouskoura"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:00:56.993029+00:00",
-        "launch_score": 100,
-        "confidence_score": 100,
-        "investment_score": 89,
-        "urgency_score": 100,
-        "status": "urgent",
-        "recommendation": "Buy"
-      },
-      {
-        "observed_at": "2026-07-14T12:00:56.992976+00:00",
-        "launch_score": 38,
-        "confidence_score": 60,
-        "investment_score": 89,
-        "urgency_score": 56,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-14T11:12:01.649993+00:00",
-        "launch_score": 100,
-        "confidence_score": 100,
-        "investment_score": 89,
-        "urgency_score": 100,
-        "status": "urgent",
-        "recommendation": "Buy"
-      },
-      {
-        "observed_at": "2026-07-06T21:53:35.386427+00:00",
-        "launch_score": 100,
-        "confidence_score": 100,
-        "investment_score": 59,
-        "urgency_score": 100,
-        "status": "urgent",
-        "recommendation": "Buy"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "a85a1ee807d5577f97c57097e45ff462af4ec8ae",
-    "name": "agence immobilière anour",
-    "city": "Rabat",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:01:40.188157+00:00",
-    "last_updated_at": "2026-07-14T12:01:40.188157+00:00",
-    "launch_score": 38,
-    "confidence_score": 59,
-    "investment_score": 38,
-    "urgency_score": 45,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "agence immobilière anour | Promoteur: à confirmer | Ville: Rabat | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "agence immobilière anour"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "agence immobilière anour"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4346086468963057"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 34.0209,
-        "lng": -6.8416,
-        "sea_distance_km": 7,
-        "station_distance_km": 4,
-        "highway_distance_km": 4
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 35
-      },
-      "project_slug": "agence-immobili-re-anour-a85a1ee8",
-      "infrastructure": {
-        "sea_distance_km": 7,
-        "station_distance_km": 4,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "agence immobilière anour · ad #4346086468963057",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4346086468963057",
-          "source": "agence immobilière anour",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "agence immobilière anour · ad #4346086468963057",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4346086468963057",
-          "source": "agence immobilière anour",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 4346086468963057",
-      "type: land_r4_plus",
-      "ville: Rabat",
-      "type: apartment_unknown"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:01:40.188157+00:00",
-        "launch_score": 38,
-        "confidence_score": 59,
-        "investment_score": 38,
-        "urgency_score": 45,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -4932,7 +4059,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1450548729595529",
@@ -4947,143 +4076,6 @@
         "confidence_score": 55,
         "investment_score": 82,
         "urgency_score": 53,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "3c3f701a028df31c1893e5decdac330afd595cda",
-    "name": "Google News watch: pré-commercialisation immobilier Tanger",
-    "city": "Tanger",
-    "zone": null,
-    "promoter": null,
-    "asset_type": null,
-    "first_detected_at": "2026-07-14T12:05:51.735384+00:00",
-    "last_updated_at": "2026-07-14T12:05:51.735396+00:00",
-    "launch_score": 44,
-    "confidence_score": 58,
-    "investment_score": 45,
-    "urgency_score": 49,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Google News watch: pré-commercialisation immobilier Tanger | Promoteur: à confirmer | Ville: Tanger | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Google News watch: pré-commercialisation immobilier Tanger",
-      "Google News watch: promotion immobilière Casablanca"
-    ],
-    "channels": [
-      "news"
-    ],
-    "sources": [
-      "Google News"
-    ],
-    "source_urls": [
-      "https://news.google.com/search?q=pr%C3%A9-commercialisation+immobilier+Tanger&hl=fr&gl=MA&ceid=MA:fr",
-      "https://news.google.com/search?q=promotion+immobili%C3%A8re+Casablanca&hl=fr&gl=MA&ceid=MA:fr"
-    ],
-    "evidence": {
-      "signal_count": 2,
-      "primary_signal_count": 2,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "news"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 41
-      },
-      "project_slug": "google-news-watch-pr-commercialisation-immobilier-tanger-3c3f701a",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "google_news",
-          "kind_label": "Article / Google News",
-          "label": "Google News watch: pré-commercialisation immobilier Tanger",
-          "description": "Résultat presse ou Google News surveillé.",
-          "url": "https://news.google.com/search?q=pr%C3%A9-commercialisation+immobilier+Tanger&hl=fr&gl=MA&ceid=MA:fr",
-          "source": "Google News",
-          "signal_type": "news_watch",
-          "proof_level": "watch"
-        }
-      ],
-      "practical": {
-        "asset_label": "Type à confirmer",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [],
-      "news_links": [
-        {
-          "kind": "google_news",
-          "kind_label": "Article / Google News",
-          "label": "Google News watch: pré-commercialisation immobilier Tanger",
-          "description": "Résultat presse ou Google News surveillé.",
-          "url": "https://news.google.com/search?q=pr%C3%A9-commercialisation+immobilier+Tanger&hl=fr&gl=MA&ceid=MA:fr",
-          "source": "Google News",
-          "signal_type": "news_watch",
-          "proof_level": "watch"
-        }
-      ],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "surveillance presse / Google News",
-      "ville: Tanger",
-      "marqueur de lancement détecté",
-      "ville: Casablanca"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:05:51.735396+00:00",
-        "launch_score": 44,
-        "confidence_score": 58,
-        "investment_score": 45,
-        "urgency_score": 49,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -5204,7 +4196,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -5338,7 +4332,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1381220960869725",
@@ -5361,8 +4357,8 @@
     "signals": []
   },
   {
-    "project_id": "ca0e22c507203c1e9f7ec29eff42c71f10c41806",
-    "name": "moderne avec ménage",
+    "project_id": "efbb625694e80b7dbc020e27366dd99e41d02000",
+    "name": "Twenty Campus Casa Anfa",
     "city": "Casablanca",
     "zone": "Anfa",
     "promoter": null,
@@ -5375,13 +4371,13 @@
     "urgency_score": 48,
     "recommendation": "Monitor",
     "status": "monitor",
-    "summary": "moderne avec ménage | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "Twenty Campus Casa Anfa | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
     "prices": {
       "min": null,
       "max": null
     },
     "aliases": [
-      "moderne avec ménage"
+      "Twenty Campus Casa Anfa"
     ],
     "channels": [
       "advertising"
@@ -5421,7 +4417,7 @@
         "label": "Prudent",
         "five_year_upside_score": 54
       },
-      "project_slug": "moderne-avec-m-nage-ca0e22c5",
+      "project_slug": "twenty-campus-casa-anfa-efbb6256",
       "infrastructure": {
         "sea_distance_km": 6,
         "station_distance_km": 5,
@@ -5474,7 +4470,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1046854941349832",
@@ -5496,8 +4494,8 @@
     "signals": []
   },
   {
-    "project_id": "6843cd099bdb2ad8215babfeda56a9289d1d6ba1",
-    "name": "l’équilibre",
+    "project_id": "325d8304f9d7df7a33ad5b88fc726c6d6dc2100d",
+    "name": "Anfa Place Living Resort",
     "city": "Casablanca",
     "zone": "Anfa",
     "promoter": null,
@@ -5510,13 +4508,13 @@
     "urgency_score": 48,
     "recommendation": "Monitor",
     "status": "monitor",
-    "summary": "l’équilibre | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "Anfa Place Living Resort | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
     "prices": {
       "min": null,
       "max": null
     },
     "aliases": [
-      "l’équilibre"
+      "Anfa Place Living Resort"
     ],
     "channels": [
       "advertising"
@@ -5556,7 +4554,7 @@
         "label": "Prudent",
         "five_year_upside_score": 54
       },
-      "project_slug": "l-quilibre-6843cd09",
+      "project_slug": "anfa-place-living-resort-325d8304",
       "infrastructure": {
         "sea_distance_km": 6,
         "station_distance_km": 5,
@@ -5609,7 +4607,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1780008796778934",
@@ -5744,7 +4744,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1620969222885314",
@@ -5759,276 +4761,6 @@
         "confidence_score": 56,
         "investment_score": 54,
         "urgency_score": 48,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "119309037b9747c1233f481550b39d675fdf31e1",
-    "name": "Illala N57 Founty",
-    "city": "Agadir",
-    "zone": "Founty",
-    "promoter": null,
-    "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:04:31.026308+00:00",
-    "last_updated_at": "2026-07-14T12:04:31.026308+00:00",
-    "launch_score": 38,
-    "confidence_score": 56,
-    "investment_score": 52,
-    "urgency_score": 47,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Illala N57 Founty | Promoteur: à confirmer | Ville: Agadir | Zone: Founty | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Illala N57 Founty"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Medecine chinoise Agadir"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1930740350949553"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 30.4278,
-        "lng": -9.5981,
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 48
-      },
-      "project_slug": "illala-n57-founty-11930903",
-      "infrastructure": {
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Medecine chinoise Agadir · ad #1930740350949553",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1930740350949553",
-          "source": "Medecine chinoise Agadir",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Medecine chinoise Agadir · ad #1930740350949553",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1930740350949553",
-          "source": "Medecine chinoise Agadir",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1930740350949553",
-      "type: apartment_unknown",
-      "ville: Agadir",
-      "zone: Founty"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:04:31.026308+00:00",
-        "launch_score": 38,
-        "confidence_score": 56,
-        "investment_score": 52,
-        "urgency_score": 47,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "e95a928bcb66c8cc76100e13058adb3f6eaa10a5",
-    "name": "al Hadiqa lkobra Gueliz",
-    "city": "Marrakech",
-    "zone": "Gueliz",
-    "promoter": null,
-    "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:04:51.386751+00:00",
-    "last_updated_at": "2026-07-14T12:04:51.386751+00:00",
-    "launch_score": 38,
-    "confidence_score": 56,
-    "investment_score": 48,
-    "urgency_score": 46,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "al Hadiqa lkobra Gueliz | Promoteur: à confirmer | Ville: Marrakech | Zone: Gueliz | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "al Hadiqa lkobra Gueliz"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Ecole hôtelière privée de Marrakech - EHPM"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1008105315095244"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 31.6295,
-        "lng": -7.9811,
-        "sea_distance_km": 180,
-        "station_distance_km": 5,
-        "highway_distance_km": 6
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 44
-      },
-      "project_slug": "al-hadiqa-lkobra-gueliz-e95a928b",
-      "infrastructure": {
-        "sea_distance_km": 180,
-        "station_distance_km": 5,
-        "highway_distance_km": 6
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Ecole hôtelière privée de Marrakech - EHPM · ad #1008105315095244",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1008105315095244",
-          "source": "Ecole hôtelière privée de Marrakech - EHPM",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Ecole hôtelière privée de Marrakech - EHPM · ad #1008105315095244",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1008105315095244",
-          "source": "Ecole hôtelière privée de Marrakech - EHPM",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1008105315095244",
-      "type: apartment_unknown",
-      "ville: Marrakech",
-      "zone: Gueliz"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:04:51.386751+00:00",
-        "launch_score": 38,
-        "confidence_score": 56,
-        "investment_score": 48,
-        "urgency_score": 46,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -6149,7 +4881,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 909084928134030",
@@ -6283,7 +5017,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1037621728629909",
@@ -6297,278 +5033,6 @@
         "confidence_score": 56,
         "investment_score": 45,
         "urgency_score": 46,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "0afb993f487bda68e3747fe70b1e8e68c425c3f4",
-    "name": "calme avec ascenseur",
-    "city": "Agadir",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_2_bed",
-    "first_detected_at": "2026-07-14T12:04:31.026275+00:00",
-    "last_updated_at": "2026-07-14T12:04:31.026275+00:00",
-    "launch_score": 22,
-    "confidence_score": 54,
-    "investment_score": 60,
-    "urgency_score": 41,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "calme avec ascenseur | Promoteur: à confirmer | Ville: Agadir | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "calme avec ascenseur"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Appartement À Louer Agadir"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1589556962526898"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 30.4278,
-        "lng": -9.5981,
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 55
-      },
-      "project_slug": "calme-avec-ascenseur-0afb993f",
-      "infrastructure": {
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Appartement À Louer Agadir · ad #1589556962526898",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1589556962526898",
-          "source": "Appartement À Louer Agadir",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 2 chambres",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Appartement À Louer Agadir · ad #1589556962526898",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1589556962526898",
-          "source": "Appartement À Louer Agadir",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1589556962526898",
-      "type: apartment_2_bed",
-      "ville: Agadir",
-      "signal de location, faible priorité",
-      "marqueur de lancement détecté"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:04:31.026275+00:00",
-        "launch_score": 22,
-        "confidence_score": 54,
-        "investment_score": 60,
-        "urgency_score": 41,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "afac72c0d805763d6abaad30143a32fab2d0abad",
-    "name": "calme et sécurisée",
-    "city": "Agadir",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_2_bed",
-    "first_detected_at": "2026-07-14T12:04:31.026204+00:00",
-    "last_updated_at": "2026-07-14T12:04:31.026204+00:00",
-    "launch_score": 22,
-    "confidence_score": 54,
-    "investment_score": 60,
-    "urgency_score": 41,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "calme et sécurisée | Promoteur: à confirmer | Ville: Agadir | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "calme et sécurisée"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Appartement À Louer Agadir"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1366906295376095"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 30.4278,
-        "lng": -9.5981,
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 55
-      },
-      "project_slug": "calme-et-s-curis-e-afac72c0",
-      "infrastructure": {
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Appartement À Louer Agadir · ad #1366906295376095",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1366906295376095",
-          "source": "Appartement À Louer Agadir",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 2 chambres",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Appartement À Louer Agadir · ad #1366906295376095",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1366906295376095",
-          "source": "Appartement À Louer Agadir",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1366906295376095",
-      "type: apartment_2_bed",
-      "ville: Agadir",
-      "signal de location, faible priorité",
-      "marqueur de lancement détecté"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:04:31.026204+00:00",
-        "launch_score": 22,
-        "confidence_score": 54,
-        "investment_score": 60,
-        "urgency_score": 41,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -6689,7 +5153,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1948175832535249",
@@ -6711,8 +5177,8 @@
     "signals": []
   },
   {
-    "project_id": "bdee33237e3fe4fe898759ebda60fe9788217642",
-    "name": "les locaux commerciaux de DÉMO RÉSIDENCES",
+    "project_id": "f78bad1cb486e9819ef62cab2e713a0db234746c",
+    "name": "DEMO Residences",
     "city": "Casablanca",
     "zone": null,
     "promoter": null,
@@ -6725,13 +5191,13 @@
     "urgency_score": 48,
     "recommendation": "Monitor",
     "status": "monitor",
-    "summary": "les locaux commerciaux de DÉMO RÉSIDENCES | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 800000 et 800000 MAD.",
+    "summary": "DEMO Residences | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 800000 et 800000 MAD.",
     "prices": {
       "min": 800000,
       "max": 800000
     },
     "aliases": [
-      "les locaux commerciaux de DÉMO RÉSIDENCES"
+      "DEMO Residences"
     ],
     "channels": [
       "advertising"
@@ -6771,7 +5237,7 @@
         "label": "Prudent",
         "five_year_upside_score": 53
       },
-      "project_slug": "les-locaux-commerciaux-de-d-mo-r-sidences-bdee3323",
+      "project_slug": "demo-residences-f78bad1c",
       "infrastructure": {
         "sea_distance_km": 6,
         "station_distance_km": 5,
@@ -6823,7 +5289,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 971766602557311",
@@ -6838,140 +5306,6 @@
         "confidence_score": 54,
         "investment_score": 58,
         "urgency_score": 48,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "a5b355046cfd48493d4a56ebfa7902320dfdb39f",
-    "name": "Résidences TASNIME",
-    "city": "Agadir",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:04:40.586173+00:00",
-    "last_updated_at": "2026-07-14T12:04:40.586173+00:00",
-    "launch_score": 38,
-    "confidence_score": 54,
-    "investment_score": 51,
-    "urgency_score": 46,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Résidences TASNIME | Promoteur: à confirmer | Ville: Agadir | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 612000 et 612000 MAD.",
-    "prices": {
-      "min": 612000,
-      "max": 612000
-    },
-    "aliases": [
-      "Résidences TASNIME"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Avito Immobilier Neuf"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2402753530212796"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 30.4278,
-        "lng": -9.5981,
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "price_band": "cash_ready",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 612000 et 612000 MAD."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 47
-      },
-      "project_slug": "r-sidences-tasnime-a5b35504",
-      "infrastructure": {
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Avito Immobilier Neuf · ad #2402753530212796",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2402753530212796",
-          "source": "Avito Immobilier Neuf",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": 612000,
-        "price_max": 612000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Avito Immobilier Neuf · ad #2402753530212796",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2402753530212796",
-          "source": "Avito Immobilier Neuf",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 2402753530212796",
-      "prix détecté: 612000 MAD",
-      "ville: Agadir",
-      "type: apartment_unknown"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:04:40.586173+00:00",
-        "launch_score": 38,
-        "confidence_score": 54,
-        "investment_score": 51,
-        "urgency_score": 46,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -7094,7 +5428,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -7232,7 +5568,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -7246,408 +5584,6 @@
         "confidence_score": 52,
         "investment_score": 83,
         "urgency_score": 48,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "6de2e445b92bce210fe7daecd8b116d29e842181",
-    "name": "les ultra-modernes",
-    "city": "Tanger",
-    "zone": "Iberia",
-    "promoter": null,
-    "asset_type": null,
-    "first_detected_at": "2026-07-14T12:05:18.194047+00:00",
-    "last_updated_at": "2026-07-14T12:05:18.194047+00:00",
-    "launch_score": 38,
-    "confidence_score": 52,
-    "investment_score": 61,
-    "urgency_score": 48,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "les ultra-modernes | Promoteur: à confirmer | Ville: Tanger | Zone: Iberia | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "les ultra-modernes"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Clinique Iberia"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2188478071929137"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 56
-      },
-      "project_slug": "les-ultra-modernes-6de2e445",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Clinique Iberia · ad #2188478071929137",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2188478071929137",
-          "source": "Clinique Iberia",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Type à confirmer",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Clinique Iberia · ad #2188478071929137",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2188478071929137",
-          "source": "Clinique Iberia",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 2188478071929137",
-      "ville: Tanger",
-      "zone: Iberia"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:05:18.194047+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 61,
-        "urgency_score": 48,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "690a3287f06fd2a92510e8a682d7a0bc8c68e234",
-    "name": "Malabata House",
-    "city": "Tanger",
-    "zone": "Malabata",
-    "promoter": null,
-    "asset_type": null,
-    "first_detected_at": "2026-07-14T12:04:59.917704+00:00",
-    "last_updated_at": "2026-07-14T12:04:59.917704+00:00",
-    "launch_score": 38,
-    "confidence_score": 52,
-    "investment_score": 61,
-    "urgency_score": 48,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Malabata House | Promoteur: à confirmer | Ville: Tanger | Zone: Malabata | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Malabata House"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Malabata House"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1194716885613356"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.783,
-        "lng": -5.7603,
-        "sea_distance_km": 1,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 56
-      },
-      "project_slug": "malabata-house-690a3287",
-      "infrastructure": {
-        "sea_distance_km": 1,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Malabata House · ad #1194716885613356",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1194716885613356",
-          "source": "Malabata House",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Type à confirmer",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Malabata House · ad #1194716885613356",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1194716885613356",
-          "source": "Malabata House",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1194716885613356",
-      "ville: Tanger",
-      "zone: Malabata"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:04:59.917704+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 61,
-        "urgency_score": 48,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "75ab476b65b5a9b13ef04af136902a11a72f4d39",
-    "name": "est pensé selon une approche durable intégrant des matériaux écoresponsables",
-    "city": "Casablanca",
-    "zone": "Bouskoura",
-    "promoter": null,
-    "asset_type": null,
-    "first_detected_at": "2026-07-14T12:00:56.993029+00:00",
-    "last_updated_at": "2026-07-14T12:00:56.993029+00:00",
-    "launch_score": 38,
-    "confidence_score": 52,
-    "investment_score": 59,
-    "urgency_score": 47,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "est pensé selon une approche durable intégrant des matériaux écoresponsables | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "est pensé selon une approche durable intégrant des matériaux écoresponsables"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Green lotus"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 54
-      },
-      "project_slug": "est-pens-selon-une-approche-durable-int-grant-des-mat-riaux-coresponsables-75ab476b",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Green lotus · ad #1039379112368362",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Type à confirmer",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Green lotus · ad #1039379112368362",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1039379112368362",
-      "ville: Casablanca",
-      "zone: Bouskoura"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:00:56.993029+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 59,
-        "urgency_score": 47,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -7767,7 +5703,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1410490220911820",
@@ -7901,7 +5839,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1535585551562062",
@@ -7921,141 +5861,8 @@
     "signals": []
   },
   {
-    "project_id": "ccadb9cdce1759931549e83086ac8330b67964e3",
-    "name": "Centre de biologie Agadir",
-    "city": "Agadir",
-    "zone": null,
-    "promoter": null,
-    "asset_type": null,
-    "first_detected_at": "2026-07-14T12:04:31.026371+00:00",
-    "last_updated_at": "2026-07-14T12:04:31.026371+00:00",
-    "launch_score": 38,
-    "confidence_score": 52,
-    "investment_score": 36,
-    "urgency_score": 42,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Centre de biologie Agadir | Promoteur: à confirmer | Ville: Agadir | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Centre de biologie Agadir"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Centre de biologie Agadir"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=720000464505757"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 30.4278,
-        "lng": -9.5981,
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 33
-      },
-      "project_slug": "centre-de-biologie-agadir-ccadb9cd",
-      "infrastructure": {
-        "sea_distance_km": 4,
-        "station_distance_km": 9,
-        "highway_distance_km": 6
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Centre de biologie Agadir · ad #720000464505757",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=720000464505757",
-          "source": "Centre de biologie Agadir",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Type à confirmer",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Centre de biologie Agadir · ad #720000464505757",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=720000464505757",
-          "source": "Centre de biologie Agadir",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 720000464505757",
-      "ville: Agadir"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:04:31.026371+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 36,
-        "urgency_score": 42,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "d969f74de4c3cfed55f33413aba729a3d4485550",
-    "name": "R2C-Immobilier",
+    "project_id": "efde9f3c34939375d549e7ef24bf6453ee64e529",
+    "name": "R2C IMMOBILIER MARRAKECH",
     "city": "Marrakech",
     "zone": null,
     "promoter": null,
@@ -8068,13 +5875,13 @@
     "urgency_score": 42,
     "recommendation": "Monitor",
     "status": "monitor",
-    "summary": "R2C-Immobilier | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "R2C IMMOBILIER MARRAKECH | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
     "prices": {
       "min": null,
       "max": null
     },
     "aliases": [
-      "R2C-Immobilier"
+      "R2C IMMOBILIER MARRAKECH"
     ],
     "channels": [
       "advertising"
@@ -8114,7 +5921,7 @@
         "label": "Prudent",
         "five_year_upside_score": 29
       },
-      "project_slug": "r2c-immobilier-d969f74d",
+      "project_slug": "r2c-immobilier-marrakech-efde9f3c",
       "infrastructure": {
         "sea_distance_km": 180,
         "station_distance_km": 5,
@@ -8167,7 +5974,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1606185390425226",
@@ -8300,7 +6109,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -8316,152 +6127,6 @@
         "confidence_score": 51,
         "investment_score": 62,
         "urgency_score": 44,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "d0b3b13635dee32e45fb3e030d8599a57db0196f",
-    "name": "Résidence Neuve",
-    "city": "Casablanca",
-    "zone": "Prestigia",
-    "promoter": "Alliances",
-    "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:00:36.458765+00:00",
-    "last_updated_at": "2026-07-14T12:05:52.766778+00:00",
-    "launch_score": 24,
-    "confidence_score": 50,
-    "investment_score": 59,
-    "urgency_score": 40,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Résidence Neuve | Promoteur: Alliances | Ville: Casablanca | Zone: Prestigia | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Google discovery watch: site:alliances.co.ma casablanca residence",
-      "Prestigia Golf",
-      "Google discovery watch: site:prestigia-golf.com tanger",
-      "Social Watch Site Facebook",
-      "Social watch: site:facebook.com promoteur immobilier Tanger",
-      "Social Watch Site Linkedin"
-    ],
-    "channels": [
-      "google_discovery",
-      "social"
-    ],
-    "sources": [
-      "Google Search",
-      "Social watch"
-    ],
-    "source_urls": [
-      "https://www.google.com/search?q=site%3Aalliances.co.ma+casablanca+residence&hl=fr",
-      "https://www.google.com/search?q=site%3Aprestigia-golf.com+tanger&hl=fr",
-      "https://html.duckduckgo.com/html/?q=site%3Afacebook.com+promoteur+immobilier+Tanger",
-      "https://html.duckduckgo.com/html/?q=site%3Alinkedin.com+immobilier+Maroc+lancement",
-      "https://html.duckduckgo.com/html/?q=site%3Afacebook.com+r%C3%A9sidence+neuve+%22Tanger%22",
-      "https://html.duckduckgo.com/html/?q=site%3Ainstagram.com+r%C3%A9sidence+neuve+%22Tanger%22",
-      "https://html.duckduckgo.com/html/?q=site%3Alinkedin.com+r%C3%A9sidence+neuve+%22Tanger%22",
-      "https://html.duckduckgo.com/html/?q=site%3Afacebook.com+r%C3%A9sidence+neuve+%22Casablanca%22",
-      "https://html.duckduckgo.com/html/?q=site%3Ainstagram.com+r%C3%A9sidence+neuve+%22Casablanca%22",
-      "https://html.duckduckgo.com/html/?q=site%3Alinkedin.com+r%C3%A9sidence+neuve+%22Casablanca%22"
-    ],
-    "evidence": {
-      "signal_count": 10,
-      "primary_signal_count": 2,
-      "listing_signal_count": 0,
-      "source_count": 2,
-      "channel_count": 2,
-      "primary_channels": [
-        "google_discovery"
-      ],
-      "secondary_channels": [
-        "social"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 54
-      },
-      "project_slug": "r-sidence-neuve-d0b3b136",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "google_search",
-          "kind_label": "Résultat Google",
-          "label": "Google discovery watch: site:alliances.co.ma casablanca residence",
-          "description": "Résultat remonté par une requête de veille Google.",
-          "url": "https://www.google.com/search?q=site%3Aalliances.co.ma+casablanca+residence&hl=fr",
-          "source": "Google Search",
-          "signal_type": "search_watch",
-          "proof_level": "watch"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": []
-    },
-    "reasons": [
-      "fallback Google watch query",
-      "type: apartment_unknown",
-      "ville: Casablanca",
-      "ville: Tanger",
-      "ville: Rabat",
-      "zone: Prestigia",
-      "surveillance sociale complémentaire",
-      "marqueur de lancement détecté"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-14T12:05:52.766778+00:00",
-        "launch_score": 24,
-        "confidence_score": 50,
-        "investment_score": 59,
-        "urgency_score": 40,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -8582,7 +6247,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -8737,7 +6404,9 @@
       "social_links": [],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "nouvelle page promoteur",
@@ -8873,7 +6542,9 @@
       ],
       "listing_links": [],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 1129977655500692",
@@ -9186,7 +6857,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -9331,7 +7004,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -9478,7 +7153,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -9729,7 +7406,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -9958,7 +7637,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -10101,7 +7782,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -10237,7 +7920,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -10373,7 +8058,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -10666,7 +8353,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
@@ -10807,7 +8496,9 @@
         }
       ],
       "news_links": [],
-      "urbanism_links": []
+      "urbanism_links": [],
+      "changes": [],
+      "is_new_project": false
     },
     "reasons": [
       "signal listing secondaire",
