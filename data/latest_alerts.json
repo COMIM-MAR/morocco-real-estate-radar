@@ -1,1350 +1,38 @@
 {
   "immediate": [
     {
-      "project_id": "1c0238d087de32889306941750f9d2ebf4f188c2",
-      "name": "Moubina Immobilier",
-      "city": "Agadir",
-      "zone": "Hay Mohammadi",
-      "promoter": null,
-      "asset_type": "land_r4_plus",
-      "first_detected_at": "2026-07-14T12:04:21.145511+00:00",
-      "last_updated_at": "2026-07-14T12:04:21.145677+00:00",
-      "launch_score": 100,
-      "confidence_score": 100,
-      "investment_score": 100,
-      "urgency_score": 100,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Moubina Immobilier | Promoteur: à confirmer | Ville: Agadir | Zone: Hay Mohammadi | Confirmations: confirmation en cours | Prix observés entre 728000 et 728000 MAD.",
-      "prices": {
-        "min": 728000,
-        "max": 1000000
-      },
-      "aliases": [
-        "Moubina Immobilier",
-        "Moubina 1396804362274198",
-        "Moubina Immobilier · ad #1396804362274198",
-        "Moubina 1326534599138031",
-        "Moubina Immobilier · ad #1326534599138031",
-        "Moubina 1679369313181070"
-      ],
-      "channels": [
-        "advertising"
-      ],
-      "sources": [
-        "Moubina Immobilier"
-      ],
-      "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1396804362274198",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1326534599138031",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1679369313181070",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2286079785469367",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1897406047883355"
-      ],
-      "evidence": {
-        "signal_count": 5,
-        "primary_signal_count": 5,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
-        "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "geo": {
-          "lat": 30.4278,
-          "lng": -9.5981,
-          "sea_distance_km": 4,
-          "station_distance_km": 9,
-          "highway_distance_km": 6
-        },
-        "price_band": "cash_ready",
-        "price_evolution": {
-          "trend": "stable",
-          "summary": "Prix observés entre 728000 et 728000 MAD."
-        },
-        "roi": {
-          "label": "Élevé",
-          "five_year_upside_score": 97
-        },
-        "project_slug": "moubina-immobilier-1c0238d0",
-        "infrastructure": {
-          "sea_distance_km": 4,
-          "station_distance_km": 9,
-          "highway_distance_km": 6
-        },
-        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
-        "source_catalog": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #1396804362274198",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1396804362274198",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #1326534599138031",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1326534599138031",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #1679369313181070",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1679369313181070",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #2286079785469367",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2286079785469367",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #1897406047883355",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1897406047883355",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Terrain / Immeuble R+4+",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "price_min": 728000,
-          "price_max": 1000000
-        },
-        "ai_analysis": {
-          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible.",
-            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-          ],
-          "risks": [
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #1396804362274198",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1396804362274198",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #1326534599138031",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1326534599138031",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #1679369313181070",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1679369313181070",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #2286079785469367",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2286079785469367",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Moubina Immobilier · ad #1897406047883355",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1897406047883355",
-            "source": "Moubina Immobilier",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "changes": [],
-        "is_new_project": true
-      },
-      "reasons": [
-        "publicité Meta exacte détectée: ad_id 1396804362274198",
-        "prix détecté: 728000 MAD",
-        "type: land_r4_plus",
-        "ville: Agadir",
-        "zone: Hay Mohammadi",
-        "publicité Meta exacte détectée: ad_id 1326534599138031",
-        "publicité Meta exacte détectée: ad_id 1679369313181070",
-        "prix détecté: 1000000 MAD",
-        "type: apartment_2_bed",
-        "publicité Meta exacte détectée: ad_id 2286079785469367"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-07-14T12:04:21.145511+00:00",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "title": "Moubina Immobilier · ad #1396804362274198",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1396804362274198"
-        },
-        {
-          "detected_at": "2026-07-14T12:04:21.145576+00:00",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "title": "Moubina Immobilier · ad #1326534599138031",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1326534599138031"
-        },
-        {
-          "detected_at": "2026-07-14T12:04:21.145612+00:00",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "title": "Moubina Immobilier · ad #1679369313181070",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1679369313181070"
-        },
-        {
-          "detected_at": "2026-07-14T12:04:21.145646+00:00",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "title": "Moubina Immobilier · ad #2286079785469367",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2286079785469367"
-        },
-        {
-          "detected_at": "2026-07-14T12:04:21.145677+00:00",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "title": "Moubina Immobilier · ad #1897406047883355",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1897406047883355"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "signal_type": "meta_ad",
-          "title": "Moubina Immobilier · ad #1396804362274198",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1396804362274198",
-          "text": "Moubina Immobilier Moubina Immobilier Découvrez Les Palmiers Résidences par Moubina Immobilier : des appartements modernes avec vue sur jardin, au cœur d’un cadre agréable à Agadir. À partir de 728 000 Dh. 📍 Projet : Cité Al Mohammadi, Agadir 🏢 Bureau de vente : Hay Mohammadi, près de Marjane Market ☎️ Centre Relation Client : 05 28 82 32 33 / 06 55 56 55 66 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Appartements avec vue sur jardin à partir de 728 000 Dh. Vivez l'exceptionnel dans une résidence de rêve, conçue pour votre bien-être absolu ! Un concept architectural unique qui allie modernité et sérénité. Confort quotidien garanti : Sécurité totale en résidence fermée Patio intérieur végétalisé Salle de fitness privée Parking sous-terrain sécurisé Stratégiquement situé près de la plage & commodités. Finitions Premium dès 720 000 DH. Moubina Immobilier : Excellence certifiée ISO 9001. Contactez-nous ! Profiter de l’offre ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 45,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1396804362274198",
-            "page_name": "Moubina Immobilier",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1396804362274198",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-            "query": "projet immobilier Agadir",
-            "city_hint": "Agadir",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1396804362274198",
-            "prix détecté: 728000 MAD",
-            "type: land_r4_plus",
-            "ville: Agadir",
-            "zone: Hay Mohammadi"
-          ],
-          "discovered_at": "2026-07-14T12:04:21.145511+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": "Hay Mohammadi",
-          "promoter_hint": null,
-          "asset_type_hint": "land_r4_plus",
-          "project_name_hint": "Moubina Immobilier",
-          "price_mad": 728000,
-          "signal_id": "fd77d886a293624e525cc19f059f4e964756f3c6"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "signal_type": "meta_ad",
-          "title": "Moubina Immobilier · ad #1326534599138031",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1326534599138031",
-          "text": "Moubina Immobilier Moubina Immobilier مشروع جديد في قلب أكادير ✨ تقدم لكم موبينا العقارية مشروع Les Palmiers Résidences بحي المحمدي، عنوان جديد يجمع بين السكن العصري والاستثمار الواعد. 📍 Localisation du projet : Hay Al Mohammadi, Agadir 📍 Bureau de vente : Hay Al Mohammadi, Agadir — près de Marjane Market ☎️ Centre Relation Client : 05 28 82 32 33 / 06 55 56 55 66 #MoubinaImmobilier #LesPalmiersResidences #Agadir #HayAlMohammadi #ImmobilierAgadir WHATSAPP Contactez-nous sur WhatsApp pour découvrir Les Palmiers Résidences Découvrez Les Palmiers Résidences by Moubina et échangez directement avec nos conseillers sur WhatsApp pour plus d’informations. Envoyer un message WhatsApp ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 40,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1326534599138031",
-            "page_name": "Moubina Immobilier",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1326534599138031",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-            "query": "projet immobilier Agadir",
-            "city_hint": "Agadir",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1326534599138031",
-            "ville: Agadir"
-          ],
-          "discovered_at": "2026-07-14T12:04:21.145576+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Moubina Immobilier",
-          "price_mad": null,
-          "signal_id": "a7f482da6447239888ea32d13ef4542832205269"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "signal_type": "meta_ad",
-          "title": "Moubina Immobilier · ad #1679369313181070",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1679369313181070",
-          "text": "Moubina Immobilier Moubina Immobilier Découvrez Les Palmiers Résidences par Moubina Immobilier : appartements 2 chambres + salon à partir de 1 MDhs. 📍 Projet : Cité Al Mohammadi, Agadir 📍 Bureau de vente : Hay Mohammadi, Agadir — près de Marjane Market ☎️ 05 28 82 32 33 📱 06 55 56 55 66 🤖 Contactez notre agent AI Mouna : 06 39 30 30 29 🌐 www.moubina.ma #LesPalmiers #MoubinaImmobilier #Agadir FB.ME Les Palmiers Résidences à Agadir Appartements 2 chambres + salon à Cité Al Mohammadi, Agadir. Contactez Moubina Immobilier ou notre agent AI Mouna. Profiter de l’offre ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 43,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1679369313181070",
-            "page_name": "Moubina Immobilier",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1679369313181070",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-            "query": "projet immobilier Agadir",
-            "city_hint": "Agadir",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1679369313181070",
-            "prix détecté: 1000000 MAD",
-            "type: apartment_2_bed",
-            "ville: Agadir",
-            "zone: Hay Mohammadi"
-          ],
-          "discovered_at": "2026-07-14T12:04:21.145612+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": "Hay Mohammadi",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_2_bed",
-          "project_name_hint": "Moubina Immobilier",
-          "price_mad": 1000000,
-          "signal_id": "71c4f847676845dac438ef7034bd3b30b8439a43"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "signal_type": "meta_ad",
-          "title": "Moubina Immobilier · ad #2286079785469367",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2286079785469367",
-          "text": "Moubina Immobilier Moubina Immobilier Appartements 2 chambres + salon à partir de 728 000 Dhs à Les Palmiers Résidences. Projet par Moubina Immobilier 📍 Localisation du projet : Cité Al Mohammadi, Agadir 📍 Bureau de vente : Cité Al Mohammadi, Agadir – près de Marjane Market ☎️ Centre Relation Client : 05 28 82 32 33 / 06 55 56 55 66 WHATSAPP Appartements 2 chambres + salon à partir de 728 000 Dhs à Agadir Appartements 2 chambres + salon à partir de 728 000 Dhs à Cité Al Mohammadi, Agadir. Projet par Moubina Immobilier. Envoyer un message WhatsApp ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 43,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "2286079785469367",
-            "page_name": "Moubina Immobilier",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2286079785469367",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-            "query": "projet immobilier Agadir",
-            "city_hint": "Agadir",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 2286079785469367",
-            "prix détecté: 728000 MAD",
-            "type: apartment_2_bed",
-            "ville: Agadir"
-          ],
-          "discovered_at": "2026-07-14T12:04:21.145646+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_2_bed",
-          "project_name_hint": "Moubina Immobilier",
-          "price_mad": 728000,
-          "signal_id": "5edb6a4f568f64a551912c9ad2780541a8f12275"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Moubina Immobilier",
-          "signal_type": "meta_ad",
-          "title": "Moubina Immobilier · ad #1897406047883355",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1897406047883355",
-          "text": "Moubina Immobilier Moubina Immobilier Découvrez Les Palmiers Résidences par Moubina Immobilier : appartements 2 chambres + salon à partir de 1 MDhs. 📍 Projet : Cité Al Mohammadi, Agadir 📍 Bureau de vente : Hay Mohammadi, Agadir — près de Marjane Market ☎️ 05 28 82 32 33 📱 06 55 56 55 66 🤖 Contactez notre agent AI Mouna : 06 39 30 30 29 🌐 www.moubina.ma WHATSAPP Les Palmiers Résidences à Agadir Appartements 2 chambres + salon à Cité Al Mohammadi, Agadir. Contactez Moubina Immobilier ou notre agent AI Mouna. Nous contacter ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 43,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1897406047883355",
-            "page_name": "Moubina Immobilier",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1897406047883355",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.wafaimmobilier.com%2Ffr%2Fprojet-details%3Fid%3D2018%26utm_source%3DMeta%26utm_medium%3Dpaidsocial%26utm_campaign%3Dreachxad%26utm_id%3Dmai2026&h=AUCRsCxobEsZmCtacL1I098OUfuWsZQBHmqU2YMldQGABSvloVwYuCYBZcViQ95haWd37DkOqMqr6ntPtJfzQegKv9bZp6cN_XTr6aQPiC1uqgP2k47ryiyMqPinsCyE4CuuFof_scCr5vIN",
-            "query": "projet immobilier Agadir",
-            "city_hint": "Agadir",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1897406047883355",
-            "prix détecté: 1000000 MAD",
-            "type: apartment_2_bed",
-            "ville: Agadir",
-            "zone: Hay Mohammadi"
-          ],
-          "discovered_at": "2026-07-14T12:04:21.145677+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": "Hay Mohammadi",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_2_bed",
-          "project_name_hint": "Moubina Immobilier",
-          "price_mad": 1000000,
-          "signal_id": "3af58194e8e6b8d36a905a0a3f2136fd2139b5e6"
-        }
-      ]
-    },
-    {
-      "project_id": "f3498436540e76dbf72e78b3056524e28d1e2d37",
-      "name": "Avito Immobilier Neuf",
+      "project_id": "e5f5c55cf91a1f2e1b6ffa65b5ba8ca54014ff1d",
+      "name": "Green lotus",
       "city": "Casablanca",
-      "zone": "Dar Bouazza",
+      "zone": "Bouskoura",
       "promoter": null,
       "asset_type": "apartment_3_bed",
-      "first_detected_at": "2026-07-14T12:02:59.412000+00:00",
-      "last_updated_at": "2026-07-14T12:04:40.586336+00:00",
-      "launch_score": 100,
-      "confidence_score": 100,
-      "investment_score": 100,
-      "urgency_score": 100,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Avito Immobilier Neuf | Promoteur: à confirmer | Ville: Casablanca | Zone: Dar Bouazza | Confirmations: confirmation en cours | Prix observés entre 612000 et 612000 MAD.",
-      "prices": {
-        "min": 612000,
-        "max": 790000
-      },
-      "aliases": [
-        "Avito Immobilier Neuf",
-        "Avito Neuf 1273513244771641",
-        "Avito Immobilier Neuf · ad #1273513244771641",
-        "Avito Neuf 2402753530212796",
-        "Avito Immobilier Neuf · ad #2402753530212796",
-        "Avito Neuf 1381220960869725"
-      ],
-      "channels": [
-        "advertising"
-      ],
-      "sources": [
-        "Avito Immobilier Neuf"
-      ],
-      "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1273513244771641",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2402753530212796",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1381220960869725",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1410490220911820"
-      ],
-      "evidence": {
-        "signal_count": 4,
-        "primary_signal_count": 4,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
-        "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "price_band": "cash_ready",
-        "price_evolution": {
-          "trend": "stable",
-          "summary": "Prix observés entre 612000 et 612000 MAD."
-        },
-        "roi": {
-          "label": "Élevé",
-          "five_year_upside_score": 97
-        },
-        "project_slug": "avito-immobilier-neuf-f3498436",
-        "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
-        "source_catalog": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Avito Immobilier Neuf · ad #1273513244771641",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1273513244771641",
-            "source": "Avito Immobilier Neuf",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Appartement 3 chambres",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "price_min": 612000,
-          "price_max": 790000
-        },
-        "ai_analysis": {
-          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible.",
-            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-          ],
-          "risks": [
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Avito Immobilier Neuf · ad #1273513244771641",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1273513244771641",
-            "source": "Avito Immobilier Neuf",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "changes": [],
-        "is_new_project": true
-      },
-      "reasons": [
-        "publicité Meta exacte détectée: ad_id 1273513244771641",
-        "type: apartment_3_bed",
-        "ville: Casablanca",
-        "zone: Dar Bouazza",
-        "publicité Meta exacte détectée: ad_id 2402753530212796",
-        "prix détecté: 612000 MAD",
-        "ville: Agadir",
-        "publicité Meta exacte détectée: ad_id 1381220960869725",
-        "prix détecté: 735000 MAD",
-        "type: apartment_unknown"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-07-14T12:02:59.412000+00:00",
-          "channel": "advertising",
-          "source": "Avito Immobilier Neuf",
-          "title": "Avito Immobilier Neuf · ad #1273513244771641",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1273513244771641"
-        },
-        {
-          "detected_at": "2026-07-14T12:04:40.586173+00:00",
-          "channel": "advertising",
-          "source": "Avito Immobilier Neuf",
-          "title": "Avito Immobilier Neuf · ad #2402753530212796",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2402753530212796"
-        },
-        {
-          "detected_at": "2026-07-14T12:04:40.586309+00:00",
-          "channel": "advertising",
-          "source": "Avito Immobilier Neuf",
-          "title": "Avito Immobilier Neuf · ad #1381220960869725",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1381220960869725"
-        },
-        {
-          "detected_at": "2026-07-14T12:04:40.586336+00:00",
-          "channel": "advertising",
-          "source": "Avito Immobilier Neuf",
-          "title": "Avito Immobilier Neuf · ad #1410490220911820",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1410490220911820"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Avito Immobilier Neuf",
-          "signal_type": "meta_ad",
-          "title": "Avito Immobilier Neuf · ad #1273513244771641",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1273513244771641",
-          "text": "Avito Immobilier Neuf Avito Immobilier Neuf Découvrez Jnane Sorour, la première résidence fermée et sécurisée de moyen standing à Had Soualem, à seulement 25 min de Casablanca et 15 min de Dar Bouazza. Ce projet moderne propose appartements 2 et 3 chambres, bureaux et locaux commerciaux dans un cadre de vie calme et sécurisé 24h/24. Au programme : résidences avec ascenseur, conciergerie, crèche, climatisation, panneaux solaires, centre commercial et restaurants — le tout au cœur d’une ville en plein développement. Jnane Sorour — votre nouveau cadre de vie ou investissement à fort potentiel. 🏡✨ Appartements modernes à Had Soualem See Details ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma&h=AUDbSl9-cNvZBqGM3H5s57fzv-YBq1RlvVGUM4zW0_RjgT1zLnjSGB2Iavgqiuo_-9kNzdze26IHJs0GKxdPTAGfg3MI4wryroBNWwt-cED2-D_hajYD_05tWcLQQ7xZI_sA8g9-jKYfau5J",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 44,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1273513244771641",
-            "page_name": "Avito Immobilier Neuf",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1273513244771641",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma&h=AUDbSl9-cNvZBqGM3H5s57fzv-YBq1RlvVGUM4zW0_RjgT1zLnjSGB2Iavgqiuo_-9kNzdze26IHJs0GKxdPTAGfg3MI4wryroBNWwt-cED2-D_hajYD_05tWcLQQ7xZI_sA8g9-jKYfau5J",
-            "query": "nouveau projet immobilier Casablanca",
-            "city_hint": null,
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1273513244771641",
-            "type: apartment_3_bed",
-            "ville: Casablanca",
-            "zone: Dar Bouazza"
-          ],
-          "discovered_at": "2026-07-14T12:02:59.412000+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Dar Bouazza",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_3_bed",
-          "project_name_hint": "Avito Immobilier Neuf",
-          "price_mad": null,
-          "signal_id": "eda829cba0a8ad10aeaa882f9b5c29d0c108444d"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Avito Immobilier Neuf",
-          "signal_type": "meta_ad",
-          "title": "Avito Immobilier Neuf · ad #2402753530212796",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2402753530212796",
-          "text": "Avito Immobilier Neuf Avito Immobilier Neuf 🏡 Résidences TASNIME : Studios, appartements et duplex dans un complexe sécurisé avec piscines et jardins. 📍 Emplacement stratégique : • Croisement Bd de Safi & Av Charaf • 10 min du centre-ville • 5 min accès autoroute Casa–Agadir • 5 min future gare TGV 💡 Performance & innovation au cœur du projet : Double vitrage argon, isolation thermique et phonique, climatisation Inverter, structures à forte inertie thermique, éclairage LED. Investissez, travaillez et vivez dans un environnement pensé pour l’avenir. 👉 Découvrez les projets TASNIME dès maintenant Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus IMMONEUF.AVITO.MA À partir de 612.000 DH En savoir plus ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUDF7ZB6ZLcALcFTXgZtq2sp8onRrRJAou9Hc24RsvGPE0kKK0Tz3EL4a8aHgXcky8As2oAdofZUuuYDenqaTJFNT0Nt9mef29q5-xUe_zVHxIQRvZgt0fLzgbyfpTKrSgmlQ5fR844hJexo",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 40,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "2402753530212796",
-            "page_name": "Avito Immobilier Neuf",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2402753530212796",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUDF7ZB6ZLcALcFTXgZtq2sp8onRrRJAou9Hc24RsvGPE0kKK0Tz3EL4a8aHgXcky8As2oAdofZUuuYDenqaTJFNT0Nt9mef29q5-xUe_zVHxIQRvZgt0fLzgbyfpTKrSgmlQ5fR844hJexo",
-            "query": "projet immobilier Marrakech",
-            "city_hint": "Marrakech",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 2402753530212796",
-            "prix détecté: 612000 MAD",
-            "ville: Agadir"
-          ],
-          "discovered_at": "2026-07-14T12:04:40.586173+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Avito Immobilier Neuf",
-          "price_mad": 612000,
-          "signal_id": "766a13786a92406cd89a8460d635148635f619e5"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Avito Immobilier Neuf",
-          "signal_type": "meta_ad",
-          "title": "Avito Immobilier Neuf · ad #1381220960869725",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1381220960869725",
-          "text": "Avito Immobilier Neuf Avito Immobilier Neuf Al Boughaz Gueliz Luxury 5, un projet résidentiel moderne situé dans le quartier recherché de Mabrouka . Appartements & duplex spacieux de 1 à 4 chambres, conçus avec une architecture contemporaine, des finitions haut de gamme et des espaces lumineux pensés pour votre bien-être. ✔ Parking titré en sous-sol ✔ Construction moderne & qualité élevée ✔ Prix accessibles et déclarés ✔ Proximité immédiate de toutes les commodités Après le succès des premières tranches, la tranche 3 est disponible. 🏡 Appartement témoin visitable sur place. 👉 Réservez votre visite dès maintenant. À partir de 735 000 DH Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUDF7ZB6ZLcALcFTXgZtq2sp8onRrRJAou9Hc24RsvGPE0kKK0Tz3EL4a8aHgXcky8As2oAdofZUuuYDenqaTJFNT0Nt9mef29q5-xUe_zVHxIQRvZgt0fLzgbyfpTKrSgmlQ5fR844hJexo",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 42,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1381220960869725",
-            "page_name": "Avito Immobilier Neuf",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1381220960869725",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUDF7ZB6ZLcALcFTXgZtq2sp8onRrRJAou9Hc24RsvGPE0kKK0Tz3EL4a8aHgXcky8As2oAdofZUuuYDenqaTJFNT0Nt9mef29q5-xUe_zVHxIQRvZgt0fLzgbyfpTKrSgmlQ5fR844hJexo",
-            "query": "projet immobilier Marrakech",
-            "city_hint": "Marrakech",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1381220960869725",
-            "prix détecté: 735000 MAD",
-            "type: apartment_unknown",
-            "ville: Marrakech",
-            "zone: Gueliz"
-          ],
-          "discovered_at": "2026-07-14T12:04:40.586309+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": "Gueliz",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Avito Immobilier Neuf",
-          "price_mad": 735000,
-          "signal_id": "1aab9f3a89477967525153fe8653449794d9e60d"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Avito Immobilier Neuf",
-          "signal_type": "meta_ad",
-          "title": "Avito Immobilier Neuf · ad #1410490220911820",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1410490220911820",
-          "text": "Avito Immobilier Neuf Avito Immobilier Neuf Les Perles de l'Atlas, votre nouvelle adresse à Marrakech ! Confort, modernité et qualité de vie en harmonie avec la nature. Des espaces élégants & fonctionnels pour une expérience unique. Investissement durable ou havre de paix ? Demendez plus d'informations ! À partir de 790 000 DH À partir de 790 000 DH Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUDF7ZB6ZLcALcFTXgZtq2sp8onRrRJAou9Hc24RsvGPE0kKK0Tz3EL4a8aHgXcky8As2oAdofZUuuYDenqaTJFNT0Nt9mef29q5-xUe_zVHxIQRvZgt0fLzgbyfpTKrSgmlQ5fR844hJexo",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 40,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1410490220911820",
-            "page_name": "Avito Immobilier Neuf",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1410490220911820",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUDF7ZB6ZLcALcFTXgZtq2sp8onRrRJAou9Hc24RsvGPE0kKK0Tz3EL4a8aHgXcky8As2oAdofZUuuYDenqaTJFNT0Nt9mef29q5-xUe_zVHxIQRvZgt0fLzgbyfpTKrSgmlQ5fR844hJexo",
-            "query": "projet immobilier Marrakech",
-            "city_hint": "Marrakech",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1410490220911820",
-            "prix détecté: 790000 MAD",
-            "ville: Marrakech"
-          ],
-          "discovered_at": "2026-07-14T12:04:40.586336+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Avito Immobilier Neuf",
-          "price_mad": 790000,
-          "signal_id": "341cd4f548471ab5300e5382c7c3c811a5a86076"
-        }
-      ]
-    },
-    {
-      "project_id": "8b34847d4945aff0479cfe130f6a9148bde4767e",
-      "name": "Barceló Anfa Casablanca",
-      "city": "Casablanca",
-      "zone": "Anfa",
-      "promoter": null,
-      "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-07-14T12:05:44.527004+00:00",
-      "last_updated_at": "2026-07-14T12:05:44.527128+00:00",
-      "launch_score": 100,
-      "confidence_score": 100,
-      "investment_score": 59,
-      "urgency_score": 100,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Barceló Anfa Casablanca | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-      "prices": {
-        "min": null,
-        "max": null
-      },
-      "aliases": [
-        "Barceló Anfa Casablanca",
-        "Barcel Anfa Casablanca 1443477047548472",
-        "Barceló Anfa Casablanca · ad #1443477047548472",
-        "Barcel Anfa Casablanca 1321574962881975",
-        "Barceló Anfa Casablanca · ad #1321574962881975",
-        "Twenty Campus Casa Anfa"
-      ],
-      "channels": [
-        "advertising"
-      ],
-      "sources": [
-        "Barceló Anfa Casablanca",
-        "Twenty Campus Casa Anfa"
-      ],
-      "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1046854941349832"
-      ],
-      "evidence": {
-        "signal_count": 3,
-        "primary_signal_count": 3,
-        "listing_signal_count": 0,
-        "source_count": 2,
-        "channel_count": 1,
-        "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "price_band": "unknown",
-        "price_evolution": {
-          "trend": "unknown",
-          "summary": "Aucune série de prix fiable pour le moment."
-        },
-        "roi": {
-          "label": "Moyen",
-          "five_year_upside_score": 59
-        },
-        "project_slug": "barcel-anfa-casablanca-8b34847d",
-        "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Barceló Anfa Casablanca · ad #1443477047548472",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472",
-            "source": "Barceló Anfa Casablanca",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Barceló Anfa Casablanca · ad #1321574962881975",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975",
-            "source": "Barceló Anfa Casablanca",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Twenty Campus Casa Anfa · ad #1046854941349832",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1046854941349832",
-            "source": "Twenty Campus Casa Anfa",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Appartement",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "price_min": null,
-          "price_max": null
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Le prix public n'est pas encore confirmé.",
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Barceló Anfa Casablanca · ad #1443477047548472",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472",
-            "source": "Barceló Anfa Casablanca",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Barceló Anfa Casablanca · ad #1321574962881975",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975",
-            "source": "Barceló Anfa Casablanca",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Twenty Campus Casa Anfa · ad #1046854941349832",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1046854941349832",
-            "source": "Twenty Campus Casa Anfa",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "changes": [],
-        "is_new_project": true
-      },
-      "reasons": [
-        "publicité Meta exacte détectée: ad_id 1443477047548472",
-        "ville: Casablanca",
-        "zone: Anfa",
-        "publicité Meta exacte détectée: ad_id 1321574962881975",
-        "publicité Meta exacte détectée: ad_id 1046854941349832",
-        "type: apartment_unknown"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-07-14T12:05:44.527004+00:00",
-          "channel": "advertising",
-          "source": "Barceló Anfa Casablanca",
-          "title": "Barceló Anfa Casablanca · ad #1443477047548472",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472"
-        },
-        {
-          "detected_at": "2026-07-14T12:05:44.527037+00:00",
-          "channel": "advertising",
-          "source": "Barceló Anfa Casablanca",
-          "title": "Barceló Anfa Casablanca · ad #1321574962881975",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975"
-        },
-        {
-          "detected_at": "2026-07-14T12:05:44.527128+00:00",
-          "channel": "advertising",
-          "source": "Twenty Campus Casa Anfa",
-          "title": "Twenty Campus Casa Anfa · ad #1046854941349832",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1046854941349832"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Barceló Anfa Casablanca",
-          "signal_type": "meta_ad",
-          "title": "Barceló Anfa Casablanca · ad #1443477047548472",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472",
-          "text": "Barceló Anfa Casablanca Barceló Anfa Casablanca Travaillez, échangez et détendez-vous dans un cadre pensé pour les voyageurs d’affaires. HTTPS://WWW.BARCELO.COM/FR/BARCELO-HOTELS/HOTELS/M... L’alliance parfaite entre affaires et confort. Que ce soit pour une réunion, un séminaire ou un déplacement professionnel, profitez d’une expérience alliant hébergement haut de gamme, espaces de réunion équipés et hospitalité d’exception. Get Offer Que ce soit pour une réunion, un séminaire ou un déplacement professionnel, profitez d’une expérience alliant hébergement haut de gamme, espaces de réunion équipés et hospitalité d’exception. HTTPS://WWW.BARCELO.COM/FR/BARCELO-HOTELS/HOTELS/M... L’alliance parfaite entre affaires et confort. Que ce soit pour une réunion, un séminaire ou un déplacement professionnel, profitez d’une expérience alliant hébergement haut de gamme, espaces de réunion équipés et hospitalité d’exception. Get Offer Que ce soit pour une réunion, un séminaire ou un déplacement professionnel, profitez d’une expérience alliant hébergement haut de gamme, espaces de réunion équipés et hospitalité d’exception. HTTPS://WWW.BARCELO.COM/FR/BARCELO-HOTELS/HOTELS/M... L’alliance parfaite entre affaires et confort. Que ce soit pour une réunion, un séminaire ou un déplacement professionnel, profitez d’une expérience alliant hébergement haut de gamme, espaces de réunion équipés et hospitalité d’exception. Get Offer Que ce soit pour une réunion, un séminaire ou un déplacement professionnel, profitez d’une expérience alliant hébergement haut de gamme, espaces de réunion équipés et hospitalité d’exception. ​ https://l.facebook.com/l.php?u=https%3A%2F%2Falidari.ma%2Fopaledanfa%2F&h=AUBFKByMFhn4DN9GEhURoXiK4H37JDWVBQXL8ZtAfPjQ1maolPB-lVavK1BMGhaPrCOZWP3eZnzSOuWcS4crL_8bmZqkRE3CQWFPQe3HYwpNgayc_Sl6XZSnnN4K8WLMLD9oVFm-7EUHzpp5",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 40,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1443477047548472",
-            "page_name": "Barceló Anfa Casablanca",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1443477047548472",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Falidari.ma%2Fopaledanfa%2F&h=AUBFKByMFhn4DN9GEhURoXiK4H37JDWVBQXL8ZtAfPjQ1maolPB-lVavK1BMGhaPrCOZWP3eZnzSOuWcS4crL_8bmZqkRE3CQWFPQe3HYwpNgayc_Sl6XZSnnN4K8WLMLD9oVFm-7EUHzpp5",
-            "query": "Anfa",
-            "city_hint": "Casablanca",
-            "zone_hint": "Anfa"
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1443477047548472",
-            "ville: Casablanca",
-            "zone: Anfa"
-          ],
-          "discovered_at": "2026-07-14T12:05:44.527004+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Barceló Anfa Casablanca",
-          "price_mad": null,
-          "signal_id": "64d124fc15fc51101adef24359d956c5adaf3239"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Barceló Anfa Casablanca",
-          "signal_type": "meta_ad",
-          "title": "Barceló Anfa Casablanca · ad #1321574962881975",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975",
-          "text": "Barceló Anfa Casablanca Barceló Anfa Casablanca Travaillez, échangez et détendez-vous dans un cadre pensé pour les voyageurs d’affaires. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus HTTPS://WWW.BARCELO.COM/FR/BARCELO-HOTELS/HOTELS/MAROC/CASABLANCA/BARCELO-ANFA-CASABLANCA/ Transformez vos déplacements professionnels en séjours d’exception Travaillez, échangez et détendez-vous dans un cadre pensé pour les voyageurs d’affaires. Que ce soit pour une réunion, un séminaire ou un déplacement professionnel, profitez d’une expérience alliant hébergement haut de gamme, espaces de réunion équipés et hospitalité d’exception. Profiter de l’offre ​ https://l.facebook.com/l.php?u=https%3A%2F%2Falidari.ma%2Fopaledanfa%2F&h=AUBFKByMFhn4DN9GEhURoXiK4H37JDWVBQXL8ZtAfPjQ1maolPB-lVavK1BMGhaPrCOZWP3eZnzSOuWcS4crL_8bmZqkRE3CQWFPQe3HYwpNgayc_Sl6XZSnnN4K8WLMLD9oVFm-7EUHzpp5",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 40,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1321574962881975",
-            "page_name": "Barceló Anfa Casablanca",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1321574962881975",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Falidari.ma%2Fopaledanfa%2F&h=AUBFKByMFhn4DN9GEhURoXiK4H37JDWVBQXL8ZtAfPjQ1maolPB-lVavK1BMGhaPrCOZWP3eZnzSOuWcS4crL_8bmZqkRE3CQWFPQe3HYwpNgayc_Sl6XZSnnN4K8WLMLD9oVFm-7EUHzpp5",
-            "query": "Anfa",
-            "city_hint": "Casablanca",
-            "zone_hint": "Anfa"
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1321574962881975",
-            "ville: Casablanca",
-            "zone: Anfa"
-          ],
-          "discovered_at": "2026-07-14T12:05:44.527037+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Barceló Anfa Casablanca",
-          "price_mad": null,
-          "signal_id": "0dfa49b96f916542c3a2cdbf8d03a4cca451312a"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Twenty Campus Casa Anfa",
-          "signal_type": "meta_ad",
-          "title": "Twenty Campus Casa Anfa · ad #1046854941349832",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1046854941349832",
-          "text": "Twenty Campus Casa Anfa Twenty Campus Casa Anfa Plus qu’une chambre, un cadre de vie pensé pour les étudiants d’aujourd’hui. À Twenty Campus Casa Anfa, profitez d’une résidence moderne avec ménage, internet, coworking, petit déjeuner, laverie et sécurité inclus, pour vivre vos études en toute sérénité. À partir de 3100 DHS. Réservez une visite dès maintenant Sign Up ​ https://l.facebook.com/l.php?u=https%3A%2F%2Falidari.ma%2Fopaledanfa%2F&h=AUBFKByMFhn4DN9GEhURoXiK4H37JDWVBQXL8ZtAfPjQ1maolPB-lVavK1BMGhaPrCOZWP3eZnzSOuWcS4crL_8bmZqkRE3CQWFPQe3HYwpNgayc_Sl6XZSnnN4K8WLMLD9oVFm-7EUHzpp5",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 42,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1046854941349832",
-            "page_name": "Twenty Campus Casa Anfa",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1046854941349832",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Falidari.ma%2Fopaledanfa%2F&h=AUBFKByMFhn4DN9GEhURoXiK4H37JDWVBQXL8ZtAfPjQ1maolPB-lVavK1BMGhaPrCOZWP3eZnzSOuWcS4crL_8bmZqkRE3CQWFPQe3HYwpNgayc_Sl6XZSnnN4K8WLMLD9oVFm-7EUHzpp5",
-            "query": "Anfa",
-            "city_hint": "Casablanca",
-            "zone_hint": "Anfa"
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1046854941349832",
-            "type: apartment_unknown",
-            "ville: Casablanca",
-            "zone: Anfa"
-          ],
-          "discovered_at": "2026-07-14T12:05:44.527128+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Twenty Campus Casa Anfa",
-          "price_mad": null,
-          "signal_id": "889084b882bff3dbd06799b9e4d36767d6157fe6"
-        }
-      ]
-    },
-    {
-      "project_id": "ba3c5ee19fd5808dd6e5e4a1256300fc6ffa7476",
-      "name": "Rabatgardens",
-      "city": "Rabat",
-      "zone": "Harhoura",
-      "promoter": null,
-      "asset_type": "apartment_3_bed",
-      "first_detected_at": "2026-07-14T12:04:12.714945+00:00",
-      "last_updated_at": "2026-07-14T12:04:12.715038+00:00",
+      "first_detected_at": "2026-07-15T07:17:40.934361+00:00",
+      "last_updated_at": "2026-07-15T07:17:40.934460+00:00",
       "launch_score": 76,
       "confidence_score": 96,
-      "investment_score": 92,
+      "investment_score": 89,
       "urgency_score": 86,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Rabatgardens | Promoteur: à confirmer | Ville: Rabat | Zone: Harhoura | Confirmations: confirmation en cours | Prix observés entre 2000000 et 2000000 MAD.",
-      "prices": {
-        "min": 2000000,
-        "max": 2000000
-      },
-      "aliases": [
-        "Rabatgardens",
-        "Rabatgardens 3868826090092010",
-        "Rabatgardens · ad #3868826090092010",
-        "Rabatgardens 1535585551562062",
-        "Rabatgardens · ad #1535585551562062"
-      ],
-      "channels": [
-        "advertising"
-      ],
-      "sources": [
-        "Rabatgardens"
-      ],
-      "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3868826090092010",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1535585551562062"
-      ],
-      "evidence": {
-        "signal_count": 2,
-        "primary_signal_count": 2,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
-        "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "geo": {
-          "lat": 34.0209,
-          "lng": -6.8416,
-          "sea_distance_km": 7,
-          "station_distance_km": 4,
-          "highway_distance_km": 4
-        },
-        "price_band": "within_budget",
-        "price_evolution": {
-          "trend": "stable",
-          "summary": "Prix observés entre 2000000 et 2000000 MAD."
-        },
-        "roi": {
-          "label": "Élevé",
-          "five_year_upside_score": 89
-        },
-        "project_slug": "rabatgardens-ba3c5ee1",
-        "infrastructure": {
-          "sea_distance_km": 7,
-          "station_distance_km": 4,
-          "highway_distance_km": 4
-        },
-        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
-        "source_catalog": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Rabatgardens · ad #3868826090092010",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3868826090092010",
-            "source": "Rabatgardens",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Rabatgardens · ad #1535585551562062",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1535585551562062",
-            "source": "Rabatgardens",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Appartement 3 chambres",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "price_min": 2000000,
-          "price_max": 2000000
-        },
-        "ai_analysis": {
-          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible.",
-            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-          ],
-          "risks": [
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Rabatgardens · ad #3868826090092010",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3868826090092010",
-            "source": "Rabatgardens",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Rabatgardens · ad #1535585551562062",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1535585551562062",
-            "source": "Rabatgardens",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "changes": [],
-        "is_new_project": true
-      },
-      "reasons": [
-        "publicité Meta exacte détectée: ad_id 3868826090092010",
-        "prix détecté: 2000000 MAD",
-        "type: apartment_3_bed",
-        "ville: Rabat",
-        "zone: Harhoura",
-        "publicité Meta exacte détectée: ad_id 1535585551562062"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-07-14T12:04:12.714945+00:00",
-          "channel": "advertising",
-          "source": "Rabatgardens",
-          "title": "Rabatgardens · ad #3868826090092010",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3868826090092010"
-        },
-        {
-          "detected_at": "2026-07-14T12:04:12.715038+00:00",
-          "channel": "advertising",
-          "source": "Rabatgardens",
-          "title": "Rabatgardens · ad #1535585551562062",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1535585551562062"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Rabatgardens",
-          "signal_type": "meta_ad",
-          "title": "Rabatgardens · ad #3868826090092010",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3868826090092010",
-          "text": "Rabatgardens Rabatgardens 🏡 Vivez entre Rabat et la plage à Harhoura Résidence fermée & sécurisée ✨ Appartements 2 & 3 chambres 🏊 Piscine + salle de sport 📐 De 100 à 150 m² 💰 À partir de 2.000.000 DH 📲 Contactez-nous dès maintenant sur WhatsApp pour réserver votre visite 🚨 Dernières opportunités disponibles Recevez les prix, plans disponibles et informations du projet Rabat Garden en remplissant ce formulaire Learn More ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUCd6y0F73ORuiTd5EffLGA9h_EYAMx6utUUzACObb4Udlky3Rsqi_Q-cHVvJXPTWSDXDJSCpBG4r-dN0l83vLd1XOxVo605mhrOnics-JLab57twEtFls53rrgF1sTWwezudSmk-SrytYyy",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 44,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "3868826090092010",
-            "page_name": "Rabatgardens",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3868826090092010",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUCd6y0F73ORuiTd5EffLGA9h_EYAMx6utUUzACObb4Udlky3Rsqi_Q-cHVvJXPTWSDXDJSCpBG4r-dN0l83vLd1XOxVo605mhrOnics-JLab57twEtFls53rrgF1sTWwezudSmk-SrytYyy",
-            "query": "résidence Rabat",
-            "city_hint": "Rabat",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 3868826090092010",
-            "prix détecté: 2000000 MAD",
-            "type: apartment_3_bed",
-            "ville: Rabat",
-            "zone: Harhoura"
-          ],
-          "discovered_at": "2026-07-14T12:04:12.714945+00:00",
-          "city_hint": "Rabat",
-          "zone_hint": "Harhoura",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_3_bed",
-          "project_name_hint": "Rabatgardens",
-          "price_mad": 2000000,
-          "signal_id": "da53151f906a94253a40db7c027723fce925fc58"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Rabatgardens",
-          "signal_type": "meta_ad",
-          "title": "Rabatgardens · ad #1535585551562062",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1535585551562062",
-          "text": "Rabatgardens Rabatgardens INSTAGRAM.COM instagram.com Voir le profil Instagram ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUCd6y0F73ORuiTd5EffLGA9h_EYAMx6utUUzACObb4Udlky3Rsqi_Q-cHVvJXPTWSDXDJSCpBG4r-dN0l83vLd1XOxVo605mhrOnics-JLab57twEtFls53rrgF1sTWwezudSmk-SrytYyy",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 40,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1535585551562062",
-            "page_name": "Rabatgardens",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1535585551562062",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUCd6y0F73ORuiTd5EffLGA9h_EYAMx6utUUzACObb4Udlky3Rsqi_Q-cHVvJXPTWSDXDJSCpBG4r-dN0l83vLd1XOxVo605mhrOnics-JLab57twEtFls53rrgF1sTWwezudSmk-SrytYyy",
-            "query": "résidence Rabat",
-            "city_hint": "Rabat",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1535585551562062",
-            "ville: Rabat"
-          ],
-          "discovered_at": "2026-07-14T12:04:12.715038+00:00",
-          "city_hint": "Rabat",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Rabatgardens",
-          "price_mad": null,
-          "signal_id": "1b5db673989600ca96f859200f708a5771e9fd86"
-        }
-      ]
-    },
-    {
-      "project_id": "f2b820dca46d60ab990759b627461e0bf7287274",
-      "name": "Medicine Chinoise Marrakech",
-      "city": "Marrakech",
-      "zone": null,
-      "promoter": null,
-      "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-07-14T12:04:51.386717+00:00",
-      "last_updated_at": "2026-07-14T12:04:51.386801+00:00",
-      "launch_score": 76,
-      "confidence_score": 96,
-      "investment_score": 32,
-      "urgency_score": 74,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Medicine Chinoise Marrakech | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "summary": "Green lotus | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
       "prices": {
         "min": null,
         "max": null
       },
       "aliases": [
-        "Medicine Chinoise Marrakech",
-        "Medicine Chinoise Marrakech 4476703432475114",
-        "Medicine Chinoise Marrakech · ad #4476703432475114",
-        "Medicine Chinoise Marrakech 1029884529789203",
-        "Medicine Chinoise Marrakech · ad #1029884529789203"
+        "Green lotus",
+        "Green lotus Green lotus Green Lotus"
       ],
       "channels": [
         "advertising"
       ],
       "sources": [
-        "Medicine Chinoise Marrakech"
+        "Green lotus"
       ],
       "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203"
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
       ],
       "evidence": {
         "signal_count": 2,
@@ -1360,11 +48,11 @@
         "confirmation_details": [],
         "confirmation_count": 0,
         "geo": {
-          "lat": 31.6295,
-          "lng": -7.9811,
-          "sea_distance_km": 180,
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
           "station_distance_km": 5,
-          "highway_distance_km": 6
+          "highway_distance_km": 4
         },
         "price_band": "unknown",
         "price_evolution": {
@@ -1372,48 +60,49 @@
           "summary": "Aucune série de prix fiable pour le moment."
         },
         "roi": {
-          "label": "Prudent",
-          "five_year_upside_score": 34
+          "label": "Élevé",
+          "five_year_upside_score": 86
         },
-        "project_slug": "medicine-chinoise-marrakech-f2b820dc",
+        "project_slug": "green-lotus-e5f5c55c",
         "infrastructure": {
-          "sea_distance_km": 180,
+          "sea_distance_km": 6,
           "station_distance_km": 5,
-          "highway_distance_km": 6
+          "highway_distance_km": 4
         },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
         "source_catalog": [
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Medicine Chinoise Marrakech · ad #4476703432475114",
+            "label": "Green lotus · ad #1796362918002528",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114",
-            "source": "Medicine Chinoise Marrakech",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+            "source": "Green lotus",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Medicine Chinoise Marrakech · ad #1029884529789203",
+            "label": "Green lotus · ad #1039379112368362",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203",
-            "source": "Medicine Chinoise Marrakech",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "source": "Green lotus",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
         ],
         "practical": {
-          "asset_label": "Appartement",
+          "asset_label": "Appartement 3 chambres",
           "public_status": "Aucune disponibilité publique détectée pour le moment.",
           "price_min": null,
           "price_max": null
         },
         "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
           "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
           ],
           "risks": [
             "Le prix public n'est pas encore confirmé.",
@@ -1430,20 +119,20 @@
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Medicine Chinoise Marrakech · ad #4476703432475114",
+            "label": "Green lotus · ad #1796362918002528",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114",
-            "source": "Medicine Chinoise Marrakech",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+            "source": "Green lotus",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Medicine Chinoise Marrakech · ad #1029884529789203",
+            "label": "Green lotus · ad #1039379112368362",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203",
-            "source": "Medicine Chinoise Marrakech",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "source": "Green lotus",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
@@ -1451,101 +140,111 @@
         "listing_links": [],
         "news_links": [],
         "urbanism_links": [],
+        "images": [
+          "assets/meta/meta-ad-1039379112368362.jpg"
+        ],
+        "videos": [],
         "changes": [],
         "is_new_project": true
       },
       "reasons": [
-        "publicité Meta exacte détectée: ad_id 4476703432475114",
-        "type: apartment_unknown",
-        "ville: Marrakech",
-        "publicité Meta exacte détectée: ad_id 1029884529789203"
+        "publicité Meta exacte détectée: ad_id 1796362918002528",
+        "type: apartment_3_bed",
+        "ville: Casablanca",
+        "zone: Bouskoura",
+        "publicité Meta exacte détectée: ad_id 1039379112368362"
       ],
       "timeline": [
         {
-          "detected_at": "2026-07-14T12:04:51.386717+00:00",
+          "detected_at": "2026-07-15T07:17:40.934361+00:00",
           "channel": "advertising",
-          "source": "Medicine Chinoise Marrakech",
-          "title": "Medicine Chinoise Marrakech · ad #4476703432475114",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114"
+          "source": "Green lotus",
+          "title": "Green lotus · ad #1796362918002528",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528"
         },
         {
-          "detected_at": "2026-07-14T12:04:51.386801+00:00",
+          "detected_at": "2026-07-15T07:17:40.934460+00:00",
           "channel": "advertising",
-          "source": "Medicine Chinoise Marrakech",
-          "title": "Medicine Chinoise Marrakech · ad #1029884529789203",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203"
+          "source": "Green lotus",
+          "title": "Green lotus · ad #1039379112368362",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
         }
       ],
       "signals": [
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "Medicine Chinoise Marrakech",
+          "source": "Green lotus",
           "signal_type": "meta_ad",
-          "title": "Medicine Chinoise Marrakech · ad #4476703432475114",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114",
-          "text": "Medicine Chinoise Marrakech Medicine Chinoise Marrakech فالعلاج بالإبر الصينية، كاينين نقاط مهمة فالجسم كيساعدو على استرجاع التوازن وتحسين الراحة العامة. من بين هاد النقاط: زوسانلي وسانيينجياو، اللي كيستعملو فالطب الصيني التقليدي لدعم الهضم، الطاقة، النوم، تخفيف التشنج، وتحسين الإحساس بالراحة حسب حالة كل مريض. فعيادتنا فمراكش، الطبيب كيحدد النقاط المناسبة بطريقة مهنية ومدروسة، لأن كل حالة مختلفة والعلاج ما كيكونش عشوائي. En médecine traditionnelle chinoise, certains points d’acupuncture sont utilisés pour aider le corps à retrouver équilibre, énergie et confort. Dans notre clinique à Marrakech, chaque patient est accompagné selon son état, avec une approche professionnelle et personnalisée. 📍 Adresse : Av Moulay Abdellah, Résidence Bab Doukkala, N° 23, Marrakech 📞 TEL : 0524446477 / +212 660295556 #طب_صيني #Acupuncture #Marrakech #MédecineChinoise Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus API.WHATSAPP.COM Medicine Chinoise Marrakech Envoyer un message WhatsApp ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fkoufis.ma%2Fcollections%2Fcollection-2026&h=AUCN2u5MAJC2iDNZIUslOTFRjx-Zu5YKSPOd4hcvAIhZSiPDMd4drzeNYkZNoMY8GMUpnCBoyowZDSWza0GWGUBF52bKAgHiRK_OIdTaNsRWYYKmNFMAVNBQDoiNIkL0w2coN0MH076wd1Ej",
+          "title": "Green lotus · ad #1796362918002528",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+          "text": "Green lotus Green lotus Organisé autour d'un parc central privé piéton de près de 9 000 m², Green Lotus Park offre un équilibre parfait entre nature, confort et espace. Appartements 2 & 3 chambres, Duplex Rez-de-jardin et Penthouses en duplex avec piscine. 📍 Nearshore Vallée, Route de Bouskoura, en face du Hilton Garden Inn, Casablanca Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUA-QwU5gYl-jnDEoxjdq6co8AhlOMwN14bBtWEOoOJxwWxEZ3e9JfnczwoblkaN6Qz4MxLwzY_LdfNWylOM5ur-Tt2DZcFrytAO0kBLI58EwSC2tQZUDjAgTpj9yckuCoZpoyp1EQGDVqPV",
           "is_primary": true,
           "launch_weight": 38,
-          "confidence_weight": 42,
+          "confidence_weight": 44,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "4476703432475114",
-            "page_name": "Medicine Chinoise Marrakech",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476703432475114",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fkoufis.ma%2Fcollections%2Fcollection-2026&h=AUCN2u5MAJC2iDNZIUslOTFRjx-Zu5YKSPOd4hcvAIhZSiPDMd4drzeNYkZNoMY8GMUpnCBoyowZDSWza0GWGUBF52bKAgHiRK_OIdTaNsRWYYKmNFMAVNBQDoiNIkL0w2coN0MH076wd1Ej",
-            "query": "résidence Marrakech",
-            "city_hint": "Marrakech",
+            "ad_id": "1796362918002528",
+            "page_name": "Green lotus",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUA-QwU5gYl-jnDEoxjdq6co8AhlOMwN14bBtWEOoOJxwWxEZ3e9JfnczwoblkaN6Qz4MxLwzY_LdfNWylOM5ur-Tt2DZcFrytAO0kBLI58EwSC2tQZUDjAgTpj9yckuCoZpoyp1EQGDVqPV",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Green Lotus",
+            "city_hint": "Casablanca",
             "zone_hint": null
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 4476703432475114",
-            "type: apartment_unknown",
-            "ville: Marrakech"
+            "publicité Meta exacte détectée: ad_id 1796362918002528",
+            "type: apartment_3_bed",
+            "ville: Casablanca",
+            "zone: Bouskoura"
           ],
-          "discovered_at": "2026-07-14T12:04:51.386717+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": null,
+          "discovered_at": "2026-07-15T07:17:40.934361+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Bouskoura",
           "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Medicine Chinoise Marrakech",
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": "Green lotus",
           "price_mad": null,
-          "signal_id": "4ac2d0a72deee38f8868daa3173291e43f29bfa1"
+          "signal_id": "79899a6cd9824b2a5be9eea405a347e8a3df41db"
         },
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "Medicine Chinoise Marrakech",
+          "source": "Green lotus",
           "signal_type": "meta_ad",
-          "title": "Medicine Chinoise Marrakech · ad #1029884529789203",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203",
-          "text": "Medicine Chinoise Marrakech Medicine Chinoise Marrakech ألم فالذراع، الكتف، ولا الكوع؟ صعوبة فرفع اليد أو تحريك الذراع ممكن تكون مرتبطة بتشنج أو ضغط فهاد المنطقة. فالعلاج بالإبر الصينية، كاينة نقطة مهمة سميتها شو سان لي، كتكون تقريباً بثلاثة صباع من المرفق، وكتستعمل فالطب الصيني التقليدي للمساعدة على تخفيف التشنج وتحسين الراحة والحركة. فعيادتنا فمراكش، كنحدد النقاط المناسبة حسب حالة كل مريض، لأن العلاج ما كيكونش عشوائي. Douleur au bras, à l’épaule ou au coude ? En médecine traditionnelle chinoise, le point Shou San Li peut être utilisé pour aider à soulager les tensions et améliorer le confort du mouvement. 📍 Adresse : Av Moulay Abdellah, Résidence Bab Doukkala, N° 23, Marrakech 📞 TEL : 0524446477 / +212 660295556 #الإبر_الصينية #طب_صيني #Acupuncture #Marrakech Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus API.WHATSAPP.COM Medicine Chinoise Marrakech Envoyer un message WhatsApp ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fkoufis.ma%2Fcollections%2Fcollection-2026&h=AUCN2u5MAJC2iDNZIUslOTFRjx-Zu5YKSPOd4hcvAIhZSiPDMd4drzeNYkZNoMY8GMUpnCBoyowZDSWza0GWGUBF52bKAgHiRK_OIdTaNsRWYYKmNFMAVNBQDoiNIkL0w2coN0MH076wd1Ej",
+          "title": "Green lotus · ad #1039379112368362",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+          "text": "Green lotus Green lotus Green Lotus est un ensemble résidentiel et de services haut standing bénéficiant d’un positionnement exceptionnel à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie et Casa Nearshore. Conçu comme un véritable écosystème de vie, où plus des deux tiers du site sont consacrés aux espaces verts et aux aménagements paysagers, le projet est pensé selon une approche durable intégrant des matériaux écoresponsables, une gestion optimisée des ressources et des solutions énergétiques performantes, lui permettant d’obtenir la certification HQE – Haute Qualité Environnementale. Son architecture organique, élégante et contemporaine s’intègre harmonieusement dans son environnement, créant une véritable oasis de sérénité à quelques minutes seulement de l’effervescence urbaine. Green Lotus se positionne comme un nouvel emblème de la vie contemporaine, offrant des perspectives dégagées et un cadre de vie unique dominant l’horizon. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus La référence du bien-vivre à Casablanca Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUA-QwU5gYl-jnDEoxjdq6co8AhlOMwN14bBtWEOoOJxwWxEZ3e9JfnczwoblkaN6Qz4MxLwzY_LdfNWylOM5ur-Tt2DZcFrytAO0kBLI58EwSC2tQZUDjAgTpj9yckuCoZpoyp1EQGDVqPV",
           "is_primary": true,
           "launch_weight": 38,
-          "confidence_weight": 42,
+          "confidence_weight": 40,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "1029884529789203",
-            "page_name": "Medicine Chinoise Marrakech",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1029884529789203",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fkoufis.ma%2Fcollections%2Fcollection-2026&h=AUCN2u5MAJC2iDNZIUslOTFRjx-Zu5YKSPOd4hcvAIhZSiPDMd4drzeNYkZNoMY8GMUpnCBoyowZDSWza0GWGUBF52bKAgHiRK_OIdTaNsRWYYKmNFMAVNBQDoiNIkL0w2coN0MH076wd1Ej",
-            "query": "résidence Marrakech",
-            "city_hint": "Marrakech",
+            "ad_id": "1039379112368362",
+            "page_name": "Green lotus",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUA-QwU5gYl-jnDEoxjdq6co8AhlOMwN14bBtWEOoOJxwWxEZ3e9JfnczwoblkaN6Qz4MxLwzY_LdfNWylOM5ur-Tt2DZcFrytAO0kBLI58EwSC2tQZUDjAgTpj9yckuCoZpoyp1EQGDVqPV",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Green Lotus",
+            "city_hint": "Casablanca",
             "zone_hint": null
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 1029884529789203",
-            "type: apartment_unknown",
-            "ville: Marrakech"
+            "publicité Meta exacte détectée: ad_id 1039379112368362",
+            "ville: Casablanca",
+            "zone: Bouskoura"
           ],
-          "discovered_at": "2026-07-14T12:04:51.386801+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": null,
+          "discovered_at": "2026-07-15T07:17:40.934460+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Bouskoura",
           "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Medicine Chinoise Marrakech",
+          "asset_type_hint": null,
+          "project_name_hint": "Green lotus",
           "price_mad": null,
-          "signal_id": "ed21c8a469dfb0e663c154bad34f2db885d66908"
+          "signal_id": "bcb9a6c40555ca5947d53ed68bf6dfe87d9a2c60"
         }
       ]
     }
