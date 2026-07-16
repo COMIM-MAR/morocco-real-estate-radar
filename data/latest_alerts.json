@@ -1,38 +1,41 @@
 {
   "immediate": [
     {
-      "project_id": "e5f5c55cf91a1f2e1b6ffa65b5ba8ca54014ff1d",
-      "name": "Green lotus",
-      "city": "Casablanca",
-      "zone": "Bouskoura",
-      "promoter": null,
-      "asset_type": "apartment_3_bed",
-      "first_detected_at": "2026-07-15T07:17:40.934361+00:00",
-      "last_updated_at": "2026-07-15T07:17:40.934460+00:00",
-      "launch_score": 76,
-      "confidence_score": 96,
-      "investment_score": 89,
-      "urgency_score": 86,
+      "project_id": "6f21c141bdc64210e5dac437773ec4fe4e93ffc1",
+      "name": "Lotissement Sidi",
+      "city": "Rabat",
+      "zone": "Tamesna",
+      "promoter": "Al Omrane",
+      "asset_type": "apartment_unknown",
+      "first_detected_at": "2026-07-16T07:23:55.491210+00:00",
+      "last_updated_at": "2026-07-16T07:23:58.747408+00:00",
+      "launch_score": 84,
+      "confidence_score": 95,
+      "investment_score": 54,
+      "urgency_score": 82,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Green lotus | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "summary": "Lotissement Sidi | Promoteur: Al Omrane | Ville: Rabat | Zone: Tamesna | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
       "prices": {
         "min": null,
         "max": null
       },
       "aliases": [
-        "Green lotus",
-        "Green lotus Green lotus Green Lotus"
+        "Lotissement Sidi",
+        "Lotissement Sidi Larbi Tr 3",
+        "Lotissement Sidi Larbi",
+        "Lotissement Sidi Abid Tr 3",
+        "Lotissement Sidi Abid"
       ],
       "channels": [
-        "advertising"
+        "project_discovery"
       ],
       "sources": [
-        "Green lotus"
+        "Al Omrane"
       ],
       "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
+        "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3",
+        "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3"
       ],
       "evidence": {
         "signal_count": 2,
@@ -41,17 +44,17 @@
         "source_count": 1,
         "channel_count": 1,
         "primary_channels": [
-          "advertising"
+          "project_discovery"
         ],
         "secondary_channels": [],
         "confirmations": [],
         "confirmation_details": [],
         "confirmation_count": 0,
         "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
+          "lat": 34.0209,
+          "lng": -6.8416,
+          "sea_distance_km": 7,
+          "station_distance_km": 4,
           "highway_distance_km": 4
         },
         "price_band": "unknown",
@@ -60,49 +63,48 @@
           "summary": "Aucune série de prix fiable pour le moment."
         },
         "roi": {
-          "label": "Élevé",
-          "five_year_upside_score": 86
+          "label": "Prudent",
+          "five_year_upside_score": 54
         },
-        "project_slug": "green-lotus-e5f5c55c",
+        "project_slug": "lotissement-sidi-6f21c141",
         "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
+          "sea_distance_km": 7,
+          "station_distance_km": 4,
           "highway_distance_km": 4
         },
-        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
         "source_catalog": [
           {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #1796362918002528",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
-            "source": "Green lotus",
-            "signal_type": "meta_ad",
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Lotissement Sidi Larbi Tr 3",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3",
+            "source": "Al Omrane",
+            "signal_type": "promoter_page",
             "proof_level": "direct"
           },
           {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #1039379112368362",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-            "source": "Green lotus",
-            "signal_type": "meta_ad",
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Lotissement Sidi Abid Tr 3",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3",
+            "source": "Al Omrane",
+            "signal_type": "promoter_page",
             "proof_level": "direct"
           }
         ],
         "practical": {
-          "asset_label": "Appartement 3 chambres",
+          "asset_label": "Appartement",
           "public_status": "Aucune disponibilité publique détectée pour le moment.",
           "price_min": null,
           "price_max": null
         },
         "ai_analysis": {
-          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
           "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible.",
-            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+            "Le score de confiance est élevé, donc le signal paraît crédible."
           ],
           "risks": [
             "Le prix public n'est pas encore confirmé.",
@@ -114,137 +116,121 @@
             "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
           ]
         },
-        "official_links": [],
-        "social_links": [
+        "official_links": [
           {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #1796362918002528",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
-            "source": "Green lotus",
-            "signal_type": "meta_ad",
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Lotissement Sidi Larbi Tr 3",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3",
+            "source": "Al Omrane",
+            "signal_type": "promoter_page",
             "proof_level": "direct"
           },
           {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #1039379112368362",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-            "source": "Green lotus",
-            "signal_type": "meta_ad",
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Lotissement Sidi Abid Tr 3",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3",
+            "source": "Al Omrane",
+            "signal_type": "promoter_page",
             "proof_level": "direct"
           }
         ],
+        "social_links": [],
         "listing_links": [],
         "news_links": [],
         "urbanism_links": [],
-        "images": [
-          "assets/meta/meta-ad-1039379112368362.jpg"
-        ],
+        "images": [],
         "videos": [],
         "changes": [],
         "is_new_project": true
       },
       "reasons": [
-        "publicité Meta exacte détectée: ad_id 1796362918002528",
-        "type: apartment_3_bed",
-        "ville: Casablanca",
-        "zone: Bouskoura",
-        "publicité Meta exacte détectée: ad_id 1039379112368362"
+        "nouvelle page promoteur",
+        "type: apartment_unknown",
+        "ville: Rabat",
+        "zone: Tamesna",
+        "marqueur de lancement détecté",
+        "type: villa",
+        "ville: Tanger"
       ],
       "timeline": [
         {
-          "detected_at": "2026-07-15T07:17:40.934361+00:00",
-          "channel": "advertising",
-          "source": "Green lotus",
-          "title": "Green lotus · ad #1796362918002528",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528"
+          "detected_at": "2026-07-16T07:23:55.491210+00:00",
+          "channel": "project_discovery",
+          "source": "Al Omrane",
+          "title": "Lotissement Sidi Larbi Tr 3",
+          "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3"
         },
         {
-          "detected_at": "2026-07-15T07:17:40.934460+00:00",
-          "channel": "advertising",
-          "source": "Green lotus",
-          "title": "Green lotus · ad #1039379112368362",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
+          "detected_at": "2026-07-16T07:23:58.747408+00:00",
+          "channel": "project_discovery",
+          "source": "Al Omrane",
+          "title": "Lotissement Sidi Abid Tr 3",
+          "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3"
         }
       ],
       "signals": [
         {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "title": "Green lotus · ad #1796362918002528",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
-          "text": "Green lotus Green lotus Organisé autour d'un parc central privé piéton de près de 9 000 m², Green Lotus Park offre un équilibre parfait entre nature, confort et espace. Appartements 2 & 3 chambres, Duplex Rez-de-jardin et Penthouses en duplex avec piscine. 📍 Nearshore Vallée, Route de Bouskoura, en face du Hilton Garden Inn, Casablanca Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUA-QwU5gYl-jnDEoxjdq6co8AhlOMwN14bBtWEOoOJxwWxEZ3e9JfnczwoblkaN6Qz4MxLwzY_LdfNWylOM5ur-Tt2DZcFrytAO0kBLI58EwSC2tQZUDjAgTpj9yckuCoZpoyp1EQGDVqPV",
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "Al Omrane",
+          "signal_type": "promoter_page",
+          "title": "Lotissement Sidi Larbi Tr 3",
+          "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3",
+          "text": "Plus d'infos Groupe AL OMRANE - Lotissement Sidi Larbi tr 3 Lotissement Sidi Larbi tr 3 Prise de rendez-vous Demande d’information Être contacté Vous êtes interessé ? Pour plus d'informations Projets similaires Le lotissement Sidi Larbi vous offre des lots de terrains à usage d'habitation et d'activités commerciales avec des superficies variées, situés dans un nouvel espace de vie, offrant des opportunités d'investissement. Le projet est situé à proximité de la capitale sur la prestigieuse avenue Mohammed VI et constitue un ensemble urbain intégré doté d'équipements socio-économiques essentiels. Groupe AL OMRANE - Lotissement Sidi Larbi tr 3 Le lotissement Sidi Larbi vous offre des lots de terrains à usage d'habitation et d'activités commerciales avec des superficies variées, situés dans un nouvel espace de vie, offrant des opportunités d'investissement. Le projet est situé à proximité de la capitale sur la prestigieuse avenue Mohammed VI et constitue un ensemble urbain intégré doté d'équipements socio-économiques essentiels. Groupe AL OMRANE - Lotissement Sidi Larbi tr 3 العربية × Bienvenue SAO - Agence Heure de connexion : Tableau de bord Prospects Clients Autorisations de versement Mon profil Mes activités Changer mot de passe Helpdesk Al Omrane Déconnexion Dernière connexion : Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement Prise de rendez-vous Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement العربية 080 100 15 16 Produits Aide au Logement Trouvez un bien Accueil > Notre Réseau > Al Omrane Rabat-Salé-Kénitra > Produits > Projets > Lotissement Sidi Larbi tr 3 Nouveau Lotissement Sidi Larbi tr 3 Titres fonciers disponibles Aïn El Aouda Le lotissement Sidi Larbi vous offre des lots de terrains à usage d'habitation et d'activités commerciales avec des superficies variées, situés dans un nouvel espace de vie, offrant des opportunités d'investissement. Le projet est situé à proximité de la capitale sur la prestigieuse avenue Mohammed VI et constitue un ensemble urbain intégré doté d'équipements socio-économiques essentiels. Mosquée Ecoles Cliquez sur le bien souhaité pour plus de détails × À vendre Affecté Non encore commercialisé Itinéraire Vous êtes interessé ? Être contacté Pour plus d'informations Mlle Ezzoumi Zoubaida - GSM: +212 661 625464 Bureau de vente : Quartier Administratif Avenue Mohammed VI -Tamesna- Tél : 0537 61 94 87 Nos agences commerciales sont ouvertes du lundi au vendredi de 8h30 à 16h30 et le Samedi de 9h00 à 15h00 Galerie photos Projets similaires Nouveau Aïn El Aouda AL HAYAT Al Omrane Rabat Salé Kénitra propose des lots R+2 à RDC Habitat au lotissement AL HAYAT à... Plus d'infos Nouveau Sidi Kacem Lotissement Oualili Tr 1 Le nouveau quartier Oualili se trouve à la limite du quartier Assaada sur l’avenue Bir Anz... Plus d'infos Nouveau Tamesna Tamesna Ilots Dans le cadre de la mise en œuvre du Nouveau Programme d’Aide au Logement, la société Al O... Plus d'infos Aide au logement Salé RESIDENCE ASSANAOUBAR La société Al Omrane Rabat Salé Kénitra lance la commercialisation de la résidence ASSANA... Plus d'infos Nouveau Tamesna LOTISSEMENT PMP 1 La Société Al Omrane Rabat Salé Kénitra met en vente à guichet ouvert, avec cahier de char... Plus d'infos Aide au logement Tamesna RESIDENCE AL WARD CONSTRUCTION... Découvrez Al Ward, un projet immobilier de qualité à Tamesna, éligible au programme Da3m S... Plus d'infos Prise de rendez-vous Demande d’information Être contacté HAUT Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement Suivez-nous sur Facebook Youtube Instagram twitter Contactez-nous sur 080 100 15 16 Prise de rendez-vous © AL-OMRANE 2025 - By Actualités Evénements Médiathèque Contactez nous Plan de site FAQ",
           "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 44,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1796362918002528",
-            "page_name": "Green lotus",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUA-QwU5gYl-jnDEoxjdq6co8AhlOMwN14bBtWEOoOJxwWxEZ3e9JfnczwoblkaN6Qz4MxLwzY_LdfNWylOM5ur-Tt2DZcFrytAO0kBLI58EwSC2tQZUDjAgTpj9yckuCoZpoyp1EQGDVqPV",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "Green Lotus",
-            "city_hint": "Casablanca",
-            "zone_hint": null
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1796362918002528",
-            "type: apartment_3_bed",
-            "ville: Casablanca",
-            "zone: Bouskoura"
-          ],
-          "discovered_at": "2026-07-15T07:17:40.934361+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Bouskoura",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_3_bed",
-          "project_name_hint": "Green lotus",
-          "price_mad": null,
-          "signal_id": "79899a6cd9824b2a5be9eea405a347e8a3df41db"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "title": "Green lotus · ad #1039379112368362",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-          "text": "Green lotus Green lotus Green Lotus est un ensemble résidentiel et de services haut standing bénéficiant d’un positionnement exceptionnel à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie et Casa Nearshore. Conçu comme un véritable écosystème de vie, où plus des deux tiers du site sont consacrés aux espaces verts et aux aménagements paysagers, le projet est pensé selon une approche durable intégrant des matériaux écoresponsables, une gestion optimisée des ressources et des solutions énergétiques performantes, lui permettant d’obtenir la certification HQE – Haute Qualité Environnementale. Son architecture organique, élégante et contemporaine s’intègre harmonieusement dans son environnement, créant une véritable oasis de sérénité à quelques minutes seulement de l’effervescence urbaine. Green Lotus se positionne comme un nouvel emblème de la vie contemporaine, offrant des perspectives dégagées et un cadre de vie unique dominant l’horizon. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus La référence du bien-vivre à Casablanca Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUA-QwU5gYl-jnDEoxjdq6co8AhlOMwN14bBtWEOoOJxwWxEZ3e9JfnczwoblkaN6Qz4MxLwzY_LdfNWylOM5ur-Tt2DZcFrytAO0kBLI58EwSC2tQZUDjAgTpj9yckuCoZpoyp1EQGDVqPV",
-          "is_primary": true,
-          "launch_weight": 38,
+          "launch_weight": 42,
           "confidence_weight": 40,
           "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1039379112368362",
-            "page_name": "Green lotus",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUA-QwU5gYl-jnDEoxjdq6co8AhlOMwN14bBtWEOoOJxwWxEZ3e9JfnczwoblkaN6Qz4MxLwzY_LdfNWylOM5ur-Tt2DZcFrytAO0kBLI58EwSC2tQZUDjAgTpj9yckuCoZpoyp1EQGDVqPV",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "Green Lotus",
-            "city_hint": "Casablanca",
-            "zone_hint": null
+            "promoter_hint": "Al Omrane"
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 1039379112368362",
-            "ville: Casablanca",
-            "zone: Bouskoura"
+            "nouvelle page promoteur",
+            "type: apartment_unknown",
+            "ville: Rabat",
+            "zone: Tamesna",
+            "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-07-15T07:17:40.934460+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Bouskoura",
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Green lotus",
+          "discovered_at": "2026-07-16T07:23:55.491210+00:00",
+          "city_hint": "Rabat",
+          "zone_hint": "Tamesna",
+          "promoter_hint": "Al Omrane",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": null,
           "price_mad": null,
-          "signal_id": "bcb9a6c40555ca5947d53ed68bf6dfe87d9a2c60"
+          "signal_id": "fb7b9990e8049e462dd41a87b2c4d876f1ef5244"
+        },
+        {
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "Al Omrane",
+          "signal_type": "promoter_page",
+          "title": "Lotissement Sidi Abid Tr 3",
+          "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3",
+          "text": "Plus d'infos Groupe AL OMRANE - LOTISSEMENT SIDI ABID TR 3 LOTISSEMENT SIDI ABID TR 3 Prise de rendez-vous Demande d’information Être contacté Vous êtes interessé ? Pour plus d'informations Projets similaires Découvrez une opportunité d’investissement au sein du lotissement Sidi Abid TR 3 à Al Hoceima. Le projet propose des lots RDC commercial +2 étages, idéals pour la réalisation de constructions modernes, ainsi que des lots de villas destinés à l’édification de résidences individuelles dans un cadre harmonieux et à fort potentiel de valorisation. Que vous souhaitiez construire votre future habitation ou réaliser un investissement pérenne, Sidi Abid TR 3 vous offre toutes les conditions pour concrétiser votre projet dans un environnement privilégié. N’attendez plus pour choisir le terrain qui correspond à vos ambitions. Contactez-nous dès aujourd’hui pour obtenir davantage d’informations ou programmer une visite du site. Les disponibilités étant limitées, réservez dès maintenant votre lot R+2 ou votre terrain villa. DATE DE LANCEMENT A LA COMMERCIALISATION EST LE 12/06/2026 Groupe AL OMRANE - LOTISSEMENT SIDI ABID TR 3 Découvrez une opportunité d’investissement au sein du lotissement Sidi Abid TR 3 à Al Hoceima. Le projet propose des lots RDC commercial +2 étages, idéals pour la réalisation de constructions modernes, ainsi que des lots de villas destinés à l’édification de résidences individuelles dans un cadre harmonieux et à fort potentiel de valorisation. Que vous souhaitiez construire votre future habitation ou réaliser un investissement pérenne, Sidi Abid TR 3 vous offre toutes les conditions pour concrétiser votre projet dans un environnement privilégié. N’attendez plus pour choisir le terrain qui correspond à vos ambitions. Contactez-nous dès aujourd’hui pour obtenir davantage d’informations ou programmer une visite du site. Les disponibilités étant limitées, réservez dès maintenant votre lot R+2 ou votre terrain villa. DATE DE LANCEMENT A LA COMMERCIALISATION EST LE 12/06/2026 Groupe AL OMRANE - LOTISSEMENT SIDI ABID TR 3 العربية × Bienvenue SAO - Agence Heure de connexion : Tableau de bord Prospects Clients Autorisations de versement Mon profil Mes activités Changer mot de passe Helpdesk Al Omrane Déconnexion Dernière connexion : Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement Prise de rendez-vous Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement العربية 080 100 15 16 Produits Aide au Logement Trouvez un bien Accueil > Notre Réseau > Al Omrane Tanger-Tétouan-Al Hoceïma > Produits > Projets > LOTISSEMENT SIDI ABID TR 3 Nouveau LOTISSEMENT SIDI ABID TR 3 En cours Al Hoceïma Découvrez une opportunité d’investissement au sein du lotissement Sidi Abid TR 3 à Al Hoceima. Le projet propose des lots RDC commercial +2 étages, idéals pour la réalisation de constructions modernes, ainsi que des lots de villas destinés à l’édification de résidences individuelles dans un cadre harmonieux et à fort potentiel de valorisation. Que vous souhaitiez construire votre future habitation ou réaliser un investissement pérenne, Sidi Abid TR 3 vous offre toutes les conditions pour concrétiser votre projet dans un environnement privilégié. N’attendez plus pour choisir le terrain qui correspond à vos ambitions. Contactez-nous dès aujourd’hui pour obtenir davantage d’informations ou programmer une visite du site. Les disponibilités étant limitées, réservez dès maintenant votre lot R+2 ou votre terrain villa. DATE DE LANCEMENT A LA COMMERCIALISATION EST LE 12/06/2026 Parking Mosquée Ecoles Collèges Centre de santé Marché Café Restaurant À seulement quelques minutes du centre-ville, Sidi Abid permet à ses résidents de profiter d'un environnement calme et aéré tout en restant connectés aux pôles d'activité, aux établissements scolaires, aux commerces et aux infrastructures de proximité. Son développement urbanistique moderne et son fort potentiel de valorisation en font aujourd'hui l'un des secteurs les plus attractifs d'Al Hoceima pour l'habitat et l'investissement immobilier. Cliquez sur le bien souhaité pour plus de détails × À vendre Affecté Non encore commercialisé Itinéraire Vous êtes interessé ? Être contacté Prendre rendez-vous Pour plus d'informations EL HASNAOUI ISMAIL GSM06 36 44 44 12 (joignable de 08h30 à 16h30) Bureau de vente : Matadero cala bonita 32000 Al Hoceima Horaires d'ouvertures: du lundi au samedi de 09H00 à 15H00 Tél: 05 39 37 56 46 Fax: 05 39 84 03 22 Galerie photos Détail des produits disponibles Projets similaires Nouveau Chrafate ZAHRAT AL JABAL Investissez dans un lotissement R+4 avec rez-de-chaussée commercial, au sein de la Ville V... Plus d'infos Nouveau Tanger Projet IBN HAITAM Le projet IBN HAITAM représente une opportunité d’investissement stratégique au sein du Pô... Plus d'infos Aide au logement Ksar El Kébir RESIDENCE ASSAADA AL OULYA... Découvrez notre nouveau projet résidentiel ASSAADA AL OULYA à Ksar El Kebir, des apparteme... Plus d'infos Tétouan LOTISSEMENT HAY AL MATAR Le lotissement Hay Al Matar vous propose des lots R+5 avec rez-de-chaussée commercial à Té... Plus d'infos Aide au logement Fnideq Complexe AL MARSA TR 3 Date de lancement à la commercialisation: 13 avril 2026 AL MARSA Tr 3 est un complexe d... Plus d'infos Chrafate CHRAFATE TR 7 Des lots de terrain idéalement situés, destinés à la construction d’équipements privés. Bé... Plus d'infos Prise de rendez-vous Demande d’information Être contacté HAUT Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement Suivez-nous sur Facebook Youtube Instagram twitter Contactez-nous sur 080 100 15 16 Prise de rendez-vous © AL-OMRANE 2025 - By Actualités Evénements Médiathèque Contactez nous Plan de site FAQ",
+          "is_primary": true,
+          "launch_weight": 42,
+          "confidence_weight": 43,
+          "metadata": {
+            "promoter_hint": "Al Omrane"
+          },
+          "reasons": [
+            "nouvelle page promoteur",
+            "type: villa",
+            "ville: Tanger",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-07-16T07:23:58.747408+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": null,
+          "promoter_hint": "Al Omrane",
+          "asset_type_hint": "villa",
+          "project_name_hint": null,
+          "price_mad": null,
+          "signal_id": "7d475c484d4e4c3f5aadf50588fe63bf21103d05"
         }
       ]
     }
