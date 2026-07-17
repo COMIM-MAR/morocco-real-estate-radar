@@ -1,239 +1,427 @@
 {
-  "immediate": [
+  "immediate": [],
+  "digest": [
     {
-      "project_id": "6f21c141bdc64210e5dac437773ec4fe4e93ffc1",
-      "name": "Lotissement Sidi",
-      "city": "Rabat",
-      "zone": "Tamesna",
-      "promoter": "Al Omrane",
+      "project_id": "325d8304f9d7df7a33ad5b88fc726c6d6dc2100d",
+      "name": "Anfa Place Living Resort",
+      "city": "Casablanca",
+      "zone": "Anfa",
+      "promoter": null,
       "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-07-16T07:23:55.491210+00:00",
-      "last_updated_at": "2026-07-16T07:23:58.747408+00:00",
-      "launch_score": 84,
-      "confidence_score": 95,
-      "investment_score": 54,
-      "urgency_score": 82,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Lotissement Sidi | Promoteur: Al Omrane | Ville: Rabat | Zone: Tamesna | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "first_detected_at": "2026-07-17T07:24:26.429887+00:00",
+      "last_updated_at": "2026-07-17T07:25:32.393575+00:00",
+      "launch_score": 47,
+      "confidence_score": 72,
+      "investment_score": 67,
+      "urgency_score": 60,
+      "recommendation": "Watch",
+      "status": "watch",
+      "summary": "Anfa Place Living Resort | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Prix observés entre 2760000 et 2760000 MAD.",
       "prices": {
-        "min": null,
-        "max": null
+        "min": 2760000,
+        "max": 3915000
       },
       "aliases": [
-        "Lotissement Sidi",
-        "Lotissement Sidi Larbi Tr 3",
-        "Lotissement Sidi Larbi",
-        "Lotissement Sidi Abid Tr 3",
-        "Lotissement Sidi Abid"
+        "Anfa Place Living Resort",
+        "Vend Appartement %c3%a0 View Tower Surface",
+        "Vend appartement à View Tower. Surface totale 88 m²",
+        "Appartement Vente %c3%a0 View Tower Chambres",
+        "Appartement en vente à View Tower. 3 chambres agréables",
+        "Splendide Villa %c3%a0 Vendre %c3%a0 Achakar"
       ],
       "channels": [
-        "project_discovery"
+        "advertising",
+        "listing"
       ],
       "sources": [
-        "Al Omrane"
+        "Anfaplace Living Resort",
+        "Mubawab Casablanca Appartements",
+        "Mubawab Tanger Appartements",
+        "Mubawab Tanger Villas"
       ],
       "source_urls": [
-        "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3",
-        "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3"
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1780008796778934",
+        "https://www.mubawab.ma/fr/pa/7596444/vend-appartement-%C3%A0-view-tower-surface-totale-88-m%C2%B2",
+        "https://www.mubawab.ma/fr/pa/7595991/appartement-en-vente-%C3%A0-view-tower-3-chambres-agr%C3%A9ables",
+        "https://www.mubawab.ma/fr/pa/8342988/splendide-villa-%C3%A0-vendre-%C3%A0-achakar-surface-de-546-m%C2%B2-places-de-stationnement-et-jardin",
+        "https://www.mubawab.ma/fr/pa/8330417/appartement-%C3%A0-l-achat-%C3%A0-le-domaine-d-anfa-2-chambres-agr%C3%A9ables-concierge-et-climatisation",
+        "https://www.mubawab.ma/fr/pa/8330418/vend-appartement-%C3%A0-le-domaine-d-anfa-surface-totale-115-m%C2%B2-avec-ascenseur-et-terrasse"
       ],
       "evidence": {
-        "signal_count": 2,
-        "primary_signal_count": 2,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
+        "signal_count": 6,
+        "primary_signal_count": 1,
+        "listing_signal_count": 5,
+        "source_count": 4,
+        "channel_count": 2,
         "primary_channels": [
-          "project_discovery"
+          "advertising"
         ],
-        "secondary_channels": [],
+        "secondary_channels": [
+          "listing"
+        ],
         "confirmations": [],
         "confirmation_details": [],
         "confirmation_count": 0,
         "geo": {
-          "lat": 34.0209,
-          "lng": -6.8416,
-          "sea_distance_km": 7,
-          "station_distance_km": 4,
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
           "highway_distance_km": 4
         },
-        "price_band": "unknown",
+        "price_band": "within_budget",
         "price_evolution": {
-          "trend": "unknown",
-          "summary": "Aucune série de prix fiable pour le moment."
+          "trend": "stable",
+          "summary": "Prix observés entre 2760000 et 2760000 MAD."
         },
         "roi": {
-          "label": "Prudent",
-          "five_year_upside_score": 54
+          "label": "Moyen",
+          "five_year_upside_score": 62
         },
-        "project_slug": "lotissement-sidi-6f21c141",
+        "project_slug": "anfa-place-living-resort-325d8304",
         "infrastructure": {
-          "sea_distance_km": 7,
-          "station_distance_km": 4,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
           "highway_distance_km": 4
         },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
         "source_catalog": [
           {
-            "kind": "official_site",
-            "kind_label": "Site promoteur",
-            "label": "Lotissement Sidi Larbi Tr 3",
-            "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3",
-            "source": "Al Omrane",
-            "signal_type": "promoter_page",
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Anfaplace Living Resort · ad #1780008796778934",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1780008796778934",
+            "source": "Anfaplace Living Resort",
+            "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
-            "kind": "official_site",
-            "kind_label": "Site promoteur",
-            "label": "Lotissement Sidi Abid Tr 3",
-            "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3",
-            "source": "Al Omrane",
-            "signal_type": "promoter_page",
+            "kind": "listing",
+            "kind_label": "Portail immobilier",
+            "label": "Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréab...",
+            "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
+            "url": "https://www.mubawab.ma/fr/pa/8330417/appartement-%C3%A0-l-achat-%C3%A0-le-domaine-d-anfa-2-chambres-agr%C3%A9ables-concierge-et-climatisation",
+            "source": "Mubawab Casablanca Appartements",
+            "signal_type": "listing_detail",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "listing",
+            "kind_label": "Portail immobilier",
+            "label": "Vend appartement à Le Domaine D'Anfa. Surface totale 115 m²...",
+            "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
+            "url": "https://www.mubawab.ma/fr/pa/8330418/vend-appartement-%C3%A0-le-domaine-d-anfa-surface-totale-115-m%C2%B2-avec-ascenseur-et-terrasse",
+            "source": "Mubawab Casablanca Appartements",
+            "signal_type": "listing_detail",
             "proof_level": "direct"
           }
         ],
         "practical": {
           "asset_label": "Appartement",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "price_min": null,
-          "price_max": null
+          "public_status": "5 signal(s) listing détecté(s), disponibilités à confirmer.",
+          "price_min": 2760000,
+          "price_max": 3915000
         },
         "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Le prix public n'est pas encore confirmé.",
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
+          "summary": "Garder en observation jusqu'à nouvelles confirmations.",
+          "strengths": [],
+          "risks": [],
           "next_steps": [
             "Vérifier le site officiel et les pages sociales du promoteur.",
             "Confirmer les disponibilités et le ticket d'entrée réel.",
             "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
           ]
         },
-        "official_links": [
+        "official_links": [],
+        "social_links": [
           {
-            "kind": "official_site",
-            "kind_label": "Site promoteur",
-            "label": "Lotissement Sidi Larbi Tr 3",
-            "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3",
-            "source": "Al Omrane",
-            "signal_type": "promoter_page",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "official_site",
-            "kind_label": "Site promoteur",
-            "label": "Lotissement Sidi Abid Tr 3",
-            "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3",
-            "source": "Al Omrane",
-            "signal_type": "promoter_page",
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Anfaplace Living Resort · ad #1780008796778934",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1780008796778934",
+            "source": "Anfaplace Living Resort",
+            "signal_type": "meta_ad",
             "proof_level": "direct"
           }
         ],
-        "social_links": [],
-        "listing_links": [],
+        "listing_links": [
+          {
+            "kind": "listing",
+            "kind_label": "Portail immobilier",
+            "label": "Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréab...",
+            "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
+            "url": "https://www.mubawab.ma/fr/pa/8330417/appartement-%C3%A0-l-achat-%C3%A0-le-domaine-d-anfa-2-chambres-agr%C3%A9ables-concierge-et-climatisation",
+            "source": "Mubawab Casablanca Appartements",
+            "signal_type": "listing_detail",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "listing",
+            "kind_label": "Portail immobilier",
+            "label": "Vend appartement à Le Domaine D'Anfa. Surface totale 115 m²...",
+            "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
+            "url": "https://www.mubawab.ma/fr/pa/8330418/vend-appartement-%C3%A0-le-domaine-d-anfa-surface-totale-115-m%C2%B2-avec-ascenseur-et-terrasse",
+            "source": "Mubawab Casablanca Appartements",
+            "signal_type": "listing_detail",
+            "proof_level": "direct"
+          }
+        ],
         "news_links": [],
         "urbanism_links": [],
         "images": [],
         "videos": [],
-        "changes": [],
-        "is_new_project": true
+        "changes": [
+          "Nouvelles sources détectées: 3 → 4",
+          "Statut projet: monitor → watch",
+          "Prix minimum mis à jour: 2950000 → 2760000 MAD"
+        ],
+        "is_new_project": false
       },
       "reasons": [
-        "nouvelle page promoteur",
+        "publicité Meta exacte détectée: ad_id 1780008796778934",
         "type: apartment_unknown",
-        "ville: Rabat",
-        "zone: Tamesna",
-        "marqueur de lancement détecté",
-        "type: villa",
-        "ville: Tanger"
+        "ville: Casablanca",
+        "zone: Anfa",
+        "signal listing secondaire",
+        "prix détecté: 2760000 MAD",
+        "type: apartment_3_bed",
+        "ville: Tanger",
+        "prix détecté: 3915000 MAD",
+        "type: villa"
       ],
       "timeline": [
         {
-          "detected_at": "2026-07-16T07:23:55.491210+00:00",
-          "channel": "project_discovery",
-          "source": "Al Omrane",
-          "title": "Lotissement Sidi Larbi Tr 3",
-          "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3"
+          "detected_at": "2026-07-17T07:24:26.429887+00:00",
+          "channel": "advertising",
+          "source": "Anfaplace Living Resort",
+          "title": "Anfaplace Living Resort · ad #1780008796778934",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1780008796778934"
         },
         {
-          "detected_at": "2026-07-16T07:23:58.747408+00:00",
-          "channel": "project_discovery",
-          "source": "Al Omrane",
-          "title": "Lotissement Sidi Abid Tr 3",
-          "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3"
+          "detected_at": "2026-07-17T07:24:45.391501+00:00",
+          "channel": "listing",
+          "source": "Mubawab Tanger Appartements",
+          "title": "Vend appartement à View Tower. Surface totale 88 m²",
+          "url": "https://www.mubawab.ma/fr/pa/7596444/vend-appartement-%C3%A0-view-tower-surface-totale-88-m%C2%B2"
+        },
+        {
+          "detected_at": "2026-07-17T07:24:56.732122+00:00",
+          "channel": "listing",
+          "source": "Mubawab Tanger Appartements",
+          "title": "Appartement en vente à View Tower. 3 chambres agréables",
+          "url": "https://www.mubawab.ma/fr/pa/7595991/appartement-en-vente-%C3%A0-view-tower-3-chambres-agr%C3%A9ables"
+        },
+        {
+          "detected_at": "2026-07-17T07:25:01.029488+00:00",
+          "channel": "listing",
+          "source": "Mubawab Tanger Villas",
+          "title": "Splendide villa à vendre à Achakar. Surface de 546 m². Place...",
+          "url": "https://www.mubawab.ma/fr/pa/8342988/splendide-villa-%C3%A0-vendre-%C3%A0-achakar-surface-de-546-m%C2%B2-places-de-stationnement-et-jardin"
+        },
+        {
+          "detected_at": "2026-07-17T07:25:19.077173+00:00",
+          "channel": "listing",
+          "source": "Mubawab Casablanca Appartements",
+          "title": "Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréab...",
+          "url": "https://www.mubawab.ma/fr/pa/8330417/appartement-%C3%A0-l-achat-%C3%A0-le-domaine-d-anfa-2-chambres-agr%C3%A9ables-concierge-et-climatisation"
+        },
+        {
+          "detected_at": "2026-07-17T07:25:32.393575+00:00",
+          "channel": "listing",
+          "source": "Mubawab Casablanca Appartements",
+          "title": "Vend appartement à Le Domaine D'Anfa. Surface totale 115 m²...",
+          "url": "https://www.mubawab.ma/fr/pa/8330418/vend-appartement-%C3%A0-le-domaine-d-anfa-surface-totale-115-m%C2%B2-avec-ascenseur-et-terrasse"
         }
       ],
       "signals": [
         {
-          "collector": "promoters.websites",
-          "channel": "project_discovery",
-          "source": "Al Omrane",
-          "signal_type": "promoter_page",
-          "title": "Lotissement Sidi Larbi Tr 3",
-          "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-rabat-sale-kenitra/Produits/Projets/Lotissement-sidi-larbi-tr-3",
-          "text": "Plus d'infos Groupe AL OMRANE - Lotissement Sidi Larbi tr 3 Lotissement Sidi Larbi tr 3 Prise de rendez-vous Demande d’information Être contacté Vous êtes interessé ? Pour plus d'informations Projets similaires Le lotissement Sidi Larbi vous offre des lots de terrains à usage d'habitation et d'activités commerciales avec des superficies variées, situés dans un nouvel espace de vie, offrant des opportunités d'investissement. Le projet est situé à proximité de la capitale sur la prestigieuse avenue Mohammed VI et constitue un ensemble urbain intégré doté d'équipements socio-économiques essentiels. Groupe AL OMRANE - Lotissement Sidi Larbi tr 3 Le lotissement Sidi Larbi vous offre des lots de terrains à usage d'habitation et d'activités commerciales avec des superficies variées, situés dans un nouvel espace de vie, offrant des opportunités d'investissement. Le projet est situé à proximité de la capitale sur la prestigieuse avenue Mohammed VI et constitue un ensemble urbain intégré doté d'équipements socio-économiques essentiels. Groupe AL OMRANE - Lotissement Sidi Larbi tr 3 العربية × Bienvenue SAO - Agence Heure de connexion : Tableau de bord Prospects Clients Autorisations de versement Mon profil Mes activités Changer mot de passe Helpdesk Al Omrane Déconnexion Dernière connexion : Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement Prise de rendez-vous Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement العربية 080 100 15 16 Produits Aide au Logement Trouvez un bien Accueil > Notre Réseau > Al Omrane Rabat-Salé-Kénitra > Produits > Projets > Lotissement Sidi Larbi tr 3 Nouveau Lotissement Sidi Larbi tr 3 Titres fonciers disponibles Aïn El Aouda Le lotissement Sidi Larbi vous offre des lots de terrains à usage d'habitation et d'activités commerciales avec des superficies variées, situés dans un nouvel espace de vie, offrant des opportunités d'investissement. Le projet est situé à proximité de la capitale sur la prestigieuse avenue Mohammed VI et constitue un ensemble urbain intégré doté d'équipements socio-économiques essentiels. Mosquée Ecoles Cliquez sur le bien souhaité pour plus de détails × À vendre Affecté Non encore commercialisé Itinéraire Vous êtes interessé ? Être contacté Pour plus d'informations Mlle Ezzoumi Zoubaida - GSM: +212 661 625464 Bureau de vente : Quartier Administratif Avenue Mohammed VI -Tamesna- Tél : 0537 61 94 87 Nos agences commerciales sont ouvertes du lundi au vendredi de 8h30 à 16h30 et le Samedi de 9h00 à 15h00 Galerie photos Projets similaires Nouveau Aïn El Aouda AL HAYAT Al Omrane Rabat Salé Kénitra propose des lots R+2 à RDC Habitat au lotissement AL HAYAT à... Plus d'infos Nouveau Sidi Kacem Lotissement Oualili Tr 1 Le nouveau quartier Oualili se trouve à la limite du quartier Assaada sur l’avenue Bir Anz... Plus d'infos Nouveau Tamesna Tamesna Ilots Dans le cadre de la mise en œuvre du Nouveau Programme d’Aide au Logement, la société Al O... Plus d'infos Aide au logement Salé RESIDENCE ASSANAOUBAR La société Al Omrane Rabat Salé Kénitra lance la commercialisation de la résidence ASSANA... Plus d'infos Nouveau Tamesna LOTISSEMENT PMP 1 La Société Al Omrane Rabat Salé Kénitra met en vente à guichet ouvert, avec cahier de char... Plus d'infos Aide au logement Tamesna RESIDENCE AL WARD CONSTRUCTION... Découvrez Al Ward, un projet immobilier de qualité à Tamesna, éligible au programme Da3m S... Plus d'infos Prise de rendez-vous Demande d’information Être contacté HAUT Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement Suivez-nous sur Facebook Youtube Instagram twitter Contactez-nous sur 080 100 15 16 Prise de rendez-vous © AL-OMRANE 2025 - By Actualités Evénements Médiathèque Contactez nous Plan de site FAQ",
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Anfaplace Living Resort",
+          "signal_type": "meta_ad",
+          "title": "Anfaplace Living Resort · ad #1780008796778934",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1780008796778934",
+          "text": "Anfaplace Living Resort Anfaplace Living Resort Avec Anfa Place Living Resort, découvrez l’équilibre parfait entre design contemporain et raffinement classique, face aux vagues de l’océan. Chaque appartement, baigné de lumière, offre des prestations haut de gamme pensées pour votre confort quotidien. Au cœur de la Corniche, profitez d’un cadre de vie unique où la tranquillité marine dialogue avec le dynamisme urbain : gastronomie, shopping de luxe et promenades au bord de la mer. Vivre à Anfa Place Living Resort, c’est transformer chaque journée en expérience d’exception. Pour plus d'informations, contactez-nous via : 🌐 : https://www.anfaplace.com/​ ☎️ : 0522 940 430 / 📞 0663 711 052 #AnfaPlaceLivingResort #aindiab #Soleil #Maison #Casablanca Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Profitez d'une vie de luxe et de confort avec Chez Anfa Place Investissement Sûr En savoir plus ​ https://l.facebook.com/l.php?u=https%3A%2F%2Falidari.ma%2Fopaledanfa%2F&h=AUBfgguBlFNOYgSxaanKT1KWW4DmvFtJAXMqDK_1eZMkKfxwQIycPNoQTCsXrmhp_Fc3eecsJteCk-mVYAfkxOC5NXS6iaZhPoomVHlWWFow-QomEuQExUQbnq3DmHVbAjeQcLNNaez1Ogn-",
           "is_primary": true,
-          "launch_weight": 42,
-          "confidence_weight": 40,
+          "launch_weight": 38,
+          "confidence_weight": 42,
           "metadata": {
-            "promoter_hint": "Al Omrane"
+            "promoter_hint": null,
+            "ad_id": "1780008796778934",
+            "page_name": "Anfaplace Living Resort",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1780008796778934",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Falidari.ma%2Fopaledanfa%2F&h=AUBfgguBlFNOYgSxaanKT1KWW4DmvFtJAXMqDK_1eZMkKfxwQIycPNoQTCsXrmhp_Fc3eecsJteCk-mVYAfkxOC5NXS6iaZhPoomVHlWWFow-QomEuQExUQbnq3DmHVbAjeQcLNNaez1Ogn-",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Anfa",
+            "city_hint": "Casablanca",
+            "zone_hint": "Anfa"
           },
           "reasons": [
-            "nouvelle page promoteur",
+            "publicité Meta exacte détectée: ad_id 1780008796778934",
             "type: apartment_unknown",
-            "ville: Rabat",
-            "zone: Tamesna",
-            "marqueur de lancement détecté"
+            "ville: Casablanca",
+            "zone: Anfa"
           ],
-          "discovered_at": "2026-07-16T07:23:55.491210+00:00",
-          "city_hint": "Rabat",
-          "zone_hint": "Tamesna",
-          "promoter_hint": "Al Omrane",
+          "discovered_at": "2026-07-17T07:24:26.429887+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Anfa",
+          "promoter_hint": null,
           "asset_type_hint": "apartment_unknown",
-          "project_name_hint": null,
+          "project_name_hint": "Anfaplace Living Resort",
           "price_mad": null,
-          "signal_id": "fb7b9990e8049e462dd41a87b2c4d876f1ef5244"
+          "signal_id": "c79f23567dd7067a24bb79fbc04d6d0d404debad"
         },
         {
-          "collector": "promoters.websites",
-          "channel": "project_discovery",
-          "source": "Al Omrane",
-          "signal_type": "promoter_page",
-          "title": "Lotissement Sidi Abid Tr 3",
-          "url": "https://www.alomrane.gov.ma/Notre-reseau/Al-omrane-tanger-tetouan-al-hoceima/Produits/Projets/Lotissement-sidi-abid-tr-3",
-          "text": "Plus d'infos Groupe AL OMRANE - LOTISSEMENT SIDI ABID TR 3 LOTISSEMENT SIDI ABID TR 3 Prise de rendez-vous Demande d’information Être contacté Vous êtes interessé ? Pour plus d'informations Projets similaires Découvrez une opportunité d’investissement au sein du lotissement Sidi Abid TR 3 à Al Hoceima. Le projet propose des lots RDC commercial +2 étages, idéals pour la réalisation de constructions modernes, ainsi que des lots de villas destinés à l’édification de résidences individuelles dans un cadre harmonieux et à fort potentiel de valorisation. Que vous souhaitiez construire votre future habitation ou réaliser un investissement pérenne, Sidi Abid TR 3 vous offre toutes les conditions pour concrétiser votre projet dans un environnement privilégié. N’attendez plus pour choisir le terrain qui correspond à vos ambitions. Contactez-nous dès aujourd’hui pour obtenir davantage d’informations ou programmer une visite du site. Les disponibilités étant limitées, réservez dès maintenant votre lot R+2 ou votre terrain villa. DATE DE LANCEMENT A LA COMMERCIALISATION EST LE 12/06/2026 Groupe AL OMRANE - LOTISSEMENT SIDI ABID TR 3 Découvrez une opportunité d’investissement au sein du lotissement Sidi Abid TR 3 à Al Hoceima. Le projet propose des lots RDC commercial +2 étages, idéals pour la réalisation de constructions modernes, ainsi que des lots de villas destinés à l’édification de résidences individuelles dans un cadre harmonieux et à fort potentiel de valorisation. Que vous souhaitiez construire votre future habitation ou réaliser un investissement pérenne, Sidi Abid TR 3 vous offre toutes les conditions pour concrétiser votre projet dans un environnement privilégié. N’attendez plus pour choisir le terrain qui correspond à vos ambitions. Contactez-nous dès aujourd’hui pour obtenir davantage d’informations ou programmer une visite du site. Les disponibilités étant limitées, réservez dès maintenant votre lot R+2 ou votre terrain villa. DATE DE LANCEMENT A LA COMMERCIALISATION EST LE 12/06/2026 Groupe AL OMRANE - LOTISSEMENT SIDI ABID TR 3 العربية × Bienvenue SAO - Agence Heure de connexion : Tableau de bord Prospects Clients Autorisations de versement Mon profil Mes activités Changer mot de passe Helpdesk Al Omrane Déconnexion Dernière connexion : Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement Prise de rendez-vous Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement العربية 080 100 15 16 Produits Aide au Logement Trouvez un bien Accueil > Notre Réseau > Al Omrane Tanger-Tétouan-Al Hoceïma > Produits > Projets > LOTISSEMENT SIDI ABID TR 3 Nouveau LOTISSEMENT SIDI ABID TR 3 En cours Al Hoceïma Découvrez une opportunité d’investissement au sein du lotissement Sidi Abid TR 3 à Al Hoceima. Le projet propose des lots RDC commercial +2 étages, idéals pour la réalisation de constructions modernes, ainsi que des lots de villas destinés à l’édification de résidences individuelles dans un cadre harmonieux et à fort potentiel de valorisation. Que vous souhaitiez construire votre future habitation ou réaliser un investissement pérenne, Sidi Abid TR 3 vous offre toutes les conditions pour concrétiser votre projet dans un environnement privilégié. N’attendez plus pour choisir le terrain qui correspond à vos ambitions. Contactez-nous dès aujourd’hui pour obtenir davantage d’informations ou programmer une visite du site. Les disponibilités étant limitées, réservez dès maintenant votre lot R+2 ou votre terrain villa. DATE DE LANCEMENT A LA COMMERCIALISATION EST LE 12/06/2026 Parking Mosquée Ecoles Collèges Centre de santé Marché Café Restaurant À seulement quelques minutes du centre-ville, Sidi Abid permet à ses résidents de profiter d'un environnement calme et aéré tout en restant connectés aux pôles d'activité, aux établissements scolaires, aux commerces et aux infrastructures de proximité. Son développement urbanistique moderne et son fort potentiel de valorisation en font aujourd'hui l'un des secteurs les plus attractifs d'Al Hoceima pour l'habitat et l'investissement immobilier. Cliquez sur le bien souhaité pour plus de détails × À vendre Affecté Non encore commercialisé Itinéraire Vous êtes interessé ? Être contacté Prendre rendez-vous Pour plus d'informations EL HASNAOUI ISMAIL GSM06 36 44 44 12 (joignable de 08h30 à 16h30) Bureau de vente : Matadero cala bonita 32000 Al Hoceima Horaires d'ouvertures: du lundi au samedi de 09H00 à 15H00 Tél: 05 39 37 56 46 Fax: 05 39 84 03 22 Galerie photos Détail des produits disponibles Projets similaires Nouveau Chrafate ZAHRAT AL JABAL Investissez dans un lotissement R+4 avec rez-de-chaussée commercial, au sein de la Ville V... Plus d'infos Nouveau Tanger Projet IBN HAITAM Le projet IBN HAITAM représente une opportunité d’investissement stratégique au sein du Pô... Plus d'infos Aide au logement Ksar El Kébir RESIDENCE ASSAADA AL OULYA... Découvrez notre nouveau projet résidentiel ASSAADA AL OULYA à Ksar El Kebir, des apparteme... Plus d'infos Tétouan LOTISSEMENT HAY AL MATAR Le lotissement Hay Al Matar vous propose des lots R+5 avec rez-de-chaussée commercial à Té... Plus d'infos Aide au logement Fnideq Complexe AL MARSA TR 3 Date de lancement à la commercialisation: 13 avril 2026 AL MARSA Tr 3 est un complexe d... Plus d'infos Chrafate CHRAFATE TR 7 Des lots de terrain idéalement situés, destinés à la construction d’équipements privés. Bé... Plus d'infos Prise de rendez-vous Demande d’information Être contacté HAUT Nos Produits Projets Annonces commerciales Evénements Catalogues eServices Client mystère Prise de Rendez-vous en ligne Simulation de crédit Appels d’offres eRéclamation Déposer une e-réclamation Suivi des réclamations Notre Réseau Al Omrane Tanger-Tétouan-Al Hoceïma Al Omrane Casablanca - Settat Al Omrane Fès Meknès Al Omrane Darâa Tafilalet Al Omrane Région de l'Oriental Al Omrane Marrakech Safi Al Omrane Souss Massa Al Omrane Al Janoub Al Omrane Beni Mellal Khenifra Al Omrane Rabat-Salé-Kénitra Média Communiqués de presse Actualités Rapports Le Groupe A propos Chiffres clés Engagement citoyen Offre d’emplois Candidature Politique de recrutement Suivez-nous sur Facebook Youtube Instagram twitter Contactez-nous sur 080 100 15 16 Prise de rendez-vous © AL-OMRANE 2025 - By Actualités Evénements Médiathèque Contactez nous Plan de site FAQ",
-          "is_primary": true,
-          "launch_weight": 42,
-          "confidence_weight": 43,
+          "collector": "listings.portals",
+          "channel": "listing",
+          "source": "Mubawab Tanger Appartements",
+          "signal_type": "listing_detail",
+          "title": "Vend appartement à View Tower. Surface totale 88 m²",
+          "url": "https://www.mubawab.ma/fr/pa/7596444/vend-appartement-%C3%A0-view-tower-surface-totale-88-m%C2%B2",
+          "text": "Vend appartement à View Tower. Surface totale 88 m² Vend appartement à View Tower. Surface totale 88 m² - Mubawab Vend appartement à View Tower. Surface totale 88 m² Le 1er site immobilier du Maroc Contacter l'annonceur Obtenir une offre de financement Désirez-vous être rappelé ? Partager Un espace généreux avec 2 chambres lumineuses, une cuisine fermée, des finitions de qualité supérieure et des vues imprenables sur la ville. Prix : à Vend appartement à View Tower. Surface totale 88 m² - Mubawab Le 1er site immobilier du Maroc Estimer votre bien Immobilier neuf Fr العربية English Español Nederlands Italiano Se connecter Publier une annonce Traitement en cours... Immobilier Maroc Immobilier Tanger Appartements Tanger Tanger City Center 19 2 760 000 DH Favori Partager Catalogue PDF Vidéo M'avertir d'une baisse de prix! 86 m² 3 Pièces 2 Chambres Tanger City Center à Tanger 2 760 000 DH 86 m² 3 Pièces 2 Chambres Contacter 1 de 19 Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1-784) Sainte-Hélène (+290) Sainte-Lucie (+1-758) Samoa (+685) Samoa américaine (+1-684) Sao Tomé-et-Principe (+239) Serbie (+381) Seychelles (+248) Sierra Leone (+232) Singapour (+65) Slovaquie (+421) Slovénie (+386) Somalie (+252) Soudan (+249) Soudan du Sud (+211) Sri Lanka (+94) Suisse (+41) Suriname (+597) Suède (+46) Svalbard et île de Jan Mayen (+47) Swaziland (+268) Syrie (+963) Sénégal (+221) Tadjikistan (+992) Tanzanie (+255) Taïwan (+886) Tchad (+235) Terres australes françaises (+262) Territoire britannique de l'océan Indien (+246) Thaïlande (+66) Timor-Leste (+670) Togo (+228) Tonga (+676) Trinité-et-Tobago (+1-868) Tunisie (+216) Turkménistan (+993) Turquie (+90) Tuvalu (+688) Ukraine (+380) Uruguay (+598) Vanuatu (+678) Vatican (+379) Venezuela (+58) Vietnam (+84) Yémen (+967) Zambie (+260) Zimbabwe (+263) Égypte (+20) Émirats arabes unis (+971) Équateur (+593) Érythrée (+291) Éthiopie (+251) Île Bouvet (+47) Île Norfolk (+672) Île de Man (+44) Îles Caïmans (+1-345) Îles Cook (+682) Îles Féroé (+298) Îles Heard et McDonald (+672) Îles Marshall (+692) Îles Salomon (+677) Îles Turks et Caicos (+1-649) Îles Vierges américaines (+1-340) Îles Vierges britanniques (+1-284) Îles d'Åland (+358-18) Îles mineures éloignées des États-Unis (+1) Votre Téléphone * Décrivez vos besoins spécifiques En cliquant sur \"Contacter\", vous acceptez nos Conditions Générales d’Utilisation et notre Politique de Protection des Données . Contacter View Tower Vend appartement à View Tower. Surface totale 88 m² Un espace généreux avec 2 chambres lumineuses, une cuisine fermée, des finitions de qualité supérieure et des vues imprenables sur la ville. Prix : à partir de 2 180 000 Caractéristiques générales Type de bien Appartement Etat Jamais habité / rénové Standing Haut standing État Finalisé Tanger City Center à Tanger Voir la carte Écoles Hôpitaux Disponibilité des logements 2 590 000 DH 2 chambres, 87 m² Tanger 1 450 000 DH 3 chambres, 57 m² Tanger 2 000 000 DH 4 chambres, 57 m² Tanger 3 915 000 DH 3 chambres, 124 m² Tanger Contacter l'annonceur Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-",
+          "is_primary": false,
+          "launch_weight": 4,
+          "confidence_weight": 12,
           "metadata": {
-            "promoter_hint": "Al Omrane"
+            "portal": "Mubawab Tanger Appartements"
           },
           "reasons": [
-            "nouvelle page promoteur",
-            "type: villa",
-            "ville: Tanger",
-            "marqueur de lancement détecté"
+            "signal listing secondaire",
+            "prix détecté: 2760000 MAD",
+            "type: apartment_3_bed",
+            "ville: Tanger"
           ],
-          "discovered_at": "2026-07-16T07:23:58.747408+00:00",
+          "discovered_at": "2026-07-17T07:24:45.391501+00:00",
           "city_hint": "Tanger",
           "zone_hint": null,
-          "promoter_hint": "Al Omrane",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": null,
+          "price_mad": 2760000,
+          "signal_id": "f05d2eedadd3977daa57789d6ee1050dacde3194"
+        },
+        {
+          "collector": "listings.portals",
+          "channel": "listing",
+          "source": "Mubawab Tanger Appartements",
+          "signal_type": "listing_detail",
+          "title": "Appartement en vente à View Tower. 3 chambres agréables",
+          "url": "https://www.mubawab.ma/fr/pa/7595991/appartement-en-vente-%C3%A0-view-tower-3-chambres-agr%C3%A9ables",
+          "text": "Appartement en vente à View Tower. 3 chambres agréables Appartement en vente à View Tower. 3 chambres agréables - Mubawab Appartement en vente à View Tower. 3 chambres agréables Le 1er site immobilier du Maroc Contacter l'annonceur Obtenir une offre de financement Désirez-vous être rappelé ? Partager Un espace généreux avec 3 chambres lumineuses, une cuisine moderne équipée, des finitions de qualité supérieure et des vues imprenables sur la ville Appartement en vente à View Tower. 3 chambres agréables - Mubawab Le 1er site immobilier du Maroc Estimer votre bien Immobilier neuf Fr العربية English Español Nederlands Italiano Se connecter Publier une annonce Traitement en cours... Immobilier Maroc Immobilier Tanger Appartements Tanger Tanger City Center 19 3 915 000 DH Favori Partager Catalogue PDF Vidéo M'avertir d'une baisse de prix! 124 m² 4 Pièces 3 Chambres Tanger City Center à Tanger 3 915 000 DH 124 m² 4 Pièces 3 Chambres Contacter 1 de 19 Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1-784) Sainte-Hélène (+290) Sainte-Lucie (+1-758) Samoa (+685) Samoa américaine (+1-684) Sao Tomé-et-Principe (+239) Serbie (+381) Seychelles (+248) Sierra Leone (+232) Singapour (+65) Slovaquie (+421) Slovénie (+386) Somalie (+252) Soudan (+249) Soudan du Sud (+211) Sri Lanka (+94) Suisse (+41) Suriname (+597) Suède (+46) Svalbard et île de Jan Mayen (+47) Swaziland (+268) Syrie (+963) Sénégal (+221) Tadjikistan (+992) Tanzanie (+255) Taïwan (+886) Tchad (+235) Terres australes françaises (+262) Territoire britannique de l'océan Indien (+246) Thaïlande (+66) Timor-Leste (+670) Togo (+228) Tonga (+676) Trinité-et-Tobago (+1-868) Tunisie (+216) Turkménistan (+993) Turquie (+90) Tuvalu (+688) Ukraine (+380) Uruguay (+598) Vanuatu (+678) Vatican (+379) Venezuela (+58) Vietnam (+84) Yémen (+967) Zambie (+260) Zimbabwe (+263) Égypte (+20) Émirats arabes unis (+971) Équateur (+593) Érythrée (+291) Éthiopie (+251) Île Bouvet (+47) Île Norfolk (+672) Île de Man (+44) Îles Caïmans (+1-345) Îles Cook (+682) Îles Féroé (+298) Îles Heard et McDonald (+672) Îles Marshall (+692) Îles Salomon (+677) Îles Turks et Caicos (+1-649) Îles Vierges américaines (+1-340) Îles Vierges britanniques (+1-284) Îles d'Åland (+358-18) Îles mineures éloignées des États-Unis (+1) Votre Téléphone * Décrivez vos besoins spécifiques En cliquant sur \"Contacter\", vous acceptez nos Conditions Générales d’Utilisation et notre Politique de Protection des Données . Contacter View Tower Appartement en vente à View Tower. 3 chambres agréables Un espace généreux avec 3 chambres lumineuses, une cuisine moderne équipée, des finitions de qualité supérieure et des vues imprenables sur la ville et sur la mer. Prix: à partir de 3 915 000 dh Caractéristiques générales Type de bien Appartement Etat À rénover Standing Haut standing État Finalisé Vue sur mer Tanger City Center à Tanger Voir la carte Écoles Hôpitaux Disponibilité des logements 1 960 000 DH 4 chambres, 89 m² Tanger 2 760 000 DH 4 chambres, 86 m² Tanger 3 915 000 DH 4 chambres, 124 m² Tanger 2 000 000 DH 57 m² Tanger Contacter l'annonceur Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (Franc",
+          "is_primary": false,
+          "launch_weight": 4,
+          "confidence_weight": 12,
+          "metadata": {
+            "portal": "Mubawab Tanger Appartements"
+          },
+          "reasons": [
+            "signal listing secondaire",
+            "prix détecté: 3915000 MAD",
+            "type: apartment_3_bed",
+            "ville: Tanger"
+          ],
+          "discovered_at": "2026-07-17T07:24:56.732122+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": null,
+          "price_mad": 3915000,
+          "signal_id": "3736c47be4609705bc8af3be1a3b764a5d3df2ec"
+        },
+        {
+          "collector": "listings.portals",
+          "channel": "listing",
+          "source": "Mubawab Tanger Villas",
+          "signal_type": "listing_detail",
+          "title": "Splendide villa à vendre à Achakar. Surface de 546 m². Place...",
+          "url": "https://www.mubawab.ma/fr/pa/8342988/splendide-villa-%C3%A0-vendre-%C3%A0-achakar-surface-de-546-m%C2%B2-places-de-stationnement-et-jardin",
+          "text": "Splendide villa à vendre à Achakar. Surface de 546 m². Place... Splendide villa à vendre à Achakar. Surface de 546 m². Places de stationnement et jardin - Mubawab Splendide villa à vendre à Achakar. Surface de 546 m². Places de stationnement et jardin Le 1er site immobilier du Maroc Contacter l'annonceur Obtenir une offre de financement Désirez-vous être rappelé ? Partager Raffinement et confort pour cette villa à vendre. 4 chambres, 4 salles de bains, 546 m². 5 pièces lumineuses. Projet neuf. Cette superbe villa est Splendide villa à vendre à Achakar. Surface de 546 m². Places de stationnement et jardin - Mubawab Le 1er site immobilier du Maroc Estimer votre bien Immobilier neuf Fr العربية English Español Nederlands Italiano Se connecter Publier une annonce Traitement en cours... Immobilier Maroc Immobilier Tanger Villas & maisons de luxe Tanger Achakar 10 Prix à consulter Favori Partager Demander le prix 546 m² 5 Pièces 4 Chambres 4 Salles de bains Achakar à Tanger Prix à consulter 546 m² 5 Pièces 4 Chambres 4 Salles de bains Contacter 1 de 10 Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1-784) Sainte-Hélène (+290) Sainte-Lucie (+1-758) Samoa (+685) Samoa américaine (+1-684) Sao Tomé-et-Principe (+239) Serbie (+381) Seychelles (+248) Sierra Leone (+232) Singapour (+65) Slovaquie (+421) Slovénie (+386) Somalie (+252) Soudan (+249) Soudan du Sud (+211) Sri Lanka (+94) Suisse (+41) Suriname (+597) Suède (+46) Svalbard et île de Jan Mayen (+47) Swaziland (+268) Syrie (+963) Sénégal (+221) Tadjikistan (+992) Tanzanie (+255) Taïwan (+886) Tchad (+235) Terres australes françaises (+262) Territoire britannique de l'océan Indien (+246) Thaïlande (+66) Timor-Leste (+670) Togo (+228) Tonga (+676) Trinité-et-Tobago (+1-868) Tunisie (+216) Turkménistan (+993) Turquie (+90) Tuvalu (+688) Ukraine (+380) Uruguay (+598) Vanuatu (+678) Vatican (+379) Venezuela (+58) Vietnam (+84) Yémen (+967) Zambie (+260) Zimbabwe (+263) Égypte (+20) Émirats arabes unis (+971) Équateur (+593) Érythrée (+291) Éthiopie (+251) Île Bouvet (+47) Île Norfolk (+672) Île de Man (+44) Îles Caïmans (+1-345) Îles Cook (+682) Îles Féroé (+298) Îles Heard et McDonald (+672) Îles Marshall (+692) Îles Salomon (+677) Îles Turks et Caicos (+1-649) Îles Vierges américaines (+1-340) Îles Vierges britanniques (+1-284) Îles d'Åland (+358-18) Îles mineures éloignées des États-Unis (+1) Votre Téléphone * Décrivez vos besoins spécifiques En cliquant sur \"Contacter\", vous acceptez nos Conditions Générales d’Utilisation et notre Politique de Protection des Données . Contacter Glorious Achakar Splendide villa à vendre à Achakar. Surface de 546 m². Places de stationnement et jardin Raffinement et confort pour cette villa à vendre. 4 chambres, 4 salles de bains, 546 m². 5 pièces lumineuses. Projet neuf. Cette superbe villa est en vente à Achakar. Profitez d'un beau jardin et d'une terrasse. Dispose également d'un garage. Spacieux salon marocain traditionnel. Soyez le premier à visiter cette villa en vente à Tanger. Piscine. Caractéristiques générales Type de bien Villa Etat Jamais habité / rénové Standing Haut standing État En cours de construction Livraison: décembre 2029 Jardin Terrasse Garage Piscine Chambre rangement Salon Marocain Achakar à Tanger Voir la carte Écoles Hôpitaux Disponibilité des logements Prix à consulter 4 chambres, 226 m² Tanger Prix à consulter 4 chambres, 276 m² Tanger Prix à consulter 4 chambres, 339 m² Tanger Prix à consulter 4 chambres, 226 m² Tanger Contacter l'annonceur Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+",
+          "is_primary": false,
+          "launch_weight": 4,
+          "confidence_weight": 13,
+          "metadata": {
+            "portal": "Mubawab Tanger Villas"
+          },
+          "reasons": [
+            "signal listing secondaire",
+            "type: villa",
+            "ville: Tanger",
+            "zone: Achakar"
+          ],
+          "discovered_at": "2026-07-17T07:25:01.029488+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": "Achakar",
+          "promoter_hint": null,
           "asset_type_hint": "villa",
           "project_name_hint": null,
           "price_mad": null,
-          "signal_id": "7d475c484d4e4c3f5aadf50588fe63bf21103d05"
+          "signal_id": "c09ecee9502e391f99472d69c1fe19b95384fb4f"
+        },
+        {
+          "collector": "listings.portals",
+          "channel": "listing",
+          "source": "Mubawab Casablanca Appartements",
+          "signal_type": "listing_detail",
+          "title": "Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréab...",
+          "url": "https://www.mubawab.ma/fr/pa/8330417/appartement-%C3%A0-l-achat-%C3%A0-le-domaine-d-anfa-2-chambres-agr%C3%A9ables-concierge-et-climatisation",
+          "text": "Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréab... Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréables. Concierge et climatisation - Mubawab Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréables. Concierge et climatisation Le 1er site immobilier du Maroc Contacter l'annonceur Obtenir une offre de financement Désirez-vous être rappelé ? Partager Appartement idéal à la vente. Prix 2 950 000 DH. 2 chambres, 2 salles de bains, surface 115 m². 3 pièces. Projet neuf. Résidence parfaitement équipée Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréables. Concierge et climatisation - Mubawab Le 1er site immobilier du Maroc Estimer votre bien Immobilier neuf Fr العربية English Español Nederlands Italiano Se connecter Publier une annonce Traitement en cours... Immobilier Maroc Immobilier Casablanca Appartements Casablanca Le Domaine D'Anfa 24 2 950 000 DH Favori Partager Catalogue PDF M'avertir d'une baisse de prix! 115 m² 3 Pièces 2 Chambres 2 Salles de bains Le Domaine D'Anfa à Casablanca 2 950 000 DH 115 m² 3 Pièces 2 Chambres 2 Salles de bains Contacter 1 de 24 Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1-784) Sainte-Hélène (+290) Sainte-Lucie (+1-758) Samoa (+685) Samoa américaine (+1-684) Sao Tomé-et-Principe (+239) Serbie (+381) Seychelles (+248) Sierra Leone (+232) Singapour (+65) Slovaquie (+421) Slovénie (+386) Somalie (+252) Soudan (+249) Soudan du Sud (+211) Sri Lanka (+94) Suisse (+41) Suriname (+597) Suède (+46) Svalbard et île de Jan Mayen (+47) Swaziland (+268) Syrie (+963) Sénégal (+221) Tadjikistan (+992) Tanzanie (+255) Taïwan (+886) Tchad (+235) Terres australes françaises (+262) Territoire britannique de l'océan Indien (+246) Thaïlande (+66) Timor-Leste (+670) Togo (+228) Tonga (+676) Trinité-et-Tobago (+1-868) Tunisie (+216) Turkménistan (+993) Turquie (+90) Tuvalu (+688) Ukraine (+380) Uruguay (+598) Vanuatu (+678) Vatican (+379) Venezuela (+58) Vietnam (+84) Yémen (+967) Zambie (+260) Zimbabwe (+263) Égypte (+20) Émirats arabes unis (+971) Équateur (+593) Érythrée (+291) Éthiopie (+251) Île Bouvet (+47) Île Norfolk (+672) Île de Man (+44) Îles Caïmans (+1-345) Îles Cook (+682) Îles Féroé (+298) Îles Heard et McDonald (+672) Îles Marshall (+692) Îles Salomon (+677) Îles Turks et Caicos (+1-649) Îles Vierges américaines (+1-340) Îles Vierges britanniques (+1-284) Îles d'Åland (+358-18) Îles mineures éloignées des États-Unis (+1) Votre Téléphone * Décrivez vos besoins spécifiques En cliquant sur \"Contacter\", vous acceptez nos Conditions Générales d’Utilisation et notre Politique de Protection des Données . Contacter Next House Domaine d'Anfa Appartement à l'achat à Le Domaine D'Anfa. 2 chambres agréables. Concierge et climatisation Appartement idéal à la vente. Prix 2 950 000 DH. 2 chambres, 2 salles de bains, surface 115 m². 3 pièces. Projet neuf. Résidence parfaitement équipée avec ascenseur et parking. Vous profiterez également d'un jardin et d'une belle terrasse. Cet appartement est proposé à la vente à Le Domaine D'Anfa. Nombreux équipements dont climatisation et piscine. La résidence dispose également d'un service de conciergerie,. Confort et sécurité avec chauffage central et double vitrage. Soyez le premier à visiter cet appartement en vente à Casablanca. Équipé d'une antenne parabolique. Sécurité dans la résidence. Cuisine équipée. Caractéristiques générales Type de bien Appartement Etat Jamais habité / rénové Standing Haut standing État En cours de construction Livraison: janvier 2028 Jardin Terrasse Garage Ascenseur Piscine Concierge Antenne parabolique Climatisation Chauffage central Sécurité Double vitrage Cuisine équipée Le Domaine D'Anfa à Casablanca Voir la carte Écoles Hôpitaux Disponibilité des logements 3 510 000 DH 3 chambres, 145 m² Casablanca 5 210 000 DH 3 chambres, 297 m² Casablanca 3 250 000 DH 3 chambres, 127 m² Casablanca 5 210 000 DH 3 chambres, 297 m² Casablanca Contacter l'annonceur Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldav",
+          "is_primary": false,
+          "launch_weight": 4,
+          "confidence_weight": 12,
+          "metadata": {
+            "portal": "Mubawab Casablanca Appartements"
+          },
+          "reasons": [
+            "signal listing secondaire",
+            "prix détecté: 2950000 MAD",
+            "type: apartment_3_bed",
+            "ville: Casablanca",
+            "zone: Anfa"
+          ],
+          "discovered_at": "2026-07-17T07:25:19.077173+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Anfa",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": null,
+          "price_mad": 2950000,
+          "signal_id": "130ecd1f8a25e687530931b6ff6bc3242c6e6c47"
+        },
+        {
+          "collector": "listings.portals",
+          "channel": "listing",
+          "source": "Mubawab Casablanca Appartements",
+          "signal_type": "listing_detail",
+          "title": "Vend appartement à Le Domaine D'Anfa. Surface totale 115 m²...",
+          "url": "https://www.mubawab.ma/fr/pa/8330418/vend-appartement-%C3%A0-le-domaine-d-anfa-surface-totale-115-m%C2%B2-avec-ascenseur-et-terrasse",
+          "text": "Vend appartement à Le Domaine D'Anfa. Surface totale 115 m²... Vend appartement à Le Domaine D'Anfa. Surface totale 115 m². Avec ascenseur et terrasse - Mubawab Vend appartement à Le Domaine D'Anfa. Surface totale 115 m². Avec ascenseur et terrasse Le 1er site immobilier du Maroc Contacter l'annonceur Obtenir une offre de financement Désirez-vous être rappelé ? Partager Opportunité unique pour cet appartement à vendre. Prix 2 950 000 DH. 3 pièces, 2 salles de bains, 115 m². 2 chambres. Projet neuf. Résidence Vend appartement à Le Domaine D'Anfa. Surface totale 115 m². Avec ascenseur et terrasse - Mubawab Le 1er site immobilier du Maroc Estimer votre bien Immobilier neuf Fr العربية English Español Nederlands Italiano Se connecter Publier une annonce Traitement en cours... Immobilier Maroc Immobilier Casablanca Appartements Casablanca Le Domaine D'Anfa 24 2 950 000 DH Favori Partager Catalogue PDF M'avertir d'une baisse de prix! 115 m² 3 Pièces 2 Chambres 2 Salles de bains Le Domaine D'Anfa à Casablanca 2 950 000 DH 115 m² 3 Pièces 2 Chambres 2 Salles de bains Contacter 1 de 24 Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1-784) Sainte-Hélène (+290) Sainte-Lucie (+1-758) Samoa (+685) Samoa américaine (+1-684) Sao Tomé-et-Principe (+239) Serbie (+381) Seychelles (+248) Sierra Leone (+232) Singapour (+65) Slovaquie (+421) Slovénie (+386) Somalie (+252) Soudan (+249) Soudan du Sud (+211) Sri Lanka (+94) Suisse (+41) Suriname (+597) Suède (+46) Svalbard et île de Jan Mayen (+47) Swaziland (+268) Syrie (+963) Sénégal (+221) Tadjikistan (+992) Tanzanie (+255) Taïwan (+886) Tchad (+235) Terres australes françaises (+262) Territoire britannique de l'océan Indien (+246) Thaïlande (+66) Timor-Leste (+670) Togo (+228) Tonga (+676) Trinité-et-Tobago (+1-868) Tunisie (+216) Turkménistan (+993) Turquie (+90) Tuvalu (+688) Ukraine (+380) Uruguay (+598) Vanuatu (+678) Vatican (+379) Venezuela (+58) Vietnam (+84) Yémen (+967) Zambie (+260) Zimbabwe (+263) Égypte (+20) Émirats arabes unis (+971) Équateur (+593) Érythrée (+291) Éthiopie (+251) Île Bouvet (+47) Île Norfolk (+672) Île de Man (+44) Îles Caïmans (+1-345) Îles Cook (+682) Îles Féroé (+298) Îles Heard et McDonald (+672) Îles Marshall (+692) Îles Salomon (+677) Îles Turks et Caicos (+1-649) Îles Vierges américaines (+1-340) Îles Vierges britanniques (+1-284) Îles d'Åland (+358-18) Îles mineures éloignées des États-Unis (+1) Votre Téléphone * Décrivez vos besoins spécifiques En cliquant sur \"Contacter\", vous acceptez nos Conditions Générales d’Utilisation et notre Politique de Protection des Données . Contacter Next House Domaine d'Anfa Vend appartement à Le Domaine D'Anfa. Surface totale 115 m². Avec ascenseur et terrasse Opportunité unique pour cet appartement à vendre. Prix 2 950 000 DH. 3 pièces, 2 salles de bains, 115 m². 2 chambres. Projet neuf. Résidence parfaitement équipée avec ascenseur et parking. Vous profiterez également d'un jardin et d'une belle terrasse. Cet appartement est proposé à la vente à Le Domaine D'Anfa. Appréciez le confort de la climatisation. La résidence dispose également d'un service de concierge et d'une piscine. Équipé d'une parabole. La résidence est sécurisée. Contactez-nous pour visiter cet appartement à vendre à Casablanca. Cuisine entièrement équipée. Tranquillité garantie avec fenêtres en double vitrage. Caractéristiques générales Type de bien Appartement Etat Jamais habité / rénové Standing Haut standing État En cours de construction Livraison: janvier 2028 Jardin Terrasse Garage Ascenseur Piscine Concierge Antenne parabolique Climatisation Sécurité Double vitrage Cuisine équipée Le Domaine D'Anfa à Casablanca Voir la carte Écoles Hôpitaux Disponibilité des logements 3 510 000 DH 3 chambres, 145 m² Casablanca 3 250 000 DH 3 chambres, 127 m² Casablanca 5 210 000 DH 3 chambres, 297 m² Casablanca Contacter l'annonceur Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382",
+          "is_primary": false,
+          "launch_weight": 4,
+          "confidence_weight": 12,
+          "metadata": {
+            "portal": "Mubawab Casablanca Appartements"
+          },
+          "reasons": [
+            "signal listing secondaire",
+            "prix détecté: 2950000 MAD",
+            "type: apartment_3_bed",
+            "ville: Casablanca",
+            "zone: Anfa"
+          ],
+          "discovered_at": "2026-07-17T07:25:32.393575+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Anfa",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": null,
+          "price_mad": 2950000,
+          "signal_id": "84551384e3abdc841c31917fdceef76440057f5d"
         }
       ]
     }
-  ],
-  "digest": []
+  ]
 }
