@@ -1,4 +1,506 @@
 {
   "immediate": [],
-  "digest": []
+  "digest": [
+    {
+      "project_id": "19fc7f029c7322905103cbe4ad66cd3c33b16ee6",
+      "name": "Résidence Trianon Marrakech",
+      "city": "Marrakech",
+      "zone": "Palmeraie",
+      "promoter": null,
+      "asset_type": "villa",
+      "first_detected_at": "2026-07-20T08:13:03.469871+00:00",
+      "last_updated_at": "2026-07-20T08:13:03.469940+00:00",
+      "launch_score": 76,
+      "confidence_score": 100,
+      "investment_score": 88,
+      "urgency_score": 88,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "Résidence Trianon Marrakech | Promoteur: à confirmer | Ville: Marrakech | Zone: Palmeraie | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "Résidence Trianon Marrakech",
+        "Trianon Marrakech"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Résidence Trianon Marrakech"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823"
+      ],
+      "evidence": {
+        "signal_count": 2,
+        "primary_signal_count": 2,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "geo": {
+          "lat": 31.6295,
+          "lng": -7.9811,
+          "sea_distance_km": 180,
+          "station_distance_km": 5,
+          "highway_distance_km": 6
+        },
+        "price_band": "unknown",
+        "price_evolution": {
+          "trend": "unknown",
+          "summary": "Aucune série de prix fiable pour le moment."
+        },
+        "roi": {
+          "label": "Élevé",
+          "five_year_upside_score": 86
+        },
+        "project_slug": "r-sidence-trianon-marrakech-19fc7f02",
+        "infrastructure": {
+          "sea_distance_km": 180,
+          "station_distance_km": 5,
+          "highway_distance_km": 6
+        },
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Résidence Trianon Marrakech · ad #963816950040422",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422",
+            "source": "Résidence Trianon Marrakech",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Résidence Trianon Marrakech · ad #4357662654498823",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823",
+            "source": "Résidence Trianon Marrakech",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Villa",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "price_min": null,
+          "price_max": null
+        },
+        "ai_analysis": {
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+          ],
+          "risks": [
+            "Le prix public n'est pas encore confirmé.",
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Résidence Trianon Marrakech · ad #963816950040422",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422",
+            "source": "Résidence Trianon Marrakech",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Résidence Trianon Marrakech · ad #4357662654498823",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823",
+            "source": "Résidence Trianon Marrakech",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [
+          "assets/meta/meta-ad-963816950040422.jpg"
+        ],
+        "videos": [],
+        "changes": [
+          "Confidence score en hausse: 57 → 100",
+          "Urgency score en hausse: 55 → 88",
+          "Statut projet: monitor → urgent"
+        ],
+        "is_new_project": false
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 963816950040422",
+        "type: villa",
+        "ville: Marrakech",
+        "publicité Meta exacte détectée: ad_id 4357662654498823",
+        "zone: Palmeraie"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-07-20T08:13:03.469871+00:00",
+          "channel": "advertising",
+          "source": "Résidence Trianon Marrakech",
+          "title": "Résidence Trianon Marrakech · ad #963816950040422",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422"
+        },
+        {
+          "detected_at": "2026-07-20T08:13:03.469940+00:00",
+          "channel": "advertising",
+          "source": "Résidence Trianon Marrakech",
+          "title": "Résidence Trianon Marrakech · ad #4357662654498823",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Résidence Trianon Marrakech",
+          "signal_type": "meta_ad",
+          "title": "Résidence Trianon Marrakech · ad #963816950040422",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422",
+          "text": "Résidence Trianon Marrakech Résidence Trianon Marrakech 📍Résidence hôtelière haut de gamme à Marrakech 🏡 Appartements, duplex & villas pour des séjours d’exception 🌴 Design raffiné, nature & sérénité RESIDENCETRIANON.MA Chat with us Send Message RESIDENCETRIANON.MA Chat with us Send Message RESIDENCETRIANON.MA Chat with us Send Message RESIDENCETRIANON.MA Chat with us Send Message RESIDENCETRIANON.MA Chat with us Send Message Voir plus État du système API Ad LibraryÀ propos des publicités et de l’utilisation des donnéesConfidentialitéConditionsCookies Meta © 2026 | Français (France) https://l.facebook.com/l.php?u=https%3A%2F%2Fkoufis.ma%2Fcollections%2Fcollection-2026&h=AUA96jg2g9m2fWOkRKEwQei_XRc7GyxfLVcH6S8lLwX_BEU2Fk6fw7ZoAZiV2zmw5sewFIlcM2bM-6cpyIwTVkSADdScBL8mpt8UCfJ3x-31qVmtP4VnalpMf0tlEPAvbF6b11yHckTSqkFc",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 45,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "963816950040422",
+            "page_name": "Résidence Trianon Marrakech",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fkoufis.ma%2Fcollections%2Fcollection-2026&h=AUA96jg2g9m2fWOkRKEwQei_XRc7GyxfLVcH6S8lLwX_BEU2Fk6fw7ZoAZiV2zmw5sewFIlcM2bM-6cpyIwTVkSADdScBL8mpt8UCfJ3x-31qVmtP4VnalpMf0tlEPAvbF6b11yHckTSqkFc",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "résidence Marrakech",
+            "city_hint": "Marrakech",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 963816950040422",
+            "type: villa",
+            "ville: Marrakech"
+          ],
+          "discovered_at": "2026-07-20T08:13:03.469871+00:00",
+          "city_hint": "Marrakech",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": "villa",
+          "project_name_hint": "Résidence Trianon Marrakech",
+          "price_mad": null,
+          "signal_id": "54c9d8519271d872b765e9c576bd1fa01cc78a0a"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Résidence Trianon Marrakech",
+          "signal_type": "meta_ad",
+          "title": "Résidence Trianon Marrakech · ad #4357662654498823",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823",
+          "text": "Résidence Trianon Marrakech Résidence Trianon Marrakech ☀️ Cet été, offrez-vous plus qu’un séjour. Offrez-vous un chez-vous à Marrakech. Au cœur de la Palmeraie de Bab Atlas, la Résidence Trianon vous ouvre les portes d’un art de vivre où chaque détail a été pensé pour vous : le confort d’un appartement, les attentions d’un hôtel. ✨ Ce qui vous attend ici : 🏡 Appartements 2-3 chambres & villas privées, dans un cadre sécurisé et intimiste 🍳 Une cuisine tout équipée, pour vivre à votre rythme 🧺 Ménage quotidien et restauration au bord de l’eau, pour ne penser à rien 🎾 Padel, terrain multisport et fitness, pour les envies d’action 🌴 Piscine, jardins paysagers et Kids Club, pour que petits et grands trouvent leur bonheur Marrakech se vit autrement quand on a une adresse comme celle-ci. 🌞 Notre offre spéciale été vous attend. 📍 Résidence Trianon Marrakech, Bab Atlas Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus Chat with us Réserver ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fkoufis.ma%2Fcollections%2Fcollection-2026&h=AUA96jg2g9m2fWOkRKEwQei_XRc7GyxfLVcH6S8lLwX_BEU2Fk6fw7ZoAZiV2zmw5sewFIlcM2bM-6cpyIwTVkSADdScBL8mpt8UCfJ3x-31qVmtP4VnalpMf0tlEPAvbF6b11yHckTSqkFc",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 45,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "4357662654498823",
+            "page_name": "Résidence Trianon Marrakech",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fkoufis.ma%2Fcollections%2Fcollection-2026&h=AUA96jg2g9m2fWOkRKEwQei_XRc7GyxfLVcH6S8lLwX_BEU2Fk6fw7ZoAZiV2zmw5sewFIlcM2bM-6cpyIwTVkSADdScBL8mpt8UCfJ3x-31qVmtP4VnalpMf0tlEPAvbF6b11yHckTSqkFc",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "résidence Marrakech",
+            "city_hint": "Marrakech",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 4357662654498823",
+            "type: villa",
+            "ville: Marrakech",
+            "zone: Palmeraie"
+          ],
+          "discovered_at": "2026-07-20T08:13:03.469940+00:00",
+          "city_hint": "Marrakech",
+          "zone_hint": "Palmeraie",
+          "promoter_hint": null,
+          "asset_type_hint": "villa",
+          "project_name_hint": "Résidence Trianon Marrakech",
+          "price_mad": null,
+          "signal_id": "fa6671facefba6247ee1589eecfd4e2c8add3e23"
+        }
+      ]
+    },
+    {
+      "project_id": "9b6fa2b33597a666b3ed60b341cef98f98477466",
+      "name": "Mobilia Rabat",
+      "city": "Rabat",
+      "zone": "Agdal",
+      "promoter": null,
+      "asset_type": "apartment_unknown",
+      "first_detected_at": "2026-07-20T08:12:18.778948+00:00",
+      "last_updated_at": "2026-07-20T08:12:18.778967+00:00",
+      "launch_score": 76,
+      "confidence_score": 96,
+      "investment_score": 54,
+      "urgency_score": 79,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "Mobilia Rabat | Promoteur: à confirmer | Ville: Rabat | Zone: Agdal | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "Mobilia Rabat"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Mobilia Rabat"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575"
+      ],
+      "evidence": {
+        "signal_count": 2,
+        "primary_signal_count": 2,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "geo": {
+          "lat": 34.0209,
+          "lng": -6.8416,
+          "sea_distance_km": 7,
+          "station_distance_km": 4,
+          "highway_distance_km": 4
+        },
+        "price_band": "unknown",
+        "price_evolution": {
+          "trend": "unknown",
+          "summary": "Aucune série de prix fiable pour le moment."
+        },
+        "roi": {
+          "label": "Prudent",
+          "five_year_upside_score": 54
+        },
+        "project_slug": "mobilia-rabat-9b6fa2b3",
+        "infrastructure": {
+          "sea_distance_km": 7,
+          "station_distance_km": 4,
+          "highway_distance_km": 4
+        },
+        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Mobilia Rabat · ad #1620969222885314",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+            "source": "Mobilia Rabat",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Mobilia Rabat · ad #1031718602760575",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+            "source": "Mobilia Rabat",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Appartement",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "price_min": null,
+          "price_max": null
+        },
+        "ai_analysis": {
+          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible."
+          ],
+          "risks": [
+            "Le prix public n'est pas encore confirmé.",
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Mobilia Rabat · ad #1620969222885314",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+            "source": "Mobilia Rabat",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Mobilia Rabat · ad #1031718602760575",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+            "source": "Mobilia Rabat",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [],
+        "videos": [],
+        "changes": [
+          "Confidence score en hausse: 54 → 96",
+          "Urgency score en hausse: 47 → 79",
+          "Statut projet: monitor → urgent"
+        ],
+        "is_new_project": false
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 1620969222885314",
+        "type: apartment_unknown",
+        "ville: Rabat",
+        "zone: Agdal",
+        "publicité Meta exacte détectée: ad_id 1031718602760575"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-07-20T08:12:18.778948+00:00",
+          "channel": "advertising",
+          "source": "Mobilia Rabat",
+          "title": "Mobilia Rabat · ad #1620969222885314",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314"
+        },
+        {
+          "detected_at": "2026-07-20T08:12:18.778967+00:00",
+          "channel": "advertising",
+          "source": "Mobilia Rabat",
+          "title": "Mobilia Rabat · ad #1031718602760575",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Mobilia Rabat",
+          "signal_type": "meta_ad",
+          "title": "Mobilia Rabat · ad #1620969222885314",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+          "text": "Mobilia Rabat Mobilia Rabat ✨ BON PLAN MOBILIA RABAT ✨ Vous cherchez à meubler votre maison avec style… sans exploser votre budget ? 👀 👉 Chez Mobilia Rabat, profitez d’une sélection exceptionnelle de mobilier moderne, confortable et au meilleur rapport qualité / prix 💯 🛋️ Salons élégants 🛏️ Chambres complètes 🍽️ Salles à manger tendances 📺 Meubles TV & déco 💥 Des offres exclusives vous attendent en magasin 💥 Des prix qui vont vous surprendre 🚚 Livraison rapide partout au Maroc 🛠️ Montage assuré 🏡 Solution clé en main Rendez-vous dans notre showroom pour 📍 Spécial showroom Rabat Showrooms ouverts Horaires : Lundi au Samedi : 9h à 20h Dimanche : 10h à 19h 📌 Adresses : 15 Avenue Hassan II, Résidence Maryam Agdal – Rabat 📞 0674 06 09 35 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus MAPS.APP.GOO.GL Mobilia Rabat Obtenir les promotions ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBwg52aEjzp4bHRY4kg74LTfVSX_7i4A1SmcW38EM95MXixO6EMUsl1HK5zHZwwfn-XBd4IDxdYAixjJqCDE4RxKw2Can23Qnn-Ppcl-shxi3f3xY8LSULtN7EQVoPChg5WFLlcgSFqV3_U",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1620969222885314",
+            "page_name": "Mobilia Rabat",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBwg52aEjzp4bHRY4kg74LTfVSX_7i4A1SmcW38EM95MXixO6EMUsl1HK5zHZwwfn-XBd4IDxdYAixjJqCDE4RxKw2Can23Qnn-Ppcl-shxi3f3xY8LSULtN7EQVoPChg5WFLlcgSFqV3_U",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "résidence Rabat",
+            "city_hint": "Rabat",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1620969222885314",
+            "type: apartment_unknown",
+            "ville: Rabat",
+            "zone: Agdal"
+          ],
+          "discovered_at": "2026-07-20T08:12:18.778948+00:00",
+          "city_hint": "Rabat",
+          "zone_hint": "Agdal",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Mobilia Rabat",
+          "price_mad": null,
+          "signal_id": "123b9ce302d2fbac2975adc9e61e682982eba933"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Mobilia Rabat",
+          "signal_type": "meta_ad",
+          "title": "Mobilia Rabat · ad #1031718602760575",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+          "text": "Mobilia Rabat Mobilia Rabat Offre spéciale Mobilia Rabat 🔥🚨 . 15 résidence Mariam avenue Hassan 2 Agdal Rabat à 100 m de la gare Rabat ville . Tel : 0662 05 18 00 . #Promo #offre #mobilia #rabat #maroc Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus MAPS.APP.GOO.GL Mobilia Rabat Obtenir les promotions ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBwg52aEjzp4bHRY4kg74LTfVSX_7i4A1SmcW38EM95MXixO6EMUsl1HK5zHZwwfn-XBd4IDxdYAixjJqCDE4RxKw2Can23Qnn-Ppcl-shxi3f3xY8LSULtN7EQVoPChg5WFLlcgSFqV3_U",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1031718602760575",
+            "page_name": "Mobilia Rabat",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBwg52aEjzp4bHRY4kg74LTfVSX_7i4A1SmcW38EM95MXixO6EMUsl1HK5zHZwwfn-XBd4IDxdYAixjJqCDE4RxKw2Can23Qnn-Ppcl-shxi3f3xY8LSULtN7EQVoPChg5WFLlcgSFqV3_U",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "résidence Rabat",
+            "city_hint": "Rabat",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1031718602760575",
+            "type: apartment_unknown",
+            "ville: Rabat",
+            "zone: Agdal"
+          ],
+          "discovered_at": "2026-07-20T08:12:18.778967+00:00",
+          "city_hint": "Rabat",
+          "zone_hint": "Agdal",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Mobilia Rabat",
+          "price_mad": null,
+          "signal_id": "6053fb771bd6f5bc3ddd100cd5e5735c84658910"
+        }
+      ]
+    }
+  ]
 }

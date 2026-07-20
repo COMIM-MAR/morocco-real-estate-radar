@@ -7,7 +7,7 @@
     "promoter": null,
     "asset_type": "apartment_3_bed",
     "first_detected_at": "2026-07-14T12:02:59.412115+00:00",
-    "last_updated_at": "2026-07-19T07:31:42.412370+00:00",
+    "last_updated_at": "2026-07-20T08:11:00.176679+00:00",
     "launch_score": 100,
     "confidence_score": 100,
     "investment_score": 100,
@@ -155,6 +155,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:11:00.176679+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 100,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
+      {
         "observed_at": "2026-07-19T07:31:42.412370+00:00",
         "launch_score": 100,
         "confidence_score": 100,
@@ -212,6 +221,213 @@
     "signals": []
   },
   {
+    "project_id": "19fc7f029c7322905103cbe4ad66cd3c33b16ee6",
+    "name": "Résidence Trianon Marrakech",
+    "city": "Marrakech",
+    "zone": "Palmeraie",
+    "promoter": null,
+    "asset_type": "villa",
+    "first_detected_at": "2026-07-16T07:28:30.627649+00:00",
+    "last_updated_at": "2026-07-20T08:13:03.469940+00:00",
+    "launch_score": 76,
+    "confidence_score": 100,
+    "investment_score": 88,
+    "urgency_score": 88,
+    "recommendation": "Buy",
+    "status": "urgent",
+    "summary": "Résidence Trianon Marrakech | Promoteur: à confirmer | Ville: Marrakech | Zone: Palmeraie | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "prices": {
+      "min": null,
+      "max": null
+    },
+    "aliases": [
+      "Résidence Trianon Marrakech",
+      "Trianon Marrakech"
+    ],
+    "channels": [
+      "advertising"
+    ],
+    "sources": [
+      "Résidence Trianon Marrakech"
+    ],
+    "source_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823"
+    ],
+    "evidence": {
+      "signal_count": 2,
+      "primary_signal_count": 2,
+      "listing_signal_count": 0,
+      "source_count": 1,
+      "channel_count": 1,
+      "primary_channels": [
+        "advertising"
+      ],
+      "secondary_channels": [],
+      "confirmations": [],
+      "confirmation_details": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 31.6295,
+        "lng": -7.9811,
+        "sea_distance_km": 180,
+        "station_distance_km": 5,
+        "highway_distance_km": 6
+      },
+      "price_band": "unknown",
+      "price_evolution": {
+        "trend": "unknown",
+        "summary": "Aucune série de prix fiable pour le moment."
+      },
+      "roi": {
+        "label": "Élevé",
+        "five_year_upside_score": 86
+      },
+      "project_slug": "r-sidence-trianon-marrakech-19fc7f02",
+      "infrastructure": {
+        "sea_distance_km": 180,
+        "station_distance_km": 5,
+        "highway_distance_km": 6
+      },
+      "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+      "source_catalog": [
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Résidence Trianon Marrakech · ad #963816950040422",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422",
+          "source": "Résidence Trianon Marrakech",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Résidence Trianon Marrakech · ad #4357662654498823",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823",
+          "source": "Résidence Trianon Marrakech",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        }
+      ],
+      "practical": {
+        "asset_label": "Villa",
+        "public_status": "Aucune disponibilité publique détectée pour le moment.",
+        "price_min": null,
+        "price_max": null
+      },
+      "ai_analysis": {
+        "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "strengths": [
+          "Le score de confiance est élevé, donc le signal paraît crédible.",
+          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+        ],
+        "risks": [
+          "Le prix public n'est pas encore confirmé.",
+          "Aucune disponibilité publique confirmée sur portail pour l'instant."
+        ],
+        "next_steps": [
+          "Vérifier le site officiel et les pages sociales du promoteur.",
+          "Confirmer les disponibilités et le ticket d'entrée réel.",
+          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+        ]
+      },
+      "official_links": [],
+      "social_links": [
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Résidence Trianon Marrakech · ad #963816950040422",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=963816950040422",
+          "source": "Résidence Trianon Marrakech",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Résidence Trianon Marrakech · ad #4357662654498823",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823",
+          "source": "Résidence Trianon Marrakech",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        }
+      ],
+      "listing_links": [],
+      "news_links": [],
+      "urbanism_links": [],
+      "images": [
+        "assets/meta/meta-ad-963816950040422.jpg"
+      ],
+      "videos": [],
+      "changes": [
+        "Confidence score en hausse: 57 → 100",
+        "Urgency score en hausse: 55 → 88",
+        "Statut projet: monitor → urgent"
+      ],
+      "is_new_project": false
+    },
+    "reasons": [
+      "publicité Meta exacte détectée: ad_id 963816950040422",
+      "type: villa",
+      "ville: Marrakech",
+      "publicité Meta exacte détectée: ad_id 4357662654498823",
+      "zone: Palmeraie"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-20T08:13:03.469940+00:00",
+        "launch_score": 76,
+        "confidence_score": 100,
+        "investment_score": 88,
+        "urgency_score": 88,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
+      {
+        "observed_at": "2026-07-19T07:33:42.730836+00:00",
+        "launch_score": 38,
+        "confidence_score": 57,
+        "investment_score": 88,
+        "urgency_score": 55,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-18T07:05:10.106234+00:00",
+        "launch_score": 38,
+        "confidence_score": 57,
+        "investment_score": 88,
+        "urgency_score": 55,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-17T07:23:30.132690+00:00",
+        "launch_score": 38,
+        "confidence_score": 57,
+        "investment_score": 88,
+        "urgency_score": 55,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-16T07:28:30.627649+00:00",
+        "launch_score": 38,
+        "confidence_score": 57,
+        "investment_score": 88,
+        "urgency_score": 55,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      }
+    ],
+    "signals": []
+  },
+  {
     "project_id": "d724275c1a2732ccaf355b9ee937dd633f919323",
     "name": "Les Palmiers Résidences",
     "city": "Agadir",
@@ -219,7 +435,7 @@
     "promoter": null,
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:04:21.145511+00:00",
-    "last_updated_at": "2026-07-19T07:33:08.787297+00:00",
+    "last_updated_at": "2026-07-20T08:12:27.940351+00:00",
     "launch_score": 100,
     "confidence_score": 100,
     "investment_score": 67,
@@ -411,6 +627,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:12:27.940351+00:00",
+        "launch_score": 100,
+        "confidence_score": 100,
+        "investment_score": 67,
+        "urgency_score": 100,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
+      {
         "observed_at": "2026-07-19T07:33:08.787297+00:00",
         "launch_score": 100,
         "confidence_score": 100,
@@ -475,7 +700,7 @@
     "promoter": null,
     "asset_type": "apartment_3_bed",
     "first_detected_at": "2026-07-15T07:17:40.934361+00:00",
-    "last_updated_at": "2026-07-19T07:29:24.664159+00:00",
+    "last_updated_at": "2026-07-20T08:09:13.025953+00:00",
     "launch_score": 76,
     "confidence_score": 96,
     "investment_score": 89,
@@ -623,6 +848,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:09:13.025953+00:00",
+        "launch_score": 76,
+        "confidence_score": 96,
+        "investment_score": 89,
+        "urgency_score": 86,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
+      {
         "observed_at": "2026-07-19T07:29:24.664159+00:00",
         "launch_score": 76,
         "confidence_score": 96,
@@ -671,6 +905,227 @@
     "signals": []
   },
   {
+    "project_id": "9b6fa2b33597a666b3ed60b341cef98f98477466",
+    "name": "Mobilia Rabat",
+    "city": "Rabat",
+    "zone": "Agdal",
+    "promoter": null,
+    "asset_type": "apartment_unknown",
+    "first_detected_at": "2026-07-14T12:04:12.715021+00:00",
+    "last_updated_at": "2026-07-20T08:12:18.778967+00:00",
+    "launch_score": 76,
+    "confidence_score": 96,
+    "investment_score": 54,
+    "urgency_score": 79,
+    "recommendation": "Buy",
+    "status": "urgent",
+    "summary": "Mobilia Rabat | Promoteur: à confirmer | Ville: Rabat | Zone: Agdal | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "prices": {
+      "min": null,
+      "max": null
+    },
+    "aliases": [
+      "Mobilia Rabat"
+    ],
+    "channels": [
+      "advertising"
+    ],
+    "sources": [
+      "Mobilia Rabat"
+    ],
+    "source_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575"
+    ],
+    "evidence": {
+      "signal_count": 2,
+      "primary_signal_count": 2,
+      "listing_signal_count": 0,
+      "source_count": 1,
+      "channel_count": 1,
+      "primary_channels": [
+        "advertising"
+      ],
+      "secondary_channels": [],
+      "confirmations": [],
+      "confirmation_details": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 34.0209,
+        "lng": -6.8416,
+        "sea_distance_km": 7,
+        "station_distance_km": 4,
+        "highway_distance_km": 4
+      },
+      "price_band": "unknown",
+      "price_evolution": {
+        "trend": "unknown",
+        "summary": "Aucune série de prix fiable pour le moment."
+      },
+      "roi": {
+        "label": "Prudent",
+        "five_year_upside_score": 54
+      },
+      "project_slug": "mobilia-rabat-9b6fa2b3",
+      "infrastructure": {
+        "sea_distance_km": 7,
+        "station_distance_km": 4,
+        "highway_distance_km": 4
+      },
+      "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+      "source_catalog": [
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Mobilia Rabat · ad #1620969222885314",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+          "source": "Mobilia Rabat",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Mobilia Rabat · ad #1031718602760575",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+          "source": "Mobilia Rabat",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        }
+      ],
+      "practical": {
+        "asset_label": "Appartement",
+        "public_status": "Aucune disponibilité publique détectée pour le moment.",
+        "price_min": null,
+        "price_max": null
+      },
+      "ai_analysis": {
+        "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "strengths": [
+          "Le score de confiance est élevé, donc le signal paraît crédible."
+        ],
+        "risks": [
+          "Le prix public n'est pas encore confirmé.",
+          "Aucune disponibilité publique confirmée sur portail pour l'instant."
+        ],
+        "next_steps": [
+          "Vérifier le site officiel et les pages sociales du promoteur.",
+          "Confirmer les disponibilités et le ticket d'entrée réel.",
+          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+        ]
+      },
+      "official_links": [],
+      "social_links": [
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Mobilia Rabat · ad #1620969222885314",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+          "source": "Mobilia Rabat",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        },
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Mobilia Rabat · ad #1031718602760575",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+          "source": "Mobilia Rabat",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        }
+      ],
+      "listing_links": [],
+      "news_links": [],
+      "urbanism_links": [],
+      "images": [],
+      "videos": [],
+      "changes": [
+        "Confidence score en hausse: 54 → 96",
+        "Urgency score en hausse: 47 → 79",
+        "Statut projet: monitor → urgent"
+      ],
+      "is_new_project": false
+    },
+    "reasons": [
+      "publicité Meta exacte détectée: ad_id 1620969222885314",
+      "type: apartment_unknown",
+      "ville: Rabat",
+      "zone: Agdal",
+      "publicité Meta exacte détectée: ad_id 1031718602760575"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-20T08:12:18.778967+00:00",
+        "launch_score": 76,
+        "confidence_score": 96,
+        "investment_score": 54,
+        "urgency_score": 79,
+        "status": "urgent",
+        "recommendation": "Buy"
+      },
+      {
+        "observed_at": "2026-07-19T07:32:58.275238+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 54,
+        "urgency_score": 47,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-18T07:04:33.738865+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 54,
+        "urgency_score": 47,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-17T07:22:51.389796+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 54,
+        "urgency_score": 47,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-16T07:27:47.331420+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 54,
+        "urgency_score": 47,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-15T07:20:44.553732+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 54,
+        "urgency_score": 47,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
+        "observed_at": "2026-07-14T12:04:12.715021+00:00",
+        "launch_score": 38,
+        "confidence_score": 56,
+        "investment_score": 54,
+        "urgency_score": 48,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      }
+    ],
+    "signals": []
+  },
+  {
     "project_id": "b4c8ea95cd33dff7ae706e69b0978e21adc8b1b8",
     "name": "Projet Cgt Green Homes Ii",
     "city": "Casablanca",
@@ -678,7 +1133,7 @@
     "promoter": "CGI",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-15T07:17:07.475155+00:00",
-    "last_updated_at": "2026-07-19T07:28:58.815459+00:00",
+    "last_updated_at": "2026-07-20T08:08:44.543627+00:00",
     "launch_score": 60,
     "confidence_score": 76,
     "investment_score": 43,
@@ -822,6 +1277,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:44.543627+00:00",
+        "launch_score": 60,
+        "confidence_score": 76,
+        "investment_score": 43,
+        "urgency_score": 62,
+        "status": "watch",
+        "recommendation": "Watch"
+      },
+      {
         "observed_at": "2026-07-19T07:28:58.815459+00:00",
         "launch_score": 60,
         "confidence_score": 76,
@@ -870,36 +1334,36 @@
     "signals": []
   },
   {
-    "project_id": "42da9a53d77e53b92c27dbba1e14e67ef75f4e45",
-    "name": "Argan Signature",
+    "project_id": "88bfd7f81f13b9c4e927f9813165ac5150f9965b",
+    "name": "haut standing",
     "city": "Marrakech",
-    "zone": "Prestigia",
-    "promoter": "Prestigia",
-    "asset_type": "villa",
-    "first_detected_at": "2026-07-16T07:28:20.057777+00:00",
-    "last_updated_at": "2026-07-19T07:33:31.942093+00:00",
+    "zone": "Gueliz",
+    "promoter": null,
+    "asset_type": "apartment_3_bed",
+    "first_detected_at": "2026-07-20T08:12:50.597094+00:00",
+    "last_updated_at": "2026-07-20T08:12:50.597094+00:00",
     "launch_score": 50,
-    "confidence_score": 65,
-    "investment_score": 88,
-    "urgency_score": 63,
+    "confidence_score": 64,
+    "investment_score": 78,
+    "urgency_score": 60,
     "recommendation": "Monitor",
     "status": "monitor",
-    "summary": "Argan Signature | Promoteur: Prestigia | Ville: Marrakech | Zone: Prestigia | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "haut standing | Promoteur: à confirmer | Ville: Marrakech | Zone: Gueliz | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
     "prices": {
       "min": null,
       "max": null
     },
     "aliases": [
-      "Argan Signature"
+      "haut standing"
     ],
     "channels": [
       "advertising"
     ],
     "sources": [
-      "Avito Immobilier Neuf"
+      "groupe_konouz_immobilier"
     ],
     "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1574085581384097"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1067874879009599"
     ],
     "evidence": {
       "signal_count": 1,
@@ -927,10 +1391,10 @@
         "summary": "Aucune série de prix fiable pour le moment."
       },
       "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 81
+        "label": "Moyen",
+        "five_year_upside_score": 72
       },
-      "project_slug": "argan-signature-42da9a53",
+      "project_slug": "haut-standing-88bfd7f8",
       "infrastructure": {
         "sea_distance_km": 180,
         "station_distance_km": 5,
@@ -941,16 +1405,16 @@
         {
           "kind": "meta_ads",
           "kind_label": "Publicité Meta",
-          "label": "Avito Immobilier Neuf · ad #1574085581384097",
+          "label": "groupe_konouz_immobilier · ad #1067874879009599",
           "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1574085581384097",
-          "source": "Avito Immobilier Neuf",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1067874879009599",
+          "source": "groupe_konouz_immobilier",
           "signal_type": "meta_ad",
           "proof_level": "direct"
         }
       ],
       "practical": {
-        "asset_label": "Villa",
+        "asset_label": "Appartement 3 chambres",
         "public_status": "Aucune disponibilité publique détectée pour le moment.",
         "price_min": null,
         "price_max": null
@@ -975,10 +1439,10 @@
         {
           "kind": "meta_ads",
           "kind_label": "Publicité Meta",
-          "label": "Avito Immobilier Neuf · ad #1574085581384097",
+          "label": "groupe_konouz_immobilier · ad #1067874879009599",
           "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1574085581384097",
-          "source": "Avito Immobilier Neuf",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1067874879009599",
+          "source": "groupe_konouz_immobilier",
           "signal_type": "meta_ad",
           "proof_level": "direct"
         }
@@ -987,198 +1451,26 @@
       "news_links": [],
       "urbanism_links": [],
       "images": [
-        "assets/meta/meta-ad-1574085581384097.jpg"
-      ],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1574085581384097",
-      "type: villa",
-      "ville: Marrakech",
-      "zone: Prestigia",
-      "marqueur de lancement détecté"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:33:31.942093+00:00",
-        "launch_score": 50,
-        "confidence_score": 65,
-        "investment_score": 88,
-        "urgency_score": 63,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:05:00.313593+00:00",
-        "launch_score": 50,
-        "confidence_score": 65,
-        "investment_score": 88,
-        "urgency_score": 63,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:23:19.482150+00:00",
-        "launch_score": 50,
-        "confidence_score": 65,
-        "investment_score": 88,
-        "urgency_score": 63,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:28:20.057777+00:00",
-        "launch_score": 50,
-        "confidence_score": 65,
-        "investment_score": 88,
-        "urgency_score": 63,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "f1d656614097fe263b02f6641164dcf3287705d8",
-    "name": "MIC Invest - Immobilier au Maroc - Conseil, Commercialisation & Transaction",
-    "city": "Casablanca",
-    "zone": "Anfa",
-    "promoter": null,
-    "asset_type": "villa",
-    "first_detected_at": "2026-07-19T07:32:26.620228+00:00",
-    "last_updated_at": "2026-07-19T07:32:26.620228+00:00",
-    "launch_score": 50,
-    "confidence_score": 65,
-    "investment_score": 81,
-    "urgency_score": 61,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "MIC Invest - Immobilier au Maroc - Conseil, Commercialisation & Transaction | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Prix observés entre 15000000 et 15000000 MAD.",
-    "prices": {
-      "min": 15000000,
-      "max": 15000000
-    },
-    "aliases": [
-      "MIC Invest - Immobilier au Maroc - Conseil, Commercialisation & Transaction"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "MIC Invest - Immobilier au Maroc - Conseil, Commercialisation & Transaction"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1016564341109898"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "above_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 15000000 et 15000000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 75
-      },
-      "project_slug": "mic-invest-immobilier-au-maroc-conseil-commercialisation-transaction-f1d65661",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "MIC Invest - Immobilier au Maroc - Conseil, Commercialisation & Transaction · ad #1016564341109898",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1016564341109898",
-          "source": "MIC Invest - Immobilier au Maroc - Conseil, Commercialisation & Transaction",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Villa",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": 15000000,
-        "price_max": 15000000
-      },
-      "ai_analysis": {
-        "summary": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [
-          "Le projet semble au-dessus du budget cible configuré.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "MIC Invest - Immobilier au Maroc - Conseil, Commercialisation & Transaction · ad #1016564341109898",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1016564341109898",
-          "source": "MIC Invest - Immobilier au Maroc - Conseil, Commercialisation & Transaction",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [
-        "assets/meta/meta-ad-1016564341109898.jpg"
+        "assets/meta/meta-ad-1067874879009599.jpg"
       ],
       "videos": [],
       "changes": [],
       "is_new_project": true
     },
     "reasons": [
-      "publicité Meta exacte détectée: ad_id 1016564341109898",
-      "prix détecté: 15000000 MAD",
-      "type: villa",
-      "ville: Casablanca",
-      "zone: Anfa",
+      "publicité Meta exacte détectée: ad_id 1067874879009599",
+      "type: apartment_3_bed",
+      "ville: Marrakech",
+      "zone: Gueliz",
       "marqueur de lancement détecté"
     ],
     "timeline": [
       {
-        "observed_at": "2026-07-19T07:32:26.620228+00:00",
+        "observed_at": "2026-07-20T08:12:50.597094+00:00",
         "launch_score": 50,
-        "confidence_score": 65,
-        "investment_score": 81,
-        "urgency_score": 61,
+        "confidence_score": 64,
+        "investment_score": 78,
+        "urgency_score": 60,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -1193,7 +1485,7 @@
     "promoter": null,
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-18T07:03:27.647493+00:00",
-    "last_updated_at": "2026-07-19T07:31:42.412407+00:00",
+    "last_updated_at": "2026-07-20T08:11:00.176705+00:00",
     "launch_score": 50,
     "confidence_score": 62,
     "investment_score": 43,
@@ -1313,6 +1605,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:11:00.176705+00:00",
+        "launch_score": 50,
+        "confidence_score": 62,
+        "investment_score": 43,
+        "urgency_score": 53,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:31:42.412407+00:00",
         "launch_score": 50,
         "confidence_score": 62,
@@ -1334,36 +1635,36 @@
     "signals": []
   },
   {
-    "project_id": "19fc7f029c7322905103cbe4ad66cd3c33b16ee6",
-    "name": "Trianon Marrakech",
-    "city": "Marrakech",
-    "zone": "Palmeraie",
-    "promoter": null,
+    "project_id": "dfc684d8628141e8f3b0f6131107ee6262053ad2",
+    "name": "Hamilton",
+    "city": "Casablanca",
+    "zone": null,
+    "promoter": "Saham Immobilier",
     "asset_type": "villa",
-    "first_detected_at": "2026-07-16T07:28:30.627649+00:00",
-    "last_updated_at": "2026-07-19T07:33:42.730836+00:00",
+    "first_detected_at": "2026-07-20T08:11:47.223818+00:00",
+    "last_updated_at": "2026-07-20T08:11:47.223818+00:00",
     "launch_score": 38,
     "confidence_score": 57,
-    "investment_score": 88,
+    "investment_score": 91,
     "urgency_score": 55,
     "recommendation": "Monitor",
     "status": "monitor",
-    "summary": "Trianon Marrakech | Promoteur: à confirmer | Ville: Marrakech | Zone: Palmeraie | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "Hamilton | Promoteur: Saham Immobilier | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 2450000 et 2450000 MAD.",
     "prices": {
-      "min": null,
-      "max": null
+      "min": 2450000,
+      "max": 2450000
     },
     "aliases": [
-      "Trianon Marrakech"
+      "Hamilton"
     ],
     "channels": [
       "advertising"
     ],
     "sources": [
-      "Résidence Trianon Marrakech"
+      "Hamilton By Saham Immobilier"
     ],
     "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3705538012919384"
     ],
     "evidence": {
       "signal_count": 1,
@@ -1379,36 +1680,36 @@
       "confirmation_details": [],
       "confirmation_count": 0,
       "geo": {
-        "lat": 31.6295,
-        "lng": -7.9811,
-        "sea_distance_km": 180,
+        "lat": 33.5731,
+        "lng": -7.5898,
+        "sea_distance_km": 6,
         "station_distance_km": 5,
-        "highway_distance_km": 6
+        "highway_distance_km": 4
       },
-      "price_band": "unknown",
+      "price_band": "within_budget",
       "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
+        "trend": "stable",
+        "summary": "Prix observés entre 2450000 et 2450000 MAD."
       },
       "roi": {
         "label": "Élevé",
-        "five_year_upside_score": 81
+        "five_year_upside_score": 84
       },
-      "project_slug": "trianon-marrakech-19fc7f02",
+      "project_slug": "hamilton-dfc684d8",
       "infrastructure": {
-        "sea_distance_km": 180,
+        "sea_distance_km": 6,
         "station_distance_km": 5,
-        "highway_distance_km": 6
+        "highway_distance_km": 4
       },
       "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
       "source_catalog": [
         {
           "kind": "meta_ads",
           "kind_label": "Publicité Meta",
-          "label": "Résidence Trianon Marrakech · ad #4357662654498823",
+          "label": "Hamilton By Saham Immobilier · ad #3705538012919384",
           "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823",
-          "source": "Résidence Trianon Marrakech",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3705538012919384",
+          "source": "Hamilton By Saham Immobilier",
           "signal_type": "meta_ad",
           "proof_level": "direct"
         }
@@ -1416,8 +1717,8 @@
       "practical": {
         "asset_label": "Villa",
         "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
+        "price_min": 2450000,
+        "price_max": 2450000
       },
       "ai_analysis": {
         "summary": "Garder en observation jusqu'à nouvelles confirmations.",
@@ -1425,7 +1726,6 @@
           "Le potentiel investissement ressort comme intéressant selon le profil configuré."
         ],
         "risks": [
-          "Le prix public n'est pas encore confirmé.",
           "Aucune disponibilité publique confirmée sur portail pour l'instant."
         ],
         "next_steps": [
@@ -1439,10 +1739,10 @@
         {
           "kind": "meta_ads",
           "kind_label": "Publicité Meta",
-          "label": "Résidence Trianon Marrakech · ad #4357662654498823",
+          "label": "Hamilton By Saham Immobilier · ad #3705538012919384",
           "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4357662654498823",
-          "source": "Résidence Trianon Marrakech",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3705538012919384",
+          "source": "Hamilton By Saham Immobilier",
           "signal_type": "meta_ad",
           "proof_level": "direct"
         }
@@ -1451,194 +1751,25 @@
       "news_links": [],
       "urbanism_links": [],
       "images": [
-        "assets/meta/meta-ad-4357662654498823.jpg"
-      ],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 4357662654498823",
-      "type: villa",
-      "ville: Marrakech",
-      "zone: Palmeraie"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:33:42.730836+00:00",
-        "launch_score": 38,
-        "confidence_score": 57,
-        "investment_score": 88,
-        "urgency_score": 55,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:05:10.106234+00:00",
-        "launch_score": 38,
-        "confidence_score": 57,
-        "investment_score": 88,
-        "urgency_score": 55,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:23:30.132690+00:00",
-        "launch_score": 38,
-        "confidence_score": 57,
-        "investment_score": 88,
-        "urgency_score": 55,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:28:30.627649+00:00",
-        "launch_score": 38,
-        "confidence_score": 57,
-        "investment_score": 88,
-        "urgency_score": 55,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "4965596bece29c047c5a98e2d1ccf7b928015cb7",
-    "name": "Media7 Immobilier",
-    "city": "Rabat",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "villa",
-    "first_detected_at": "2026-07-19T07:32:46.584754+00:00",
-    "last_updated_at": "2026-07-19T07:32:46.584754+00:00",
-    "launch_score": 38,
-    "confidence_score": 57,
-    "investment_score": 78,
-    "urgency_score": 53,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Media7 Immobilier | Promoteur: à confirmer | Ville: Rabat | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "Media7 Immobilier"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "Media7 Immobilier"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1410551250906522"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 34.0209,
-        "lng": -6.8416,
-        "sea_distance_km": 7,
-        "station_distance_km": 4,
-        "highway_distance_km": 4
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 72
-      },
-      "project_slug": "media7-immobilier-4965596b",
-      "infrastructure": {
-        "sea_distance_km": 7,
-        "station_distance_km": 4,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Media7 Immobilier · ad #1410551250906522",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1410551250906522",
-          "source": "Media7 Immobilier",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Villa",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "Media7 Immobilier · ad #1410551250906522",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1410551250906522",
-          "source": "Media7 Immobilier",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [
-        "assets/meta/meta-ad-1410551250906522.jpg"
+        "assets/meta/meta-ad-3705538012919384.jpg"
       ],
       "videos": [],
       "changes": [],
       "is_new_project": true
     },
     "reasons": [
-      "publicité Meta exacte détectée: ad_id 1410551250906522",
+      "publicité Meta exacte détectée: ad_id 3705538012919384",
+      "prix détecté: 2450000 MAD",
       "type: villa",
-      "ville: Rabat"
+      "ville: Casablanca"
     ],
     "timeline": [
       {
-        "observed_at": "2026-07-19T07:32:46.584754+00:00",
+        "observed_at": "2026-07-20T08:11:47.223818+00:00",
         "launch_score": 38,
         "confidence_score": 57,
-        "investment_score": 78,
-        "urgency_score": 53,
+        "investment_score": 91,
+        "urgency_score": 55,
         "status": "monitor",
         "recommendation": "Monitor"
       }
@@ -1653,7 +1784,7 @@
     "promoter": null,
     "asset_type": "apartment_3_bed",
     "first_detected_at": "2026-07-14T12:04:12.714945+00:00",
-    "last_updated_at": "2026-07-19T07:32:58.275166+00:00",
+    "last_updated_at": "2026-07-20T08:12:18.778883+00:00",
     "launch_score": 38,
     "confidence_score": 56,
     "investment_score": 92,
@@ -1777,6 +1908,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:12:18.778883+00:00",
+        "launch_score": 38,
+        "confidence_score": 56,
+        "investment_score": 92,
+        "urgency_score": 55,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:32:58.275166+00:00",
         "launch_score": 38,
         "confidence_score": 56,
@@ -1841,7 +1981,7 @@
     "promoter": null,
     "asset_type": "apartment_3_bed",
     "first_detected_at": "2026-07-14T12:05:44.527103+00:00",
-    "last_updated_at": "2026-07-19T07:34:36.413957+00:00",
+    "last_updated_at": "2026-07-20T08:13:55.174498+00:00",
     "launch_score": 38,
     "confidence_score": 56,
     "investment_score": 89,
@@ -1965,6 +2105,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:13:55.174498+00:00",
+        "launch_score": 38,
+        "confidence_score": 56,
+        "investment_score": 89,
+        "urgency_score": 54,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:34:36.413957+00:00",
         "launch_score": 38,
         "confidence_score": 56,
@@ -2029,7 +2178,7 @@
     "promoter": null,
     "asset_type": "apartment_3_bed",
     "first_detected_at": "2026-07-14T12:02:59.412000+00:00",
-    "last_updated_at": "2026-07-19T07:31:42.412221+00:00",
+    "last_updated_at": "2026-07-20T08:11:00.176563+00:00",
     "launch_score": 38,
     "confidence_score": 56,
     "investment_score": 89,
@@ -2153,6 +2302,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:11:00.176563+00:00",
+        "launch_score": 38,
+        "confidence_score": 56,
+        "investment_score": 89,
+        "urgency_score": 54,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:31:42.412221+00:00",
         "launch_score": 38,
         "confidence_score": 56,
@@ -2217,7 +2375,7 @@
     "promoter": "Al Omrane",
     "asset_type": "villa",
     "first_detected_at": "2026-07-14T12:00:11.297453+00:00",
-    "last_updated_at": "2026-07-19T07:28:49.443765+00:00",
+    "last_updated_at": "2026-07-20T08:08:37.779510+00:00",
     "launch_score": 42,
     "confidence_score": 55,
     "investment_score": 94,
@@ -2341,6 +2499,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:37.779510+00:00",
+        "launch_score": 42,
+        "confidence_score": 55,
+        "investment_score": 94,
+        "urgency_score": 57,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:49.443765+00:00",
         "launch_score": 42,
         "confidence_score": 55,
@@ -2405,7 +2572,7 @@
     "promoter": "Al Omrane",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-14T12:00:09.537725+00:00",
-    "last_updated_at": "2026-07-19T07:28:48.906377+00:00",
+    "last_updated_at": "2026-07-20T08:08:37.324576+00:00",
     "launch_score": 42,
     "confidence_score": 55,
     "investment_score": 86,
@@ -2528,6 +2695,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:37.324576+00:00",
+        "launch_score": 42,
+        "confidence_score": 55,
+        "investment_score": 86,
+        "urgency_score": 55,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:48.906377+00:00",
         "launch_score": 42,
         "confidence_score": 55,
@@ -2592,7 +2768,7 @@
     "promoter": "Al Omrane",
     "asset_type": "villa",
     "first_detected_at": "2026-07-17T07:19:25.262157+00:00",
-    "last_updated_at": "2026-07-19T07:28:50.792015+00:00",
+    "last_updated_at": "2026-07-20T08:08:37.956999+00:00",
     "launch_score": 42,
     "confidence_score": 55,
     "investment_score": 85,
@@ -2715,6 +2891,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:37.956999+00:00",
+        "launch_score": 42,
+        "confidence_score": 55,
+        "investment_score": 85,
+        "urgency_score": 55,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:50.792015+00:00",
         "launch_score": 42,
         "confidence_score": 55,
@@ -2752,7 +2937,7 @@
     "promoter": "Al Omrane",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-14T12:00:10.008866+00:00",
-    "last_updated_at": "2026-07-19T07:28:49.105956+00:00",
+    "last_updated_at": "2026-07-20T08:08:37.497635+00:00",
     "launch_score": 42,
     "confidence_score": 55,
     "investment_score": 81,
@@ -2874,6 +3059,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:37.497635+00:00",
+        "launch_score": 42,
+        "confidence_score": 55,
+        "investment_score": 81,
+        "urgency_score": 54,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:49.105956+00:00",
         "launch_score": 42,
         "confidence_score": 55,
@@ -2938,7 +3132,7 @@
     "promoter": null,
     "asset_type": "apartment_2_bed",
     "first_detected_at": "2026-07-19T07:33:08.787340+00:00",
-    "last_updated_at": "2026-07-19T07:33:08.787340+00:00",
+    "last_updated_at": "2026-07-20T08:12:27.940386+00:00",
     "launch_score": 38,
     "confidence_score": 55,
     "investment_score": 76,
@@ -3052,7 +3246,7 @@
       ],
       "videos": [],
       "changes": [],
-      "is_new_project": true
+      "is_new_project": false
     },
     "reasons": [
       "publicité Meta exacte détectée: ad_id 888568037631474",
@@ -3061,6 +3255,15 @@
       "zone: Founty"
     ],
     "timeline": [
+      {
+        "observed_at": "2026-07-20T08:12:27.940386+00:00",
+        "launch_score": 38,
+        "confidence_score": 55,
+        "investment_score": 76,
+        "urgency_score": 52,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
       {
         "observed_at": "2026-07-19T07:33:08.787340+00:00",
         "launch_score": 38,
@@ -3081,7 +3284,7 @@
     "promoter": "Al Omrane",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-14T12:00:09.069871+00:00",
-    "last_updated_at": "2026-07-19T07:28:48.570972+00:00",
+    "last_updated_at": "2026-07-20T08:08:37.154007+00:00",
     "launch_score": 42,
     "confidence_score": 55,
     "investment_score": 70,
@@ -3203,6 +3406,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:37.154007+00:00",
+        "launch_score": 42,
+        "confidence_score": 55,
+        "investment_score": 70,
+        "urgency_score": 52,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:48.570972+00:00",
         "launch_score": 42,
         "confidence_score": 55,
@@ -3267,7 +3479,7 @@
     "promoter": "Al Omrane",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-16T07:23:57.086623+00:00",
-    "last_updated_at": "2026-07-19T07:28:48.235274+00:00",
+    "last_updated_at": "2026-07-20T08:08:36.950994+00:00",
     "launch_score": 42,
     "confidence_score": 55,
     "investment_score": 70,
@@ -3390,6 +3602,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:36.950994+00:00",
+        "launch_score": 42,
+        "confidence_score": 55,
+        "investment_score": 70,
+        "urgency_score": 52,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:48.235274+00:00",
         "launch_score": 42,
         "confidence_score": 55,
@@ -3436,7 +3657,7 @@
     "promoter": "Al Omrane",
     "asset_type": "land_r4_plus",
     "first_detected_at": "2026-07-14T12:00:06.587870+00:00",
-    "last_updated_at": "2026-07-19T07:28:47.264129+00:00",
+    "last_updated_at": "2026-07-20T08:08:36.583537+00:00",
     "launch_score": 42,
     "confidence_score": 55,
     "investment_score": 70,
@@ -3559,6 +3780,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:36.583537+00:00",
+        "launch_score": 42,
+        "confidence_score": 55,
+        "investment_score": 70,
+        "urgency_score": 52,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:47.264129+00:00",
         "launch_score": 42,
         "confidence_score": 55,
@@ -3623,7 +3853,7 @@
     "promoter": "Al Omrane",
     "asset_type": "apartment_3_bed",
     "first_detected_at": "2026-07-14T12:00:12.041960+00:00",
-    "last_updated_at": "2026-07-19T07:28:51.414129+00:00",
+    "last_updated_at": "2026-07-20T08:08:38.141354+00:00",
     "launch_score": 42,
     "confidence_score": 54,
     "investment_score": 82,
@@ -3746,6 +3976,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:38.141354+00:00",
+        "launch_score": 42,
+        "confidence_score": 54,
+        "investment_score": 82,
+        "urgency_score": 54,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:51.414129+00:00",
         "launch_score": 42,
         "confidence_score": 54,
@@ -3810,7 +4049,7 @@
     "promoter": null,
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:04:40.586309+00:00",
-    "last_updated_at": "2026-07-19T07:33:31.941988+00:00",
+    "last_updated_at": "2026-07-20T08:12:50.597003+00:00",
     "launch_score": 38,
     "confidence_score": 54,
     "investment_score": 63,
@@ -3932,6 +4171,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:12:50.597003+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 63,
+        "urgency_score": 49,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:33:31.941988+00:00",
         "launch_score": 38,
         "confidence_score": 54,
@@ -3996,7 +4244,7 @@
     "promoter": null,
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:05:44.527128+00:00",
-    "last_updated_at": "2026-07-19T07:34:36.414009+00:00",
+    "last_updated_at": "2026-07-20T08:13:55.174548+00:00",
     "launch_score": 38,
     "confidence_score": 54,
     "investment_score": 59,
@@ -4118,6 +4366,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:13:55.174548+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 59,
+        "urgency_score": 48,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:34:36.414009+00:00",
         "launch_score": 38,
         "confidence_score": 54,
@@ -4175,36 +4432,36 @@
     "signals": []
   },
   {
-    "project_id": "9b6fa2b33597a666b3ed60b341cef98f98477466",
-    "name": "Mobilia Rabat",
-    "city": "Rabat",
-    "zone": "Agdal",
-    "promoter": null,
+    "project_id": "85a9b89d5bb37316b861cfb9ebba261a8bb3a03c",
+    "name": "Le 25",
+    "city": "Casablanca",
+    "zone": "Bouskoura",
+    "promoter": "Saham Immobilier",
     "asset_type": "apartment_unknown",
-    "first_detected_at": "2026-07-14T12:04:12.715021+00:00",
-    "last_updated_at": "2026-07-19T07:32:58.275238+00:00",
+    "first_detected_at": "2026-07-20T08:11:47.223790+00:00",
+    "last_updated_at": "2026-07-20T08:11:47.223790+00:00",
     "launch_score": 38,
     "confidence_score": 54,
-    "investment_score": 54,
-    "urgency_score": 47,
+    "investment_score": 59,
+    "urgency_score": 48,
     "recommendation": "Monitor",
     "status": "monitor",
-    "summary": "Mobilia Rabat | Promoteur: à confirmer | Ville: Rabat | Zone: Agdal | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+    "summary": "Le 25 | Promoteur: Saham Immobilier | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
     "prices": {
       "min": null,
       "max": null
     },
     "aliases": [
-      "Mobilia Rabat"
+      "Le 25"
     ],
     "channels": [
       "advertising"
     ],
     "sources": [
-      "Mobilia Rabat"
+      "Le 25 By Saham Immobilier"
     ],
     "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1948175832535249"
     ],
     "evidence": {
       "signal_count": 1,
@@ -4220,10 +4477,10 @@
       "confirmation_details": [],
       "confirmation_count": 0,
       "geo": {
-        "lat": 34.0209,
-        "lng": -6.8416,
-        "sea_distance_km": 7,
-        "station_distance_km": 4,
+        "lat": 33.5731,
+        "lng": -7.5898,
+        "sea_distance_km": 6,
+        "station_distance_km": 5,
         "highway_distance_km": 4
       },
       "price_band": "unknown",
@@ -4233,12 +4490,12 @@
       },
       "roi": {
         "label": "Prudent",
-        "five_year_upside_score": 50
+        "five_year_upside_score": 54
       },
-      "project_slug": "mobilia-rabat-9b6fa2b3",
+      "project_slug": "le-25-85a9b89d",
       "infrastructure": {
-        "sea_distance_km": 7,
-        "station_distance_km": 4,
+        "sea_distance_km": 6,
+        "station_distance_km": 5,
         "highway_distance_km": 4
       },
       "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
@@ -4246,10 +4503,10 @@
         {
           "kind": "meta_ads",
           "kind_label": "Publicité Meta",
-          "label": "Mobilia Rabat · ad #1620969222885314",
+          "label": "Le 25 By Saham Immobilier · ad #1948175832535249",
           "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
-          "source": "Mobilia Rabat",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1948175832535249",
+          "source": "Le 25 By Saham Immobilier",
           "signal_type": "meta_ad",
           "proof_level": "direct"
         }
@@ -4278,10 +4535,10 @@
         {
           "kind": "meta_ads",
           "kind_label": "Publicité Meta",
-          "label": "Mobilia Rabat · ad #1620969222885314",
+          "label": "Le 25 By Saham Immobilier · ad #1948175832535249",
           "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
-          "source": "Mobilia Rabat",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1948175832535249",
+          "source": "Le 25 By Saham Immobilier",
           "signal_type": "meta_ad",
           "proof_level": "direct"
         }
@@ -4289,68 +4546,25 @@
       "listing_links": [],
       "news_links": [],
       "urbanism_links": [],
-      "images": [],
+      "images": [
+        "assets/meta/meta-ad-1948175832535249.jpg"
+      ],
       "videos": [],
       "changes": [],
-      "is_new_project": false
+      "is_new_project": true
     },
     "reasons": [
-      "publicité Meta exacte détectée: ad_id 1620969222885314",
+      "publicité Meta exacte détectée: ad_id 1948175832535249",
       "type: apartment_unknown",
-      "ville: Rabat",
-      "zone: Agdal"
+      "ville: Casablanca",
+      "zone: Bouskoura"
     ],
     "timeline": [
       {
-        "observed_at": "2026-07-19T07:32:58.275238+00:00",
+        "observed_at": "2026-07-20T08:11:47.223790+00:00",
         "launch_score": 38,
         "confidence_score": 54,
-        "investment_score": 54,
-        "urgency_score": 47,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:04:33.738865+00:00",
-        "launch_score": 38,
-        "confidence_score": 54,
-        "investment_score": 54,
-        "urgency_score": 47,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:22:51.389796+00:00",
-        "launch_score": 38,
-        "confidence_score": 54,
-        "investment_score": 54,
-        "urgency_score": 47,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:27:47.331420+00:00",
-        "launch_score": 38,
-        "confidence_score": 54,
-        "investment_score": 54,
-        "urgency_score": 47,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:20:44.553732+00:00",
-        "launch_score": 38,
-        "confidence_score": 54,
-        "investment_score": 54,
-        "urgency_score": 47,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-14T12:04:12.715021+00:00",
-        "launch_score": 38,
-        "confidence_score": 56,
-        "investment_score": 54,
+        "investment_score": 59,
         "urgency_score": 48,
         "status": "monitor",
         "recommendation": "Monitor"
@@ -4366,7 +4580,7 @@
     "promoter": null,
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:03:33.708328+00:00",
-    "last_updated_at": "2026-07-19T07:32:17.232254+00:00",
+    "last_updated_at": "2026-07-20T08:11:35.791000+00:00",
     "launch_score": 38,
     "confidence_score": 54,
     "investment_score": 45,
@@ -4485,6 +4699,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:11:35.791000+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 45,
+        "urgency_score": 45,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:32:17.232254+00:00",
         "launch_score": 38,
         "confidence_score": 54,
@@ -4549,7 +4772,7 @@
     "promoter": null,
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-18T07:03:13.768998+00:00",
-    "last_updated_at": "2026-07-19T07:31:22.106032+00:00",
+    "last_updated_at": "2026-07-20T08:10:44.944657+00:00",
     "launch_score": 38,
     "confidence_score": 54,
     "investment_score": 45,
@@ -4670,6 +4893,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:10:44.944657+00:00",
+        "launch_score": 38,
+        "confidence_score": 54,
+        "investment_score": 45,
+        "urgency_score": 45,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:31:22.106032+00:00",
         "launch_score": 38,
         "confidence_score": 54,
@@ -4698,7 +4930,7 @@
     "promoter": "Al Omrane",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:00:07.056379+00:00",
-    "last_updated_at": "2026-07-19T07:28:47.901837+00:00",
+    "last_updated_at": "2026-07-20T08:08:36.778202+00:00",
     "launch_score": 42,
     "confidence_score": 52,
     "investment_score": 61,
@@ -4820,6 +5052,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:36.778202+00:00",
+        "launch_score": 42,
+        "confidence_score": 52,
+        "investment_score": 61,
+        "urgency_score": 49,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:47.901837+00:00",
         "launch_score": 42,
         "confidence_score": 52,
@@ -4884,7 +5125,7 @@
     "promoter": "CGI",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:00:23.881621+00:00",
-    "last_updated_at": "2026-07-19T07:29:03.436559+00:00",
+    "last_updated_at": "2026-07-20T08:08:47.871961+00:00",
     "launch_score": 42,
     "confidence_score": 52,
     "investment_score": 59,
@@ -5006,6 +5247,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:47.871961+00:00",
+        "launch_score": 42,
+        "confidence_score": 52,
+        "investment_score": 59,
+        "urgency_score": 49,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:29:03.436559+00:00",
         "launch_score": 42,
         "confidence_score": 52,
@@ -5070,7 +5320,7 @@
     "promoter": "Al Omrane",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-16T07:23:55.868789+00:00",
-    "last_updated_at": "2026-07-19T07:28:46.649193+00:00",
+    "last_updated_at": "2026-07-20T08:08:36.402055+00:00",
     "launch_score": 42,
     "confidence_score": 52,
     "investment_score": 54,
@@ -5192,6 +5442,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:36.402055+00:00",
+        "launch_score": 42,
+        "confidence_score": 52,
+        "investment_score": 54,
+        "urgency_score": 48,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:46.649193+00:00",
         "launch_score": 42,
         "confidence_score": 52,
@@ -5231,6 +5490,145 @@
     "signals": []
   },
   {
+    "project_id": "59fe2d282186e3af9dd8df84afe9b50c80230660",
+    "name": "Les Perles de l'Atlas",
+    "city": "Marrakech",
+    "zone": null,
+    "promoter": null,
+    "asset_type": null,
+    "first_detected_at": "2026-07-20T08:12:50.597122+00:00",
+    "last_updated_at": "2026-07-20T08:12:50.597122+00:00",
+    "launch_score": 38,
+    "confidence_score": 52,
+    "investment_score": 47,
+    "urgency_score": 45,
+    "recommendation": "Monitor",
+    "status": "monitor",
+    "summary": "Les Perles de l'Atlas | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 790000 et 790000 MAD.",
+    "prices": {
+      "min": 790000,
+      "max": 790000
+    },
+    "aliases": [
+      "Les Perles de l'Atlas"
+    ],
+    "channels": [
+      "advertising"
+    ],
+    "sources": [
+      "Avito Immobilier Neuf"
+    ],
+    "source_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1352212302990749"
+    ],
+    "evidence": {
+      "signal_count": 1,
+      "primary_signal_count": 1,
+      "listing_signal_count": 0,
+      "source_count": 1,
+      "channel_count": 1,
+      "primary_channels": [
+        "advertising"
+      ],
+      "secondary_channels": [],
+      "confirmations": [],
+      "confirmation_details": [],
+      "confirmation_count": 0,
+      "geo": {
+        "lat": 31.6295,
+        "lng": -7.9811,
+        "sea_distance_km": 180,
+        "station_distance_km": 5,
+        "highway_distance_km": 6
+      },
+      "price_band": "cash_ready",
+      "price_evolution": {
+        "trend": "stable",
+        "summary": "Prix observés entre 790000 et 790000 MAD."
+      },
+      "roi": {
+        "label": "Prudent",
+        "five_year_upside_score": 43
+      },
+      "project_slug": "les-perles-de-l-atlas-59fe2d28",
+      "infrastructure": {
+        "sea_distance_km": 180,
+        "station_distance_km": 5,
+        "highway_distance_km": 6
+      },
+      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
+      "source_catalog": [
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Avito Immobilier Neuf · ad #1352212302990749",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1352212302990749",
+          "source": "Avito Immobilier Neuf",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        }
+      ],
+      "practical": {
+        "asset_label": "Type à confirmer",
+        "public_status": "Aucune disponibilité publique détectée pour le moment.",
+        "price_min": 790000,
+        "price_max": 790000
+      },
+      "ai_analysis": {
+        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
+        "strengths": [],
+        "risks": [
+          "Aucune disponibilité publique confirmée sur portail pour l'instant."
+        ],
+        "next_steps": [
+          "Vérifier le site officiel et les pages sociales du promoteur.",
+          "Confirmer les disponibilités et le ticket d'entrée réel.",
+          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+        ]
+      },
+      "official_links": [],
+      "social_links": [
+        {
+          "kind": "meta_ads",
+          "kind_label": "Publicité Meta",
+          "label": "Avito Immobilier Neuf · ad #1352212302990749",
+          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1352212302990749",
+          "source": "Avito Immobilier Neuf",
+          "signal_type": "meta_ad",
+          "proof_level": "direct"
+        }
+      ],
+      "listing_links": [],
+      "news_links": [],
+      "urbanism_links": [],
+      "images": [
+        "assets/meta/meta-ad-1352212302990749.jpg"
+      ],
+      "videos": [],
+      "changes": [],
+      "is_new_project": true
+    },
+    "reasons": [
+      "publicité Meta exacte détectée: ad_id 1352212302990749",
+      "prix détecté: 790000 MAD",
+      "ville: Marrakech"
+    ],
+    "timeline": [
+      {
+        "observed_at": "2026-07-20T08:12:50.597122+00:00",
+        "launch_score": 38,
+        "confidence_score": 52,
+        "investment_score": 47,
+        "urgency_score": 45,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      }
+    ],
+    "signals": []
+  },
+  {
     "project_id": "a193c35c5ae2f2c69b7587f926abcc0a971e48f5",
     "name": "Anbar",
     "city": "Casablanca",
@@ -5238,7 +5636,7 @@
     "promoter": "Al Omrane",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-17T07:19:25.952297+00:00",
-    "last_updated_at": "2026-07-19T07:28:52.372038+00:00",
+    "last_updated_at": "2026-07-20T08:08:38.495915+00:00",
     "launch_score": 42,
     "confidence_score": 52,
     "investment_score": 43,
@@ -5359,6 +5757,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:38.495915+00:00",
+        "launch_score": 42,
+        "confidence_score": 52,
+        "investment_score": 43,
+        "urgency_score": 46,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:52.372038+00:00",
         "launch_score": 42,
         "confidence_score": 52,
@@ -5389,190 +5796,6 @@
     "signals": []
   },
   {
-    "project_id": "efde9f3c34939375d549e7ef24bf6453ee64e529",
-    "name": "R2C IMMOBILIER MARRAKECH",
-    "city": "Marrakech",
-    "zone": null,
-    "promoter": null,
-    "asset_type": null,
-    "first_detected_at": "2026-07-14T12:04:40.586366+00:00",
-    "last_updated_at": "2026-07-19T07:33:31.942055+00:00",
-    "launch_score": 38,
-    "confidence_score": 52,
-    "investment_score": 32,
-    "urgency_score": 42,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "R2C IMMOBILIER MARRAKECH | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-    "prices": {
-      "min": null,
-      "max": null
-    },
-    "aliases": [
-      "R2C IMMOBILIER MARRAKECH"
-    ],
-    "channels": [
-      "advertising"
-    ],
-    "sources": [
-      "R2C-Immobilier"
-    ],
-    "source_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1606185390425226"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 1,
-      "listing_signal_count": 0,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [
-        "advertising"
-      ],
-      "secondary_channels": [],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 31.6295,
-        "lng": -7.9811,
-        "sea_distance_km": 180,
-        "station_distance_km": 5,
-        "highway_distance_km": 6
-      },
-      "price_band": "unknown",
-      "price_evolution": {
-        "trend": "unknown",
-        "summary": "Aucune série de prix fiable pour le moment."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 29
-      },
-      "project_slug": "r2c-immobilier-marrakech-efde9f3c",
-      "infrastructure": {
-        "sea_distance_km": 180,
-        "station_distance_km": 5,
-        "highway_distance_km": 6
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "R2C-Immobilier · ad #1606185390425226",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1606185390425226",
-          "source": "R2C-Immobilier",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Type à confirmer",
-        "public_status": "Aucune disponibilité publique détectée pour le moment.",
-        "price_min": null,
-        "price_max": null
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [],
-        "risks": [
-          "Le prix public n'est pas encore confirmé.",
-          "Aucune disponibilité publique confirmée sur portail pour l'instant."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [
-        {
-          "kind": "meta_ads",
-          "kind_label": "Publicité Meta",
-          "label": "R2C-Immobilier · ad #1606185390425226",
-          "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1606185390425226",
-          "source": "R2C-Immobilier",
-          "signal_type": "meta_ad",
-          "proof_level": "direct"
-        }
-      ],
-      "listing_links": [],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [
-        "assets/meta/meta-ad-1606185390425226.jpg"
-      ],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "publicité Meta exacte détectée: ad_id 1606185390425226",
-      "ville: Marrakech"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:33:31.942055+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 32,
-        "urgency_score": 42,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:05:00.313552+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 32,
-        "urgency_score": 42,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:23:19.482110+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 32,
-        "urgency_score": 42,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:28:20.057735+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 32,
-        "urgency_score": 42,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:21:14.517514+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 32,
-        "urgency_score": 42,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-14T12:04:40.586366+00:00",
-        "launch_score": 38,
-        "confidence_score": 52,
-        "investment_score": 32,
-        "urgency_score": 42,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
     "project_id": "80954f38d520cab60a48bd82facccba1c8508edd",
     "name": "Pole Urbain Jardins Tafilalet Tranche",
     "city": "Casablanca",
@@ -5580,7 +5803,7 @@
     "promoter": "Al Omrane",
     "asset_type": null,
     "first_detected_at": "2026-07-14T12:00:12.537249+00:00",
-    "last_updated_at": "2026-07-19T07:28:51.750363+00:00",
+    "last_updated_at": "2026-07-20T08:08:38.321146+00:00",
     "launch_score": 42,
     "confidence_score": 50,
     "investment_score": 43,
@@ -5700,6 +5923,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:38.321146+00:00",
+        "launch_score": 42,
+        "confidence_score": 50,
+        "investment_score": 43,
+        "urgency_score": 45,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:51.750363+00:00",
         "launch_score": 42,
         "confidence_score": 50,
@@ -5764,7 +5996,7 @@
     "promoter": "CGI",
     "asset_type": "villa",
     "first_detected_at": "2026-07-14T12:00:20.301361+00:00",
-    "last_updated_at": "2026-07-19T07:28:58.027339+00:00",
+    "last_updated_at": "2026-07-20T08:08:43.794983+00:00",
     "launch_score": 30,
     "confidence_score": 47,
     "investment_score": 88,
@@ -5888,6 +6120,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:43.794983+00:00",
+        "launch_score": 30,
+        "confidence_score": 47,
+        "investment_score": 88,
+        "urgency_score": 48,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:58.027339+00:00",
         "launch_score": 30,
         "confidence_score": 47,
@@ -5952,7 +6193,7 @@
     "promoter": "CGI",
     "asset_type": "villa",
     "first_detected_at": "2026-07-15T07:17:10.618053+00:00",
-    "last_updated_at": "2026-07-19T07:29:01.423761+00:00",
+    "last_updated_at": "2026-07-20T08:08:46.248278+00:00",
     "launch_score": 30,
     "confidence_score": 47,
     "investment_score": 83,
@@ -6074,6 +6315,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:46.248278+00:00",
+        "launch_score": 30,
+        "confidence_score": 47,
+        "investment_score": 83,
+        "urgency_score": 47,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:29:01.423761+00:00",
         "launch_score": 30,
         "confidence_score": 47,
@@ -6129,7 +6379,7 @@
     "promoter": "CGI",
     "asset_type": "apartment_3_bed",
     "first_detected_at": "2026-07-14T12:00:21.601714+00:00",
-    "last_updated_at": "2026-07-19T07:29:00.371314+00:00",
+    "last_updated_at": "2026-07-20T08:08:45.302235+00:00",
     "launch_score": 30,
     "confidence_score": 46,
     "investment_score": 62,
@@ -6249,6 +6499,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:45.302235+00:00",
+        "launch_score": 30,
+        "confidence_score": 46,
+        "investment_score": 62,
+        "urgency_score": 42,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:29:00.371314+00:00",
         "launch_score": 30,
         "confidence_score": 46,
@@ -6313,7 +6572,7 @@
     "promoter": "CGI",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:00:18.779312+00:00",
-    "last_updated_at": "2026-07-19T07:28:56.113756+00:00",
+    "last_updated_at": "2026-07-20T08:08:41.840377+00:00",
     "launch_score": 30,
     "confidence_score": 44,
     "investment_score": 67,
@@ -6434,6 +6693,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:41.840377+00:00",
+        "launch_score": 30,
+        "confidence_score": 44,
+        "investment_score": 67,
+        "urgency_score": 42,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:28:56.113756+00:00",
         "launch_score": 30,
         "confidence_score": 44,
@@ -6498,7 +6766,7 @@
     "promoter": "CGI",
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:00:23.111395+00:00",
-    "last_updated_at": "2026-07-19T07:29:02.489716+00:00",
+    "last_updated_at": "2026-07-20T08:08:47.025989+00:00",
     "launch_score": 30,
     "confidence_score": 44,
     "investment_score": 59,
@@ -6620,6 +6888,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:08:47.025989+00:00",
+        "launch_score": 30,
+        "confidence_score": 44,
+        "investment_score": 59,
+        "urgency_score": 41,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:29:02.489716+00:00",
         "launch_score": 30,
         "confidence_score": 44,
@@ -6684,7 +6961,7 @@
     "promoter": null,
     "asset_type": "apartment_unknown",
     "first_detected_at": "2026-07-14T12:04:51.386636+00:00",
-    "last_updated_at": "2026-07-19T07:33:42.730887+00:00",
+    "last_updated_at": "2026-07-20T08:13:03.469957+00:00",
     "launch_score": 18,
     "confidence_score": 44,
     "investment_score": 48,
@@ -6805,6 +7082,15 @@
     ],
     "timeline": [
       {
+        "observed_at": "2026-07-20T08:13:03.469957+00:00",
+        "launch_score": 18,
+        "confidence_score": 44,
+        "investment_score": 48,
+        "urgency_score": 33,
+        "status": "monitor",
+        "recommendation": "Monitor"
+      },
+      {
         "observed_at": "2026-07-19T07:33:42.730887+00:00",
         "launch_score": 18,
         "confidence_score": 44,
@@ -6855,2734 +7141,6 @@
         "confidence_score": 36,
         "investment_score": 48,
         "urgency_score": 22,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "b5ec1a3f1edbe9c169e3dd1b4a53621843e71cbd",
-    "name": "Vend Appartement %c3%a0 View Tower Surface",
-    "city": "Tanger",
-    "zone": "Achakar",
-    "promoter": null,
-    "asset_type": "apartment_2_bed",
-    "first_detected_at": "2026-07-18T07:06:15.141448+00:00",
-    "last_updated_at": "2026-07-19T07:35:46.470217+00:00",
-    "launch_score": 9,
-    "confidence_score": 18,
-    "investment_score": 100,
-    "urgency_score": 30,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Vend Appartement %c3%a0 View Tower Surface | Promoteur: à confirmer | Ville: Tanger | Zone: Achakar | Confirmations: confirmation en cours | Prix observés entre 1063140 et 1063140 MAD.",
-    "prices": {
-      "min": 1063140,
-      "max": 3915000
-    },
-    "aliases": [
-      "Vend Appartement %c3%a0 View Tower Surface",
-      "Vend appartement à View Tower. Surface totale 88 m²",
-      "Appartement Vente %c3%a0 View Tower Chambres",
-      "Appartement en vente à View Tower. 3 chambres agréables",
-      "Splendide Villa %c3%a0 Vendre %c3%a0 Achakar",
-      "Splendide villa à vendre à Achakar. Surface de 546 m². Place..."
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Casablanca Appartements",
-      "Mubawab Tanger Appartements",
-      "Mubawab Tanger Villas"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/pa/7596444/vend-appartement-%C3%A0-view-tower-surface-totale-88-m%C2%B2",
-      "https://www.mubawab.ma/fr/pa/7595991/appartement-en-vente-%C3%A0-view-tower-3-chambres-agr%C3%A9ables",
-      "https://www.mubawab.ma/fr/pa/8342988/splendide-villa-%C3%A0-vendre-%C3%A0-achakar-surface-de-546-m%C2%B2-places-de-stationnement-et-jardin",
-      "https://www.mubawab.ma/fr/pa/8299920/appartement-%C3%A0-vendre-%C3%A0-sidi-moumen-91m%C2%B2",
-      "https://www.mubawab.ma/fr/pa/8282899/appartement-%C3%A0-vendre-%C3%A0-sidi-maarouf-surface-de-92-m%C2%B2",
-      "https://www.mubawab.ma/fr/a/8385324/appartement-%C3%A0-vendre-%C3%A0-palmier-surface-totale-56-m%C2%B2-tout-confort-avec-chemin%C3%A9e-et-climatisation",
-      "https://www.mubawab.ma/fr/a/8333839/appartement-bien-ensoleill%C3%A9-%C3%A0-vendre-%E2%80%93-maarif",
-      "https://www.mubawab.ma/fr/pa/8338847/appartement-en-vente-%C3%A0-belv%C3%A9d%C3%A8re-surface-de-88-m%C2%B2",
-      "https://www.mubawab.ma/fr/pa/8198619/appartement-%C3%A0-vendre-%C3%A0-les-h%C3%B4pitaux-1-belle-chambre",
-      "https://www.mubawab.ma/fr/pa/8330418/vend-appartement-%C3%A0-le-domaine-d-anfa-surface-totale-115-m%C2%B2-avec-ascenseur-et-terrasse"
-    ],
-    "evidence": {
-      "signal_count": 10,
-      "primary_signal_count": 0,
-      "listing_signal_count": 10,
-      "source_count": 3,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "cash_ready",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 1063140 et 1063140 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 92
-      },
-      "project_slug": "vend-appartement-c3-a0-view-tower-surface-b5ec1a3f",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Vend appartement à View Tower. Surface totale 88 m²",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/7596444/vend-appartement-%C3%A0-view-tower-surface-totale-88-m%C2%B2",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement en vente à View Tower. 3 chambres agréables",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/7595991/appartement-en-vente-%C3%A0-view-tower-3-chambres-agr%C3%A9ables",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Splendide villa à vendre à Achakar. Surface de 546 m². Place...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8342988/splendide-villa-%C3%A0-vendre-%C3%A0-achakar-surface-de-546-m%C2%B2-places-de-stationnement-et-jardin",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 2 chambres",
-        "public_status": "10 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 1063140,
-        "price_max": 3915000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Vend appartement à View Tower. Surface totale 88 m²",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/7596444/vend-appartement-%C3%A0-view-tower-surface-totale-88-m%C2%B2",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement en vente à View Tower. 3 chambres agréables",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/7595991/appartement-en-vente-%C3%A0-view-tower-3-chambres-agr%C3%A9ables",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Splendide villa à vendre à Achakar. Surface de 546 m². Place...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8342988/splendide-villa-%C3%A0-vendre-%C3%A0-achakar-surface-de-546-m%C2%B2-places-de-stationnement-et-jardin",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [
-        "Prix minimum mis à jour: 950000 → 1063140 MAD"
-      ],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 2760000 MAD",
-      "type: apartment_2_bed",
-      "ville: Tanger",
-      "prix détecté: 3915000 MAD",
-      "type: apartment_3_bed",
-      "type: villa",
-      "zone: Achakar",
-      "prix détecté: 1760000 MAD",
-      "ville: Casablanca"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:46.470217+00:00",
-        "launch_score": 9,
-        "confidence_score": 18,
-        "investment_score": 100,
-        "urgency_score": 30,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:48.120720+00:00",
-        "launch_score": 9,
-        "confidence_score": 18,
-        "investment_score": 100,
-        "urgency_score": 30,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "e557ef56b93d006999c3dfa2fc241225b3afdce1",
-    "name": "Villa Haut Standing %c3%a0 Vendre %c3%a0",
-    "city": "Tanger",
-    "zone": "Malabata",
-    "promoter": null,
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-19T07:34:55.078120+00:00",
-    "last_updated_at": "2026-07-19T07:36:04.709304+00:00",
-    "launch_score": 9,
-    "confidence_score": 18,
-    "investment_score": 73,
-    "urgency_score": 25,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Villa Haut Standing %c3%a0 Vendre %c3%a0 | Promoteur: à confirmer | Ville: Tanger | Zone: Malabata | Confirmations: confirmation en cours | Prix observés entre 3450000 et 3450000 MAD.",
-    "prices": {
-      "min": 3450000,
-      "max": 29500000
-    },
-    "aliases": [
-      "Appartements Rez Chauss%c3%a9e %c3%a0 Vendre",
-      "4 Appartements en Rez de Chaussée à Vendre",
-      "Magnifique appartement à vendre dans une residence fermée av...",
-      "Magnifique Appartement %c3%a0 Vendre Dans Une",
-      "Villa Haut Standing %c3%a0 Vendre %c3%a0",
-      "Villa de haut standing à vendre à Achakar. Surface totale 31..."
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Casablanca Villas",
-      "Mubawab Tanger Appartements",
-      "Mubawab Tanger Villas"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8359979/4-appartements-en-rez-de-chauss%C3%A9e-%C3%A0-vendre",
-      "https://www.mubawab.ma/fr/a/8267379/magnifique-appartement-%C3%A0-vendre-dans-une-residence-ferm%C3%A9e-avec-piscine-%C3%A0-malabata-tanger",
-      "https://www.mubawab.ma/fr/pa/8342983/villa-de-haut-standing-%C3%A0-vendre-%C3%A0-achakar-surface-totale-310-m%C2%B2",
-      "https://www.mubawab.ma/fr/pa/8273114/vente-villa-de-luxe-%C3%A0-ain-diab-extension",
-      "https://www.mubawab.ma/fr/a/8371794/villa-451-m2-a-rafraichir-ain-diab-au-calme",
-      "https://www.mubawab.ma/fr/a/8318089/maison-de-luxe-%C3%A0-vendre-%C3%A0-californie-%C3%A0-200-m%C3%A8tres-de-l%E2%80%99%C3%A9cole-am%C3%A9ricaine-4-grandes-pi%C3%A8ces-espace-vert",
-      "https://www.mubawab.ma/fr/a/8383872/villa-de-haut-standing-%C3%A0-vendre-%C3%A0-californie-4-grandes-pi%C3%A8ces-tout-confort-avec-piscine-et-chemin%C3%A9e",
-      "https://www.mubawab.ma/fr/a/8384020/somptueuse-villa-%C3%A0-vendre-%C3%A0-californie-superficie-900-m%C2%B2-jardin-et-terrasse",
-      "https://www.mubawab.ma/fr/a/8266692/villa-commercial-%C3%A0-vendre-cil",
-      "https://www.mubawab.ma/fr/a/8332471/villa-%C3%A0-vendre",
-      "https://www.mubawab.ma/fr/a/8314030/villa-%C3%A0-vendre-%E2%80%93-ain-diab-casablanca",
-      "https://www.mubawab.ma/fr/pa/8273115/magnifique-villa-%C3%A0-vendre-%C3%A0-ain-diab-extension"
-    ],
-    "evidence": {
-      "signal_count": 14,
-      "primary_signal_count": 0,
-      "listing_signal_count": 14,
-      "source_count": 3,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.783,
-        "lng": -5.7603,
-        "sea_distance_km": 1,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "above_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 3450000 et 3450000 MAD."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 67
-      },
-      "project_slug": "villa-haut-standing-c3-a0-vendre-c3-a0-e557ef56",
-      "infrastructure": {
-        "sea_distance_km": 1,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "4 Appartements en Rez de Chaussée à Vendre",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8359979/4-appartements-en-rez-de-chauss%C3%A9e-%C3%A0-vendre",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Magnifique appartement à vendre dans une residence fermée av...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8267379/magnifique-appartement-%C3%A0-vendre-dans-une-residence-ferm%C3%A9e-avec-piscine-%C3%A0-malabata-tanger",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "14 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 3450000,
-        "price_max": 29500000
-      },
-      "ai_analysis": {
-        "summary": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [
-          "Le projet semble au-dessus du budget cible configuré."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "4 Appartements en Rez de Chaussée à Vendre",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8359979/4-appartements-en-rez-de-chauss%C3%A9e-%C3%A0-vendre",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Magnifique appartement à vendre dans une residence fermée av...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8267379/magnifique-appartement-%C3%A0-vendre-dans-une-residence-ferm%C3%A9e-avec-piscine-%C3%A0-malabata-tanger",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": true
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 16400000 MAD",
-      "type: apartment_3_bed",
-      "ville: Tanger",
-      "prix détecté: 3450000 MAD",
-      "zone: Malabata",
-      "type: villa",
-      "zone: Achakar",
-      "prix détecté: 5400000 MAD",
-      "ville: Casablanca"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:36:04.709304+00:00",
-        "launch_score": 9,
-        "confidence_score": 18,
-        "investment_score": 73,
-        "urgency_score": 25,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "7b840e7b0f0a6a1023a0578a343b6165a0e35cae",
-    "name": "Appartement %c3%a0 Vendre Sur Corniche Tanger",
-    "city": "Tanger",
-    "zone": "Ziaten",
-    "promoter": null,
-    "asset_type": "apartment_2_bed",
-    "first_detected_at": "2026-07-18T07:06:13.153922+00:00",
-    "last_updated_at": "2026-07-19T07:35:20.006858+00:00",
-    "launch_score": 9,
-    "confidence_score": 12,
-    "investment_score": 93,
-    "urgency_score": 27,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Appartement %c3%a0 Vendre Sur Corniche Tanger | Promoteur: à confirmer | Ville: Tanger | Zone: Ziaten | Confirmations: confirmation en cours | Prix observés entre 1550000 et 1550000 MAD.",
-    "prices": {
-      "min": 1550000,
-      "max": 10560000
-    },
-    "aliases": [
-      "Studio Moderne %c3%a0 Route Nationale Assilah",
-      "Studio moderne à Route Nationale Assilah TANGER",
-      "Appartement %c3%a0 Vendre Sur Corniche Tanger",
-      "Appartement à vendre sur corniche Tanger",
-      "Superbe Appartement %c3%a0 Vendre %c3%a0 Gueznaia",
-      "Superbe appartement à vendre à Gueznaia"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Tanger Appartements",
-      "Mubawab Tanger Villas"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/pa/8218242/studio-moderne-%C3%A0-route-nationale-assilah-tanger",
-      "https://www.mubawab.ma/fr/a/8380213/appartement-%C3%A0-vendre-sur-corniche-tanger",
-      "https://www.mubawab.ma/fr/pa/8146450/superbe-appartement-%C3%A0-vendre-%C3%A0-gueznaia",
-      "https://www.mubawab.ma/fr/pa/7215355/appartement-%C3%A0-l-achat-%C3%A0-tanger-quartier-ziaten-superficie-130-m%C2%B2-prestation-de-conciergerie-belle-piscine",
-      "https://www.mubawab.ma/fr/a/8368752/villa-d%E2%80%99exception-%C3%A0-vendre-%E2%80%93-malabata-tanger-%E2%80%93-vue-panoramique-sur-mer-et-espagne",
-      "https://www.mubawab.ma/fr/a/8313844/villa-maison-d-h%C3%B4te-%C3%A0-vendre-%C3%A0-tanger",
-      "https://www.mubawab.ma/fr/a/8353005/villa-en-vente-au-quartier-charf-tanger",
-      "https://www.mubawab.ma/fr/a/8327797/superbe-villa-vue-mer"
-    ],
-    "evidence": {
-      "signal_count": 8,
-      "primary_signal_count": 0,
-      "listing_signal_count": 8,
-      "source_count": 2,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "within_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 1550000 et 1550000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 86
-      },
-      "project_slug": "appartement-c3-a0-vendre-sur-corniche-tanger-7b840e7b",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Studio moderne à Route Nationale Assilah TANGER",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8218242/studio-moderne-%C3%A0-route-nationale-assilah-tanger",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement à vendre sur corniche Tanger",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8380213/appartement-%C3%A0-vendre-sur-corniche-tanger",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Superbe appartement à vendre à Gueznaia",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8146450/superbe-appartement-%C3%A0-vendre-%C3%A0-gueznaia",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement à l'achat à Tanger quartier Ziaten. Superficie 1...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/7215355/appartement-%C3%A0-l-achat-%C3%A0-tanger-quartier-ziaten-superficie-130-m%C2%B2-prestation-de-conciergerie-belle-piscine",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Villa en vente au quartier charf Tanger",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8353005/villa-en-vente-au-quartier-charf-tanger",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 2 chambres",
-        "public_status": "8 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 1550000,
-        "price_max": 10560000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Studio moderne à Route Nationale Assilah TANGER",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8218242/studio-moderne-%C3%A0-route-nationale-assilah-tanger",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement à vendre sur corniche Tanger",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8380213/appartement-%C3%A0-vendre-sur-corniche-tanger",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Superbe appartement à vendre à Gueznaia",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8146450/superbe-appartement-%C3%A0-vendre-%C3%A0-gueznaia",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement à l'achat à Tanger quartier Ziaten. Superficie 1...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/7215355/appartement-%C3%A0-l-achat-%C3%A0-tanger-quartier-ziaten-superficie-130-m%C2%B2-prestation-de-conciergerie-belle-piscine",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Villa en vente au quartier charf Tanger",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8353005/villa-en-vente-au-quartier-charf-tanger",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 10420000 MAD",
-      "type: apartment_2_bed",
-      "ville: Tanger",
-      "prix détecté: 1550000 MAD",
-      "type: apartment_3_bed",
-      "prix détecté: 10560000 MAD",
-      "zone: Ziaten",
-      "prix détecté: 8950000 MAD",
-      "type: villa"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:20.006858+00:00",
-        "launch_score": 9,
-        "confidence_score": 12,
-        "investment_score": 93,
-        "urgency_score": 27,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:36.099329+00:00",
-        "launch_score": 9,
-        "confidence_score": 12,
-        "investment_score": 99,
-        "urgency_score": 28,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "8065af42855964aaa3c7f7b251661e0cd736bb51",
-    "name": "Vend Appartement %c3%a0 Hay Hassani Chambres",
-    "city": "Casablanca",
-    "zone": "Hay Hassani",
-    "promoter": null,
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-17T07:24:52.784745+00:00",
-    "last_updated_at": "2026-07-19T07:35:02.529432+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 100,
-    "urgency_score": 24,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Vend Appartement %c3%a0 Hay Hassani Chambres | Promoteur: à confirmer | Ville: Casablanca | Zone: Hay Hassani | Confirmations: confirmation en cours | Prix observés entre 915000 et 915000 MAD.",
-    "prices": {
-      "min": 915000,
-      "max": 915000
-    },
-    "aliases": [
-      "Vend Appartement %c3%a0 Hay Hassani Chambres",
-      "Vend appartement à Hay Hassani. 2 chambres. Salon typique..."
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Tanger Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8364505/vend-appartement-%C3%A0-hay-hassani-2-chambres-salon-typique-marocain-r%C3%A9sidence-s%C3%A9curis%C3%A9e"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "cash_ready",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 915000 et 915000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 92
-      },
-      "project_slug": "vend-appartement-c3-a0-hay-hassani-chambres-8065af42",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Vend appartement à Hay Hassani. 2 chambres. Salon typique...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8364505/vend-appartement-%C3%A0-hay-hassani-2-chambres-salon-typique-marocain-r%C3%A9sidence-s%C3%A9curis%C3%A9e",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 915000,
-        "price_max": 915000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Vend appartement à Hay Hassani. 2 chambres. Salon typique...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8364505/vend-appartement-%C3%A0-hay-hassani-2-chambres-salon-typique-marocain-r%C3%A9sidence-s%C3%A9curis%C3%A9e",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 915000 MAD",
-      "type: apartment_3_bed",
-      "ville: Casablanca",
-      "zone: Hay Hassani"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:02.529432+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 100,
-        "urgency_score": 24,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:40.909831+00:00",
-        "launch_score": 6,
-        "confidence_score": 12,
-        "investment_score": 100,
-        "urgency_score": 28,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:25:24.474682+00:00",
-        "launch_score": 6,
-        "confidence_score": 12,
-        "investment_score": 100,
-        "urgency_score": 28,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "2f682d296dff0893c9895ffa123edc5ee02facd9",
-    "name": "Superbe Appartement %c3%a0 Casablanca 181 M%c2%b2",
-    "city": "Casablanca",
-    "zone": "Anfa",
-    "promoter": null,
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-15T07:23:09.858250+00:00",
-    "last_updated_at": "2026-07-19T07:35:39.349278+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 97,
-    "urgency_score": 23,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Superbe Appartement %c3%a0 Casablanca 181 M%c2%b2 | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Prix observés entre 2800000 et 2800000 MAD.",
-    "prices": {
-      "min": 2800000,
-      "max": 2800000
-    },
-    "aliases": [
-      "Superbe Appartement %c3%a0 Casablanca 181 M%c2%b2",
-      "Superbe appartement à casablanca: 181 m² 2 pp"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Casablanca Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8379197/superbe-appartement-%C3%A0-casablanca-181-m%C2%B2-2-pp"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "within_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 2800000 et 2800000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 89
-      },
-      "project_slug": "superbe-appartement-c3-a0-casablanca-181-m-c2-b2-2f682d29",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Superbe appartement à casablanca: 181 m² 2 pp",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8379197/superbe-appartement-%C3%A0-casablanca-181-m%C2%B2-2-pp",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 2800000,
-        "price_max": 2800000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Superbe appartement à casablanca: 181 m² 2 pp",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8379197/superbe-appartement-%C3%A0-casablanca-181-m%C2%B2-2-pp",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 2800000 MAD",
-      "type: apartment_3_bed",
-      "ville: Casablanca",
-      "zone: Anfa"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:39.349278+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 97,
-        "urgency_score": 23,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:43.699840+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 97,
-        "urgency_score": 23,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:25:48.670378+00:00",
-        "launch_score": 9,
-        "confidence_score": 12,
-        "investment_score": 100,
-        "urgency_score": 29,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:30:13.308965+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 97,
-        "urgency_score": 23,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:23:09.858250+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 97,
-        "urgency_score": 23,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "31dad60cc958224337e7943a9776d3f02f37aa13",
-    "name": "Appartement %c3%a0 Achat %c3%a0 Californie Chambres",
-    "city": "Casablanca",
-    "zone": "Californie",
-    "promoter": null,
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-19T07:35:32.463865+00:00",
-    "last_updated_at": "2026-07-19T07:35:32.463865+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 97,
-    "urgency_score": 23,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Appartement %c3%a0 Achat %c3%a0 Californie Chambres | Promoteur: à confirmer | Ville: Casablanca | Zone: Californie | Confirmations: confirmation en cours | Prix observés entre 1712500 et 1712500 MAD.",
-    "prices": {
-      "min": 1712500,
-      "max": 1712500
-    },
-    "aliases": [
-      "Appartement %c3%a0 Achat %c3%a0 Californie Chambres",
-      "Appartement à l'achat à Californie. 2 chambres agréables"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Casablanca Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/pa/8139009/appartement-%C3%A0-l-achat-%C3%A0-californie-2-chambres-agr%C3%A9ables"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "within_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 1712500 et 1712500 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 89
-      },
-      "project_slug": "appartement-c3-a0-achat-c3-a0-californie-chambres-31dad60c",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement à l'achat à Californie. 2 chambres agréables",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8139009/appartement-%C3%A0-l-achat-%C3%A0-californie-2-chambres-agr%C3%A9ables",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 1712500,
-        "price_max": 1712500
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement à l'achat à Californie. 2 chambres agréables",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8139009/appartement-%C3%A0-l-achat-%C3%A0-californie-2-chambres-agr%C3%A9ables",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": true
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 1712500 MAD",
-      "type: apartment_3_bed",
-      "ville: Casablanca",
-      "zone: Californie"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:32.463865+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 97,
-        "urgency_score": 23,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "a868e21025ed3f31fd2f20529cfeda75644e9733",
-    "name": "Appartement Neuf Jamais Habite Val Fleuri",
-    "city": "Tanger",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-17T07:24:51.326144+00:00",
-    "last_updated_at": "2026-07-19T07:35:01.013213+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 90,
-    "urgency_score": 21,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Appartement Neuf Jamais Habite Val Fleuri | Promoteur: à confirmer | Ville: Tanger | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 1200000 et 1200000 MAD.",
-    "prices": {
-      "min": 1200000,
-      "max": 1200000
-    },
-    "aliases": [
-      "Appartement Neuf Jamais Habite Val Fleuri"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Tanger Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8381689/appartement-neuf-jamais-habite-val-fleuri"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "cash_ready",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 1200000 et 1200000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 83
-      },
-      "project_slug": "appartement-neuf-jamais-habite-val-fleuri-a868e210",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement neuf jamais habite val fleuri",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8381689/appartement-neuf-jamais-habite-val-fleuri",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 1200000,
-        "price_max": 1200000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement neuf jamais habite val fleuri",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8381689/appartement-neuf-jamais-habite-val-fleuri",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 1200000 MAD",
-      "type: apartment_3_bed",
-      "ville: Tanger"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:01.013213+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 90,
-        "urgency_score": 21,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:19.000031+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 90,
-        "urgency_score": 21,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:24:51.326144+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 90,
-        "urgency_score": 21,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "724cb062c51384d87adeb5ee64ae68812aa556ff",
-    "name": "Magnifique Villa Anglaise Tanger",
-    "city": "Tanger",
-    "zone": "Achakar",
-    "promoter": null,
-    "asset_type": "villa",
-    "first_detected_at": "2026-07-14T12:05:57.843858+00:00",
-    "last_updated_at": "2026-07-19T07:35:27.352998+00:00",
-    "launch_score": 9,
-    "confidence_score": 6,
-    "investment_score": 83,
-    "urgency_score": 23,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Magnifique Villa Anglaise Tanger | Promoteur: à confirmer | Ville: Tanger | Zone: Achakar | Confirmations: confirmation en cours | Prix observés entre 3300000 et 3300000 MAD.",
-    "prices": {
-      "min": 3300000,
-      "max": 27000000
-    },
-    "aliases": [
-      "Magnifique Villa Neuve Avec Jardin Piscine",
-      "Magnifique villa neuve avec jardin et piscine Jbel",
-      "Magnifique Villa Anglaise Tanger",
-      "Magnifique villa anglaise a tanger",
-      "Splendide Villa %c3%a0 Vendre %c3%a0 Jbel",
-      "Splendide villa à vendre à Jbel Kbir"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Tanger Villas"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8325563/magnifique-villa-neuve-avec-jardin-et-piscine-jbel",
-      "https://www.mubawab.ma/fr/a/8336400/magnifique-villa-anglaise-a-tanger",
-      "https://www.mubawab.ma/fr/a/7611965/splendide-villa-%C3%A0-vendre-%C3%A0-jbel-kbir",
-      "https://www.mubawab.ma/fr/a/8303314/villas-jumel%C3%A9es-%C3%A0-vendre",
-      "https://www.mubawab.ma/fr/a/8035073/villas-%C3%A0-vendre"
-    ],
-    "evidence": {
-      "signal_count": 5,
-      "primary_signal_count": 0,
-      "listing_signal_count": 5,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "above_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 3300000 et 3300000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 76
-      },
-      "project_slug": "magnifique-villa-anglaise-tanger-724cb062",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Magnifique villa neuve avec jardin et piscine Jbel",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8325563/magnifique-villa-neuve-avec-jardin-et-piscine-jbel",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Magnifique villa anglaise a tanger",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8336400/magnifique-villa-anglaise-a-tanger",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Splendide villa à vendre à Jbel Kbir",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/7611965/splendide-villa-%C3%A0-vendre-%C3%A0-jbel-kbir",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Villas jumelées à vendre",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8303314/villas-jumel%C3%A9es-%C3%A0-vendre",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Villas à vendre",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8035073/villas-%C3%A0-vendre",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Villa",
-        "public_status": "5 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 3300000,
-        "price_max": 27000000
-      },
-      "ai_analysis": {
-        "summary": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [
-          "Le projet semble au-dessus du budget cible configuré."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Magnifique villa neuve avec jardin et piscine Jbel",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8325563/magnifique-villa-neuve-avec-jardin-et-piscine-jbel",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Magnifique villa anglaise a tanger",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8336400/magnifique-villa-anglaise-a-tanger",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Splendide villa à vendre à Jbel Kbir",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/7611965/splendide-villa-%C3%A0-vendre-%C3%A0-jbel-kbir",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Villas jumelées à vendre",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8303314/villas-jumel%C3%A9es-%C3%A0-vendre",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        },
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Villas à vendre",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8035073/villas-%C3%A0-vendre",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [
-        "Prix minimum mis à jour: 27000000 → 3300000 MAD"
-      ],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "type: villa",
-      "ville: Tanger",
-      "prix détecté: 27000000 MAD",
-      "prix détecté: 9500000 MAD",
-      "prix détecté: 4250000 MAD",
-      "zone: Achakar",
-      "marqueur de lancement détecté",
-      "prix détecté: 3300000 MAD"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:27.352998+00:00",
-        "launch_score": 9,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 23,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:32.389801+00:00",
-        "launch_score": 6,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 18,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:25:10.725120+00:00",
-        "launch_score": 6,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 18,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:30:05.022291+00:00",
-        "launch_score": 9,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:23:30.049666+00:00",
-        "launch_score": 9,
-        "confidence_score": 24,
-        "investment_score": 100,
-        "urgency_score": 32,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-14T12:06:40.451810+00:00",
-        "launch_score": 9,
-        "confidence_score": 18,
-        "investment_score": 100,
-        "urgency_score": 32,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "30df64cd277766198729e49370c3352402d23e4f",
-    "name": "Appartement Moderne Raffin%c3%a9",
-    "city": "Tanger",
-    "zone": null,
-    "promoter": "Chaabi Lil Iskane",
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-15T07:22:43.372801+00:00",
-    "last_updated_at": "2026-07-19T07:35:05.300492+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 83,
-    "urgency_score": 20,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Appartement Moderne Raffin%c3%a9 | Promoteur: Chaabi Lil Iskane | Ville: Tanger | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 1760000 et 1760000 MAD.",
-    "prices": {
-      "min": 1760000,
-      "max": 1760000
-    },
-    "aliases": [
-      "Appartement Moderne Raffin%c3%a9",
-      "Appartement moderne et raffiné"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Tanger Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/pa/7360912/appartement-moderne-et-raffin%C3%A9"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "within_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 1760000 et 1760000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 76
-      },
-      "project_slug": "appartement-moderne-raffin-c3-a9-30df64cd",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement moderne et raffiné",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/7360912/appartement-moderne-et-raffin%C3%A9",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 1760000,
-        "price_max": 1760000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement moderne et raffiné",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/7360912/appartement-moderne-et-raffin%C3%A9",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 1760000 MAD",
-      "type: apartment_3_bed",
-      "ville: Tanger"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:05.300492+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:22.011809+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:24:55.438941+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:29:50.159392+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:22:43.372801+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "e9db63ccacbceb6bf657c71817d0ee5b34f474d6",
-    "name": "Appartement Qui Allie Confort Modernit%c3%a9",
-    "city": "Tanger",
-    "zone": null,
-    "promoter": "Chaabi Lil Iskane",
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-15T07:22:34.526433+00:00",
-    "last_updated_at": "2026-07-19T07:34:53.728930+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 83,
-    "urgency_score": 20,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Appartement Qui Allie Confort Modernit%c3%a9 | Promoteur: Chaabi Lil Iskane | Ville: Tanger | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 2170000 et 2170000 MAD.",
-    "prices": {
-      "min": 2170000,
-      "max": 2170000
-    },
-    "aliases": [
-      "Appartement Qui Allie Confort Modernit%c3%a9",
-      "Un appartement qui allie confort et modernité"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Tanger Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/pa/8216954/un-appartement-qui-allie-confort-et-modernit%C3%A9"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "within_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 2170000 et 2170000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 76
-      },
-      "project_slug": "appartement-qui-allie-confort-modernit-c3-a9-e9db63cc",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Un appartement qui allie confort et modernité",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8216954/un-appartement-qui-allie-confort-et-modernit%C3%A9",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 2170000,
-        "price_max": 2170000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Un appartement qui allie confort et modernité",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8216954/un-appartement-qui-allie-confort-et-modernit%C3%A9",
-          "source": "Mubawab Tanger Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 2170000 MAD",
-      "type: apartment_3_bed",
-      "ville: Tanger"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:34:53.728930+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:14.193091+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:24:43.801301+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:29:41.942237+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:22:34.526433+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 83,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "b4cab83b3bfc28bad738a882fe81b8fa21a33cab",
-    "name": "Apt M%c2%b2 R%c3%a9nov%c3%a9 2%c3%a8me Etg%e2%80%94 Vue",
-    "city": "Casablanca",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_2_bed",
-    "first_detected_at": "2026-07-14T12:06:39.211549+00:00",
-    "last_updated_at": "2026-07-19T07:35:40.682613+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 82,
-    "urgency_score": 20,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Apt M%c2%b2 R%c3%a9nov%c3%a9 2%c3%a8me Etg%e2%80%94 Vue | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 1480000 et 1480000 MAD.",
-    "prices": {
-      "min": 1480000,
-      "max": 1480000
-    },
-    "aliases": [
-      "Apt M%c2%b2 R%c3%a9nov%c3%a9 2%c3%a8me Etg%e2%80%94 Vue",
-      "Apt 80 m² rénové, 2ème etg— Vue panoramic parc"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Casablanca Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8377378/apt-80-m%C2%B2-r%C3%A9nov%C3%A9-2%C3%A8me-etg%E2%80%94-vue-panoramic-parc"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "cash_ready",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 1480000 et 1480000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 75
-      },
-      "project_slug": "apt-m-c2-b2-r-c3-a9nov-c3-a9-2-c3-a8me-etg-e2-80-94-vue-b4cab83b",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Apt 80 m² rénové, 2ème etg— Vue panoramic parc",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8377378/apt-80-m%C2%B2-r%C3%A9nov%C3%A9-2%C3%A8me-etg%E2%80%94-vue-panoramic-parc",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 2 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 1480000,
-        "price_max": 1480000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Apt 80 m² rénové, 2ème etg— Vue panoramic parc",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8377378/apt-80-m%C2%B2-r%C3%A9nov%C3%A9-2%C3%A8me-etg%E2%80%94-vue-panoramic-parc",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 1480000 MAD",
-      "type: apartment_2_bed",
-      "ville: Casablanca"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:40.682613+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 82,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:44.540536+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 82,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:25:28.394886+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 82,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:30:14.167360+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 88,
-        "urgency_score": 21,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:23:10.895122+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 82,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-14T12:06:39.211549+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 82,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "e1698173e9a81472943899246489de40d4c272a0",
-    "name": "Villa D%e2%80%99exception Avec Piscine Vue Mer",
-    "city": "Casablanca",
-    "zone": "Ain Diab",
-    "promoter": null,
-    "asset_type": "villa",
-    "first_detected_at": "2026-07-19T07:36:03.360516+00:00",
-    "last_updated_at": "2026-07-19T07:36:03.360516+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 81,
-    "urgency_score": 20,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Villa D%e2%80%99exception Avec Piscine Vue Mer | Promoteur: à confirmer | Ville: Casablanca | Zone: Ain Diab | Confirmations: confirmation en cours | Prix observés entre 8200000 et 8200000 MAD.",
-    "prices": {
-      "min": 8200000,
-      "max": 8200000
-    },
-    "aliases": [
-      "Villa D%e2%80%99exception Avec Piscine Vue Mer",
-      "Villa d’Exception avec Piscine & Vue Mer – À 3min du Morocco..."
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Casablanca Villas"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8263107/villa-d%E2%80%99exception-avec-piscine-vue-mer-%E2%80%93-%C3%A0-3min-du-morocco-mall"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5928,
-        "lng": -7.6872,
-        "sea_distance_km": 1,
-        "station_distance_km": 8,
-        "highway_distance_km": 5
-      },
-      "price_band": "above_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 8200000 et 8200000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 75
-      },
-      "project_slug": "villa-d-e2-80-99exception-avec-piscine-vue-mer-e1698173",
-      "infrastructure": {
-        "sea_distance_km": 1,
-        "station_distance_km": 8,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Villa d’Exception avec Piscine & Vue Mer – À 3min du Morocco...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8263107/villa-d%E2%80%99exception-avec-piscine-vue-mer-%E2%80%93-%C3%A0-3min-du-morocco-mall",
-          "source": "Mubawab Casablanca Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Villa",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 8200000,
-        "price_max": 8200000
-      },
-      "ai_analysis": {
-        "summary": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [
-          "Le projet semble au-dessus du budget cible configuré."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Villa d’Exception avec Piscine & Vue Mer – À 3min du Morocco...",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8263107/villa-d%E2%80%99exception-avec-piscine-vue-mer-%E2%80%93-%C3%A0-3min-du-morocco-mall",
-          "source": "Mubawab Casablanca Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": true
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 8200000 MAD",
-      "type: villa",
-      "ville: Casablanca",
-      "zone: Ain Diab"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:36:03.360516+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 81,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "569fc0ebab4757710e42b035309ba7b098dee28b",
-    "name": "Appartement",
-    "city": "Casablanca",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-15T07:23:07.766878+00:00",
-    "last_updated_at": "2026-07-19T07:35:35.162279+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 81,
-    "urgency_score": 20,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Appartement | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 3000000 et 3000000 MAD.",
-    "prices": {
-      "min": 3000000,
-      "max": 3000000
-    },
-    "aliases": [
-      "Appartement"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Casablanca Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/8354315/appartement"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "within_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 3000000 et 3000000 MAD."
-      },
-      "roi": {
-        "label": "Élevé",
-        "five_year_upside_score": 75
-      },
-      "project_slug": "appartement-569fc0eb",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8354315/appartement",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 3000000,
-        "price_max": 3000000
-      },
-      "ai_analysis": {
-        "summary": "Garder en observation jusqu'à nouvelles confirmations.",
-        "strengths": [
-          "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-        ],
-        "risks": [],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Appartement",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/8354315/appartement",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [
-        "Prix minimum mis à jour: 3200000 → 3000000 MAD"
-      ],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 3000000 MAD",
-      "type: apartment_3_bed",
-      "ville: Casablanca"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:35.162279+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 81,
-        "urgency_score": 20,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:42.691639+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 55,
-        "urgency_score": 14,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:25:25.766948+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 55,
-        "urgency_score": 14,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:30:10.382220+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 55,
-        "urgency_score": 14,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:23:07.766878+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 55,
-        "urgency_score": 14,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "bdd5a9b4fb32b518d644616278aaf6a8bd7a2661",
-    "name": "Grande Villa Centre Ville",
-    "city": "Tanger",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "villa",
-    "first_detected_at": "2026-07-14T12:06:19.363863+00:00",
-    "last_updated_at": "2026-07-19T07:35:18.479737+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 67,
-    "urgency_score": 17,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Grande Villa Centre Ville | Promoteur: à confirmer | Ville: Tanger | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 8200000 et 8200000 MAD.",
-    "prices": {
-      "min": 8200000,
-      "max": 8200000
-    },
-    "aliases": [
-      "Grande Villa Centre Ville",
-      "Grande villa au centre ville"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Tanger Villas"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/a/7265371/grande-villa-au-centre-ville"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 35.7595,
-        "lng": -5.834,
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "price_band": "above_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 8200000 et 8200000 MAD."
-      },
-      "roi": {
-        "label": "Moyen",
-        "five_year_upside_score": 62
-      },
-      "project_slug": "grande-villa-centre-ville-bdd5a9b4",
-      "infrastructure": {
-        "sea_distance_km": 3,
-        "station_distance_km": 4,
-        "highway_distance_km": 5
-      },
-      "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Grande villa au centre ville",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/7265371/grande-villa-au-centre-ville",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Villa",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 8200000,
-        "price_max": 8200000
-      },
-      "ai_analysis": {
-        "summary": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-        "strengths": [],
-        "risks": [
-          "Le projet semble au-dessus du budget cible configuré."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Grande villa au centre ville",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/a/7265371/grande-villa-au-centre-ville",
-          "source": "Mubawab Tanger Villas",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": false
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 8200000 MAD",
-      "type: villa",
-      "ville: Tanger"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:18.479737+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 17,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-18T07:06:30.472264+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 17,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-17T07:25:08.084863+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 17,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-16T07:29:59.338459+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 17,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-15T07:22:53.938228+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 17,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      },
-      {
-        "observed_at": "2026-07-14T12:06:19.363863+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 67,
-        "urgency_score": 17,
-        "status": "monitor",
-        "recommendation": "Monitor"
-      }
-    ],
-    "signals": []
-  },
-  {
-    "project_id": "34e9ad0145df800e7c31fa78185ee827d6dccc74",
-    "name": "Vente Bel Appartement %c3%a0 Roches Noires",
-    "city": "Casablanca",
-    "zone": null,
-    "promoter": null,
-    "asset_type": "apartment_3_bed",
-    "first_detected_at": "2026-07-19T07:35:42.103925+00:00",
-    "last_updated_at": "2026-07-19T07:35:42.103925+00:00",
-    "launch_score": 3,
-    "confidence_score": 6,
-    "investment_score": 55,
-    "urgency_score": 14,
-    "recommendation": "Monitor",
-    "status": "monitor",
-    "summary": "Vente Bel Appartement %c3%a0 Roches Noires | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 13900000 et 13900000 MAD.",
-    "prices": {
-      "min": 13900000,
-      "max": 13900000
-    },
-    "aliases": [
-      "Vente Bel Appartement %c3%a0 Roches Noires",
-      "Vente d'un bel appartement à Roches Noires. Superficie 62 m²"
-    ],
-    "channels": [
-      "listing"
-    ],
-    "sources": [
-      "Mubawab Casablanca Appartements"
-    ],
-    "source_urls": [
-      "https://www.mubawab.ma/fr/pa/8369255/vente-d-un-bel-appartement-%C3%A0-roches-noires-superficie-62-m%C2%B2"
-    ],
-    "evidence": {
-      "signal_count": 1,
-      "primary_signal_count": 0,
-      "listing_signal_count": 1,
-      "source_count": 1,
-      "channel_count": 1,
-      "primary_channels": [],
-      "secondary_channels": [
-        "listing"
-      ],
-      "confirmations": [],
-      "confirmation_details": [],
-      "confirmation_count": 0,
-      "geo": {
-        "lat": 33.5731,
-        "lng": -7.5898,
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "price_band": "above_budget",
-      "price_evolution": {
-        "trend": "stable",
-        "summary": "Prix observés entre 13900000 et 13900000 MAD."
-      },
-      "roi": {
-        "label": "Prudent",
-        "five_year_upside_score": 51
-      },
-      "project_slug": "vente-bel-appartement-c3-a0-roches-noires-34e9ad01",
-      "infrastructure": {
-        "sea_distance_km": 6,
-        "station_distance_km": 5,
-        "highway_distance_km": 4
-      },
-      "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-      "source_catalog": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Vente d'un bel appartement à Roches Noires. Superficie 62 m²",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8369255/vente-d-un-bel-appartement-%C3%A0-roches-noires-superficie-62-m%C2%B2",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "practical": {
-        "asset_label": "Appartement 3 chambres",
-        "public_status": "1 signal(s) listing détecté(s), disponibilités à confirmer.",
-        "price_min": 13900000,
-        "price_max": 13900000
-      },
-      "ai_analysis": {
-        "summary": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
-        "strengths": [],
-        "risks": [
-          "Le projet semble au-dessus du budget cible configuré."
-        ],
-        "next_steps": [
-          "Vérifier le site officiel et les pages sociales du promoteur.",
-          "Confirmer les disponibilités et le ticket d'entrée réel.",
-          "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-        ]
-      },
-      "official_links": [],
-      "social_links": [],
-      "listing_links": [
-        {
-          "kind": "listing",
-          "kind_label": "Portail immobilier",
-          "label": "Vente d'un bel appartement à Roches Noires. Superficie 62 m²",
-          "description": "Portail immobilier servant surtout à confirmer prix et disponibilité.",
-          "url": "https://www.mubawab.ma/fr/pa/8369255/vente-d-un-bel-appartement-%C3%A0-roches-noires-superficie-62-m%C2%B2",
-          "source": "Mubawab Casablanca Appartements",
-          "signal_type": "listing_detail",
-          "proof_level": "direct"
-        }
-      ],
-      "news_links": [],
-      "urbanism_links": [],
-      "images": [],
-      "videos": [],
-      "changes": [],
-      "is_new_project": true
-    },
-    "reasons": [
-      "signal listing secondaire",
-      "prix détecté: 13900000 MAD",
-      "type: apartment_3_bed",
-      "ville: Casablanca",
-      "marqueur de lancement détecté"
-    ],
-    "timeline": [
-      {
-        "observed_at": "2026-07-19T07:35:42.103925+00:00",
-        "launch_score": 3,
-        "confidence_score": 6,
-        "investment_score": 55,
-        "urgency_score": 14,
         "status": "monitor",
         "recommendation": "Monitor"
       }
