@@ -1,4 +1,1452 @@
 {
-  "immediate": [],
+  "immediate": [
+    {
+      "project_id": "8e7eb8dd9915d1f938a367035f5e581d18e83146",
+      "name": "Evergreen",
+      "city": "Casablanca",
+      "zone": "Californie",
+      "promoter": null,
+      "asset_type": "apartment_3_bed",
+      "first_detected_at": "2026-07-24T07:36:06.275524+00:00",
+      "last_updated_at": "2026-07-24T07:36:06.275561+00:00",
+      "launch_score": 100,
+      "confidence_score": 100,
+      "investment_score": 100,
+      "urgency_score": 100,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "Evergreen | Promoteur: à confirmer | Ville: Casablanca | Zone: Californie | Confirmations: confirmation en cours | Prix observés entre 800000 et 800000 MAD.",
+      "prices": {
+        "min": 800000,
+        "max": 800000
+      },
+      "aliases": [
+        "Evergreen"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Groupe Allali - L'immobilier autrement"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1470832837415483",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1395096578475118"
+      ],
+      "evidence": {
+        "signal_count": 2,
+        "primary_signal_count": 2,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "geo": {
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "price_band": "cash_ready",
+        "price_evolution": {
+          "trend": "stable",
+          "summary": "Prix observés entre 800000 et 800000 MAD."
+        },
+        "roi": {
+          "label": "Élevé",
+          "five_year_upside_score": 97
+        },
+        "project_slug": "evergreen-8e7eb8dd",
+        "infrastructure": {
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Groupe Allali - L'immobilier autrement · ad #1470832837415483",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1470832837415483",
+            "source": "Groupe Allali - L'immobilier autrement",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Groupe Allali - L'immobilier autrement · ad #1395096578475118",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1395096578475118",
+            "source": "Groupe Allali - L'immobilier autrement",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Appartement 3 chambres",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "price_min": 800000,
+          "price_max": 800000
+        },
+        "ai_analysis": {
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+          ],
+          "risks": [
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Groupe Allali - L'immobilier autrement · ad #1470832837415483",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1470832837415483",
+            "source": "Groupe Allali - L'immobilier autrement",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Groupe Allali - L'immobilier autrement · ad #1395096578475118",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1395096578475118",
+            "source": "Groupe Allali - L'immobilier autrement",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [
+          "assets/meta/meta-ad-1395096578475118.jpg"
+        ],
+        "videos": [],
+        "changes": [],
+        "is_new_project": true
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 1470832837415483",
+        "prix détecté: 800000 MAD",
+        "type: apartment_3_bed",
+        "ville: Casablanca",
+        "zone: Californie",
+        "marqueur de lancement détecté",
+        "publicité Meta exacte détectée: ad_id 1395096578475118"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-07-24T07:36:06.275524+00:00",
+          "channel": "advertising",
+          "source": "Groupe Allali - L'immobilier autrement",
+          "title": "Groupe Allali - L'immobilier autrement · ad #1470832837415483",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1470832837415483"
+        },
+        {
+          "detected_at": "2026-07-24T07:36:06.275561+00:00",
+          "channel": "advertising",
+          "source": "Groupe Allali - L'immobilier autrement",
+          "title": "Groupe Allali - L'immobilier autrement · ad #1395096578475118",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1395096578475118"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Groupe Allali - L'immobilier autrement",
+          "signal_type": "meta_ad",
+          "title": "Groupe Allali - L'immobilier autrement · ad #1470832837415483",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1470832837415483",
+          "text": "Groupe Allali - L'immobilier autrement Groupe Allali - L'immobilier autrement Lancement du nouveau projet Evergreen, signé Groupe allali Située à Californie, Casablanca, cette résidence fermée et sécurisée vous propose des studios et appartements premium aux finitions soignées. Prestations de qualité : 🏊‍Piscine 💪 Salle de fitness 🌿 Espaces verts 👧 Aire de jeux pour enfants 🔹 Studios à partir de 800.000 DH 🔹 Appartements 2 à 3 chambres + salon à partir de 1.025.000 DH Pour plus d’informations: 05023 30 40 50 http://www.allali.ma/evergreen Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Nouveau projet Evergreen, signé Groupe allali Profiter de l’offre ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAGj3DbIKft4IW6b0sfqBMaOiI2NxRjJ4pI9ajnaXoLxJaPGariAvgutJmCZDPefR8rtazwwQwPeqmA0VK5EU0MH6-1II6Hga_qwDouwsUzWv345PZ3Q_0XYEynDtFufz-K1-On5-sYe_WJ",
+          "is_primary": true,
+          "launch_weight": 50,
+          "confidence_weight": 52,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1470832837415483",
+            "page_name": "Groupe Allali - L'immobilier autrement",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1470832837415483",
+            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAGj3DbIKft4IW6b0sfqBMaOiI2NxRjJ4pI9ajnaXoLxJaPGariAvgutJmCZDPefR8rtazwwQwPeqmA0VK5EU0MH6-1II6Hga_qwDouwsUzWv345PZ3Q_0XYEynDtFufz-K1-On5-sYe_WJ",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "nouveau projet immobilier Casablanca",
+            "city_hint": null,
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1470832837415483",
+            "prix détecté: 800000 MAD",
+            "type: apartment_3_bed",
+            "ville: Casablanca",
+            "zone: Californie",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-07-24T07:36:06.275524+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Californie",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": "Groupe Allali - L'immobilier autrement",
+          "price_mad": 800000,
+          "signal_id": "78946b3627584069d3e5162f5ec79bc103b881e7"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Groupe Allali - L'immobilier autrement",
+          "signal_type": "meta_ad",
+          "title": "Groupe Allali - L'immobilier autrement · ad #1395096578475118",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1395096578475118",
+          "text": "Groupe Allali - L'immobilier autrement Groupe Allali - L'immobilier autrement Lancement du nouveau projet Evergreen, signé Groupe allali Située à Californie, Casablanca, cette résidence fermée et sécurisée vous propose des studios et appartements premium aux finitions soignées. Prestations de qualité : 🏊‍Piscine 💪 Salle de fitness 🌿 Espaces verts 👧 Aire de jeux pour enfants 🔹 Studios à partir de 800.000 DH 🔹 Appartements 2 à 3 chambres + salon à partir de 1.025.000 DH Pour plus d’informations: 05023 30 40 50 http://www.allali.ma/evergreen FB.ME Studios et appartements Get Offer FB.ME Piscines & espaces verts Get Offer FB.ME Appartements premium aux finitions soignées. Get Offer FB.ME Grandes terrasses Get Offer FB.ME Contactez-nous Get Offer ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAGj3DbIKft4IW6b0sfqBMaOiI2NxRjJ4pI9ajnaXoLxJaPGariAvgutJmCZDPefR8rtazwwQwPeqmA0VK5EU0MH6-1II6Hga_qwDouwsUzWv345PZ3Q_0XYEynDtFufz-K1-On5-sYe_WJ",
+          "is_primary": true,
+          "launch_weight": 50,
+          "confidence_weight": 52,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1395096578475118",
+            "page_name": "Groupe Allali - L'immobilier autrement",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1395096578475118",
+            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAGj3DbIKft4IW6b0sfqBMaOiI2NxRjJ4pI9ajnaXoLxJaPGariAvgutJmCZDPefR8rtazwwQwPeqmA0VK5EU0MH6-1II6Hga_qwDouwsUzWv345PZ3Q_0XYEynDtFufz-K1-On5-sYe_WJ",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "nouveau projet immobilier Casablanca",
+            "city_hint": null,
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1395096578475118",
+            "prix détecté: 800000 MAD",
+            "type: apartment_3_bed",
+            "ville: Casablanca",
+            "zone: Californie",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-07-24T07:36:06.275561+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Californie",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": "Groupe Allali - L'immobilier autrement",
+          "price_mad": 800000,
+          "signal_id": "8605fc7686bd63cd634ba3ec4d01f08a0ebb431c"
+        }
+      ]
+    },
+    {
+      "project_id": "7c2ffa4ca01b305d0bce4fe283a087a3e1932876",
+      "name": "Green lotus Green lotus Green Lotus Business",
+      "city": "Casablanca",
+      "zone": "Bouskoura",
+      "promoter": null,
+      "asset_type": "apartment_3_bed",
+      "first_detected_at": "2026-07-24T07:34:17.754439+00:00",
+      "last_updated_at": "2026-07-24T07:34:17.754567+00:00",
+      "launch_score": 100,
+      "confidence_score": 100,
+      "investment_score": 89,
+      "urgency_score": 100,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "Green lotus Green lotus Green Lotus Business | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "Green lotus Green lotus Green Lotus Business",
+        "Green lotus",
+        "Green lotus Green lotus Green Lotus"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Green lotus"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
+      ],
+      "evidence": {
+        "signal_count": 3,
+        "primary_signal_count": 3,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "geo": {
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "price_band": "unknown",
+        "price_evolution": {
+          "trend": "unknown",
+          "summary": "Aucune série de prix fiable pour le moment."
+        },
+        "roi": {
+          "label": "Élevé",
+          "five_year_upside_score": 86
+        },
+        "project_slug": "green-lotus-green-lotus-green-lotus-business-7c2ffa4c",
+        "infrastructure": {
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1369915538422075",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1796362918002528",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1039379112368362",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Appartement 3 chambres",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "price_min": null,
+          "price_max": null
+        },
+        "ai_analysis": {
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+          ],
+          "risks": [
+            "Le prix public n'est pas encore confirmé.",
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1369915538422075",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1796362918002528",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1039379112368362",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [
+          "assets/meta/meta-ad-1369915538422075.jpg"
+        ],
+        "videos": [],
+        "changes": [],
+        "is_new_project": true
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 1369915538422075",
+        "ville: Casablanca",
+        "zone: Bouskoura",
+        "publicité Meta exacte détectée: ad_id 1796362918002528",
+        "type: apartment_3_bed",
+        "publicité Meta exacte détectée: ad_id 1039379112368362"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-07-24T07:34:17.754439+00:00",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "title": "Green lotus · ad #1369915538422075",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075"
+        },
+        {
+          "detected_at": "2026-07-24T07:34:17.754511+00:00",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "title": "Green lotus · ad #1796362918002528",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528"
+        },
+        {
+          "detected_at": "2026-07-24T07:34:17.754567+00:00",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "title": "Green lotus · ad #1039379112368362",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "title": "Green lotus · ad #1369915538422075",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+          "text": "Green lotus Green lotus Green Lotus Business est un centre d'affaires moderne offrant un cadre professionnel premium au cœur du futur pôle stratégique de Casablanca. Situé à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie, Casa Nearshore, Green Lotus bénéficie d'un positionnement exceptionnel. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus L'élégance au service de la Performance. Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUDGI0DXipwz2HpGHnic_6ztgCioMumOQBwpDgiD944JK1HZtrITfBcUDnssinyq0QMCo0dJTX3G09t7YU5mBbu3mfy659zRVpqmJcYTJoRc5z24Bz7YcRsBerOQ3TlFMtNDiV3JAwcXtDRU",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 40,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1369915538422075",
+            "page_name": "Green lotus",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUDGI0DXipwz2HpGHnic_6ztgCioMumOQBwpDgiD944JK1HZtrITfBcUDnssinyq0QMCo0dJTX3G09t7YU5mBbu3mfy659zRVpqmJcYTJoRc5z24Bz7YcRsBerOQ3TlFMtNDiV3JAwcXtDRU",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Green Lotus",
+            "city_hint": "Casablanca",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1369915538422075",
+            "ville: Casablanca",
+            "zone: Bouskoura"
+          ],
+          "discovered_at": "2026-07-24T07:34:17.754439+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Bouskoura",
+          "promoter_hint": null,
+          "asset_type_hint": null,
+          "project_name_hint": "Green lotus",
+          "price_mad": null,
+          "signal_id": "9596e82d5388f8ee9cc53b0faef3b992d67de966"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "title": "Green lotus · ad #1796362918002528",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+          "text": "Green lotus Green lotus Organisé autour d'un parc central privé piéton de près de 9 000 m², Green Lotus Park offre un équilibre parfait entre nature, confort et espace. Appartements 2 & 3 chambres, Duplex Rez-de-jardin et Penthouses en duplex avec piscine. 📍 Nearshore Vallée, Route de Bouskoura, en face du Hilton Garden Inn, Casablanca Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUDGI0DXipwz2HpGHnic_6ztgCioMumOQBwpDgiD944JK1HZtrITfBcUDnssinyq0QMCo0dJTX3G09t7YU5mBbu3mfy659zRVpqmJcYTJoRc5z24Bz7YcRsBerOQ3TlFMtNDiV3JAwcXtDRU",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 44,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1796362918002528",
+            "page_name": "Green lotus",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUDGI0DXipwz2HpGHnic_6ztgCioMumOQBwpDgiD944JK1HZtrITfBcUDnssinyq0QMCo0dJTX3G09t7YU5mBbu3mfy659zRVpqmJcYTJoRc5z24Bz7YcRsBerOQ3TlFMtNDiV3JAwcXtDRU",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Green Lotus",
+            "city_hint": "Casablanca",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1796362918002528",
+            "type: apartment_3_bed",
+            "ville: Casablanca",
+            "zone: Bouskoura"
+          ],
+          "discovered_at": "2026-07-24T07:34:17.754511+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Bouskoura",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": "Green lotus",
+          "price_mad": null,
+          "signal_id": "79899a6cd9824b2a5be9eea405a347e8a3df41db"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "title": "Green lotus · ad #1039379112368362",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+          "text": "Green lotus Green lotus Green Lotus est un ensemble résidentiel et de services haut standing bénéficiant d’un positionnement exceptionnel à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie et Casa Nearshore. Conçu comme un véritable écosystème de vie, où plus des deux tiers du site sont consacrés aux espaces verts et aux aménagements paysagers, le projet est pensé selon une approche durable intégrant des matériaux écoresponsables, une gestion optimisée des ressources et des solutions énergétiques performantes, lui permettant d’obtenir la certification HQE – Haute Qualité Environnementale. Son architecture organique, élégante et contemporaine s’intègre harmonieusement dans son environnement, créant une véritable oasis de sérénité à quelques minutes seulement de l’effervescence urbaine. Green Lotus se positionne comme un nouvel emblème de la vie contemporaine, offrant des perspectives dégagées et un cadre de vie unique dominant l’horizon. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus La référence du bien-vivre à Casablanca Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUDGI0DXipwz2HpGHnic_6ztgCioMumOQBwpDgiD944JK1HZtrITfBcUDnssinyq0QMCo0dJTX3G09t7YU5mBbu3mfy659zRVpqmJcYTJoRc5z24Bz7YcRsBerOQ3TlFMtNDiV3JAwcXtDRU",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 40,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1039379112368362",
+            "page_name": "Green lotus",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fpark%2F&h=AUDGI0DXipwz2HpGHnic_6ztgCioMumOQBwpDgiD944JK1HZtrITfBcUDnssinyq0QMCo0dJTX3G09t7YU5mBbu3mfy659zRVpqmJcYTJoRc5z24Bz7YcRsBerOQ3TlFMtNDiV3JAwcXtDRU",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Green Lotus",
+            "city_hint": "Casablanca",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1039379112368362",
+            "ville: Casablanca",
+            "zone: Bouskoura"
+          ],
+          "discovered_at": "2026-07-24T07:34:17.754567+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Bouskoura",
+          "promoter_hint": null,
+          "asset_type_hint": null,
+          "project_name_hint": "Green lotus",
+          "price_mad": null,
+          "signal_id": "bcb9a6c40555ca5947d53ed68bf6dfe87d9a2c60"
+        }
+      ]
+    },
+    {
+      "project_id": "db44a95d80e8278b7d4eaa8b4087dac57d7b7ceb",
+      "name": "is designed as a statement of elegance",
+      "city": "Casablanca",
+      "zone": null,
+      "promoter": null,
+      "asset_type": "villa",
+      "first_detected_at": "2026-07-24T07:36:57.048777+00:00",
+      "last_updated_at": "2026-07-24T07:36:57.048854+00:00",
+      "launch_score": 76,
+      "confidence_score": 100,
+      "investment_score": 83,
+      "urgency_score": 86,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "is designed as a statement of elegance | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "is designed as a statement of elegance"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Elie Saab Casablanca Art Of Living"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1731780921195460",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1015792604196652"
+      ],
+      "evidence": {
+        "signal_count": 2,
+        "primary_signal_count": 2,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "geo": {
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "price_band": "unknown",
+        "price_evolution": {
+          "trend": "unknown",
+          "summary": "Aucune série de prix fiable pour le moment."
+        },
+        "roi": {
+          "label": "Élevé",
+          "five_year_upside_score": 81
+        },
+        "project_slug": "is-designed-as-a-statement-of-elegance-db44a95d",
+        "infrastructure": {
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Elie Saab Casablanca Art Of Living · ad #1731780921195460",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1731780921195460",
+            "source": "Elie Saab Casablanca Art Of Living",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Elie Saab Casablanca Art Of Living · ad #1015792604196652",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1015792604196652",
+            "source": "Elie Saab Casablanca Art Of Living",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Villa",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "price_min": null,
+          "price_max": null
+        },
+        "ai_analysis": {
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+          ],
+          "risks": [
+            "Le prix public n'est pas encore confirmé.",
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Elie Saab Casablanca Art Of Living · ad #1731780921195460",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1731780921195460",
+            "source": "Elie Saab Casablanca Art Of Living",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Elie Saab Casablanca Art Of Living · ad #1015792604196652",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1015792604196652",
+            "source": "Elie Saab Casablanca Art Of Living",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [],
+        "videos": [],
+        "changes": [],
+        "is_new_project": true
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 1731780921195460",
+        "type: villa",
+        "ville: Casablanca",
+        "publicité Meta exacte détectée: ad_id 1015792604196652"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-07-24T07:36:57.048777+00:00",
+          "channel": "advertising",
+          "source": "Elie Saab Casablanca Art Of Living",
+          "title": "Elie Saab Casablanca Art Of Living · ad #1731780921195460",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1731780921195460"
+        },
+        {
+          "detected_at": "2026-07-24T07:36:57.048854+00:00",
+          "channel": "advertising",
+          "source": "Elie Saab Casablanca Art Of Living",
+          "title": "Elie Saab Casablanca Art Of Living · ad #1015792604196652",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1015792604196652"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Elie Saab Casablanca Art Of Living",
+          "signal_type": "meta_ad",
+          "title": "Elie Saab Casablanca Art Of Living · ad #1731780921195460",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1731780921195460",
+          "text": "Elie Saab Casablanca Art Of Living Elie Saab Casablanca Art Of Living From refined apartments to exceptional villas, every residence is designed as a statement of elegance, comfort, and contemporary Craftsmanship. A lifestyle shaped by timeless architecture, serene landscapes, and elevated living. ELIE SAAB Casablanca Art Of Living. 📞 +212.522.09.33.09 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus ELIESAAB-CASABLANCALP.ARTOFLIVING.MA Elie Saab Casablanca Art Of Living En savoir plus ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fnms-investment.ma%2Fvictoria-garden%2F&h=AUC6Z0T1Yx31gpqwJEt3bYrtyfhSGpqWFb2QKVInkqY68cOqe71YLJ1JavsEPFz0DSiEso01M2ZUAKLi0C0JaE4J5EsngyaAjPKgTn4JW0gHktPewOe57hAgavrDJjK9fKqsKNHxpCP1YkO1",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 45,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1731780921195460",
+            "page_name": "Elie Saab Casablanca Art Of Living",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1731780921195460",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fnms-investment.ma%2Fvictoria-garden%2F&h=AUC6Z0T1Yx31gpqwJEt3bYrtyfhSGpqWFb2QKVInkqY68cOqe71YLJ1JavsEPFz0DSiEso01M2ZUAKLi0C0JaE4J5EsngyaAjPKgTn4JW0gHktPewOe57hAgavrDJjK9fKqsKNHxpCP1YkO1",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "résidence Casablanca",
+            "city_hint": "Casablanca",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1731780921195460",
+            "type: villa",
+            "ville: Casablanca"
+          ],
+          "discovered_at": "2026-07-24T07:36:57.048777+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": "villa",
+          "project_name_hint": "Elie Saab Casablanca Art Of Living",
+          "price_mad": null,
+          "signal_id": "ed696a43c721f20e1bb476cf611d0989149ffca8"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Elie Saab Casablanca Art Of Living",
+          "signal_type": "meta_ad",
+          "title": "Elie Saab Casablanca Art Of Living · ad #1015792604196652",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1015792604196652",
+          "text": "Elie Saab Casablanca Art Of Living Elie Saab Casablanca Art Of Living From refined apartments to exceptional villas, every residence is designed as a statement of elegance, comfort, and contemporary Craftsmanship. A lifestyle shaped by timeless architecture, serene landscapes, and elevated living. ELIE SAAB Casablanca Art Of Living. 📞 +212.522.09.33.09 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus ELIESAAB-CASABLANCALP.ARTOFLIVING.MA Elie Saab Casablanca Art Of Living En savoir plus ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fnms-investment.ma%2Fvictoria-garden%2F&h=AUC6Z0T1Yx31gpqwJEt3bYrtyfhSGpqWFb2QKVInkqY68cOqe71YLJ1JavsEPFz0DSiEso01M2ZUAKLi0C0JaE4J5EsngyaAjPKgTn4JW0gHktPewOe57hAgavrDJjK9fKqsKNHxpCP1YkO1",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 45,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1015792604196652",
+            "page_name": "Elie Saab Casablanca Art Of Living",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1015792604196652",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fnms-investment.ma%2Fvictoria-garden%2F&h=AUC6Z0T1Yx31gpqwJEt3bYrtyfhSGpqWFb2QKVInkqY68cOqe71YLJ1JavsEPFz0DSiEso01M2ZUAKLi0C0JaE4J5EsngyaAjPKgTn4JW0gHktPewOe57hAgavrDJjK9fKqsKNHxpCP1YkO1",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "résidence Casablanca",
+            "city_hint": "Casablanca",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1015792604196652",
+            "type: villa",
+            "ville: Casablanca"
+          ],
+          "discovered_at": "2026-07-24T07:36:57.048854+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": "villa",
+          "project_name_hint": "Elie Saab Casablanca Art Of Living",
+          "price_mad": null,
+          "signal_id": "ed8274f4ce090724abc0a3ff7bb3e6da40e90255"
+        }
+      ]
+    },
+    {
+      "project_id": "d724275c1a2732ccaf355b9ee937dd633f919323",
+      "name": "Les Palmiers Résidences",
+      "city": "Agadir",
+      "zone": "Hay Mohammadi",
+      "promoter": null,
+      "asset_type": "apartment_unknown",
+      "first_detected_at": "2026-07-24T07:37:21.963670+00:00",
+      "last_updated_at": "2026-07-24T07:37:21.963875+00:00",
+      "launch_score": 100,
+      "confidence_score": 100,
+      "investment_score": 67,
+      "urgency_score": 100,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "Les Palmiers Résidences | Promoteur: à confirmer | Ville: Agadir | Zone: Hay Mohammadi | Confirmations: confirmation en cours | Prix observés entre 728000 et 728000 MAD.",
+      "prices": {
+        "min": 728000,
+        "max": 1040000
+      },
+      "aliases": [
+        "Les Palmiers Résidences"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Moubina Immobilier"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2121312858456093",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1561865398813477",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1324582259840499",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1346159623779103"
+      ],
+      "evidence": {
+        "signal_count": 4,
+        "primary_signal_count": 4,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "geo": {
+          "lat": 30.4278,
+          "lng": -9.5981,
+          "sea_distance_km": 4,
+          "station_distance_km": 9,
+          "highway_distance_km": 6
+        },
+        "price_band": "cash_ready",
+        "price_evolution": {
+          "trend": "stable",
+          "summary": "Prix observés entre 728000 et 728000 MAD."
+        },
+        "roi": {
+          "label": "Moyen",
+          "five_year_upside_score": 66
+        },
+        "project_slug": "les-palmiers-r-sidences-d724275c",
+        "infrastructure": {
+          "sea_distance_km": 4,
+          "station_distance_km": 9,
+          "highway_distance_km": 6
+        },
+        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Moubina Immobilier · ad #2121312858456093",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2121312858456093",
+            "source": "Moubina Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Moubina Immobilier · ad #1561865398813477",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1561865398813477",
+            "source": "Moubina Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Moubina Immobilier · ad #1324582259840499",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1324582259840499",
+            "source": "Moubina Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Moubina Immobilier · ad #1346159623779103",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1346159623779103",
+            "source": "Moubina Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Appartement",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "price_min": 728000,
+          "price_max": 1040000
+        },
+        "ai_analysis": {
+          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible."
+          ],
+          "risks": [
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Moubina Immobilier · ad #2121312858456093",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2121312858456093",
+            "source": "Moubina Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Moubina Immobilier · ad #1561865398813477",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1561865398813477",
+            "source": "Moubina Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Moubina Immobilier · ad #1324582259840499",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1324582259840499",
+            "source": "Moubina Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Moubina Immobilier · ad #1346159623779103",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1346159623779103",
+            "source": "Moubina Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [
+          "assets/meta/meta-ad-2121312858456093.jpg"
+        ],
+        "videos": [],
+        "changes": [],
+        "is_new_project": true
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 2121312858456093",
+        "prix détecté: 1040000 MAD",
+        "type: apartment_unknown",
+        "ville: Agadir",
+        "zone: Hay Mohammadi",
+        "publicité Meta exacte détectée: ad_id 1561865398813477",
+        "prix détecté: 728000 MAD",
+        "publicité Meta exacte détectée: ad_id 1324582259840499",
+        "publicité Meta exacte détectée: ad_id 1346159623779103"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-07-24T07:37:21.963670+00:00",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "title": "Moubina Immobilier · ad #2121312858456093",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2121312858456093"
+        },
+        {
+          "detected_at": "2026-07-24T07:37:21.963754+00:00",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "title": "Moubina Immobilier · ad #1561865398813477",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1561865398813477"
+        },
+        {
+          "detected_at": "2026-07-24T07:37:21.963843+00:00",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "title": "Moubina Immobilier · ad #1324582259840499",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1324582259840499"
+        },
+        {
+          "detected_at": "2026-07-24T07:37:21.963875+00:00",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "title": "Moubina Immobilier · ad #1346159623779103",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1346159623779103"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "signal_type": "meta_ad",
+          "title": "Moubina Immobilier · ad #2121312858456093",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2121312858456093",
+          "text": "Moubina Immobilier Moubina Immobilier 🏡 Découvrez Les Palmiers Résidences, une adresse de standing au cœur d’Agadir, à partir de 1,04 MDH. Promoteur immobilier : Moubina Immobilier 📍 Localisation du projet : Cité Al Mohammadi, Agadir 📍 Bureau de vente : Hay Mohammadi, Agadir — près de Marjane Market ☎️ 05 28 82 32 33 📱 06 55 56 55 66 🌐 www.moubina.ma WHATSAPP Votre adresse de standing à Agadir Appartements de standing à Agadir à partir de 1,04 MDH. Nous contacter ​ Actif Nombre faible d’impressions ​ ID dans la bibliothèque : 841241732253846 Début de diffusion le 20 juil 2026 Plateformes ​ ​ ​ ​ Impressions : <100 Ouvrir la liste déroulante ​ Voir les détails de la publicité Moubina Immobilier Sponsorisé 📢 Moubina Immobilier participe au Salon SAKANKOM 2026 ! Nous avons le plaisir de vous annoncer notre présence au Salon International de l’Immobilier Professionnel et du BTP – SAKANKOM 2026, un événement incontournable dédié aux acteurs de l’immobilier, de la construction et de l’investissement. Retrouvez notre équipe au Stand N°23 pour découvrir nos projets immobiliers, échanger avec nos conseillers et obtenir toutes les informations nécessaires sur nos offres. 📅 23, 24 et 25 juillet 2026 📍 Hôtel Les Dunes d’Or – Agadir 📌 Stand N°23 Nous serons ravis de vous accueillir et de vous accompagner dans votre projet immobilier. Moubina Immobilier Nombre faible d’impressions État du système API Ad LibraryÀ propos des publicités et de l’utilisation des donnéesConfidentialitéConditionsCookies Meta © 2026 | Français (France) https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUDrxPZUrTsHRsvzlb7FABlZ2TtPGqTXSV3n5q7h6MptrmTKeDgL0Qnee-CsP3NpHXzbd6Z0v2kJ2KtLC-pcS9FAZTdUPYy1_3GJOxpG-9_YdM4AdMK_z1YnyxUo9a1N5HjoZ2Y43hFECibq",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "2121312858456093",
+            "page_name": "Moubina Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2121312858456093",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUDrxPZUrTsHRsvzlb7FABlZ2TtPGqTXSV3n5q7h6MptrmTKeDgL0Qnee-CsP3NpHXzbd6Z0v2kJ2KtLC-pcS9FAZTdUPYy1_3GJOxpG-9_YdM4AdMK_z1YnyxUo9a1N5HjoZ2Y43hFECibq",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "projet immobilier Agadir",
+            "city_hint": "Agadir",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 2121312858456093",
+            "prix détecté: 1040000 MAD",
+            "type: apartment_unknown",
+            "ville: Agadir",
+            "zone: Hay Mohammadi"
+          ],
+          "discovered_at": "2026-07-24T07:37:21.963670+00:00",
+          "city_hint": "Agadir",
+          "zone_hint": "Hay Mohammadi",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Moubina Immobilier",
+          "price_mad": 1040000,
+          "signal_id": "5a1e3af0b73683ffaedf9ca68570f4e8caafe66b"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "signal_type": "meta_ad",
+          "title": "Moubina Immobilier · ad #1561865398813477",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1561865398813477",
+          "text": "Moubina Immobilier Moubina Immobilier Découvrez Les Palmiers Résidences par Moubina Immobilier : des appartements modernes avec vue sur jardin, au cœur d’un cadre agréable à Agadir. À partir de 728 000 Dh. 📍 Projet : Cité Al Mohammadi, Agadir 🏢 Bureau de vente : Hay Mohammadi, près de Marjane Market ☎️ Centre Relation Client : 05 28 82 32 33 / 06 55 56 55 66 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Appartements avec vue sur jardin à partir de 728 000 Dh. Vivez l'exceptionnel dans une résidence de rêve, conçue pour votre bien-être absolu ! Un concept architectural unique qui allie modernité et sérénité. Confort quotidien garanti : Sécurité totale en résidence fermée Patio intérieur végétalisé Salle de fitness privée Parking sous-terrain sécurisé Stratégiquement situé près de la plage & commodités. Finitions Premium dès 720 000 DH. Moubina Immobilier : Excellence certifiée ISO 9001. Contactez-nous ! Profiter de l’offre ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUDrxPZUrTsHRsvzlb7FABlZ2TtPGqTXSV3n5q7h6MptrmTKeDgL0Qnee-CsP3NpHXzbd6Z0v2kJ2KtLC-pcS9FAZTdUPYy1_3GJOxpG-9_YdM4AdMK_z1YnyxUo9a1N5HjoZ2Y43hFECibq",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1561865398813477",
+            "page_name": "Moubina Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1561865398813477",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUDrxPZUrTsHRsvzlb7FABlZ2TtPGqTXSV3n5q7h6MptrmTKeDgL0Qnee-CsP3NpHXzbd6Z0v2kJ2KtLC-pcS9FAZTdUPYy1_3GJOxpG-9_YdM4AdMK_z1YnyxUo9a1N5HjoZ2Y43hFECibq",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "projet immobilier Agadir",
+            "city_hint": "Agadir",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1561865398813477",
+            "prix détecté: 728000 MAD",
+            "type: apartment_unknown",
+            "ville: Agadir",
+            "zone: Hay Mohammadi"
+          ],
+          "discovered_at": "2026-07-24T07:37:21.963754+00:00",
+          "city_hint": "Agadir",
+          "zone_hint": "Hay Mohammadi",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Moubina Immobilier",
+          "price_mad": 728000,
+          "signal_id": "72a6e5684ffca2ea2ea0a37b34bdd69eab33539b"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "signal_type": "meta_ad",
+          "title": "Moubina Immobilier · ad #1324582259840499",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1324582259840499",
+          "text": "Moubina Immobilier Moubina Immobilier 🏡 Découvrez Les Palmiers Résidences, une adresse de standing au cœur d’Agadir, à partir de 1,04 MDH. Promoteur immobilier : Moubina Immobilier 📍 Localisation du projet : Cité Al Mohammadi, Agadir 📍 Bureau de vente : Hay Mohammadi, Agadir — près de Marjane Market ☎️ 05 28 82 32 33 📱 06 55 56 55 66 🌐 www.moubina.ma FB.ME Votre adresse de standing à Agadir Appartements de standing à Agadir à partir de 1,04 MDH. Profiter de l’offre ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUDrxPZUrTsHRsvzlb7FABlZ2TtPGqTXSV3n5q7h6MptrmTKeDgL0Qnee-CsP3NpHXzbd6Z0v2kJ2KtLC-pcS9FAZTdUPYy1_3GJOxpG-9_YdM4AdMK_z1YnyxUo9a1N5HjoZ2Y43hFECibq",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1324582259840499",
+            "page_name": "Moubina Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1324582259840499",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUDrxPZUrTsHRsvzlb7FABlZ2TtPGqTXSV3n5q7h6MptrmTKeDgL0Qnee-CsP3NpHXzbd6Z0v2kJ2KtLC-pcS9FAZTdUPYy1_3GJOxpG-9_YdM4AdMK_z1YnyxUo9a1N5HjoZ2Y43hFECibq",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "projet immobilier Agadir",
+            "city_hint": "Agadir",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1324582259840499",
+            "prix détecté: 1040000 MAD",
+            "type: apartment_unknown",
+            "ville: Agadir",
+            "zone: Hay Mohammadi"
+          ],
+          "discovered_at": "2026-07-24T07:37:21.963843+00:00",
+          "city_hint": "Agadir",
+          "zone_hint": "Hay Mohammadi",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Moubina Immobilier",
+          "price_mad": 1040000,
+          "signal_id": "27145d8bda791b581f18b57b9a47009159377ac3"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "signal_type": "meta_ad",
+          "title": "Moubina Immobilier · ad #1346159623779103",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1346159623779103",
+          "text": "Moubina Immobilier Moubina Immobilier 🏡 Découvrez Les Palmiers Résidences, une adresse de standing au cœur d’Agadir, à partir de 1,04 MDH. Promoteur immobilier : Moubina Immobilier 📍 Localisation du projet : Cité Al Mohammadi, Agadir 📍 Bureau de vente : Hay Mohammadi, Agadir — près de Marjane Market ☎️ 05 28 82 32 33 📱 06 55 56 55 66 🌐 www.moubina.ma WHATSAPP Votre adresse de standing à Agadir Appartements de standing à Agadir à partir de 1,04 MDH. Nous contacter ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUDrxPZUrTsHRsvzlb7FABlZ2TtPGqTXSV3n5q7h6MptrmTKeDgL0Qnee-CsP3NpHXzbd6Z0v2kJ2KtLC-pcS9FAZTdUPYy1_3GJOxpG-9_YdM4AdMK_z1YnyxUo9a1N5HjoZ2Y43hFECibq",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1346159623779103",
+            "page_name": "Moubina Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1346159623779103",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUDrxPZUrTsHRsvzlb7FABlZ2TtPGqTXSV3n5q7h6MptrmTKeDgL0Qnee-CsP3NpHXzbd6Z0v2kJ2KtLC-pcS9FAZTdUPYy1_3GJOxpG-9_YdM4AdMK_z1YnyxUo9a1N5HjoZ2Y43hFECibq",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "projet immobilier Agadir",
+            "city_hint": "Agadir",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1346159623779103",
+            "prix détecté: 1040000 MAD",
+            "type: apartment_unknown",
+            "ville: Agadir",
+            "zone: Hay Mohammadi"
+          ],
+          "discovered_at": "2026-07-24T07:37:21.963875+00:00",
+          "city_hint": "Agadir",
+          "zone_hint": "Hay Mohammadi",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Moubina Immobilier",
+          "price_mad": 1040000,
+          "signal_id": "fc7e85d76e909a7fb7e690ecf8edf39d6204f8b1"
+        }
+      ]
+    },
+    {
+      "project_id": "658d5572a5461cb2adcf8e195c18e3738d279ddf",
+      "name": "Les jardins de Mesnana Golf",
+      "city": "Tanger",
+      "zone": "Mesnana",
+      "promoter": "Addoha",
+      "asset_type": "apartment_unknown",
+      "first_detected_at": "2026-07-24T07:36:26.980341+00:00",
+      "last_updated_at": "2026-07-24T07:36:26.980427+00:00",
+      "launch_score": 100,
+      "confidence_score": 100,
+      "investment_score": 61,
+      "urgency_score": 96,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "Les jardins de Mesnana Golf | Promoteur: Addoha | Ville: Tanger | Zone: Mesnana | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "Les jardins de Mesnana Golf"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Les jardins de Mesnana Golf By T.Abaakil Immobilier"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2100632210535942",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1357368402570244"
+      ],
+      "evidence": {
+        "signal_count": 2,
+        "primary_signal_count": 2,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "geo": {
+          "lat": 35.7595,
+          "lng": -5.834,
+          "sea_distance_km": 3,
+          "station_distance_km": 4,
+          "highway_distance_km": 5
+        },
+        "price_band": "unknown",
+        "price_evolution": {
+          "trend": "unknown",
+          "summary": "Aucune série de prix fiable pour le moment."
+        },
+        "roi": {
+          "label": "Moyen",
+          "five_year_upside_score": 61
+        },
+        "project_slug": "les-jardins-de-mesnana-golf-658d5572",
+        "infrastructure": {
+          "sea_distance_km": 3,
+          "station_distance_km": 4,
+          "highway_distance_km": 5
+        },
+        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Les jardins de Mesnana Golf By T.Abaakil Immobilier · ad #2100632210535942",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2100632210535942",
+            "source": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Les jardins de Mesnana Golf By T.Abaakil Immobilier · ad #1357368402570244",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1357368402570244",
+            "source": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Appartement",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "price_min": null,
+          "price_max": null
+        },
+        "ai_analysis": {
+          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible."
+          ],
+          "risks": [
+            "Le prix public n'est pas encore confirmé.",
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Les jardins de Mesnana Golf By T.Abaakil Immobilier · ad #2100632210535942",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2100632210535942",
+            "source": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Les jardins de Mesnana Golf By T.Abaakil Immobilier · ad #1357368402570244",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1357368402570244",
+            "source": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [
+          "assets/meta/meta-ad-2100632210535942.jpg"
+        ],
+        "videos": [],
+        "changes": [],
+        "is_new_project": true
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 2100632210535942",
+        "type: apartment_unknown",
+        "ville: Tanger",
+        "zone: Mesnana",
+        "marqueur de lancement détecté",
+        "publicité Meta exacte détectée: ad_id 1357368402570244"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-07-24T07:36:26.980341+00:00",
+          "channel": "advertising",
+          "source": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+          "title": "Les jardins de Mesnana Golf By T.Abaakil Immobilier · ad #2100632210535942",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2100632210535942"
+        },
+        {
+          "detected_at": "2026-07-24T07:36:26.980427+00:00",
+          "channel": "advertising",
+          "source": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+          "title": "Les jardins de Mesnana Golf By T.Abaakil Immobilier · ad #1357368402570244",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1357368402570244"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+          "signal_type": "meta_ad",
+          "title": "Les jardins de Mesnana Golf By T.Abaakil Immobilier · ad #2100632210535942",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2100632210535942",
+          "text": "Les jardins de Mesnana Golf By T.Abaakil Immobilier Les jardins de Mesnana Golf By T.Abaakil Immobilier 🏡✨ Journées Portes Ouvertes – Les 23 & 24 juillet 2026 ✨🏡 C'est le moment idéal pour découvrir la nouvelle tranche des Jardins de Mesnana Golf et profiter d'offres exclusives ! 🎉 🎁 Pour toute réservation effectuée pendant les journées portes ouvertes : ✅ Frais d'enregistrement offerts ✅ Frais de conservation foncière offerts ✅ Frais de notaire offerts Une opportunité unique de concrétiser votre projet immobilier dans les meilleures conditions. 📍 Venez visiter notre appartement témoin, découvrir les plans et échanger avec notre équipe. 📞 Réservez dès maintenant : ☎️ Fixe : 05 39 32 82 00 📱 Mobile : 06 62 01 41 86 ⏳ Offre valable uniquement les 23 et 24 juillet 2026. Ne manquez pas cette occasion ! #LesJardinsDeMesnanaGolf #Tanger #JournéesPortesOuvertes #Immobilier #NouvelleTranche #AppartementNeuf #Investissement #OffreExceptionnelle #OpenHouse #RealEstate ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma%2Fprogramme%2Facheter-terrain-pour-immeuble-tanger-complexe-addoha-el-ikhlass-pi000429&h=AUCTGsR5FfUsum_2Jp7FSROrR2162nnXa4hY966Z_TraM2AbOafmRHvKzT9hVjH8mxBw8iPc0Yflz-kHzMv6HELQrtewVZCd9PlS0y7P187fS__IN6MXgZ3aJAy48wZbxVUhJwvxNB3sYIJj",
+          "is_primary": true,
+          "launch_weight": 50,
+          "confidence_weight": 50,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "2100632210535942",
+            "page_name": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2100632210535942",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma%2Fprogramme%2Facheter-terrain-pour-immeuble-tanger-complexe-addoha-el-ikhlass-pi000429&h=AUCTGsR5FfUsum_2Jp7FSROrR2162nnXa4hY966Z_TraM2AbOafmRHvKzT9hVjH8mxBw8iPc0Yflz-kHzMv6HELQrtewVZCd9PlS0y7P187fS__IN6MXgZ3aJAy48wZbxVUhJwvxNB3sYIJj",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "projet immobilier Tanger",
+            "city_hint": "Tanger",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 2100632210535942",
+            "type: apartment_unknown",
+            "ville: Tanger",
+            "zone: Mesnana",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-07-24T07:36:26.980341+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": "Mesnana",
+          "promoter_hint": "Addoha",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+          "price_mad": null,
+          "signal_id": "1ed58bb59329f7143eb3a200e72f3484b34b32fc"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+          "signal_type": "meta_ad",
+          "title": "Les jardins de Mesnana Golf By T.Abaakil Immobilier · ad #1357368402570244",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1357368402570244",
+          "text": "Les jardins de Mesnana Golf By T.Abaakil Immobilier Les jardins de Mesnana Golf By T.Abaakil Immobilier 🏡✨ Journées Portes Ouvertes – Les 23 & 24 juillet 2026 ✨🏡 C'est le moment idéal pour découvrir la nouvelle tranche des Jardins de Mesnana Golf et profiter d'offres exclusives ! 🎉 🎁 Pour toute réservation effectuée pendant les journées portes ouvertes : ✅ Frais d'enregistrement offerts ✅ Frais de conservation foncière offerts ✅ Frais de notaire offerts Une opportunité unique de concrétiser votre projet immobilier dans les meilleures conditions. 📍 Venez visiter notre appartement témoin, découvrir les plans et échanger avec notre équipe. 📞 Réservez dès maintenant : ☎️ Fixe : 05 39 32 82 00 📱 Mobile : 06 62 01 41 86 ⏳ Offre valable uniquement les 23 et 24 juillet 2026. Ne manquez pas cette occasion ! #LesJardinsDeMesnanaGolf #Tanger #JournéesPortesOuvertes #Immobilier #NouvelleTranche #AppartementNeuf #Investissement #OffreExceptionnelle #OpenHouse #RealEstate INSTAGRAM.COM Discuter avec nous Create an account or log in to Instagram - Share what you're into with the people who get you. Envoyer un message État du système API Ad LibraryÀ propos des publicités et de l’utilisation des donnéesConfidentialitéConditionsCookies Meta © 2026 | Français (France) https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma%2Fprogramme%2Facheter-terrain-pour-immeuble-tanger-complexe-addoha-el-ikhlass-pi000429&h=AUCTGsR5FfUsum_2Jp7FSROrR2162nnXa4hY966Z_TraM2AbOafmRHvKzT9hVjH8mxBw8iPc0Yflz-kHzMv6HELQrtewVZCd9PlS0y7P187fS__IN6MXgZ3aJAy48wZbxVUhJwvxNB3sYIJj",
+          "is_primary": true,
+          "launch_weight": 50,
+          "confidence_weight": 50,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1357368402570244",
+            "page_name": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1357368402570244",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma%2Fprogramme%2Facheter-terrain-pour-immeuble-tanger-complexe-addoha-el-ikhlass-pi000429&h=AUCTGsR5FfUsum_2Jp7FSROrR2162nnXa4hY966Z_TraM2AbOafmRHvKzT9hVjH8mxBw8iPc0Yflz-kHzMv6HELQrtewVZCd9PlS0y7P187fS__IN6MXgZ3aJAy48wZbxVUhJwvxNB3sYIJj",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "projet immobilier Tanger",
+            "city_hint": "Tanger",
+            "zone_hint": null
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1357368402570244",
+            "type: apartment_unknown",
+            "ville: Tanger",
+            "zone: Mesnana",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-07-24T07:36:26.980427+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": "Mesnana",
+          "promoter_hint": "Addoha",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Les jardins de Mesnana Golf By T.Abaakil Immobilier",
+          "price_mad": null,
+          "signal_id": "283f891d9cb6069c59d35993cce029fcd8d8ef35"
+        }
+      ]
+    }
+  ],
   "digest": []
 }
