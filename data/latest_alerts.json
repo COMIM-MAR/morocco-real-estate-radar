@@ -1,37 +1,37 @@
 {
   "immediate": [
     {
-      "project_id": "931b56b2061ab3ec1f54ca50082e192bb29b6543",
-      "name": "Cga Immobiliere Atanger",
-      "city": "Tanger",
-      "zone": "Route de Tétouan",
+      "project_id": "4c00fe06b10c8d3642774f7559c306b63664b1dd",
+      "name": "Lotus Résidences",
+      "city": "Marrakech",
+      "zone": null,
       "promoter": null,
-      "asset_type": "apartment_2_bed",
-      "first_detected_at": "2026-07-25T07:23:51.642034+00:00",
-      "last_updated_at": "2026-07-25T07:23:51.642164+00:00",
-      "launch_score": 76,
-      "confidence_score": 98,
-      "investment_score": 67,
-      "urgency_score": 82,
+      "asset_type": "apartment_3_bed",
+      "first_detected_at": "2026-07-26T07:42:44.682832+00:00",
+      "last_updated_at": "2026-07-26T07:42:44.682894+00:00",
+      "launch_score": 100,
+      "confidence_score": 100,
+      "investment_score": 77,
+      "urgency_score": 100,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Cga Immobiliere Atanger | Promoteur: à confirmer | Ville: Tanger | Zone: Route de Tétouan | Confirmations: confirmation en cours | Prix observés entre 15000000 et 15000000 MAD.",
+      "summary": "Lotus Résidences | Promoteur: à confirmer | Ville: Marrakech | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 800000 et 800000 MAD.",
       "prices": {
-        "min": 15000000,
-        "max": 17000000
+        "min": 800000,
+        "max": 800000
       },
       "aliases": [
-        "Cga Immobiliere Atanger"
+        "Lotus Résidences"
       ],
       "channels": [
         "advertising"
       ],
       "sources": [
-        "Cga Immobiliere Atanger"
+        "Sakani Immobilier"
       ],
       "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2693496661046936",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2171651206948223"
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1365369345713156",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1220182783567015"
       ],
       "evidence": {
         "signal_count": 2,
@@ -47,63 +47,63 @@
         "confirmation_details": [],
         "confirmation_count": 0,
         "geo": {
-          "lat": 35.7595,
-          "lng": -5.834,
-          "sea_distance_km": 3,
-          "station_distance_km": 4,
-          "highway_distance_km": 5
+          "lat": 31.6295,
+          "lng": -7.9811,
+          "sea_distance_km": 180,
+          "station_distance_km": 5,
+          "highway_distance_km": 6
         },
-        "price_band": "above_budget",
+        "price_band": "cash_ready",
         "price_evolution": {
           "trend": "stable",
-          "summary": "Prix observés entre 15000000 et 15000000 MAD."
+          "summary": "Prix observés entre 800000 et 800000 MAD."
         },
         "roi": {
-          "label": "Moyen",
-          "five_year_upside_score": 66
+          "label": "Élevé",
+          "five_year_upside_score": 75
         },
-        "project_slug": "cga-immobiliere-atanger-931b56b2",
+        "project_slug": "lotus-r-sidences-4c00fe06",
         "infrastructure": {
-          "sea_distance_km": 3,
-          "station_distance_km": 4,
-          "highway_distance_km": 5
+          "sea_distance_km": 180,
+          "station_distance_km": 5,
+          "highway_distance_km": 6
         },
-        "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
         "source_catalog": [
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Cga Immobiliere Atanger · ad #2693496661046936",
+            "label": "Sakani Immobilier · ad #1365369345713156",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2693496661046936",
-            "source": "Cga Immobiliere Atanger",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1365369345713156",
+            "source": "Sakani Immobilier",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Cga Immobiliere Atanger · ad #2171651206948223",
+            "label": "Sakani Immobilier · ad #1220182783567015",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2171651206948223",
-            "source": "Cga Immobiliere Atanger",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1220182783567015",
+            "source": "Sakani Immobilier",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
         ],
         "practical": {
-          "asset_label": "Appartement 2 chambres",
+          "asset_label": "Appartement 3 chambres",
           "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "price_min": 15000000,
-          "price_max": 17000000
+          "price_min": 800000,
+          "price_max": 800000
         },
         "ai_analysis": {
-          "summary": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
           "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
           ],
           "risks": [
-            "Le projet semble au-dessus du budget cible configuré.",
             "Aucune disponibilité publique confirmée sur portail pour l'instant."
           ],
           "next_steps": [
@@ -117,20 +117,20 @@
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Cga Immobiliere Atanger · ad #2693496661046936",
+            "label": "Sakani Immobilier · ad #1365369345713156",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2693496661046936",
-            "source": "Cga Immobiliere Atanger",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1365369345713156",
+            "source": "Sakani Immobilier",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Cga Immobiliere Atanger · ad #2171651206948223",
+            "label": "Sakani Immobilier · ad #1220182783567015",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2171651206948223",
-            "source": "Cga Immobiliere Atanger",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1220182783567015",
+            "source": "Sakani Immobilier",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
@@ -139,353 +139,117 @@
         "news_links": [],
         "urbanism_links": [],
         "images": [
-          "assets/meta/meta-ad-2693496661046936.jpg"
+          "assets/meta/meta-ad-1365369345713156.jpg"
         ],
         "videos": [],
         "changes": [],
         "is_new_project": true
       },
       "reasons": [
-        "publicité Meta exacte détectée: ad_id 2693496661046936",
-        "prix détecté: 15000000 MAD",
-        "type: apartment_2_bed",
-        "ville: Tanger",
-        "zone: Route de Tétouan",
-        "publicité Meta exacte détectée: ad_id 2171651206948223",
-        "prix détecté: 17000000 MAD"
+        "publicité Meta exacte détectée: ad_id 1365369345713156",
+        "prix détecté: 800000 MAD",
+        "type: apartment_3_bed",
+        "ville: Marrakech",
+        "marqueur de lancement détecté",
+        "publicité Meta exacte détectée: ad_id 1220182783567015"
       ],
       "timeline": [
         {
-          "detected_at": "2026-07-25T07:23:51.642034+00:00",
+          "detected_at": "2026-07-26T07:42:44.682832+00:00",
           "channel": "advertising",
-          "source": "Cga Immobiliere Atanger",
-          "title": "Cga Immobiliere Atanger · ad #2693496661046936",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2693496661046936"
+          "source": "Sakani Immobilier",
+          "title": "Sakani Immobilier · ad #1365369345713156",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1365369345713156"
         },
         {
-          "detected_at": "2026-07-25T07:23:51.642164+00:00",
+          "detected_at": "2026-07-26T07:42:44.682894+00:00",
           "channel": "advertising",
-          "source": "Cga Immobiliere Atanger",
-          "title": "Cga Immobiliere Atanger · ad #2171651206948223",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2171651206948223"
+          "source": "Sakani Immobilier",
+          "title": "Sakani Immobilier · ad #1220182783567015",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1220182783567015"
         }
       ],
       "signals": [
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "Cga Immobiliere Atanger",
+          "source": "Sakani Immobilier",
           "signal_type": "meta_ad",
-          "title": "Cga Immobiliere Atanger · ad #2693496661046936",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2693496661046936",
-          "text": "Cga Immobiliere Atanger Cga Immobiliere Atanger *إقامة الفتح 2* المشروع الثاني لشركتنا : عرض خاص للمستفدين الاوائل: الثمن 25 مليون * التسبيق : فقط 10 مليون كاقل تقدير *فرصتك لتملك سكن متوسط بثمن سكن اقتصادي بعد دعم الدولة *الموقع:* طنجة : بالعوامة وقريب من طريق تطوان، دقائق من محطة القطار TGV و دقايق من البحر و مركز المدينة و 10 دقائق للمحطة الطرقية الجديدة *نوع المشروع:* سكن متوسط بجودة متوسطة *العمارة:* مكونة من 5 طوابق + مصعد + مكان سيارة لكل شقة *تاريخ البناء:* قريبا سنشرع في البناء و - التسليم سنة 2028 ان شاء الله * : الشقق : بناء متوسط (وسومي فيني يعني كتفينها انت على ذوقك الصباغة .الزليج الجبص * الابواب .الحمام .و المطبخ ) وعائلية المساحات من 50 متر الى 65 م² غرفتين + صالون + مطبخ+ بالكون وطيراس + حمام _الدولة تدعمك بـ 10 مليون سنتيم مباشرة. أنت تخلص غير 15 مليون. - *استثمار مضمون*: منطقة في تطور سريع والقريية من وسط المدينة وطريق تطوان - *إطلالة وهواء*: قريب من البحر يعني تهوية نقية *: لماذا تختار إقامة الفتح 2؟ . *الثمن الأفضل في طنجة*: 25 مليون فقط 2. *جودة البناء*: مواد جيدة و محترمة للسكن المتوسط 3. *الراحة*: مصعد + باركينغ + تصميم عصري 4. *الأمان*: عمارة من 5 طوابق فقط، *الضمان*: تسليم في الآجال 2028 وعقود موثقة 🎁 *العرض محدود للأوائل فقط* - الأولوية في اختيار الشقة والطابق - تسهيلات في الأداء *سارع قبل نفاذ العرض 📍 *مكتب البيع*: حي العوامة، قبالة مقهى اكرم الموقع على الخريطة لمكتب البيع :https://maps.app.goo.gl/Qg9rwRYKJzRSvtG5A?g_st=ac Résidence Al-Fath 2 🏗️ ### *2ème projet – Logement économique à Tanger* 📍 **Al-Aouama**, proche route de Tétouan 🚄 5 min TGV | 🌊 7 min mer/centre | 🚌 10 min gare routière 🏠 **Appartements 50-65 m²** : 2 chambres + salon + cuisine + balcon + terrasse 🛠️ *Semi-finis* : Personnalisez peinture, zellige, cuisine, salle de bain 💰 **15 millions de centimes à payer** *(25 millions au total – 10 millions d'aide étatique) 🏗️ Immeuble 5 étages : Ascenseur + parking + design moderne 📅 Livraison : Fin de 2028 🎁 **Offre limitée: Priorité aux premiers + facilités de paiement 📍 bureau de Vente: Al-Aouama, face Café Akram fb.me En savoir plus ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUB_QLHyW7IVbBZ8DOIEdEJ0_SZW_tMIGkX3tIqcVLRUn1xUTyKNTH4V9h7XFASrCOfUwE7-gg5UiKDCTL9VLFuOy4w4w3s7y1oqlHYN0tr3zDGJ6TZXrrOQgQdDnduxHEu4XWY1gxlb6tvn",
+          "title": "Sakani Immobilier · ad #1365369345713156",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1365369345713156",
+          "text": "Sakani Immobilier Sakani Immobilier Votre prochaine adresse au cœur de Guéliz ✨ Découvrez Lotus Résidences, un nouveau projet résidentiel conçu pour offrir un cadre de vie alliant élégance, confort et emplacement privilégié 🌿 Appartements F2, F3, F4 & Duplex 🏊 Résidence avec piscine & salle de sport 📍 Guéliz – Marrakech À partir de 800 000 DH Renseignez-vous : 📞 06 08 11 11 01 | 05 37 32 57 82 🌐 sakani.co.ma INSTAGRAM.COM Sakani Immobilier Voir le profil Instagram ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUBEyazjEelfN026DHFyExSDIsOhhXy_XWsZ7ng5ZIZIK5VJ-LduaAnntLGh0Zz9vTnGCfpmbCX4N3rzhBaPwmtjfvDIrOGGC3_fi5eKhllB1SAgw44kYNYghg3tK5JmWpnTvlWQ6aTqE7O0",
           "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 43,
+          "launch_weight": 50,
+          "confidence_weight": 52,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "2693496661046936",
-            "page_name": "Cga Immobiliere Atanger",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2693496661046936",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUB_QLHyW7IVbBZ8DOIEdEJ0_SZW_tMIGkX3tIqcVLRUn1xUTyKNTH4V9h7XFASrCOfUwE7-gg5UiKDCTL9VLFuOy4w4w3s7y1oqlHYN0tr3zDGJ6TZXrrOQgQdDnduxHEu4XWY1gxlb6tvn",
+            "ad_id": "1365369345713156",
+            "page_name": "Sakani Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1365369345713156",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUBEyazjEelfN026DHFyExSDIsOhhXy_XWsZ7ng5ZIZIK5VJ-LduaAnntLGh0Zz9vTnGCfpmbCX4N3rzhBaPwmtjfvDIrOGGC3_fi5eKhllB1SAgw44kYNYghg3tK5JmWpnTvlWQ6aTqE7O0",
             "image_urls": [],
             "video_urls": [],
-            "query": "résidence Tanger",
-            "city_hint": "Tanger",
+            "query": "projet immobilier Marrakech",
+            "city_hint": "Marrakech",
             "zone_hint": null
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 2693496661046936",
-            "prix détecté: 15000000 MAD",
-            "type: apartment_2_bed",
-            "ville: Tanger",
-            "zone: Route de Tétouan"
+            "publicité Meta exacte détectée: ad_id 1365369345713156",
+            "prix détecté: 800000 MAD",
+            "type: apartment_3_bed",
+            "ville: Marrakech",
+            "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-07-25T07:23:51.642034+00:00",
-          "city_hint": "Tanger",
-          "zone_hint": "Route de Tétouan",
+          "discovered_at": "2026-07-26T07:42:44.682832+00:00",
+          "city_hint": "Marrakech",
+          "zone_hint": null,
           "promoter_hint": null,
-          "asset_type_hint": "apartment_2_bed",
-          "project_name_hint": "Cga Immobiliere Atanger",
-          "price_mad": 15000000,
-          "signal_id": "2358aed672d4be23223bb000803da2f4543e183a"
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": "Sakani Immobilier",
+          "price_mad": 800000,
+          "signal_id": "748bdb481e6c4893b1f50f0fcadfd77cfed5dade"
         },
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "Cga Immobiliere Atanger",
+          "source": "Sakani Immobilier",
           "signal_type": "meta_ad",
-          "title": "Cga Immobiliere Atanger · ad #2171651206948223",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2171651206948223",
-          "text": "Cga Immobiliere Atanger Cga Immobiliere Atanger *إقامة الفتح 2* المشروع الثاني لشركتنا : عرض خاص في فصل الصيف و للمستفدين الاوائل فقط : الثمن 27 مليون * التسبيق : فقط 10 مليون كاقل تقدير *فرصتك لتملك سكن متوسط بثمن سكن اقتصادي بعد دعم الدولة *الموقع:* طنجة : بالعوامة وقريب من طريق تطوان، دقائق من محطة القطار TGV و دقايق من البحر و مركز المدينة و 10 دقائق للمحطة الطرقية الجديدة *نوع المشروع:* سكن متوسط بجودة متوسطة *العمارة:* مكونة من 5 طوابق + مصعد + مكان سيارة لكل شقة *تاريخ البناء:* في بداية العام 2027 - التسليم سنة في نهاية سنة 2028 ان شاء الله * : الشقق : بناء متوسط (وسومي فيني يعني كتفينها انت على ذوقك الصباغة .الزليج الجبص * الابواب .الحمام .و المطبخ ) وعائلية المساحات من 50 متر الى 65 م² غرفتين + صالون + مطبخ+ بالكون وطيراس + حمام _الدولة تدعمك بـ 10 مليون سنتيم مباشرة. أنت تخلص غير 17 مليون. - *استثمار مضمون*: منطقة في تطور سريع والقريية من وسط المدينة وطريق تطوان - *الحياة سهلة*: المواصلات، المدارس، المستشفيات كلها قريبة - *إطلالة وهواء*: قريب من البحر يعني تهوية نقية *: لماذا تختار إقامة الفتح 2؟* . *الثمن الأفضل في طنجة*: 25 مليون فقط 2. *جودة البناء*: مواد جيدة و محترمة للسكن الاقتصادي 3. *الراحة*: مصعد + باركينغ + تصميم عصري 4. *الأمان*: عمارة من 5 طوابق فقط، *الضمان*: تسليم في الآجال 2028 وعقود موثقة 🎁 *العرض محدود للأوائل فقط* - الأولوية في اختيار الشقة والطابق - تسهيلات في الأداء *سارع قبل نفاذ العرض 📍 *مكتب البيع*: حي العوامة، قبالة مقهى اكرم الموقع على الخريطة لمكتب البيع : https://maps.app.goo.gl/Qg9rwRYKJzRSvtG5A Résidence Al-Fath 2 🏗️ ### *2ème projet – Logement économique à Tanger* 📍 **Al-Aouama**, proche route de Tétouan 🚄 5 min TGV | 🌊 7 min mer/centre | 🚌 10 min gare routière 🏠 **Appartements 50-65 m²** : 2 chambres + salon + cuisine + balcon + terrasse 🛠️ *Semi-finis* : Personnalisez peinture, zellige, cuisine, salle de bain 💰 **17 millions de centimes à payer** *(27 millions au total – 10 millions d'aide étatique)* 🏗️ **Immeuble 5 étages** : Ascenseur + parking + design moderne 📅 **Livraison : fine de 2028** – Contrats authentifiés 🎁 **Offre limitée** : Priorité aux premiers + facilités de paiement 📍 **Vente** : Al-Aouama, face Café Akram Cga Immobiliere Atanger En savoir plus ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUB_QLHyW7IVbBZ8DOIEdEJ0_SZW_tMIGkX3tIqcVLRUn1xUTyKNTH4V9h7XFASrCOfUwE7-gg5UiKDCTL9VLFuOy4w4w3s7y1oqlHYN0tr3zDGJ6TZXrrOQgQdDnduxHEu4XWY1gxlb6tvn",
+          "title": "Sakani Immobilier · ad #1220182783567015",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1220182783567015",
+          "text": "Sakani Immobilier Sakani Immobilier Votre prochaine adresse au cœur de Guéliz ✨ Découvrez Lotus Résidences, un nouveau projet résidentiel conçu pour offrir un cadre de vie alliant élégance, confort et emplacement privilégié 🌿 Appartements F2, F3, F4 & Duplex 🏊 Résidence avec piscine & salle de sport 📍 Guéliz – Marrakech À partir de 800 000 DH Renseignez-vous : 📞 06 08 11 11 01 | 05 37 32 57 82 🌐 sakani.co.ma Guéliz – Marrakech See Details ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUBEyazjEelfN026DHFyExSDIsOhhXy_XWsZ7ng5ZIZIK5VJ-LduaAnntLGh0Zz9vTnGCfpmbCX4N3rzhBaPwmtjfvDIrOGGC3_fi5eKhllB1SAgw44kYNYghg3tK5JmWpnTvlWQ6aTqE7O0",
           "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 43,
+          "launch_weight": 50,
+          "confidence_weight": 52,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "2171651206948223",
-            "page_name": "Cga Immobiliere Atanger",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2171651206948223",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUB_QLHyW7IVbBZ8DOIEdEJ0_SZW_tMIGkX3tIqcVLRUn1xUTyKNTH4V9h7XFASrCOfUwE7-gg5UiKDCTL9VLFuOy4w4w3s7y1oqlHYN0tr3zDGJ6TZXrrOQgQdDnduxHEu4XWY1gxlb6tvn",
+            "ad_id": "1220182783567015",
+            "page_name": "Sakani Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1220182783567015",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fh24info.ma%2Flifestyle%2Fimmobilier%2Fvillas-bellview-un-nouvel-art-de-vivre-secrit-a-marrakech%2F%3Futm_source%3DFacebook%26utm_medium%3DCpc%26utm_term%3DFacebook_Ads&h=AUBEyazjEelfN026DHFyExSDIsOhhXy_XWsZ7ng5ZIZIK5VJ-LduaAnntLGh0Zz9vTnGCfpmbCX4N3rzhBaPwmtjfvDIrOGGC3_fi5eKhllB1SAgw44kYNYghg3tK5JmWpnTvlWQ6aTqE7O0",
             "image_urls": [],
             "video_urls": [],
-            "query": "résidence Tanger",
-            "city_hint": "Tanger",
+            "query": "projet immobilier Marrakech",
+            "city_hint": "Marrakech",
             "zone_hint": null
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 2171651206948223",
-            "prix détecté: 17000000 MAD",
-            "type: apartment_2_bed",
-            "ville: Tanger",
-            "zone: Route de Tétouan"
+            "publicité Meta exacte détectée: ad_id 1220182783567015",
+            "prix détecté: 800000 MAD",
+            "type: apartment_3_bed",
+            "ville: Marrakech",
+            "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-07-25T07:23:51.642164+00:00",
-          "city_hint": "Tanger",
-          "zone_hint": "Route de Tétouan",
+          "discovered_at": "2026-07-26T07:42:44.682894+00:00",
+          "city_hint": "Marrakech",
+          "zone_hint": null,
           "promoter_hint": null,
-          "asset_type_hint": "apartment_2_bed",
-          "project_name_hint": "Cga Immobiliere Atanger",
-          "price_mad": 17000000,
-          "signal_id": "53531500818441216917ca6e8da6c44e06d05bab"
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": "Sakani Immobilier",
+          "price_mad": 800000,
+          "signal_id": "f7f6764e34927cbb4923077399959a86986021df"
         }
       ]
     }
   ],
-  "digest": [
-    {
-      "project_id": "b72123cca060362a3bf77ba6f3c2cf90fdf2ec67",
-      "name": "Projet Panorama 16",
-      "city": "Casablanca",
-      "zone": "Anfa",
-      "promoter": "CGI",
-      "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-07-25T07:20:54.129154+00:00",
-      "last_updated_at": "2026-07-25T07:20:55.748931+00:00",
-      "launch_score": 60,
-      "confidence_score": 79,
-      "investment_score": 67,
-      "urgency_score": 68,
-      "recommendation": "Watch",
-      "status": "watch",
-      "summary": "Projet Panorama 16 | Promoteur: CGI | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Prix observés entre 2440000 et 2440000 MAD.",
-      "prices": {
-        "min": 2440000,
-        "max": 8000000
-      },
-      "aliases": [
-        "Projet Panorama 16",
-        "Panorama"
-      ],
-      "channels": [
-        "project_discovery"
-      ],
-      "sources": [
-        "CGI"
-      ],
-      "source_urls": [
-        "https://www.cgi.ma/fr/projet/panorama-16",
-        "https://www.cgi.ma/fr/projet/les-arborelles"
-      ],
-      "evidence": {
-        "signal_count": 2,
-        "primary_signal_count": 2,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
-        "primary_channels": [
-          "project_discovery"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "price_band": "within_budget",
-        "price_evolution": {
-          "trend": "stable",
-          "summary": "Prix observés entre 2440000 et 2440000 MAD."
-        },
-        "roi": {
-          "label": "Moyen",
-          "five_year_upside_score": 62
-        },
-        "project_slug": "projet-panorama-16-b72123cc",
-        "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
-            "kind": "official_site",
-            "kind_label": "Site promoteur",
-            "label": "Je Fonce !",
-            "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.cgi.ma/fr/projet/panorama-16",
-            "source": "CGI",
-            "signal_type": "promoter_page",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "official_site",
-            "kind_label": "Site promoteur",
-            "label": "Je Fonce !",
-            "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.cgi.ma/fr/projet/les-arborelles",
-            "source": "CGI",
-            "signal_type": "promoter_page",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Appartement",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "price_min": 2440000,
-          "price_max": 8000000
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [],
-          "risks": [
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [
-          {
-            "kind": "official_site",
-            "kind_label": "Site promoteur",
-            "label": "Je Fonce !",
-            "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.cgi.ma/fr/projet/panorama-16",
-            "source": "CGI",
-            "signal_type": "promoter_page",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "official_site",
-            "kind_label": "Site promoteur",
-            "label": "Je Fonce !",
-            "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.cgi.ma/fr/projet/les-arborelles",
-            "source": "CGI",
-            "signal_type": "promoter_page",
-            "proof_level": "direct"
-          }
-        ],
-        "social_links": [],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "images": [],
-        "videos": [],
-        "changes": [
-          "Confidence score en hausse: 44 → 79",
-          "Urgency score en hausse: 42 → 68",
-          "Statut projet: monitor → watch",
-          "Prix minimum mis à jour: 2120000 → 2440000 MAD"
-        ],
-        "is_new_project": false
-      },
-      "reasons": [
-        "nouvelle page promoteur",
-        "prix détecté: 2440000 MAD",
-        "type: apartment_unknown",
-        "ville: Casablanca",
-        "zone: Anfa",
-        "prix détecté: 8000000 MAD",
-        "type: villa",
-        "ville: Rabat"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-07-25T07:20:54.129154+00:00",
-          "channel": "project_discovery",
-          "source": "CGI",
-          "title": "Je Fonce !",
-          "url": "https://www.cgi.ma/fr/projet/panorama-16"
-        },
-        {
-          "detected_at": "2026-07-25T07:20:55.748931+00:00",
-          "channel": "project_discovery",
-          "source": "CGI",
-          "title": "Je Fonce !",
-          "url": "https://www.cgi.ma/fr/projet/les-arborelles"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "promoters.websites",
-          "channel": "project_discovery",
-          "source": "CGI",
-          "signal_type": "promoter_page",
-          "title": "Je Fonce !",
-          "url": "https://www.cgi.ma/fr/projet/panorama-16",
-          "text": "Je Fonce ! Panorama 16 | CGI Panorama 16 Header bottom Menu du compte de l'utilisateur JE TROUVE MON BIEN IMMOBILIER JE SIMULE MON CRÉDIT IMMOBILIER Panorama 16 | CGI Skip to main content Header bottom HABITER Retour Notre offre Offres spéciales Avant-premières Projets en cours Projets livrables Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Nos outils Simulateur de crédit Voir tous nos projets INVESTIR Retour Par thématique Commerce/Bureaux Investissement locatif Logement balnéaire Lot de terrain Resort golfique Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Voir tous nos projets NOS CONSEILS NOS PARTENAIRES Retour Par métier Devenir Architecte partenaire de la CGI Devenir Notaire partenaire de la CGI Devenir fournisseur de la CGI Règlement des achats Règlement d'exécution des travaux Voir tous nos projets LE GROUPE 080 100 28 28 Call center 10 Showrooms Proches de vous Menu du compte de l'utilisateur CGI CLIENT Casablanca A partir de 2 440 000 Dhs JE SIMULE MON BUDGET Panorama 16 Je souhaite être rappelé Partager Enregistrer Panorama 16 . Casablanca Au cœur de la Casa-Anfa, proche de la place financière, PANORAMA 16 s’impose comme une adresse stratégique, idéalement située à l’angle du boulevard des Musées et de la rue de l’Aéropostale… Implanté dans l’un des secteurs les plus emblématiques du développement urbain de Casablanca, PANORAMA 16 bénéficie d’une visibilité exceptionnelle et d’une connexion directe avec les principaux pôles culturels et urbains de la ville. PANORAMA 16 propose une collection d’appartements de standing aux configurations variées, du F2 au F6 , à partir de 63m² , répartis sur quatre immeubles allant du R+5 au R+16 . Chaque logement est conçu pour offrir un confort optimal, avec des espaces lumineux sublimés par des finitions élégantes et des matériaux nobles. Les loggias prolongent les intérieurs vers l’extérieur, créant une véritable continuité de vie et renforçant la qualité d’usage des appartements. L’ensemble résidentiel reflète une élégance intemporelle où la qualité des finitions et la sobriété du design occupent une place centrale. Les matériaux nobles et les lignes épurées créent une atmosphère harmonieuse et raffinée. PANORAMA 16 incarne ainsi une nouvelle vision de l’habitat urbain : un cadre exclusif où modernité et bien-être se rencontrent pour offrir une expérience résidentielle d’exception ! Télécharger la brochure Visite virtuelle Souhaitez-vous être contacté par un conseiller commercial? Meryem Benseghir Responsable Commercial 080 100 28 28 info@cgi.ma Civilité Civilité Mr Mme Nom Prénom Email Indicatif indicatif +1 indicatif +20 indicatif +211 indicatif +212 indicatif +213 indicatif +216 indicatif +218 indicatif +220 indicatif +221 indicatif +222 indicatif +223 indicatif +224 indicatif +225 indicatif +226 indicatif +227 indicatif +228 indicatif +229 indicatif +230 indicatif +231 indicatif +232 indicatif +233 indicatif +234 indicatif +235 indicatif +236 indicatif +237 indicatif +238 indicatif +239 indicatif +240 indicatif +241 indicatif +242 indicatif +243 indicatif +244 indicatif +245 indicatif +248 indicatif +249 indicatif +250 indicatif +251 indicatif +252 indicatif +253 indicatif +254 indicatif +255 indicatif +256 indicatif +257 indicatif +258 indicatif +260 indicatif +261 indicatif +263 indicatif +264 indicatif +265 indicatif +266 indicatif +267 indicatif +268 indicatif +269 indicatif +27 indicatif +291 indicatif +30 indicatif +31 indicatif +32 indicatif +33 indicatif +34 indicatif +351 indicatif +352 indicatif +353 indicatif +354 indicatif +355 indicatif +356 indicatif +357 indicatif +358 indicatif +359 indicatif +36 indicatif +370 indicatif +371 indicatif +372 indicatif +373 indicatif +374 indicatif +375 indicatif +376 indicatif +377 indicatif +378 indicatif +379 indicatif +380 indicatif +381 indicatif +382 indicatif +385 indicatif +386 indicatif +387 indicatif +389 indicatif +39 indicatif +40 indicatif +41 indicatif +420 indicatif +421 indicatif +423 indicatif +43 indicatif +44 indicatif +45 indicatif +46 indicatif +47 indicatif +48 indicatif +49 indicatif +501 indicatif +502 indicatif +503 indicatif +504 indicatif +505 indicatif +506 indicatif +507 indicatif +509 indicatif +51 indicatif +52 indicatif +53 indicatif +54 indicatif +55 indicatif +56 indicatif +57 indicatif +58 indicatif +591 indicatif +592 indicatif +593 indicatif +595 indicatif +597 indicatif +598 indicatif +60 indicatif +61 indicatif +62 indicatif +63 indicatif +64 indicatif +65 indicatif +66 indicatif +670 indicatif +673 indicatif +674 indicatif +675 indicatif +676 indicatif +677 indicatif +678 indicatif +679 indicatif +680 indicatif +685 indicatif +686 indicatif +688 indicatif +691 indicatif +692 indicatif +7 indicatif +81 indicatif +82 indicatif +84 indicatif +850 indicatif +853 indicatif +855 indicatif +856 indicatif +86 indicatif +880 indicatif +886 indicatif +90 indicatif +91 indicatif +92 indicatif +93 indicatif +94 indicatif +95 indicatif +960 indicatif +961 indicatif +962 indicatif +963 indicatif +964 indicatif +965 indicatif +966 indicatif +967 indicatif +968 indicatif +971 indicatif +972 indicatif +973 indicatif +974 indicatif +975 indicatif +976 indicatif +977 indicatif +98 indicatif +992 indicatif +993 indicatif +994 indicatif +995 indicatif +996 indicatif +998 Tél Téléphone Message Leave this field blank JE TROUVE MON BIEN IMMOBILIER Je trouve mon bien immobilier et je le pré-réserve DE 2 440 000 Dhs à 7 540 000 Dhs Appartement STOCK DISPONIBLE 56 Connectez-vous pour pouvoir voir la liste des biens disponibles. Se connecter / S'inscrire JE SIMULE MON CRÉDIT IMMOBILIER Nous vous accompagnons à chaque étape, avec des conseils personnalisés et des experts dédiés pour une expérience d’achat sereine . Choisissez votre type de bien : RÉSIDENCE PRINCIPALE RÉSIDENCE SECONDAIRE INVESTISSEMENT LOCATIF SIMULER MAINTENANT Obtenez un pré-accord en moins de 30 secondes et une prise en charge en moins de 4 heures. Contactez nous 080 100 28 28 Email : info@cgi.ma Suivez-nous : Horaires de nos showrooms Lundi à Vendredi 9:00 à 19:00 Samedi 10:00 à 18:00 Dimanche sur rendez-vous uniquement Inscrivez-vous à notre Newsletter * J'accepte de recevoir par e-mail des informations de la part de la CGI. Réalisation Faites-vous partie de l’un de nos organismes conventionnés ? Si oui, veuillez renseigner les informations demandées et bénéficiez des avantages liant votre organisme à la CGI ! OUI NON",
-          "is_primary": true,
-          "launch_weight": 30,
-          "confidence_weight": 32,
-          "metadata": {
-            "promoter_hint": "CGI"
-          },
-          "reasons": [
-            "nouvelle page promoteur",
-            "prix détecté: 2440000 MAD",
-            "type: apartment_unknown",
-            "ville: Casablanca",
-            "zone: Anfa"
-          ],
-          "discovered_at": "2026-07-25T07:20:54.129154+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": "CGI",
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": null,
-          "price_mad": 2440000,
-          "signal_id": "01d70e7d0508bb40f7c4cc1540976f94398d946a"
-        },
-        {
-          "collector": "promoters.websites",
-          "channel": "project_discovery",
-          "source": "CGI",
-          "signal_type": "promoter_page",
-          "title": "Je Fonce !",
-          "url": "https://www.cgi.ma/fr/projet/les-arborelles",
-          "text": "Je Fonce ! Les Arborelles | CGI Les Arborelles Header bottom Menu du compte de l'utilisateur JE TROUVE MON BIEN IMMOBILIER JE SIMULE MON CRÉDIT IMMOBILIER Projets similaires Les Arborelles | CGI Skip to main content Header bottom HABITER Retour Notre offre Offres spéciales Avant-premières Projets en cours Projets livrables Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Nos outils Simulateur de crédit Voir tous nos projets INVESTIR Retour Par thématique Commerce/Bureaux Investissement locatif Logement balnéaire Lot de terrain Resort golfique Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Voir tous nos projets NOS CONSEILS NOS PARTENAIRES Retour Par métier Devenir Architecte partenaire de la CGI Devenir Notaire partenaire de la CGI Devenir fournisseur de la CGI Règlement des achats Règlement d'exécution des travaux Voir tous nos projets LE GROUPE 080 100 28 28 Call center 10 Showrooms Proches de vous Menu du compte de l'utilisateur CGI CLIENT Rabat A partir de 8 000 000 Dhs JE SIMULE MON BUDGET Les Arborelles Je souhaite être rappelé Enregistrer Les Arborelles . Rabat Le projet des Arborelles-El Menzeh est un ensemble résidentiel de villas finies de Haut Standing, avec jardin et piscine privatifs, dans un périmètre fermé et sécurisé. S’étalant sur une belle propriété forestière de 7,6 hectares et stratégiquement positionné, le projet des Arborelles repose sur un concept de résidence en villégiature, qui se caractérise par sa simplicité et l’interaction forte entre les espaces intérieurs et l’environnement naturel. Le style architectural adopté privilégie les matériaux naturels tels que le bois et la pierre, offrant des villas Haut Standing avec un cachet contemporain, à la fois élégant et sobre. Les implantations des villas jouissent pour la grande majorité d’une orientation optimale. EQUIPEMENTS DE PROXIMITÉ : Supérettes Télécharger la brochure Visite virtuelle Souhaitez-vous être contacté par un conseiller commercial? Soukaina Baghdadi Responsable Commercial 080 100 28 28 info@cgi.ma Civilité Civilité Mr Mme Nom Prénom Email Indicatif indicatif +1 indicatif +20 indicatif +211 indicatif +212 indicatif +213 indicatif +216 indicatif +218 indicatif +220 indicatif +221 indicatif +222 indicatif +223 indicatif +224 indicatif +225 indicatif +226 indicatif +227 indicatif +228 indicatif +229 indicatif +230 indicatif +231 indicatif +232 indicatif +233 indicatif +234 indicatif +235 indicatif +236 indicatif +237 indicatif +238 indicatif +239 indicatif +240 indicatif +241 indicatif +242 indicatif +243 indicatif +244 indicatif +245 indicatif +248 indicatif +249 indicatif +250 indicatif +251 indicatif +252 indicatif +253 indicatif +254 indicatif +255 indicatif +256 indicatif +257 indicatif +258 indicatif +260 indicatif +261 indicatif +263 indicatif +264 indicatif +265 indicatif +266 indicatif +267 indicatif +268 indicatif +269 indicatif +27 indicatif +291 indicatif +30 indicatif +31 indicatif +32 indicatif +33 indicatif +34 indicatif +351 indicatif +352 indicatif +353 indicatif +354 indicatif +355 indicatif +356 indicatif +357 indicatif +358 indicatif +359 indicatif +36 indicatif +370 indicatif +371 indicatif +372 indicatif +373 indicatif +374 indicatif +375 indicatif +376 indicatif +377 indicatif +378 indicatif +379 indicatif +380 indicatif +381 indicatif +382 indicatif +385 indicatif +386 indicatif +387 indicatif +389 indicatif +39 indicatif +40 indicatif +41 indicatif +420 indicatif +421 indicatif +423 indicatif +43 indicatif +44 indicatif +45 indicatif +46 indicatif +47 indicatif +48 indicatif +49 indicatif +501 indicatif +502 indicatif +503 indicatif +504 indicatif +505 indicatif +506 indicatif +507 indicatif +509 indicatif +51 indicatif +52 indicatif +53 indicatif +54 indicatif +55 indicatif +56 indicatif +57 indicatif +58 indicatif +591 indicatif +592 indicatif +593 indicatif +595 indicatif +597 indicatif +598 indicatif +60 indicatif +61 indicatif +62 indicatif +63 indicatif +64 indicatif +65 indicatif +66 indicatif +670 indicatif +673 indicatif +674 indicatif +675 indicatif +676 indicatif +677 indicatif +678 indicatif +679 indicatif +680 indicatif +685 indicatif +686 indicatif +688 indicatif +691 indicatif +692 indicatif +7 indicatif +81 indicatif +82 indicatif +84 indicatif +850 indicatif +853 indicatif +855 indicatif +856 indicatif +86 indicatif +880 indicatif +886 indicatif +90 indicatif +91 indicatif +92 indicatif +93 indicatif +94 indicatif +95 indicatif +960 indicatif +961 indicatif +962 indicatif +963 indicatif +964 indicatif +965 indicatif +966 indicatif +967 indicatif +968 indicatif +971 indicatif +972 indicatif +973 indicatif +974 indicatif +975 indicatif +976 indicatif +977 indicatif +98 indicatif +992 indicatif +993 indicatif +994 indicatif +995 indicatif +996 indicatif +998 Tél Téléphone Message Leave this field blank JE TROUVE MON BIEN IMMOBILIER Je trouve mon bien immobilier et je le pré-réserve DE 8 000 000 Dhs à 12 130 000 Dhs Villa STOCK DISPONIBLE 17 Connectez-vous pour pouvoir voir la liste des biens disponibles. Se connecter / S'inscrire JE SIMULE MON CRÉDIT IMMOBILIER Nous vous accompagnons à chaque étape, avec des conseils personnalisés et des experts dédiés pour une expérience d’achat sereine . Choisissez votre type de bien : RÉSIDENCE PRINCIPALE RÉSIDENCE SECONDAIRE INVESTISSEMENT LOCATIF SIMULER MAINTENANT Obtenez un pré-accord en moins de 30 secondes et une prise en charge en moins de 4 heures. Projets similaires Livrable immédiatement Casablanca Villas de la colline II JE CONSULTE Contactez nous 080 100 28 28 Email : info@cgi.ma Suivez-nous : Horaires de nos showrooms Lundi à Vendredi 9:00 à 19:00 Samedi 10:00 à 18:00 Dimanche sur rendez-vous uniquement Inscrivez-vous à notre Newsletter * J'accepte de recevoir par e-mail des informations de la part de la CGI. Réalisation Faites-vous partie de l’un de nos organismes conventionnés ? Si oui, veuillez renseigner les informations demandées et bénéficiez des avantages liant votre organisme à la CGI ! OUI NON",
-          "is_primary": true,
-          "launch_weight": 30,
-          "confidence_weight": 35,
-          "metadata": {
-            "promoter_hint": "CGI"
-          },
-          "reasons": [
-            "nouvelle page promoteur",
-            "prix détecté: 8000000 MAD",
-            "type: villa",
-            "ville: Rabat"
-          ],
-          "discovered_at": "2026-07-25T07:20:55.748931+00:00",
-          "city_hint": "Rabat",
-          "zone_hint": null,
-          "promoter_hint": "CGI",
-          "asset_type_hint": "villa",
-          "project_name_hint": null,
-          "price_mad": 8000000,
-          "signal_id": "b16fd5925bfb788cee9f8409e886631e809f4b78"
-        }
-      ]
-    }
-  ]
+  "digest": []
 }
