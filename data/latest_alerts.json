@@ -1,4 +1,256 @@
 {
   "immediate": [],
-  "digest": []
+  "digest": [
+    {
+      "project_id": "2900270197a4a4f6ec9dde02162cbaec5a2b15ad",
+      "name": "le_cap_spartel",
+      "city": "Tanger",
+      "zone": "Cap Spartel",
+      "promoter": null,
+      "asset_type": null,
+      "first_detected_at": "2026-07-28T07:46:01.497183+00:00",
+      "last_updated_at": "2026-07-28T07:46:01.497238+00:00",
+      "launch_score": 100,
+      "confidence_score": 100,
+      "investment_score": 61,
+      "urgency_score": 95,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "le_cap_spartel | Promoteur: à confirmer | Ville: Tanger | Zone: Cap Spartel | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "le_cap_spartel"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "le_cap_spartel"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1762921831390799"
+      ],
+      "evidence": {
+        "signal_count": 2,
+        "primary_signal_count": 2,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "geo": {
+          "lat": 35.7595,
+          "lng": -5.834,
+          "sea_distance_km": 3,
+          "station_distance_km": 4,
+          "highway_distance_km": 5
+        },
+        "price_band": "unknown",
+        "price_evolution": {
+          "trend": "unknown",
+          "summary": "Aucune série de prix fiable pour le moment."
+        },
+        "roi": {
+          "label": "Moyen",
+          "five_year_upside_score": 61
+        },
+        "project_slug": "le-cap-spartel-29002701",
+        "infrastructure": {
+          "sea_distance_km": 3,
+          "station_distance_km": 4,
+          "highway_distance_km": 5
+        },
+        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "le_cap_spartel · ad #2597683684032107",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
+            "source": "le_cap_spartel",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "le_cap_spartel · ad #1762921831390799",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1762921831390799",
+            "source": "le_cap_spartel",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Type à confirmer",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "price_min": null,
+          "price_max": null
+        },
+        "ai_analysis": {
+          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible."
+          ],
+          "risks": [
+            "Le prix public n'est pas encore confirmé.",
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "le_cap_spartel · ad #2597683684032107",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
+            "source": "le_cap_spartel",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "le_cap_spartel · ad #1762921831390799",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1762921831390799",
+            "source": "le_cap_spartel",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [
+          "assets/meta/meta-ad-2597683684032107.jpg"
+        ],
+        "videos": [],
+        "changes": [
+          "Confidence score en hausse: 60 → 100",
+          "Urgency score en hausse: 56 → 95",
+          "Statut projet: monitor → urgent"
+        ],
+        "is_new_project": false
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 2597683684032107",
+        "ville: Tanger",
+        "zone: Cap Spartel",
+        "marqueur de lancement détecté",
+        "publicité Meta exacte détectée: ad_id 1762921831390799"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-07-28T07:46:01.497183+00:00",
+          "channel": "advertising",
+          "source": "le_cap_spartel",
+          "title": "le_cap_spartel · ad #2597683684032107",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107"
+        },
+        {
+          "detected_at": "2026-07-28T07:46:01.497238+00:00",
+          "channel": "advertising",
+          "source": "le_cap_spartel",
+          "title": "le_cap_spartel · ad #1762921831390799",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1762921831390799"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "le_cap_spartel",
+          "signal_type": "meta_ad",
+          "title": "le_cap_spartel · ad #2597683684032107",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
+          "text": "le_cap_spartel le_cap_spartel 🇲🇦 À l’occasion de la Fête du Trône, le Cap Spartel voit les choses en grand. Deux soirées d’exception les 29 & 30 juillet, avec en live la star marocaine Don Yassine 🎤 Ambiance marocaine et internationale, DJ, surprises et cette énergie qu’on n’a qu’ici. On vous réserve deux soirées à ne pas manquer. Vive le Maroc, vive le Roi 🇲🇦 📍 Cap Spartel : Restaurant · Lounge · Events 📞 Réservations : 06 04 00 16 61 #CapSpartel #FêteDuTrône #DonYassine #Tanger #SoiréeMarocaine INSTAGRAM.COM instagram.com Voir le profil Instagram ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUCsfDp5jlAot6gO2YgeWz5y8edJQPVaaZ_CdFi1KuNpcltBygP3yPA_cecDswo82zmaEO3mUEijp0bY6QV5jdjoVg4mjdej3XcP5j_e3BuSaUu-YdcJ5tgWXZS4GwbFkCsNuxYxXAXpKqZ_",
+          "is_primary": true,
+          "launch_weight": 50,
+          "confidence_weight": 48,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "2597683684032107",
+            "page_name": "le_cap_spartel",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUCsfDp5jlAot6gO2YgeWz5y8edJQPVaaZ_CdFi1KuNpcltBygP3yPA_cecDswo82zmaEO3mUEijp0bY6QV5jdjoVg4mjdej3XcP5j_e3BuSaUu-YdcJ5tgWXZS4GwbFkCsNuxYxXAXpKqZ_",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Cap Spartel",
+            "city_hint": "Tanger",
+            "zone_hint": "Cap Spartel"
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 2597683684032107",
+            "ville: Tanger",
+            "zone: Cap Spartel",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-07-28T07:46:01.497183+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": "Cap Spartel",
+          "promoter_hint": null,
+          "asset_type_hint": null,
+          "project_name_hint": "le_cap_spartel",
+          "price_mad": null,
+          "signal_id": "beb7fc71da8368d5ae0714d21d6d2477694441a1"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "le_cap_spartel",
+          "signal_type": "meta_ad",
+          "title": "le_cap_spartel · ad #1762921831390799",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1762921831390799",
+          "text": "le_cap_spartel le_cap_spartel 🌅 Dimanche 2 août, on commence la journée face à l’océan. Une matinée pour bouger, respirer et partager, là où l’Atlantique rencontre la Méditerranée. 🧘 Yoga en groupe, face au détroit 🚶 Marche côtière le long des falaises, route Agla ☕ Petit déjeuner sain et gourmand, à base de produits du terroir 🗼 Accès libre au Cap Spartel : montée au sommet du phare et panorama De 9h à 12h · 249 DHS · Places limitées 📩 Réservation par message, écrivez-nous en DM 📍 Cap Spartel, Tanger #CapSpartel #Tanger #Tangier #YogaTanger #BienEtre PROFILE le_cap_spartel Réserver ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUCsfDp5jlAot6gO2YgeWz5y8edJQPVaaZ_CdFi1KuNpcltBygP3yPA_cecDswo82zmaEO3mUEijp0bY6QV5jdjoVg4mjdej3XcP5j_e3BuSaUu-YdcJ5tgWXZS4GwbFkCsNuxYxXAXpKqZ_",
+          "is_primary": true,
+          "launch_weight": 50,
+          "confidence_weight": 48,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1762921831390799",
+            "page_name": "le_cap_spartel",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1762921831390799",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUCsfDp5jlAot6gO2YgeWz5y8edJQPVaaZ_CdFi1KuNpcltBygP3yPA_cecDswo82zmaEO3mUEijp0bY6QV5jdjoVg4mjdej3XcP5j_e3BuSaUu-YdcJ5tgWXZS4GwbFkCsNuxYxXAXpKqZ_",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Cap Spartel",
+            "city_hint": "Tanger",
+            "zone_hint": "Cap Spartel"
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1762921831390799",
+            "ville: Tanger",
+            "zone: Cap Spartel",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-07-28T07:46:01.497238+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": "Cap Spartel",
+          "promoter_hint": null,
+          "asset_type_hint": null,
+          "project_name_hint": "le_cap_spartel",
+          "price_mad": null,
+          "signal_id": "1bdc057839b7feda8454452a3c4c422ed1e28f85"
+        }
+      ]
+    }
+  ]
 }
