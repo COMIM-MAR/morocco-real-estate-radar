@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from .qualifications import is_alert_suppressed
+
 
 def project_changes(previous, current) -> list[str]:
     changes: list[str] = []
@@ -24,6 +26,15 @@ def project_changes(previous, current) -> list[str]:
     curr_price = current.prices.get("min")
     if prev_price and curr_price and prev_price != curr_price:
         changes.append(f"Prix minimum mis à jour: {prev_price} → {curr_price} MAD")
+    prev_availability = (previous.evidence.get("availability") or {}).get("status")
+    curr_availability = (current.evidence.get("availability") or {}).get("status")
+    if curr_availability != prev_availability:
+        if curr_availability == "limited":
+            changes.append("⚠ Disponibilité: passage à stock limité, fenêtre d'opportunité qui se referme")
+        elif curr_availability == "sold_out":
+            changes.append("Disponibilité: projet marqué complet / vendu")
+        elif curr_availability == "available" and prev_availability in {"limited", "sold_out"}:
+            changes.append("Disponibilité: nouvelles unités remises en vente")
     return changes
 
 
@@ -36,10 +47,13 @@ def attach_changes(projects, previous_map):
     return projects
 
 
-def select_immediate_alerts(projects, known_project_ids, config):
+def select_immediate_alerts(projects, known_project_ids, config, qualifications=None):
+    qualifications = qualifications or {}
     alerts = []
     for project in projects:
         if project.project_id in known_project_ids:
+            continue
+        if is_alert_suppressed(project.project_id, qualifications):
             continue
         if project.confidence_score < config["alerts"]["immediate_confidence_threshold"]:
             continue
@@ -51,11 +65,14 @@ def select_immediate_alerts(projects, known_project_ids, config):
     return alerts
 
 
-def select_digest_projects(projects, known_project_ids, config):
+def select_digest_projects(projects, known_project_ids, config, qualifications=None):
+    qualifications = qualifications or {}
     digest = []
     min_change_count = config["alerts"].get("digest_min_change_count", 2)
     for project in projects:
         if project.project_id not in known_project_ids:
+            continue
+        if is_alert_suppressed(project.project_id, qualifications):
             continue
         if project.confidence_score < config["alerts"]["digest_confidence_threshold"]:
             continue

@@ -14,6 +14,9 @@ alerts:
   digest_min_change_count: 2
   digest_when_no_alerts: true
 
+health:
+  min_historical_avg: 3.0
+
 asset_preferences:
   villa: 100
   land_r4_plus: 95
@@ -75,6 +78,24 @@ sources:
     - {name: CGI, url: "https://www.cgi.ma/"}
     - {name: Alliances, url: "https://www.alliances.co.ma/"}
     - {name: Chaabi Lil Iskane, url: "https://www.liliskane.com/"}
+    - {name: Addoha, url: "https://www.groupeaddoha.com/fr/"}
+    - {name: Espaces Saada, url: "https://www.espacessaada.com/"}
+    - {name: Prestigia, url: "https://prestigia-morocco.com/"}
+    - {name: Yamed, url: "https://www.yamed-promotion.com/"}
+    - {name: Mfadel, url: "https://www.mfadel.com/"}
+    - {name: Eagle Hills Morocco, url: "https://eaglehillsmorocco.com/"}
+    - {name: Palmeraie Développement, url: "https://www.pdev.ma/fr/"}
+    - {name: Onapar, url: "https://onapar.ma/"}
+    - {name: Ametys, url: "https://www.ametys.ma/"}
+    - {name: Saham Immobilier, url: "https://sahamimmobilier.com/"}
+    - {name: KLK Living, url: "https://klk.ma/"}
+    - {name: Kettani Immobilier, url: "https://www.kettani-immobilier.com/"}
+    - {name: Miftah Immobilier, url: "https://miftahimmobilier.ma/"}
+    - {name: TGCC Immobilier, url: "https://tgccimmobilier.com/"}
+    - {name: Palm Immobilier, url: "https://palmeraieimmobilier.ma/"}
+    # Perla Immobilier, Groupe Jamaï, Résidences Dar Saada: no verified official
+    # website found during research — still tracked by name for Meta/Google/social
+    # query generation, just not directly crawled until a confirmed URL is added.
   listings:
     - {name: Mubawab Tanger Appartements, url: "https://www.mubawab.ma/fr/st/tanger/appartements-a-vendre"}
     - {name: Mubawab Tanger Villas, url: "https://www.mubawab.ma/fr/st/tanger/villas-et-maisons-de-luxe-a-vendre"}

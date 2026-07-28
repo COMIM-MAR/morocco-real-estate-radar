@@ -9,10 +9,12 @@ from collectors.news.google_news import collect as collect_news
 from collectors.promoters.websites import collect as collect_promoters
 from collectors.social.watch import collect as collect_social
 from collectors.urbanism.watch import collect as collect_urbanism
+from core.health import WATCH_SIGNAL_TYPES
 
 
 def collect_all(config: dict):
     signals = []
+    stats = {}
     for collector in (
         collect_promoters,
         collect_google_search,
@@ -22,12 +24,16 @@ def collect_all(config: dict):
         collect_urbanism,
         collect_listings,
     ):
+        name = collector.__module__
         try:
             params = inspect.signature(collector).parameters
-            if len(params) >= 2:
-                signals.extend(collector(config, signals))
-            else:
-                signals.extend(collector(config))
+            batch = collector(config, signals) if len(params) >= 2 else collector(config)
+            signals.extend(batch)
+            real_primary = sum(
+                1 for signal in batch if signal.is_primary and signal.signal_type not in WATCH_SIGNAL_TYPES
+            )
+            stats[name] = {"total": len(batch), "real_primary": real_primary, "error": None}
         except Exception as error:
             print(f"WARN collector failed: {collector.__name__} => {error}")
-    return signals
+            stats[name] = {"total": 0, "real_primary": 0, "error": str(error)}
+    return signals, stats

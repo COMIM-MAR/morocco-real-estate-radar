@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import io
 import os
 import re
 from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from pypdf import PdfReader
 
 HEADERS = {"User-Agent": "Mozilla/5.0 MoroccoRealEstateIntelligence/4.0"}
 DETAIL_MARKERS = ("/a/", "/pa/", "/projet/", "/projets/", "/residence/", "/programmes/")
@@ -61,6 +63,29 @@ def fetch(url: str) -> tuple[BeautifulSoup, str]:
             parts.append(clean(content))
     parts.append(clean(soup.get_text(" ")))
     return soup, clean(" ".join(parts))[:9000]
+
+
+def fetch_pdf_text(url: str, max_pages: int = 8) -> str:
+    response = requests.get(
+        url,
+        headers=HEADERS,
+        stream=True,
+        timeout=(CONNECT_TIMEOUT_SECONDS, READ_TIMEOUT_SECONDS),
+    )
+    response.raise_for_status()
+    chunks: list[bytes] = []
+    total_bytes = 0
+    for chunk in response.iter_content(chunk_size=16384):
+        if not chunk:
+            continue
+        chunks.append(chunk)
+        total_bytes += len(chunk)
+        if total_bytes >= MAX_RESPONSE_BYTES:
+            break
+    response.close()
+    reader = PdfReader(io.BytesIO(b"".join(chunks)), strict=False)
+    parts = [page.extract_text() or "" for page in reader.pages[:max_pages]]
+    return clean(" ".join(parts))[:9000]
 
 
 def same_domain(left: str, right: str) -> bool:

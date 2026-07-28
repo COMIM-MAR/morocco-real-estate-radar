@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 
+from core.availability import analyze_availability, project_availability_summary
 from core.enrichment import enrich_project_intelligence
 from core.models import ProjectRecord, SignalEvent
 
@@ -167,6 +168,10 @@ def signal_proof_note(signal: SignalEvent) -> str:
         return "Résultat Google réellement détecté."
     if signal.signal_type == "urbanism_page":
         return "Page ou document urbanisme réellement détecté."
+    if signal.signal_type == "news_watch":
+        return "Requête presse de veille, pas encore article confirmé."
+    if signal.signal_type == "news_result":
+        return "Article de presse réellement détecté."
     return "Signal détecté par le moteur."
 
 
@@ -255,6 +260,17 @@ def enrich_signal(signal: SignalEvent, config: dict) -> SignalEvent:
         config,
     )
     signal.promoter_hint = signal.metadata.get("promoter_hint") or detect_promoter(text, config)
+    if "availability" not in signal.metadata:
+        signal.metadata["availability"] = analyze_availability(text)
+    availability = signal.metadata.get("availability") or {}
+    if availability.get("status") == "limited":
+        signal.launch_weight += 15
+        signal.confidence_weight += 8
+        signal.reasons.append("stock limité détecté - fenêtre d'opportunité qui se referme")
+    elif availability.get("status") == "sold_out":
+        signal.reasons.append("mention de stock épuisé / projet complet")
+    elif availability.get("status") == "available":
+        signal.reasons.append("disponibilité confirmée")
     if signal.price_mad:
         signal.reasons.append(f"prix détecté: {signal.price_mad} MAD")
     if signal.asset_type_hint:
@@ -311,7 +327,10 @@ def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
             investment_score += 8
         else:
             investment_score -= 18
+    availability = project_availability_summary(project.signals)
     urgency_score = round((launch_score * 0.45) + (confidence_score * 0.35) + (investment_score * 0.2))
+    if availability["status"] == "limited":
+        urgency_score += 20
     project.launch_score = min(100, max(0, launch_score))
     project.confidence_score = min(100, max(0, confidence_score))
     project.investment_score = min(100, max(0, investment_score))
@@ -327,9 +346,14 @@ def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
         "confirmations": matrix["confirmations"],
         "confirmation_details": matrix["confirmation_details"],
         "confirmation_count": len(matrix["confirmations"]),
+        "availability": availability,
     }
     if matrix["confirmations"]:
         project.reasons = matrix["confirmations"][:4] + project.reasons
+    if availability["status"] == "limited":
+        project.reasons = ["Stock limité détecté - fenêtre d'opportunité qui se referme"] + project.reasons
+    elif availability["status"] == "sold_out":
+        project.reasons = ["Disponibilité: projet marqué complet / vendu"] + project.reasons
     if project.confidence_score >= config["alerts"]["immediate_confidence_threshold"]:
         project.status = "urgent"
         project.recommendation = "Buy"
@@ -339,6 +363,9 @@ def enrich_project(project: ProjectRecord, config: dict) -> ProjectRecord:
     else:
         project.status = "monitor"
         project.recommendation = "Monitor"
+    if availability["status"] == "sold_out" and project.recommendation == "Buy":
+        project.recommendation = "Watch"
+        project.reasons = ["Recommandation ajustée: disponibilité publique marquée complète, vérifier avant d'agir"] + project.reasons
     enrich_project_intelligence(project, config)
     project.summary = build_summary(project)
     return project

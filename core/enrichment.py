@@ -287,15 +287,29 @@ def ai_analysis(project, band: str) -> dict:
     }
 
 
+AVAILABILITY_STATUS_LABELS = {
+    "available": "Disponible",
+    "limited": "Stock limité",
+    "sold_out": "Complet / vendu",
+}
+
+
 def availability_summary(project) -> dict:
     listing_count = project.evidence.get("listing_signal_count", 0)
-    if listing_count > 0:
+    availability = project.evidence.get("availability") or {}
+    status = availability.get("status")
+    if status:
+        public_status = AVAILABILITY_STATUS_LABELS.get(status, status)
+    elif listing_count > 0:
         public_status = f"{listing_count} signal(s) listing détecté(s), disponibilités à confirmer."
     else:
         public_status = "Aucune disponibilité publique détectée pour le moment."
     return {
         "asset_label": asset_label(project.asset_type),
         "public_status": public_status,
+        "status": status,
+        "unit_count_min": availability.get("unit_count_min"),
+        "surface_m2": availability.get("surface_m2", {"min": None, "max": None}),
         "price_min": project.prices.get("min"),
         "price_max": project.prices.get("max"),
     }

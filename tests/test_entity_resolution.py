@@ -1,6 +1,11 @@
 import unittest
 
-from core.entity_resolution import resolve_projects
+from core.entity_resolution import (
+    FUZZY_LOOSE_THRESHOLD,
+    FUZZY_STRICT_THRESHOLD,
+    fuzzy_name_score,
+    resolve_projects,
+)
 from core.models import SignalEvent
 
 
@@ -211,6 +216,54 @@ class EntityResolutionTests(unittest.TestCase):
         self.assertEqual(len(projects), 2)
         names = {project.name for project in projects}
         self.assertEqual(names, {"Cgt Green Homes Iii", "Les Orangers Targa"})
+
+    def test_fuzzy_name_score_detects_close_typo_variants(self):
+        score = fuzzy_name_score({"bahia terraces"}, ["Bahya Terraces"])
+        self.assertGreaterEqual(score, FUZZY_STRICT_THRESHOLD)
+
+    def test_fuzzy_name_score_rejects_unrelated_names(self):
+        score = fuzzy_name_score({"cgt green homes iii"}, ["Les Orangers Targa"])
+        self.assertLess(score, FUZZY_LOOSE_THRESHOLD)
+
+    def test_merges_promoter_pages_with_typo_variant_project_name(self):
+        config = {
+            **TEST_CONFIG,
+            "cities": {
+                "tangier": {"label": "Tanger", "priority": 100, "zones": ["Tanja Balia"]},
+            },
+        }
+        signals = [
+            SignalEvent(
+                collector="promoters.websites",
+                channel="project_discovery",
+                source="CGI",
+                signal_type="promoter_page",
+                title="Bahia Terraces",
+                url="https://example.com/projet/bahia-terraces",
+                text="Nouveau projet villas Bahia Terraces Tanja Balia Tanger CGI",
+                is_primary=True,
+                launch_weight=30,
+                confidence_weight=30,
+                metadata={"promoter_hint": "CGI"},
+            ),
+            SignalEvent(
+                collector="promoters.websites",
+                channel="project_discovery",
+                source="CGI",
+                signal_type="promoter_page",
+                title="Bahya Terraces",
+                url="https://example.com/projet/bahya-terraces-2",
+                text="Deuxieme page projet villas Bahya Terraces Tanja Balia Tanger CGI",
+                is_primary=True,
+                launch_weight=30,
+                confidence_weight=30,
+                metadata={"promoter_hint": "CGI"},
+            ),
+        ]
+
+        projects = resolve_projects(signals, config)
+
+        self.assertEqual(len(projects), 1)
 
     def test_skips_generic_promoter_category_urls(self):
         signals = [

@@ -8,10 +8,12 @@ except ModuleNotFoundError:  # pragma: no cover - local bare Python can miss dep
 
 try:
     from collectors.google.google_search import extract_results
+    from collectors.urbanism.watch import collect as collect_urbanism
     from collectors.urbanism.watch import extract_candidate_pages
 except ModuleNotFoundError:  # pragma: no cover - local bare Python can miss deps
     extract_results = None
     extract_candidate_pages = None
+    collect_urbanism = None
 
 
 @unittest.skipIf(BeautifulSoup is None or extract_results is None, "collector dependencies not installed locally")
@@ -62,6 +64,40 @@ class UrbanismCollectorTests(unittest.TestCase):
         self.assertGreaterEqual(len(candidates), 2)
         urls = [candidate[0] for candidate in candidates]
         self.assertIn("https://urban.example/documents/permis-lotissement.pdf", urls)
+
+    @patch("collectors.urbanism.watch.fetch_pdf_text")
+    @patch("collectors.urbanism.watch.fetch")
+    def test_collect_uses_extracted_pdf_text_for_pdf_candidates(self, mock_fetch, mock_fetch_pdf_text):
+        soup = BeautifulSoup(
+            """
+            <html><body>
+              <a href="/documents/permis-lotissement.pdf">Permis de lotissement Tanja Balia</a>
+            </body></html>
+            """,
+            "lxml",
+        )
+        mock_fetch.return_value = (soup, "Nouveaux permis et plan d'aménagement")
+        mock_fetch_pdf_text.return_value = "Permis lotissement Tanja Balia parcelle 42 hectares résidence"
+
+        signals = collect_urbanism(
+            {
+                "sources": {
+                    "urbanism": [
+                        {
+                            "name": "Agence Urbaine de Tanger",
+                            "url": "https://urban.example",
+                            "description": "Permis et lotissements",
+                            "keywords": ["permis", "lotissement", "projet", "résidence"],
+                        }
+                    ]
+                }
+            }
+        )
+
+        pdf_signal = next(signal for signal in signals if signal.url.endswith(".pdf"))
+        mock_fetch_pdf_text.assert_called_once_with("https://urban.example/documents/permis-lotissement.pdf")
+        self.assertIn("parcelle 42 hectares", pdf_signal.text)
+        self.assertIn("texte PDF extrait", pdf_signal.reasons)
 
 
 if __name__ == "__main__":

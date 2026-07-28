@@ -2,7 +2,7 @@ import unittest
 from types import SimpleNamespace
 
 from core.models import ProjectRecord
-from core.alerts import attach_changes, select_digest_projects, select_immediate_alerts
+from core.alerts import attach_changes, project_changes, select_digest_projects, select_immediate_alerts
 
 
 def project(project_id: str, confidence: int, urgency: int, status: str, confirmation_count: int, source_count: int, prices=None):
@@ -68,6 +68,52 @@ class PipelineAlertTests(unittest.TestCase):
         self.assertEqual(len(digest), 1)
         self.assertGreaterEqual(len(digest[0].evidence["changes"]), 2)
         self.assertIn("Nouvelles confirmations multi-sources", " | ".join(digest[0].evidence["changes"]))
+
+    def test_flags_availability_transition_to_limited_as_a_change(self):
+        previous = project("p2", 80, 60, "watch", 1, 3)
+        previous.evidence["availability"] = {"status": "available"}
+        current = project("p2", 80, 60, "watch", 1, 3)
+        current.evidence["availability"] = {"status": "limited"}
+
+        changes = project_changes(previous, current)
+
+        self.assertTrue(any("stock limité" in change for change in changes))
+
+    def test_flags_availability_transition_to_sold_out_as_a_change(self):
+        previous = project("p3", 80, 60, "watch", 1, 3)
+        previous.evidence["availability"] = {"status": "limited"}
+        current = project("p3", 80, 60, "watch", 1, 3)
+        current.evidence["availability"] = {"status": "sold_out"}
+
+        changes = project_changes(previous, current)
+
+        self.assertTrue(any("complet" in change for change in changes))
+
+    def test_suppresses_immediate_alert_for_archived_project(self):
+        config = {"alerts": {"immediate_confidence_threshold": 90, "max_items_per_email": 5}}
+        projects = [project("new-1", 95, 88, "urgent", 2, 3)]
+        qualifications = {"new-1": {"status": "archived"}}
+
+        immediate = select_immediate_alerts(projects, set(), config, qualifications)
+
+        self.assertEqual(immediate, [])
+
+    def test_suppresses_digest_alert_for_archived_project(self):
+        previous = project("p4", 72, 60, "monitor", 0, 2, {"min": 2_100_000, "max": 2_400_000})
+        current = project("p4", 84, 74, "watch", 2, 4, {"min": 2_000_000, "max": 2_400_000})
+        config = {
+            "alerts": {
+                "digest_confidence_threshold": 70,
+                "digest_min_change_count": 2,
+                "max_items_per_email": 5,
+            }
+        }
+        qualifications = {"p4": {"status": "archived"}}
+
+        projects = attach_changes([current], {"p4": previous})
+        digest = select_digest_projects(projects, {"p4"}, config, qualifications)
+
+        self.assertEqual(digest, [])
 
 
 if __name__ == "__main__":

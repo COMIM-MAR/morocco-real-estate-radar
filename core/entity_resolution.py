@@ -5,8 +5,13 @@ import re
 from collections import Counter
 from urllib.parse import urlparse
 
+from rapidfuzz import fuzz
+
 from core.models import ProjectRecord, SignalEvent
 from core.scoring import enrich_project, enrich_signal
+
+FUZZY_STRICT_THRESHOLD = 90
+FUZZY_LOOSE_THRESHOLD = 72
 
 PROJECT_STOPWORDS = {
     "le",
@@ -440,16 +445,31 @@ def project_key(name: str, city: str | None, promoter: str | None) -> str:
     return hashlib.sha1(raw.encode()).hexdigest()
 
 
+def fuzzy_name_score(group_alias_keys: set[str], aliases: list[str]) -> float:
+    best = 0.0
+    candidates = {canonical_name(alias) for alias in aliases if alias.strip()}
+    for candidate in candidates:
+        if not candidate:
+            continue
+        for existing in group_alias_keys:
+            if not existing:
+                continue
+            best = max(best, fuzz.token_sort_ratio(candidate, existing))
+    return best
+
+
 def score_group_match(group: dict, signal: SignalEvent) -> int:
     identity = signal_identity(signal)
     score = 0
     group_tokens = group["tokens"]
     overlap = len(group_tokens & identity["tokens"])
     name_match = any(canonical_name(alias) in group["alias_keys"] for alias in identity["aliases"])
-    exactish_signals = {"meta_ad", "promoter_page", "project_page", "listing_detail", "search_result", "urbanism_page"}
-    if signal.signal_type in exactish_signals and overlap == 0 and not name_match:
+    fuzzy_score = 0.0 if name_match else fuzzy_name_score(group["alias_keys"], identity["aliases"])
+    fuzzy_strict_match = fuzzy_score >= FUZZY_STRICT_THRESHOLD
+    exactish_signals = {"meta_ad", "promoter_page", "project_page", "listing_detail", "search_result", "urbanism_page", "news_result"}
+    if signal.signal_type in exactish_signals and overlap == 0 and not name_match and not fuzzy_strict_match:
         return 0
-    if signal.signal_type in {"meta_ad", "promoter_page", "project_page"} and overlap < 2 and not name_match:
+    if signal.signal_type in {"meta_ad", "promoter_page", "project_page"} and overlap < 2 and not name_match and not fuzzy_strict_match:
         return 0
     if overlap >= 2:
         score += 50
@@ -463,8 +483,10 @@ def score_group_match(group: dict, signal: SignalEvent) -> int:
         score += 8
     if group["source"] == identity["source"]:
         score += 5
-    if name_match:
+    if name_match or fuzzy_strict_match:
         score += 30
+    elif fuzzy_score >= FUZZY_LOOSE_THRESHOLD:
+        score += 15
     return score
 
 
