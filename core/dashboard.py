@@ -224,102 +224,146 @@ def write_project_page(project, projects_dir: Path):
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root {{
-      --bg: #f5f7fb;
+      --bg: #f4f5fb;
       --panel: #ffffff;
-      --panel-soft: #fafbfc;
-      --line: #e5e7eb;
-      --ink: #111827;
-      --muted: #6b7280;
-      --accent: #c05621;
-      --radius: 18px;
+      --panel-soft: #f7f8fd;
+      --line: #e7e8f2;
+      --ink: #14152b;
+      --muted: #676c85;
+      --accent: #4f46e5;
+      --accent-ink: #ffffff;
+      --accent-soft: #eef0ff;
+      --radius: 20px;
+      --radius-sm: 12px;
+      --shadow-sm: 0 1px 2px rgba(20, 21, 43, .04);
+      --shadow-md: 0 14px 30px -12px rgba(79, 70, 229, .16), 0 2px 8px rgba(20, 21, 43, .04);
     }}
     * {{ box-sizing: border-box; min-width: 0; }}
-    body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
-    main {{ max-width: 980px; margin: 0 auto; padding: 20px 16px 48px; display: grid; gap: 16px; }}
-    .panel {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }}
+    body {{
+      margin: 0; background:
+        radial-gradient(1100px 420px at 12% -8%, #eef0ff 0%, rgba(238,240,255,0) 60%),
+        var(--bg);
+      color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }}
+    h1, h2, h3, h4 {{ font-family: Lexend, Inter, sans-serif; letter-spacing: -.01em; }}
+    .topbar {{
+      position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 20px; background: rgba(244, 245, 251, .78); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line);
+    }}
+    .topbar-inner {{ max-width: 980px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; }}
+    .brand {{ display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 14px; color: var(--ink); text-decoration: none; }}
+    .brand-mark {{
+      width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 15px;
+      background: linear-gradient(135deg, #4f46e5, #7c6cff);
+      box-shadow: var(--shadow-sm);
+    }}
+    .back-link {{
+      display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--muted);
+      text-decoration: none; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel);
+      transition: color .15s ease, border-color .15s ease;
+    }}
+    .back-link:hover {{ color: var(--accent); border-color: #c7c9f7; text-decoration: none; }}
+    main {{ max-width: 980px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 16px; }}
+    .panel {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow-sm); }}
     .grid, .facts, .metrics {{ display: grid; gap: 12px; }}
     .metrics {{ grid-template-columns: repeat(4, 1fr); }}
     .facts {{ grid-template-columns: 1fr 1fr; }}
-    .metric, .fact-box {{ border: 1px solid var(--line); border-radius: 14px; background: var(--panel-soft); padding: 14px; }}
-    .metric strong {{ display: block; font-size: 28px; color: var(--accent); margin-top: 4px; }}
-    .label {{ font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }}
-    .muted, p, li {{ color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }}
-    .pill {{ display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: #f3f4f6; border: 1px solid var(--line); color: var(--muted); margin: 4px 8px 0 0; font-size: 13px; }}
-    .pill.review-new {{ background: #eef2ff; color: #3730a3; }}
-    .pill.review-to_qualify {{ background: #fff7ed; color: #9a3412; }}
-    .pill.review-interested {{ background: #ecfdf3; color: #166534; }}
-    .pill.review-in_contact {{ background: #ecfeff; color: #155e75; }}
-    .pill.review-archived {{ background: #f3f4f6; color: #4b5563; }}
+    .metric, .fact-box {{ border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--panel-soft); padding: 16px; }}
+    .metric strong {{ display: block; font-size: 30px; font-weight: 700; color: var(--accent); margin-top: 6px; font-family: Lexend, Inter, sans-serif; }}
+    .label {{ font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }}
+    .muted, p, li {{ color: var(--muted); line-height: 1.55; overflow-wrap: anywhere; }}
+    .pill {{ display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 999px; background: var(--panel-soft); border: 1px solid var(--line); color: var(--muted); margin: 4px 8px 0 0; font-size: 12.5px; font-weight: 600; }}
+    .pill.review-new {{ background: #eef2ff; color: #4338ca; border-color: #e0e2ff; }}
+    .pill.review-to_qualify {{ background: #fff7ed; color: #b45309; border-color: #fce9d1; }}
+    .pill.review-interested {{ background: #ecfdf5; color: #047857; border-color: #d3f7e6; }}
+    .pill.review-in_contact {{ background: #ecfeff; color: #0e7490; border-color: #d3f4fa; }}
+    .pill.review-archived {{ background: #f3f4f6; color: #4b5563; border-color: #e5e7eb; }}
     .tip {{
       display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px;
       margin-left: 6px; border-radius: 999px; border: 1px solid var(--line); font-size: 11px; color: var(--muted); cursor: help; position: relative;
     }}
     .tip:hover::after, .tip:focus::after {{
       content: attr(data-tip); position: absolute; left: 50%; top: calc(100% + 8px); transform: translateX(-50%);
-      width: 260px; padding: 10px 12px; background: #111827; color: #fff; border-radius: 10px; font-size: 12px; line-height: 1.4; white-space: normal; z-index: 10;
+      width: 260px; padding: 10px 12px; background: #14152b; color: #fff; border-radius: 10px; font-size: 12px; line-height: 1.4; white-space: normal; z-index: 10;
     }}
     .tip:hover::before, .tip:focus::before {{
       content: ""; position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
-      border: 6px solid transparent; border-bottom-color: #111827;
+      border: 6px solid transparent; border-bottom-color: #14152b;
     }}
     .list {{ list-style: none; padding: 0; margin: 12px 0 0 0; display: grid; gap: 8px; }}
-    .list li {{ padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }}
+    .list li {{ padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; }}
     .map-wrap {{ display: grid; gap: 10px; }}
-    #projectMap {{ width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; }}
+    #projectMap {{ width: 100%; min-height: 320px; border-radius: 16px; border: 1px solid var(--line); overflow: hidden; }}
     .gallery {{ display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }}
-    .gallery-card-wrap {{ border: 1px solid var(--line); border-radius: 14px; padding: 10px; background: #fff; display: grid; gap: 10px; align-content: start; }}
+    .gallery-card-wrap {{ border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 10px; background: #fff; display: grid; gap: 10px; align-content: start; transition: box-shadow .15s ease, border-color .15s ease; }}
+    .gallery-card-wrap:hover {{ box-shadow: var(--shadow-md); border-color: #d8d9f5; }}
     .gallery-card {{
       display: grid; gap: 8px; padding: 0; border: 0; background: transparent; text-align: left;
     }}
-    .gallery-image {{ width: 100%; height: 320px; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: #f8fafc; }}
+    .gallery-image {{ width: 100%; height: 320px; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: var(--panel-soft); }}
     .gallery-video {{ width: 100%; height: 320px; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: #000; }}
     .gallery-caption {{ font-size: 12px; color: var(--muted); }}
     .gallery-meta {{ display: grid; gap: 6px; }}
     .gallery-text {{ margin: 0; font-size: 13px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }}
     .gallery-actions {{ display: flex; gap: 10px; flex-wrap: wrap; }}
     .gallery-link {{
-      display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 8px 12px;
-      border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none;
+      display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 8px 14px;
+      border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 13px;
+      transition: border-color .15s ease, background .15s ease;
     }}
-    .gallery-link:hover {{ text-decoration: none; border-color: #cbd5e1; }}
+    .gallery-link:hover {{ text-decoration: none; border-color: #c7c9f7; background: var(--accent-soft); }}
     .lightbox {{
-      position: fixed; inset: 0; background: rgba(17, 24, 39, .82); display: none; align-items: center; justify-content: center; padding: 24px; z-index: 2000;
+      position: fixed; inset: 0; background: rgba(15, 15, 30, .84); backdrop-filter: blur(2px); display: none; align-items: center; justify-content: center; padding: 24px; z-index: 2000;
     }}
     .lightbox.is-open {{ display: flex; }}
     .lightbox-panel {{
-      width: min(1180px, 100%); max-height: 92vh; background: #0f172a; border-radius: 18px; border: 1px solid rgba(255,255,255,.08); padding: 16px; display: grid; gap: 12px;
+      width: min(1180px, 100%); max-height: 92vh; background: #0f1024; border-radius: 20px; border: 1px solid rgba(255,255,255,.08); padding: 16px; display: grid; gap: 12px;
+      box-shadow: 0 30px 60px -20px rgba(0,0,0,.5);
     }}
     .lightbox-head {{ display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #fff; }}
     .lightbox-actions {{ display: flex; gap: 10px; flex-wrap: wrap; }}
     .lightbox-btn {{
-      min-height: 38px; padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,.18); background: transparent; color: #fff; cursor: pointer;
+      min-height: 38px; padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.04); color: #fff; cursor: pointer;
+      font-weight: 600; transition: background .15s ease;
     }}
-    .lightbox-media-wrap {{ overflow: auto; max-height: 76vh; border-radius: 12px; background: #020617; }}
+    .lightbox-btn:hover {{ background: rgba(255,255,255,.12); }}
+    .lightbox-media-wrap {{ overflow: auto; max-height: 76vh; border-radius: 14px; background: #020314; }}
     .lightbox-image {{ width: 100%; height: auto; display: block; }}
     .lightbox-video {{ width: 100%; max-height: 76vh; display: block; }}
-    .review-toolbar {{ display: grid; gap: 10px; margin-top: 14px; }}
+    .review-toolbar {{ display: grid; gap: 10px; margin-top: 16px; }}
     .review-select {{
-      width: 100%; max-width: 280px; min-height: 42px; padding: 8px 12px;
-      border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink);
+      width: 100%; max-width: 280px; min-height: 44px; padding: 10px 14px;
+      border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; color: var(--ink); font-weight: 600;
+      transition: border-color .15s ease, box-shadow .15s ease;
     }}
+    .review-select:focus {{ outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }}
     .notes-box {{
       width: 100%; min-height: 110px; margin-top: 12px; padding: 12px 14px; resize: vertical;
-      border: 1px solid var(--line); border-radius: 14px; background: #fff; color: var(--ink);
+      border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; color: var(--ink);
+      transition: border-color .15s ease, box-shadow .15s ease;
     }}
+    .notes-box:focus {{ outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }}
     .comment-actions {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }}
     .comment-btn {{
-      min-height: 40px; padding: 8px 14px; border-radius: 12px; border: 1px solid var(--line);
-      background: var(--ink); color: #fff; cursor: pointer;
+      min-height: 42px; padding: 9px 16px; border-radius: var(--radius-sm); border: 1px solid transparent;
+      background: var(--accent); color: #fff; cursor: pointer; font-weight: 600; font-size: 13.5px;
+      box-shadow: var(--shadow-sm); transition: transform .1s ease, box-shadow .15s ease;
     }}
+    .comment-btn:hover {{ box-shadow: var(--shadow-md); transform: translateY(-1px); }}
     .comment-entry-actions {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }}
     .comment-entry-btn {{
-      min-height: 32px; padding: 6px 10px; border-radius: 10px; border: 1px solid var(--line);
-      background: #fff; color: var(--ink); cursor: pointer;
+      min-height: 32px; padding: 6px 12px; border-radius: 10px; border: 1px solid var(--line);
+      background: #fff; color: var(--ink); cursor: pointer; font-weight: 600; font-size: 12.5px; transition: border-color .15s ease;
     }}
+    .comment-entry-btn:hover {{ border-color: #c7c9f7; color: var(--accent); }}
     .inline-meta {{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }}
-    .mini-card {{ border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 10px 12px; }}
+    .mini-card {{ border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; padding: 12px 14px; }}
     a {{ color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }}
     a:hover {{ text-decoration: underline; }}
     @media (max-width: 860px) {{ .metrics, .facts {{ grid-template-columns: 1fr 1fr; }} }}
@@ -327,12 +371,20 @@ def write_project_page(project, projects_dir: Path):
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">MR</span>
+        <span>Morocco Real Estate Intelligence</span>
+      </a>
+      <a class="back-link" href="../index.html">&larr; Retour à la recherche</a>
+    </div>
+  </div>
   <main>
     <section class="panel">
-      <p class="label"><a href="../index.html">Retour à la recherche</a></p>
-      <h1 style="margin-top:8px;">{esc(project.name)}</h1>
+      <h1 style="margin-top:0;font-size:26px;">{esc(project.name)}</h1>
       <p style="margin-top:8px;">{esc(project.summary)}</p>
-      <div style="margin-top:12px;">
+      <div style="margin-top:14px;">
         <span class="pill">{esc(status_display(project.status))}</span>
         <span class="pill">{esc(project.city or "Ville à confirmer")}</span>
         <span class="pill">{esc(project.promoter or "Promoteur à confirmer")}</span>
@@ -834,67 +886,102 @@ def write_index(projects, payload):
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""
   >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root {{
-      --bg: #f5f7fb;
+      --bg: #f4f5fb;
       --panel: #ffffff;
-      --panel-soft: #fafbfc;
-      --line: #e5e7eb;
-      --ink: #111827;
-      --muted: #6b7280;
-      --accent: #c05621;
-      --urgent: #fff1ec;
-      --watch: #fff8e7;
-      --monitor: #edf7f0;
-      --radius: 18px;
+      --panel-soft: #f7f8fd;
+      --line: #e7e8f2;
+      --ink: #14152b;
+      --muted: #676c85;
+      --accent: #4f46e5;
+      --accent-ink: #ffffff;
+      --accent-soft: #eef0ff;
+      --urgent: #fef2f2;
+      --urgent-ink: #b91c1c;
+      --urgent-line: #fbdada;
+      --watch: #fffbeb;
+      --watch-ink: #b45309;
+      --watch-line: #fbe8bf;
+      --monitor: #ecfdf5;
+      --monitor-ink: #047857;
+      --monitor-line: #cdf3e2;
+      --radius: 20px;
+      --radius-sm: 12px;
+      --shadow-sm: 0 1px 2px rgba(20, 21, 43, .04);
+      --shadow-md: 0 14px 30px -12px rgba(79, 70, 229, .16), 0 2px 8px rgba(20, 21, 43, .04);
     }}
     * {{ box-sizing: border-box; }}
-    body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
-    main {{ max-width: 1320px; margin: 0 auto; padding: 24px 16px 40px; }}
-    h1, h2, h3, h4, p {{ margin: 0; }}
+    body {{
+      margin: 0; background:
+        radial-gradient(1200px 460px at 15% -10%, #eef0ff 0%, rgba(238,240,255,0) 62%),
+        var(--bg);
+      color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }}
+    h1, h2, h3, h4 {{ margin: 0; font-family: Lexend, Inter, sans-serif; letter-spacing: -.01em; }}
+    p {{ margin: 0; }}
     input, select, button {{ font: inherit; }}
-    .hero, .panel, .metric, .project-card {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }}
-    .hero {{ padding: 24px; }}
+    .topbar {{
+      position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: center;
+      padding: 14px 20px; background: rgba(244, 245, 251, .78); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line);
+    }}
+    .topbar-inner {{ max-width: 1320px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; }}
+    .brand {{ display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 14px; color: var(--ink); text-decoration: none; }}
+    .brand-mark {{
+      width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 15px;
+      background: linear-gradient(135deg, #4f46e5, #7c6cff);
+      box-shadow: var(--shadow-sm);
+    }}
+    .hero, .panel, .metric, .project-card {{ background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); }}
+    .hero {{ padding: 28px; background: linear-gradient(180deg, #fbfbff 0%, var(--panel) 100%); }}
     .hero-top {{ display: flex; justify-content: space-between; gap: 20px; align-items: end; flex-wrap: wrap; }}
-    .label {{ font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }}
-    .muted, .helper {{ color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }}
+    .hero h1 {{ font-size: 30px; }}
+    .label {{ font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }}
+    .muted, .helper {{ color: var(--muted); line-height: 1.55; overflow-wrap: anywhere; }}
     .tip {{
       display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px;
       margin-left: 6px; border-radius: 999px; border: 1px solid var(--line); font-size: 11px; color: var(--muted); cursor: help; position: relative;
     }}
     .tip:hover::after, .tip:focus::after {{
       content: attr(data-tip); position: absolute; left: 50%; top: calc(100% + 8px); transform: translateX(-50%);
-      width: 260px; padding: 10px 12px; background: #111827; color: #fff; border-radius: 10px; font-size: 12px; line-height: 1.4; white-space: normal; z-index: 10;
+      width: 260px; padding: 10px 12px; background: #14152b; color: #fff; border-radius: 10px; font-size: 12px; line-height: 1.4; white-space: normal; z-index: 10;
     }}
     .tip:hover::before, .tip:focus::before {{
       content: ""; position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
-      border: 6px solid transparent; border-bottom-color: #111827;
+      border: 6px solid transparent; border-bottom-color: #14152b;
     }}
-    .stats {{ display: grid; gap: 12px; grid-template-columns: repeat(5, 1fr); margin-top: 18px; }}
-    .metric {{ padding: 16px; background: var(--panel-soft); }}
-    .metric strong {{ display: block; font-size: 30px; color: var(--accent); margin-top: 4px; }}
+    .stats {{ display: grid; gap: 12px; grid-template-columns: repeat(5, 1fr); margin-top: 22px; }}
+    .metric {{ padding: 16px; background: var(--panel-soft); box-shadow: none; }}
+    .metric strong {{ display: block; font-size: 32px; font-weight: 700; color: var(--accent); margin-top: 6px; font-family: Lexend, Inter, sans-serif; }}
     .overview {{ display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; margin-top: 18px; }}
-    .panel {{ padding: 18px; }}
+    .panel {{ padding: 20px; }}
     .layout {{ display: grid; gap: 18px; margin-top: 18px; }}
-    .toolbar {{ display: grid; grid-template-columns: 1.8fr repeat(4, minmax(130px, 1fr)) minmax(140px, 1fr) auto; gap: 10px; margin-top: 16px; }}
+    .toolbar {{ display: grid; grid-template-columns: 1.8fr repeat(4, minmax(130px, 1fr)) minmax(140px, 1fr) auto; gap: 10px; margin-top: 18px; }}
     .field, .toggle {{
       width: 100%;
       min-height: 46px;
       border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
       background: #fff;
       color: var(--ink);
+      transition: border-color .15s ease, box-shadow .15s ease;
     }}
-    .toggle {{ cursor: pointer; background: var(--panel-soft); }}
-    .project-grid {{ display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top: 16px; }}
-    .project-card {{ padding: 16px; display: grid; gap: 10px; overflow: hidden; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }}
-    .project-card:hover {{ transform: translateY(-1px); border-color: #d1d5db; box-shadow: 0 8px 24px rgba(17,24,39,.06); }}
-    .project-card.favorite {{ outline: 2px solid #f7d9c7; }}
+    .field:focus, .toggle:focus {{ outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }}
+    .toggle {{ cursor: pointer; background: var(--panel-soft); font-weight: 600; }}
+    .toggle.is-active {{ background: var(--accent); border-color: var(--accent); color: #fff; }}
+    .project-grid {{ display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top: 18px; }}
+    .project-card {{ padding: 18px; display: grid; gap: 12px; overflow: hidden; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }}
+    .project-card:hover {{ transform: translateY(-2px); border-color: #d7d9f6; box-shadow: var(--shadow-md); }}
+    .project-card.favorite {{ border-color: #c7c9f7; box-shadow: 0 0 0 3px var(--accent-soft); }}
     .card-top {{ display: flex; justify-content: space-between; gap: 12px; align-items: start; }}
     .card-top > div {{ flex: 1 1 auto; min-width: 0; }}
     .card-title {{
-      font-size: 18px; font-weight: 700; line-height: 1.2;
+      font-size: 18px; font-weight: 700; line-height: 1.25; font-family: Lexend, Inter, sans-serif;
       display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
     }}
     .card-subtitle {{
@@ -903,41 +990,46 @@ def write_index(projects, payload):
     }}
     .pill-row {{ display: flex; flex-wrap: wrap; gap: 8px; }}
     .pill {{
-      display: inline-flex; align-items: center; padding: 5px 10px; border-radius: 999px;
-      max-width: 100%; background: #f3f4f6; color: var(--muted); font-size: 12px; border: 1px solid var(--line);
+      display: inline-flex; align-items: center; padding: 5px 11px; border-radius: 999px;
+      max-width: 100%; background: var(--panel-soft); color: var(--muted); font-size: 12px; font-weight: 600; border: 1px solid var(--line);
     }}
-    .pill.urgent {{ background: var(--urgent); color: #9a3412; }}
-    .pill.watch {{ background: var(--watch); color: #a16207; }}
-    .pill.monitor {{ background: var(--monitor); color: #166534; }}
-    .pill.review-new {{ background: #eef2ff; color: #3730a3; }}
-    .pill.review-to_qualify {{ background: #fff7ed; color: #9a3412; }}
-    .pill.review-interested {{ background: #ecfdf3; color: #166534; }}
-    .pill.review-in_contact {{ background: #ecfeff; color: #155e75; }}
-    .pill.review-archived {{ background: #f3f4f6; color: #4b5563; }}
+    .pill.urgent {{ background: var(--urgent); color: var(--urgent-ink); border-color: var(--urgent-line); }}
+    .pill.watch {{ background: var(--watch); color: var(--watch-ink); border-color: var(--watch-line); }}
+    .pill.monitor {{ background: var(--monitor); color: var(--monitor-ink); border-color: var(--monitor-line); }}
+    .pill.review-new {{ background: #eef2ff; color: #4338ca; border-color: #e0e2ff; }}
+    .pill.review-to_qualify {{ background: #fff7ed; color: #b45309; border-color: #fce9d1; }}
+    .pill.review-interested {{ background: #ecfdf5; color: #047857; border-color: #d3f7e6; }}
+    .pill.review-in_contact {{ background: #ecfeff; color: #0e7490; border-color: #d3f4fa; }}
+    .pill.review-archived {{ background: #f3f4f6; color: #4b5563; border-color: #e5e7eb; }}
     .project-summary {{
       display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
       min-height: 4.5em;
     }}
     .scores {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }}
-    .score {{ border: 1px solid var(--line); border-radius: 12px; background: var(--panel-soft); padding: 10px; min-width: 0; }}
+    .score {{ border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--panel-soft); padding: 10px 12px; min-width: 0; }}
     .score span {{ display: block; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }}
-    .score strong {{ display: block; font-size: 20px; margin-top: 4px; color: var(--ink); }}
+    .score strong {{ display: block; font-size: 21px; margin-top: 4px; color: var(--ink); font-family: Lexend, Inter, sans-serif; }}
     .map-panel {{ min-height: 420px; }}
-    #overviewMap {{ width: 100%; min-height: 320px; border-radius: 14px; border: 1px solid var(--line); overflow: hidden; margin-top: 12px; }}
+    #overviewMap {{ width: 100%; min-height: 320px; border-radius: 16px; border: 1px solid var(--line); overflow: hidden; margin-top: 14px; }}
     .list {{ list-style: none; padding: 0; margin: 12px 0 0 0; display: grid; gap: 8px; }}
-    .list li {{ color: var(--muted); padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }}
+    .list li {{ color: var(--muted); padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; }}
     .recent-list li {{ display: flex; justify-content: space-between; gap: 12px; align-items: start; }}
     .card-actions {{ display: flex; gap: 8px; flex-wrap: wrap; }}
     .review-actions {{ display: grid; gap: 8px; grid-template-columns: minmax(0, 1fr); }}
     .review-select {{
-      width: 100%; min-height: 40px; padding: 8px 10px; border-radius: 10px;
-      border: 1px solid var(--line); background: #fff; color: var(--ink);
+      width: 100%; min-height: 40px; padding: 8px 12px; border-radius: 10px;
+      border: 1px solid var(--line); background: #fff; color: var(--ink); font-weight: 600;
+      transition: border-color .15s ease, box-shadow .15s ease;
     }}
+    .review-select:focus {{ outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }}
     .link-btn {{
-      display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 12px;
-      border-radius: 12px; border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none; font-weight: 600;
+      display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 14px;
+      border-radius: var(--radius-sm); border: 1px solid var(--line); background: #fff; color: var(--ink); text-decoration: none; font-weight: 600;
+      transition: border-color .15s ease, background .15s ease, transform .1s ease;
     }}
-    .link-btn.primary {{ background: var(--ink); color: #fff; border-color: var(--ink); }}
+    .link-btn:hover {{ text-decoration: none; border-color: #c7c9f7; background: var(--accent-soft); }}
+    .link-btn.primary {{ background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: var(--shadow-sm); }}
+    .link-btn.primary:hover {{ background: #4338ca; transform: translateY(-1px); }}
     a {{ color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }}
     a:hover {{ text-decoration: underline; }}
     @media (max-width: 1180px) {{ .overview {{ grid-template-columns: 1fr; }} }}
@@ -952,19 +1044,28 @@ def write_index(projects, payload):
       .stats, .toolbar, .scores {{ grid-template-columns: 1fr; }}
       .project-grid {{ grid-template-columns: 1fr; }}
       .review-actions {{ grid-template-columns: 1fr; }}
+      .topbar-inner .pill {{ display: none; }}
     }}
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">MR</span>
+        <span>Morocco Real Estate Intelligence</span>
+      </a>
+      <span class="pill">Page index / recherche</span>
+    </div>
+  </div>
   <main>
     <section class="hero">
       <div class="hero-top">
         <div>
           <p class="label">Morocco Real Estate Intelligence</p>
-          <h1 style="margin-top:6px;">Recherche projets & KPIs</h1>
-          <p style="margin-top:8px; max-width:760px;">Cette page sert à explorer les projets disponibles, voir les KPI globaux, la couverture géographique et ouvrir une fiche projet séparée.</p>
+          <h1 style="margin-top:8px;">Recherche projets & KPIs</h1>
+          <p style="margin-top:10px; max-width:760px;">Cette page sert à explorer les projets disponibles, voir les KPI globaux, la couverture géographique et ouvrir une fiche projet séparée.</p>
         </div>
-        <div class="pill">Page index / recherche</div>
       </div>
       <div class="stats">
         <div class="metric"><span class="label">{tooltip("Projets", KPI_EXPLANATIONS["projects"])}</span><strong>{len(projects)}</strong></div>
@@ -1422,6 +1523,7 @@ def write_index(projects, payload):
 
     function render() {{
       favoritesOnly.textContent = onlyFavorites ? "Voir tous les projets" : "Favoris uniquement";
+      favoritesOnly.classList.toggle("is-active", onlyFavorites);
       const filtered = sortProjects(projects.filter(projectMatches));
       projectGrid.innerHTML = "";
       filtered.forEach(project => projectGrid.appendChild(renderProjectCard(project)));
