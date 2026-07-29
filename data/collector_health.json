@@ -1,0 +1,60 @@
+{
+  "collectors": {
+    "collectors.promoters.websites": [
+      {
+        "date": "2026-07-29",
+        "total": 50,
+        "real_primary": 50,
+        "error": null
+      }
+    ],
+    "collectors.google.google_search": [
+      {
+        "date": "2026-07-29",
+        "total": 4,
+        "real_primary": 0,
+        "error": null
+      }
+    ],
+    "collectors.ads.meta_ads": [
+      {
+        "date": "2026-07-29",
+        "total": 58,
+        "real_primary": 37,
+        "error": null
+      }
+    ],
+    "collectors.news.google_news": [
+      {
+        "date": "2026-07-29",
+        "total": 18,
+        "real_primary": 18,
+        "error": null
+      }
+    ],
+    "collectors.social.watch": [
+      {
+        "date": "2026-07-29",
+        "total": 18,
+        "real_primary": 0,
+        "error": null
+      }
+    ],
+    "collectors.urbanism.watch": [
+      {
+        "date": "2026-07-29",
+        "total": 9,
+        "real_primary": 8,
+        "error": null
+      }
+    ],
+    "collectors.listings.portals": [
+      {
+        "date": "2026-07-29",
+        "total": 48,
+        "real_primary": 0,
+        "error": null
+      }
+    ]
+  }
+}
