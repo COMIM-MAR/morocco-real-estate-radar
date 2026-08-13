@@ -1,351 +1,51 @@
 {
   "immediate": [
     {
-      "project_id": "ea8eeff737073285d4c6e1c2de7e8f0ecdde9a5f",
-      "name": "Fel Sab Immo",
-      "city": "Casablanca",
-      "zone": null,
-      "promoter": null,
-      "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-07-30T07:38:54.075868+00:00",
-      "last_updated_at": "2026-07-30T07:38:54.075961+00:00",
+      "project_id": "ca3a73f22e0c9816678072dc45990c32ef32d607",
+      "name": "Miftah Atlas",
+      "city": "Marrakech",
+      "zone": "Mhamid",
+      "promoter": "Miftah Immobilier",
+      "asset_type": "apartment_3_bed",
+      "first_detected_at": "2026-08-13T06:20:01.678526+00:00",
+      "last_updated_at": "2026-08-13T06:20:03.640364+00:00",
       "launch_score": 100,
       "confidence_score": 100,
-      "investment_score": 58,
-      "urgency_score": 96,
+      "investment_score": 93,
+      "urgency_score": 100,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Fel Sab Immo | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 980000 et 980000 MAD.",
+      "summary": "Miftah Atlas | Promoteur: Miftah Immobilier | Ville: Marrakech | Zone: Mhamid | Confirmations: confirmation en cours | Prix observés entre 200000 et 200000 MAD.",
       "prices": {
-        "min": 980000,
-        "max": 980000
+        "min": 200000,
+        "max": 250000
       },
       "aliases": [
-        "Fel Sab Immo"
+        "Miftah Atlas",
+        "Miftah Al Atlas II",
+        "Miftah Atlas Lots",
+        "Miftah Al Atlas Lots",
+        "Miftah Al Atlas"
       ],
       "channels": [
-        "advertising"
+        "project_discovery"
       ],
       "sources": [
-        "Fel Sab Immo"
+        "Miftah Immobilier"
       ],
       "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1732871324580764",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1061765142887906"
+        "https://miftahimmobilier.ma/projets/miftah-al-atlas-ii-un-cadre-de-vie-familial-a-marrakech/",
+        "https://miftahimmobilier.ma/projets/miftah-al-atlas-lots-des-terrains-pour-vos-projets/",
+        "https://miftahimmobilier.ma/projets/miftah-al-atlas-une-adresse-pratique-a-marrakech/"
       ],
       "evidence": {
-        "signal_count": 2,
-        "primary_signal_count": 2,
+        "signal_count": 3,
+        "primary_signal_count": 3,
         "listing_signal_count": 0,
         "source_count": 1,
         "channel_count": 1,
         "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "availability": {
-          "status": "available",
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": 37,
-            "max": 37
-          },
-          "signal_count": 2
-        },
-        "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "price_band": "cash_ready",
-        "price_evolution": {
-          "trend": "stable",
-          "summary": "Prix observés entre 980000 et 980000 MAD."
-        },
-        "roi": {
-          "label": "Moyen",
-          "five_year_upside_score": 58
-        },
-        "project_slug": "fel-sab-immo-ea8eeff7",
-        "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Fel Sab Immo · ad #1732871324580764",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1732871324580764",
-            "source": "Fel Sab Immo",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Fel Sab Immo · ad #1061765142887906",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1061765142887906",
-            "source": "Fel Sab Immo",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Appartement",
-          "public_status": "Disponible",
-          "status": "available",
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": 37,
-            "max": 37
-          },
-          "price_min": 980000,
-          "price_max": 980000
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Fel Sab Immo · ad #1732871324580764",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1732871324580764",
-            "source": "Fel Sab Immo",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Fel Sab Immo · ad #1061765142887906",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1061765142887906",
-            "source": "Fel Sab Immo",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "images": [
-          "assets/meta/meta-ad-1732871324580764.jpg"
-        ],
-        "videos": [],
-        "changes": [],
-        "is_new_project": true,
-        "qualification": {
-          "status": "new",
-          "notes": ""
-        }
-      },
-      "reasons": [
-        "publicité Meta exacte détectée: ad_id 1732871324580764",
-        "disponibilité confirmée",
-        "prix détecté: 980000 MAD",
-        "type: apartment_unknown",
-        "ville: Casablanca",
-        "marqueur de lancement détecté",
-        "publicité Meta exacte détectée: ad_id 1061765142887906"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-07-30T07:38:54.075868+00:00",
-          "channel": "advertising",
-          "source": "Fel Sab Immo",
-          "title": "Fel Sab Immo · ad #1732871324580764",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1732871324580764"
-        },
-        {
-          "detected_at": "2026-07-30T07:38:54.075961+00:00",
-          "channel": "advertising",
-          "source": "Fel Sab Immo",
-          "title": "Fel Sab Immo · ad #1061765142887906",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1061765142887906"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Fel Sab Immo",
-          "signal_type": "meta_ad",
-          "title": "Fel Sab Immo · ad #1732871324580764",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1732871324580764",
-          "text": "Fel Sab Immo Fel Sab Immo 🌟 LANCEMENT COMMERCIAL • RÉSIDENCE SOLÉA 🌟 ​📍 Une adresse d’exception au cœur de France Ville, Casablanca ! ​Vous recherchez un investissement sûr ou votre futur lieu de vie ? L'agence FELASAB IMMOBILIER vous présente son tout nouveau projet résidentiel SOLÉA (R+3). Une architecture minimaliste, des lignes épurées et des prestations haut de gamme pensées pour votre confort quotidien. ​Dès aujourd'hui, réservez votre unité parmi un large choix de biens à forte valeur locative et résidentielle : ​🔹 STUDIOS PRESTIGE ​📐 Superficies : de 37 m² à 56 m² ​🍳 Cuisine américaine moderne et entièrement équipée ​💰 Prix : à partir de 980 000 DH ​🔹 APPARTEMENTS DE LUXE ​📐 Superficies : de 53 m² à 89 m² ​🛋️ Grands espaces de vie lumineux et finitions premium ​💰 Prix : à partir de 1 200 000 DH ​🔹 MAGASINS & COMMERCES ​📐 Superficies : de 66 m² à 91 m² ​🏢 Idéal pour maximiser la visibilité de votre activité ​💰 Prix : à partir de 1 800 000 DH ​✨ DES PRESTATIONS UNIQUE À CHAQUE APPARTEMENT : ​🚗 Place de parking titrée incluse. ​💨 Climatisation centralisée (Type zoning pièce par pièce). ​🪵 Matériaux nobles : Portes en chêne, cuisine en latte hydrofuge. ​🤫 Isolation thermique et phonique renforcée. ​🔒 Sécurité totale : Double vitrage et système de surveillance. ​📞 PRENEZ RENDEZ-VOUS DÈS MAINTENANT Nos conseillers sont à votre écoute pour vous accompagner dans votre projet : 📱 Téléphone / WhatsApp : 07 76 26 30 08 📧 Email : contact@felasab.com ​Felasab Immobilier, votre partenaire de confiance. ​#ImmobilierCasablanca #ResidenceSolea #FranceVille #MarocImmo #FelasabImmobilier #AppartementDeLuxe #InvestissementMaroc #StudioCasablanca Fel Sab Immo Voir les détails ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma&h=AUD6Gnup4WQHRsWozMMMK7caR7smNYOH5xCDCa78ET2SYL-V5YsQfJ5XBhwJKFXkwBuFpQJKlu70ItfK7PTMiw5NaCHxKdTqT3lyBZF6T9Wtbwz1CoqH2I12_Co_gzoN6G_Oo2u_g_mr3yfO",
-          "is_primary": true,
-          "launch_weight": 50,
-          "confidence_weight": 50,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1732871324580764",
-            "page_name": "Fel Sab Immo",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1732871324580764",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma&h=AUD6Gnup4WQHRsWozMMMK7caR7smNYOH5xCDCa78ET2SYL-V5YsQfJ5XBhwJKFXkwBuFpQJKlu70ItfK7PTMiw5NaCHxKdTqT3lyBZF6T9Wtbwz1CoqH2I12_Co_gzoN6G_Oo2u_g_mr3yfO",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "nouveau projet immobilier Casablanca",
-            "city_hint": null,
-            "zone_hint": null,
-            "availability": {
-              "status": "available",
-              "unit_count": null,
-              "surface_m2": {
-                "min": 37,
-                "max": 37
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1732871324580764",
-            "disponibilité confirmée",
-            "prix détecté: 980000 MAD",
-            "type: apartment_unknown",
-            "ville: Casablanca",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-07-30T07:38:54.075868+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Fel Sab Immo",
-          "price_mad": 980000,
-          "signal_id": "ace61b5eb70d49bad20dc2f6776c62004da9e7e5"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Fel Sab Immo",
-          "signal_type": "meta_ad",
-          "title": "Fel Sab Immo · ad #1061765142887906",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1061765142887906",
-          "text": "Fel Sab Immo Fel Sab Immo 🌟 LANCEMENT COMMERCIAL • RÉSIDENCE SOLÉA 🌟 📍 Une adresse d’exception au cœur de France Ville, Casablanca ! Découvrez le nouveau projet résidentiel SOLÉA (R+3) proposé par FELASAB IMMOBILIER. Une architecture moderne, des finitions raffinées et un confort absolu. 🔹 STUDIOS PRESTIGE (37 m² à 56 m²) 🔹 APPARTEMENTS DE LUXE (53 m² à 89 m²) 🔹 COMMERCES & MAGASINS (66 m² à 91 m²) ✨ Prestations haut de gamme : Cuisine américaine moderne Place de parking titrée Climatisation centralisée zoning Isolation phonique & thermique 📞 Infoline / WhatsApp : 07 76 26 30 08 🏢 Résidence SOLÉA — Studios & Appartements de Standing 📍 France Ville, Casablanca • Contact : 07 76 26 30 08 Learn More État du système API Ad LibraryÀ propos des publicités et de l’utilisation des donnéesConfidentialitéConditionsCookies Meta © 2026 | Français (France) https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma&h=AUD6Gnup4WQHRsWozMMMK7caR7smNYOH5xCDCa78ET2SYL-V5YsQfJ5XBhwJKFXkwBuFpQJKlu70ItfK7PTMiw5NaCHxKdTqT3lyBZF6T9Wtbwz1CoqH2I12_Co_gzoN6G_Oo2u_g_mr3yfO",
-          "is_primary": true,
-          "launch_weight": 50,
-          "confidence_weight": 50,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1061765142887906",
-            "page_name": "Fel Sab Immo",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1061765142887906",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fyakeey.com%2Ffr-ma&h=AUD6Gnup4WQHRsWozMMMK7caR7smNYOH5xCDCa78ET2SYL-V5YsQfJ5XBhwJKFXkwBuFpQJKlu70ItfK7PTMiw5NaCHxKdTqT3lyBZF6T9Wtbwz1CoqH2I12_Co_gzoN6G_Oo2u_g_mr3yfO",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "nouveau projet immobilier Casablanca",
-            "city_hint": null,
-            "zone_hint": null,
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": 37,
-                "max": 37
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1061765142887906",
-            "type: apartment_unknown",
-            "ville: Casablanca",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-07-30T07:38:54.075961+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Fel Sab Immo",
-          "price_mad": null,
-          "signal_id": "2898614b3287b16251b4398524aeaf153c9012cd"
-        }
-      ]
-    },
-    {
-      "project_id": "17922a58499743e22f7b0f8080143af37bcebf06",
-      "name": "Projet Immobilier",
-      "city": "Agadir",
-      "zone": "Malabata",
-      "promoter": null,
-      "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-07-30T07:41:40.442739+00:00",
-      "last_updated_at": "2026-07-30T07:41:41.375296+00:00",
-      "launch_score": 100,
-      "confidence_score": 100,
-      "investment_score": 52,
-      "urgency_score": 100,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Projet Immobilier | Promoteur: à confirmer | Ville: Agadir | Zone: Malabata | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-      "prices": {
-        "min": null,
-        "max": null
-      },
-      "aliases": [
-        "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-        "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-        "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-        "Projet Immobilier",
-        "Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk",
-        "Implantée au sein du projet immobilier «Malabata Hills» : La «Maison de l’architecte», un nouveau levier de rayonnement culturel et professionnel de Tanger - Aujourd'hui le Maroc"
-      ],
-      "channels": [
-        "news"
-      ],
-      "sources": [
-        "Aujourd'hui le Maroc",
-        "Industrie du Maroc",
-        "La Vie éco",
-        "Le Desk",
-        "Medias24",
-        "h24info.ma",
-        "laverite.ma",
-        "purepeople.com"
-      ],
-      "source_urls": [
-        "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5",
-        "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5",
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5",
-        "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMFhfSjNldHVjSHlRN29OZm5VWGUzamZpSDNpTHBXbHBsMm5BYXZUdGFST2lma2tQd0JJbFg3QlZvYnI1MC1yLWxRTHdOVU5JQXVFeF9ham83TDJValR5bWFxR3hQejQzN2pNZjJGNnY3eDhrVmY4bTlhZFd4TTA1a3BERnlXYlVjZ0dodGFnSTM0MktMQklFOUVxVjR6SjVUdEdORXBRRGR3LXRPcDhpbU95eElSV04wd24xQWRoTEtGelF6ZnkwUjZFMW1ZWHpDa0VXVk1VMmg0NlpTN2R3ZGttQllmUW5DbjZEZXBOOFRGTndkTWZOd1ZXUmYyb2JEUUxqaXBPTTJpZzlyamFWb2xwcTE5N0Vt?oc=5",
-        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-        "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5",
-        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5",
-        "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5",
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeDFPeUFLYkhPaWJSdVpEcFByaEhRaVZocFloazFkVVBJeVdRZ2tyLWVwTzFPOXF3OGZhQ3F0QnNyV1AxUUhMcEp3amhuRFBVcVV4UHp4Q0o2UEJuYzZpdXBndmJQNkR6cHpiYXNSS2d6dmtiVjFHQXFIaVNfRmNPcUdaMnV1Y2lMdnJJajRIOWV5REtwVVRVT2lBVzdxOW1JOHVqaXZjTXhBOE16d0Y2Z1JiSmtmZEI0QzJqazhIbUhhVk90alltbFIycGstLVoxZ1hlemdHaW1qVGJUamJQOQ?oc=5"
-      ],
-      "evidence": {
-        "signal_count": 10,
-        "primary_signal_count": 10,
-        "listing_signal_count": 0,
-        "source_count": 8,
-        "channel_count": 1,
-        "primary_channels": [
-          "news"
+          "project_discovery"
         ],
         "secondary_channels": [],
         "confirmations": [],
@@ -358,14 +58,350 @@
             "min": null,
             "max": null
           },
-          "signal_count": 10
+          "signal_count": 3
         },
         "geo": {
-          "lat": 35.783,
-          "lng": -5.7603,
-          "sea_distance_km": 1,
-          "station_distance_km": 4,
-          "highway_distance_km": 5
+          "lat": 31.6295,
+          "lng": -7.9811,
+          "sea_distance_km": 180,
+          "station_distance_km": 5,
+          "highway_distance_km": 6
+        },
+        "price_band": "cash_ready",
+        "price_evolution": {
+          "trend": "stable",
+          "summary": "Prix observés entre 200000 et 200000 MAD."
+        },
+        "roi": {
+          "label": "Élevé",
+          "five_year_upside_score": 90
+        },
+        "project_slug": "miftah-atlas-ca3a73f2",
+        "infrastructure": {
+          "sea_distance_km": 180,
+          "station_distance_km": 5,
+          "highway_distance_km": 6
+        },
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "source_catalog": [
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Miftah Al Atlas II",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-ii-un-cadre-de-vie-familial-a-marrakech/",
+            "source": "Miftah Immobilier",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Miftah Al Atlas Lots",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-lots-des-terrains-pour-vos-projets/",
+            "source": "Miftah Immobilier",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Miftah Al Atlas",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-une-adresse-pratique-a-marrakech/",
+            "source": "Miftah Immobilier",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Appartement 3 chambres",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "status": null,
+          "unit_count_min": null,
+          "surface_m2": {
+            "min": null,
+            "max": null
+          },
+          "price_min": 200000,
+          "price_max": 250000
+        },
+        "ai_analysis": {
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+          ],
+          "risks": [
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Miftah Al Atlas II",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-ii-un-cadre-de-vie-familial-a-marrakech/",
+            "source": "Miftah Immobilier",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Miftah Al Atlas Lots",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-lots-des-terrains-pour-vos-projets/",
+            "source": "Miftah Immobilier",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Miftah Al Atlas",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-une-adresse-pratique-a-marrakech/",
+            "source": "Miftah Immobilier",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          }
+        ],
+        "social_links": [],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [],
+        "videos": [],
+        "changes": [],
+        "is_new_project": true,
+        "qualification": {
+          "status": "new",
+          "notes": ""
+        }
+      },
+      "reasons": [
+        "nouvelle page promoteur",
+        "prix détecté: 250000 MAD",
+        "type: apartment_3_bed",
+        "ville: Marrakech",
+        "zone: Mhamid",
+        "marqueur de lancement détecté",
+        "type: apartment_unknown",
+        "prix détecté: 200000 MAD"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-08-13T06:20:01.678526+00:00",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "title": "Miftah Al Atlas II",
+          "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-ii-un-cadre-de-vie-familial-a-marrakech/"
+        },
+        {
+          "detected_at": "2026-08-13T06:20:03.162129+00:00",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "title": "Miftah Al Atlas Lots",
+          "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-lots-des-terrains-pour-vos-projets/"
+        },
+        {
+          "detected_at": "2026-08-13T06:20:03.640364+00:00",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "title": "Miftah Al Atlas",
+          "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-une-adresse-pratique-a-marrakech/"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "signal_type": "promoter_page",
+          "title": "Miftah Al Atlas II",
+          "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-ii-un-cadre-de-vie-familial-a-marrakech/",
+          "text": "Miftah Al Atlas II MIFTAH AL ATLAS II, UN CADRE DE VIE FAMILIAL À MARRAKECH – MIFTAH IMMOBILIER MIFTAH AL ATLAS II, UN CADRE DE VIE FAMILIAL À MARRAKECH Des appartements fonctionnels, pensés pour les familles Des appartements spacieux pour les familles Un quotidien familial à Marrakech Galerie MIFTAH AL ATLAS II, UN CADRE DE VIE FAMILIAL À MARRAKECH – MIFTAH IMMOBILIER Aller au contenu Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR PROJET LIVRÉ MIFTAH AL ATLAS II, UN CADRE DE VIE FAMILIAL À MARRAKECH À partir de 250.000 dhs Des appartements fonctionnels, pensés pour les familles Situé dans le quartier de M’hamid, Miftah Al Atlas II propose des appartements de 3 chambres, pensés pour répondre aux besoins des familles. Les immeubles en R+3 favorisent un cadre de vie plus intime et confortable, complété par des espaces verts propices à la détente. Le projet s’inscrit dans une approche équilibrée, associant architecture moderne et environnement agréable, avec l’ensemble des commodités nécessaires au quotidien. Appartements 3 chambres immeubles R+3 Espaces verts Commodités Des appartements spacieux pour les familles Des appartements modernes et bien agencés, composés de 3 chambres, au sein d’immeubles en R+3 favorisant intimité, confort et qualité de vie. 2à 3 chambres 1 Salon Cuisine WC + Salle de bain Un quotidien familial à Marrakech Galerie Intérieur Extérieur Découvrez nos projets en cours En commercialisation Miftah Arraha V Un projet structuré intégrant habitat et équipements pour un quotidien simplifié. Découvrir le projet En commercialisation Miftah Al Bahr Un cadre de vie balnéaire combinant résidences et commerces, à quelques minutes de la plage. Découvrir le projet Miftah immobilier Accueil Nos projets Qui sommes-nous Contact Conditions Generales Accueil Nos projets Qui sommes-nous Contact Conditions Generales Villes Marrakech Safi Sidi rahal Agadir Casablanca Tanger Contactez-nous +212 5 22 95 32 32 [email protected] Facebook Instagram © 2026 MIFTAH IMMOBILIER. Tous droits réservés",
+          "is_primary": true,
+          "launch_weight": 42,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": "Miftah Immobilier",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "nouvelle page promoteur",
+            "prix détecté: 250000 MAD",
+            "type: apartment_3_bed",
+            "ville: Marrakech",
+            "zone: Mhamid",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-08-13T06:20:01.678526+00:00",
+          "city_hint": "Marrakech",
+          "zone_hint": "Mhamid",
+          "promoter_hint": "Miftah Immobilier",
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": null,
+          "price_mad": 250000,
+          "signal_id": "6d07ffd9e97c8c62292792a0aff2ca156bdb8715"
+        },
+        {
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "signal_type": "promoter_page",
+          "title": "Miftah Al Atlas Lots",
+          "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-lots-des-terrains-pour-vos-projets/",
+          "text": "Miftah Al Atlas Lots MIFTAH AL ATLAS LOTS, DES TERRAINS POUR VOS PROJETS – MIFTAH IMMOBILIER MIFTAH AL ATLAS LOTS, DES TERRAINS POUR VOS PROJETS Des lots bien situés, adaptés à vos projets Des lots bien desservis à M’hamid Découvrez nos projets en cours MIFTAH AL ATLAS LOTS, DES TERRAINS POUR VOS PROJETS – MIFTAH IMMOBILIER Aller au contenu Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR PROJET LIVRÉ MIFTAH AL ATLAS LOTS, DES TERRAINS POUR VOS PROJETS À partir de 5300 dhs/m² Des lots bien situés, adaptés à vos projets Situé à M’hamid, Miftah Al Atlas Lots propose une offre de terrains au sein d’un environnement bien desservi, bénéficiant d’un accès rapide aux principaux axes, services et équipements de la ville. Pensé pour offrir flexibilité et confort, le projet s’intègre dans un cadre maîtrisé où la densité est limitée, favorisant un meilleur équilibre entre intimité, accessibilité et qualité de vie. Terrains Densité maîtrisée Cadre flexible Des lots bien desservis à M’hamid Découvrez nos projets en cours En commercialisation Miftah Arraha V Un projet structuré intégrant habitat et équipements pour un quotidien simplifié. Découvrir le projet En commercialisation Miftah Al Bahr Un cadre de vie balnéaire combinant résidences et commerces, à quelques minutes de la plage. Découvrir le projet Miftah immobilier Accueil Nos projets Qui sommes-nous Contact Conditions Generales Accueil Nos projets Qui sommes-nous Contact Conditions Generales Villes Marrakech Safi Sidi rahal Agadir Casablanca Tanger Contactez-nous +212 5 22 95 32 32 [email protected] Facebook Instagram © 2026 MIFTAH IMMOBILIER. Tous droits réservés",
+          "is_primary": true,
+          "launch_weight": 42,
+          "confidence_weight": 40,
+          "metadata": {
+            "promoter_hint": "Miftah Immobilier",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "nouvelle page promoteur",
+            "type: apartment_unknown",
+            "ville: Marrakech",
+            "zone: Mhamid",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-08-13T06:20:03.162129+00:00",
+          "city_hint": "Marrakech",
+          "zone_hint": "Mhamid",
+          "promoter_hint": "Miftah Immobilier",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": null,
+          "price_mad": null,
+          "signal_id": "69517921a6e7f97b712da4361bc7befc5d2cdd30"
+        },
+        {
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "signal_type": "promoter_page",
+          "title": "Miftah Al Atlas",
+          "url": "https://miftahimmobilier.ma/projets/miftah-al-atlas-une-adresse-pratique-a-marrakech/",
+          "text": "Miftah Al Atlas MIFTAH AL ATLAS, UNE ADRESSE PRATIQUE À MARRAKECH – MIFTAH IMMOBILIER MIFTAH AL ATLAS, UNE ADRESSE PRATIQUE À MARRAKECH Un projet bien situé, pensé pour le quotidien Des logements et terrains pour différents projets de vie Une adresse connectée à M’hamid Galerie MIFTAH AL ATLAS, UNE ADRESSE PRATIQUE À MARRAKECH – MIFTAH IMMOBILIER Aller au contenu Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR PROJET LIVRÉ MIFTAH AL ATLAS, UNE ADRESSE PRATIQUE À MARRAKECH À partir de 200.000 dhs Un projet bien situé, pensé pour le quotidien Situé dans le quartier de M’hamid, Miftah Al Atlas propose un cadre de vie complet, combinant accessibilité, services et diversité d’offres. Le projet intègre à la fois des logements et des lots de terrain, permettant de répondre à différents besoins résidentiels. Pensé pour privilégier le confort, l’ensemble se distingue par des immeubles limités à R+3 et une faible densité par étage, favorisant davantage d’intimité. Son environnement dynamique, à proximité des équipements, loisirs et principaux axes, en fait une adresse fonctionnelle au quotidien. Terrains R+3 Faible densité Accès aux axes Des logements et terrains pour différents projets de vie Le programme combine appartements et lots de terrain, avec des immeubles limités à R+3 favorisant une meilleure intimité et un cadre de vie plus confortable. 2 à 3 chambres 1 Salon Cuisine WC + Salle de bain Une adresse connectée à M’hamid Galerie Intérieur Extérieur Découvrez nos projets en cours En commercialisation Miftah Arraha V Un projet structuré intégrant habitat et équipements pour un quotidien simplifié. Découvrir le projet En commercialisation Miftah Al Bahr Un cadre de vie balnéaire combinant résidences et commerces, à quelques minutes de la plage. Découvrir le projet Miftah immobilier Accueil Nos projets Qui sommes-nous Contact Conditions Generales Accueil Nos projets Qui sommes-nous Contact Conditions Generales Villes Marrakech Safi Sidi rahal Agadir Casablanca Tanger Contactez-nous +212 5 22 95 32 32 [email protected] Facebook Instagram © 2026 MIFTAH IMMOBILIER. Tous droits réservés",
+          "is_primary": true,
+          "launch_weight": 42,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": "Miftah Immobilier",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "nouvelle page promoteur",
+            "prix détecté: 200000 MAD",
+            "type: apartment_3_bed",
+            "ville: Marrakech",
+            "zone: Mhamid",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-08-13T06:20:03.640364+00:00",
+          "city_hint": "Marrakech",
+          "zone_hint": "Mhamid",
+          "promoter_hint": "Miftah Immobilier",
+          "asset_type_hint": "apartment_3_bed",
+          "project_name_hint": null,
+          "price_mad": 200000,
+          "signal_id": "fa3d7e36fa003c58fdacfdeae9721111761c7a87"
+        }
+      ]
+    },
+    {
+      "project_id": "57af40aaf20318191d8d1760dd339b52914c7779",
+      "name": "Green lotus Green lotus Green Lotus",
+      "city": "Casablanca",
+      "zone": "Bouskoura",
+      "promoter": null,
+      "asset_type": null,
+      "first_detected_at": "2026-08-13T06:20:29.136568+00:00",
+      "last_updated_at": "2026-08-13T06:20:29.136701+00:00",
+      "launch_score": 100,
+      "confidence_score": 100,
+      "investment_score": 59,
+      "urgency_score": 100,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "Green lotus Green lotus Green Lotus | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "Green lotus Green lotus Green Lotus Business",
+        "Green lotus Green lotus Green Lotus"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Green lotus"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=27616560191305176"
+      ],
+      "evidence": {
+        "signal_count": 3,
+        "primary_signal_count": 3,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "availability": {
+          "status": null,
+          "unit_count_min": null,
+          "surface_m2": {
+            "min": null,
+            "max": null
+          },
+          "signal_count": 3
+        },
+        "geo": {
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
         },
         "price_band": "unknown",
         "price_evolution": {
@@ -373,40 +409,50 @@
           "summary": "Aucune série de prix fiable pour le moment."
         },
         "roi": {
-          "label": "Prudent",
-          "five_year_upside_score": 52
+          "label": "Moyen",
+          "five_year_upside_score": 59
         },
-        "project_slug": "projet-immobilier-17922a58",
+        "project_slug": "green-lotus-green-lotus-green-lotus-57af40aa",
         "infrastructure": {
-          "sea_distance_km": 1,
-          "station_distance_km": 4,
-          "highway_distance_km": 5
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
         },
         "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
         "source_catalog": [
           {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5",
-            "source": "Industrie du Maroc",
-            "signal_type": "news_result",
-            "proof_level": "watch"
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1369915538422075",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
           },
           {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5",
-            "source": "laverite.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1039379112368362",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #27616560191305176",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=27616560191305176",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
           }
         ],
         "practical": {
-          "asset_label": "Appartement",
+          "asset_label": "Type à confirmer",
           "public_status": "Aucune disponibilité publique détectée pour le moment.",
           "status": null,
           "unit_count_min": null,
@@ -433,32 +479,44 @@
           ]
         },
         "official_links": [],
-        "social_links": [],
-        "listing_links": [],
-        "news_links": [
+        "social_links": [
           {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5",
-            "source": "Industrie du Maroc",
-            "signal_type": "news_result",
-            "proof_level": "watch"
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1369915538422075",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
           },
           {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5",
-            "source": "laverite.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #1039379112368362",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Green lotus · ad #27616560191305176",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=27616560191305176",
+            "source": "Green lotus",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
           }
         ],
+        "listing_links": [],
+        "news_links": [],
         "urbanism_links": [],
-        "images": [],
+        "images": [
+          "assets/meta/meta-ad-1369915538422075.jpg"
+        ],
         "videos": [],
         "changes": [],
         "is_new_project": true,
@@ -468,104 +526,58 @@
         }
       },
       "reasons": [
-        "article presse détecté",
-        "mot-clé presse: projet immobilier",
-        "ville: Agadir",
-        "marqueur de lancement détecté",
+        "publicité Meta exacte détectée: ad_id 1369915538422075",
         "ville: Casablanca",
-        "ville: Rabat",
-        "ville: Tanger",
-        "zone: Malabata",
-        "ville: Marrakech",
-        "mot-clé presse: pré-commercialisation"
+        "zone: Bouskoura",
+        "publicité Meta exacte détectée: ad_id 1039379112368362",
+        "publicité Meta exacte détectée: ad_id 27616560191305176"
       ],
       "timeline": [
         {
-          "detected_at": "2026-07-30T07:41:40.442739+00:00",
-          "channel": "news",
-          "source": "Industrie du Maroc",
-          "title": "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5"
+          "detected_at": "2026-08-13T06:20:29.136568+00:00",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "title": "Green lotus · ad #1369915538422075",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075"
         },
         {
-          "detected_at": "2026-07-30T07:41:40.442797+00:00",
-          "channel": "news",
-          "source": "laverite.ma",
-          "title": "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5"
+          "detected_at": "2026-08-13T06:20:29.136647+00:00",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "title": "Green lotus · ad #1039379112368362",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
         },
         {
-          "detected_at": "2026-07-30T07:41:40.442826+00:00",
-          "channel": "news",
-          "source": "Medias24",
-          "title": "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:40.442855+00:00",
-          "channel": "news",
-          "source": "Le Desk",
-          "title": "Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:40.442940+00:00",
-          "channel": "news",
-          "source": "Aujourd'hui le Maroc",
-          "title": "Implantée au sein du projet immobilier «Malabata Hills» : La «Maison de l’architecte», un nouveau levier de rayonnement culturel et professionnel de Tanger - Au",
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMFhfSjNldHVjSHlRN29OZm5VWGUzamZpSDNpTHBXbHBsMm5BYXZUdGFST2lma2tQd0JJbFg3QlZvYnI1MC1yLWxRTHdOVU5JQXVFeF9ham83TDJValR5bWFxR3hQejQzN2pNZjJGNnY3eDhrVmY4bTlhZFd4TTA1a3BERnlXYlVjZ0dodGFnSTM0MktMQklFOUVxVjR6SjVUdEdORXBRRGR3LXRPcDhpbU95eElSV04wd24xQWRoTEtGelF6ZnkwUjZFMW1ZWHpDa0VXVk1VMmg0NlpTN2R3ZGttQllmUW5DbjZEZXBOOFRGTndkTWZOd1ZXUmYyb2JEUUxqaXBPTTJpZzlyamFWb2xwcTE5N0Vt?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:40.442974+00:00",
-          "channel": "news",
-          "source": "purepeople.com",
-          "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - purepeople.com",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:40.837117+00:00",
-          "channel": "news",
-          "source": "La Vie éco",
-          "title": "Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:41.375121+00:00",
-          "channel": "news",
-          "source": "Medias24",
-          "title": "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:41.375175+00:00",
-          "channel": "news",
-          "source": "h24info.ma",
-          "title": "​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca - h24info.ma",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:41.375296+00:00",
-          "channel": "news",
-          "source": "Medias24",
-          "title": "Projet avenue Royale : Casablanca Iskane lance un deuxième AMI pour la construction de 7.000 appartements à Nassim - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeDFPeUFLYkhPaWJSdVpEcFByaEhRaVZocFloazFkVVBJeVdRZ2tyLWVwTzFPOXF3OGZhQ3F0QnNyV1AxUUhMcEp3amhuRFBVcVV4UHp4Q0o2UEJuYzZpdXBndmJQNkR6cHpiYXNSS2d6dmtiVjFHQXFIaVNfRmNPcUdaMnV1Y2lMdnJJajRIOWV5REtwVVRVT2lBVzdxOW1JOHVqaXZjTXhBOE16d0Y2Z1JiSmtmZEI0QzJqazhIbUhhVk90alltbFIycGstLVoxZ1hlemdHaW1qVGJUamJQOQ?oc=5"
+          "detected_at": "2026-08-13T06:20:29.136701+00:00",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "title": "Green lotus · ad #27616560191305176",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=27616560191305176"
         }
       ],
       "signals": [
         {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Industrie du Maroc",
-          "signal_type": "news_result",
-          "title": "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5",
-          "text": "nouveau projet immobilier Maroc Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc <a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5\" target=\"_blank\">Agadir, nouveau moteur de l’immobilier marocain.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Industrie du Maroc</font>",
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "title": "Green lotus · ad #1369915538422075",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+          "text": "Green lotus Green lotus Green Lotus Business est un centre d'affaires moderne offrant un cadre professionnel premium au cœur du futur pôle stratégique de Casablanca. Situé à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie, Casa Nearshore, Green Lotus bénéficie d'un positionnement exceptionnel. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus L'élégance au service de la Performance. Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fbusiness-mobile%2F&h=AUA89GhG3v8EPbIzoBBNnFpSPAqwiyYq2Sky9rx84T0XnY6zbCfV0Li8n_3GpYTcEICMeW3pJJNDlyb8xT8DUHiSin175HXLcRFUT5-gkMhiHVz7V0Rr9pRIZ9gY-ySwtwCBbgFEGb7o-O3g",
           "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
+          "launch_weight": 38,
+          "confidence_weight": 40,
           "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Fri, 24 Jul 2026 15:31:19 GMT",
+            "promoter_hint": null,
+            "ad_id": "1369915538422075",
+            "page_name": "Green lotus",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fbusiness-mobile%2F&h=AUA89GhG3v8EPbIzoBBNnFpSPAqwiyYq2Sky9rx84T0XnY6zbCfV0Li8n_3GpYTcEICMeW3pJJNDlyb8xT8DUHiSin175HXLcRFUT5-gkMhiHVz7V0Rr9pRIZ9gY-ySwtwCBbgFEGb7o-O3g",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Green Lotus",
+            "city_hint": "Casablanca",
+            "zone_hint": null,
             "availability": {
               "status": null,
               "unit_count": null,
@@ -576,110 +588,41 @@
             }
           },
           "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Agadir",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-07-30T07:41:40.442739+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "e7e803e4d1efcb533148f848e562e542776ec698"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "laverite.ma",
-          "signal_type": "news_result",
-          "title": "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5",
-          "text": "nouveau projet immobilier Maroc Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma <a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5\" target=\"_blank\">Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">laverite.ma</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Thu, 23 Jul 2026 17:46:23 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Agadir",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-07-30T07:41:40.442797+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "91a15167cd3a80a7470fa73a3d04839a072847c2"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Medias24",
-          "signal_type": "news_result",
-          "title": "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5",
-          "text": "nouveau projet immobilier Maroc Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24 <a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5\" target=\"_blank\">Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Sat, 25 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
+            "publicité Meta exacte détectée: ad_id 1369915538422075",
             "ville: Casablanca",
-            "marqueur de lancement détecté"
+            "zone: Bouskoura"
           ],
-          "discovered_at": "2026-07-30T07:41:40.442826+00:00",
+          "discovered_at": "2026-08-13T06:20:29.136568+00:00",
           "city_hint": "Casablanca",
-          "zone_hint": null,
+          "zone_hint": "Bouskoura",
           "promoter_hint": null,
           "asset_type_hint": null,
-          "project_name_hint": null,
+          "project_name_hint": "Green lotus",
           "price_mad": null,
-          "signal_id": "ff21a4626796a06265784a55ae4e36e4bead8a1f"
+          "signal_id": "9596e82d5388f8ee9cc53b0faef3b992d67de966"
         },
         {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Le Desk",
-          "signal_type": "news_result",
-          "title": "Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5",
-          "text": "nouveau projet immobilier Maroc Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk <a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5\" target=\"_blank\">Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Desk</font>",
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "title": "Green lotus · ad #1039379112368362",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+          "text": "Green lotus Green lotus Green Lotus est un ensemble résidentiel et de services haut standing bénéficiant d’un positionnement exceptionnel à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie et Casa Nearshore. Conçu comme un véritable écosystème de vie, où plus des deux tiers du site sont consacrés aux espaces verts et aux aménagements paysagers, le projet est pensé selon une approche durable intégrant des matériaux écoresponsables, une gestion optimisée des ressources et des solutions énergétiques performantes, lui permettant d’obtenir la certification HQE – Haute Qualité Environnementale. Son architecture organique, élégante et contemporaine s’intègre harmonieusement dans son environnement, créant une véritable oasis de sérénité à quelques minutes seulement de l’effervescence urbaine. Green Lotus se positionne comme un nouvel emblème de la vie contemporaine, offrant des perspectives dégagées et un cadre de vie unique dominant l’horizon. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus La référence du bien-vivre à Casablanca Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fbusiness-mobile%2F&h=AUA89GhG3v8EPbIzoBBNnFpSPAqwiyYq2Sky9rx84T0XnY6zbCfV0Li8n_3GpYTcEICMeW3pJJNDlyb8xT8DUHiSin175HXLcRFUT5-gkMhiHVz7V0Rr9pRIZ9gY-ySwtwCBbgFEGb7o-O3g",
           "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
+          "launch_weight": 38,
+          "confidence_weight": 40,
           "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
+            "promoter_hint": null,
+            "ad_id": "1039379112368362",
+            "page_name": "Green lotus",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fbusiness-mobile%2F&h=AUA89GhG3v8EPbIzoBBNnFpSPAqwiyYq2Sky9rx84T0XnY6zbCfV0Li8n_3GpYTcEICMeW3pJJNDlyb8xT8DUHiSin175HXLcRFUT5-gkMhiHVz7V0Rr9pRIZ9gY-ySwtwCBbgFEGb7o-O3g",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Green Lotus",
+            "city_hint": "Casablanca",
+            "zone_hint": null,
             "availability": {
               "status": null,
               "unit_count": null,
@@ -690,187 +633,41 @@
             }
           },
           "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Rabat",
-            "marqueur de lancement détecté"
+            "publicité Meta exacte détectée: ad_id 1039379112368362",
+            "ville: Casablanca",
+            "zone: Bouskoura"
           ],
-          "discovered_at": "2026-07-30T07:41:40.442855+00:00",
-          "city_hint": "Rabat",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "a0008d3245bd8961d3737c602c6be73a84752476"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Aujourd'hui le Maroc",
-          "signal_type": "news_result",
-          "title": "Implantée au sein du projet immobilier «Malabata Hills» : La «Maison de l’architecte», un nouveau levier de rayonnement culturel et professionnel de Tanger - Aujourd'hui le Maroc",
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMFhfSjNldHVjSHlRN29OZm5VWGUzamZpSDNpTHBXbHBsMm5BYXZUdGFST2lma2tQd0JJbFg3QlZvYnI1MC1yLWxRTHdOVU5JQXVFeF9ham83TDJValR5bWFxR3hQejQzN2pNZjJGNnY3eDhrVmY4bTlhZFd4TTA1a3BERnlXYlVjZ0dodGFnSTM0MktMQklFOUVxVjR6SjVUdEdORXBRRGR3LXRPcDhpbU95eElSV04wd24xQWRoTEtGelF6ZnkwUjZFMW1ZWHpDa0VXVk1VMmg0NlpTN2R3ZGttQllmUW5DbjZEZXBOOFRGTndkTWZOd1ZXUmYyb2JEUUxqaXBPTTJpZzlyamFWb2xwcTE5N0Vt?oc=5",
-          "text": "nouveau projet immobilier Maroc Implantée au sein du projet immobilier «Malabata Hills» : La «Maison de l’architecte», un nouveau levier de rayonnement culturel et professionnel de Tanger - Aujourd'hui le Maroc <a href=\"https://news.google.com/rss/articles/CBMimAJBVV95cUxNMFhfSjNldHVjSHlRN29OZm5VWGUzamZpSDNpTHBXbHBsMm5BYXZUdGFST2lma2tQd0JJbFg3QlZvYnI1MC1yLWxRTHdOVU5JQXVFeF9ham83TDJValR5bWFxR3hQejQzN2pNZjJGNnY3eDhrVmY4bTlhZFd4TTA1a3BERnlXYlVjZ0dodGFnSTM0MktMQklFOUVxVjR6SjVUdEdORXBRRGR3LXRPcDhpbU95eElSV04wd24xQWRoTEtGelF6ZnkwUjZFMW1ZWHpDa0VXVk1VMmg0NlpTN2R3ZGttQllmUW5DbjZEZXBOOFRGTndkTWZOd1ZXUmYyb2JEUUxqaXBPTTJpZzlyamFWb2xwcTE5N0Vt?oc=5\" target=\"_blank\">Implantée au sein du projet immobilier «Malabata Hills» : La «Maison de l’architecte», un nouveau levier de rayonnement culturel et professionnel de Tanger</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Aujourd'hui le Maroc</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Mon, 30 Mar 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Tanger",
-            "zone: Malabata",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-07-30T07:41:40.442940+00:00",
-          "city_hint": "Tanger",
-          "zone_hint": "Malabata",
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "2dbe1673f678cb23a967849660913b85dd5df4ce"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "purepeople.com",
-          "signal_type": "news_result",
-          "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - purepeople.com",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-          "text": "nouveau projet immobilier Maroc L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - purepeople.com <a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5\" target=\"_blank\">L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">purepeople.com</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Sun, 15 Mar 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Marrakech",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-07-30T07:41:40.442974+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "701a268d8a9b7d7c6dad5cffeeb45aadbff6b368"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "La Vie éco",
-          "signal_type": "news_result",
-          "title": "Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5",
-          "text": "pré-commercialisation immobilier Tanger Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco <a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5\" target=\"_blank\">Tanger City Center : les premiers appartements prêts à la fin de l’année</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Vie éco</font>",
-          "is_primary": true,
-          "launch_weight": 32,
-          "confidence_weight": 32,
-          "metadata": {
-            "query": "pré-commercialisation immobilier Tanger",
-            "published": "Thu, 18 Oct 2012 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: pré-commercialisation",
-            "mot-clé presse: appartement",
-            "type: apartment_unknown",
-            "ville: Tanger",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-07-30T07:41:40.837117+00:00",
-          "city_hint": "Tanger",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "15ffda6fc43ad71c250108e63c1e87946fc435c2"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Medias24",
-          "signal_type": "news_result",
-          "title": "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5",
-          "text": "promotion immobilière Casablanca L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24 <a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5\" target=\"_blank\">L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-07-30T07:41:41.375121+00:00",
+          "discovered_at": "2026-08-13T06:20:29.136647+00:00",
           "city_hint": "Casablanca",
-          "zone_hint": null,
+          "zone_hint": "Bouskoura",
           "promoter_hint": null,
           "asset_type_hint": null,
-          "project_name_hint": null,
+          "project_name_hint": "Green lotus",
           "price_mad": null,
-          "signal_id": "79ada6c22a846d66b7ddaf30c32894d810c494a3"
+          "signal_id": "bcb9a6c40555ca5947d53ed68bf6dfe87d9a2c60"
         },
         {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "h24info.ma",
-          "signal_type": "news_result",
-          "title": "​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca - h24info.ma",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5",
-          "text": "promotion immobilière Casablanca ​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca - h24info.ma <a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5\" target=\"_blank\">​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">h24info.ma</font>",
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Green lotus",
+          "signal_type": "meta_ad",
+          "title": "Green lotus · ad #27616560191305176",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=27616560191305176",
+          "text": "Green lotus Green lotus Green Lotus est un ensemble résidentiel et de services haut standing bénéficiant d’un positionnement exceptionnel à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie et Casa Nearshore. Conçu comme un véritable écosystème de vie, où plus des deux tiers du site sont consacrés aux espaces verts et aux aménagements paysagers, le projet est pensé selon une approche durable intégrant des matériaux écoresponsables, une gestion optimisée des ressources et des solutions énergétiques performantes, lui permettant d’obtenir la certification HQE – Haute Qualité Environnementale. Son architecture organique, élégante et contemporaine s’intègre harmonieusement dans son environnement, créant une véritable oasis de sérénité à quelques minutes seulement de l’effervescence urbaine. Green Lotus se positionne comme un nouvel emblème de la vie contemporaine, offrant des perspectives dégagées et un cadre de vie unique dominant l’horizon. Learn More Voir plus État du système API Ad LibraryÀ propos des publicités et de l’utilisation des donnéesConfidentialitéConditionsCookies Meta © 2026 | Français (France) https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fbusiness-mobile%2F&h=AUA89GhG3v8EPbIzoBBNnFpSPAqwiyYq2Sky9rx84T0XnY6zbCfV0Li8n_3GpYTcEICMeW3pJJNDlyb8xT8DUHiSin175HXLcRFUT5-gkMhiHVz7V0Rr9pRIZ9gY-ySwtwCBbgFEGb7o-O3g",
           "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
+          "launch_weight": 38,
+          "confidence_weight": 40,
           "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
+            "promoter_hint": null,
+            "ad_id": "27616560191305176",
+            "page_name": "Green lotus",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=27616560191305176",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fbusiness-mobile%2F&h=AUA89GhG3v8EPbIzoBBNnFpSPAqwiyYq2Sky9rx84T0XnY6zbCfV0Li8n_3GpYTcEICMeW3pJJNDlyb8xT8DUHiSin175HXLcRFUT5-gkMhiHVz7V0Rr9pRIZ9gY-ySwtwCBbgFEGb7o-O3g",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "Green Lotus",
+            "city_hint": "Casablanca",
+            "zone_hint": null,
             "availability": {
               "status": null,
               "unit_count": null,
@@ -881,119 +678,75 @@
             }
           },
           "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
+            "publicité Meta exacte détectée: ad_id 27616560191305176",
+            "ville: Casablanca",
+            "zone: Bouskoura"
           ],
-          "discovered_at": "2026-07-30T07:41:41.375175+00:00",
+          "discovered_at": "2026-08-13T06:20:29.136701+00:00",
           "city_hint": "Casablanca",
-          "zone_hint": null,
+          "zone_hint": "Bouskoura",
           "promoter_hint": null,
           "asset_type_hint": null,
-          "project_name_hint": null,
+          "project_name_hint": "Green lotus",
           "price_mad": null,
-          "signal_id": "7f2fc0dadbd279fef9f44f9e63fa59a1ec0f3b9b"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Medias24",
-          "signal_type": "news_result",
-          "title": "Projet avenue Royale : Casablanca Iskane lance un deuxième AMI pour la construction de 7.000 appartements à Nassim - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeDFPeUFLYkhPaWJSdVpEcFByaEhRaVZocFloazFkVVBJeVdRZ2tyLWVwTzFPOXF3OGZhQ3F0QnNyV1AxUUhMcEp3amhuRFBVcVV4UHp4Q0o2UEJuYzZpdXBndmJQNkR6cHpiYXNSS2d6dmtiVjFHQXFIaVNfRmNPcUdaMnV1Y2lMdnJJajRIOWV5REtwVVRVT2lBVzdxOW1JOHVqaXZjTXhBOE16d0Y2Z1JiSmtmZEI0QzJqazhIbUhhVk90alltbFIycGstLVoxZ1hlemdHaW1qVGJUamJQOQ?oc=5",
-          "text": "promotion immobilière Casablanca Projet avenue Royale : Casablanca Iskane lance un deuxième AMI pour la construction de 7.000 appartements à Nassim - Medias24 <a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeDFPeUFLYkhPaWJSdVpEcFByaEhRaVZocFloazFkVVBJeVdRZ2tyLWVwTzFPOXF3OGZhQ3F0QnNyV1AxUUhMcEp3amhuRFBVcVV4UHp4Q0o2UEJuYzZpdXBndmJQNkR6cHpiYXNSS2d6dmtiVjFHQXFIaVNfRmNPcUdaMnV1Y2lMdnJJajRIOWV5REtwVVRVT2lBVzdxOW1JOHVqaXZjTXhBOE16d0Y2Z1JiSmtmZEI0QzJqazhIbUhhVk90alltbFIycGstLVoxZ1hlemdHaW1qVGJUamJQOQ?oc=5\" target=\"_blank\">Projet avenue Royale : Casablanca Iskane lance un deuxième AMI pour la construction de 7.000 appartements à Nassim</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
-          "is_primary": true,
-          "launch_weight": 16,
-          "confidence_weight": 21,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Tue, 31 Mar 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: appartement",
-            "type: apartment_unknown",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-07-30T07:41:41.375296+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "ff02c0add66e20fbb7183f210bb8487251d5f434"
+          "signal_id": "177df77dce038c73c5af54c218a3bfc4f902c378"
         }
       ]
     },
     {
-      "project_id": "2bbb99c489101b5c83caf2b1e5a2f2b2392d8696",
-      "name": "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq",
+      "project_id": "c276b2bc78dc875545345679ec9b8d6aebc3b993",
+      "name": "WESTON vient d'ouvrir sa Phase 1",
       "city": "Casablanca",
       "zone": null,
       "promoter": null,
-      "asset_type": null,
-      "first_detected_at": "2026-07-30T07:41:40.443008+00:00",
-      "last_updated_at": "2026-07-30T07:41:41.375381+00:00",
-      "launch_score": 64,
-      "confidence_score": 93,
+      "asset_type": "apartment_unknown",
+      "first_detected_at": "2026-08-13T06:22:22.316822+00:00",
+      "last_updated_at": "2026-08-13T06:22:22.316885+00:00",
+      "launch_score": 100,
+      "confidence_score": 100,
       "investment_score": 43,
-      "urgency_score": 70,
+      "urgency_score": 93,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "summary": "WESTON vient d'ouvrir sa Phase 1 | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
       "prices": {
         "min": null,
         "max": null
       },
       "aliases": [
-        "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq",
-        "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
-        "Achat immobilier au Maroc : le fisc s’attaque (enfin) au paiement au « noir » - Bladi.net",
-        "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
-        "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News"
+        "WESTON vient d'ouvrir sa Phase 1"
       ],
       "channels": [
-        "news"
+        "advertising"
       ],
       "sources": [
-        "Abidjan.net News",
-        "Bladi.net"
+        "Haaz Properties"
       ],
       "source_urls": [
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5",
-        "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeUhtUnVWTlV4QWJ5eDkxZWxVejVreWRIWU01Z3cxSzRfVEFLVzNHdndlNlpjNXQ3TDJodGNMdURCa1M5eV9sajBVcFpyMS1ERDBQTldQMER4RWVBeVhWcDJJbkF0VzdtbnRObTV6Ym5jSGw3b2hlalVUaW1SWUtTem1VdmZTdkI2ZEZ3bGJBTXRIOTQ?oc=5",
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5"
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1048384681028980",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1003304265805910"
       ],
       "evidence": {
-        "signal_count": 4,
-        "primary_signal_count": 4,
+        "signal_count": 2,
+        "primary_signal_count": 2,
         "listing_signal_count": 0,
-        "source_count": 2,
+        "source_count": 1,
         "channel_count": 1,
         "primary_channels": [
-          "news"
+          "advertising"
         ],
         "secondary_channels": [],
         "confirmations": [],
         "confirmation_details": [],
         "confirmation_count": 0,
         "availability": {
-          "status": null,
+          "status": "available",
           "unit_count_min": null,
           "surface_m2": {
             "min": null,
             "max": null
           },
-          "signal_count": 4
+          "signal_count": 2
         },
         "geo": {
           "lat": 33.5731,
@@ -1011,7 +764,7 @@
           "label": "Prudent",
           "five_year_upside_score": 44
         },
-        "project_slug": "cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq-2bbb99c4",
+        "project_slug": "weston-vient-d-ouvrir-sa-phase-1-c276b2bc",
         "infrastructure": {
           "sea_distance_km": 6,
           "station_distance_km": 5,
@@ -1020,398 +773,30 @@
         "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
         "source_catalog": [
           {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Achat immobilier au Maroc : le fisc s’attaque (enfin) au paiement au « noir » - Bladi.net",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeUhtUnVWTlV4QWJ5eDkxZWxVejVreWRIWU01Z3cxSzRfVEFLVzNHdndlNlpjNXQ3TDJodGNMdURCa1M5eV9sajBVcFpyMS1ERDBQTldQMER4RWVBeVhWcDJJbkF0VzdtbnRObTV6Ym5jSGw3b2hlalVUaW1SWUtTem1VdmZTdkI2ZEZ3bGJBTXRIOTQ?oc=5",
-            "source": "Bladi.net",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
-            "source": "Bladi.net",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-            "source": "Abidjan.net News",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          }
-        ],
-        "practical": {
-          "asset_label": "Type à confirmer",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "price_min": null,
-          "price_max": null
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Le prix public n'est pas encore confirmé.",
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [],
-        "listing_links": [],
-        "news_links": [
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Achat immobilier au Maroc : le fisc s’attaque (enfin) au paiement au « noir » - Bladi.net",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeUhtUnVWTlV4QWJ5eDkxZWxVejVreWRIWU01Z3cxSzRfVEFLVzNHdndlNlpjNXQ3TDJodGNMdURCa1M5eV9sajBVcFpyMS1ERDBQTldQMER4RWVBeVhWcDJJbkF0VzdtbnRObTV6Ym5jSGw3b2hlalVUaW1SWUtTem1VdmZTdkI2ZEZ3bGJBTXRIOTQ?oc=5",
-            "source": "Bladi.net",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
-            "source": "Bladi.net",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-            "source": "Abidjan.net News",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          }
-        ],
-        "urbanism_links": [],
-        "images": [],
-        "videos": [],
-        "changes": [],
-        "is_new_project": true,
-        "qualification": {
-          "status": "new",
-          "notes": ""
-        }
-      },
-      "reasons": [
-        "article presse détecté",
-        "mot-clé presse: projet immobilier",
-        "marqueur de lancement détecté",
-        "ville: Casablanca"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-07-30T07:41:40.443008+00:00",
-          "channel": "news",
-          "source": "Bladi.net",
-          "title": "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:41.375207+00:00",
-          "channel": "news",
-          "source": "Bladi.net",
-          "title": "Achat immobilier au Maroc : le fisc s’attaque (enfin) au paiement au « noir » - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeUhtUnVWTlV4QWJ5eDkxZWxVejVreWRIWU01Z3cxSzRfVEFLVzNHdndlNlpjNXQ3TDJodGNMdURCa1M5eV9sajBVcFpyMS1ERDBQTldQMER4RWVBeVhWcDJJbkF0VzdtbnRObTV6Ym5jSGw3b2hlalVUaW1SWUtTem1VdmZTdkI2ZEZ3bGJBTXRIOTQ?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:41.375350+00:00",
-          "channel": "news",
-          "source": "Bladi.net",
-          "title": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5"
-        },
-        {
-          "detected_at": "2026-07-30T07:41:41.375381+00:00",
-          "channel": "news",
-          "source": "Abidjan.net News",
-          "title": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Bladi.net",
-          "signal_type": "news_result",
-          "title": "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5",
-          "text": "nouveau projet immobilier Maroc Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5\" target=\"_blank\">Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Wed, 13 May 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-07-30T07:41:40.443008+00:00",
-          "city_hint": null,
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "a544845c84ec08003af1fa4f806bc0bf23710821"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Bladi.net",
-          "signal_type": "news_result",
-          "title": "Achat immobilier au Maroc : le fisc s’attaque (enfin) au paiement au « noir » - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeUhtUnVWTlV4QWJ5eDkxZWxVejVreWRIWU01Z3cxSzRfVEFLVzNHdndlNlpjNXQ3TDJodGNMdURCa1M5eV9sajBVcFpyMS1ERDBQTldQMER4RWVBeVhWcDJJbkF0VzdtbnRObTV6Ym5jSGw3b2hlalVUaW1SWUtTem1VdmZTdkI2ZEZ3bGJBTXRIOTQ?oc=5",
-          "text": "promotion immobilière Casablanca Achat immobilier au Maroc : le fisc s’attaque (enfin) au paiement au « noir » - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOeUhtUnVWTlV4QWJ5eDkxZWxVejVreWRIWU01Z3cxSzRfVEFLVzNHdndlNlpjNXQ3TDJodGNMdURCa1M5eV9sajBVcFpyMS1ERDBQTldQMER4RWVBeVhWcDJJbkF0VzdtbnRObTV6Ym5jSGw3b2hlalVUaW1SWUtTem1VdmZTdkI2ZEZ3bGJBTXRIOTQ?oc=5\" target=\"_blank\">Achat immobilier au Maroc : le fisc s’attaque (enfin) au paiement au « noir »</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Fri, 01 May 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-07-30T07:41:41.375207+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "f6ce786a0ec93c758d2a37cff741d14f96a8bdd6"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Bladi.net",
-          "signal_type": "news_result",
-          "title": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
-          "text": "promotion immobilière Casablanca Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5\" target=\"_blank\">Près de Casablanca, les vieux terrains d’élus réveillent le fisc</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Wed, 24 Jun 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-07-30T07:41:41.375350+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "524d2d0e53d99379ef0bbcb8674ae625e1483f92"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Abidjan.net News",
-          "signal_type": "news_result",
-          "title": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-          "text": "promotion immobilière Casablanca Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News <a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5\" target=\"_blank\">Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Abidjan.net News</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-07-30T07:41:41.375381+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "a2976794136814a7b207a0b769a32740b7f2b7e4"
-        }
-      ]
-    }
-  ],
-  "digest": [
-    {
-      "project_id": "2900270197a4a4f6ec9dde02162cbaec5a2b15ad",
-      "name": "le_cap_spartel",
-      "city": "Tanger",
-      "zone": "Cap Spartel",
-      "promoter": null,
-      "asset_type": null,
-      "first_detected_at": "2026-07-30T07:40:55.873776+00:00",
-      "last_updated_at": "2026-07-30T07:40:55.873843+00:00",
-      "launch_score": 100,
-      "confidence_score": 100,
-      "investment_score": 61,
-      "urgency_score": 95,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "le_cap_spartel | Promoteur: à confirmer | Ville: Tanger | Zone: Cap Spartel | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-      "prices": {
-        "min": null,
-        "max": null
-      },
-      "aliases": [
-        "le_cap_spartel"
-      ],
-      "channels": [
-        "advertising"
-      ],
-      "sources": [
-        "le_cap_spartel"
-      ],
-      "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1077861011370187"
-      ],
-      "evidence": {
-        "signal_count": 2,
-        "primary_signal_count": 2,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
-        "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "availability": {
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "signal_count": 2
-        },
-        "geo": {
-          "lat": 35.7595,
-          "lng": -5.834,
-          "sea_distance_km": 3,
-          "station_distance_km": 4,
-          "highway_distance_km": 5
-        },
-        "price_band": "unknown",
-        "price_evolution": {
-          "trend": "unknown",
-          "summary": "Aucune série de prix fiable pour le moment."
-        },
-        "roi": {
-          "label": "Moyen",
-          "five_year_upside_score": 61
-        },
-        "project_slug": "le-cap-spartel-29002701",
-        "infrastructure": {
-          "sea_distance_km": 3,
-          "station_distance_km": 4,
-          "highway_distance_km": 5
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "le_cap_spartel · ad #2597683684032107",
+            "label": "Haaz Properties · ad #1048384681028980",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
-            "source": "le_cap_spartel",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1048384681028980",
+            "source": "Haaz Properties",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "le_cap_spartel · ad #1077861011370187",
+            "label": "Haaz Properties · ad #1003304265805910",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1077861011370187",
-            "source": "le_cap_spartel",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1003304265805910",
+            "source": "Haaz Properties",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
         ],
         "practical": {
-          "asset_label": "Type à confirmer",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "status": null,
+          "asset_label": "Appartement",
+          "public_status": "Disponible",
+          "status": "available",
           "unit_count_min": null,
           "surface_m2": {
             "min": null,
@@ -1440,20 +825,20 @@
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "le_cap_spartel · ad #2597683684032107",
+            "label": "Haaz Properties · ad #1048384681028980",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
-            "source": "le_cap_spartel",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1048384681028980",
+            "source": "Haaz Properties",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "le_cap_spartel · ad #1077861011370187",
+            "label": "Haaz Properties · ad #1003304265805910",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1077861011370187",
-            "source": "le_cap_spartel",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1003304265805910",
+            "source": "Haaz Properties",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
@@ -1461,69 +846,64 @@
         "listing_links": [],
         "news_links": [],
         "urbanism_links": [],
-        "images": [
-          "assets/meta/meta-ad-2597683684032107.jpg"
-        ],
+        "images": [],
         "videos": [],
-        "changes": [
-          "Confidence score en hausse: 60 → 100",
-          "Urgency score en hausse: 56 → 95",
-          "Statut projet: monitor → urgent"
-        ],
-        "is_new_project": false,
+        "changes": [],
+        "is_new_project": true,
         "qualification": {
           "status": "new",
           "notes": ""
         }
       },
       "reasons": [
-        "publicité Meta exacte détectée: ad_id 2597683684032107",
-        "ville: Tanger",
-        "zone: Cap Spartel",
+        "publicité Meta exacte détectée: ad_id 1048384681028980",
+        "disponibilité confirmée",
+        "type: apartment_unknown",
+        "ville: Casablanca",
         "marqueur de lancement détecté",
-        "publicité Meta exacte détectée: ad_id 1077861011370187"
+        "publicité Meta exacte détectée: ad_id 1003304265805910"
       ],
       "timeline": [
         {
-          "detected_at": "2026-07-30T07:40:55.873776+00:00",
+          "detected_at": "2026-08-13T06:22:22.316822+00:00",
           "channel": "advertising",
-          "source": "le_cap_spartel",
-          "title": "le_cap_spartel · ad #2597683684032107",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107"
+          "source": "Haaz Properties",
+          "title": "Haaz Properties · ad #1048384681028980",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1048384681028980"
         },
         {
-          "detected_at": "2026-07-30T07:40:55.873843+00:00",
+          "detected_at": "2026-08-13T06:22:22.316885+00:00",
           "channel": "advertising",
-          "source": "le_cap_spartel",
-          "title": "le_cap_spartel · ad #1077861011370187",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1077861011370187"
+          "source": "Haaz Properties",
+          "title": "Haaz Properties · ad #1003304265805910",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1003304265805910"
         }
       ],
       "signals": [
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "le_cap_spartel",
+          "source": "Haaz Properties",
           "signal_type": "meta_ad",
-          "title": "le_cap_spartel · ad #2597683684032107",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
-          "text": "le_cap_spartel le_cap_spartel 🇲🇦 À l’occasion de la Fête du Trône, le Cap Spartel voit les choses en grand. Deux soirées d’exception les 29 & 30 juillet, avec en live la star marocaine Don Yassine 🎤 Ambiance marocaine et internationale, DJ, surprises et cette énergie qu’on n’a qu’ici. On vous réserve deux soirées à ne pas manquer. Vive le Maroc, vive le Roi 🇲🇦 📍 Cap Spartel : Restaurant · Lounge · Events 📞 Réservations : 06 04 00 16 61 #CapSpartel #FêteDuTrône #DonYassine #Tanger #SoiréeMarocaine INSTAGRAM.COM instagram.com Voir le profil Instagram ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUBTmI4sINVhBuHxsmOgMAIBFufQav7aENtcpvq6hcJ6-_VfaZlQ1N8C5bNuU7LSY4UIkkcDQSNjgTjFsvSC5th4vU_I4HKA1Cmf8b708c4lRe-LF_i6fkN5ei6HxOu5NC89k4gHPCfiKpgZ",
+          "title": "Haaz Properties · ad #1048384681028980",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1048384681028980",
+          "text": "Haaz Properties Haaz Properties Ce n’est pas un hasard. Le tout nouveau projet WESTON vient d'ouvrir sa Phase 1, et Haaz Properties a négocié des conditions de financement inédites pour la clientèle marocaine. Le Plan 50/50 sans banque ni intérêt : ✔Vous payez 50% sur 2 ans durant la construction (apport de départ : 35 000 €). ✔Vous payez les 50% restants sur 3 ans après la livraison. ✔L'astuce : L'appartement est livré entièrement meublé. Dès la remise des clés, il est loué et les loyers remboursent vos mensualités. Au final, vous ne payez réellement que la moitié de sa valeur ! Une opportunité patrimoniale unique depuis le Maroc : Fiscalité imbattable : 0% d'impôt sur les loyers à Dubaï. Devise forte : Votre patrimoine est indexé sur le dollar (AED/USD), protégeant vos économies de la baisse du MAD. Zéro tracas : Gestion locative complète à distance. Vous pouvez signer vos documents directement depuis Casablanca, Rabat ou Marrakech sans vous déplacer. ✔ Les places en Phase 1 sont limitées. Sécurisez les meilleures orientations (étages supérieurs) avant l’application des tarifs publics ! ✔ Cliquez sur le lien ci-dessous ou contactez notre équipe francophone sur WhatsApp pour recevoir l'inventaire des lots disponibles : 📲 WhatsApp / Téléphone : +971 50 894 1912 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Investir à Dubaï ? Contactez Achraf, votre conseiller immobilier à Dubaï. Profiter de l’offre ​",
           "is_primary": true,
           "launch_weight": 50,
-          "confidence_weight": 48,
+          "confidence_weight": 50,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "2597683684032107",
-            "page_name": "le_cap_spartel",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2597683684032107",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUBTmI4sINVhBuHxsmOgMAIBFufQav7aENtcpvq6hcJ6-_VfaZlQ1N8C5bNuU7LSY4UIkkcDQSNjgTjFsvSC5th4vU_I4HKA1Cmf8b708c4lRe-LF_i6fkN5ei6HxOu5NC89k4gHPCfiKpgZ",
+            "ad_id": "1048384681028980",
+            "page_name": "Haaz Properties",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1048384681028980",
+            "landing_page_url": "",
             "image_urls": [],
             "video_urls": [],
-            "query": "Cap Spartel",
-            "city_hint": "Tanger",
-            "zone_hint": "Cap Spartel",
+            "query": "nouveau projet immobilier Casablanca",
+            "city_hint": null,
+            "zone_hint": null,
             "availability": {
-              "status": null,
+              "status": "available",
               "unit_count": null,
               "surface_m2": {
                 "min": null,
@@ -1532,44 +912,45 @@
             }
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 2597683684032107",
-            "ville: Tanger",
-            "zone: Cap Spartel",
+            "publicité Meta exacte détectée: ad_id 1048384681028980",
+            "disponibilité confirmée",
+            "type: apartment_unknown",
+            "ville: Casablanca",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-07-30T07:40:55.873776+00:00",
-          "city_hint": "Tanger",
-          "zone_hint": "Cap Spartel",
+          "discovered_at": "2026-08-13T06:22:22.316822+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": null,
           "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "le_cap_spartel",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Haaz Properties",
           "price_mad": null,
-          "signal_id": "beb7fc71da8368d5ae0714d21d6d2477694441a1"
+          "signal_id": "e8e94b3e09321c2f52caf1485349647fccf86ff5"
         },
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "le_cap_spartel",
+          "source": "Haaz Properties",
           "signal_type": "meta_ad",
-          "title": "le_cap_spartel · ad #1077861011370187",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1077861011370187",
-          "text": "le_cap_spartel le_cap_spartel 🌅 Dimanche 2 août, on commence la journée face à l’océan. Une matinée pour bouger, respirer et partager, là où l’Atlantique rencontre la Méditerranée. 🧘 Yoga en groupe, face au détroit 🚶 Marche côtière le long des falaises, route Agla ☕ Petit déjeuner sain et gourmand, à base de produits du terroir 🗼 Accès libre au Cap Spartel : montée au sommet du phare et panorama De 9h à 12h · 249 DHS · Places limitées 📩 Réservation par message, écrivez-nous en DM 📍 Cap Spartel, Tanger #CapSpartel #Tanger #Tangier #YogaTanger #BienEtre PROFILE instagram.com Profile Réserver ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUBTmI4sINVhBuHxsmOgMAIBFufQav7aENtcpvq6hcJ6-_VfaZlQ1N8C5bNuU7LSY4UIkkcDQSNjgTjFsvSC5th4vU_I4HKA1Cmf8b708c4lRe-LF_i6fkN5ei6HxOu5NC89k4gHPCfiKpgZ",
+          "title": "Haaz Properties · ad #1003304265805910",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1003304265805910",
+          "text": "Haaz Properties Haaz Properties Ce n’est pas un hasard. Le tout nouveau projet WESTON vient d'ouvrir sa Phase 1, et Haaz Properties a négocié des conditions de financement inédites pour la clientèle marocaine. Le Plan 50/50 sans banque ni intérêt : ✔Vous payez 50% sur 2 ans durant la construction (apport de départ : 35 000 €). ✔Vous payez les 50% restants sur 3 ans après la livraison. ✔L'astuce : L'appartement est livré entièrement meublé. Dès la remise des clés, il est loué et les loyers remboursent vos mensualités. Au final, vous ne payez réellement que la moitié de sa valeur ! Une opportunité patrimoniale unique depuis le Maroc : Fiscalité imbattable : 0% d'impôt sur les loyers à Dubaï. Devise forte : Votre patrimoine est indexé sur le dollar (AED/USD), protégeant vos économies de la baisse du MAD. Zéro tracas : Gestion locative complète à distance. Vous pouvez signer vos documents directement depuis Casablanca, Rabat ou Marrakech sans vous déplacer. ✔ Les places en Phase 1 sont limitées. Sécurisez les meilleures orientations (étages supérieurs) avant l’application des tarifs publics ! ✔ Cliquez sur le lien ci-dessous ou contactez notre équipe francophone sur WhatsApp pour recevoir l'inventaire des lots disponibles : 📲 WhatsApp / Téléphone : +971 50 894 1912 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Investir à Dubaï ? Contactez Achraf, votre conseiller immobilier à Dubaï. Profiter de l’offre ​",
           "is_primary": true,
           "launch_weight": 50,
-          "confidence_weight": 48,
+          "confidence_weight": 50,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "1077861011370187",
-            "page_name": "le_cap_spartel",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1077861011370187",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.sgh-maroc.com%2Fvillas-belazur%2F&h=AUBTmI4sINVhBuHxsmOgMAIBFufQav7aENtcpvq6hcJ6-_VfaZlQ1N8C5bNuU7LSY4UIkkcDQSNjgTjFsvSC5th4vU_I4HKA1Cmf8b708c4lRe-LF_i6fkN5ei6HxOu5NC89k4gHPCfiKpgZ",
+            "ad_id": "1003304265805910",
+            "page_name": "Haaz Properties",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1003304265805910",
+            "landing_page_url": "",
             "image_urls": [],
             "video_urls": [],
-            "query": "Cap Spartel",
-            "city_hint": "Tanger",
-            "zone_hint": "Cap Spartel",
+            "query": "nouveau projet immobilier Casablanca",
+            "city_hint": null,
+            "zone_hint": null,
             "availability": {
-              "status": null,
+              "status": "available",
               "unit_count": null,
               "surface_m2": {
                 "min": null,
@@ -1578,57 +959,56 @@
             }
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 1077861011370187",
-            "ville: Tanger",
-            "zone: Cap Spartel",
+            "publicité Meta exacte détectée: ad_id 1003304265805910",
+            "disponibilité confirmée",
+            "type: apartment_unknown",
+            "ville: Casablanca",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-07-30T07:40:55.873843+00:00",
-          "city_hint": "Tanger",
-          "zone_hint": "Cap Spartel",
+          "discovered_at": "2026-08-13T06:22:22.316885+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": null,
           "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "le_cap_spartel",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Haaz Properties",
           "price_mad": null,
-          "signal_id": "fba4580b3ce4118c64e6857d11256dd0ee7db4e0"
+          "signal_id": "1311e5af7feb2eb8622bf9de4ff01716cef92957"
         }
       ]
     },
     {
-      "project_id": "9fc7da4fbd908f2b8ddf772141117c1b62fd6e85",
-      "name": "Projet Les Arborelles",
-      "city": "Rabat",
-      "zone": "Dar Bouazza",
-      "promoter": "CGI",
-      "asset_type": "villa",
-      "first_detected_at": "2026-07-30T07:35:48.343745+00:00",
-      "last_updated_at": "2026-07-30T07:35:50.285653+00:00",
-      "launch_score": 60,
-      "confidence_score": 79,
-      "investment_score": 100,
-      "urgency_score": 76,
-      "recommendation": "Watch",
-      "status": "watch",
-      "summary": "Projet Les Arborelles | Promoteur: CGI | Ville: Rabat | Zone: Dar Bouazza | Confirmations: confirmation en cours | Prix observés entre 1500000 et 1500000 MAD.",
+      "project_id": "09c72a0f77242ff8f23141e27611ae06d3cf767d",
+      "name": "Miftah Souss",
+      "city": "Marrakech",
+      "zone": "Mhamid",
+      "promoter": "Miftah Immobilier",
+      "asset_type": "apartment_2_bed",
+      "first_detected_at": "2026-08-13T06:20:00.344430+00:00",
+      "last_updated_at": "2026-08-13T06:20:01.090433+00:00",
+      "launch_score": 84,
+      "confidence_score": 94,
+      "investment_score": 87,
+      "urgency_score": 88,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "Miftah Souss | Promoteur: Miftah Immobilier | Ville: Marrakech | Zone: Mhamid | Confirmations: confirmation en cours | Prix observés entre 200000 et 200000 MAD.",
       "prices": {
-        "min": 1500000,
-        "max": 8000000
+        "min": 200000,
+        "max": 200000
       },
       "aliases": [
-        "Projet Les Arborelles",
-        "Les Arborelles",
-        "Projet Azur Valley Appartements Tranche 2",
-        "Azur Valley Appartements Tranche"
+        "Miftah Souss",
+        "Miftah Souss II"
       ],
       "channels": [
         "project_discovery"
       ],
       "sources": [
-        "CGI"
+        "Miftah Immobilier"
       ],
       "source_urls": [
-        "https://www.cgi.ma/fr/projet/les-arborelles",
-        "https://www.cgi.ma/fr/projet/azur-valley-appartements-tranche-2"
+        "https://miftahimmobilier.ma/projets/miftah-souss-ii-un-environnement-familial-et-structure/",
+        "https://miftahimmobilier.ma/projets/miftah-souss-un-cadre-de-vie-agreable-a-agadir/"
       ],
       "evidence": {
         "signal_count": 2,
@@ -1644,74 +1024,75 @@
         "confirmation_details": [],
         "confirmation_count": 0,
         "availability": {
-          "status": "available",
+          "status": null,
           "unit_count_min": null,
           "surface_m2": {
-            "min": 45,
-            "max": 45
+            "min": null,
+            "max": null
           },
           "signal_count": 2
         },
         "geo": {
-          "lat": 34.0209,
-          "lng": -6.8416,
-          "sea_distance_km": 7,
-          "station_distance_km": 4,
-          "highway_distance_km": 4
+          "lat": 31.6295,
+          "lng": -7.9811,
+          "sea_distance_km": 180,
+          "station_distance_km": 5,
+          "highway_distance_km": 6
         },
         "price_band": "cash_ready",
         "price_evolution": {
           "trend": "stable",
-          "summary": "Prix observés entre 1500000 et 1500000 MAD."
+          "summary": "Prix observés entre 200000 et 200000 MAD."
         },
         "roi": {
           "label": "Élevé",
-          "five_year_upside_score": 92
+          "five_year_upside_score": 85
         },
-        "project_slug": "projet-les-arborelles-9fc7da4f",
+        "project_slug": "miftah-souss-09c72a0f",
         "infrastructure": {
-          "sea_distance_km": 7,
-          "station_distance_km": 4,
-          "highway_distance_km": 4
+          "sea_distance_km": 180,
+          "station_distance_km": 5,
+          "highway_distance_km": 6
         },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
         "source_catalog": [
           {
             "kind": "official_site",
             "kind_label": "Site promoteur",
-            "label": "Je Fonce !",
+            "label": "Miftah Souss II",
             "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.cgi.ma/fr/projet/les-arborelles",
-            "source": "CGI",
+            "url": "https://miftahimmobilier.ma/projets/miftah-souss-ii-un-environnement-familial-et-structure/",
+            "source": "Miftah Immobilier",
             "signal_type": "promoter_page",
             "proof_level": "direct"
           },
           {
             "kind": "official_site",
             "kind_label": "Site promoteur",
-            "label": "Je Fonce !",
+            "label": "Miftah Souss",
             "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.cgi.ma/fr/projet/azur-valley-appartements-tranche-2",
-            "source": "CGI",
+            "url": "https://miftahimmobilier.ma/projets/miftah-souss-un-cadre-de-vie-agreable-a-agadir/",
+            "source": "Miftah Immobilier",
             "signal_type": "promoter_page",
             "proof_level": "direct"
           }
         ],
         "practical": {
-          "asset_label": "Villa",
-          "public_status": "Disponible",
-          "status": "available",
+          "asset_label": "Appartement 2 chambres",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "status": null,
           "unit_count_min": null,
           "surface_m2": {
-            "min": 45,
-            "max": 45
+            "min": null,
+            "max": null
           },
-          "price_min": 1500000,
-          "price_max": 8000000
+          "price_min": 200000,
+          "price_max": 200000
         },
         "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
           "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
             "Le potentiel investissement ressort comme intéressant selon le profil configuré."
           ],
           "risks": [
@@ -1727,9 +1108,235 @@
           {
             "kind": "official_site",
             "kind_label": "Site promoteur",
-            "label": "Je Fonce !",
+            "label": "Miftah Souss II",
             "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.cgi.ma/fr/projet/les-arborelles",
+            "url": "https://miftahimmobilier.ma/projets/miftah-souss-ii-un-environnement-familial-et-structure/",
+            "source": "Miftah Immobilier",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Miftah Souss",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://miftahimmobilier.ma/projets/miftah-souss-un-cadre-de-vie-agreable-a-agadir/",
+            "source": "Miftah Immobilier",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          }
+        ],
+        "social_links": [],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [],
+        "videos": [],
+        "changes": [],
+        "is_new_project": true,
+        "qualification": {
+          "status": "new",
+          "notes": ""
+        }
+      },
+      "reasons": [
+        "nouvelle page promoteur",
+        "prix détecté: 200000 MAD",
+        "type: apartment_2_bed",
+        "ville: Marrakech",
+        "zone: Mhamid",
+        "marqueur de lancement détecté",
+        "ville: Agadir"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-08-13T06:20:00.344430+00:00",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "title": "Miftah Souss II",
+          "url": "https://miftahimmobilier.ma/projets/miftah-souss-ii-un-environnement-familial-et-structure/"
+        },
+        {
+          "detected_at": "2026-08-13T06:20:01.090433+00:00",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "title": "Miftah Souss",
+          "url": "https://miftahimmobilier.ma/projets/miftah-souss-un-cadre-de-vie-agreable-a-agadir/"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "signal_type": "promoter_page",
+          "title": "Miftah Souss II",
+          "url": "https://miftahimmobilier.ma/projets/miftah-souss-ii-un-environnement-familial-et-structure/",
+          "text": "Miftah Souss II MIFTAH SOUSS II, UN ENVIRONNEMENT FAMILIAL ET STRUCTURÉ – MIFTAH IMMOBILIER MIFTAH SOUSS II, UN ENVIRONNEMENT FAMILIAL ET STRUCTURÉ Un projet équipé pensé pour la vie en famille Des appartements modernes dans un ensemble sécurisé Un environnement équipé à Agadir Galerie MIFTAH SOUSS II, UN ENVIRONNEMENT FAMILIAL ET STRUCTURÉ – MIFTAH IMMOBILIER Aller au contenu Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR PROJET LIVRÉ MIFTAH SOUSS II, UN ENVIRONNEMENT FAMILIAL ET STRUCTURÉ À partir de 200.000 dhs Un projet équipé pensé pour la vie en famille Dans la continuité du succès du premier projet, Miftah Souss II propose un cadre de vie moderne, sécurisé et bien structuré. Le programme se distingue par la richesse de ses équipements, incluant un complexe socio-culturel, des infrastructures sportives, des espaces verts et des aires de jeux. Complexe socio-culturel équipements sportifs Aires de jeux Cadre sécurisé Des appartements modernes dans un ensemble sécurisé Des logements conçus pour offrir un cadre de vie structuré, avec des espaces intérieurs pratiques et adaptés aux besoins des familles. 1à 2 chambres 1 Salon Cuisine WC + Salle de bain Un environnement équipé à Agadir Galerie Intérieur Extérieur Découvrez nos projets en cours En commercialisation Miftah Al Bahr Un cadre de vie balnéaire combinant résidences et commerces, à quelques minutes de la plage. Découvrir le projet Miftah immobilier Accueil Nos projets Qui sommes-nous Contact Conditions Generales Accueil Nos projets Qui sommes-nous Contact Conditions Generales Villes Marrakech Safi Sidi rahal Agadir Casablanca Tanger Contactez-nous +212 5 22 95 32 32 [email protected] Facebook Instagram © 2026 MIFTAH IMMOBILIER. Tous droits réservés",
+          "is_primary": true,
+          "launch_weight": 42,
+          "confidence_weight": 41,
+          "metadata": {
+            "promoter_hint": "Miftah Immobilier",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "nouvelle page promoteur",
+            "prix détecté: 200000 MAD",
+            "type: apartment_2_bed",
+            "ville: Marrakech",
+            "zone: Mhamid",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-08-13T06:20:00.344430+00:00",
+          "city_hint": "Marrakech",
+          "zone_hint": "Mhamid",
+          "promoter_hint": "Miftah Immobilier",
+          "asset_type_hint": "apartment_2_bed",
+          "project_name_hint": null,
+          "price_mad": 200000,
+          "signal_id": "5e22a6eabcb35b06348739fff5f52003379b6b29"
+        },
+        {
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "Miftah Immobilier",
+          "signal_type": "promoter_page",
+          "title": "Miftah Souss",
+          "url": "https://miftahimmobilier.ma/projets/miftah-souss-un-cadre-de-vie-agreable-a-agadir/",
+          "text": "Miftah Souss MIFTAH SOUSS, UN CADRE DE VIE AGRÉABLE À AGADIR – MIFTAH IMMOBILIER MIFTAH SOUSS, UN CADRE DE VIE AGRÉABLE À AGADIR Un projet simple et confortable pour le quotidien Des appartements contemporains aux espaces bien pensés Une adresse agréable à Agadir Galerie MIFTAH SOUSS, UN CADRE DE VIE AGRÉABLE À AGADIR – MIFTAH IMMOBILIER Aller au contenu Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR Accueil QUI SOMMES-NOUS Projets En commercialisation Miftah Arraha V Miftah Al Bahr Livrés Miftah Al Alia Miftah Inara Les Résidences Miftah Assaad Miftah Sahill Miftah Souss II Miftah Souss Miftah Al Atlas II Miftah El Mhamid Miftah Al Atlas Lots Miftah Al Atlas Miftah Al Moustakbal Miftah Arraha IV MIFTAH Arraha III MIFTAH Arraha II Miftah Arraha Contact FR FR AR PROJET LIVRÉ MIFTAH SOUSS, UN CADRE DE VIE AGRÉABLE À AGADIR À partir de 200.000 dhs Un projet simple et confortable pour le quotidien Implanté dans un quartier résidentiel d’Agadir, Miftah Souss propose des appartements au sein d’un ensemble contemporain, alliant sobriété architecturale et cadre de vie agréable. Les espaces intérieurs ont été pensés pour le confort, avec des finitions soignées et des aménagements fonctionnels. Le projet offre un environnement équilibré, adapté à un quotidien pratique, dans l’une des villes les plus attractives du littoral. Finitions soignées Aménagements fonctionnels Quartier résidentiel Ville littorale Des appartements contemporains aux espaces bien pensés Des logements au design sobre et fonctionnel, avec des espaces intérieurs conçus pour le confort quotidien, des finitions soignées et des aménagements pratiques. 2 chambres 1 Salon Cuisine WC + Salle de bain Une adresse agréable à Agadir Galerie Intérieur Extérieur Découvrez nos projets en cours En commercialisation Miftah Arraha V Un projet structuré intégrant habitat et équipements pour un quotidien simplifié. Découvrir le projet En commercialisation Miftah Al Bahr Un cadre de vie balnéaire combinant résidences et commerces, à quelques minutes de la plage. Découvrir le projet Miftah immobilier Accueil Nos projets Qui sommes-nous Contact Conditions Generales Accueil Nos projets Qui sommes-nous Contact Conditions Generales Villes Marrakech Safi Sidi rahal Agadir Casablanca Tanger Contactez-nous +212 5 22 95 32 32 [email protected] Facebook Instagram © 2026 MIFTAH IMMOBILIER. Tous droits réservés",
+          "is_primary": true,
+          "launch_weight": 42,
+          "confidence_weight": 41,
+          "metadata": {
+            "promoter_hint": "Miftah Immobilier",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "nouvelle page promoteur",
+            "prix détecté: 200000 MAD",
+            "type: apartment_2_bed",
+            "ville: Agadir",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-08-13T06:20:01.090433+00:00",
+          "city_hint": "Agadir",
+          "zone_hint": null,
+          "promoter_hint": "Miftah Immobilier",
+          "asset_type_hint": "apartment_2_bed",
+          "project_name_hint": null,
+          "price_mad": 200000,
+          "signal_id": "0bf19c11735219077da131fd93565a9c1478fb65"
+        }
+      ]
+    }
+  ],
+  "digest": [
+    {
+      "project_id": "b4c8ea95cd33dff7ae706e69b0978e21adc8b1b8",
+      "name": "Projet Cgt Green Homes Ii",
+      "city": "Casablanca",
+      "zone": "Bouskoura",
+      "promoter": "CGI",
+      "asset_type": "apartment_unknown",
+      "first_detected_at": "2026-08-13T06:19:07.435812+00:00",
+      "last_updated_at": "2026-08-13T06:19:08.669490+00:00",
+      "launch_score": 90,
+      "confidence_score": 100,
+      "investment_score": 59,
+      "urgency_score": 90,
+      "recommendation": "Watch",
+      "status": "urgent",
+      "summary": "Projet Cgt Green Homes Ii | Promoteur: CGI | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "Projet Cgt Green Homes Iii",
+        "Cgt Green Homes Iii",
+        "Projet Cgt Green Homes Ii",
+        "Cgt Green Homes Ii",
+        "Cgt Green Homes",
+        "Projet Cgt Green Square 2"
+      ],
+      "channels": [
+        "project_discovery"
+      ],
+      "sources": [
+        "CGI"
+      ],
+      "source_urls": [
+        "https://www.cgi.ma/fr/projet/cgt-green-homes-iii",
+        "https://www.cgi.ma/fr/projet/cgt-green-homes-ii",
+        "https://www.cgi.ma/fr/projet/cgt-green-square-2"
+      ],
+      "evidence": {
+        "signal_count": 3,
+        "primary_signal_count": 3,
+        "listing_signal_count": 0,
+        "source_count": 1,
+        "channel_count": 1,
+        "primary_channels": [
+          "project_discovery"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "availability": {
+          "status": "sold_out",
+          "unit_count_min": null,
+          "surface_m2": {
+            "min": null,
+            "max": null
+          },
+          "signal_count": 3
+        },
+        "geo": {
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "price_band": "unknown",
+        "price_evolution": {
+          "trend": "unknown",
+          "summary": "Aucune série de prix fiable pour le moment."
+        },
+        "roi": {
+          "label": "Moyen",
+          "five_year_upside_score": 59
+        },
+        "project_slug": "projet-cgt-green-homes-ii-b4c8ea95",
+        "infrastructure": {
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "source_catalog": [
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Cgt Green Homes Iii",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.cgi.ma/fr/projet/cgt-green-homes-iii",
             "source": "CGI",
             "signal_type": "promoter_page",
             "proof_level": "direct"
@@ -1737,9 +1344,78 @@
           {
             "kind": "official_site",
             "kind_label": "Site promoteur",
-            "label": "Je Fonce !",
+            "label": "Cgt Green Homes Ii",
             "description": "Page officielle du promoteur ou du projet.",
-            "url": "https://www.cgi.ma/fr/projet/azur-valley-appartements-tranche-2",
+            "url": "https://www.cgi.ma/fr/projet/cgt-green-homes-ii",
+            "source": "CGI",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Cgt Green Square 2",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.cgi.ma/fr/projet/cgt-green-square-2",
+            "source": "CGI",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Appartement",
+          "public_status": "Complet / vendu",
+          "status": "sold_out",
+          "unit_count_min": null,
+          "surface_m2": {
+            "min": null,
+            "max": null
+          },
+          "price_min": null,
+          "price_max": null
+        },
+        "ai_analysis": {
+          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible."
+          ],
+          "risks": [
+            "Le prix public n'est pas encore confirmé.",
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Cgt Green Homes Iii",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.cgi.ma/fr/projet/cgt-green-homes-iii",
+            "source": "CGI",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Cgt Green Homes Ii",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.cgi.ma/fr/projet/cgt-green-homes-ii",
+            "source": "CGI",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          },
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Cgt Green Square 2",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.cgi.ma/fr/projet/cgt-green-square-2",
             "source": "CGI",
             "signal_type": "promoter_page",
             "proof_level": "direct"
@@ -1752,10 +1428,9 @@
         "images": [],
         "videos": [],
         "changes": [
-          "Confidence score en hausse: 47 → 79",
-          "Urgency score en hausse: 42 → 76",
-          "Statut projet: monitor → watch",
-          "Prix minimum mis à jour: 8000000 → 1500000 MAD"
+          "Confidence score en hausse: 76 → 100",
+          "Urgency score en hausse: 62 → 90",
+          "Statut projet: watch → urgent"
         ],
         "is_new_project": false,
         "qualification": {
@@ -1764,30 +1439,35 @@
         }
       },
       "reasons": [
+        "Recommandation ajustée: disponibilité publique marquée complète, vérifier avant d'agir",
+        "Disponibilité: projet marqué complet / vendu",
         "nouvelle page promoteur",
-        "disponibilité confirmée",
-        "prix détecté: 8000000 MAD",
-        "type: villa",
-        "ville: Rabat",
-        "prix détecté: 1500000 MAD",
+        "mention de stock épuisé / projet complet",
         "type: apartment_unknown",
         "ville: Casablanca",
-        "zone: Dar Bouazza"
+        "zone: Bouskoura"
       ],
       "timeline": [
         {
-          "detected_at": "2026-07-30T07:35:48.343745+00:00",
+          "detected_at": "2026-08-13T06:19:07.435812+00:00",
           "channel": "project_discovery",
           "source": "CGI",
-          "title": "Je Fonce !",
-          "url": "https://www.cgi.ma/fr/projet/les-arborelles"
+          "title": "Cgt Green Homes Iii",
+          "url": "https://www.cgi.ma/fr/projet/cgt-green-homes-iii"
         },
         {
-          "detected_at": "2026-07-30T07:35:50.285653+00:00",
+          "detected_at": "2026-08-13T06:19:08.064090+00:00",
           "channel": "project_discovery",
           "source": "CGI",
-          "title": "Je Fonce !",
-          "url": "https://www.cgi.ma/fr/projet/azur-valley-appartements-tranche-2"
+          "title": "Cgt Green Homes Ii",
+          "url": "https://www.cgi.ma/fr/projet/cgt-green-homes-ii"
+        },
+        {
+          "detected_at": "2026-08-13T06:19:08.669490+00:00",
+          "channel": "project_discovery",
+          "source": "CGI",
+          "title": "Cgt Green Square 2",
+          "url": "https://www.cgi.ma/fr/projet/cgt-green-square-2"
         }
       ],
       "signals": [
@@ -1796,16 +1476,16 @@
           "channel": "project_discovery",
           "source": "CGI",
           "signal_type": "promoter_page",
-          "title": "Je Fonce !",
-          "url": "https://www.cgi.ma/fr/projet/les-arborelles",
-          "text": "Je Fonce ! Les Arborelles | CGI Les Arborelles Header bottom Menu du compte de l'utilisateur JE TROUVE MON BIEN IMMOBILIER JE SIMULE MON CRÉDIT IMMOBILIER Projets similaires Les Arborelles | CGI Skip to main content Header bottom HABITER Retour Notre offre Offres spéciales Avant-premières Projets en cours Projets livrables Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Nos outils Simulateur de crédit Voir tous nos projets INVESTIR Retour Par thématique Commerce/Bureaux Investissement locatif Logement balnéaire Lot de terrain Resort golfique Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Voir tous nos projets NOS CONSEILS NOS PARTENAIRES Retour Par métier Devenir Architecte partenaire de la CGI Devenir Notaire partenaire de la CGI Devenir fournisseur de la CGI Règlement des achats Règlement d'exécution des travaux Voir tous nos projets LE GROUPE 080 100 28 28 Call center 10 Showrooms Proches de vous Menu du compte de l'utilisateur CGI CLIENT Rabat A partir de 8 000 000 Dhs JE SIMULE MON BUDGET Les Arborelles Je souhaite être rappelé Enregistrer Les Arborelles . Rabat Le projet des Arborelles-El Menzeh est un ensemble résidentiel de villas finies de Haut Standing, avec jardin et piscine privatifs, dans un périmètre fermé et sécurisé. S’étalant sur une belle propriété forestière de 7,6 hectares et stratégiquement positionné, le projet des Arborelles repose sur un concept de résidence en villégiature, qui se caractérise par sa simplicité et l’interaction forte entre les espaces intérieurs et l’environnement naturel. Le style architectural adopté privilégie les matériaux naturels tels que le bois et la pierre, offrant des villas Haut Standing avec un cachet contemporain, à la fois élégant et sobre. Les implantations des villas jouissent pour la grande majorité d’une orientation optimale. EQUIPEMENTS DE PROXIMITÉ : Supérettes Télécharger la brochure Visite virtuelle Souhaitez-vous être contacté par un conseiller commercial? Soukaina Baghdadi Responsable Commercial 080 100 28 28 info@cgi.ma Civilité Civilité Mr Mme Nom Prénom Email Indicatif indicatif +1 indicatif +20 indicatif +211 indicatif +212 indicatif +213 indicatif +216 indicatif +218 indicatif +220 indicatif +221 indicatif +222 indicatif +223 indicatif +224 indicatif +225 indicatif +226 indicatif +227 indicatif +228 indicatif +229 indicatif +230 indicatif +231 indicatif +232 indicatif +233 indicatif +234 indicatif +235 indicatif +236 indicatif +237 indicatif +238 indicatif +239 indicatif +240 indicatif +241 indicatif +242 indicatif +243 indicatif +244 indicatif +245 indicatif +248 indicatif +249 indicatif +250 indicatif +251 indicatif +252 indicatif +253 indicatif +254 indicatif +255 indicatif +256 indicatif +257 indicatif +258 indicatif +260 indicatif +261 indicatif +263 indicatif +264 indicatif +265 indicatif +266 indicatif +267 indicatif +268 indicatif +269 indicatif +27 indicatif +291 indicatif +30 indicatif +31 indicatif +32 indicatif +33 indicatif +34 indicatif +351 indicatif +352 indicatif +353 indicatif +354 indicatif +355 indicatif +356 indicatif +357 indicatif +358 indicatif +359 indicatif +36 indicatif +370 indicatif +371 indicatif +372 indicatif +373 indicatif +374 indicatif +375 indicatif +376 indicatif +377 indicatif +378 indicatif +379 indicatif +380 indicatif +381 indicatif +382 indicatif +385 indicatif +386 indicatif +387 indicatif +389 indicatif +39 indicatif +40 indicatif +41 indicatif +420 indicatif +421 indicatif +423 indicatif +43 indicatif +44 indicatif +45 indicatif +46 indicatif +47 indicatif +48 indicatif +49 indicatif +501 indicatif +502 indicatif +503 indicatif +504 indicatif +505 indicatif +506 indicatif +507 indicatif +509 indicatif +51 indicatif +52 indicatif +53 indicatif +54 indicatif +55 indicatif +56 indicatif +57 indicatif +58 indicatif +591 indicatif +592 indicatif +593 indicatif +595 indicatif +597 indicatif +598 indicatif +60 indicatif +61 indicatif +62 indicatif +63 indicatif +64 indicatif +65 indicatif +66 indicatif +670 indicatif +673 indicatif +674 indicatif +675 indicatif +676 indicatif +677 indicatif +678 indicatif +679 indicatif +680 indicatif +685 indicatif +686 indicatif +688 indicatif +691 indicatif +692 indicatif +7 indicatif +81 indicatif +82 indicatif +84 indicatif +850 indicatif +853 indicatif +855 indicatif +856 indicatif +86 indicatif +880 indicatif +886 indicatif +90 indicatif +91 indicatif +92 indicatif +93 indicatif +94 indicatif +95 indicatif +960 indicatif +961 indicatif +962 indicatif +963 indicatif +964 indicatif +965 indicatif +966 indicatif +967 indicatif +968 indicatif +971 indicatif +972 indicatif +973 indicatif +974 indicatif +975 indicatif +976 indicatif +977 indicatif +98 indicatif +992 indicatif +993 indicatif +994 indicatif +995 indicatif +996 indicatif +998 Tél Téléphone Message Leave this field blank JE TROUVE MON BIEN IMMOBILIER Je trouve mon bien immobilier et je le pré-réserve DE 8 000 000 Dhs à 12 130 000 Dhs Villa STOCK DISPONIBLE 17 Connectez-vous pour pouvoir voir la liste des biens disponibles. Se connecter / S'inscrire JE SIMULE MON CRÉDIT IMMOBILIER Nous vous accompagnons à chaque étape, avec des conseils personnalisés et des experts dédiés pour une expérience d’achat sereine . Choisissez votre type de bien : RÉSIDENCE PRINCIPALE RÉSIDENCE SECONDAIRE INVESTISSEMENT LOCATIF SIMULER MAINTENANT Obtenez un pré-accord en moins de 30 secondes et une prise en charge en moins de 4 heures. Projets similaires Livrable immédiatement Casablanca Villas de la colline II JE CONSULTE Contactez nous 080 100 28 28 Email : info@cgi.ma Suivez-nous : Horaires de nos showrooms Lundi à Vendredi 9:00 à 19:00 Samedi 10:00 à 18:00 Dimanche sur rendez-vous uniquement Inscrivez-vous à notre Newsletter * J'accepte de recevoir par e-mail des informations de la part de la CGI. Réalisation Faites-vous partie de l’un de nos organismes conventionnés ? Si oui, veuillez renseigner les informations demandées et bénéficiez des avantages liant votre organisme à la CGI ! OUI NON",
+          "title": "Cgt Green Homes Iii",
+          "url": "https://www.cgi.ma/fr/projet/cgt-green-homes-iii",
+          "text": "JE CONSULTE CGT-Green Homes III | CGI CGT-Green Homes III Header bottom Menu du compte de l'utilisateur JE SIMULE MON CRÉDIT IMMOBILIER CGT-Green Homes III | CGI Skip to main content Header bottom HABITER Retour Notre offre Offres spéciales Avant-premières Projets en cours Projets livrables Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Nos outils Simulateur de crédit Voir tous nos projets INVESTIR Retour Par thématique Commerce/Bureaux Investissement locatif Logement balnéaire Lot de terrain Resort golfique Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Voir tous nos projets NOS CONSEILS NOS PARTENAIRES Retour Par métier Devenir Architecte partenaire de la CGI Devenir Notaire partenaire de la CGI Devenir fournisseur de la CGI Règlement des achats Règlement d'exécution des travaux Voir tous nos projets LE GROUPE 080 100 28 28 Call center 10 Showrooms Proches de vous Menu du compte de l'utilisateur CGI CLIENT Casablanca JE SIMULE MON BUDGET CGT-Green Homes III Je souhaite être rappelé Enregistrer CGT-Green Homes III . Casablanca Les résidences «Green Homes III » proposent une offre diversifiée, permettant de satisfaire une large population de clients à la quête de sérénité et de verdure. Le niveau des prestations est particulièrement soigné afin de favoriser un confort optimal et une élégance subtile, tout en maintenant la fonctionnalité essentielle de chaque espace de vie. La générosité des espaces aussi bien intérieurs qu’extérieurs, le confort et la multiplicité des vues, font que les résidences « GREEN HOMES III » inspirent sérénité et quiétude aux futurs résidents. Les appartements bénéficient tout le long de l’année d’une lumière généreuse, ainsi que de belles terrasses qui offrent des vues agréables sur les espaces verts des îlots, créant une ambiance conviviale. Les résidences sont équipées d’un local de syndic et de parkings souterrains privatifs, garantissant un environnement paisible et sans circulation automobile. Télécharger la brochure Visite virtuelle Souhaitez-vous être contacté par un conseiller commercial? Soukaina Baghdadi Responsable Commercial 080 100 28 28 info@cgi.ma Civilité Civilité Mr Mme Nom Prénom Email Indicatif indicatif +1 indicatif +20 indicatif +211 indicatif +212 indicatif +213 indicatif +216 indicatif +218 indicatif +220 indicatif +221 indicatif +222 indicatif +223 indicatif +224 indicatif +225 indicatif +226 indicatif +227 indicatif +228 indicatif +229 indicatif +230 indicatif +231 indicatif +232 indicatif +233 indicatif +234 indicatif +235 indicatif +236 indicatif +237 indicatif +238 indicatif +239 indicatif +240 indicatif +241 indicatif +242 indicatif +243 indicatif +244 indicatif +245 indicatif +248 indicatif +249 indicatif +250 indicatif +251 indicatif +252 indicatif +253 indicatif +254 indicatif +255 indicatif +256 indicatif +257 indicatif +258 indicatif +260 indicatif +261 indicatif +263 indicatif +264 indicatif +265 indicatif +266 indicatif +267 indicatif +268 indicatif +269 indicatif +27 indicatif +291 indicatif +30 indicatif +31 indicatif +32 indicatif +33 indicatif +34 indicatif +351 indicatif +352 indicatif +353 indicatif +354 indicatif +355 indicatif +356 indicatif +357 indicatif +358 indicatif +359 indicatif +36 indicatif +370 indicatif +371 indicatif +372 indicatif +373 indicatif +374 indicatif +375 indicatif +376 indicatif +377 indicatif +378 indicatif +379 indicatif +380 indicatif +381 indicatif +382 indicatif +385 indicatif +386 indicatif +387 indicatif +389 indicatif +39 indicatif +40 indicatif +41 indicatif +420 indicatif +421 indicatif +423 indicatif +43 indicatif +44 indicatif +45 indicatif +46 indicatif +47 indicatif +48 indicatif +49 indicatif +501 indicatif +502 indicatif +503 indicatif +504 indicatif +505 indicatif +506 indicatif +507 indicatif +509 indicatif +51 indicatif +52 indicatif +53 indicatif +54 indicatif +55 indicatif +56 indicatif +57 indicatif +58 indicatif +591 indicatif +592 indicatif +593 indicatif +595 indicatif +597 indicatif +598 indicatif +60 indicatif +61 indicatif +62 indicatif +63 indicatif +64 indicatif +65 indicatif +66 indicatif +670 indicatif +673 indicatif +674 indicatif +675 indicatif +676 indicatif +677 indicatif +678 indicatif +679 indicatif +680 indicatif +685 indicatif +686 indicatif +688 indicatif +691 indicatif +692 indicatif +7 indicatif +81 indicatif +82 indicatif +84 indicatif +850 indicatif +853 indicatif +855 indicatif +856 indicatif +86 indicatif +880 indicatif +886 indicatif +90 indicatif +91 indicatif +92 indicatif +93 indicatif +94 indicatif +95 indicatif +960 indicatif +961 indicatif +962 indicatif +963 indicatif +964 indicatif +965 indicatif +966 indicatif +967 indicatif +968 indicatif +971 indicatif +972 indicatif +973 indicatif +974 indicatif +975 indicatif +976 indicatif +977 indicatif +98 indicatif +992 indicatif +993 indicatif +994 indicatif +995 indicatif +996 indicatif +998 Tél Téléphone Message Leave this field blank Stock épuisé !! Merci de votre confiance. Rendez-vous bientôt pour de nouveaux projets × JE SIMULE MON CRÉDIT IMMOBILIER Nous vous accompagnons à chaque étape, avec des conseils personnalisés et des experts dédiés pour une expérience d’achat sereine . Choisissez votre type de bien : RÉSIDENCE PRINCIPALE RÉSIDENCE SECONDAIRE INVESTISSEMENT LOCATIF SIMULER MAINTENANT Obtenez un pré-accord en moins de 30 secondes et une prise en charge en moins de 4 heures. Contactez nous 080 100 28 28 Email : info@cgi.ma Suivez-nous : Horaires de nos showrooms Lundi à Vendredi 9:00 à 19:00 Samedi 10:00 à 18:00 Dimanche sur rendez-vous uniquement Inscrivez-vous à notre Newsletter * J'accepte de recevoir par e-mail des informations de la part de la CGI. Réalisation Faites-vous partie de l’un de nos organismes conventionnés ? Si oui, veuillez renseigner les informations demandées et bénéficiez des avantages liant votre organisme à la CGI ! OUI NON",
           "is_primary": true,
           "launch_weight": 30,
-          "confidence_weight": 35,
+          "confidence_weight": 32,
           "metadata": {
             "promoter_hint": "CGI",
             "availability": {
-              "status": "available",
+              "status": "sold_out",
               "unit_count": null,
               "surface_m2": {
                 "min": null,
@@ -1815,58 +1495,91 @@
           },
           "reasons": [
             "nouvelle page promoteur",
-            "disponibilité confirmée",
-            "prix détecté: 8000000 MAD",
-            "type: villa",
-            "ville: Rabat"
+            "mention de stock épuisé / projet complet",
+            "type: apartment_unknown",
+            "ville: Casablanca"
           ],
-          "discovered_at": "2026-07-30T07:35:48.343745+00:00",
-          "city_hint": "Rabat",
+          "discovered_at": "2026-08-13T06:19:07.435812+00:00",
+          "city_hint": "Casablanca",
           "zone_hint": null,
           "promoter_hint": "CGI",
-          "asset_type_hint": "villa",
+          "asset_type_hint": "apartment_unknown",
           "project_name_hint": null,
-          "price_mad": 8000000,
-          "signal_id": "b16fd5925bfb788cee9f8409e886631e809f4b78"
+          "price_mad": null,
+          "signal_id": "15d46e296769c114c1977e60df4a9cc4603ca7ee"
         },
         {
           "collector": "promoters.websites",
           "channel": "project_discovery",
           "source": "CGI",
           "signal_type": "promoter_page",
-          "title": "Je Fonce !",
-          "url": "https://www.cgi.ma/fr/projet/azur-valley-appartements-tranche-2",
-          "text": "Je Fonce ! Azur Valley - Appartements Tranche2 | CGI Azur Valley - Appartements Tranche 2 Header bottom Menu du compte de l'utilisateur JE TROUVE MON BIEN IMMOBILIER JE SIMULE MON CRÉDIT IMMOBILIER Azur Valley - Appartements Tranche2 | CGI Skip to main content Header bottom HABITER Retour Notre offre Offres spéciales Avant-premières Projets en cours Projets livrables Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Nos outils Simulateur de crédit Voir tous nos projets INVESTIR Retour Par thématique Commerce/Bureaux Investissement locatif Logement balnéaire Lot de terrain Resort golfique Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Voir tous nos projets NOS CONSEILS NOS PARTENAIRES Retour Par métier Devenir Architecte partenaire de la CGI Devenir Notaire partenaire de la CGI Devenir fournisseur de la CGI Règlement des achats Règlement d'exécution des travaux Voir tous nos projets LE GROUPE 080 100 28 28 Call center 10 Showrooms Proches de vous Menu du compte de l'utilisateur CGI CLIENT Casablanca A partir de 1 500 000 Dhs JE SIMULE MON BUDGET Azur Valley - Appartements Tranche 2 Je souhaite être rappelé Partager Enregistrer Azur Valley - Appartements Tranche 2 . Casablanca Situé en plein centre de la zone balnéaire de la province de Nouaceur - commune Dar Bouazza, le projet Azur Valley est un ensemble résidentiel qui s’étale sur une belle vallée, présentant des atouts géographiques majeurs dont sa proximité avec la mer ainsi que d’activités commerciales de qualité. Cette nouvelle tranche propose des appartements de haut standing, en R+2, du F2 au F5, en simplex et duplex, avec des superficies comprises entre 45 m² et 161 m². L’ensemble est organisé autour d’un cœur d’îlot paysager, agrémenté d’une vaste piscine, offrant ainsi un cadre de vie paisible et raffiné. Le projet « AZUR VALLEY » bénéficie d’une accessibilité optimale, via l’autoroute Casablanca–El Jadida ou par la route côtière reliant Dar Bouazza à Casablanca. Télécharger la brochure Visite virtuelle Souhaitez-vous être contacté par un conseiller commercial? Soukaina Baghdadi Responsable Commercial 080 100 28 28 info@cgi.ma Civilité Civilité Mr Mme Nom Prénom Email Indicatif indicatif +1 indicatif +20 indicatif +211 indicatif +212 indicatif +213 indicatif +216 indicatif +218 indicatif +220 indicatif +221 indicatif +222 indicatif +223 indicatif +224 indicatif +225 indicatif +226 indicatif +227 indicatif +228 indicatif +229 indicatif +230 indicatif +231 indicatif +232 indicatif +233 indicatif +234 indicatif +235 indicatif +236 indicatif +237 indicatif +238 indicatif +239 indicatif +240 indicatif +241 indicatif +242 indicatif +243 indicatif +244 indicatif +245 indicatif +248 indicatif +249 indicatif +250 indicatif +251 indicatif +252 indicatif +253 indicatif +254 indicatif +255 indicatif +256 indicatif +257 indicatif +258 indicatif +260 indicatif +261 indicatif +263 indicatif +264 indicatif +265 indicatif +266 indicatif +267 indicatif +268 indicatif +269 indicatif +27 indicatif +291 indicatif +30 indicatif +31 indicatif +32 indicatif +33 indicatif +34 indicatif +351 indicatif +352 indicatif +353 indicatif +354 indicatif +355 indicatif +356 indicatif +357 indicatif +358 indicatif +359 indicatif +36 indicatif +370 indicatif +371 indicatif +372 indicatif +373 indicatif +374 indicatif +375 indicatif +376 indicatif +377 indicatif +378 indicatif +379 indicatif +380 indicatif +381 indicatif +382 indicatif +385 indicatif +386 indicatif +387 indicatif +389 indicatif +39 indicatif +40 indicatif +41 indicatif +420 indicatif +421 indicatif +423 indicatif +43 indicatif +44 indicatif +45 indicatif +46 indicatif +47 indicatif +48 indicatif +49 indicatif +501 indicatif +502 indicatif +503 indicatif +504 indicatif +505 indicatif +506 indicatif +507 indicatif +509 indicatif +51 indicatif +52 indicatif +53 indicatif +54 indicatif +55 indicatif +56 indicatif +57 indicatif +58 indicatif +591 indicatif +592 indicatif +593 indicatif +595 indicatif +597 indicatif +598 indicatif +60 indicatif +61 indicatif +62 indicatif +63 indicatif +64 indicatif +65 indicatif +66 indicatif +670 indicatif +673 indicatif +674 indicatif +675 indicatif +676 indicatif +677 indicatif +678 indicatif +679 indicatif +680 indicatif +685 indicatif +686 indicatif +688 indicatif +691 indicatif +692 indicatif +7 indicatif +81 indicatif +82 indicatif +84 indicatif +850 indicatif +853 indicatif +855 indicatif +856 indicatif +86 indicatif +880 indicatif +886 indicatif +90 indicatif +91 indicatif +92 indicatif +93 indicatif +94 indicatif +95 indicatif +960 indicatif +961 indicatif +962 indicatif +963 indicatif +964 indicatif +965 indicatif +966 indicatif +967 indicatif +968 indicatif +971 indicatif +972 indicatif +973 indicatif +974 indicatif +975 indicatif +976 indicatif +977 indicatif +98 indicatif +992 indicatif +993 indicatif +994 indicatif +995 indicatif +996 indicatif +998 Tél Téléphone Message Leave this field blank JE TROUVE MON BIEN IMMOBILIER Je trouve mon bien immobilier et je le pré-réserve DE 1 500 000 Dhs à 2 700 000 Dhs Appartement STOCK DISPONIBLE 33 Connectez-vous pour pouvoir voir la liste des biens disponibles. Se connecter / S'inscrire JE SIMULE MON CRÉDIT IMMOBILIER Nous vous accompagnons à chaque étape, avec des conseils personnalisés et des experts dédiés pour une expérience d’achat sereine . Choisissez votre type de bien : RÉSIDENCE PRINCIPALE RÉSIDENCE SECONDAIRE INVESTISSEMENT LOCATIF SIMULER MAINTENANT Obtenez un pré-accord en moins de 30 secondes et une prise en charge en moins de 4 heures. Contactez nous 080 100 28 28 Email : info@cgi.ma Suivez-nous : Horaires de nos showrooms Lundi à Vendredi 9:00 à 19:00 Samedi et Dimanche 10:00 à 18:00 Inscrivez-vous à notre Newsletter * J'accepte de recevoir par e-mail des informations de la part de la CGI. Réalisation Faites-vous partie de l’un de nos organismes conventionnés ? Si oui, veuillez renseigner les informations demandées et bénéficiez des avantages liant votre organisme à la CGI ! OUI NON",
+          "title": "Cgt Green Homes Ii",
+          "url": "https://www.cgi.ma/fr/projet/cgt-green-homes-ii",
+          "text": "JE CONSULTE CGT - Green Homes II | CGI CGT - Green Homes II Header bottom Menu du compte de l'utilisateur JE SIMULE MON CRÉDIT IMMOBILIER CGT - Green Homes II | CGI Skip to main content Header bottom HABITER Retour Notre offre Offres spéciales Avant-premières Projets en cours Projets livrables Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Nos outils Simulateur de crédit Voir tous nos projets INVESTIR Retour Par thématique Commerce/Bureaux Investissement locatif Logement balnéaire Lot de terrain Resort golfique Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Voir tous nos projets NOS CONSEILS NOS PARTENAIRES Retour Par métier Devenir Architecte partenaire de la CGI Devenir Notaire partenaire de la CGI Devenir fournisseur de la CGI Règlement des achats Règlement d'exécution des travaux Voir tous nos projets LE GROUPE 080 100 28 28 Call center 10 Showrooms Proches de vous Menu du compte de l'utilisateur CGI CLIENT Casablanca JE SIMULE MON BUDGET CGT - Green Homes II Je souhaite être rappelé Enregistrer CGT - Green Homes II . Casablanca Réalisées sur une parcelle à quelques mètres d’un parc de 1.7Ha, poumon vert du quartier «Coeur de vie », les résidences «GREEN HOMES » s’intègrent de manière harmonieuse au site et sont conçues dans un souci d’assurer un confort maximal aux résidents, dans le plus grand respect des critères définis par la CGI, afin de créer un «modèle de vie d’habitat collectif» de qualité, élégant et sécurisé. Conçus sur la base du principe de la double orientation, les appartements des résidences « GREEN HOMES » bénéficient tout le long de l’année d’une lumière généreuse ainsi que de grandes terrasses conviviales qui offrent des vues panoramiques sur les jardins environnants. Chaque ensemble résidentiel profite par ailleurs d’un local syndic et comporte des parkings privatifs en sous-sols, garantissant aux résidents des ilots aérés et végétalisés, libres de la circulation des véhicules. EQUIPEMENTS DE PROXIMITÉ : Centre de Santé Télécharger la brochure Visite virtuelle Souhaitez-vous être contacté par un conseiller commercial? Soukaina Baghdadi Responsable Commercial 080 100 28 28 info@cgi.ma Civilité Civilité Mr Mme Nom Prénom Email Indicatif indicatif +1 indicatif +20 indicatif +211 indicatif +212 indicatif +213 indicatif +216 indicatif +218 indicatif +220 indicatif +221 indicatif +222 indicatif +223 indicatif +224 indicatif +225 indicatif +226 indicatif +227 indicatif +228 indicatif +229 indicatif +230 indicatif +231 indicatif +232 indicatif +233 indicatif +234 indicatif +235 indicatif +236 indicatif +237 indicatif +238 indicatif +239 indicatif +240 indicatif +241 indicatif +242 indicatif +243 indicatif +244 indicatif +245 indicatif +248 indicatif +249 indicatif +250 indicatif +251 indicatif +252 indicatif +253 indicatif +254 indicatif +255 indicatif +256 indicatif +257 indicatif +258 indicatif +260 indicatif +261 indicatif +263 indicatif +264 indicatif +265 indicatif +266 indicatif +267 indicatif +268 indicatif +269 indicatif +27 indicatif +291 indicatif +30 indicatif +31 indicatif +32 indicatif +33 indicatif +34 indicatif +351 indicatif +352 indicatif +353 indicatif +354 indicatif +355 indicatif +356 indicatif +357 indicatif +358 indicatif +359 indicatif +36 indicatif +370 indicatif +371 indicatif +372 indicatif +373 indicatif +374 indicatif +375 indicatif +376 indicatif +377 indicatif +378 indicatif +379 indicatif +380 indicatif +381 indicatif +382 indicatif +385 indicatif +386 indicatif +387 indicatif +389 indicatif +39 indicatif +40 indicatif +41 indicatif +420 indicatif +421 indicatif +423 indicatif +43 indicatif +44 indicatif +45 indicatif +46 indicatif +47 indicatif +48 indicatif +49 indicatif +501 indicatif +502 indicatif +503 indicatif +504 indicatif +505 indicatif +506 indicatif +507 indicatif +509 indicatif +51 indicatif +52 indicatif +53 indicatif +54 indicatif +55 indicatif +56 indicatif +57 indicatif +58 indicatif +591 indicatif +592 indicatif +593 indicatif +595 indicatif +597 indicatif +598 indicatif +60 indicatif +61 indicatif +62 indicatif +63 indicatif +64 indicatif +65 indicatif +66 indicatif +670 indicatif +673 indicatif +674 indicatif +675 indicatif +676 indicatif +677 indicatif +678 indicatif +679 indicatif +680 indicatif +685 indicatif +686 indicatif +688 indicatif +691 indicatif +692 indicatif +7 indicatif +81 indicatif +82 indicatif +84 indicatif +850 indicatif +853 indicatif +855 indicatif +856 indicatif +86 indicatif +880 indicatif +886 indicatif +90 indicatif +91 indicatif +92 indicatif +93 indicatif +94 indicatif +95 indicatif +960 indicatif +961 indicatif +962 indicatif +963 indicatif +964 indicatif +965 indicatif +966 indicatif +967 indicatif +968 indicatif +971 indicatif +972 indicatif +973 indicatif +974 indicatif +975 indicatif +976 indicatif +977 indicatif +98 indicatif +992 indicatif +993 indicatif +994 indicatif +995 indicatif +996 indicatif +998 Tél Téléphone Message Leave this field blank JE SIMULE MON CRÉDIT IMMOBILIER Nous vous accompagnons à chaque étape, avec des conseils personnalisés et des experts dédiés pour une expérience d’achat sereine . Choisissez votre type de bien : RÉSIDENCE PRINCIPALE RÉSIDENCE SECONDAIRE INVESTISSEMENT LOCATIF SIMULER MAINTENANT Obtenez un pré-accord en moins de 30 secondes et une prise en charge en moins de 4 heures. Contactez nous 080 100 28 28 Email : info@cgi.ma Suivez-nous : Horaires de nos showrooms Lundi à Vendredi 9:00 à 19:00 Samedi 10:00 à 18:00 Dimanche sur rendez-vous uniquement Inscrivez-vous à notre Newsletter * J'accepte de recevoir par e-mail des informations de la part de la CGI. Réalisation Faites-vous partie de l’un de nos organismes conventionnés ? Si oui, veuillez renseigner les informations demandées et bénéficiez des avantages liant votre organisme à la CGI ! OUI NON",
           "is_primary": true,
           "launch_weight": 30,
           "confidence_weight": 32,
           "metadata": {
             "promoter_hint": "CGI",
             "availability": {
-              "status": "available",
+              "status": null,
               "unit_count": null,
               "surface_m2": {
-                "min": 45,
-                "max": 45
+                "min": null,
+                "max": null
               }
             }
           },
           "reasons": [
             "nouvelle page promoteur",
-            "disponibilité confirmée",
-            "prix détecté: 1500000 MAD",
             "type: apartment_unknown",
-            "ville: Casablanca",
-            "zone: Dar Bouazza"
+            "ville: Casablanca"
           ],
-          "discovered_at": "2026-07-30T07:35:50.285653+00:00",
+          "discovered_at": "2026-08-13T06:19:08.064090+00:00",
           "city_hint": "Casablanca",
-          "zone_hint": "Dar Bouazza",
+          "zone_hint": null,
           "promoter_hint": "CGI",
           "asset_type_hint": "apartment_unknown",
           "project_name_hint": null,
-          "price_mad": 1500000,
-          "signal_id": "59d9bc40da02d5c6a7b75652ded9567650b40725"
+          "price_mad": null,
+          "signal_id": "67c16c5a08b0e99035cf5d3fa1f39ebb042c06c6"
+        },
+        {
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "CGI",
+          "signal_type": "promoter_page",
+          "title": "Cgt Green Square 2",
+          "url": "https://www.cgi.ma/fr/projet/cgt-green-square-2",
+          "text": "JE CONSULTE CGT Green Square 2 | CGI CGT Green Square 2 Header bottom Menu du compte de l'utilisateur CGT Green Square 2 | CGI Skip to main content Header bottom HABITER Retour Notre offre Offres spéciales Avant-premières Projets en cours Projets livrables Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Nos outils Simulateur de crédit Voir tous nos projets INVESTIR Retour Par thématique Commerce/Bureaux Investissement locatif Logement balnéaire Lot de terrain Resort golfique Par ville Casablanca Agadir Marrakech Rabat El jadida Fnideq Al Hoceima Voir tous nos projets NOS CONSEILS NOS PARTENAIRES Retour Par métier Devenir Architecte partenaire de la CGI Devenir Notaire partenaire de la CGI Devenir fournisseur de la CGI Règlement des achats Règlement d'exécution des travaux Voir tous nos projets LE GROUPE 080 100 28 28 Call center 10 Showrooms Proches de vous Menu du compte de l'utilisateur CGI CLIENT Casablanca JE SIMULE MON BUDGET CGT Green Square 2 Je souhaite être rappelé Enregistrer CGT Green Square 2 . Casablanca Faisant partie intégrante du Resort Golfique « Green Town-Casa Bouskoura », les résidences « GREEN SQUARE » se situent face à un parc de 1.7 ha au niveau de la zone animée du Resort, appelée « COEUR DE VIE », agrémentée de promenades piétonnes, de placettes accueillantes, ainsi que d’aires de jeux. Réalisées sur deux parcelles face au poumon vert du quartier, les résidences « GREEN SQUARE » s’intègrent de manière harmonieuse au site et sont conçues dans un souci d’assurer un confort maximal aux résidents, dans le plus grand respect des critères définis par la CGI, afin de créer un « modèle de vie d’habitat collectif » de qualité, élégant et sécurisé. Télécharger la brochure Visite virtuelle Souhaitez-vous être contacté par un conseiller commercial? Soukaina Baghdadi Responsable Commercial 080 100 28 28 info@cgi.ma Civilité Civilité Mr Mme Nom Prénom Email Indicatif indicatif +1 indicatif +20 indicatif +211 indicatif +212 indicatif +213 indicatif +216 indicatif +218 indicatif +220 indicatif +221 indicatif +222 indicatif +223 indicatif +224 indicatif +225 indicatif +226 indicatif +227 indicatif +228 indicatif +229 indicatif +230 indicatif +231 indicatif +232 indicatif +233 indicatif +234 indicatif +235 indicatif +236 indicatif +237 indicatif +238 indicatif +239 indicatif +240 indicatif +241 indicatif +242 indicatif +243 indicatif +244 indicatif +245 indicatif +248 indicatif +249 indicatif +250 indicatif +251 indicatif +252 indicatif +253 indicatif +254 indicatif +255 indicatif +256 indicatif +257 indicatif +258 indicatif +260 indicatif +261 indicatif +263 indicatif +264 indicatif +265 indicatif +266 indicatif +267 indicatif +268 indicatif +269 indicatif +27 indicatif +291 indicatif +30 indicatif +31 indicatif +32 indicatif +33 indicatif +34 indicatif +351 indicatif +352 indicatif +353 indicatif +354 indicatif +355 indicatif +356 indicatif +357 indicatif +358 indicatif +359 indicatif +36 indicatif +370 indicatif +371 indicatif +372 indicatif +373 indicatif +374 indicatif +375 indicatif +376 indicatif +377 indicatif +378 indicatif +379 indicatif +380 indicatif +381 indicatif +382 indicatif +385 indicatif +386 indicatif +387 indicatif +389 indicatif +39 indicatif +40 indicatif +41 indicatif +420 indicatif +421 indicatif +423 indicatif +43 indicatif +44 indicatif +45 indicatif +46 indicatif +47 indicatif +48 indicatif +49 indicatif +501 indicatif +502 indicatif +503 indicatif +504 indicatif +505 indicatif +506 indicatif +507 indicatif +509 indicatif +51 indicatif +52 indicatif +53 indicatif +54 indicatif +55 indicatif +56 indicatif +57 indicatif +58 indicatif +591 indicatif +592 indicatif +593 indicatif +595 indicatif +597 indicatif +598 indicatif +60 indicatif +61 indicatif +62 indicatif +63 indicatif +64 indicatif +65 indicatif +66 indicatif +670 indicatif +673 indicatif +674 indicatif +675 indicatif +676 indicatif +677 indicatif +678 indicatif +679 indicatif +680 indicatif +685 indicatif +686 indicatif +688 indicatif +691 indicatif +692 indicatif +7 indicatif +81 indicatif +82 indicatif +84 indicatif +850 indicatif +853 indicatif +855 indicatif +856 indicatif +86 indicatif +880 indicatif +886 indicatif +90 indicatif +91 indicatif +92 indicatif +93 indicatif +94 indicatif +95 indicatif +960 indicatif +961 indicatif +962 indicatif +963 indicatif +964 indicatif +965 indicatif +966 indicatif +967 indicatif +968 indicatif +971 indicatif +972 indicatif +973 indicatif +974 indicatif +975 indicatif +976 indicatif +977 indicatif +98 indicatif +992 indicatif +993 indicatif +994 indicatif +995 indicatif +996 indicatif +998 Tél Téléphone Message Leave this field blank Contactez nous 080 100 28 28 Email : info@cgi.ma Suivez-nous : Horaires de nos showrooms Lundi à Vendredi 9:00 à 19:00 Samedi 10:00 à 18:00 Dimanche sur rendez-vous uniquement Inscrivez-vous à notre Newsletter * J'accepte de recevoir par e-mail des informations de la part de la CGI. Réalisation Faites-vous partie de l’un de nos organismes conventionnés ? Si oui, veuillez renseigner les informations demandées et bénéficiez des avantages liant votre organisme à la CGI ! OUI NON",
+          "is_primary": true,
+          "launch_weight": 30,
+          "confidence_weight": 32,
+          "metadata": {
+            "promoter_hint": "CGI",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "nouvelle page promoteur",
+            "type: apartment_unknown",
+            "ville: Casablanca",
+            "zone: Bouskoura"
+          ],
+          "discovered_at": "2026-08-13T06:19:08.669490+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Bouskoura",
+          "promoter_hint": "CGI",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": null,
+          "price_mad": null,
+          "signal_id": "06c023d0b32543fa3dd60bd7a061d5f61617487c"
         }
       ]
     }
