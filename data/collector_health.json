@@ -18,6 +18,12 @@
         "total": 60,
         "real_primary": 60,
         "error": null
+      },
+      {
+        "date": "2026-08-15",
+        "total": 61,
+        "real_primary": 61,
+        "error": null
       }
     ],
     "collectors.google.google_search": [
@@ -35,6 +41,12 @@
       },
       {
         "date": "2026-08-13",
+        "total": 4,
+        "real_primary": 0,
+        "error": null
+      },
+      {
+        "date": "2026-08-15",
         "total": 4,
         "real_primary": 0,
         "error": null
@@ -58,6 +70,12 @@
         "total": 59,
         "real_primary": 36,
         "error": null
+      },
+      {
+        "date": "2026-08-15",
+        "total": 60,
+        "real_primary": 38,
+        "error": null
       }
     ],
     "collectors.news.google_news": [
@@ -78,6 +96,12 @@
         "total": 3,
         "real_primary": 0,
         "error": null
+      },
+      {
+        "date": "2026-08-15",
+        "total": 17,
+        "real_primary": 17,
+        "error": null
       }
     ],
     "collectors.social.watch": [
@@ -95,6 +119,12 @@
       },
       {
         "date": "2026-08-13",
+        "total": 18,
+        "real_primary": 0,
+        "error": null
+      },
+      {
+        "date": "2026-08-15",
         "total": 18,
         "real_primary": 0,
         "error": null
@@ -118,6 +148,12 @@
         "total": 9,
         "real_primary": 8,
         "error": null
+      },
+      {
+        "date": "2026-08-15",
+        "total": 9,
+        "real_primary": 8,
+        "error": null
       }
     ],
     "collectors.listings.portals": [
@@ -135,6 +171,12 @@
       },
       {
         "date": "2026-08-13",
+        "total": 48,
+        "real_primary": 0,
+        "error": null
+      },
+      {
+        "date": "2026-08-15",
         "total": 48,
         "real_primary": 0,
         "error": null
