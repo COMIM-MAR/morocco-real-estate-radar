@@ -2,8 +2,8 @@
   {
     "name": "Meta Ad Library",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 88,
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 110,
     "confidence": 95,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
@@ -20,8 +20,8 @@
   {
     "name": "Moubina Immobilier",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 20,
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 25,
     "confidence": 95,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
@@ -38,8 +38,8 @@
   {
     "name": "Medicine Chinoise Marrakech",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 14,
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 17,
     "confidence": 95,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
@@ -53,28 +53,10 @@
     "status": "pending"
   },
   {
-    "name": "Green lotus",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 12,
-    "confidence": 95,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=27616560191305176",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1552586563232522"
-    ],
-    "status": "pending"
-  },
-  {
     "name": "Avito Immobilier Neuf",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 11,
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 16,
     "confidence": 95,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
@@ -89,10 +71,28 @@
     "status": "pending"
   },
   {
+    "name": "Green lotus",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 15,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1369915538422075",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1796362918002528",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=27616560191305176",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1552586563232522"
+    ],
+    "status": "pending"
+  },
+  {
     "name": "Groupe Allali - L'immobilier autrement",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 8,
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 10,
     "confidence": 95,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
@@ -106,14 +106,115 @@
   {
     "name": "Tanger",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 8,
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 10,
     "confidence": 95,
     "reasons": [
       "mention explicite \"promoteur/développeur\" détectée dans le texte"
     ],
     "example_urls": [
       "https://html.duckduckgo.com/html/?q=site%3Afacebook.com+promoteur+immobilier+Tanger"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Casablanca",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 6,
+    "confidence": 95,
+    "reasons": [
+      "mention explicite \"promoteur/développeur\" détectée dans le texte"
+    ],
+    "example_urls": [
+      "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5",
+      "https://news.google.com/rss/search?q=promotion+immobili%C3%A8re+Casablanca&hl=fr-MA&gl=MA&ceid=MA:fr"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Haaz Properties",
+    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 6,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1048384681028980",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1003304265805910"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Asharq Al Awsat Immobilier",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 5,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2581888422242373"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "L'Aquarium Blue Tanger",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 5,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=909084928134030"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Hamilton By Saham Immobilier",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 5,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3705538012919384",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1024090903964501"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Rabatgardens",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 5,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3868826090092010"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Mobilia Rabat",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 5,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314"
     ],
     "status": "pending"
   },
@@ -133,60 +234,45 @@
     "status": "pending"
   },
   {
-    "name": "Casablanca",
+    "name": "Agence immobilier Marrakech",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 5,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1129977655500692"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Opale D'anfa avec Groupe Alidari Immobilier",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 5,
+    "confidence": 95,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3025329327674204"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Casablanca Immobilier",
+    "first_seen_at": "2026-07-30T07:42:18.870012+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 5,
     "confidence": 82,
     "reasons": [
       "mention explicite \"promoteur/développeur\" détectée dans le texte"
     ],
     "example_urls": [
-      "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5",
-      "https://news.google.com/rss/search?q=promotion+immobili%C3%A8re+Casablanca&hl=fr-MA&gl=MA&ceid=MA:fr"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Asharq Al Awsat Immobilier",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 4,
-    "confidence": 82,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2581888422242373"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "L'Aquarium Blue Tanger",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 4,
-    "confidence": 82,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=909084928134030"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Hamilton By Saham Immobilier",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 4,
-    "confidence": 82,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3705538012919384",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1024090903964501"
+      "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5",
+      "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTF9VcnM3WW5UZ2FaSmV6cUpPSHFrQ0dQRDB4Q1VhOFh4UzlHWFVSMEZhWVV0Yl90dGppS3h5bVdnLWVVS2drM0ZlLTJJXzIyX2VTSFgwZEFRcmhrNlRSUlVsVlNaVXVZZGttcGdRTVhMTHBMM2VKYkQxRVRGZGNacnMtQkEtRGxFWTg5cEtrZmxZMEFGVWpYSVoxOGs?oc=5"
     ],
     "status": "pending"
   },
@@ -206,73 +292,18 @@
     "status": "pending"
   },
   {
-    "name": "Rabatgardens",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "name": "Fel Sab Immo",
+    "first_seen_at": "2026-07-30T07:42:18.870012+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 4,
     "confidence": 82,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
     ],
     "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3868826090092010"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Mobilia Rabat",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 4,
-    "confidence": 82,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Agence immobilier Marrakech",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 4,
-    "confidence": 82,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1129977655500692"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Opale D'anfa avec Groupe Alidari Immobilier",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 4,
-    "confidence": 82,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=3025329327674204"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Haaz Properties",
-    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 4,
-    "confidence": 82,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1048384681028980",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1003304265805910"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1732871324580764",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1061765142887906",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2063560417601952"
     ],
     "status": "pending"
   },
@@ -308,18 +339,86 @@
     "status": "pending"
   },
   {
-    "name": "Fel Sab Immo",
-    "first_seen_at": "2026-07-30T07:42:18.870012+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "name": "Veyron design tanger",
+    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 3,
     "confidence": 70,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
     ],
     "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1732871324580764",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1061765142887906",
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2063560417601952"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1568291491342617"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Centre Privilège - Casablanca",
+    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 3,
+    "confidence": 70,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1073641401903243"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Résidence Jawhara",
+    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 3,
+    "confidence": 70,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2136348890279206"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Anfa Elite",
+    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 3,
+    "confidence": 70,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1041799421611744"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Coeur d'Anfa",
+    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 3,
+    "confidence": 70,
+    "reasons": [
+      "page Meta Ad Library non reconnue comme promoteur suivi"
+    ],
+    "example_urls": [
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1326116139690739"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Casablanca L’Union",
+    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 4,
+    "confidence": 67,
+    "reasons": [
+      "mention explicite \"promoteur/développeur\" détectée dans le texte"
+    ],
+    "example_urls": [
+      "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5"
     ],
     "status": "pending"
   },
@@ -437,101 +536,59 @@
     "status": "pending"
   },
   {
-    "name": "Veyron design tanger",
-    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "name": "TANGER.HORIZON",
+    "first_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 2,
     "confidence": 61,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
     ],
     "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1568291491342617"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1488903799921387"
     ],
     "status": "pending"
   },
   {
-    "name": "Centre Privilège - Casablanca",
-    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "name": "Rama Sakane Immobilier",
+    "first_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 2,
     "confidence": 61,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
     ],
     "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1073641401903243"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1862735174695822"
     ],
     "status": "pending"
   },
   {
-    "name": "Résidence Jawhara",
-    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "name": "Chine Clinique Agadir",
+    "first_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 2,
     "confidence": 61,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
     ],
     "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2136348890279206"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1735165324352537",
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1747697593038403"
     ],
     "status": "pending"
   },
   {
-    "name": "Anfa Elite",
-    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 2,
-    "confidence": 61,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1041799421611744"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Coeur d'Anfa",
-    "first_seen_at": "2026-08-13T06:26:22.602307+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 2,
-    "confidence": 61,
-    "reasons": [
-      "page Meta Ad Library non reconnue comme promoteur suivi"
-    ],
-    "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1326116139690739"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Casablanca L’Union",
+    "name": "Casablanca Info360. Affaire Casa",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 3,
     "confidence": 55,
     "reasons": [
       "mention explicite \"promoteur/développeur\" détectée dans le texte"
     ],
     "example_urls": [
-      "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Casablanca Immobilier",
-    "first_seen_at": "2026-07-30T07:42:18.870012+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 3,
-    "confidence": 55,
-    "reasons": [
-      "mention explicite \"promoteur/développeur\" détectée dans le texte"
-    ],
-    "example_urls": [
-      "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5",
-      "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTF9VcnM3WW5UZ2FaSmV6cUpPSHFrQ0dQRDB4Q1VhOFh4UzlHWFVSMEZhWVV0Yl90dGppS3h5bVdnLWVVS2drM0ZlLTJJXzIyX2VTSFgwZEFRcmhrNlRSUlVsVlNaVXVZZGttcGdRTVhMTHBMM2VKYkQxRVRGZGNacnMtQkEtRGxFWTg5cEtrZmxZMEFGVWpYSVoxOGs?oc=5"
+      "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbEt5dWRtY1pyZVMtY0J4Q3Q2V3dFNzZBMVAxRk9LMlJWMUZRbjZMUkkwdGNlZ2d2VVg5SHA3RDdpcklqT0pBb1c0eko2SWxoOTVfeHUteHlnaHcwVVNiNUNmb1BxQU9qRHRVcnpxZzlHazc3dy1hY3p1bnJFM2tkWEVPb0FjaXk2MEd6VTgwXzVrQlhzZERmc1VJMW5jakFvZnJaTFphYzNSWnlBekpuTmlUUWFJakFIaWc3Zk5xWUdweUk0dWlGSjN6enVVakFZaWtOaHRFMHZoYll3T0J0Mi15RkZJcmM3?oc=5"
     ],
     "status": "pending"
   },
@@ -620,30 +677,30 @@
     "status": "pending"
   },
   {
-    "name": "TANGER.HORIZON",
-    "first_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "name": "Gessimo Immobilier",
+    "first_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 1,
     "confidence": 55,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
     ],
     "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1488903799921387"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4426105817640935"
     ],
     "status": "pending"
   },
   {
-    "name": "Rama Sakane Immobilier",
-    "first_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "name": "Shakebeef marrakech",
+    "first_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
     "occurrence_count": 1,
     "confidence": 55,
     "reasons": [
       "page Meta Ad Library non reconnue comme promoteur suivi"
     ],
     "example_urls": [
-      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1862735174695822"
+      "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1360113472939488"
     ],
     "status": "pending"
   },
@@ -690,20 +747,6 @@
     "status": "pending"
   },
   {
-    "name": "Casablanca Info360. Affaire Casa",
-    "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
-    "last_seen_at": "2026-07-30T07:42:18.870012+00:00",
-    "occurrence_count": 2,
-    "confidence": 46,
-    "reasons": [
-      "mention explicite \"promoteur/développeur\" détectée dans le texte"
-    ],
-    "example_urls": [
-      "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbEt5dWRtY1pyZVMtY0J4Q3Q2V3dFNzZBMVAxRk9LMlJWMUZRbjZMUkkwdGNlZ2d2VVg5SHA3RDdpcklqT0pBb1c0eko2SWxoOTVfeHUteHlnaHcwVVNiNUNmb1BxQU9qRHRVcnpxZzlHazc3dy1hY3p1bnJFM2tkWEVPb0FjaXk2MEd6VTgwXzVrQlhzZERmc1VJMW5jakFvZnJaTFphYzNSWnlBekpuTmlUUWFJakFIaWc3Zk5xWUdweUk0dWlGSjN6enVVakFZaWtOaHRFMHZoYll3T0J0Mi15RkZJcmM3?oc=5"
-    ],
-    "status": "pending"
-  },
-  {
     "name": "Casablanca Achat",
     "first_seen_at": "2026-07-29T07:53:10.907197+00:00",
     "last_seen_at": "2026-07-30T07:42:18.870012+00:00",
@@ -714,6 +757,49 @@
     ],
     "example_urls": [
       "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeUhtUnVWTlV4QWJ5eDkxZWxVejVreWRIWU01Z3cxSzRfVEFLVzNHdndlNlpjNXQ3TDJodGNMdURCa1M5eV9sajBVcFpyMS1ERDBQTldQMER4RWVBeVhWcDJJbkF0VzdtbnRObTV6Ym5jSGw3b2hlalVUaW1SWUtTem1VdmZTdkI2ZEZ3bGJBTXRIOTQ?oc=5"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Casablanca Près",
+    "first_seen_at": "2026-07-30T07:42:18.870012+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 2,
+    "confidence": 46,
+    "reasons": [
+      "mention explicite \"promoteur/développeur\" détectée dans le texte"
+    ],
+    "example_urls": [
+      "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Casablanca Coopération Arabo-africaine",
+    "first_seen_at": "2026-07-30T07:42:18.870012+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 2,
+    "confidence": 46,
+    "reasons": [
+      "mention explicite \"promoteur/développeur\" détectée dans le texte"
+    ],
+    "example_urls": [
+      "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5"
+    ],
+    "status": "pending"
+  },
+  {
+    "name": "Casablanca Casablanca",
+    "first_seen_at": "2026-08-15T05:34:27.557515+00:00",
+    "last_seen_at": "2026-08-16T05:39:02.905626+00:00",
+    "occurrence_count": 2,
+    "confidence": 46,
+    "reasons": [
+      "mention explicite \"promoteur/développeur\" détectée dans le texte"
+    ],
+    "example_urls": [
+      "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHVnX29NRjh3R0hadDNwVDh3M2VtcTNMLXpLZGF2SlZDVGl4YS1IUVZyN0p5VG44UFktUVotWUI1YjJJczgweE5YbjhlQkZfMVA5OU9aekc2TjV4c3dCMzYzVW1mWDhqcmVkMjA2bklZZkhLOElKemhoclctUjRvdHNURU85UkZVbkk3SGVEWk43VmNWMm9YbkVXR1F4akJfbFJnUkROVE5qYWxsSmlYbVZxdXg0UQ?oc=5",
+      "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5"
     ],
     "status": "pending"
   },
@@ -732,34 +818,6 @@
     "status": "pending"
   },
   {
-    "name": "Casablanca Près",
-    "first_seen_at": "2026-07-30T07:42:18.870012+00:00",
-    "last_seen_at": "2026-07-30T07:42:18.870012+00:00",
-    "occurrence_count": 1,
-    "confidence": 40,
-    "reasons": [
-      "mention explicite \"promoteur/développeur\" détectée dans le texte"
-    ],
-    "example_urls": [
-      "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Casablanca Coopération Arabo-africaine",
-    "first_seen_at": "2026-07-30T07:42:18.870012+00:00",
-    "last_seen_at": "2026-07-30T07:42:18.870012+00:00",
-    "occurrence_count": 1,
-    "confidence": 40,
-    "reasons": [
-      "mention explicite \"promoteur/développeur\" détectée dans le texte"
-    ],
-    "example_urls": [
-      "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5"
-    ],
-    "status": "pending"
-  },
-  {
     "name": "Casablanca Ayam Immo",
     "first_seen_at": "2026-08-15T05:34:27.557515+00:00",
     "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
@@ -770,20 +828,6 @@
     ],
     "example_urls": [
       "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcU1aWGRBLWZMaHdzZFlBc25LQWIyVHlwT3ppWGRkTTFjeWNGUmJEWFZKNnBzRWxSd0s1dnJIYUppRUZPZ2V6TjgxNlJTVGdLbXhXQ2ZxaXZ2NmlzUEFBQ0haQjlLcGlsQ1VCNzJncnRXTEdxaGYySVhhZWRYY0xZZTNZZEhiZw?oc=5"
-    ],
-    "status": "pending"
-  },
-  {
-    "name": "Casablanca Casablanca",
-    "first_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "last_seen_at": "2026-08-15T05:34:27.557515+00:00",
-    "occurrence_count": 1,
-    "confidence": 40,
-    "reasons": [
-      "mention explicite \"promoteur/développeur\" détectée dans le texte"
-    ],
-    "example_urls": [
-      "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHVnX29NRjh3R0hadDNwVDh3M2VtcTNMLXpLZGF2SlZDVGl4YS1IUVZyN0p5VG44UFktUVotWUI1YjJJczgweE5YbjhlQkZfMVA5OU9aekc2TjV4c3dCMzYzVW1mWDhqcmVkMjA2bklZZkhLOElKemhoclctUjRvdHNURU85UkZVbkk3SGVEWk43VmNWMm9YbkVXR1F4akJfbFJnUkROVE5qYWxsSmlYbVZxdXg0UQ?oc=5"
     ],
     "status": "pending"
   }

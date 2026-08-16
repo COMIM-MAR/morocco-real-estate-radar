@@ -1,74 +1,65 @@
 {
   "immediate": [
     {
-      "project_id": "8112c831acfb8304702f7f96fcd80101f3255ab3",
-      "name": "Villa %c3%a0 Vendre %c3%a0 Anfa Raha",
+      "project_id": "8b570b935b789309438c7cb59deca968553c5f7b",
+      "name": "Projet R",
       "city": "Marrakech",
       "zone": "Anfa",
       "promoter": null,
       "asset_type": "villa",
-      "first_detected_at": "2026-08-15T05:33:34.719922+00:00",
-      "last_updated_at": "2026-08-15T05:34:25.770484+00:00",
-      "launch_score": 81,
+      "first_detected_at": "2026-08-16T05:38:08.049491+00:00",
+      "last_updated_at": "2026-08-16T05:38:08.917997+00:00",
+      "launch_score": 72,
       "confidence_score": 100,
-      "investment_score": 70,
-      "urgency_score": 88,
+      "investment_score": 88,
+      "urgency_score": 86,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Villa %c3%a0 Vendre %c3%a0 Anfa Raha | Promoteur: à confirmer | Ville: Marrakech | Zone: Anfa | Confirmations: confirmation en cours | Prix observés entre 29000000 et 29000000 MAD.",
+      "summary": "Projet R | Promoteur: à confirmer | Ville: Marrakech | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
       "prices": {
-        "min": 29000000,
-        "max": 29000000
+        "min": null,
+        "max": null
       },
       "aliases": [
+        "Projet R",
         "Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz - Le Matin.ma",
         "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
-        "Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma",
-        "Villa %c3%a0 Vendre %c3%a0 Anfa Raha",
-        "Villa à vendre à Anfa Raha",
-        "2300 M%c3%a8tres D%e2%80%99exception %c3%a0 Anfa"
+        "Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma"
       ],
       "channels": [
-        "listing",
         "news"
       ],
       "sources": [
         "Le Matin.ma",
         "LesEco.ma",
-        "Mubawab Casablanca Villas",
         "Ode (Purepeople)"
       ],
       "source_urls": [
         "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWI2ZGNuMHVWYlJhX2h3QkhsdjZ6VURDQVpnMlZzSVNULU5aMnRWVk9nOVFiU2xST1hkMXc5bnlDZEstcUdlN19sMUZyZjNEWDcxXy1MU1l5c3J4WjRZTFNxdzEzZ2hfWmNsNzNUUjZRMks5WW5xLXNmNTQyM2dUM3Y3NGVBQkpqQmlyT3p4YnU0a3FxOXNHeGNBYXFrT0hPeFRN0gGoAUFVX3lxTE1FdjdkMUI5OXItOHBJS1JiMTRLNG1TT1I5MHhTZzl0MGFGZlYyNlRDOHVKdU5RWF9pc0RqVzFwTjJlTktSMHVPR1ZaWUpwN3l0Q3lydHgtUlRRc0FyVXQ1V1NLalhpdUlPOVV5TUkySzF4SnZLOE9ZLTlGUEVhdE9zRzRpLThCRERlMVBNYVU1ZFMyLWxIbWxJNk1EZ0h1M1VQb3NXT2F0Sw?oc=5",
         "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-        "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5",
-        "https://www.mubawab.ma/fr/a/8332471/villa-%C3%A0-vendre-%C3%A0-anfa-raha",
-        "https://www.mubawab.ma/fr/a/8354527/2300-m%C3%A8tres-d%E2%80%99exception-%C3%A0-anfa",
-        "https://www.mubawab.ma/fr/a/8393207/villa-%C3%A0-r%C3%A9nover-quartier-anfa"
+        "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5"
       ],
       "evidence": {
-        "signal_count": 6,
+        "signal_count": 3,
         "primary_signal_count": 3,
-        "listing_signal_count": 3,
-        "source_count": 4,
-        "channel_count": 2,
+        "listing_signal_count": 0,
+        "source_count": 3,
+        "channel_count": 1,
         "primary_channels": [
           "news"
         ],
-        "secondary_channels": [
-          "listing"
-        ],
+        "secondary_channels": [],
         "confirmations": [],
         "confirmation_details": [],
         "confirmation_count": 0,
         "availability": {
-          "status": "available",
+          "status": null,
           "unit_count_min": null,
           "surface_m2": {
-            "min": 300,
-            "max": 1800
+            "min": null,
+            "max": null
           },
-          "signal_count": 6
+          "signal_count": 3
         },
         "geo": {
           "lat": 31.6295,
@@ -77,22 +68,22 @@
           "station_distance_km": 5,
           "highway_distance_km": 6
         },
-        "price_band": "above_budget",
+        "price_band": "unknown",
         "price_evolution": {
-          "trend": "stable",
-          "summary": "Prix observés entre 29000000 et 29000000 MAD."
+          "trend": "unknown",
+          "summary": "Aucune série de prix fiable pour le moment."
         },
         "roi": {
-          "label": "Moyen",
-          "five_year_upside_score": 69
+          "label": "Élevé",
+          "five_year_upside_score": 86
         },
-        "project_slug": "villa-c3-a0-vendre-c3-a0-anfa-raha-8112c831",
+        "project_slug": "projet-r-8b570b93",
         "infrastructure": {
           "sea_distance_km": 180,
           "station_distance_km": 5,
           "highway_distance_km": 6
         },
-        "recommendation_narrative": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
         "source_catalog": [
           {
             "kind": "google_news",
@@ -127,24 +118,25 @@
         ],
         "practical": {
           "asset_label": "Villa",
-          "public_status": "Disponible",
-          "status": "available",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "status": null,
           "unit_count_min": null,
           "surface_m2": {
-            "min": 300,
-            "max": 1800
+            "min": null,
+            "max": null
           },
-          "price_min": 29000000,
-          "price_max": 29000000
+          "price_min": null,
+          "price_max": null
         },
         "ai_analysis": {
-          "summary": "Éviter à court terme ou suivre uniquement pour benchmark marché.",
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
           "strengths": [
             "Le score de confiance est élevé, donc le signal paraît crédible.",
             "Le potentiel investissement ressort comme intéressant selon le profil configuré."
           ],
           "risks": [
-            "Le projet semble au-dessus du budget cible configuré."
+            "Le prix public n'est pas encore confirmé.",
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
           ],
           "next_steps": [
             "Vérifier le site officiel et les pages sociales du promoteur.",
@@ -205,52 +197,29 @@
         "ville: Marrakech",
         "marqueur de lancement détecté",
         "ville: Casablanca",
-        "zone: Anfa",
-        "signal listing secondaire",
-        "surface détectée"
+        "zone: Anfa"
       ],
       "timeline": [
         {
-          "detected_at": "2026-08-15T05:33:34.719922+00:00",
+          "detected_at": "2026-08-16T05:38:08.049491+00:00",
           "channel": "news",
           "source": "Le Matin.ma",
           "title": "Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz - Le Matin.ma",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWI2ZGNuMHVWYlJhX2h3QkhsdjZ6VURDQVpnMlZzSVNULU5aMnRWVk9nOVFiU2xST1hkMXc5bnlDZEstcUdlN19sMUZyZjNEWDcxXy1MU1l5c3J4WjRZTFNxdzEzZ2hfWmNsNzNUUjZRMks5WW5xLXNmNTQyM2dUM3Y3NGVBQkpqQmlyT3p4YnU0a3FxOXNHeGNBYXFrT0hPeFRN0gGoAUFVX3lxTE1FdjdkMUI5OXItOHBJS1JiMTRLNG1TT1I5MHhTZzl0MGFGZlYyNlRDOHVKdU5RWF9pc0RqVzFwTjJlTktSMHVPR1ZaWUpwN3l0Q3lydHgtUlRRc0FyVXQ1V1NLalhpdUlPOVV5TUkySzF4SnZLOE9ZLTlGUEVhdE9zRzRpLThCRERlMVBNYVU1ZFMyLWxIbWxJNk1EZ0h1M1VQb3NXT2F0Sw?oc=5"
         },
         {
-          "detected_at": "2026-08-15T05:33:34.719961+00:00",
+          "detected_at": "2026-08-16T05:38:08.049527+00:00",
           "channel": "news",
           "source": "Ode (Purepeople)",
           "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5"
         },
         {
-          "detected_at": "2026-08-15T05:33:35.583326+00:00",
+          "detected_at": "2026-08-16T05:38:08.917997+00:00",
           "channel": "news",
           "source": "LesEco.ma",
           "title": "Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5"
-        },
-        {
-          "detected_at": "2026-08-15T05:34:17.412485+00:00",
-          "channel": "listing",
-          "source": "Mubawab Casablanca Villas",
-          "title": "Villa à vendre à Anfa Raha",
-          "url": "https://www.mubawab.ma/fr/a/8332471/villa-%C3%A0-vendre-%C3%A0-anfa-raha"
-        },
-        {
-          "detected_at": "2026-08-15T05:34:19.276217+00:00",
-          "channel": "listing",
-          "source": "Mubawab Casablanca Villas",
-          "title": "2300 mètres d’exception à Anfa",
-          "url": "https://www.mubawab.ma/fr/a/8354527/2300-m%C3%A8tres-d%E2%80%99exception-%C3%A0-anfa"
-        },
-        {
-          "detected_at": "2026-08-15T05:34:25.770484+00:00",
-          "channel": "listing",
-          "source": "Mubawab Casablanca Villas",
-          "title": "Villa à rénover quartier Anfa",
-          "url": "https://www.mubawab.ma/fr/a/8393207/villa-%C3%A0-r%C3%A9nover-quartier-anfa"
         }
       ],
       "signals": [
@@ -285,7 +254,7 @@
             "ville: Marrakech",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-08-15T05:33:34.719922+00:00",
+          "discovered_at": "2026-08-16T05:38:08.049491+00:00",
           "city_hint": "Marrakech",
           "zone_hint": null,
           "promoter_hint": null,
@@ -323,7 +292,7 @@
             "ville: Marrakech",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-08-15T05:33:34.719961+00:00",
+          "discovered_at": "2026-08-16T05:38:08.049527+00:00",
           "city_hint": "Marrakech",
           "zone_hint": null,
           "promoter_hint": null,
@@ -360,7 +329,7 @@
             "ville: Casablanca",
             "zone: Anfa"
           ],
-          "discovered_at": "2026-08-15T05:33:35.583326+00:00",
+          "discovered_at": "2026-08-16T05:38:08.917997+00:00",
           "city_hint": "Casablanca",
           "zone_hint": "Anfa",
           "promoter_hint": null,
@@ -368,177 +337,54 @@
           "project_name_hint": null,
           "price_mad": null,
           "signal_id": "e49860e31bd143ec01010b3f37fcf033274ba7b8"
-        },
-        {
-          "collector": "listings.portals",
-          "channel": "listing",
-          "source": "Mubawab Casablanca Villas",
-          "signal_type": "listing_detail",
-          "title": "Villa à vendre à Anfa Raha",
-          "url": "https://www.mubawab.ma/fr/a/8332471/villa-%C3%A0-vendre-%C3%A0-anfa-raha",
-          "text": "Villa à vendre à Anfa Raha Villa à vendre à Anfa Raha - Mubawab Villa à vendre à Anfa Raha Le 1er site immobilier du Maroc Contacter l'annonceur Obtenir une offre de financement Désirez-vous être rappelé ? Partager Villa à vendre sur le quartier ANFA, Raha, superficie du terrain 1800 m² très bien placé elle fait angle avec une Villa à retaper ou à rafraîchir plus Villa à vendre à Anfa Raha - Mubawab Le 1er site immobilier du Maroc Estimer votre bien Immobilier neuf Fr العربية English Español Nederlands Italiano Se connecter Publier une annonce Traitement en cours... Immobilier Maroc Immobilier Casablanca Villas & maisons de luxe Casablanca Anfa 4 35 000 000 DH Favori Partager M'avertir d'une baisse de prix! 1800 m² 4 Pièces 5 Chambres 4 Salles de bains Anfa à Casablanca 35 000 000 DH 1800 m² 4 Pièces 5 Chambres 4 Salles de bains Contacter 1 de 4 Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1-784) Sainte-Hélène (+290) Sainte-Lucie (+1-758) Samoa (+685) Samoa américaine (+1-684) Sao Tomé-et-Principe (+239) Serbie (+381) Seychelles (+248) Sierra Leone (+232) Singapour (+65) Slovaquie (+421) Slovénie (+386) Somalie (+252) Soudan (+249) Soudan du Sud (+211) Sri Lanka (+94) Suisse (+41) Suriname (+597) Suède (+46) Svalbard et île de Jan Mayen (+47) Swaziland (+268) Syrie (+963) Sénégal (+221) Tadjikistan (+992) Tanzanie (+255) Taïwan (+886) Tchad (+235) Terres australes françaises (+262) Territoire britannique de l'océan Indien (+246) Thaïlande (+66) Timor-Leste (+670) Togo (+228) Tonga (+676) Trinité-et-Tobago (+1-868) Tunisie (+216) Turkménistan (+993) Turquie (+90) Tuvalu (+688) Ukraine (+380) Uruguay (+598) Vanuatu (+678) Vatican (+379) Venezuela (+58) Vietnam (+84) Yémen (+967) Zambie (+260) Zimbabwe (+263) Égypte (+20) Émirats arabes unis (+971) Équateur (+593) Érythrée (+291) Éthiopie (+251) Île Bouvet (+47) Île Norfolk (+672) Île de Man (+44) Îles Caïmans (+1-345) Îles Cook (+682) Îles Féroé (+298) Îles Heard et McDonald (+672) Îles Marshall (+692) Îles Salomon (+677) Îles Turks et Caicos (+1-649) Îles Vierges américaines (+1-340) Îles Vierges britanniques (+1-284) Îles d'Åland (+358-18) Îles mineures éloignées des États-Unis (+1) Votre Téléphone * Décrivez vos besoins spécifiques En cliquant sur \"Contacter\", vous acceptez nos Conditions Générales d’Utilisation et notre Politique de Protection des Données . Contacter Agence Immobilière BONNET Villa à vendre à Anfa Raha Villa à vendre sur le quartier ANFA, Raha, superficie du terrain 1800 m² très bien placé elle fait angle avec une Villa à retaper ou à rafraîchir plus de détails. Merci de nous contacter. Caractéristiques générales Type de bien Villa Etat À rénover Anfa à Casablanca Voir la carte Écoles Hôpitaux Les utilisateurs intéréssés par cette annonce ont également consulté 29 000 000 DH 4 chambres, 1250 m² Casablanca 28 000 000 DH 5 chambres, 2100 m² Casablanca 32 000 000 DH 4 chambres, 920 m² Casablanca 31 200 000 DH 3 chambres, 1200 m² Casablanca Contacter l'annonceur Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1",
-          "is_primary": false,
-          "launch_weight": 4,
-          "confidence_weight": 16,
-          "metadata": {
-            "portal": "Mubawab Casablanca Villas",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": 1800,
-                "max": 1800
-              }
-            },
-            "listing_date_hint": null
-          },
-          "reasons": [
-            "signal listing secondaire",
-            "surface détectée",
-            "prix détecté: 29000000 MAD",
-            "type: villa",
-            "ville: Casablanca",
-            "zone: Anfa"
-          ],
-          "discovered_at": "2026-08-15T05:34:17.412485+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": "villa",
-          "project_name_hint": null,
-          "price_mad": 29000000,
-          "signal_id": "40aca724bc7067a4f35765d3d11943185db2729b"
-        },
-        {
-          "collector": "listings.portals",
-          "channel": "listing",
-          "source": "Mubawab Casablanca Villas",
-          "signal_type": "listing_detail",
-          "title": "2300 mètres d’exception à Anfa",
-          "url": "https://www.mubawab.ma/fr/a/8354527/2300-m%C3%A8tres-d%E2%80%99exception-%C3%A0-anfa",
-          "text": "2300 mètres d’exception à Anfa 2300 mètres d’exception à Anfa - Mubawab 2300 mètres d’exception à Anfa Le 1er site immobilier du Maroc Contacter l'annonceur Obtenir une offre de financement Désirez-vous être rappelé ? Partager Villa (à renover) sur un Terrain d’exception à Anfa. Plus de 2 300 m² dans l’un des emplacements les plus rares de Casablanca, pour imaginer une 2300 mètres d’exception à Anfa - Mubawab Le 1er site immobilier du Maroc Estimer votre bien Immobilier neuf Fr العربية English Español Nederlands Italiano Se connecter Publier une annonce Traitement en cours... Immobilier Maroc Immobilier Casablanca Villas & maisons de luxe Casablanca Anfa 1 41 000 000 DH Favori Partager M'avertir d'une baisse de prix! 2300 m² 9 Pièces 6 Chambres 3 Salles de bains Anfa à Casablanca 41 000 000 DH 2300 m² 9 Pièces 6 Chambres 3 Salles de bains Contacter 1 de 1 Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1-784) Sainte-Hélène (+290) Sainte-Lucie (+1-758) Samoa (+685) Samoa américaine (+1-684) Sao Tomé-et-Principe (+239) Serbie (+381) Seychelles (+248) Sierra Leone (+232) Singapour (+65) Slovaquie (+421) Slovénie (+386) Somalie (+252) Soudan (+249) Soudan du Sud (+211) Sri Lanka (+94) Suisse (+41) Suriname (+597) Suède (+46) Svalbard et île de Jan Mayen (+47) Swaziland (+268) Syrie (+963) Sénégal (+221) Tadjikistan (+992) Tanzanie (+255) Taïwan (+886) Tchad (+235) Terres australes françaises (+262) Territoire britannique de l'océan Indien (+246) Thaïlande (+66) Timor-Leste (+670) Togo (+228) Tonga (+676) Trinité-et-Tobago (+1-868) Tunisie (+216) Turkménistan (+993) Turquie (+90) Tuvalu (+688) Ukraine (+380) Uruguay (+598) Vanuatu (+678) Vatican (+379) Venezuela (+58) Vietnam (+84) Yémen (+967) Zambie (+260) Zimbabwe (+263) Égypte (+20) Émirats arabes unis (+971) Équateur (+593) Érythrée (+291) Éthiopie (+251) Île Bouvet (+47) Île Norfolk (+672) Île de Man (+44) Îles Caïmans (+1-345) Îles Cook (+682) Îles Féroé (+298) Îles Heard et McDonald (+672) Îles Marshall (+692) Îles Salomon (+677) Îles Turks et Caicos (+1-649) Îles Vierges américaines (+1-340) Îles Vierges britanniques (+1-284) Îles d'Åland (+358-18) Îles mineures éloignées des États-Unis (+1) Votre Téléphone * Décrivez vos besoins spécifiques En cliquant sur \"Contacter\", vous acceptez nos Conditions Générales d’Utilisation et notre Politique de Protection des Données . Contacter Anfa Immobilier Réf: Anfa230 2300 mètres d’exception à Anfa Villa (à renover) sur un Terrain d’exception à Anfa. Plus de 2 300 m² dans l’un des emplacements les plus rares de Casablanca, pour imaginer une véritable villa de maître À vendre, magnifique villa à rénover ou à raser pour la construction d’une villa de maître , idéalement située à Anfa. Implanté dans une rue d’un calme absolu, ce terrain figure incontestablement parmi les plus beaux actuellement disponibles à Casablanca. Avec une superficie de plus de 2 300 m², il offre les dimensions, la configuration et l’environnement nécessaires à la réalisation d’une villa d’exception. Son excellente exposition, l’absence de vis-à-vis et la qualité remarquable du voisinage en font une adresse particulièrement rare. Ici, tout est réuni pour concevoir une villa de maître, pensée comme un véritable projet de vie, avec de vastes réceptions, de beaux volumes, un grand jardin, une piscine et des espaces extérieurs totalement préservés. L’emplacement conjugue parfaitement prestige, tranquillité et proximité avec les principaux centres d’intérêt de Casa, tout en conservant l’intimité d’une rue résidentielle parmi les plus calmes du secteur. Un produit foncier rare, destiné à une clientèle exigeante à la recherche d’un terrain exceptionnel pour bâtir une résidence unique. Il se positionne clairement parmi les trois meilleures opportunités actuellement disponibles sur le marché d’Anfa. Un bien dont le rapport entre l’emplacement, la superficie, la qualité de l’environnement et le prix demandé est pleinement justifié. Caractéristiques générales Type de bien Villa Surface de la parcelle 2300 m² Etat À rénover Années 1-5 ans Type du sol Parquet Jardin Terrasse Garage Ascenseur Vue sur mer Piscine Concierge Chambre rangement Meublé Entre-seul Salon Marocain Salon européen Antenne parabolique Cheminée Climatisation Chauffage central Sécurité Double vitrage Porte blindée Cuisine équipée Réfrigérateur Four Machine à laver Micro-ondes Anfa à Casablanca Voir la carte Écoles Hôpitaux Les utilisateurs intéréssés par cette annonce ont également consulté 35 000 000 DH 5 chambres, 1800 m² Casablanca 45 000 000 DH 4 chambres, 2000 m² Casablanca 45 080 000 DH 5 chambres, 2254 m² Casablanca 39 900 000 DH 6 chambres, 1937 m² Casablanca Contacter l'annonceur Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée",
-          "is_primary": false,
-          "launch_weight": 4,
-          "confidence_weight": 22,
-          "metadata": {
-            "portal": "Mubawab Casablanca Villas",
-            "availability": {
-              "status": "available",
-              "unit_count": null,
-              "surface_m2": {
-                "min": 300,
-                "max": 300
-              }
-            },
-            "listing_date_hint": null
-          },
-          "reasons": [
-            "signal listing secondaire",
-            "disponibilité détectée: available",
-            "surface détectée",
-            "disponibilité confirmée",
-            "type: villa",
-            "ville: Casablanca",
-            "zone: Anfa"
-          ],
-          "discovered_at": "2026-08-15T05:34:19.276217+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": "villa",
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "c917d6b8f2d0591519855d223b7e895072f98d2f"
-        },
-        {
-          "collector": "listings.portals",
-          "channel": "listing",
-          "source": "Mubawab Casablanca Villas",
-          "signal_type": "listing_detail",
-          "title": "Villa à rénover quartier Anfa",
-          "url": "https://www.mubawab.ma/fr/a/8393207/villa-%C3%A0-r%C3%A9nover-quartier-anfa",
-          "text": "Villa à rénover quartier Anfa Villa à rénover quartier Anfa - Mubawab Villa à rénover quartier Anfa Le 1er site immobilier du Maroc Contacter l'annonceur Obtenir une offre de financement Désirez-vous être rappelé ? Partager Villa édifiée sur un terrain de 1250 m² bien située dans une rue calme du quartier Anfa. La construction est vétuste et une rénovation sérieuse est à Villa à rénover quartier Anfa - Mubawab Le 1er site immobilier du Maroc Estimer votre bien Immobilier neuf Fr العربية English Español Nederlands Italiano Se connecter Publier une annonce Traitement en cours... Immobilier Maroc Immobilier Casablanca Villas & maisons de luxe Casablanca Anfa 6 29 000 000 DH Favori Partager M'avertir d'une baisse de prix! 1250 m² 6 Pièces 4 Chambres 3 Salles de bains Anfa à Casablanca 29 000 000 DH 1250 m² 6 Pièces 4 Chambres 3 Salles de bains Contacter 1 de 6 Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) République tchèque (+420) Réunion (+262) Saint-Barthélemy (+590) Saint-Kitts-et-Nevis (+1-869) Saint-Marin (+378) Saint-Martin (France) (+590) Saint-Martin (Pays-Bas) (+1-721) Saint-Vincent-et-les-Grenadines (+1-784) Sainte-Hélène (+290) Sainte-Lucie (+1-758) Samoa (+685) Samoa américaine (+1-684) Sao Tomé-et-Principe (+239) Serbie (+381) Seychelles (+248) Sierra Leone (+232) Singapour (+65) Slovaquie (+421) Slovénie (+386) Somalie (+252) Soudan (+249) Soudan du Sud (+211) Sri Lanka (+94) Suisse (+41) Suriname (+597) Suède (+46) Svalbard et île de Jan Mayen (+47) Swaziland (+268) Syrie (+963) Sénégal (+221) Tadjikistan (+992) Tanzanie (+255) Taïwan (+886) Tchad (+235) Terres australes françaises (+262) Territoire britannique de l'océan Indien (+246) Thaïlande (+66) Timor-Leste (+670) Togo (+228) Tonga (+676) Trinité-et-Tobago (+1-868) Tunisie (+216) Turkménistan (+993) Turquie (+90) Tuvalu (+688) Ukraine (+380) Uruguay (+598) Vanuatu (+678) Vatican (+379) Venezuela (+58) Vietnam (+84) Yémen (+967) Zambie (+260) Zimbabwe (+263) Égypte (+20) Émirats arabes unis (+971) Équateur (+593) Érythrée (+291) Éthiopie (+251) Île Bouvet (+47) Île Norfolk (+672) Île de Man (+44) Îles Caïmans (+1-345) Îles Cook (+682) Îles Féroé (+298) Îles Heard et McDonald (+672) Îles Marshall (+692) Îles Salomon (+677) Îles Turks et Caicos (+1-649) Îles Vierges américaines (+1-340) Îles Vierges britanniques (+1-284) Îles d'Åland (+358-18) Îles mineures éloignées des États-Unis (+1) Votre Téléphone * Décrivez vos besoins spécifiques En cliquant sur \"Contacter\", vous acceptez nos Conditions Générales d’Utilisation et notre Politique de Protection des Données . Contacter Immobilier Mondial Trading Réf: V00010826 Villa à rénover quartier Anfa Villa édifiée sur un terrain de 1250 m² bien située dans une rue calme du quartier Anfa. La construction est vétuste et une rénovation sérieuse est à prévoir. Environnement excellent avec de belles villas neuves. Bonne orientation. Prix du marché. Nos honoraires hors TVA Vente : 2% du prix de vente Caractéristiques générales Type de bien Villa Surface de la parcelle 1250 m² Etat À rénover Jardin Piscine Chambre rangement Four Anfa à Casablanca Voir la carte Écoles Hôpitaux Les utilisateurs intéréssés par cette annonce ont également consulté 25 000 000 DH 4 chambres, 1059 m² Casablanca 24 500 000 DH 4 chambres, 750 m² Casablanca 28 000 000 DH 5 chambres, 2100 m² Casablanca 31 200 000 DH 3 chambres, 1200 m² Casablanca Contacter l'annonceur Contacter l'annonceur Appelez WhatsApp Votre nom Votre adresse email Maroc (+212) France (+33) États-Unis (+1) Belgique (+32) Espagne (+34) Afghanistan (+93) Afrique du Sud (+27) Albanie (+355) Algérie (+213) Allemagne (+49) Andorre (+376) Angola (+244) Anguilla (+1-264) Antarctique (+0) Antigua-et-Barbuda (+1-268) Arabie saoudite (+966) Argentine (+54) Arménie (+374) Aruba (+297) Ascension (+247) Australie (+61) Autriche (+43) Azerbaïdjan (+994) Bahamas (+1-242) Bahreïn (+973) Bangladesh (+880) Barbade (+1-246) Belize (+501) Bermudes (+1-441) Bhoutan (+975) Bolivie (+591) Bosnie-Herzégovine (+387) Botswana (+267) Brunei Darussalam (+673) Brésil (+55) Bulgarie (+359) Burkina Faso (+226) Burundi (+257) Bélarus (+375) Bénin (+229) Cambodge (+855) Cameroun (+237) Canada (+1) Cap-Vert (+238) Chili (+56) Chine (+86) Chypre (+357) Colombie (+57) Comores (+269) Congo (+242) Congo (+243) Corée du Nord (+850) Corée du Sud (+82) Costa Rica (+506) Croatie (+385) Cuba (+53) Curaçao (+599) Côte d'Ivoire (+225) Danemark (+45) Djibouti (+253) Dominique (+1-767) El Salvador (+503) Estonie (+372) Fidji (+679) Finlande (+358) Gabon (+241) Gambie (+220) Ghana (+233) Gibraltar (+350) Grenade (+1-473) Groenland (+299) Grèce (+30) Guadeloupe (+590) Guam (+1-671) Guatemala (+502) Guernesey (+44) Guinée (+224) Guinée équatoriale (+240) Guinée-Bissau (+245) Guyana (+592) Guyane française (+594) Géorgie (+995) Géorgie du Sud et les îles Sandwich du Sud (+500) Haïti (+509) Honduras (+504) Hong Kong (+852) Hongrie (+36) Inde (+91) Indonésie (+62) Irak (+964) Iran (+98) Irlande (+353) Islande (+354) Israël (+972) Italie (+39) Jamaïque (+1-876) Japon (+81) Jersey (+44) Jordanie (+962) Kazakhstan (+7) Kenya (+254) Kirghizistan (+996) Kiribati (+686) Koweït (+965) Laos (+856) Lesotho (+266) Lettonie (+371) Liban (+961) Libye (+218) Libéria (+231) Liechtenstein (+423) Lituanie (+370) Luxembourg (+352) Macao (+853) Macédoine (+389) Madagascar (+261) Malaisie (+60) Malawi (+265) Maldives (+960) Mali (+223) Malte (+356) Martinique (+596) Maurice (+230) Mauritanie (+222) Mayotte (+262) Mexique (+52) Micronésie (+691) Moldavie (+373) Monaco (+377) Mongolie (+976) Montserrat (+1-664) Monténégro (+382) Mozambique (+258) Myanmar (+95) Namibie (+264) Nauru (+674) Nicaragua (+505) Niger (+227) Nigeria (+234) Niue (+683) Norvège (+47) Nouvelle-Calédonie (+687) Nouvelle-Zélande (+64) Népal (+977) Oman (+968) Ouganda (+256) Ouzbékistan (+998) Pakistan (+92) Palau (+680) Palestine (+970) Panama (+507) Papouasie-Nouvelle-Guinée (+675) Paraguay (+595) Pays-Bas (+31) Pays-Bas caribéens (+599) Philippines (+63) Pologne (+48) Polynésie française (+689) Portugal (+351) Puerto Rico (+1-787) Pérou (+51) Qatar (+974) Roumanie (+40) Royaume-Uni (+44) Russie (+7) Rwanda (+250) République centrafricaine (+236) République dominicaine (+1-809) Rép",
-          "is_primary": false,
-          "launch_weight": 4,
-          "confidence_weight": 16,
-          "metadata": {
-            "portal": "Mubawab Casablanca Villas",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": 1250,
-                "max": 1250
-              }
-            },
-            "listing_date_hint": null
-          },
-          "reasons": [
-            "signal listing secondaire",
-            "surface détectée",
-            "prix détecté: 29000000 MAD",
-            "type: villa",
-            "ville: Casablanca",
-            "zone: Anfa"
-          ],
-          "discovered_at": "2026-08-15T05:34:25.770484+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": "villa",
-          "project_name_hint": null,
-          "price_mad": 29000000,
-          "signal_id": "6738d39c12f9b42769b22898f8ea63d79e311e96"
         }
       ]
     },
     {
-      "project_id": "1d1987524696bbb04e9d99bcedf0487f591efa49",
-      "name": "Projet Immobilier",
-      "city": "Rabat",
+      "project_id": "2bbb99c489101b5c83caf2b1e5a2f2b2392d8696",
+      "name": "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq",
+      "city": "Casablanca",
       "zone": null,
       "promoter": null,
       "asset_type": null,
-      "first_detected_at": "2026-08-15T05:33:34.719852+00:00",
-      "last_updated_at": "2026-08-15T05:33:35.583384+00:00",
+      "first_detected_at": "2026-08-16T05:38:08.049563+00:00",
+      "last_updated_at": "2026-08-16T05:38:08.918057+00:00",
       "launch_score": 64,
-      "confidence_score": 100,
-      "investment_score": 38,
-      "urgency_score": 73,
+      "confidence_score": 93,
+      "investment_score": 43,
+      "urgency_score": 70,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Projet Immobilier | Promoteur: à confirmer | Ville: Rabat | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "summary": "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
       "prices": {
         "min": null,
         "max": null
       },
       "aliases": [
-        "Projet Immobilier",
-        "Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk",
-        "​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca - h24info.ma",
-        "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-        "Casablanca, Rabat, Tanger… Quand les décharges attisent la spéculation immobilière - Hespress Français - Actualités du Maroc"
+        "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq",
+        "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
+        "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
+        "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
+        "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net"
       ],
       "channels": [
         "news"
       ],
       "sources": [
-        "Hespress Français - Actualités du Maroc",
-        "Le Desk",
-        "Medias24",
-        "h24info.ma"
+        "Abidjan.net News",
+        "Bladi.net"
       ],
       "source_urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5",
-        "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5",
-        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5",
-        "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHVnX29NRjh3R0hadDNwVDh3M2VtcTNMLXpLZGF2SlZDVGl4YS1IUVZyN0p5VG44UFktUVotWUI1YjJJczgweE5YbjhlQkZfMVA5OU9aekc2TjV4c3dCMzYzVW1mWDhqcmVkMjA2bklZZkhLOElKemhoclctUjRvdHNURU85UkZVbkk3SGVEWk43VmNWMm9YbkVXR1F4akJfbFJnUkROVE5qYWxsSmlYbVZxdXg0UQ?oc=5"
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5",
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5"
       ],
       "evidence": {
         "signal_count": 4,
         "primary_signal_count": 4,
         "listing_signal_count": 0,
-        "source_count": 4,
+        "source_count": 2,
         "channel_count": 1,
         "primary_channels": [
           "news"
@@ -557,10 +403,10 @@
           "signal_count": 4
         },
         "geo": {
-          "lat": 34.0209,
-          "lng": -6.8416,
-          "sea_distance_km": 7,
-          "station_distance_km": 4,
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
           "highway_distance_km": 4
         },
         "price_band": "unknown",
@@ -570,12 +416,12 @@
         },
         "roi": {
           "label": "Prudent",
-          "five_year_upside_score": 40
+          "five_year_upside_score": 44
         },
-        "project_slug": "projet-immobilier-1d198752",
+        "project_slug": "cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq-2bbb99c4",
         "infrastructure": {
-          "sea_distance_km": 7,
-          "station_distance_km": 4,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
           "highway_distance_km": 4
         },
         "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
@@ -583,20 +429,30 @@
           {
             "kind": "google_news",
             "kind_label": "Article / Google News",
-            "label": "Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk",
+            "label": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
             "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5",
-            "source": "Le Desk",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
+            "source": "Bladi.net",
             "signal_type": "news_result",
             "proof_level": "watch"
           },
           {
             "kind": "google_news",
             "kind_label": "Article / Google News",
-            "label": "Casablanca, Rabat, Tanger… Quand les décharges attisent la spéculation immobilière - Hespress Français - Actualités du Maroc",
+            "label": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
             "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHVnX29NRjh3R0hadDNwVDh3M2VtcTNMLXpLZGF2SlZDVGl4YS1IUVZyN0p5VG44UFktUVotWUI1YjJJczgweE5YbjhlQkZfMVA5OU9aekc2TjV4c3dCMzYzVW1mWDhqcmVkMjA2bklZZkhLOElKemhoclctUjRvdHNURU85UkZVbkk3SGVEWk43VmNWMm9YbkVXR1F4akJfbFJnUkROVE5qYWxsSmlYbVZxdXg0UQ?oc=5",
-            "source": "Hespress Français - Actualités du Maroc",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
+            "source": "Abidjan.net News",
+            "signal_type": "news_result",
+            "proof_level": "watch"
+          },
+          {
+            "kind": "google_news",
+            "kind_label": "Article / Google News",
+            "label": "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net",
+            "description": "Résultat presse ou Google News surveillé.",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5",
+            "source": "Bladi.net",
             "signal_type": "news_result",
             "proof_level": "watch"
           }
@@ -635,20 +491,30 @@
           {
             "kind": "google_news",
             "kind_label": "Article / Google News",
-            "label": "Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk",
+            "label": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
             "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5",
-            "source": "Le Desk",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
+            "source": "Bladi.net",
             "signal_type": "news_result",
             "proof_level": "watch"
           },
           {
             "kind": "google_news",
             "kind_label": "Article / Google News",
-            "label": "Casablanca, Rabat, Tanger… Quand les décharges attisent la spéculation immobilière - Hespress Français - Actualités du Maroc",
+            "label": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
             "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHVnX29NRjh3R0hadDNwVDh3M2VtcTNMLXpLZGF2SlZDVGl4YS1IUVZyN0p5VG44UFktUVotWUI1YjJJczgweE5YbjhlQkZfMVA5OU9aekc2TjV4c3dCMzYzVW1mWDhqcmVkMjA2bklZZkhLOElKemhoclctUjRvdHNURU85UkZVbkk3SGVEWk43VmNWMm9YbkVXR1F4akJfbFJnUkROVE5qYWxsSmlYbVZxdXg0UQ?oc=5",
-            "source": "Hespress Français - Actualités du Maroc",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
+            "source": "Abidjan.net News",
+            "signal_type": "news_result",
+            "proof_level": "watch"
+          },
+          {
+            "kind": "google_news",
+            "kind_label": "Article / Google News",
+            "label": "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net",
+            "description": "Résultat presse ou Google News surveillé.",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5",
+            "source": "Bladi.net",
             "signal_type": "news_result",
             "proof_level": "watch"
           }
@@ -666,55 +532,54 @@
       "reasons": [
         "article presse détecté",
         "mot-clé presse: projet immobilier",
-        "ville: Rabat",
         "marqueur de lancement détecté",
         "ville: Casablanca"
       ],
       "timeline": [
         {
-          "detected_at": "2026-08-15T05:33:34.719852+00:00",
+          "detected_at": "2026-08-16T05:38:08.049563+00:00",
           "channel": "news",
-          "source": "Le Desk",
-          "title": "Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5"
+          "source": "Bladi.net",
+          "title": "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5"
         },
         {
-          "detected_at": "2026-08-15T05:33:35.583208+00:00",
+          "detected_at": "2026-08-16T05:38:08.917971+00:00",
           "channel": "news",
-          "source": "h24info.ma",
-          "title": "​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca - h24info.ma",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5"
+          "source": "Bladi.net",
+          "title": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5"
         },
         {
-          "detected_at": "2026-08-15T05:33:35.583276+00:00",
+          "detected_at": "2026-08-16T05:38:08.918028+00:00",
           "channel": "news",
-          "source": "Medias24",
-          "title": "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5"
+          "source": "Abidjan.net News",
+          "title": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5"
         },
         {
-          "detected_at": "2026-08-15T05:33:35.583384+00:00",
+          "detected_at": "2026-08-16T05:38:08.918057+00:00",
           "channel": "news",
-          "source": "Hespress Français - Actualités du Maroc",
-          "title": "Casablanca, Rabat, Tanger… Quand les décharges attisent la spéculation immobilière - Hespress Français - Actualités du Maroc",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHVnX29NRjh3R0hadDNwVDh3M2VtcTNMLXpLZGF2SlZDVGl4YS1IUVZyN0p5VG44UFktUVotWUI1YjJJczgweE5YbjhlQkZfMVA5OU9aekc2TjV4c3dCMzYzVW1mWDhqcmVkMjA2bklZZkhLOElKemhoclctUjRvdHNURU85UkZVbkk3SGVEWk43VmNWMm9YbkVXR1F4akJfbFJnUkROVE5qYWxsSmlYbVZxdXg0UQ?oc=5"
+          "source": "Bladi.net",
+          "title": "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5"
         }
       ],
       "signals": [
         {
           "collector": "news.google_news",
           "channel": "news",
-          "source": "Le Desk",
+          "source": "Bladi.net",
           "signal_type": "news_result",
-          "title": "Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5",
-          "text": "nouveau projet immobilier Maroc Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat - Le Desk <a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnYxdHZRX0VDUXlCRWJSVXByZWxvc0VUMnFNLVJJaDN1bzBHR093bXJYZ3MzbU1pZ3hQYThENkdDcThJZEE0dWdaZWZ1OXpsN25YUE5MMEs5ZXY4el9abGpLSXloRjBnWDFrZGtnUnh1LTYzMmhNNHB3alRWYk1Oa3dHTkRtRHZnSzdwNEdaYXlNN0w1UjFWc2ttRHRhUUJXWEE?oc=5\" target=\"_blank\">Rahhal Boulgoute aux petits soins pour un nouveau projet immobilier à Rabat</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Desk</font>",
+          "title": "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5",
+          "text": "nouveau projet immobilier Maroc Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5\" target=\"_blank\">Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
           "is_primary": true,
           "launch_weight": 28,
           "confidence_weight": 27,
           "metadata": {
             "query": "nouveau projet immobilier Maroc",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
+            "published": "Wed, 13 May 2026 07:00:00 GMT",
             "availability": {
               "status": null,
               "unit_count": null,
@@ -727,26 +592,61 @@
           "reasons": [
             "article presse détecté",
             "mot-clé presse: projet immobilier",
-            "ville: Rabat",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-08-15T05:33:34.719852+00:00",
-          "city_hint": "Rabat",
+          "discovered_at": "2026-08-16T05:38:08.049563+00:00",
+          "city_hint": null,
           "zone_hint": null,
           "promoter_hint": null,
           "asset_type_hint": null,
           "project_name_hint": null,
           "price_mad": null,
-          "signal_id": "a0008d3245bd8961d3737c602c6be73a84752476"
+          "signal_id": "a544845c84ec08003af1fa4f806bc0bf23710821"
         },
         {
           "collector": "news.google_news",
           "channel": "news",
-          "source": "h24info.ma",
+          "source": "Bladi.net",
           "signal_type": "news_result",
-          "title": "​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca - h24info.ma",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5",
-          "text": "promotion immobilière Casablanca ​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca - h24info.ma <a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9wRXZ5QkJlbTRGSXVaX2gySlM3clczR1VHeTkzWDBNOFViWGlOVnd4dlQ3SnR2SVNBUF9qdE54b1N0SGlLQ0I1eGhZSEhzTUxzWl85cFByOGR0S3l1NEZPRVZvQUZzU1RWWWVOa3hUbjZnRm9iZ3JXc1F4NA?oc=5\" target=\"_blank\">​Immobilier : L’Union arabe inaugure son bureau régional du Maghreb à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">h24info.ma</font>",
+          "title": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
+          "text": "promotion immobilière Casablanca Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5\" target=\"_blank\">Près de Casablanca, les vieux terrains d’élus réveillent le fisc</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
+          "is_primary": true,
+          "launch_weight": 12,
+          "confidence_weight": 16,
+          "metadata": {
+            "query": "promotion immobilière Casablanca",
+            "published": "Wed, 24 Jun 2026 07:00:00 GMT",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "article presse détecté",
+            "ville: Casablanca"
+          ],
+          "discovered_at": "2026-08-16T05:38:08.917971+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": null,
+          "project_name_hint": null,
+          "price_mad": null,
+          "signal_id": "524d2d0e53d99379ef0bbcb8674ae625e1483f92"
+        },
+        {
+          "collector": "news.google_news",
+          "channel": "news",
+          "source": "Abidjan.net News",
+          "signal_type": "news_result",
+          "title": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
+          "text": "promotion immobilière Casablanca Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News <a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5\" target=\"_blank\">Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Abidjan.net News</font>",
           "is_primary": true,
           "launch_weight": 12,
           "confidence_weight": 16,
@@ -766,29 +666,29 @@
             "article presse détecté",
             "ville: Casablanca"
           ],
-          "discovered_at": "2026-08-15T05:33:35.583208+00:00",
+          "discovered_at": "2026-08-16T05:38:08.918028+00:00",
           "city_hint": "Casablanca",
           "zone_hint": null,
           "promoter_hint": null,
           "asset_type_hint": null,
           "project_name_hint": null,
           "price_mad": null,
-          "signal_id": "7f2fc0dadbd279fef9f44f9e63fa59a1ec0f3b9b"
+          "signal_id": "a2976794136814a7b207a0b769a32740b7f2b7e4"
         },
         {
           "collector": "news.google_news",
           "channel": "news",
-          "source": "Medias24",
+          "source": "Bladi.net",
           "signal_type": "news_result",
-          "title": "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5",
-          "text": "promotion immobilière Casablanca L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24 <a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5\" target=\"_blank\">L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
+          "title": "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5",
+          "text": "promotion immobilière Casablanca Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5\" target=\"_blank\">Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
           "is_primary": true,
           "launch_weight": 12,
           "confidence_weight": 16,
           "metadata": {
             "query": "promotion immobilière Casablanca",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
+            "published": "Tue, 05 May 2026 07:00:00 GMT",
             "availability": {
               "status": null,
               "unit_count": null,
@@ -802,365 +702,14 @@
             "article presse détecté",
             "ville: Casablanca"
           ],
-          "discovered_at": "2026-08-15T05:33:35.583276+00:00",
+          "discovered_at": "2026-08-16T05:38:08.918057+00:00",
           "city_hint": "Casablanca",
           "zone_hint": null,
           "promoter_hint": null,
           "asset_type_hint": null,
           "project_name_hint": null,
           "price_mad": null,
-          "signal_id": "79ada6c22a846d66b7ddaf30c32894d810c494a3"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Hespress Français - Actualités du Maroc",
-          "signal_type": "news_result",
-          "title": "Casablanca, Rabat, Tanger… Quand les décharges attisent la spéculation immobilière - Hespress Français - Actualités du Maroc",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHVnX29NRjh3R0hadDNwVDh3M2VtcTNMLXpLZGF2SlZDVGl4YS1IUVZyN0p5VG44UFktUVotWUI1YjJJczgweE5YbjhlQkZfMVA5OU9aekc2TjV4c3dCMzYzVW1mWDhqcmVkMjA2bklZZkhLOElKemhoclctUjRvdHNURU85UkZVbkk3SGVEWk43VmNWMm9YbkVXR1F4akJfbFJnUkROVE5qYWxsSmlYbVZxdXg0UQ?oc=5",
-          "text": "promotion immobilière Casablanca Casablanca, Rabat, Tanger… Quand les décharges attisent la spéculation immobilière - Hespress Français - Actualités du Maroc <a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHVnX29NRjh3R0hadDNwVDh3M2VtcTNMLXpLZGF2SlZDVGl4YS1IUVZyN0p5VG44UFktUVotWUI1YjJJczgweE5YbjhlQkZfMVA5OU9aekc2TjV4c3dCMzYzVW1mWDhqcmVkMjA2bklZZkhLOElKemhoclctUjRvdHNURU85UkZVbkk3SGVEWk43VmNWMm9YbkVXR1F4akJfbFJnUkROVE5qYWxsSmlYbVZxdXg0UQ?oc=5\" target=\"_blank\">Casablanca, Rabat, Tanger… Quand les décharges attisent la spéculation immobilière</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Hespress Français - Actualités du Maroc</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Wed, 19 Nov 2025 08:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-08-15T05:33:35.583384+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "53941bcbb79a168eaf104473da6085cd10b2888f"
-        }
-      ]
-    },
-    {
-      "project_id": "058db5c9c34e269ca885890556f4748314cd507c",
-      "name": "Cbmid0fvx3lxte4xntvnntfnstjgwlbitjnqvy1tv0phwmfit0syrlryzve3c0vntuxoc1h2c3nhav9xb2fttddyy0xgzznsqlzcwkjfauyxeefnqkh5mlrmcjrrm0zzrudvnw9hmxnjoffwdgpfqzztm2ktqwlxclhf",
-      "city": "Agadir",
-      "zone": null,
-      "promoter": null,
-      "asset_type": null,
-      "first_detected_at": "2026-08-15T05:33:34.719732+00:00",
-      "last_updated_at": "2026-08-15T05:33:34.719823+00:00",
-      "launch_score": 84,
-      "confidence_score": 100,
-      "investment_score": 36,
-      "urgency_score": 82,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Cbmid0fvx3lxte4xntvnntfnstjgwlbitjnqvy1tv0phwmfit0syrlryzve3c0vntuxoc1h2c3nhav9xb2fttddyy0xgzznsqlzcwkjfauyxeefnqkh5mlrmcjrrm0zzrudvnw9hmxnjoffwdgpfqzztm2ktqwlxclhf | Promoteur: à confirmer | Ville: Agadir | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-      "prices": {
-        "min": null,
-        "max": null
-      },
-      "aliases": [
-        "Cbmid0fvx3lxte4xntvnntfnstjgwlbitjnqvy1tv0phwmfit0syrlryzve3c0vntuxoc1h2c3nhav9xb2fttddyy0xgzznsqlzcwkjfauyxeefnqkh5mlrmcjrrm0zzrudvnw9hmxnjoffwdgpfqzztm2ktqwlxclhf",
-        "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-        "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-        "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma"
-      ],
-      "channels": [
-        "news"
-      ],
-      "sources": [
-        "Industrie du Maroc",
-        "Medias24",
-        "laverite.ma"
-      ],
-      "source_urls": [
-        "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5",
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5",
-        "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5"
-      ],
-      "evidence": {
-        "signal_count": 3,
-        "primary_signal_count": 3,
-        "listing_signal_count": 0,
-        "source_count": 3,
-        "channel_count": 1,
-        "primary_channels": [
-          "news"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "availability": {
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "signal_count": 3
-        },
-        "geo": {
-          "lat": 30.4278,
-          "lng": -9.5981,
-          "sea_distance_km": 4,
-          "station_distance_km": 9,
-          "highway_distance_km": 6
-        },
-        "price_band": "unknown",
-        "price_evolution": {
-          "trend": "unknown",
-          "summary": "Aucune série de prix fiable pour le moment."
-        },
-        "roi": {
-          "label": "Prudent",
-          "five_year_upside_score": 38
-        },
-        "project_slug": "cbmid0fvx3lxte4xntvnntfnstjgwlbitjnqvy1tv0phwmfit0syrlryzve3c0vntuxoc1h2c3nhav9xb2fttddyy0xgzznsqlzcwkjfauyxeefnqkh5mlrmcjrrm0zzrudvnw9hmxnjoffwdgpfqzztm2ktqwlxclhf-058db5c9",
-        "infrastructure": {
-          "sea_distance_km": 4,
-          "station_distance_km": 9,
-          "highway_distance_km": 6
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5",
-            "source": "Industrie du Maroc",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5",
-            "source": "laverite.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          }
-        ],
-        "practical": {
-          "asset_label": "Type à confirmer",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "price_min": null,
-          "price_max": null
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Le prix public n'est pas encore confirmé.",
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [],
-        "listing_links": [],
-        "news_links": [
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5",
-            "source": "Industrie du Maroc",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5",
-            "source": "laverite.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          }
-        ],
-        "urbanism_links": [],
-        "images": [],
-        "videos": [],
-        "changes": [],
-        "is_new_project": true,
-        "qualification": {
-          "status": "new",
-          "notes": ""
-        }
-      },
-      "reasons": [
-        "article presse détecté",
-        "mot-clé presse: projet immobilier",
-        "ville: Agadir",
-        "marqueur de lancement détecté",
-        "ville: Casablanca"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-08-15T05:33:34.719732+00:00",
-          "channel": "news",
-          "source": "Industrie du Maroc",
-          "title": "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5"
-        },
-        {
-          "detected_at": "2026-08-15T05:33:34.719788+00:00",
-          "channel": "news",
-          "source": "Medias24",
-          "title": "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5"
-        },
-        {
-          "detected_at": "2026-08-15T05:33:34.719823+00:00",
-          "channel": "news",
-          "source": "laverite.ma",
-          "title": "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Industrie du Maroc",
-          "signal_type": "news_result",
-          "title": "Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5",
-          "text": "nouveau projet immobilier Maroc Agadir, nouveau moteur de l’immobilier marocain. - Industrie du Maroc <a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE4xNTVnNTFNSTJGWlBITjNqVy1tV0phWmFIT0syRlRYZVE3c0VNTUxoc1h2c3NhaV9xb2FTTDdYY0xGZzNsQlZCWkJfaUYxeEFNQkh5MlRMcjRrM0ZzRUdvNW9hMXNjOFFWdGpFQzZTM2ktQWlxclhF?oc=5\" target=\"_blank\">Agadir, nouveau moteur de l’immobilier marocain.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Industrie du Maroc</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Fri, 24 Jul 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Agadir",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-08-15T05:33:34.719732+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "e7e803e4d1efcb533148f848e562e542776ec698"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Medias24",
-          "signal_type": "news_result",
-          "title": "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5",
-          "text": "nouveau projet immobilier Maroc Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24 <a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5\" target=\"_blank\">Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Sat, 25 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Casablanca",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-08-15T05:33:34.719788+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "ff21a4626796a06265784a55ae4e36e4bead8a1f"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "laverite.ma",
-          "signal_type": "news_result",
-          "title": "Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5",
-          "text": "nouveau projet immobilier Maroc Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir - laverite.ma <a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQSXVpbnQ3X2RRX1JONkRFNzRIUzhUT2hRT2ZNNEE3dEE4TDg0Sy1uZUI2MEttNkNCbzEyRl8za3p1bXA1b0NnU3BDeDNiaGVTc1I4VXo0V2hNZmVkOVp1cjJqMWVkZXB2NU0tdmw4MThhWkFBejVoUEZMU3JLWEJOc05HbGs0S0N3bndQU19tU29peEpMejltM29paU9SQ19fMG1CMGVKbjJEeFZnMmtoRkNTYUcySXVITkE?oc=5\" target=\"_blank\">Renaissance urbaine : Sakankom 2026, le nouveau carrefour de l'investissement immobilier à Agadir</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">laverite.ma</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Thu, 23 Jul 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Agadir",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-08-15T05:33:34.719823+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "91a15167cd3a80a7470fa73a3d04839a072847c2"
+          "signal_id": "f047bc1d2914912df0b3ba12636522ddbb4f8809"
         }
       ]
     }
