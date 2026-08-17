@@ -1,49 +1,629 @@
 {
-  "immediate": [
+  "immediate": [],
+  "digest": [
     {
-      "project_id": "8b570b935b789309438c7cb59deca968553c5f7b",
-      "name": "Projet R",
-      "city": "Marrakech",
-      "zone": "Anfa",
+      "project_id": "c5d6e7486f231762f7098c11f68fdd7e90b64840",
+      "name": "pensé pour vous offrir de l’espace",
+      "city": "Casablanca",
+      "zone": "Hay Mohammadi",
       "promoter": null,
       "asset_type": "villa",
-      "first_detected_at": "2026-08-16T05:38:08.049491+00:00",
-      "last_updated_at": "2026-08-16T05:38:08.917997+00:00",
-      "launch_score": 72,
+      "first_detected_at": "2026-08-17T05:41:19.979993+00:00",
+      "last_updated_at": "2026-08-17T05:42:02.611647+00:00",
+      "launch_score": 76,
       "confidence_score": 100,
-      "investment_score": 88,
+      "investment_score": 100,
+      "urgency_score": 94,
+      "recommendation": "Buy",
+      "status": "urgent",
+      "summary": "pensé pour vous offrir de l’espace | Promoteur: à confirmer | Ville: Casablanca | Zone: Hay Mohammadi | Confirmations: confirmation en cours | Prix observés entre 650000 et 650000 MAD.",
+      "prices": {
+        "min": 650000,
+        "max": 1200000
+      },
+      "aliases": [
+        "pensé pour vous offrir de l’espace",
+        "les pour créer un espace moderne"
+      ],
+      "channels": [
+        "advertising"
+      ],
+      "sources": [
+        "Gessimo Immobilier",
+        "Moubina Immobilier"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4426105817640935",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1728501978191504"
+      ],
+      "evidence": {
+        "signal_count": 2,
+        "primary_signal_count": 2,
+        "listing_signal_count": 0,
+        "source_count": 2,
+        "channel_count": 1,
+        "primary_channels": [
+          "advertising"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "availability": {
+          "status": null,
+          "unit_count_min": null,
+          "surface_m2": {
+            "min": null,
+            "max": null
+          },
+          "signal_count": 2
+        },
+        "geo": {
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "price_band": "cash_ready",
+        "price_evolution": {
+          "trend": "stable",
+          "summary": "Prix observés entre 650000 et 650000 MAD."
+        },
+        "roi": {
+          "label": "Élevé",
+          "five_year_upside_score": 97
+        },
+        "project_slug": "pens-pour-vous-offrir-de-l-espace-c5d6e748",
+        "infrastructure": {
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
+        "source_catalog": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Gessimo Immobilier · ad #4426105817640935",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4426105817640935",
+            "source": "Gessimo Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Villa",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "status": null,
+          "unit_count_min": null,
+          "surface_m2": {
+            "min": null,
+            "max": null
+          },
+          "price_min": 650000,
+          "price_max": 1200000
+        },
+        "ai_analysis": {
+          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+          ],
+          "risks": [
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [],
+        "social_links": [
+          {
+            "kind": "meta_ads",
+            "kind_label": "Publicité Meta",
+            "label": "Gessimo Immobilier · ad #4426105817640935",
+            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4426105817640935",
+            "source": "Gessimo Immobilier",
+            "signal_type": "meta_ad",
+            "proof_level": "direct"
+          }
+        ],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [
+          "assets/meta/meta-ad-4426105817640935.jpg"
+        ],
+        "videos": [],
+        "changes": [
+          "Confidence score en hausse: 57 → 100",
+          "Urgency score en hausse: 57 → 94",
+          "Nouvelles sources détectées: 1 → 2",
+          "Statut projet: monitor → urgent"
+        ],
+        "is_new_project": false,
+        "qualification": {
+          "status": "new",
+          "notes": ""
+        }
+      },
+      "reasons": [
+        "publicité Meta exacte détectée: ad_id 4426105817640935",
+        "prix détecté: 650000 MAD",
+        "type: villa",
+        "ville: Casablanca",
+        "publicité Meta exacte détectée: ad_id 1728501978191504",
+        "prix détecté: 1200000 MAD",
+        "type: apartment_unknown",
+        "ville: Agadir",
+        "zone: Hay Mohammadi"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-08-17T05:41:19.979993+00:00",
+          "channel": "advertising",
+          "source": "Gessimo Immobilier",
+          "title": "Gessimo Immobilier · ad #4426105817640935",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4426105817640935"
+        },
+        {
+          "detected_at": "2026-08-17T05:42:02.611647+00:00",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "title": "Moubina Immobilier · ad #1728501978191504",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1728501978191504"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Gessimo Immobilier",
+          "signal_type": "meta_ad",
+          "title": "Gessimo Immobilier · ad #4426105817640935",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4426105817640935",
+          "text": "Gessimo Immobilier Gessimo Immobilier 🏡 Appartement ou villa ? Pourquoi hésiter quand la villa devient accessible ? À Laguna Grande, devenez propriétaire de votre villa avec jardin à Sidi Rahal à partir de 650 000 DHS. Un projet pensé pour vous offrir de l’espace, des loisirs et un environnement agréable à partager en famille. 💦 Plusieurs piscines & aquaparc ⚽ Terrains de sport 👨‍👩‍👧‍👦 Espaces dédiés aux familles 🌿 Espaces verts & promenade 🕌 Mosquée 🛍️ Commerces de proximité 🔐 Résidence fermée et sécurisée 📍 Sidi Rahal – Casablanca 📞 06 74 30 30 30 🌐 www.gessimo.net WHATSAPP Discuter avec nous Envoyer un message WhatsApp ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUDWAo6QAdRhhC_AWvkd7WorNaUaAtxm_jb8lXJM-51j-u2R-fz0PF0CYhhgCqBfoMqqMJT5W4X5KEX6StF1yWuF8Hx0z2D8cQolXI4WOrzWinTjmcj87T2IPDnyKus2PIjNICjswiWzKnTf",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 45,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "4426105817640935",
+            "page_name": "Gessimo Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4426105817640935",
+            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUDWAo6QAdRhhC_AWvkd7WorNaUaAtxm_jb8lXJM-51j-u2R-fz0PF0CYhhgCqBfoMqqMJT5W4X5KEX6StF1yWuF8Hx0z2D8cQolXI4WOrzWinTjmcj87T2IPDnyKus2PIjNICjswiWzKnTf",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "projet immobilier Casablanca",
+            "city_hint": "Casablanca",
+            "zone_hint": null,
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 4426105817640935",
+            "prix détecté: 650000 MAD",
+            "type: villa",
+            "ville: Casablanca"
+          ],
+          "discovered_at": "2026-08-17T05:41:19.979993+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": "villa",
+          "project_name_hint": "Gessimo Immobilier",
+          "price_mad": 650000,
+          "signal_id": "76adebc918cd08d8bacb318710a08c0d35188fdd"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Moubina Immobilier",
+          "signal_type": "meta_ad",
+          "title": "Moubina Immobilier · ad #1728501978191504",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1728501978191504",
+          "text": "Moubina Immobilier Moubina Immobilier Et si votre plateau devenait un centre de formation premium à Agadir ? 🎓 L’Immeuble Layla vous propose des plateaux de bureaux modulables pour créer un espace moderne, fonctionnel et adapté à votre activité. 💰 À partir de 1,2 MDH 📍 Projet : Avenue El Moukawama, Agadir 📍 Bureau de vente : Hay Mohammadi, Agadir — près de Marjane Market 📞 05 28 82 32 33 | 06 55 56 55 66 🌐 www.moubina.ma WHATSAPP Plateaux de bureaux à vendre à Agadir – Immeuble Layla Découvrez des plateaux de bureaux professionnels à vendre à Agadir, au sein de l’Immeuble Layla, à partir de 1,2 MDH. Nous contacter ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUC_0jLHCgjdjn6q1kKS7VbmQH7bNVEg_3vN0tumgdD7EjzX7mrxiRiwiKvSJuNsvR95obg-11sKLno0MnnPH-A8A1zpMi3ePxmIAe1WpjDcJ5bfko-m_cqq4-dbhhJAz7761r4250sUGm-q",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "1728501978191504",
+            "page_name": "Moubina Immobilier",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1728501978191504",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUC_0jLHCgjdjn6q1kKS7VbmQH7bNVEg_3vN0tumgdD7EjzX7mrxiRiwiKvSJuNsvR95obg-11sKLno0MnnPH-A8A1zpMi3ePxmIAe1WpjDcJ5bfko-m_cqq4-dbhhJAz7761r4250sUGm-q",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "projet immobilier Agadir",
+            "city_hint": "Agadir",
+            "zone_hint": null,
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 1728501978191504",
+            "prix détecté: 1200000 MAD",
+            "type: apartment_unknown",
+            "ville: Agadir",
+            "zone: Hay Mohammadi"
+          ],
+          "discovered_at": "2026-08-17T05:42:02.611647+00:00",
+          "city_hint": "Agadir",
+          "zone_hint": "Hay Mohammadi",
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Moubina Immobilier",
+          "price_mad": 1200000,
+          "signal_id": "856c79c11a6a73bb075aa4b073a0e13c7a2e613d"
+        }
+      ]
+    },
+    {
+      "project_id": "272550d667983496191209a70516022f672d3768",
+      "name": "Projet Plaza Business Center",
+      "city": "Casablanca",
+      "zone": "Bouskoura",
+      "promoter": "Addoha",
+      "asset_type": "apartment_unknown",
+      "first_detected_at": "2026-08-17T05:37:18.448937+00:00",
+      "last_updated_at": "2026-08-17T05:43:44.366693+00:00",
+      "launch_score": 78,
+      "confidence_score": 100,
+      "investment_score": 74,
       "urgency_score": 86,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Projet R | Promoteur: à confirmer | Ville: Marrakech | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "summary": "Projet Plaza Business Center | Promoteur: Addoha | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Prix observés entre 480000 et 480000 MAD.",
       "prices": {
-        "min": null,
-        "max": null
+        "min": 480000,
+        "max": 480000
       },
       "aliases": [
-        "Projet R",
-        "Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz - Le Matin.ma",
-        "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
-        "Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma"
+        "Projet Plaza Business Center",
+        "Plaza Business Center Casablanca",
+        "Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco",
+        "Relogement : Casablanca Iskane recherche 2.400 appartements - La Vie éco"
       ],
       "channels": [
-        "news"
+        "news",
+        "project_discovery"
       ],
       "sources": [
-        "Le Matin.ma",
-        "LesEco.ma",
-        "Ode (Purepeople)"
+        "Addoha",
+        "La Vie éco"
       ],
       "source_urls": [
-        "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWI2ZGNuMHVWYlJhX2h3QkhsdjZ6VURDQVpnMlZzSVNULU5aMnRWVk9nOVFiU2xST1hkMXc5bnlDZEstcUdlN19sMUZyZjNEWDcxXy1MU1l5c3J4WjRZTFNxdzEzZ2hfWmNsNzNUUjZRMks5WW5xLXNmNTQyM2dUM3Y3NGVBQkpqQmlyT3p4YnU0a3FxOXNHeGNBYXFrT0hPeFRN0gGoAUFVX3lxTE1FdjdkMUI5OXItOHBJS1JiMTRLNG1TT1I5MHhTZzl0MGFGZlYyNlRDOHVKdU5RWF9pc0RqVzFwTjJlTktSMHVPR1ZaWUpwN3l0Q3lydHgtUlRRc0FyVXQ1V1NLalhpdUlPOVV5TUkySzF4SnZLOE9ZLTlGUEVhdE9zRzRpLThCRERlMVBNYVU1ZFMyLWxIbWxJNk1EZ0h1M1VQb3NXT2F0Sw?oc=5",
-        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-        "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5"
+        "https://www.groupeaddoha.com/fr/projet/plaza-business-center/",
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZzhmWjk5bTI3T0doYjJ4TEVRYnpuUXBCM2xTMjh1bmNqSXl1bkxrR05VVF8tV21NQ1otSUJIN2duRTZSVERtVE0tZHFWTkRXN3ZJZzlBb1N3em1hWFlnRzJDcGtZUHV0Snl1Zzg2Z1h2TEsxN085QW1Xb1F2LWFobjNSVzlYT3FIc1RvdG85T2VOZVhqVXFNSDlR?oc=5"
       ],
       "evidence": {
         "signal_count": 3,
         "primary_signal_count": 3,
         "listing_signal_count": 0,
-        "source_count": 3,
+        "source_count": 2,
+        "channel_count": 2,
+        "primary_channels": [
+          "project_discovery"
+        ],
+        "secondary_channels": [],
+        "confirmations": [],
+        "confirmation_details": [],
+        "confirmation_count": 0,
+        "availability": {
+          "status": null,
+          "unit_count_min": null,
+          "surface_m2": {
+            "min": null,
+            "max": null
+          },
+          "signal_count": 3
+        },
+        "geo": {
+          "lat": 33.5731,
+          "lng": -7.5898,
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "price_band": "cash_ready",
+        "price_evolution": {
+          "trend": "stable",
+          "summary": "Prix observés entre 480000 et 480000 MAD."
+        },
+        "roi": {
+          "label": "Moyen",
+          "five_year_upside_score": 73
+        },
+        "project_slug": "projet-plaza-business-center-272550d6",
+        "infrastructure": {
+          "sea_distance_km": 6,
+          "station_distance_km": 5,
+          "highway_distance_km": 4
+        },
+        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "source_catalog": [
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Plaza Business Center Casablanca",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.groupeaddoha.com/fr/projet/plaza-business-center/",
+            "source": "Addoha",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          }
+        ],
+        "practical": {
+          "asset_label": "Appartement",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "status": null,
+          "unit_count_min": null,
+          "surface_m2": {
+            "min": null,
+            "max": null
+          },
+          "price_min": 480000,
+          "price_max": 480000
+        },
+        "ai_analysis": {
+          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
+          "strengths": [
+            "Le score de confiance est élevé, donc le signal paraît crédible.",
+            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
+          ],
+          "risks": [
+            "Aucune disponibilité publique confirmée sur portail pour l'instant."
+          ],
+          "next_steps": [
+            "Vérifier le site officiel et les pages sociales du promoteur.",
+            "Confirmer les disponibilités et le ticket d'entrée réel.",
+            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
+          ]
+        },
+        "official_links": [
+          {
+            "kind": "official_site",
+            "kind_label": "Site promoteur",
+            "label": "Plaza Business Center Casablanca",
+            "description": "Page officielle du promoteur ou du projet.",
+            "url": "https://www.groupeaddoha.com/fr/projet/plaza-business-center/",
+            "source": "Addoha",
+            "signal_type": "promoter_page",
+            "proof_level": "direct"
+          }
+        ],
+        "social_links": [],
+        "listing_links": [],
+        "news_links": [],
+        "urbanism_links": [],
+        "images": [],
+        "videos": [],
+        "changes": [
+          "Confidence score en hausse: 44 → 100",
+          "Urgency score en hausse: 44 → 86",
+          "Nouvelles sources détectées: 1 → 2",
+          "Statut projet: monitor → urgent"
+        ],
+        "is_new_project": false,
+        "qualification": {
+          "status": "new",
+          "notes": ""
+        }
+      },
+      "reasons": [
+        "nouvelle page promoteur",
+        "prix détecté: 480000 MAD",
+        "type: apartment_unknown",
+        "ville: Casablanca",
+        "zone: Bouskoura",
+        "article presse détecté",
+        "mot-clé presse: pré-commercialisation",
+        "mot-clé presse: appartement",
+        "ville: Tanger",
+        "marqueur de lancement détecté"
+      ],
+      "timeline": [
+        {
+          "detected_at": "2026-08-17T05:37:18.448937+00:00",
+          "channel": "project_discovery",
+          "source": "Addoha",
+          "title": "Plaza Business Center Casablanca",
+          "url": "https://www.groupeaddoha.com/fr/projet/plaza-business-center/"
+        },
+        {
+          "detected_at": "2026-08-17T05:43:43.795269+00:00",
+          "channel": "news",
+          "source": "La Vie éco",
+          "title": "Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5"
+        },
+        {
+          "detected_at": "2026-08-17T05:43:44.366693+00:00",
+          "channel": "news",
+          "source": "La Vie éco",
+          "title": "Relogement : Casablanca Iskane recherche 2.400 appartements - La Vie éco",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZzhmWjk5bTI3T0doYjJ4TEVRYnpuUXBCM2xTMjh1bmNqSXl1bkxrR05VVF8tV21NQ1otSUJIN2duRTZSVERtVE0tZHFWTkRXN3ZJZzlBb1N3em1hWFlnRzJDcGtZUHV0Snl1Zzg2Z1h2TEsxN085QW1Xb1F2LWFobjNSVzlYT3FIc1RvdG85T2VOZVhqVXFNSDlR?oc=5"
+        }
+      ],
+      "signals": [
+        {
+          "collector": "promoters.websites",
+          "channel": "project_discovery",
+          "source": "Addoha",
+          "signal_type": "promoter_page",
+          "title": "Plaza Business Center Casablanca",
+          "url": "https://www.groupeaddoha.com/fr/projet/plaza-business-center/",
+          "text": "Plaza Business Center Casablanca Plaza Business Center | Découvrez les projets du groupe Addoha Plaza Business Center Le projet Plaza Business Center est équipé de nombreux équipements et services Nos autres projets Nos conseillers commerciaux vous accueillent dans nos bureaux de vente du lundi au samedi, de 9h00 à 19h00. Être rappelé Addoha Business Le projet Plaza Business Center à Casablanca, du groupe Addoha, des locaux commerciaux et des bureaux dans un emplacement stratégique au quartier Oulfa. Découvrez votre opportunité dès maintenant. Plaza Business Center | Découvrez les projets du groupe Addoha Le projet Plaza Business Center à Casablanca, du groupe Addoha, des locaux commerciaux et des bureaux dans un emplacement stratégique au quartier Oulfa. Découvrez votre opportunité dès maintenant. Plaza Business Center | Découvrez les projets du groupe Addoha Lang Arabe Français Villes Découvrez nos projets à travers les villes du Maroc Nos projets Logements économiques et de moyen standing Addoha Investissement Des opportunités d’investissement exclusives au sein de projets à fort potentiel Guichet Unique Un service dédié à vos démarches Daam Sakan Le programme d’aide directe au logement Groupe Addoha Un acteur majeur du marché immobilier national Contactez-nous Nos conseillers commerciaux sont à votre écoute Conseils Des conseils pour réussir votre projet immobilier Menu principal / Nos projets L’Oriental Casablanca – Settat Rabat – Salé – Kénitra Laâyoune – Sakia El Hamra Béni Mellal – Khénifra Tanger – Tétouan – Al Hoceïma Fès – Meknès Marrakech – Safi Menu principal / Tous les projets / Ennasr Oujda Hadaek Oujda Oujda Résidence Al Anouar Casablanca Cité Annouzha Casablanca Nour Lisassfa Casablanca Hadaek Arrahma Casablanca Plaza Business Center Casablanca Al Badr Casablanca Al Abrar Casablanca Attawhid Casablanca Safae Casablanca Al Fajr Casablanca Al Fath Casablanca Al Mahd Casablanca Al Azhar Casablanca Al Firdaous Rabat - Aïn Aouda Al Imane Kénitra Attaissir Kénitra Les Residences Du Golf Eco Kénitra Ennassim Rabat - Aïn Aouda Al Mostakbal Laâyoune Al Wahda Laâyoune Al Amal Béni Mellal Al Morjane Fkih Ben Saleh Sable d’or Tanger Al Yacout Tanger Arraha Tanger Al Yassamine Fès L'oliveraie Fès Azzohour Meknès Al Assil Meknès Toulal Meknès Ouislane Meknès Les Jardins De Targa Marrakech Les Portes de Marrakech Marrakech Abraj Menara Marrakech Al Bahja Marrakech Menu principal / Villes Casablanca Marrakech Rabat - Aïn Aouda Béni Mellal Fkih Ben Saleh Fès Meknès Oujda Laâyoune Kénitra Tanger Menu principal / Addoha Investissement Locaux commerciaux Addoha Bureaux Addoha Équipements privés Casablanca Plaza Business Center Accueil Nos Projets Plaza Business Center ADDOHA Bureaux Plateaux de bureaux Le projet Plaza Business Center propose des plateaux de bureaux à vendre dotés d’équipements modernes pour garantir votre confort au quotidien et une grande fonctionnalité : climatisation centrale, ascenseur et parking souterrain. Il bénéficie également d’un emplacement stratégique dans le quartier Oulfa, à quelques minutes seulement du CFC. Prix À partir de 480 000 dirhams Commerces Les locaux commerciaux du projet Plaza Business Center bénéficient d’un emplacement stratégique privilégié, adapté à différentes activités commerciales, au sein d’un espace structuré garantissant un flux important et une forte visibilité, constituant ainsi une opportunité d’investissement prometteuse pour les porteurs de projets et les entrepreneurs. Prix À partir de 675 000 dirhams Le projet Plaza Business Center est équipé de nombreux équipements et services Locaux commerciaux Écoles Mosquée Collège Aire de jeux Crèche Centre de santé Espaces verts Nos autres projets Nour Lisassfa Casablanca Route d’El Jadida Al Badr Casablanca Tit Mellil Al Abrar Casablanca Médiouna Safae Casablanca Bouskoura Al Fath Casablanca Route Errahma Al Fajr Casablanca Route d’El Jadida Al Mahd Casablanca Route Errahma Attawhid Casablanca Route Errahma Hadaek Arrahma Casablanca Route Errahma Nos conseillers commerciaux vous accueillent dans nos bureaux de vente du lundi au samedi, de 9h00 à 19h00. موقع المشروع خرائط Google تطبيق Waze Être rappelé Projet Résidence Al Anouar Cité Annouzha Nour Lisassfa Hadaek Arrahma Plaza Business Center Al Badr Al Abrar Attawhid Safae Al Fajr Al Fath Al Mahd Al Azhar Les Jardins De Targa Les Portes de Marrakech Abraj Menara Al Bahja Al Firdaous Ennassim Al Amal Azzohour Al Assil Toulal Ouislane Al Imane Attaissir Les Residences Du Golf Eco Al Morjane Al Mostakbal Al Wahda Sable d’or Al Yacout Arraha Al Yassamine L'oliveraie Ennasr Hadaek Oujda Addoha Business Bureaux à vendre Locaux commerciaux Équipements privés Autres liens Groupe Addoha Votre guide de financement immobilier Contactez-nous Conventions Nos projets Découvrez tous les projets de ADDOHA Casablanca Résidence Al Anouar Cité Annouzha Nour Lisassfa Hadaek Arrahma Plaza Business Center Al Badr Al Abrar Attawhid Safae Al Fajr Al Fath Al Mahd Al Azhar Marrakech Les Jardins De Targa Les Portes de Marrakech Abraj Menara Al Bahja Rabat - Aïn Aouda Al Firdaous Ennassim Oujda Hadaek Oujda Ennasr Laâyoune Al Wahda Al Mostakbal Kénitra Al Imane Attaissir Les Residences Du Golf Eco Fkih Ben Saleh Al Morjane Béni Mellal Al Amal Tanger Sable d’or Al Yacout Arraha Fès Al Yassamine L'oliveraie Meknès Azzohour Ouislane Toulal Al Assil Mentions légales CGU Politique de confidentialité Politique des cookies Copyright © 2026 Tous droits réservés par Addoha RFC Digital +212522343435 Être rappelé",
+          "is_primary": true,
+          "launch_weight": 30,
+          "confidence_weight": 32,
+          "metadata": {
+            "promoter_hint": "Addoha",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "nouvelle page promoteur",
+            "prix détecté: 480000 MAD",
+            "type: apartment_unknown",
+            "ville: Casablanca",
+            "zone: Bouskoura"
+          ],
+          "discovered_at": "2026-08-17T05:37:18.448937+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": "Bouskoura",
+          "promoter_hint": "Addoha",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": null,
+          "price_mad": 480000,
+          "signal_id": "bdb2dd40c6e79483a108b967f9a5f86d631436b9"
+        },
+        {
+          "collector": "news.google_news",
+          "channel": "news",
+          "source": "La Vie éco",
+          "signal_type": "news_result",
+          "title": "Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5",
+          "text": "pré-commercialisation immobilier Tanger Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco <a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5\" target=\"_blank\">Tanger City Center : les premiers appartements prêts à la fin de l’année</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Vie éco</font>",
+          "is_primary": true,
+          "launch_weight": 32,
+          "confidence_weight": 32,
+          "metadata": {
+            "query": "pré-commercialisation immobilier Tanger",
+            "published": "Thu, 18 Oct 2012 07:00:00 GMT",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "article presse détecté",
+            "mot-clé presse: pré-commercialisation",
+            "mot-clé presse: appartement",
+            "type: apartment_unknown",
+            "ville: Tanger",
+            "marqueur de lancement détecté"
+          ],
+          "discovered_at": "2026-08-17T05:43:43.795269+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": null,
+          "price_mad": null,
+          "signal_id": "15ffda6fc43ad71c250108e63c1e87946fc435c2"
+        },
+        {
+          "collector": "news.google_news",
+          "channel": "news",
+          "source": "La Vie éco",
+          "signal_type": "news_result",
+          "title": "Relogement : Casablanca Iskane recherche 2.400 appartements - La Vie éco",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZzhmWjk5bTI3T0doYjJ4TEVRYnpuUXBCM2xTMjh1bmNqSXl1bkxrR05VVF8tV21NQ1otSUJIN2duRTZSVERtVE0tZHFWTkRXN3ZJZzlBb1N3em1hWFlnRzJDcGtZUHV0Snl1Zzg2Z1h2TEsxN085QW1Xb1F2LWFobjNSVzlYT3FIc1RvdG85T2VOZVhqVXFNSDlR?oc=5",
+          "text": "promotion immobilière Casablanca Relogement : Casablanca Iskane recherche 2.400 appartements - La Vie éco <a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxQZzhmWjk5bTI3T0doYjJ4TEVRYnpuUXBCM2xTMjh1bmNqSXl1bkxrR05VVF8tV21NQ1otSUJIN2duRTZSVERtVE0tZHFWTkRXN3ZJZzlBb1N3em1hWFlnRzJDcGtZUHV0Snl1Zzg2Z1h2TEsxN085QW1Xb1F2LWFobjNSVzlYT3FIc1RvdG85T2VOZVhqVXFNSDlR?oc=5\" target=\"_blank\">Relogement : Casablanca Iskane recherche 2.400 appartements</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Vie éco</font>",
+          "is_primary": true,
+          "launch_weight": 16,
+          "confidence_weight": 21,
+          "metadata": {
+            "query": "promotion immobilière Casablanca",
+            "published": "Tue, 23 Dec 2025 08:00:00 GMT",
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "article presse détecté",
+            "mot-clé presse: appartement",
+            "type: apartment_unknown",
+            "ville: Casablanca"
+          ],
+          "discovered_at": "2026-08-17T05:43:44.366693+00:00",
+          "city_hint": "Casablanca",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": null,
+          "price_mad": null,
+          "signal_id": "b80fd0dc30c95e547901796664d0bb45d18284f8"
+        }
+      ]
+    },
+    {
+      "project_id": "03348aaf0f83ee578d53e41405b1b4452e29b0fe",
+      "name": "Cbmirgfbvv95cuxovg1paxdju2jhsdnbvwrkz3jfelpnbkrkvelpnv9lc3pmamhrvwtor0zktvjinezibvjpue1lcgxncngtykdlsgd3vfpstzzlsxzpafbcewrpdnrurklpotjzrlpodvy5ytlqz2phauhlufvbcjlkz3ngttiwc1lss1voyk54vuvknuniylnovudlchg5zmh4unldszu4cfztuxgzvkvdr0lnmwppmle",
+      "city": "Rabat",
+      "zone": null,
+      "promoter": null,
+      "asset_type": null,
+      "first_detected_at": "2026-08-17T05:43:43.795318+00:00",
+      "last_updated_at": "2026-08-17T05:43:44.366757+00:00",
+      "launch_score": 52,
+      "confidence_score": 71,
+      "investment_score": 38,
+      "urgency_score": 56,
+      "recommendation": "Watch",
+      "status": "watch",
+      "summary": "Cbmirgfbvv95cuxovg1paxdju2jhsdnbvwrkz3jfelpnbkrkvelpnv9lc3pmamhrvwtor0zktvjinezibvjpue1lcgxncngtykdlsgd3vfpstzzlsxzpafbcewrpdnrurklpotjzrlpodvy5ytlqz2phauhlufvbcjlkz3ngttiwc1lss1voyk54vuvknuniylnovudlchg5zmh4unldszu4cfztuxgzvkvdr0lnmwppmle | Promoteur: à confirmer | Ville: Rabat | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "prices": {
+        "min": null,
+        "max": null
+      },
+      "aliases": [
+        "Cbmirgfbvv95cuxovg1paxdju2jhsdnbvwrkz3jfelpnbkrkvelpnv9lc3pmamhrvwtor0zktvjinezibvjpue1lcgxncngtykdlsgd3vfpstzzlsxzpafbcewrpdnrurklpotjzrlpodvy5ytlqz2phauhlufvbcjlkz3ngttiwc1lss1voyk54vuvknuniylnovudlchg5zmh4unldszu4cfztuxgzvkvdr0lnmwppmle",
+        "Le groupe Aksal annonce deux nouveaux Morocco Mall à Rabat et Marrakech - Le360",
+        "Escroquerie immobilière: 300 familles lésées et trois promoteurs incarcérés à Casablanca - Le360",
+        "Info360. Affaire Casa Parc: huit mois de sursis pour les deux promoteurs Benhima et Benabdelali, une banque d’affaires en passe de reprendre le projet - Le360"
+      ],
+      "channels": [
+        "news"
+      ],
+      "sources": [
+        "Le360"
+      ],
+      "source_urls": [
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVG1PaXdJU2JHSDNBVWRKZ3JFelpnbkRkVElpNV9Lc3pMamhrVWtOR0ZkTVJINEZibVJpUE1lcGxNcngtYkdLSGd3VFpSTzZlSXZpaFBCeWRPdnRuRklPOTJzRlpOdVY5YTlQZ2phaUhlUFVBcjlKZ3NGTTIwc1lSS1VOYk54VUVkNUNIYlNOVUdLcHg5Zmh4UnlDSzU4cFZTUXgzVkVDR0lnMWpPMlE?oc=5",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdVRacDdzdDhqSnBsZlFWSFRtS2FiRXF0QVFWMnFNX0dpWXc4eDVpNTVPNkZiLXlreURVeE9DUk9EVU9BV21CRFhGcTFza0dyeUdRSkdCRi1qelNxZjlWaVVVcHNhQ1lyaFllNFZ3Q3h6cW96X0NwTXZYU1dqdlNmcy0ya0Ywa3UtaDBFRXlBcmF6N1QxODU5ZmswY201V29TQzNMRVpCWUxRUjVZNlBITTdWT0JrZ0EwcFBMZmUwclhkLTJadU5tc0dGVXBWUWZFRE5HOUd0cnpmTDQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbEt5dWRtY1pyZVMtY0J4Q3Q2V3dFNzZBMVAxRk9LMlJWMUZRbjZMUkkwdGNlZ2d2VVg5SHA3RDdpcklqT0pBb1c0eko2SWxoOTVfeHUteHlnaHcwVVNiNUNmb1BxQU9qRHRVcnpxZzlHazc3dy1hY3p1bnJFM2tkWEVPb0FjaXk2MEd6VTgwXzVrQlhzZERmc1VJMW5jakFvZnJaTFphYzNSWnlBekpuTmlUUWFJakFIaWc3Zk5xWUdweUk0dWlGSjN6enVVakFZaWtOaHRFMHZoYll3T0J0Mi15RkZJcmM3?oc=5"
+      ],
+      "evidence": {
+        "signal_count": 3,
+        "primary_signal_count": 3,
+        "listing_signal_count": 0,
+        "source_count": 1,
         "channel_count": 1,
         "primary_channels": [
           "news"
@@ -62,351 +642,10 @@
           "signal_count": 3
         },
         "geo": {
-          "lat": 31.6295,
-          "lng": -7.9811,
-          "sea_distance_km": 180,
-          "station_distance_km": 5,
-          "highway_distance_km": 6
-        },
-        "price_band": "unknown",
-        "price_evolution": {
-          "trend": "unknown",
-          "summary": "Aucune série de prix fiable pour le moment."
-        },
-        "roi": {
-          "label": "Élevé",
-          "five_year_upside_score": 86
-        },
-        "project_slug": "projet-r-8b570b93",
-        "infrastructure": {
-          "sea_distance_km": 180,
-          "station_distance_km": 5,
-          "highway_distance_km": 6
-        },
-        "recommendation_narrative": "Acheter rapidement si vérifications terrain confirment le lancement.",
-        "source_catalog": [
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz - Le Matin.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWI2ZGNuMHVWYlJhX2h3QkhsdjZ6VURDQVpnMlZzSVNULU5aMnRWVk9nOVFiU2xST1hkMXc5bnlDZEstcUdlN19sMUZyZjNEWDcxXy1MU1l5c3J4WjRZTFNxdzEzZ2hfWmNsNzNUUjZRMks5WW5xLXNmNTQyM2dUM3Y3NGVBQkpqQmlyT3p4YnU0a3FxOXNHeGNBYXFrT0hPeFRN0gGoAUFVX3lxTE1FdjdkMUI5OXItOHBJS1JiMTRLNG1TT1I5MHhTZzl0MGFGZlYyNlRDOHVKdU5RWF9pc0RqVzFwTjJlTktSMHVPR1ZaWUpwN3l0Q3lydHgtUlRRc0FyVXQ1V1NLalhpdUlPOVV5TUkySzF4SnZLOE9ZLTlGUEVhdE9zRzRpLThCRERlMVBNYVU1ZFMyLWxIbWxJNk1EZ0h1M1VQb3NXT2F0Sw?oc=5",
-            "source": "Le Matin.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-            "source": "Ode (Purepeople)",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5",
-            "source": "LesEco.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          }
-        ],
-        "practical": {
-          "asset_label": "Villa",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "price_min": null,
-          "price_max": null
-        },
-        "ai_analysis": {
-          "summary": "Acheter rapidement si vérifications terrain confirment le lancement.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible.",
-            "Le potentiel investissement ressort comme intéressant selon le profil configuré."
-          ],
-          "risks": [
-            "Le prix public n'est pas encore confirmé.",
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [],
-        "listing_links": [],
-        "news_links": [
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz - Le Matin.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWI2ZGNuMHVWYlJhX2h3QkhsdjZ6VURDQVpnMlZzSVNULU5aMnRWVk9nOVFiU2xST1hkMXc5bnlDZEstcUdlN19sMUZyZjNEWDcxXy1MU1l5c3J4WjRZTFNxdzEzZ2hfWmNsNzNUUjZRMks5WW5xLXNmNTQyM2dUM3Y3NGVBQkpqQmlyT3p4YnU0a3FxOXNHeGNBYXFrT0hPeFRN0gGoAUFVX3lxTE1FdjdkMUI5OXItOHBJS1JiMTRLNG1TT1I5MHhTZzl0MGFGZlYyNlRDOHVKdU5RWF9pc0RqVzFwTjJlTktSMHVPR1ZaWUpwN3l0Q3lydHgtUlRRc0FyVXQ1V1NLalhpdUlPOVV5TUkySzF4SnZLOE9ZLTlGUEVhdE9zRzRpLThCRERlMVBNYVU1ZFMyLWxIbWxJNk1EZ0h1M1VQb3NXT2F0Sw?oc=5",
-            "source": "Le Matin.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-            "source": "Ode (Purepeople)",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5",
-            "source": "LesEco.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          }
-        ],
-        "urbanism_links": [],
-        "images": [],
-        "videos": [],
-        "changes": [],
-        "is_new_project": true,
-        "qualification": {
-          "status": "new",
-          "notes": ""
-        }
-      },
-      "reasons": [
-        "article presse détecté",
-        "mot-clé presse: projet immobilier",
-        "mot-clé presse: villa",
-        "type: villa",
-        "ville: Marrakech",
-        "marqueur de lancement détecté",
-        "ville: Casablanca",
-        "zone: Anfa"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-08-16T05:38:08.049491+00:00",
-          "channel": "news",
-          "source": "Le Matin.ma",
-          "title": "Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz - Le Matin.ma",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWI2ZGNuMHVWYlJhX2h3QkhsdjZ6VURDQVpnMlZzSVNULU5aMnRWVk9nOVFiU2xST1hkMXc5bnlDZEstcUdlN19sMUZyZjNEWDcxXy1MU1l5c3J4WjRZTFNxdzEzZ2hfWmNsNzNUUjZRMks5WW5xLXNmNTQyM2dUM3Y3NGVBQkpqQmlyT3p4YnU0a3FxOXNHeGNBYXFrT0hPeFRN0gGoAUFVX3lxTE1FdjdkMUI5OXItOHBJS1JiMTRLNG1TT1I5MHhTZzl0MGFGZlYyNlRDOHVKdU5RWF9pc0RqVzFwTjJlTktSMHVPR1ZaWUpwN3l0Q3lydHgtUlRRc0FyVXQ1V1NLalhpdUlPOVV5TUkySzF4SnZLOE9ZLTlGUEVhdE9zRzRpLThCRERlMVBNYVU1ZFMyLWxIbWxJNk1EZ0h1M1VQb3NXT2F0Sw?oc=5"
-        },
-        {
-          "detected_at": "2026-08-16T05:38:08.049527+00:00",
-          "channel": "news",
-          "source": "Ode (Purepeople)",
-          "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5"
-        },
-        {
-          "detected_at": "2026-08-16T05:38:08.917997+00:00",
-          "channel": "news",
-          "source": "LesEco.ma",
-          "title": "Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Le Matin.ma",
-          "signal_type": "news_result",
-          "title": "Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz - Le Matin.ma",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWI2ZGNuMHVWYlJhX2h3QkhsdjZ6VURDQVpnMlZzSVNULU5aMnRWVk9nOVFiU2xST1hkMXc5bnlDZEstcUdlN19sMUZyZjNEWDcxXy1MU1l5c3J4WjRZTFNxdzEzZ2hfWmNsNzNUUjZRMks5WW5xLXNmNTQyM2dUM3Y3NGVBQkpqQmlyT3p4YnU0a3FxOXNHeGNBYXFrT0hPeFRN0gGoAUFVX3lxTE1FdjdkMUI5OXItOHBJS1JiMTRLNG1TT1I5MHhTZzl0MGFGZlYyNlRDOHVKdU5RWF9pc0RqVzFwTjJlTktSMHVPR1ZaWUpwN3l0Q3lydHgtUlRRc0FyVXQ1V1NLalhpdUlPOVV5TUkySzF4SnZLOE9ZLTlGUEVhdE9zRzRpLThCRERlMVBNYVU1ZFMyLWxIbWxJNk1EZ0h1M1VQb3NXT2F0Sw?oc=5",
-          "text": "nouveau projet immobilier Maroc Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz - Le Matin.ma <a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxOaWI2ZGNuMHVWYlJhX2h3QkhsdjZ6VURDQVpnMlZzSVNULU5aMnRWVk9nOVFiU2xST1hkMXc5bnlDZEstcUdlN19sMUZyZjNEWDcxXy1MU1l5c3J4WjRZTFNxdzEzZ2hfWmNsNzNUUjZRMks5WW5xLXNmNTQyM2dUM3Y3NGVBQkpqQmlyT3p4YnU0a3FxOXNHeGNBYXFrT0hPeFRN0gGoAUFVX3lxTE1FdjdkMUI5OXItOHBJS1JiMTRLNG1TT1I5MHhTZzl0MGFGZlYyNlRDOHVKdU5RWF9pc0RqVzFwTjJlTktSMHVPR1ZaWUpwN3l0Q3lydHgtUlRRc0FyVXQ1V1NLalhpdUlPOVV5TUkySzF4SnZLOE9ZLTlGUEVhdE9zRzRpLThCRERlMVBNYVU1ZFMyLWxIbWxJNk1EZ0h1M1VQb3NXT2F0Sw?oc=5\" target=\"_blank\">Marrakech : un nouveau projet résidentiel de 52 villas lancé sur la route d’Amezmiz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Matin.ma</font>",
-          "is_primary": true,
-          "launch_weight": 32,
-          "confidence_weight": 35,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Mon, 30 Mar 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "mot-clé presse: villa",
-            "type: villa",
-            "ville: Marrakech",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-08-16T05:38:08.049491+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "villa",
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "5c13eb0f415fca043c1ed444369f9786725e20bf"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Ode (Purepeople)",
-          "signal_type": "news_result",
-          "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-          "text": "nouveau projet immobilier Maroc L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople) <a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5\" target=\"_blank\">L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Ode (Purepeople)</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Sun, 15 Mar 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Marrakech",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-08-16T05:38:08.049527+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "701a268d8a9b7d7c6dad5cffeeb45aadbff6b368"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "LesEco.ma",
-          "signal_type": "news_result",
-          "title": "Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5",
-          "text": "promotion immobilière Casablanca Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO) - LesEco.ma <a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxOZlduY3A3U2dzb3pqNDNiMkc0Ujd0MmN0UF9paXk4cm5FUHhPX1JRQ1M1amNIcTB4LXdPWXV5ejRONkVRck1OOFJvNnFZV3BZb0JEbFlVYlNXcWlmd0dVN1Y3dkZ4QUxfWjJlWVpqMFpjWkFYNThHakxlR1ZUS0ZBaHk5RGVidl9QU002X2tKYWJvWGdL?oc=5\" target=\"_blank\">Immobilier premium : Anfa Realties parie sur Marrakech (VIDEO)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">LesEco.ma</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Mon, 13 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca",
-            "zone: Anfa"
-          ],
-          "discovered_at": "2026-08-16T05:38:08.917997+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "e49860e31bd143ec01010b3f37fcf033274ba7b8"
-        }
-      ]
-    },
-    {
-      "project_id": "2bbb99c489101b5c83caf2b1e5a2f2b2392d8696",
-      "name": "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq",
-      "city": "Casablanca",
-      "zone": null,
-      "promoter": null,
-      "asset_type": null,
-      "first_detected_at": "2026-08-16T05:38:08.049563+00:00",
-      "last_updated_at": "2026-08-16T05:38:08.918057+00:00",
-      "launch_score": 64,
-      "confidence_score": 93,
-      "investment_score": 43,
-      "urgency_score": 70,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-      "prices": {
-        "min": null,
-        "max": null
-      },
-      "aliases": [
-        "Cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq",
-        "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
-        "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
-        "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-        "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net"
-      ],
-      "channels": [
-        "news"
-      ],
-      "sources": [
-        "Abidjan.net News",
-        "Bladi.net"
-      ],
-      "source_urls": [
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5",
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5"
-      ],
-      "evidence": {
-        "signal_count": 4,
-        "primary_signal_count": 4,
-        "listing_signal_count": 0,
-        "source_count": 2,
-        "channel_count": 1,
-        "primary_channels": [
-          "news"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "availability": {
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "signal_count": 4
-        },
-        "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
+          "lat": 34.0209,
+          "lng": -6.8416,
+          "sea_distance_km": 7,
+          "station_distance_km": 4,
           "highway_distance_km": 4
         },
         "price_band": "unknown",
@@ -416,43 +655,23 @@
         },
         "roi": {
           "label": "Prudent",
-          "five_year_upside_score": 44
+          "five_year_upside_score": 35
         },
-        "project_slug": "cbmijwfbvv95cuxpbkhom0mzzvvyek9rywtqckxicvhhawm1of9fnmpwt1k1sfrnuu9qzxp5mmpweuzgmlayltbmsktgdfy0bdl4rufwa25frkzgcg5nr0lfwerpoggydxj4amfozla2uxqtq2dytfrfz3vhsu0zujjuagztvulnzm1fcxa2zlh0mkxbsxnpynvmvq-2bbb99c4",
+        "project_slug": "cbmirgfbvv95cuxovg1paxdju2jhsdnbvwrkz3jfelpnbkrkvelpnv9lc3pmamhrvwtor0zktvjinezibvjpue1lcgxncngtykdlsgd3vfpstzzlsxzpafbcewrpdnrurklpotjzrlpodvy5ytlqz2phauhlufvbcjlkz3ngttiwc1lss1voyk54vuvknuniylnovudlchg5zmh4unldszu4cfztuxgzvkvdr0lnmwppmle-03348aaf",
         "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
+          "sea_distance_km": 7,
+          "station_distance_km": 4,
           "highway_distance_km": 4
         },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
+        "recommendation_narrative": "Garder en observation jusqu'à nouvelles confirmations.",
         "source_catalog": [
           {
             "kind": "google_news",
             "kind_label": "Article / Google News",
-            "label": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
+            "label": "Le groupe Aksal annonce deux nouveaux Morocco Mall à Rabat et Marrakech - Le360",
             "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
-            "source": "Bladi.net",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-            "source": "Abidjan.net News",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5",
-            "source": "Bladi.net",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVG1PaXdJU2JHSDNBVWRKZ3JFelpnbkRkVElpNV9Lc3pMamhrVWtOR0ZkTVJINEZibVJpUE1lcGxNcngtYkdLSGd3VFpSTzZlSXZpaFBCeWRPdnRuRklPOTJzRlpOdVY5YTlQZ2phaUhlUFVBcjlKZ3NGTTIwc1lSS1VOYk54VUVkNUNIYlNOVUdLcHg5Zmh4UnlDSzU4cFZTUXgzVkVDR0lnMWpPMlE?oc=5",
+            "source": "Le360",
             "signal_type": "news_result",
             "proof_level": "watch"
           }
@@ -470,10 +689,8 @@
           "price_max": null
         },
         "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
+          "summary": "Garder en observation jusqu'à nouvelles confirmations.",
+          "strengths": [],
           "risks": [
             "Le prix public n'est pas encore confirmé.",
             "Aucune disponibilité publique confirmée sur portail pour l'instant."
@@ -491,30 +708,10 @@
           {
             "kind": "google_news",
             "kind_label": "Article / Google News",
-            "label": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
+            "label": "Le groupe Aksal annonce deux nouveaux Morocco Mall à Rabat et Marrakech - Le360",
             "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
-            "source": "Bladi.net",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-            "source": "Abidjan.net News",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5",
-            "source": "Bladi.net",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVG1PaXdJU2JHSDNBVWRKZ3JFelpnbkRkVElpNV9Lc3pMamhrVWtOR0ZkTVJINEZibVJpUE1lcGxNcngtYkdLSGd3VFpSTzZlSXZpaFBCeWRPdnRuRklPOTJzRlpOdVY5YTlQZ2phaUhlUFVBcjlKZ3NGTTIwc1lSS1VOYk54VUVkNUNIYlNOVUdLcHg5Zmh4UnlDSzU4cFZTUXgzVkVDR0lnMWpPMlE?oc=5",
+            "source": "Le360",
             "signal_type": "news_result",
             "proof_level": "watch"
           }
@@ -522,8 +719,12 @@
         "urbanism_links": [],
         "images": [],
         "videos": [],
-        "changes": [],
-        "is_new_project": true,
+        "changes": [
+          "Confidence score en hausse: 55 → 71",
+          "Urgency score en hausse: 45 → 56",
+          "Statut projet: monitor → watch"
+        ],
+        "is_new_project": false,
         "qualification": {
           "status": "new",
           "notes": ""
@@ -531,55 +732,49 @@
       },
       "reasons": [
         "article presse détecté",
-        "mot-clé presse: projet immobilier",
+        "mot-clé presse: pré-commercialisation",
+        "ville: Rabat",
         "marqueur de lancement détecté",
         "ville: Casablanca"
       ],
       "timeline": [
         {
-          "detected_at": "2026-08-16T05:38:08.049563+00:00",
+          "detected_at": "2026-08-17T05:43:43.795318+00:00",
           "channel": "news",
-          "source": "Bladi.net",
-          "title": "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5"
+          "source": "Le360",
+          "title": "Le groupe Aksal annonce deux nouveaux Morocco Mall à Rabat et Marrakech - Le360",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVG1PaXdJU2JHSDNBVWRKZ3JFelpnbkRkVElpNV9Lc3pMamhrVWtOR0ZkTVJINEZibVJpUE1lcGxNcngtYkdLSGd3VFpSTzZlSXZpaFBCeWRPdnRuRklPOTJzRlpOdVY5YTlQZ2phaUhlUFVBcjlKZ3NGTTIwc1lSS1VOYk54VUVkNUNIYlNOVUdLcHg5Zmh4UnlDSzU4cFZTUXgzVkVDR0lnMWpPMlE?oc=5"
         },
         {
-          "detected_at": "2026-08-16T05:38:08.917971+00:00",
+          "detected_at": "2026-08-17T05:43:44.366603+00:00",
           "channel": "news",
-          "source": "Bladi.net",
-          "title": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5"
+          "source": "Le360",
+          "title": "Escroquerie immobilière: 300 familles lésées et trois promoteurs incarcérés à Casablanca - Le360",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdVRacDdzdDhqSnBsZlFWSFRtS2FiRXF0QVFWMnFNX0dpWXc4eDVpNTVPNkZiLXlreURVeE9DUk9EVU9BV21CRFhGcTFza0dyeUdRSkdCRi1qelNxZjlWaVVVcHNhQ1lyaFllNFZ3Q3h6cW96X0NwTXZYU1dqdlNmcy0ya0Ywa3UtaDBFRXlBcmF6N1QxODU5ZmswY201V29TQzNMRVpCWUxRUjVZNlBITTdWT0JrZ0EwcFBMZmUwclhkLTJadU5tc0dGVXBWUWZFRE5HOUd0cnpmTDQ?oc=5"
         },
         {
-          "detected_at": "2026-08-16T05:38:08.918028+00:00",
+          "detected_at": "2026-08-17T05:43:44.366757+00:00",
           "channel": "news",
-          "source": "Abidjan.net News",
-          "title": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5"
-        },
-        {
-          "detected_at": "2026-08-16T05:38:08.918057+00:00",
-          "channel": "news",
-          "source": "Bladi.net",
-          "title": "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5"
+          "source": "Le360",
+          "title": "Info360. Affaire Casa Parc: huit mois de sursis pour les deux promoteurs Benhima et Benabdelali, une banque d’affaires en passe de reprendre le projet - Le360",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbEt5dWRtY1pyZVMtY0J4Q3Q2V3dFNzZBMVAxRk9LMlJWMUZRbjZMUkkwdGNlZ2d2VVg5SHA3RDdpcklqT0pBb1c0eko2SWxoOTVfeHUteHlnaHcwVVNiNUNmb1BxQU9qRHRVcnpxZzlHazc3dy1hY3p1bnJFM2tkWEVPb0FjaXk2MEd6VTgwXzVrQlhzZERmc1VJMW5jakFvZnJaTFphYzNSWnlBekpuTmlUUWFJakFIaWc3Zk5xWUdweUk0dWlGSjN6enVVakFZaWtOaHRFMHZoYll3T0J0Mi15RkZJcmM3?oc=5"
         }
       ],
       "signals": [
         {
           "collector": "news.google_news",
           "channel": "news",
-          "source": "Bladi.net",
+          "source": "Le360",
           "signal_type": "news_result",
-          "title": "Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5",
-          "text": "nouveau projet immobilier Maroc Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxPbkhOM0MzZVVyek9RYWtqckxIcVhHaWM1OF9FNmpwT1k1SFRnUU9QZXp5MmpweUZGMlAyLTBMSktGdFY0bDl4RUFwa25fRkZGcG5NR0lfWERpOGgydXJ4amFOZlA2UXQtQ2dYTFRfZ3VhSU0zUjJUaGZTVUlnZm1fcXA2Zlh0MkxBSXNPYnVmVQ?oc=5\" target=\"_blank\">Immobilier au Maroc : les MRE profitent massivement de l’aide de l’État</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
+          "title": "Le groupe Aksal annonce deux nouveaux Morocco Mall à Rabat et Marrakech - Le360",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVG1PaXdJU2JHSDNBVWRKZ3JFelpnbkRkVElpNV9Lc3pMamhrVWtOR0ZkTVJINEZibVJpUE1lcGxNcngtYkdLSGd3VFpSTzZlSXZpaFBCeWRPdnRuRklPOTJzRlpOdVY5YTlQZ2phaUhlUFVBcjlKZ3NGTTIwc1lSS1VOYk54VUVkNUNIYlNOVUdLcHg5Zmh4UnlDSzU4cFZTUXgzVkVDR0lnMWpPMlE?oc=5",
+          "text": "pré-commercialisation immobilier Tanger Le groupe Aksal annonce deux nouveaux Morocco Mall à Rabat et Marrakech - Le360 <a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxOVG1PaXdJU2JHSDNBVWRKZ3JFelpnbkRkVElpNV9Lc3pMamhrVWtOR0ZkTVJINEZibVJpUE1lcGxNcngtYkdLSGd3VFpSTzZlSXZpaFBCeWRPdnRuRklPOTJzRlpOdVY5YTlQZ2phaUhlUFVBcjlKZ3NGTTIwc1lSS1VOYk54VUVkNUNIYlNOVUdLcHg5Zmh4UnlDSzU4cFZTUXgzVkVDR0lnMWpPMlE?oc=5\" target=\"_blank\">Le groupe Aksal annonce deux nouveaux Morocco Mall à Rabat et Marrakech</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le360</font>",
           "is_primary": true,
           "launch_weight": 28,
           "confidence_weight": 27,
           "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Wed, 13 May 2026 07:00:00 GMT",
+            "query": "pré-commercialisation immobilier Tanger",
+            "published": "Tue, 12 Nov 2019 08:00:00 GMT",
             "availability": {
               "status": null,
               "unit_count": null,
@@ -591,32 +786,33 @@
           },
           "reasons": [
             "article presse détecté",
-            "mot-clé presse: projet immobilier",
+            "mot-clé presse: pré-commercialisation",
+            "ville: Rabat",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-08-16T05:38:08.049563+00:00",
-          "city_hint": null,
+          "discovered_at": "2026-08-17T05:43:43.795318+00:00",
+          "city_hint": "Rabat",
           "zone_hint": null,
           "promoter_hint": null,
           "asset_type_hint": null,
           "project_name_hint": null,
           "price_mad": null,
-          "signal_id": "a544845c84ec08003af1fa4f806bc0bf23710821"
+          "signal_id": "9efab8a729c1422b7c24a59d56d314483cef9d71"
         },
         {
           "collector": "news.google_news",
           "channel": "news",
-          "source": "Bladi.net",
+          "source": "Le360",
           "signal_type": "news_result",
-          "title": "Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5",
-          "text": "promotion immobilière Casablanca Près de Casablanca, les vieux terrains d’élus réveillent le fisc - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPRGN5a0FFaDRTd2N0ckRuWEVxUFpRMEZ6d3BCeEhUMnRDMWRFeFR3a290ZTlBZ2FKM0NZa1MxRlcyaFRZZ0h6SHE2ZGE1Unp0SWktbkVWQkpMdUlxckVxbnlMSHVGVlcycDdyX1ZpRVplOU9pbVJZdnZjb00xTm9Ua3hvNXRZNVE?oc=5\" target=\"_blank\">Près de Casablanca, les vieux terrains d’élus réveillent le fisc</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
+          "title": "Escroquerie immobilière: 300 familles lésées et trois promoteurs incarcérés à Casablanca - Le360",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdVRacDdzdDhqSnBsZlFWSFRtS2FiRXF0QVFWMnFNX0dpWXc4eDVpNTVPNkZiLXlreURVeE9DUk9EVU9BV21CRFhGcTFza0dyeUdRSkdCRi1qelNxZjlWaVVVcHNhQ1lyaFllNFZ3Q3h6cW96X0NwTXZYU1dqdlNmcy0ya0Ywa3UtaDBFRXlBcmF6N1QxODU5ZmswY201V29TQzNMRVpCWUxRUjVZNlBITTdWT0JrZ0EwcFBMZmUwclhkLTJadU5tc0dGVXBWUWZFRE5HOUd0cnpmTDQ?oc=5",
+          "text": "promotion immobilière Casablanca Escroquerie immobilière: 300 familles lésées et trois promoteurs incarcérés à Casablanca - Le360 <a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdVRacDdzdDhqSnBsZlFWSFRtS2FiRXF0QVFWMnFNX0dpWXc4eDVpNTVPNkZiLXlreURVeE9DUk9EVU9BV21CRFhGcTFza0dyeUdRSkdCRi1qelNxZjlWaVVVcHNhQ1lyaFllNFZ3Q3h6cW96X0NwTXZYU1dqdlNmcy0ya0Ywa3UtaDBFRXlBcmF6N1QxODU5ZmswY201V29TQzNMRVpCWUxRUjVZNlBITTdWT0JrZ0EwcFBMZmUwclhkLTJadU5tc0dGVXBWUWZFRE5HOUd0cnpmTDQ?oc=5\" target=\"_blank\">Escroquerie immobilière: 300 familles lésées et trois promoteurs incarcérés à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le360</font>",
           "is_primary": true,
           "launch_weight": 12,
           "confidence_weight": 16,
           "metadata": {
             "query": "promotion immobilière Casablanca",
-            "published": "Wed, 24 Jun 2026 07:00:00 GMT",
+            "published": "Thu, 29 Jan 2026 08:00:00 GMT",
             "availability": {
               "status": null,
               "unit_count": null,
@@ -630,29 +826,29 @@
             "article presse détecté",
             "ville: Casablanca"
           ],
-          "discovered_at": "2026-08-16T05:38:08.917971+00:00",
+          "discovered_at": "2026-08-17T05:43:44.366603+00:00",
           "city_hint": "Casablanca",
           "zone_hint": null,
           "promoter_hint": null,
           "asset_type_hint": null,
           "project_name_hint": null,
           "price_mad": null,
-          "signal_id": "524d2d0e53d99379ef0bbcb8674ae625e1483f92"
+          "signal_id": "8ef8919eefe25f13d192c4005e54c43d71c6ad35"
         },
         {
           "collector": "news.google_news",
           "channel": "news",
-          "source": "Abidjan.net News",
+          "source": "Le360",
           "signal_type": "news_result",
-          "title": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-          "text": "promotion immobilière Casablanca Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News <a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5\" target=\"_blank\">Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Abidjan.net News</font>",
+          "title": "Info360. Affaire Casa Parc: huit mois de sursis pour les deux promoteurs Benhima et Benabdelali, une banque d’affaires en passe de reprendre le projet - Le360",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbEt5dWRtY1pyZVMtY0J4Q3Q2V3dFNzZBMVAxRk9LMlJWMUZRbjZMUkkwdGNlZ2d2VVg5SHA3RDdpcklqT0pBb1c0eko2SWxoOTVfeHUteHlnaHcwVVNiNUNmb1BxQU9qRHRVcnpxZzlHazc3dy1hY3p1bnJFM2tkWEVPb0FjaXk2MEd6VTgwXzVrQlhzZERmc1VJMW5jakFvZnJaTFphYzNSWnlBekpuTmlUUWFJakFIaWc3Zk5xWUdweUk0dWlGSjN6enVVakFZaWtOaHRFMHZoYll3T0J0Mi15RkZJcmM3?oc=5",
+          "text": "promotion immobilière Casablanca Info360. Affaire Casa Parc: huit mois de sursis pour les deux promoteurs Benhima et Benabdelali, une banque d’affaires en passe de reprendre le projet - Le360 <a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxNbEt5dWRtY1pyZVMtY0J4Q3Q2V3dFNzZBMVAxRk9LMlJWMUZRbjZMUkkwdGNlZ2d2VVg5SHA3RDdpcklqT0pBb1c0eko2SWxoOTVfeHUteHlnaHcwVVNiNUNmb1BxQU9qRHRVcnpxZzlHazc3dy1hY3p1bnJFM2tkWEVPb0FjaXk2MEd6VTgwXzVrQlhzZERmc1VJMW5jakFvZnJaTFphYzNSWnlBekpuTmlUUWFJakFIaWc3Zk5xWUdweUk0dWlGSjN6enVVakFZaWtOaHRFMHZoYll3T0J0Mi15RkZJcmM3?oc=5\" target=\"_blank\">Info360. Affaire Casa Parc: huit mois de sursis pour les deux promoteurs Benhima et Benabdelali, une banque d’affaires en passe de reprendre le projet</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le360</font>",
           "is_primary": true,
           "launch_weight": 12,
           "confidence_weight": 16,
           "metadata": {
             "query": "promotion immobilière Casablanca",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
+            "published": "Sat, 11 Apr 2026 07:00:00 GMT",
             "availability": {
               "status": null,
               "unit_count": null,
@@ -666,53 +862,16 @@
             "article presse détecté",
             "ville: Casablanca"
           ],
-          "discovered_at": "2026-08-16T05:38:08.918028+00:00",
+          "discovered_at": "2026-08-17T05:43:44.366757+00:00",
           "city_hint": "Casablanca",
           "zone_hint": null,
           "promoter_hint": null,
           "asset_type_hint": null,
           "project_name_hint": null,
           "price_mad": null,
-          "signal_id": "a2976794136814a7b207a0b769a32740b7f2b7e4"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Bladi.net",
-          "signal_type": "news_result",
-          "title": "Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5",
-          "text": "promotion immobilière Casablanca Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections - Bladi.net <a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxQQkxFR1dxZGVrWmplTXdJX3ZZQUdaRGJULVVsVWdFU2JPcm83OGdzVFEwX0Y5cE5McW1CTVFJbGItRTJpbnN4Wlk2enVibUFSeEJMM0xNWC12OXdFNVRpdkJkTXh4cmJTN2NGejVTelotVW5jeWN4U1U0OGJtcm5pYzhmbEtiMzdXMzVxVXBCc2ZWbndNNk54a2VJVlVhcnQ1Zmc?oc=5\" target=\"_blank\">Casablanca : le pacte secret entre les promoteurs immobiliers et les candidats aux élections</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bladi.net</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Tue, 05 May 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-08-16T05:38:08.918057+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "f047bc1d2914912df0b3ba12636522ddbb4f8809"
+          "signal_id": "d113b9904a3fd8f2f65383940ed49f475b9abbd8"
         }
       ]
     }
-  ],
-  "digest": []
+  ]
 }
