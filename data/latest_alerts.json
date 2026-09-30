@@ -1,21 +1,21 @@
 {
   "immediate": [
     {
-      "project_id": "549d0681f38ff5eb1857f3f8097584362476b459",
-      "name": "Projet Immobilier",
+      "project_id": "03c1a3785f6d8258f1668ea6274f533667d1442c",
+      "name": "pensé pour allier emplacement stratégique",
       "city": "Tanger",
       "zone": "Gueliz",
       "promoter": "Alliances",
       "asset_type": "land_r4_plus",
-      "first_detected_at": "2026-09-27T10:28:34.213805+00:00",
-      "last_updated_at": "2026-09-27T10:30:54.336764+00:00",
+      "first_detected_at": "2026-09-30T11:03:07.309488+00:00",
+      "last_updated_at": "2026-09-30T11:05:44.034771+00:00",
       "launch_score": 100,
       "confidence_score": 100,
       "investment_score": 99,
       "urgency_score": 100,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Projet Immobilier | Promoteur: Alliances | Ville: Tanger | Zone: Gueliz | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "summary": "pensé pour allier emplacement stratégique | Promoteur: Alliances | Ville: Tanger | Zone: Gueliz | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
       "prices": {
         "min": null,
         "max": null
@@ -23,10 +23,10 @@
       "aliases": [
         "pensé pour allier emplacement stratégique",
         "un nouveau cadre de vie pensé pour la sérénité",
-        "Projet Immobilier",
-        "Premiers coups de pioche pour le nouveau projet immobilier d’Al Mada à Marrakech - Le Desk",
         "Comment Alliances Développement Immobilier a accéléré son virage hôtelier - Le360",
-        "Gims dévoile son deuxième projet immobilier à Marrakech (VIDEO) - lesiteinfo.com"
+        "Laâyoune, nouveau carrefour arabo-africain : la vision de Mohamed Rachid Tadlaoui pour le développement immobilier - Le Matin.ma",
+        "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - purepeople.com",
+        "L'esprit de Marrakech dans un mall - Le Matin.ma"
       ],
       "channels": [
         "advertising",
@@ -34,30 +34,24 @@
       ],
       "sources": [
         "Avito Immobilier Neuf",
-        "La Vie éco",
-        "Le Desk",
         "Le Matin.ma",
         "Le360",
-        "Ode (Purepeople)",
         "Tanger Hills",
-        "lesiteinfo.com"
+        "purepeople.com"
       ],
       "source_urls": [
         "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1547795380419433",
         "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476882375962669",
-        "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQU80VzJLWXJkRW9DOWo0VUp5Z21yZ2poX1hBZlY3a3VDZWJFS0FwVURNQ2JLSkhqclZSR2hvdFdRMjR0dnppOXhwSGhXc0NzT2hqdTB2Um1yazBCRW1xaV9haXhsYV9sYXljQzhjaXBya1NTOHhTckd4cWJjYnpjRVctUWJ1SkdRcWZnVjNFNnlxUXlkaWhGN29oRktlVEQzWDl4LWlxdw?oc=5",
         "https://news.google.com/rss/articles/CBMiygFBVV95cUxPazZpVjY2STN5SGxvRGVmdDR1bzhvRkhNYnhzQ3Vld1IzZUVpSWVKUWNmVXNJTk1FZnRYVlRlaEpvWEpXUFZ2QjFYbUMzdjY0OUZJWnBQMklIZ1FjbTE4SWhPdlNiYk1lQmxZMmNMUVdoaGpEQnh5VmV5QmkzRGk5WXJrVUJPTlZEWWR3aUI1QlBpWkJldWZFanJtMkcyR1dNaVlCOHJNb0NlTHZickdZekdySlBwRm5OZERPWlBiZnFYTldWejAxeWF3?oc=5",
-        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSkdpRlpFOEIyUEluallEVG1hSmM1LU51NktpQ2ZwZzhLdllsVkJReldKNF90Y21VaHBiN3dMN1d4UThndFRuVHBlSjdwV09ZRk9CMTIyUGduMDBZaVZWY3RtOUVPRFlnRlNuQV9JMmhJbHcxaHljQVZnOE9nOWRBaG9rOFFCZFBUUzZsUzVMdGFKOFZEaUpHYlZoUU4yeS00NjVuMFBjVi1zd9IBrwFBVV95cUxNMHRtcVBkV0cxVnNXcVJBOGRDVERkRTh6TTR2QV8xM0xDOEpNUVc5NXVEdmhucGtMYnNVNDh5M1lyQnVCaUtkQkpzY3UwRGIxd21NelBrR0ZBV1hZUzJnLVlGQlhDNDlOclpyOHpHSHZwVUx3YWpaWUt0XzRwX0pIOXZyTF9feUpKbWt6aW9Hb055VFp1bTFZcTlCaWZxWnI1S2RuaGdXdkdrZW5lbVpB?oc=5",
         "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjB2YnBDNkMtYzFkV2V1bDRhdkJyNzRnamxZN2FlRklMQm1iSVc0V3ZxUXM4R0tRS1dBT213S3MxaVhGUFVBVS1LaFlwYktVcXBTd2FPelQ3NzFib2UzUTRtYUlMakExc29IYVFlcV82LVNsNXBPYW52ZFlkY21JbWdybzZXNm9uV2N5SE5n0gGTAUFVX3lxTE1uZGFuOWFXeHdQUTQ2WF91UkRuZGVBZEMtejk2aWRzM3JCUU83bWt6c1pjT3JWNnZsdms4clZlVkp6R1d3U1dRb296ckNybkY0OHZhamo2VnlZbVJYSkUwM25BUmZQSnlKWHlhS3VoUWFQZWNsX3FrMUZ2dE5xZlllODRPYm1HTGNSVGZUOXdvbzBrcw?oc=5",
         "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-        "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5",
         "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVi03aVJwLWdQWFpRbG1CcmlmN05wQWJkT3lqVE8yUUl0OHg4Ml9VUjlGVHdtLUN4T25BMC1wY05hTFh5VVV4OXN2TjVudzIzNnNDM1NoX0xXVHZXd282R3FKdGlxMExYemZzQjlPUGVCSjVHQnBIcTVkazdBWWkxN1NpMHJnV0hVTzlBODRIa9IBjgFBVV95cUxNcmVBWUczN1Aya2lqZjlrTzJCc2QtTnhETUVVV3FRUVRUVGpnLWVkU2cyUUwzb2I5YjZ5d3FFMGhVS21ULWVkVUlCZFQ0WkRzbk5Mc29jSjNBWGZMSnBsb0dOeVAtN1RfNm12T05JNjltdGVPcDR1ZXRmNEd0eFRReVJwV250SlRzZHpVck9B?oc=5"
       ],
       "evidence": {
-        "signal_count": 9,
-        "primary_signal_count": 9,
+        "signal_count": 6,
+        "primary_signal_count": 6,
         "listing_signal_count": 0,
-        "source_count": 8,
+        "source_count": 5,
         "channel_count": 2,
         "primary_channels": [],
         "secondary_channels": [],
@@ -71,7 +65,7 @@
             "min": 360,
             "max": 360
           },
-          "signal_count": 9
+          "signal_count": 6
         },
         "geo": {
           "lat": 35.7595,
@@ -89,7 +83,7 @@
           "label": "Élevé",
           "five_year_upside_score": 96
         },
-        "project_slug": "projet-immobilier-549d0681",
+        "project_slug": "pens-pour-allier-emplacement-strat-gique-03c1a378",
         "infrastructure": {
           "sea_distance_km": 3,
           "station_distance_km": 4,
@@ -116,21 +110,7 @@
             "kind_label": "Article / Google News",
             "label": "Google News",
             "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQU80VzJLWXJkRW9DOWo0VUp5Z21yZ2poX1hBZlY3a3VDZWJFS0FwVURNQ2JLSkhqclZSR2hvdFdRMjR0dnppOXhwSGhXc0NzT2hqdTB2Um1yazBCRW1xaV9haXhsYV9sYXljQzhjaXBya1NTOHhTckd4cWJjYnpjRVctUWJ1SkdRcWZnVjNFNnlxUXlkaWhGN29oRktlVEQzWDl4LWlxdw?oc=5"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Google News",
-            "description": "Résultat presse ou Google News surveillé.",
             "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPazZpVjY2STN5SGxvRGVmdDR1bzhvRkhNYnhzQ3Vld1IzZUVpSWVKUWNmVXNJTk1FZnRYVlRlaEpvWEpXUFZ2QjFYbUMzdjY0OUZJWnBQMklIZ1FjbTE4SWhPdlNiYk1lQmxZMmNMUVdoaGpEQnh5VmV5QmkzRGk5WXJrVUJPTlZEWWR3aUI1QlBpWkJldWZFanJtMkcyR1dNaVlCOHJNb0NlTHZickdZekdySlBwRm5OZERPWlBiZnFYTldWejAxeWF3?oc=5"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Google News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSkdpRlpFOEIyUEluallEVG1hSmM1LU51NktpQ2ZwZzhLdllsVkJReldKNF90Y21VaHBiN3dMN1d4UThndFRuVHBlSjdwV09ZRk9CMTIyUGduMDBZaVZWY3RtOUVPRFlnRlNuQV9JMmhJbHcxaHljQVZnOE9nOWRBaG9rOFFCZFBUUzZsUzVMdGFKOFZEaUpHYlZoUU4yeS00NjVuMFBjVi1zd9IBrwFBVV95cUxNMHRtcVBkV0cxVnNXcVJBOGRDVERkRTh6TTR2QV8xM0xDOEpNUVc5NXVEdmhucGtMYnNVNDh5M1lyQnVCaUtkQkpzY3UwRGIxd21NelBrR0ZBV1hZUzJnLVlGQlhDNDlOclpyOHpHSHZwVUx3YWpaWUt0XzRwX0pIOXZyTF9feUpKbWt6aW9Hb055VFp1bTFZcTlCaWZxWnI1S2RuaGdXdkdrZW5lbVpB?oc=5"
           },
           {
             "kind": "google_news",
@@ -145,13 +125,6 @@
             "label": "Google News",
             "description": "Résultat presse ou Google News surveillé.",
             "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Google News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5"
           },
           {
             "kind": "google_news",
@@ -213,21 +186,7 @@
             "kind_label": "Article / Google News",
             "label": "Google News",
             "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQU80VzJLWXJkRW9DOWo0VUp5Z21yZ2poX1hBZlY3a3VDZWJFS0FwVURNQ2JLSkhqclZSR2hvdFdRMjR0dnppOXhwSGhXc0NzT2hqdTB2Um1yazBCRW1xaV9haXhsYV9sYXljQzhjaXBya1NTOHhTckd4cWJjYnpjRVctUWJ1SkdRcWZnVjNFNnlxUXlkaWhGN29oRktlVEQzWDl4LWlxdw?oc=5"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Google News",
-            "description": "Résultat presse ou Google News surveillé.",
             "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPazZpVjY2STN5SGxvRGVmdDR1bzhvRkhNYnhzQ3Vld1IzZUVpSWVKUWNmVXNJTk1FZnRYVlRlaEpvWEpXUFZ2QjFYbUMzdjY0OUZJWnBQMklIZ1FjbTE4SWhPdlNiYk1lQmxZMmNMUVdoaGpEQnh5VmV5QmkzRGk5WXJrVUJPTlZEWWR3aUI1QlBpWkJldWZFanJtMkcyR1dNaVlCOHJNb0NlTHZickdZekdySlBwRm5OZERPWlBiZnFYTldWejAxeWF3?oc=5"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Google News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSkdpRlpFOEIyUEluallEVG1hSmM1LU51NktpQ2ZwZzhLdllsVkJReldKNF90Y21VaHBiN3dMN1d4UThndFRuVHBlSjdwV09ZRk9CMTIyUGduMDBZaVZWY3RtOUVPRFlnRlNuQV9JMmhJbHcxaHljQVZnOE9nOWRBaG9rOFFCZFBUUzZsUzVMdGFKOFZEaUpHYlZoUU4yeS00NjVuMFBjVi1zd9IBrwFBVV95cUxNMHRtcVBkV0cxVnNXcVJBOGRDVERkRTh6TTR2QV8xM0xDOEpNUVc5NXVEdmhucGtMYnNVNDh5M1lyQnVCaUtkQkpzY3UwRGIxd21NelBrR0ZBV1hZUzJnLVlGQlhDNDlOclpyOHpHSHZwVUx3YWpaWUt0XzRwX0pIOXZyTF9feUpKbWt6aW9Hb055VFp1bTFZcTlCaWZxWnI1S2RuaGdXdkdrZW5lbVpB?oc=5"
           },
           {
             "kind": "google_news",
@@ -242,13 +201,6 @@
             "label": "Google News",
             "description": "Résultat presse ou Google News surveillé.",
             "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Google News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5"
           },
           {
             "kind": "google_news",
@@ -284,63 +236,42 @@
       ],
       "timeline": [
         {
-          "detected_at": "2026-09-27T10:28:34.213805+00:00",
+          "detected_at": "2026-09-30T11:03:07.309488+00:00",
           "channel": "advertising",
           "source": "Tanger Hills",
           "title": "Tanger Hills · ad #1547795380419433",
           "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1547795380419433"
         },
         {
-          "detected_at": "2026-09-27T10:29:43.583023+00:00",
+          "detected_at": "2026-09-30T11:04:27.942194+00:00",
           "channel": "advertising",
           "source": "Avito Immobilier Neuf",
           "title": "Avito Immobilier Neuf · ad #4476882375962669",
           "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476882375962669"
         },
         {
-          "detected_at": "2026-09-27T10:30:53.956510+00:00",
-          "channel": "news",
-          "source": "Le Desk",
-          "title": "Premiers coups de pioche pour le nouveau projet immobilier d’Al Mada à Marrakech - Le Desk",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQU80VzJLWXJkRW9DOWo0VUp5Z21yZ2poX1hBZlY3a3VDZWJFS0FwVURNQ2JLSkhqclZSR2hvdFdRMjR0dnppOXhwSGhXc0NzT2hqdTB2Um1yazBCRW1xaV9haXhsYV9sYXljQzhjaXBya1NTOHhTckd4cWJjYnpjRVctUWJ1SkdRcWZnVjNFNnlxUXlkaWhGN29oRktlVEQzWDl4LWlxdw?oc=5"
-        },
-        {
-          "detected_at": "2026-09-27T10:30:53.956603+00:00",
+          "detected_at": "2026-09-30T11:05:43.512909+00:00",
           "channel": "news",
           "source": "Le360",
           "title": "Comment Alliances Développement Immobilier a accéléré son virage hôtelier - Le360",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPazZpVjY2STN5SGxvRGVmdDR1bzhvRkhNYnhzQ3Vld1IzZUVpSWVKUWNmVXNJTk1FZnRYVlRlaEpvWEpXUFZ2QjFYbUMzdjY0OUZJWnBQMklIZ1FjbTE4SWhPdlNiYk1lQmxZMmNMUVdoaGpEQnh5VmV5QmkzRGk5WXJrVUJPTlZEWWR3aUI1QlBpWkJldWZFanJtMkcyR1dNaVlCOHJNb0NlTHZickdZekdySlBwRm5OZERPWlBiZnFYTldWejAxeWF3?oc=5"
         },
         {
-          "detected_at": "2026-09-27T10:30:53.956629+00:00",
-          "channel": "news",
-          "source": "lesiteinfo.com",
-          "title": "Gims dévoile son deuxième projet immobilier à Marrakech (VIDEO) - lesiteinfo.com",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSkdpRlpFOEIyUEluallEVG1hSmM1LU51NktpQ2ZwZzhLdllsVkJReldKNF90Y21VaHBiN3dMN1d4UThndFRuVHBlSjdwV09ZRk9CMTIyUGduMDBZaVZWY3RtOUVPRFlnRlNuQV9JMmhJbHcxaHljQVZnOE9nOWRBaG9rOFFCZFBUUzZsUzVMdGFKOFZEaUpHYlZoUU4yeS00NjVuMFBjVi1zd9IBrwFBVV95cUxNMHRtcVBkV0cxVnNXcVJBOGRDVERkRTh6TTR2QV8xM0xDOEpNUVc5NXVEdmhucGtMYnNVNDh5M1lyQnVCaUtkQkpzY3UwRGIxd21NelBrR0ZBV1hZUzJnLVlGQlhDNDlOclpyOHpHSHZwVUx3YWpaWUt0XzRwX0pIOXZyTF9feUpKbWt6aW9Hb055VFp1bTFZcTlCaWZxWnI1S2RuaGdXdkdrZW5lbVpB?oc=5"
-        },
-        {
-          "detected_at": "2026-09-27T10:30:53.956657+00:00",
+          "detected_at": "2026-09-30T11:05:43.512956+00:00",
           "channel": "news",
           "source": "Le Matin.ma",
           "title": "Laâyoune, nouveau carrefour arabo-africain : la vision de Mohamed Rachid Tadlaoui pour le développement immobilier - Le Matin.ma",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjB2YnBDNkMtYzFkV2V1bDRhdkJyNzRnamxZN2FlRklMQm1iSVc0V3ZxUXM4R0tRS1dBT213S3MxaVhGUFVBVS1LaFlwYktVcXBTd2FPelQ3NzFib2UzUTRtYUlMakExc29IYVFlcV82LVNsNXBPYW52ZFlkY21JbWdybzZXNm9uV2N5SE5n0gGTAUFVX3lxTE1uZGFuOWFXeHdQUTQ2WF91UkRuZGVBZEMtejk2aWRzM3JCUU83bWt6c1pjT3JWNnZsdms4clZlVkp6R1d3U1dRb296ckNybkY0OHZhamo2VnlZbVJYSkUwM25BUmZQSnlKWHlhS3VoUWFQZWNsX3FrMUZ2dE5xZlllODRPYm1HTGNSVGZUOXdvbzBrcw?oc=5"
         },
         {
-          "detected_at": "2026-09-27T10:30:53.956706+00:00",
+          "detected_at": "2026-09-30T11:05:43.513000+00:00",
           "channel": "news",
-          "source": "Ode (Purepeople)",
-          "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
+          "source": "purepeople.com",
+          "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - purepeople.com",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5"
         },
         {
-          "detected_at": "2026-09-27T10:30:54.336719+00:00",
-          "channel": "news",
-          "source": "La Vie éco",
-          "title": "Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5"
-        },
-        {
-          "detected_at": "2026-09-27T10:30:54.336764+00:00",
+          "detected_at": "2026-09-30T11:05:44.034771+00:00",
           "channel": "news",
           "source": "Le Matin.ma",
           "title": "L'esprit de Marrakech dans un mall - Le Matin.ma",
@@ -355,7 +286,7 @@
           "signal_type": "meta_ad",
           "title": "Tanger Hills · ad #1547795380419433",
           "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1547795380419433",
-          "text": "Tanger Hills Tanger Hills Tanger Hills… une opportunité immobilière prometteuse aux portes de Tanger 🏗️📍 Un projet pensé pour allier emplacement stratégique, qualité d’aménagement et potentiel d’investissement. ✔️ Lots résidentiels R+4 avec commerces ✔️ Lots dédiés aux Showrooms R+1 ✔️ À proximité de la N2 et de la voie de contournement ✔️ À seulement 5 km du centre-ville et de la gare LGV 🚆 ✔️ Espaces verts, mosquée, école et crèche au sein du projet 🌿 📩 Inscrivez-vous dès maintenant pour recevoir toutes les informations sur Tanger Hills. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME investissez aux portes de Tanger En savoir plus ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBc_7Ioy7IIuIGbimAPVj59TEIMdJiCVGawwVzsg3rmWppZk2kiiZDGV1vl_uNlsBLfy6E39nA7N_55W_2PAPgRUohgsmSRKxwzSADfIu9pZhpnTjdSunTFZxekN6mv0kIsNniQip4E7jR-",
+          "text": "Tanger Hills Tanger Hills Tanger Hills… une opportunité immobilière prometteuse aux portes de Tanger 🏗️📍 Un projet pensé pour allier emplacement stratégique, qualité d’aménagement et potentiel d’investissement. ✔️ Lots résidentiels R+4 avec commerces ✔️ Lots dédiés aux Showrooms R+1 ✔️ À proximité de la N2 et de la voie de contournement ✔️ À seulement 5 km du centre-ville et de la gare LGV 🚆 ✔️ Espaces verts, mosquée, école et crèche au sein du projet 🌿 📩 Inscrivez-vous dès maintenant pour recevoir toutes les informations sur Tanger Hills. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME investissez aux portes de Tanger En savoir plus ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBDhsmTCUOGTjuTJ6y1pGn1hqw_pEPb4Sg7v17nTJM7tWOv7SixQGLKVdv5LVTAf2lhmmhJEDEiDRZ0V0vk1BCufx-qv3qTHrGVTQtXX-UtnoYyBSDACJNav552oEF9toiIEK_BN_2FIWTu",
           "is_primary": true,
           "launch_weight": 38,
           "confidence_weight": 45,
@@ -364,7 +295,7 @@
             "ad_id": "1547795380419433",
             "page_name": "Tanger Hills",
             "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1547795380419433",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBc_7Ioy7IIuIGbimAPVj59TEIMdJiCVGawwVzsg3rmWppZk2kiiZDGV1vl_uNlsBLfy6E39nA7N_55W_2PAPgRUohgsmSRKxwzSADfIu9pZhpnTjdSunTFZxekN6mv0kIsNniQip4E7jR-",
+            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBDhsmTCUOGTjuTJ6y1pGn1hqw_pEPb4Sg7v17nTJM7tWOv7SixQGLKVdv5LVTAf2lhmmhJEDEiDRZ0V0vk1BCufx-qv3qTHrGVTQtXX-UtnoYyBSDACJNav552oEF9toiIEK_BN_2FIWTu",
             "image_urls": [],
             "video_urls": [],
             "query": "projet immobilier Tanger",
@@ -384,7 +315,7 @@
             "type: land_r4_plus",
             "ville: Tanger"
           ],
-          "discovered_at": "2026-09-27T10:28:34.213805+00:00",
+          "discovered_at": "2026-09-30T11:03:07.309488+00:00",
           "city_hint": "Tanger",
           "zone_hint": null,
           "promoter_hint": null,
@@ -400,7 +331,7 @@
           "signal_type": "meta_ad",
           "title": "Avito Immobilier Neuf · ad #4476882375962669",
           "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476882375962669",
-          "text": "Avito Immobilier Neuf Avito Immobilier Neuf À seulement 15 minutes de Marrakech, découvrez un nouveau cadre de vie pensé pour la sérénité, la nature et le confort moderne. Atlas Signature propose des lots de terrains pour villas à partir de 360 m², dans un environnement calme à proximité d’un golf. Un projet résidentiel conçu pour simplifier votre quotidien avec des services intégrés : ☕ Café & restaurant 🛒 Supérette & centre commercial 💆‍♀️ Beauté & bien-être 👶 Kids club / espace enfants 💪 Salle de fitness 💻 Espace coworking Construisez la villa qui vous ressemble dans un projet résidentiel complet. 👉 Demandez plus d’informations Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus IMMONEUF.AVITO.MA Demandez plus d'informations maintenant En savoir plus ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUAUpNjDbR9J_JLhkmmN8i-jlauYO_kOjj-S4YHIgd6QG4WiY4iExcfBdGX4myvJlmmueYAIVBqwehhMSBNxOJFS7y14FMk8WzquXb_erC-JlfDF9MQYH7CF-Kt3bQnaPDLJ6bQRAmU5BQBQ",
+          "text": "Avito Immobilier Neuf Avito Immobilier Neuf À seulement 15 minutes de Marrakech, découvrez un nouveau cadre de vie pensé pour la sérénité, la nature et le confort moderne. Atlas Signature propose des lots de terrains pour villas à partir de 360 m², dans un environnement calme à proximité d’un golf. Un projet résidentiel conçu pour simplifier votre quotidien avec des services intégrés : ☕ Café & restaurant 🛒 Supérette & centre commercial 💆‍♀️ Beauté & bien-être 👶 Kids club / espace enfants 💪 Salle de fitness 💻 Espace coworking Construisez la villa qui vous ressemble dans un projet résidentiel complet. 👉 Demandez plus d’informations Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus IMMONEUF.AVITO.MA Demandez plus d'informations maintenant En savoir plus ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUBjBwrrf0x3HzY86FAeGxRvRIptgYtWSP49HYpEXzWZuX2DWTlO3y_KM9R8X0TQV0hluqnAf8CU0lhVyst6ry-rhcoavItoXriiVJ6Bn157A_zCs5sAaIuniQGaowupDc-2b0nAjgrW_BFB",
           "is_primary": true,
           "launch_weight": 38,
           "confidence_weight": 45,
@@ -409,7 +340,7 @@
             "ad_id": "4476882375962669",
             "page_name": "Avito Immobilier Neuf",
             "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=4476882375962669",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUAUpNjDbR9J_JLhkmmN8i-jlauYO_kOjj-S4YHIgd6QG4WiY4iExcfBdGX4myvJlmmueYAIVBqwehhMSBNxOJFS7y14FMk8WzquXb_erC-JlfDF9MQYH7CF-Kt3bQnaPDLJ6bQRAmU5BQBQ",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fimmoneuf.avito.ma%2Ffr%2Fd%2Ftasnime-immobilier-rbk%2Ftasnime-business-center---residence-marrakech-arrondissement-de-gueliz-TXO&h=AUBjBwrrf0x3HzY86FAeGxRvRIptgYtWSP49HYpEXzWZuX2DWTlO3y_KM9R8X0TQV0hluqnAf8CU0lhVyst6ry-rhcoavItoXriiVJ6Bn157A_zCs5sAaIuniQGaowupDc-2b0nAjgrW_BFB",
             "image_urls": [],
             "video_urls": [],
             "query": "projet immobilier Marrakech",
@@ -430,7 +361,7 @@
             "ville: Marrakech",
             "zone: Gueliz"
           ],
-          "discovered_at": "2026-09-27T10:29:43.583023+00:00",
+          "discovered_at": "2026-09-30T11:04:27.942194+00:00",
           "city_hint": "Marrakech",
           "zone_hint": "Gueliz",
           "promoter_hint": null,
@@ -438,44 +369,6 @@
           "project_name_hint": "Avito Immobilier Neuf",
           "price_mad": null,
           "signal_id": "bee3e3045dd8bf898860e3aee76348ee34a9e2ac"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Le Desk",
-          "signal_type": "news_result",
-          "title": "Premiers coups de pioche pour le nouveau projet immobilier d’Al Mada à Marrakech - Le Desk",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQU80VzJLWXJkRW9DOWo0VUp5Z21yZ2poX1hBZlY3a3VDZWJFS0FwVURNQ2JLSkhqclZSR2hvdFdRMjR0dnppOXhwSGhXc0NzT2hqdTB2Um1yazBCRW1xaV9haXhsYV9sYXljQzhjaXBya1NTOHhTckd4cWJjYnpjRVctUWJ1SkdRcWZnVjNFNnlxUXlkaWhGN29oRktlVEQzWDl4LWlxdw?oc=5",
-          "text": "nouveau projet immobilier Maroc Premiers coups de pioche pour le nouveau projet immobilier d’Al Mada à Marrakech - Le Desk <a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxPQU80VzJLWXJkRW9DOWo0VUp5Z21yZ2poX1hBZlY3a3VDZWJFS0FwVURNQ2JLSkhqclZSR2hvdFdRMjR0dnppOXhwSGhXc0NzT2hqdTB2Um1yazBCRW1xaV9haXhsYV9sYXljQzhjaXBya1NTOHhTckd4cWJjYnpjRVctUWJ1SkdRcWZnVjNFNnlxUXlkaWhGN29oRktlVEQzWDl4LWlxdw?oc=5\" target=\"_blank\">Premiers coups de pioche pour le nouveau projet immobilier d’Al Mada à Marrakech</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Le Desk</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Mon, 31 Aug 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Marrakech",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-09-27T10:30:53.956510+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "da2ccbeb1b0c7c28626f81faacaac5b78b4dc391"
         },
         {
           "collector": "news.google_news",
@@ -505,7 +398,7 @@
             "mot-clé presse: projet immobilier",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-09-27T10:30:53.956603+00:00",
+          "discovered_at": "2026-09-30T11:05:43.512909+00:00",
           "city_hint": null,
           "zone_hint": null,
           "promoter_hint": "Alliances",
@@ -513,44 +406,6 @@
           "project_name_hint": null,
           "price_mad": null,
           "signal_id": "d0d34c50b593ec0032237c7b95fe50d00af800e6"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "lesiteinfo.com",
-          "signal_type": "news_result",
-          "title": "Gims dévoile son deuxième projet immobilier à Marrakech (VIDEO) - lesiteinfo.com",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSkdpRlpFOEIyUEluallEVG1hSmM1LU51NktpQ2ZwZzhLdllsVkJReldKNF90Y21VaHBiN3dMN1d4UThndFRuVHBlSjdwV09ZRk9CMTIyUGduMDBZaVZWY3RtOUVPRFlnRlNuQV9JMmhJbHcxaHljQVZnOE9nOWRBaG9rOFFCZFBUUzZsUzVMdGFKOFZEaUpHYlZoUU4yeS00NjVuMFBjVi1zd9IBrwFBVV95cUxNMHRtcVBkV0cxVnNXcVJBOGRDVERkRTh6TTR2QV8xM0xDOEpNUVc5NXVEdmhucGtMYnNVNDh5M1lyQnVCaUtkQkpzY3UwRGIxd21NelBrR0ZBV1hZUzJnLVlGQlhDNDlOclpyOHpHSHZwVUx3YWpaWUt0XzRwX0pIOXZyTF9feUpKbWt6aW9Hb055VFp1bTFZcTlCaWZxWnI1S2RuaGdXdkdrZW5lbVpB?oc=5",
-          "text": "nouveau projet immobilier Maroc Gims dévoile son deuxième projet immobilier à Marrakech (VIDEO) - lesiteinfo.com <a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSkdpRlpFOEIyUEluallEVG1hSmM1LU51NktpQ2ZwZzhLdllsVkJReldKNF90Y21VaHBiN3dMN1d4UThndFRuVHBlSjdwV09ZRk9CMTIyUGduMDBZaVZWY3RtOUVPRFlnRlNuQV9JMmhJbHcxaHljQVZnOE9nOWRBaG9rOFFCZFBUUzZsUzVMdGFKOFZEaUpHYlZoUU4yeS00NjVuMFBjVi1zd9IBrwFBVV95cUxNMHRtcVBkV0cxVnNXcVJBOGRDVERkRTh6TTR2QV8xM0xDOEpNUVc5NXVEdmhucGtMYnNVNDh5M1lyQnVCaUtkQkpzY3UwRGIxd21NelBrR0ZBV1hZUzJnLVlGQlhDNDlOclpyOHpHSHZwVUx3YWpaWUt0XzRwX0pIOXZyTF9feUpKbWt6aW9Hb055VFp1bTFZcTlCaWZxWnI1S2RuaGdXdkdrZW5lbVpB?oc=5\" target=\"_blank\">Gims dévoile son deuxième projet immobilier à Marrakech (VIDEO)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">lesiteinfo.com</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Wed, 28 Jan 2026 08:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Marrakech",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-09-27T10:30:53.956629+00:00",
-          "city_hint": "Marrakech",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "274ef48ee3fd0155e4bdbb68974d0a7812fbf689"
         },
         {
           "collector": "news.google_news",
@@ -580,7 +435,7 @@
             "mot-clé presse: projet immobilier",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-09-27T10:30:53.956657+00:00",
+          "discovered_at": "2026-09-30T11:05:43.512956+00:00",
           "city_hint": null,
           "zone_hint": null,
           "promoter_hint": null,
@@ -592,11 +447,11 @@
         {
           "collector": "news.google_news",
           "channel": "news",
-          "source": "Ode (Purepeople)",
+          "source": "purepeople.com",
           "signal_type": "news_result",
-          "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople)",
+          "title": "L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - purepeople.com",
           "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5",
-          "text": "nouveau projet immobilier Maroc L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - Ode (Purepeople) <a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5\" target=\"_blank\">L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Ode (Purepeople)</font>",
+          "text": "nouveau projet immobilier Maroc L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech - purepeople.com <a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMFRSOUZRZFRCVnZMQk51VkVxRERRMVJraHpEajVxaVRITjQ2TlJ4bTktejNRQzlma0U3VnVyektjWUNBR2ZrQ2pSR0plUGc5ZXJxQ3dmb3ZoMUs2d1N1ZnoyZ0tkWVdrS1U0WFdCWUt0QUt0VjVqeExwZnZPMl8xaDJ6VlJDS0xXUDAtSDJubFVEdnMyWmVxdVVZZkFFaWtLbTkzWFNUandFcVBtcEhITHIxc1lyWllHaGlVcGhBLWg5V0I0LVh1RFo5SmV4NUV0VE9ydWJEaWw1UjIzcURPdEZCM0pJZw?oc=5\" target=\"_blank\">L'autre vie de Gims : impliqué dans l'immobilier de luxe au Maroc, il présente son nouveau projet à Marrakech</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">purepeople.com</font>",
           "is_primary": true,
           "launch_weight": 28,
           "confidence_weight": 27,
@@ -618,7 +473,7 @@
             "ville: Marrakech",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-09-27T10:30:53.956706+00:00",
+          "discovered_at": "2026-09-30T11:05:43.513000+00:00",
           "city_hint": "Marrakech",
           "zone_hint": null,
           "promoter_hint": null,
@@ -626,46 +481,6 @@
           "project_name_hint": null,
           "price_mad": null,
           "signal_id": "701a268d8a9b7d7c6dad5cffeeb45aadbff6b368"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "La Vie éco",
-          "signal_type": "news_result",
-          "title": "Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5",
-          "text": "pré-commercialisation immobilier Tanger Tanger City Center : les premiers appartements prêts à la fin de l’année - La Vie éco <a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxNWVR2QnliYW9VdG5FZ0FGSkhRWTlQSUdIMXZvOERHcmdiUndYR2dGUExXMWFqNWV5NlBWYXNhamJYY1NxR0x4VFIwOW0ydi1XZjNnVGFyYWhHWER2U2V2X0NfMmpXZVBSYXJRWmdNUmktaV93SDdERzBXeVNaaHU3TUpxQWEtSUdXQlIzYWR4Z1VjT0dvUjBhQ3MtWG9OZDBjdE0tb2NZWW90aExFbHo0?oc=5\" target=\"_blank\">Tanger City Center : les premiers appartements prêts à la fin de l’année</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">La Vie éco</font>",
-          "is_primary": true,
-          "launch_weight": 32,
-          "confidence_weight": 32,
-          "metadata": {
-            "query": "pré-commercialisation immobilier Tanger",
-            "published": "Thu, 18 Oct 2012 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: pré-commercialisation",
-            "mot-clé presse: appartement",
-            "type: apartment_unknown",
-            "ville: Tanger",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-09-27T10:30:54.336719+00:00",
-          "city_hint": "Tanger",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "15ffda6fc43ad71c250108e63c1e87946fc435c2"
         },
         {
           "collector": "news.google_news",
@@ -696,7 +511,7 @@
             "ville: Marrakech",
             "marqueur de lancement détecté"
           ],
-          "discovered_at": "2026-09-27T10:30:54.336764+00:00",
+          "discovered_at": "2026-09-30T11:05:44.034771+00:00",
           "city_hint": "Marrakech",
           "zone_hint": null,
           "promoter_hint": null,
@@ -706,1349 +521,45 @@
           "signal_id": "a0d11de3720c07fa0dcd1bd6da2564596661bbe0"
         }
       ]
-    },
-    {
-      "project_id": "66da8a99b97f8413ce2c2807f7c52710373ccdf5",
-      "name": "PLEIN SUD Résidences",
-      "city": "Casablanca",
-      "zone": "Anfa",
-      "promoter": null,
-      "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-09-27T10:28:13.919444+00:00",
-      "last_updated_at": "2026-09-27T10:28:13.919470+00:00",
-      "launch_score": 100,
-      "confidence_score": 100,
-      "investment_score": 59,
-      "urgency_score": 96,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "PLEIN SUD Résidences | Promoteur: à confirmer | Ville: Casablanca | Zone: Anfa | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-      "prices": {
-        "min": null,
-        "max": null
-      },
-      "aliases": [
-        "PLEIN SUD Résidences"
-      ],
-      "channels": [
-        "advertising"
-      ],
-      "sources": [
-        "PLEIN SUD Résidences"
-      ],
-      "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1600940645104728",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1612331043776739"
-      ],
-      "evidence": {
-        "signal_count": 2,
-        "primary_signal_count": 2,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
-        "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "availability": {
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "signal_count": 2
-        },
-        "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "price_band": "unknown",
-        "price_evolution": {
-          "trend": "unknown",
-          "summary": "Aucune série de prix fiable pour le moment."
-        },
-        "roi": {
-          "label": "Moyen",
-          "five_year_upside_score": 59
-        },
-        "project_slug": "plein-sud-r-sidences-66da8a99",
-        "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "PLEIN SUD Résidences · ad #1600940645104728",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1600940645104728",
-            "source": "PLEIN SUD Résidences",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "PLEIN SUD Résidences · ad #1612331043776739",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1612331043776739",
-            "source": "PLEIN SUD Résidences",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Appartement",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "price_min": null,
-          "price_max": null
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Le prix public n'est pas encore confirmé.",
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "PLEIN SUD Résidences · ad #1600940645104728",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1600940645104728",
-            "source": "PLEIN SUD Résidences",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "PLEIN SUD Résidences · ad #1612331043776739",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1612331043776739",
-            "source": "PLEIN SUD Résidences",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "images": [
-          "assets/meta/meta-ad-1600940645104728.jpg"
-        ],
-        "videos": [],
-        "changes": [],
-        "is_new_project": true,
-        "qualification": {
-          "status": "new",
-          "notes": ""
-        }
-      },
-      "reasons": [
-        "publicité Meta exacte détectée: ad_id 1600940645104728",
-        "type: apartment_unknown",
-        "ville: Casablanca",
-        "zone: Anfa",
-        "marqueur de lancement détecté",
-        "publicité Meta exacte détectée: ad_id 1612331043776739"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-09-27T10:28:13.919444+00:00",
-          "channel": "advertising",
-          "source": "PLEIN SUD Résidences",
-          "title": "PLEIN SUD Résidences · ad #1600940645104728",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1600940645104728"
-        },
-        {
-          "detected_at": "2026-09-27T10:28:13.919470+00:00",
-          "channel": "advertising",
-          "source": "PLEIN SUD Résidences",
-          "title": "PLEIN SUD Résidences · ad #1612331043776739",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1612331043776739"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "PLEIN SUD Résidences",
-          "signal_type": "meta_ad",
-          "title": "PLEIN SUD Résidences · ad #1600940645104728",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1600940645104728",
-          "text": "PLEIN SUD Résidences PLEIN SUD Résidences 🏡 Vous recherchez un bien immobilier de qualité ? Nous sommes ravis de vous accompagner également dans notre nouveau projet situé à La Ferme Bretonne à Casablanca, un emplacement privilégié alliant confort, accessibilité et qualité de vie. ✨ Appartements modernes 📍 Emplacement stratégique à Casablanca 🏗️ Finitions soignées et cadre de vie agréable Pour organiser une visite, n'hésitez pas à nous contacter 📞 : 0657-246197 Votre futur chez-vous vous attend Découvrez votre futur appartement à Casablanca Contactez-nous pour organiser une visite Appeler ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.anfarealties.com%2Frenaissance%2F%3Futm_source%3Dmeta%26utm_medium%3Dcpc%26utm_campaign%3Drenaissance_casa_anfa%26utm_adset%3Dimmobilier%26utm_ad%3Dpost2&h=AUC8Lo8CVkwAp_Frplf_FKtK-28FEJg5R0HviNIWUx7fO_mDJhJ5t6bxfIlVnhkVebSiw93B40BktWNIKJ30UNvQEwgiLtuPsqrG0XbOXPsarGh6PD5Tsd1Rf5srpl6wpYajm-PPWSW5H50x",
-          "is_primary": true,
-          "launch_weight": 50,
-          "confidence_weight": 50,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1600940645104728",
-            "page_name": "PLEIN SUD Résidences",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1600940645104728",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.anfarealties.com%2Frenaissance%2F%3Futm_source%3Dmeta%26utm_medium%3Dcpc%26utm_campaign%3Drenaissance_casa_anfa%26utm_adset%3Dimmobilier%26utm_ad%3Dpost2&h=AUC8Lo8CVkwAp_Frplf_FKtK-28FEJg5R0HviNIWUx7fO_mDJhJ5t6bxfIlVnhkVebSiw93B40BktWNIKJ30UNvQEwgiLtuPsqrG0XbOXPsarGh6PD5Tsd1Rf5srpl6wpYajm-PPWSW5H50x",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "nouveau projet immobilier Casablanca",
-            "city_hint": null,
-            "zone_hint": null,
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1600940645104728",
-            "type: apartment_unknown",
-            "ville: Casablanca",
-            "zone: Anfa",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-09-27T10:28:13.919444+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "PLEIN SUD Résidences",
-          "price_mad": null,
-          "signal_id": "583f6b7b8f73b2c8ebf7dc4114065d9ef6ce920a"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "PLEIN SUD Résidences",
-          "signal_type": "meta_ad",
-          "title": "PLEIN SUD Résidences · ad #1612331043776739",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1612331043776739",
-          "text": "PLEIN SUD Résidences PLEIN SUD Résidences 🏡 Vous recherchez un bien immobilier de qualité ? Nous sommes ravis de vous accompagner également dans notre nouveau projet situé à La Ferme Bretonne à Casablanca, un emplacement privilégié alliant confort, accessibilité et qualité de vie. ✨ Appartements modernes 📍 Emplacement stratégique à Casablanca 🏗️ Finitions soignées et cadre de vie agréable Pour organiser une visite, n'hésitez pas à nous contacter 📞 : 0657-246197 Votre futur chez-vous vous attend Découvrez votre futur appartement à Casablanca Contactez-nous pour organiser une visite Appeler ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.anfarealties.com%2Frenaissance%2F%3Futm_source%3Dmeta%26utm_medium%3Dcpc%26utm_campaign%3Drenaissance_casa_anfa%26utm_adset%3Dimmobilier%26utm_ad%3Dpost2&h=AUC8Lo8CVkwAp_Frplf_FKtK-28FEJg5R0HviNIWUx7fO_mDJhJ5t6bxfIlVnhkVebSiw93B40BktWNIKJ30UNvQEwgiLtuPsqrG0XbOXPsarGh6PD5Tsd1Rf5srpl6wpYajm-PPWSW5H50x",
-          "is_primary": true,
-          "launch_weight": 50,
-          "confidence_weight": 50,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1612331043776739",
-            "page_name": "PLEIN SUD Résidences",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1612331043776739",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.anfarealties.com%2Frenaissance%2F%3Futm_source%3Dmeta%26utm_medium%3Dcpc%26utm_campaign%3Drenaissance_casa_anfa%26utm_adset%3Dimmobilier%26utm_ad%3Dpost2&h=AUC8Lo8CVkwAp_Frplf_FKtK-28FEJg5R0HviNIWUx7fO_mDJhJ5t6bxfIlVnhkVebSiw93B40BktWNIKJ30UNvQEwgiLtuPsqrG0XbOXPsarGh6PD5Tsd1Rf5srpl6wpYajm-PPWSW5H50x",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "nouveau projet immobilier Casablanca",
-            "city_hint": null,
-            "zone_hint": null,
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1612331043776739",
-            "type: apartment_unknown",
-            "ville: Casablanca",
-            "zone: Anfa",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-09-27T10:28:13.919470+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Anfa",
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "PLEIN SUD Résidences",
-          "price_mad": null,
-          "signal_id": "342d9e7cce3841688cb16526bac0c1e94ca27aff"
-        }
-      ]
-    },
-    {
-      "project_id": "0c65663dd067460315960bdec6e000db28c4d4d3",
-      "name": "des finitions de qualité",
-      "city": null,
-      "zone": null,
-      "promoter": "Kettani Immobilier",
-      "asset_type": "apartment_3_bed",
-      "first_detected_at": "2026-09-27T10:29:08.994010+00:00",
-      "last_updated_at": "2026-09-27T10:29:08.994043+00:00",
-      "launch_score": 76,
-      "confidence_score": 100,
-      "investment_score": 45,
-      "urgency_score": 78,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "des finitions de qualité | Promoteur: Kettani Immobilier | Ville: à confirmer | Zone: à confirmer | Confirmations: confirmation en cours | Prix observés entre 850000 et 850000 MAD.",
-      "prices": {
-        "min": 850000,
-        "max": 850000
-      },
-      "aliases": [
-        "des finitions de qualité"
-      ],
-      "channels": [
-        "advertising"
-      ],
-      "sources": [
-        "Kettani Immobilier - Promoteur de Confiance"
-      ],
-      "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1557003895638602",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2298326754234888"
-      ],
-      "evidence": {
-        "signal_count": 2,
-        "primary_signal_count": 2,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
-        "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "availability": {
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": 60,
-            "max": 110
-          },
-          "signal_count": 2
-        },
-        "geo": {
-          "lat": null,
-          "lng": null,
-          "sea_distance_km": null,
-          "station_distance_km": null,
-          "highway_distance_km": null
-        },
-        "price_band": "cash_ready",
-        "price_evolution": {
-          "trend": "stable",
-          "summary": "Prix observés entre 850000 et 850000 MAD."
-        },
-        "roi": {
-          "label": "Prudent",
-          "five_year_upside_score": 46
-        },
-        "project_slug": "des-finitions-de-qualit-0c65663d",
-        "infrastructure": {
-          "sea_distance_km": null,
-          "station_distance_km": null,
-          "highway_distance_km": null
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Kettani Immobilier - Promoteur de Confiance · ad #1557003895638602",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1557003895638602",
-            "source": "Kettani Immobilier - Promoteur de Confiance",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Kettani Immobilier - Promoteur de Confiance · ad #2298326754234888",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2298326754234888",
-            "source": "Kettani Immobilier - Promoteur de Confiance",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Appartement 3 chambres",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": 60,
-            "max": 110
-          },
-          "price_min": 850000,
-          "price_max": 850000
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Kettani Immobilier - Promoteur de Confiance · ad #1557003895638602",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1557003895638602",
-            "source": "Kettani Immobilier - Promoteur de Confiance",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Kettani Immobilier - Promoteur de Confiance · ad #2298326754234888",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2298326754234888",
-            "source": "Kettani Immobilier - Promoteur de Confiance",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "images": [
-          "assets/meta/meta-ad-1557003895638602.jpg"
-        ],
-        "videos": [],
-        "changes": [],
-        "is_new_project": true,
-        "qualification": {
-          "status": "new",
-          "notes": ""
-        }
-      },
-      "reasons": [
-        "publicité Meta exacte détectée: ad_id 1557003895638602",
-        "prix détecté: 850000 MAD",
-        "type: apartment_3_bed",
-        "publicité Meta exacte détectée: ad_id 2298326754234888"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-09-27T10:29:08.994010+00:00",
-          "channel": "advertising",
-          "source": "Kettani Immobilier - Promoteur de Confiance",
-          "title": "Kettani Immobilier - Promoteur de Confiance · ad #1557003895638602",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1557003895638602"
-        },
-        {
-          "detected_at": "2026-09-27T10:29:08.994043+00:00",
-          "channel": "advertising",
-          "source": "Kettani Immobilier - Promoteur de Confiance",
-          "title": "Kettani Immobilier - Promoteur de Confiance · ad #2298326754234888",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2298326754234888"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Kettani Immobilier - Promoteur de Confiance",
-          "signal_type": "meta_ad",
-          "title": "Kettani Immobilier - Promoteur de Confiance · ad #1557003895638602",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1557003895638602",
-          "text": "Kettani Immobilier - Promoteur de Confiance Kettani Immobilier - Promoteur de Confiance Aux Résidences du Golf, profitez d’un cadre de vie 100% résidentiel, pensé pour allier confort, espace et praticité au quotidien. Située à seulement 5 minutes de la plage de Bouznika, la résidence propose des appartements de 2 à 3 chambres, avec des finitions de qualité, des espaces lumineux et fonctionnels. Espaces verts, terrains de sport et commodités à proximité viennent compléter un cadre idéal pour vivre toute l’année ou investir dans un pied-à-terre au Maroc. À partir de 850.000 DH 📞 Contactez-nous : 05 22 79 51 50 #RésidencesDuGolf #KettaniImmobilier #Bouznika #ImmobilierMaroc #AppartementÀVendre Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Un cadre de vie 100% résidentiel Appartements 2 à 3 chambres, 60 à 110 m², dès 850.000 DH En savoir plus ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAX_QFtHepmbRvtVuPRdOqZRPkrJugtqUL0m34RdD1k8Oxf7MuKdAsGlCcyOxoHKneQ141a4YcXjSRbDm0a_NFT6HZyWTavqWU8FgTEfuLkKvck-r69V0hlsfyBvsHsnq5flv3I_rLrNgb-",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 44,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1557003895638602",
-            "page_name": "Kettani Immobilier - Promoteur de Confiance",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1557003895638602",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAX_QFtHepmbRvtVuPRdOqZRPkrJugtqUL0m34RdD1k8Oxf7MuKdAsGlCcyOxoHKneQ141a4YcXjSRbDm0a_NFT6HZyWTavqWU8FgTEfuLkKvck-r69V0hlsfyBvsHsnq5flv3I_rLrNgb-",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "projet immobilier Rabat",
-            "city_hint": "Rabat",
-            "zone_hint": null,
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": 60,
-                "max": 110
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1557003895638602",
-            "prix détecté: 850000 MAD",
-            "type: apartment_3_bed"
-          ],
-          "discovered_at": "2026-09-27T10:29:08.994010+00:00",
-          "city_hint": null,
-          "zone_hint": null,
-          "promoter_hint": "Kettani Immobilier",
-          "asset_type_hint": "apartment_3_bed",
-          "project_name_hint": "Kettani Immobilier - Promoteur de Confiance",
-          "price_mad": 850000,
-          "signal_id": "51fb061bd5c8aa1013ad8201cb3927ecd1902259"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Kettani Immobilier - Promoteur de Confiance",
-          "signal_type": "meta_ad",
-          "title": "Kettani Immobilier - Promoteur de Confiance · ad #2298326754234888",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2298326754234888",
-          "text": "Kettani Immobilier - Promoteur de Confiance Kettani Immobilier - Promoteur de Confiance Aux Résidences du Golf, profitez d’un cadre de vie 100% résidentiel, pensé pour allier confort, espace et praticité au quotidien. Située à seulement 5 minutes de la plage de Bouznika, la résidence propose des appartements de 2 à 3 chambres, avec des finitions de qualité, des espaces lumineux et fonctionnels. Espaces verts, terrains de sport et commodités à proximité viennent compléter un cadre idéal pour vivre toute l’année ou investir dans un pied-à-terre au Maroc. À partir de 850.000 DH 📞 Contactez-nous : 05 22 79 51 50 #RésidencesDuGolf #KettaniImmobilier #Bouznika #ImmobilierMaroc #AppartementÀVendre Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Kettani Immobilier - Promoteur de Confiance En savoir plus ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAX_QFtHepmbRvtVuPRdOqZRPkrJugtqUL0m34RdD1k8Oxf7MuKdAsGlCcyOxoHKneQ141a4YcXjSRbDm0a_NFT6HZyWTavqWU8FgTEfuLkKvck-r69V0hlsfyBvsHsnq5flv3I_rLrNgb-",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 44,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "2298326754234888",
-            "page_name": "Kettani Immobilier - Promoteur de Confiance",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2298326754234888",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUAX_QFtHepmbRvtVuPRdOqZRPkrJugtqUL0m34RdD1k8Oxf7MuKdAsGlCcyOxoHKneQ141a4YcXjSRbDm0a_NFT6HZyWTavqWU8FgTEfuLkKvck-r69V0hlsfyBvsHsnq5flv3I_rLrNgb-",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "projet immobilier Rabat",
-            "city_hint": "Rabat",
-            "zone_hint": null,
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 2298326754234888",
-            "prix détecté: 850000 MAD",
-            "type: apartment_3_bed"
-          ],
-          "discovered_at": "2026-09-27T10:29:08.994043+00:00",
-          "city_hint": null,
-          "zone_hint": null,
-          "promoter_hint": "Kettani Immobilier",
-          "asset_type_hint": "apartment_3_bed",
-          "project_name_hint": "Kettani Immobilier - Promoteur de Confiance",
-          "price_mad": 850000,
-          "signal_id": "23a4cd2471cda21095797ab777a2753e6131af8c"
-        }
-      ]
-    },
-    {
-      "project_id": "731eea544134f51dd14dee8bf2b307a20d9e9652",
-      "name": "Cbmiqwfbvv95cuxouvzyuwdtegptwhvycddzd1v0qzbtdkfkukvru3gwrmxfnk5jykh0bdnvv0nprvltaghkt011cy1zwedhwjvxr1awzlppvvp1ulyyruhuuwxnnmrmnl83ltbtwem3x0p4ehbdmfnfczbuv25obvpaq0nkduvddjnxawrqy1dkzkw0v3hqckhtegtiy1jsvtfeeffhulblymoyblbiavjpdzqwb1k",
-      "city": "Casablanca",
-      "zone": null,
-      "promoter": null,
-      "asset_type": null,
-      "first_detected_at": "2026-09-27T10:30:53.956556+00:00",
-      "last_updated_at": "2026-09-27T10:30:54.910911+00:00",
-      "launch_score": 76,
-      "confidence_score": 100,
-      "investment_score": 43,
-      "urgency_score": 83,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Cbmiqwfbvv95cuxouvzyuwdtegptwhvycddzd1v0qzbtdkfkukvru3gwrmxfnk5jykh0bdnvv0nprvltaghkt011cy1zwedhwjvxr1awzlppvvp1ulyyruhuuwxnnmrmnl83ltbtwem3x0p4ehbdmfnfczbuv25obvpaq0nkduvddjnxawrqy1dkzkw0v3hqckhtegtiy1jsvtfeeffhulblymoyblbiavjpdzqwb1k | Promoteur: à confirmer | Ville: Casablanca | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-      "prices": {
-        "min": null,
-        "max": null
-      },
-      "aliases": [
-        "Cbmiqwfbvv95cuxouvzyuwdtegptwhvycddzd1v0qzbtdkfkukvru3gwrmxfnk5jykh0bdnvv0nprvltaghkt011cy1zwedhwjvxr1awzlppvvp1ulyyruhuuwxnnmrmnl83ltbtwem3x0p4ehbdmfnfczbuv25obvpaq0nkduvddjnxawrqy1dkzkw0v3hqckhtegtiy1jsvtfeeffhulblymoyblbiavjpdzqwb1k",
-        "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-        "Immobilier coté : pourquoi RDS fait mieux que ses rivales - Medias24",
-        "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-        "Immobilier : Casablanca abrite le nouveau bureau régional Maghreb de la CREDA Union pour booster les investissements arabo-africains - telegraphe.ma",
-        "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News"
-      ],
-      "channels": [
-        "news"
-      ],
-      "sources": [
-        "Abidjan.net News",
-        "Medias24",
-        "telegraphe.ma"
-      ],
-      "source_urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5",
-        "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTF9VcnM3WW5UZ2FaSmV6cUpPSHFrQ0dQRDB4Q1VhOFh4UzlHWFVSMEZhWVV0Yl90dGppS3h5bVdnLWVVS2drM0ZlLTJJXzIyX2VTSFgwZEFRcmhrNlRSUlVsVlNaVXVZZGttcGdRTVhMTHBMM2VKYkQxRVRGZGNacnMtQkEtRGxFWTg5cEtrZmxZMEFGVWpYSVoxOGs?oc=5",
-        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5",
-        "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQ08tZnc4bnl6SlRFRFZOUFQ1UTJJZ3JZYmpCbnNnSzlWTElpMWdPX3U4WC1EcjE4UGpoeTd0NFdMS0VZT29wMkRCRTJ2OTR3UEltWXpHX0hDdTFfV3FDVHhhRjNQNVJ6TGZtaDhUdW9QcUFQcnBEajFVVzJTUTdMT2RDZkIxLWtvMWhFT09rVVBsMXBqYjdlZ2R5emFLa1pzQXh2dkZZRHd2QWxDaTRUVTFEYzh0ODlGRE1EMEtxbUVyZnBqMHl1LU1IZTlIS0VGSHowS09BQmNnNHZvR1NDbldFUi1QdDdRb2IzdzMzOXg?oc=5",
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5"
-      ],
-      "evidence": {
-        "signal_count": 5,
-        "primary_signal_count": 5,
-        "listing_signal_count": 0,
-        "source_count": 3,
-        "channel_count": 1,
-        "primary_channels": [
-          "news"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "availability": {
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "signal_count": 5
-        },
-        "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "price_band": "unknown",
-        "price_evolution": {
-          "trend": "unknown",
-          "summary": "Aucune série de prix fiable pour le moment."
-        },
-        "roi": {
-          "label": "Prudent",
-          "five_year_upside_score": 44
-        },
-        "project_slug": "cbmiqwfbvv95cuxouvzyuwdtegptwhvycddzd1v0qzbtdkfkukvru3gwrmxfnk5jykh0bdnvv0nprvltaghkt011cy1zwedhwjvxr1awzlppvvp1ulyyruhuuwxnnmrmnl83ltbtwem3x0p4ehbdmfnfczbuv25obvpaq0nkduvddjnxawrqy1dkzkw0v3hqckhtegtiy1jsvtfeeffhulblymoyblbiavjpdzqwb1k-731eea54",
-        "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
-          "highway_distance_km": 4
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5",
-            "source": "Medias24",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Immobilier coté : pourquoi RDS fait mieux que ses rivales - Medias24",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTF9VcnM3WW5UZ2FaSmV6cUpPSHFrQ0dQRDB4Q1VhOFh4UzlHWFVSMEZhWVV0Yl90dGppS3h5bVdnLWVVS2drM0ZlLTJJXzIyX2VTSFgwZEFRcmhrNlRSUlVsVlNaVXVZZGttcGdRTVhMTHBMM2VKYkQxRVRGZGNacnMtQkEtRGxFWTg5cEtrZmxZMEFGVWpYSVoxOGs?oc=5",
-            "source": "Medias24",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5",
-            "source": "Medias24",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Immobilier : Casablanca abrite le nouveau bureau régional Maghreb de la CREDA Union pour booster les investissements arabo-africains - telegraphe.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQ08tZnc4bnl6SlRFRFZOUFQ1UTJJZ3JZYmpCbnNnSzlWTElpMWdPX3U4WC1EcjE4UGpoeTd0NFdMS0VZT29wMkRCRTJ2OTR3UEltWXpHX0hDdTFfV3FDVHhhRjNQNVJ6TGZtaDhUdW9QcUFQcnBEajFVVzJTUTdMT2RDZkIxLWtvMWhFT09rVVBsMXBqYjdlZ2R5emFLa1pzQXh2dkZZRHd2QWxDaTRUVTFEYzh0ODlGRE1EMEtxbUVyZnBqMHl1LU1IZTlIS0VGSHowS09BQmNnNHZvR1NDbldFUi1QdDdRb2IzdzMzOXg?oc=5",
-            "source": "telegraphe.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-            "source": "Abidjan.net News",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          }
-        ],
-        "practical": {
-          "asset_label": "Type à confirmer",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "price_min": null,
-          "price_max": null
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Le prix public n'est pas encore confirmé.",
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [],
-        "listing_links": [],
-        "news_links": [
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5",
-            "source": "Medias24",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Immobilier coté : pourquoi RDS fait mieux que ses rivales - Medias24",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTF9VcnM3WW5UZ2FaSmV6cUpPSHFrQ0dQRDB4Q1VhOFh4UzlHWFVSMEZhWVV0Yl90dGppS3h5bVdnLWVVS2drM0ZlLTJJXzIyX2VTSFgwZEFRcmhrNlRSUlVsVlNaVXVZZGttcGdRTVhMTHBMM2VKYkQxRVRGZGNacnMtQkEtRGxFWTg5cEtrZmxZMEFGVWpYSVoxOGs?oc=5",
-            "source": "Medias24",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5",
-            "source": "Medias24",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Immobilier : Casablanca abrite le nouveau bureau régional Maghreb de la CREDA Union pour booster les investissements arabo-africains - telegraphe.ma",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQ08tZnc4bnl6SlRFRFZOUFQ1UTJJZ3JZYmpCbnNnSzlWTElpMWdPX3U4WC1EcjE4UGpoeTd0NFdMS0VZT29wMkRCRTJ2OTR3UEltWXpHX0hDdTFfV3FDVHhhRjNQNVJ6TGZtaDhUdW9QcUFQcnBEajFVVzJTUTdMT2RDZkIxLWtvMWhFT09rVVBsMXBqYjdlZ2R5emFLa1pzQXh2dkZZRHd2QWxDaTRUVTFEYzh0ODlGRE1EMEtxbUVyZnBqMHl1LU1IZTlIS0VGSHowS09BQmNnNHZvR1NDbldFUi1QdDdRb2IzdzMzOXg?oc=5",
-            "source": "telegraphe.ma",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          },
-          {
-            "kind": "google_news",
-            "kind_label": "Article / Google News",
-            "label": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-            "description": "Résultat presse ou Google News surveillé.",
-            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-            "source": "Abidjan.net News",
-            "signal_type": "news_result",
-            "proof_level": "watch"
-          }
-        ],
-        "urbanism_links": [],
-        "images": [],
-        "videos": [],
-        "changes": [],
-        "is_new_project": true,
-        "qualification": {
-          "status": "new",
-          "notes": ""
-        }
-      },
-      "reasons": [
-        "article presse détecté",
-        "mot-clé presse: projet immobilier",
-        "ville: Casablanca",
-        "marqueur de lancement détecté"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-09-27T10:30:53.956556+00:00",
-          "channel": "news",
-          "source": "Medias24",
-          "title": "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5"
-        },
-        {
-          "detected_at": "2026-09-27T10:30:54.910694+00:00",
-          "channel": "news",
-          "source": "Medias24",
-          "title": "Immobilier coté : pourquoi RDS fait mieux que ses rivales - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTF9VcnM3WW5UZ2FaSmV6cUpPSHFrQ0dQRDB4Q1VhOFh4UzlHWFVSMEZhWVV0Yl90dGppS3h5bVdnLWVVS2drM0ZlLTJJXzIyX2VTSFgwZEFRcmhrNlRSUlVsVlNaVXVZZGttcGdRTVhMTHBMM2VKYkQxRVRGZGNacnMtQkEtRGxFWTg5cEtrZmxZMEFGVWpYSVoxOGs?oc=5"
-        },
-        {
-          "detected_at": "2026-09-27T10:30:54.910799+00:00",
-          "channel": "news",
-          "source": "Medias24",
-          "title": "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5"
-        },
-        {
-          "detected_at": "2026-09-27T10:30:54.910860+00:00",
-          "channel": "news",
-          "source": "telegraphe.ma",
-          "title": "Immobilier : Casablanca abrite le nouveau bureau régional Maghreb de la CREDA Union pour booster les investissements arabo-africains - telegraphe.ma",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQ08tZnc4bnl6SlRFRFZOUFQ1UTJJZ3JZYmpCbnNnSzlWTElpMWdPX3U4WC1EcjE4UGpoeTd0NFdMS0VZT29wMkRCRTJ2OTR3UEltWXpHX0hDdTFfV3FDVHhhRjNQNVJ6TGZtaDhUdW9QcUFQcnBEajFVVzJTUTdMT2RDZkIxLWtvMWhFT09rVVBsMXBqYjdlZ2R5emFLa1pzQXh2dkZZRHd2QWxDaTRUVTFEYzh0ODlGRE1EMEtxbUVyZnBqMHl1LU1IZTlIS0VGSHowS09BQmNnNHZvR1NDbldFUi1QdDdRb2IzdzMzOXg?oc=5"
-        },
-        {
-          "detected_at": "2026-09-27T10:30:54.910911+00:00",
-          "channel": "news",
-          "source": "Abidjan.net News",
-          "title": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Medias24",
-          "signal_type": "news_result",
-          "title": "Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5",
-          "text": "nouveau projet immobilier Maroc Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca - Medias24 <a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUVZyUWdteGpTWHVYcDdzd1V0QzBTdkFKUkVRU3gwRmxfNk5JYkh0bDNvV0NPRVltaGhKT011cy1zWEdhWjVXR1AwZlpPVVp1UlYyRUhUUWxnNmRmNl83LTBTWEM3X0p4eHBDMFNfczBUV25obVpaQ0NkdUVDdjNXaWRqY1dKZkw0V3hqckhteGtiY1JSVTFEeFFHUlBlYmoyblBIaVJPdzQwb1k?oc=5\" target=\"_blank\">Immobilier. Les nouveaux choix d'investissement en 2026 à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
-          "is_primary": true,
-          "launch_weight": 28,
-          "confidence_weight": 27,
-          "metadata": {
-            "query": "nouveau projet immobilier Maroc",
-            "published": "Sat, 25 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "mot-clé presse: projet immobilier",
-            "ville: Casablanca",
-            "marqueur de lancement détecté"
-          ],
-          "discovered_at": "2026-09-27T10:30:53.956556+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "ff21a4626796a06265784a55ae4e36e4bead8a1f"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Medias24",
-          "signal_type": "news_result",
-          "title": "Immobilier coté : pourquoi RDS fait mieux que ses rivales - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTF9VcnM3WW5UZ2FaSmV6cUpPSHFrQ0dQRDB4Q1VhOFh4UzlHWFVSMEZhWVV0Yl90dGppS3h5bVdnLWVVS2drM0ZlLTJJXzIyX2VTSFgwZEFRcmhrNlRSUlVsVlNaVXVZZGttcGdRTVhMTHBMM2VKYkQxRVRGZGNacnMtQkEtRGxFWTg5cEtrZmxZMEFGVWpYSVoxOGs?oc=5",
-          "text": "promotion immobilière Casablanca Immobilier coté : pourquoi RDS fait mieux que ses rivales - Medias24 <a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPTF9VcnM3WW5UZ2FaSmV6cUpPSHFrQ0dQRDB4Q1VhOFh4UzlHWFVSMEZhWVV0Yl90dGppS3h5bVdnLWVVS2drM0ZlLTJJXzIyX2VTSFgwZEFRcmhrNlRSUlVsVlNaVXVZZGttcGdRTVhMTHBMM2VKYkQxRVRGZGNacnMtQkEtRGxFWTg5cEtrZmxZMEFGVWpYSVoxOGs?oc=5\" target=\"_blank\">Immobilier coté : pourquoi RDS fait mieux que ses rivales</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Mon, 20 Jul 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-09-27T10:30:54.910694+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "950d92a78f03a8e48fa40e2380ab75f172be8b6e"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Medias24",
-          "signal_type": "news_result",
-          "title": "L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5",
-          "text": "promotion immobilière Casablanca L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca - Medias24 <a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdlRGTXJ4T3hjYXJZOV84dVRJWktxM1QwcXhZVFNWLTFyMzgxcldFZ2xXSTZMR0J3UFNNZklXMnI5VkNmRmtRbmUzUW50MzdNTmUzUEhsNWVtbEdpbjJDRG9TZVhyV18yeXRSWmprTWlzU1ozbkpuN3cyRjYzNi1OWGRMRlFmbzdzM3oxb2Q5WF9HQWh2RjFvU0JqM1lqRTJJNEM4UEdVU2d3dDhMcC1RRkl0Q05PYU85b1FIYjU4dHlhRTRHNEVqZ0x4NF93WnBOeWc?oc=5\" target=\"_blank\">L’Union arabe de la promotion immobilière lance son bureau régional pour le Maghreb à Casablanca</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medias24</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-09-27T10:30:54.910799+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "79ada6c22a846d66b7ddaf30c32894d810c494a3"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "telegraphe.ma",
-          "signal_type": "news_result",
-          "title": "Immobilier : Casablanca abrite le nouveau bureau régional Maghreb de la CREDA Union pour booster les investissements arabo-africains - telegraphe.ma",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQ08tZnc4bnl6SlRFRFZOUFQ1UTJJZ3JZYmpCbnNnSzlWTElpMWdPX3U4WC1EcjE4UGpoeTd0NFdMS0VZT29wMkRCRTJ2OTR3UEltWXpHX0hDdTFfV3FDVHhhRjNQNVJ6TGZtaDhUdW9QcUFQcnBEajFVVzJTUTdMT2RDZkIxLWtvMWhFT09rVVBsMXBqYjdlZ2R5emFLa1pzQXh2dkZZRHd2QWxDaTRUVTFEYzh0ODlGRE1EMEtxbUVyZnBqMHl1LU1IZTlIS0VGSHowS09BQmNnNHZvR1NDbldFUi1QdDdRb2IzdzMzOXg?oc=5",
-          "text": "promotion immobilière Casablanca Immobilier : Casablanca abrite le nouveau bureau régional Maghreb de la CREDA Union pour booster les investissements arabo-africains - telegraphe.ma <a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQ08tZnc4bnl6SlRFRFZOUFQ1UTJJZ3JZYmpCbnNnSzlWTElpMWdPX3U4WC1EcjE4UGpoeTd0NFdMS0VZT29wMkRCRTJ2OTR3UEltWXpHX0hDdTFfV3FDVHhhRjNQNVJ6TGZtaDhUdW9QcUFQcnBEajFVVzJTUTdMT2RDZkIxLWtvMWhFT09rVVBsMXBqYjdlZ2R5emFLa1pzQXh2dkZZRHd2QWxDaTRUVTFEYzh0ODlGRE1EMEtxbUVyZnBqMHl1LU1IZTlIS0VGSHowS09BQmNnNHZvR1NDbldFUi1QdDdRb2IzdzMzOXg?oc=5\" target=\"_blank\">Immobilier : Casablanca abrite le nouveau bureau régional Maghreb de la CREDA Union pour booster les investissements arabo-africains</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">telegraphe.ma</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-09-27T10:30:54.910860+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "5e707d8b20aa2ef0106a77e4d692ab0c4d85b6d7"
-        },
-        {
-          "collector": "news.google_news",
-          "channel": "news",
-          "source": "Abidjan.net News",
-          "signal_type": "news_result",
-          "title": "Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5",
-          "text": "promotion immobilière Casablanca Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier - Abidjan.net News <a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQZ3BFeElMcTdtSnRobVpkUDFYQzRObmtzbTZWU1pBRGthUWJud1d4UkJxZElBOFMwaEZscUw3UGZHeHhacENZYkl0OW02MUNJMWw3QnZZbWEzSkNYLW5zdENobHBLYkZuNERDYmZZSTBRUDRFeVJIYjRseXEwQ2V1cUZFYURGUU5CMm1MbF9SRnVGS1NKTkJVNm5Db3h3SWxSMUE2MHhwcGJwNm1ab19Hc1N3LVhLMEI3aEt2UVBEUng2TEhuLVNJ?oc=5\" target=\"_blank\">Coopération Arabo-africaine: Casablanca devient le hub régional du BTP et de l’immobilier</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Abidjan.net News</font>",
-          "is_primary": true,
-          "launch_weight": 12,
-          "confidence_weight": 16,
-          "metadata": {
-            "query": "promotion immobilière Casablanca",
-            "published": "Wed, 29 Apr 2026 07:00:00 GMT",
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "article presse détecté",
-            "ville: Casablanca"
-          ],
-          "discovered_at": "2026-09-27T10:30:54.910911+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": null,
-          "price_mad": null,
-          "signal_id": "a2976794136814a7b207a0b769a32740b7f2b7e4"
-        }
-      ]
-    },
-    {
-      "project_id": "710dd4840d17382c83b5c79eae9692d6d7e05cbb",
-      "name": "Hiba",
-      "city": "Agadir",
-      "zone": null,
-      "promoter": null,
-      "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-09-27T10:29:34.569271+00:00",
-      "last_updated_at": "2026-09-27T10:29:34.569319+00:00",
-      "launch_score": 76,
-      "confidence_score": 96,
-      "investment_score": 36,
-      "urgency_score": 75,
-      "recommendation": "Buy",
-      "status": "urgent",
-      "summary": "Hiba | Promoteur: à confirmer | Ville: Agadir | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
-      "prices": {
-        "min": null,
-        "max": null
-      },
-      "aliases": [
-        "Hiba"
-      ],
-      "channels": [
-        "advertising"
-      ],
-      "sources": [
-        "Centre de TCM Agadir"
-      ],
-      "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2150101372244094",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1594564088986926"
-      ],
-      "evidence": {
-        "signal_count": 2,
-        "primary_signal_count": 2,
-        "listing_signal_count": 0,
-        "source_count": 1,
-        "channel_count": 1,
-        "primary_channels": [
-          "advertising"
-        ],
-        "secondary_channels": [],
-        "confirmations": [],
-        "confirmation_details": [],
-        "confirmation_count": 0,
-        "availability": {
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "signal_count": 2
-        },
-        "geo": {
-          "lat": 30.4278,
-          "lng": -9.5981,
-          "sea_distance_km": 4,
-          "station_distance_km": 9,
-          "highway_distance_km": 6
-        },
-        "price_band": "unknown",
-        "price_evolution": {
-          "trend": "unknown",
-          "summary": "Aucune série de prix fiable pour le moment."
-        },
-        "roi": {
-          "label": "Prudent",
-          "five_year_upside_score": 38
-        },
-        "project_slug": "hiba-710dd484",
-        "infrastructure": {
-          "sea_distance_km": 4,
-          "station_distance_km": 9,
-          "highway_distance_km": 6
-        },
-        "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
-        "source_catalog": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Centre de TCM Agadir · ad #2150101372244094",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2150101372244094",
-            "source": "Centre de TCM Agadir",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Centre de TCM Agadir · ad #1594564088986926",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1594564088986926",
-            "source": "Centre de TCM Agadir",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "practical": {
-          "asset_label": "Appartement",
-          "public_status": "Aucune disponibilité publique détectée pour le moment.",
-          "status": null,
-          "unit_count_min": null,
-          "surface_m2": {
-            "min": null,
-            "max": null
-          },
-          "price_min": null,
-          "price_max": null
-        },
-        "ai_analysis": {
-          "summary": "Surveiller activement et valider disponibilités, prix et calendrier.",
-          "strengths": [
-            "Le score de confiance est élevé, donc le signal paraît crédible."
-          ],
-          "risks": [
-            "Le prix public n'est pas encore confirmé.",
-            "Aucune disponibilité publique confirmée sur portail pour l'instant."
-          ],
-          "next_steps": [
-            "Vérifier le site officiel et les pages sociales du promoteur.",
-            "Confirmer les disponibilités et le ticket d'entrée réel.",
-            "Surveiller si de nouveaux documents urbanisme ou listings apparaissent."
-          ]
-        },
-        "official_links": [],
-        "social_links": [
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Centre de TCM Agadir · ad #2150101372244094",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2150101372244094",
-            "source": "Centre de TCM Agadir",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Centre de TCM Agadir · ad #1594564088986926",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1594564088986926",
-            "source": "Centre de TCM Agadir",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          }
-        ],
-        "listing_links": [],
-        "news_links": [],
-        "urbanism_links": [],
-        "images": [
-          "assets/meta/meta-ad-2150101372244094.jpg"
-        ],
-        "videos": [],
-        "changes": [],
-        "is_new_project": true,
-        "qualification": {
-          "status": "new",
-          "notes": ""
-        }
-      },
-      "reasons": [
-        "publicité Meta exacte détectée: ad_id 2150101372244094",
-        "type: apartment_unknown",
-        "ville: Agadir",
-        "publicité Meta exacte détectée: ad_id 1594564088986926"
-      ],
-      "timeline": [
-        {
-          "detected_at": "2026-09-27T10:29:34.569271+00:00",
-          "channel": "advertising",
-          "source": "Centre de TCM Agadir",
-          "title": "Centre de TCM Agadir · ad #2150101372244094",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2150101372244094"
-        },
-        {
-          "detected_at": "2026-09-27T10:29:34.569319+00:00",
-          "channel": "advertising",
-          "source": "Centre de TCM Agadir",
-          "title": "Centre de TCM Agadir · ad #1594564088986926",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1594564088986926"
-        }
-      ],
-      "signals": [
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Centre de TCM Agadir",
-          "signal_type": "meta_ad",
-          "title": "Centre de TCM Agadir · ad #2150101372244094",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2150101372244094",
-          "text": "Centre de TCM Agadir Centre de TCM Agadir 🌿 Centre de médecine traditionnelle chinoise 📍 Résidence Hiba, Angle Av. Mokaouama & 9 Juillet, Imm. B, Plateau 4, Agadir 📞 0650161719 🕘 Lundi – Samedi | 09h00 – 18h00 Centre de TCM Agadir Rehabilitation Center 3 498 personnes aiment ça J’aime cette Page ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBA7WLDDfggCgZupEekn5Rf6iHgLQ9TDmv_SLMok2tdQM0mSFjBmDzvqXMzxag9SN8CFwb8wgt2xRcJe3Zl1H2vVoS8cCjKyRtcy1hZ81ncJsIR1KPBSTWordRkxf7cy-G4Y6mCD_uzQq9I",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 42,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "2150101372244094",
-            "page_name": "Centre de TCM Agadir",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2150101372244094",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBA7WLDDfggCgZupEekn5Rf6iHgLQ9TDmv_SLMok2tdQM0mSFjBmDzvqXMzxag9SN8CFwb8wgt2xRcJe3Zl1H2vVoS8cCjKyRtcy1hZ81ncJsIR1KPBSTWordRkxf7cy-G4Y6mCD_uzQq9I",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "résidence Agadir",
-            "city_hint": "Agadir",
-            "zone_hint": null,
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 2150101372244094",
-            "type: apartment_unknown",
-            "ville: Agadir"
-          ],
-          "discovered_at": "2026-09-27T10:29:34.569271+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Centre de TCM Agadir",
-          "price_mad": null,
-          "signal_id": "25fd680029a419cec4f043b31baa7e5db83603d0"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Centre de TCM Agadir",
-          "signal_type": "meta_ad",
-          "title": "Centre de TCM Agadir · ad #1594564088986926",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1594564088986926",
-          "text": "Centre de TCM Agadir Centre de TCM Agadir 🌿 Centre de médecine traditionnelle chinoise 📍 Résidence Hiba, Angle Av. Mokaouama & 9 Juillet, Imm. B, Plateau 4, Agadir 📞 0650161719 🕘 Lundi – Samedi | 09h00 – 18h00 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus API.WHATSAPP.COM Centre De TCM Agadir Envoyer un message WhatsApp ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBA7WLDDfggCgZupEekn5Rf6iHgLQ9TDmv_SLMok2tdQM0mSFjBmDzvqXMzxag9SN8CFwb8wgt2xRcJe3Zl1H2vVoS8cCjKyRtcy1hZ81ncJsIR1KPBSTWordRkxf7cy-G4Y6mCD_uzQq9I",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 42,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "1594564088986926",
-            "page_name": "Centre de TCM Agadir",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1594564088986926",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBA7WLDDfggCgZupEekn5Rf6iHgLQ9TDmv_SLMok2tdQM0mSFjBmDzvqXMzxag9SN8CFwb8wgt2xRcJe3Zl1H2vVoS8cCjKyRtcy1hZ81ncJsIR1KPBSTWordRkxf7cy-G4Y6mCD_uzQq9I",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "résidence Agadir",
-            "city_hint": "Agadir",
-            "zone_hint": null,
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1594564088986926",
-            "type: apartment_unknown",
-            "ville: Agadir"
-          ],
-          "discovered_at": "2026-09-27T10:29:34.569319+00:00",
-          "city_hint": "Agadir",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Centre de TCM Agadir",
-          "price_mad": null,
-          "signal_id": "bf8709008760938e1b5cd0929eea000265fe42d3"
-        }
-      ]
     }
   ],
   "digest": [
     {
-      "project_id": "57af40aaf20318191d8d1760dd339b52914c7779",
-      "name": "Green lotus Green lotus Green Lotus",
-      "city": "Casablanca",
-      "zone": "Bouskoura",
+      "project_id": "9b6fa2b33597a666b3ed60b341cef98f98477466",
+      "name": "Mobilia Rabat",
+      "city": "Rabat",
+      "zone": "Agdal",
       "promoter": null,
-      "asset_type": null,
-      "first_detected_at": "2026-09-27T10:26:30.688740+00:00",
-      "last_updated_at": "2026-09-27T10:26:38.203131+00:00",
-      "launch_score": 100,
-      "confidence_score": 100,
-      "investment_score": 59,
-      "urgency_score": 100,
+      "asset_type": "apartment_unknown",
+      "first_detected_at": "2026-09-30T11:03:58.105710+00:00",
+      "last_updated_at": "2026-09-30T11:03:58.105731+00:00",
+      "launch_score": 76,
+      "confidence_score": 96,
+      "investment_score": 54,
+      "urgency_score": 79,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "Green lotus Green lotus Green Lotus | Promoteur: à confirmer | Ville: Casablanca | Zone: Bouskoura | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "summary": "Mobilia Rabat | Promoteur: à confirmer | Ville: Rabat | Zone: Agdal | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
       "prices": {
         "min": null,
         "max": null
       },
       "aliases": [
-        "Green lotus Green lotus Green Lotus",
-        "Green lotus Green lotus Green Lotus Business"
+        "Mobilia Rabat"
       ],
       "channels": [
         "advertising"
       ],
       "sources": [
-        "Green lotus"
+        "Mobilia Rabat"
       ],
       "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1552586563232522",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2390619535083694"
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575"
       ],
       "evidence": {
-        "signal_count": 3,
-        "primary_signal_count": 3,
+        "signal_count": 2,
+        "primary_signal_count": 2,
         "listing_signal_count": 0,
         "source_count": 1,
         "channel_count": 1,
@@ -2066,13 +577,13 @@
             "min": null,
             "max": null
           },
-          "signal_count": 3
+          "signal_count": 2
         },
         "geo": {
-          "lat": 33.5731,
-          "lng": -7.5898,
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
+          "lat": 34.0209,
+          "lng": -6.8416,
+          "sea_distance_km": 7,
+          "station_distance_km": 4,
           "highway_distance_km": 4
         },
         "price_band": "unknown",
@@ -2081,13 +592,13 @@
           "summary": "Aucune série de prix fiable pour le moment."
         },
         "roi": {
-          "label": "Moyen",
-          "five_year_upside_score": 59
+          "label": "Prudent",
+          "five_year_upside_score": 54
         },
-        "project_slug": "green-lotus-green-lotus-green-lotus-57af40aa",
+        "project_slug": "mobilia-rabat-9b6fa2b3",
         "infrastructure": {
-          "sea_distance_km": 6,
-          "station_distance_km": 5,
+          "sea_distance_km": 7,
+          "station_distance_km": 4,
           "highway_distance_km": 4
         },
         "recommendation_narrative": "Surveiller activement et valider disponibilités, prix et calendrier.",
@@ -2095,36 +606,26 @@
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #1039379112368362",
+            "label": "Mobilia Rabat · ad #1620969222885314",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-            "source": "Green lotus",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+            "source": "Mobilia Rabat",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #1552586563232522",
+            "label": "Mobilia Rabat · ad #1031718602760575",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1552586563232522",
-            "source": "Green lotus",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #2390619535083694",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2390619535083694",
-            "source": "Green lotus",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+            "source": "Mobilia Rabat",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
         ],
         "practical": {
-          "asset_label": "Type à confirmer",
+          "asset_label": "Appartement",
           "public_status": "Aucune disponibilité publique détectée pour le moment.",
           "status": null,
           "unit_count_min": null,
@@ -2155,30 +656,20 @@
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #1039379112368362",
+            "label": "Mobilia Rabat · ad #1620969222885314",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-            "source": "Green lotus",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+            "source": "Mobilia Rabat",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #1552586563232522",
+            "label": "Mobilia Rabat · ad #1031718602760575",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1552586563232522",
-            "source": "Green lotus",
-            "signal_type": "meta_ad",
-            "proof_level": "direct"
-          },
-          {
-            "kind": "meta_ads",
-            "kind_label": "Publicité Meta",
-            "label": "Green lotus · ad #2390619535083694",
-            "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2390619535083694",
-            "source": "Green lotus",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+            "source": "Mobilia Rabat",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
@@ -2186,13 +677,12 @@
         "listing_links": [],
         "news_links": [],
         "urbanism_links": [],
-        "images": [
-          "assets/meta/meta-ad-2390619535083694.jpg"
-        ],
+        "images": [],
         "videos": [],
         "changes": [
-          "Confidence score en hausse: 92 → 100",
-          "Urgency score en hausse: 78 → 100"
+          "Confidence score en hausse: 54 → 96",
+          "Urgency score en hausse: 47 → 79",
+          "Statut projet: monitor → urgent"
         ],
         "is_new_project": false,
         "qualification": {
@@ -2201,57 +691,50 @@
         }
       },
       "reasons": [
-        "publicité Meta exacte détectée: ad_id 1039379112368362",
-        "ville: Casablanca",
-        "zone: Bouskoura",
-        "publicité Meta exacte détectée: ad_id 1552586563232522",
-        "publicité Meta exacte détectée: ad_id 2390619535083694"
+        "publicité Meta exacte détectée: ad_id 1620969222885314",
+        "type: apartment_unknown",
+        "ville: Rabat",
+        "zone: Agdal",
+        "publicité Meta exacte détectée: ad_id 1031718602760575"
       ],
       "timeline": [
         {
-          "detected_at": "2026-09-27T10:26:30.688740+00:00",
+          "detected_at": "2026-09-30T11:03:58.105710+00:00",
           "channel": "advertising",
-          "source": "Green lotus",
-          "title": "Green lotus · ad #1039379112368362",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362"
+          "source": "Mobilia Rabat",
+          "title": "Mobilia Rabat · ad #1620969222885314",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314"
         },
         {
-          "detected_at": "2026-09-27T10:26:30.688812+00:00",
+          "detected_at": "2026-09-30T11:03:58.105731+00:00",
           "channel": "advertising",
-          "source": "Green lotus",
-          "title": "Green lotus · ad #1552586563232522",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1552586563232522"
-        },
-        {
-          "detected_at": "2026-09-27T10:26:38.203131+00:00",
-          "channel": "advertising",
-          "source": "Green lotus",
-          "title": "Green lotus · ad #2390619535083694",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2390619535083694"
+          "source": "Mobilia Rabat",
+          "title": "Mobilia Rabat · ad #1031718602760575",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575"
         }
       ],
       "signals": [
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "Green lotus",
+          "source": "Mobilia Rabat",
           "signal_type": "meta_ad",
-          "title": "Green lotus · ad #1039379112368362",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-          "text": "Green lotus Green lotus Green Lotus est un ensemble résidentiel et de services haut standing bénéficiant d’un positionnement exceptionnel à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie et Casa Nearshore. Conçu comme un véritable écosystème de vie, où plus des deux tiers du site sont consacrés aux espaces verts et aux aménagements paysagers, le projet est pensé selon une approche durable intégrant des matériaux écoresponsables, une gestion optimisée des ressources et des solutions énergétiques performantes, lui permettant d’obtenir la certification HQE – Haute Qualité Environnementale. Son architecture organique, élégante et contemporaine s’intègre harmonieusement dans son environnement, créant une véritable oasis de sérénité à quelques minutes seulement de l’effervescence urbaine. Green Lotus se positionne comme un nouvel emblème de la vie contemporaine, offrant des perspectives dégagées et un cadre de vie unique dominant l’horizon. Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus La référence du bien-vivre à Casablanca Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fcontact%2F&h=AUCUZuCnn1jfMla6BSUr6K_dp8rcOx_UwY5QRuH7B26i31t8nzx138SfrSnAABclcwUtZftAcFD6VjGVCaa7yIlxtCTCOcHiJuptdwWEa2yBLTE3WktB_FfQVArduyclJHzlrU6db_TI2P8f",
+          "title": "Mobilia Rabat · ad #1620969222885314",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+          "text": "Mobilia Rabat Mobilia Rabat ✨ BON PLAN MOBILIA RABAT ✨ Vous cherchez à meubler votre maison avec style… sans exploser votre budget ? 👀 👉 Chez Mobilia Rabat, profitez d’une sélection exceptionnelle de mobilier moderne, confortable et au meilleur rapport qualité / prix 💯 🛋️ Salons élégants 🛏️ Chambres complètes 🍽️ Salles à manger tendances 📺 Meubles TV & déco 💥 Des offres exclusives vous attendent en magasin 💥 Des prix qui vont vous surprendre 🚚 Livraison rapide partout au Maroc 🛠️ Montage assuré 🏡 Solution clé en main Rendez-vous dans notre showroom pour 📍 Spécial showroom Rabat Showrooms ouverts Horaires : Lundi au Samedi : 9h à 20h Dimanche : 10h à 19h 📌 Adresses : 15 Avenue Hassan II, Résidence Maryam Agdal – Rabat 📞 0674 06 09 35 Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus MAPS.APP.GOO.GL Mobilia Rabat Obtenir les promotions ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUDfVfqsmt521B0piptvIdV48o4FJOmmRAc2QRrZ8Z8TqcvcOYH9ME3Gasv1tqu_T_1BAd8tH3Xt74D34KfkQ_5Ky9WGKYQLwz3ZdrobR_Cx1cuKlvxG7EhXrKek_5NukDlAWf71eXENZEIV",
           "is_primary": true,
           "launch_weight": 38,
-          "confidence_weight": 40,
+          "confidence_weight": 42,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "1039379112368362",
-            "page_name": "Green lotus",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1039379112368362",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fcontact%2F&h=AUCUZuCnn1jfMla6BSUr6K_dp8rcOx_UwY5QRuH7B26i31t8nzx138SfrSnAABclcwUtZftAcFD6VjGVCaa7yIlxtCTCOcHiJuptdwWEa2yBLTE3WktB_FfQVArduyclJHzlrU6db_TI2P8f",
+            "ad_id": "1620969222885314",
+            "page_name": "Mobilia Rabat",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1620969222885314",
+            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUDfVfqsmt521B0piptvIdV48o4FJOmmRAc2QRrZ8Z8TqcvcOYH9ME3Gasv1tqu_T_1BAd8tH3Xt74D34KfkQ_5Ky9WGKYQLwz3ZdrobR_Cx1cuKlvxG7EhXrKek_5NukDlAWf71eXENZEIV",
             "image_urls": [],
             "video_urls": [],
-            "query": "Green Lotus",
-            "city_hint": "Casablanca",
+            "query": "résidence Rabat",
+            "city_hint": "Rabat",
             "zone_hint": null,
             "availability": {
               "status": null,
@@ -2263,40 +746,41 @@
             }
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 1039379112368362",
-            "ville: Casablanca",
-            "zone: Bouskoura"
+            "publicité Meta exacte détectée: ad_id 1620969222885314",
+            "type: apartment_unknown",
+            "ville: Rabat",
+            "zone: Agdal"
           ],
-          "discovered_at": "2026-09-27T10:26:30.688740+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Bouskoura",
+          "discovered_at": "2026-09-30T11:03:58.105710+00:00",
+          "city_hint": "Rabat",
+          "zone_hint": "Agdal",
           "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Green lotus",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Mobilia Rabat",
           "price_mad": null,
-          "signal_id": "bcb9a6c40555ca5947d53ed68bf6dfe87d9a2c60"
+          "signal_id": "123b9ce302d2fbac2975adc9e61e682982eba933"
         },
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "Green lotus",
+          "source": "Mobilia Rabat",
           "signal_type": "meta_ad",
-          "title": "Green lotus · ad #1552586563232522",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1552586563232522",
-          "text": "Green lotus Green lotus Green Lotus est un ensemble résidentiel et de services haut standing bénéficiant d’un positionnement exceptionnel à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie et Casa Nearshore. Conçu comme un véritable écosystème de vie, où plus des deux tiers du site sont consacrés aux espaces verts et aux aménagements paysagers, le projet est pensé selon une approche durable intégrant des matériaux écoresponsables, une gestion optimisée des ressources et des solutions énergétiques performantes, lui permettant d’obtenir la certification HQE – Haute Qualité Environnementale. Son architecture organique, élégante et contemporaine s’intègre harmonieusement dans son environnement, créant une véritable oasis de sérénité à quelques minutes seulement de l’effervescence urbaine. Green Lotus se positionne comme un nouvel emblème de la vie contemporaine, offrant des perspectives dégagées et un cadre de vie unique dominant l’horizon. Learn More ​ https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fcontact%2F&h=AUCUZuCnn1jfMla6BSUr6K_dp8rcOx_UwY5QRuH7B26i31t8nzx138SfrSnAABclcwUtZftAcFD6VjGVCaa7yIlxtCTCOcHiJuptdwWEa2yBLTE3WktB_FfQVArduyclJHzlrU6db_TI2P8f",
+          "title": "Mobilia Rabat · ad #1031718602760575",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+          "text": "Mobilia Rabat Mobilia Rabat Offre spéciale Mobilia Rabat 🔥🚨 . 15 résidence Mariam avenue Hassan 2 Agdal Rabat à 100 m de la gare Rabat ville . Tel : 0662 05 18 00 . #Promo #offre #mobilia #rabat #maroc Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus MAPS.APP.GOO.GL Mobilia Rabat Obtenir les promotions ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUDfVfqsmt521B0piptvIdV48o4FJOmmRAc2QRrZ8Z8TqcvcOYH9ME3Gasv1tqu_T_1BAd8tH3Xt74D34KfkQ_5Ky9WGKYQLwz3ZdrobR_Cx1cuKlvxG7EhXrKek_5NukDlAWf71eXENZEIV",
           "is_primary": true,
           "launch_weight": 38,
-          "confidence_weight": 40,
+          "confidence_weight": 42,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "1552586563232522",
-            "page_name": "Green lotus",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1552586563232522",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fcontact%2F&h=AUCUZuCnn1jfMla6BSUr6K_dp8rcOx_UwY5QRuH7B26i31t8nzx138SfrSnAABclcwUtZftAcFD6VjGVCaa7yIlxtCTCOcHiJuptdwWEa2yBLTE3WktB_FfQVArduyclJHzlrU6db_TI2P8f",
+            "ad_id": "1031718602760575",
+            "page_name": "Mobilia Rabat",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1031718602760575",
+            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUDfVfqsmt521B0piptvIdV48o4FJOmmRAc2QRrZ8Z8TqcvcOYH9ME3Gasv1tqu_T_1BAd8tH3Xt74D34KfkQ_5Ky9WGKYQLwz3ZdrobR_Cx1cuKlvxG7EhXrKek_5NukDlAWf71eXENZEIV",
             "image_urls": [],
             "video_urls": [],
-            "query": "Green Lotus",
-            "city_hint": "Casablanca",
+            "query": "résidence Rabat",
+            "city_hint": "Rabat",
             "zone_hint": null,
             "availability": {
               "status": null,
@@ -2308,106 +792,60 @@
             }
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 1552586563232522",
-            "ville: Casablanca",
-            "zone: Bouskoura"
+            "publicité Meta exacte détectée: ad_id 1031718602760575",
+            "type: apartment_unknown",
+            "ville: Rabat",
+            "zone: Agdal"
           ],
-          "discovered_at": "2026-09-27T10:26:30.688812+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Bouskoura",
+          "discovered_at": "2026-09-30T11:03:58.105731+00:00",
+          "city_hint": "Rabat",
+          "zone_hint": "Agdal",
           "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Green lotus",
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Mobilia Rabat",
           "price_mad": null,
-          "signal_id": "227a20b43f47f4cf3e72657fbeba8fea86cbf9fd"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Green lotus",
-          "signal_type": "meta_ad",
-          "title": "Green lotus · ad #2390619535083694",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2390619535083694",
-          "text": "Green lotus Green lotus Green Lotus Business est un centre d'affaires moderne offrant un cadre professionnel premium au cœur du futur pôle stratégique de Casablanca. Situé à la croisée de 4 pôles clés : Sidi Maarouf, Bouskoura, Californie, Casa Nearshore, Green Lotus bénéficie d'un positionnement exceptionnel. Green Lotus Business Learn More État du système API Ad LibraryÀ propos des publicités et de l’utilisation des donnéesConfidentialitéConditionsCookies Français (France) https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fcontact%2F&h=AUB-h4UovOVzJ7gChRoOB3KO4L_aFhwIt5S_tKvMQ54bUKdGBuo8EKcOizBDzx7Yq7u7vvKJfo0J41ufDgk7YJlAD1-877aNI84Z4WIfI28T3jTwPAZLQ1ymGdIw_Wpj9H1n8_53_m17uNrP",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 40,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "2390619535083694",
-            "page_name": "Green lotus",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=2390619535083694",
-            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fgreenlotus.ma%2Fcontact%2F&h=AUB-h4UovOVzJ7gChRoOB3KO4L_aFhwIt5S_tKvMQ54bUKdGBuo8EKcOizBDzx7Yq7u7vvKJfo0J41ufDgk7YJlAD1-877aNI84Z4WIfI28T3jTwPAZLQ1ymGdIw_Wpj9H1n8_53_m17uNrP",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "\"Green Lotus\" Casablanca",
-            "city_hint": "Casablanca",
-            "zone_hint": null,
-            "availability": {
-              "status": null,
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 2390619535083694",
-            "ville: Casablanca",
-            "zone: Bouskoura"
-          ],
-          "discovered_at": "2026-09-27T10:26:38.203131+00:00",
-          "city_hint": "Casablanca",
-          "zone_hint": "Bouskoura",
-          "promoter_hint": null,
-          "asset_type_hint": null,
-          "project_name_hint": "Green lotus",
-          "price_mad": null,
-          "signal_id": "0da0681936cd232722216375624c98695aab03ad"
+          "signal_id": "6053fb771bd6f5bc3ddd100cd5e5735c84658910"
         }
       ]
     },
     {
-      "project_id": "85bb4f05c4d7a691a090d036e2306f026b788185",
-      "name": "fermée d’exception à Tanger",
+      "project_id": "1c51f93e9810f38d99d5abf4afc1cbd7fb52242d",
+      "name": "Flamant Rose",
       "city": "Tanger",
       "zone": null,
       "promoter": null,
       "asset_type": "apartment_unknown",
-      "first_detected_at": "2026-09-27T10:28:42.740051+00:00",
-      "last_updated_at": "2026-09-27T10:28:42.740111+00:00",
+      "first_detected_at": "2026-09-30T11:03:19.765865+00:00",
+      "last_updated_at": "2026-09-30T11:03:19.765892+00:00",
       "launch_score": 76,
-      "confidence_score": 100,
+      "confidence_score": 96,
       "investment_score": 45,
-      "urgency_score": 79,
+      "urgency_score": 77,
       "recommendation": "Buy",
       "status": "urgent",
-      "summary": "fermée d’exception à Tanger | Promoteur: à confirmer | Ville: Tanger | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
+      "summary": "Flamant Rose | Promoteur: à confirmer | Ville: Tanger | Zone: à confirmer | Confirmations: confirmation en cours | Aucune série de prix fiable pour le moment.",
       "prices": {
         "min": null,
         "max": null
       },
       "aliases": [
-        "fermée d’exception à Tanger",
-        "principale ou un investissement locatif d'exception à Tanger"
+        "Flamant Rose"
       ],
       "channels": [
         "advertising"
       ],
       "sources": [
-        "Tanger City Center",
-        "Veyron design tanger"
+        "Baan Thaï Institut Tanger"
       ],
       "source_urls": [
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1568291491342617",
-        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=938122918817641"
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1611404997026053",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=876459018754778"
       ],
       "evidence": {
         "signal_count": 2,
         "primary_signal_count": 2,
         "listing_signal_count": 0,
-        "source_count": 2,
+        "source_count": 1,
         "channel_count": 1,
         "primary_channels": [
           "advertising"
@@ -2417,7 +855,7 @@
         "confirmation_details": [],
         "confirmation_count": 0,
         "availability": {
-          "status": "available",
+          "status": null,
           "unit_count_min": null,
           "surface_m2": {
             "min": null,
@@ -2441,7 +879,7 @@
           "label": "Prudent",
           "five_year_upside_score": 46
         },
-        "project_slug": "ferm-e-d-exception-tanger-85bb4f05",
+        "project_slug": "flamant-rose-1c51f93e",
         "infrastructure": {
           "sea_distance_km": 3,
           "station_distance_km": 4,
@@ -2452,28 +890,28 @@
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Veyron design tanger · ad #1568291491342617",
+            "label": "Baan Thaï Institut Tanger · ad #1611404997026053",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1568291491342617",
-            "source": "Veyron design tanger",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1611404997026053",
+            "source": "Baan Thaï Institut Tanger",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Tanger City Center · ad #938122918817641",
+            "label": "Baan Thaï Institut Tanger · ad #876459018754778",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=938122918817641",
-            "source": "Tanger City Center",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=876459018754778",
+            "source": "Baan Thaï Institut Tanger",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
         ],
         "practical": {
           "asset_label": "Appartement",
-          "public_status": "Disponible",
-          "status": "available",
+          "public_status": "Aucune disponibilité publique détectée pour le moment.",
+          "status": null,
           "unit_count_min": null,
           "surface_m2": {
             "min": null,
@@ -2502,20 +940,20 @@
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Veyron design tanger · ad #1568291491342617",
+            "label": "Baan Thaï Institut Tanger · ad #1611404997026053",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1568291491342617",
-            "source": "Veyron design tanger",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1611404997026053",
+            "source": "Baan Thaï Institut Tanger",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           },
           {
             "kind": "meta_ads",
             "kind_label": "Publicité Meta",
-            "label": "Tanger City Center · ad #938122918817641",
+            "label": "Baan Thaï Institut Tanger · ad #876459018754778",
             "description": "Publicité Facebook / Instagram repérée via Meta Ad Library.",
-            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=938122918817641",
-            "source": "Tanger City Center",
+            "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=876459018754778",
+            "source": "Baan Thaï Institut Tanger",
             "signal_type": "meta_ad",
             "proof_level": "direct"
           }
@@ -2523,11 +961,13 @@
         "listing_links": [],
         "news_links": [],
         "urbanism_links": [],
-        "images": [],
+        "images": [
+          "assets/meta/meta-ad-1611404997026053.jpg"
+        ],
         "videos": [],
         "changes": [
-          "Confidence score en hausse: 66 → 100",
-          "Urgency score en hausse: 58 → 79",
+          "Confidence score en hausse: 54 → 96",
+          "Urgency score en hausse: 45 → 77",
           "Statut projet: monitor → urgent"
         ],
         "is_new_project": false,
@@ -2537,92 +977,45 @@
         }
       },
       "reasons": [
-        "publicité Meta exacte détectée: ad_id 1568291491342617",
-        "disponibilité confirmée",
+        "publicité Meta exacte détectée: ad_id 1611404997026053",
         "type: apartment_unknown",
         "ville: Tanger",
-        "publicité Meta exacte détectée: ad_id 938122918817641"
+        "publicité Meta exacte détectée: ad_id 876459018754778"
       ],
       "timeline": [
         {
-          "detected_at": "2026-09-27T10:28:42.740051+00:00",
+          "detected_at": "2026-09-30T11:03:19.765865+00:00",
           "channel": "advertising",
-          "source": "Veyron design tanger",
-          "title": "Veyron design tanger · ad #1568291491342617",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1568291491342617"
+          "source": "Baan Thaï Institut Tanger",
+          "title": "Baan Thaï Institut Tanger · ad #1611404997026053",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1611404997026053"
         },
         {
-          "detected_at": "2026-09-27T10:28:42.740111+00:00",
+          "detected_at": "2026-09-30T11:03:19.765892+00:00",
           "channel": "advertising",
-          "source": "Tanger City Center",
-          "title": "Tanger City Center · ad #938122918817641",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=938122918817641"
+          "source": "Baan Thaï Institut Tanger",
+          "title": "Baan Thaï Institut Tanger · ad #876459018754778",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=876459018754778"
         }
       ],
       "signals": [
         {
           "collector": "ads.meta_ads",
           "channel": "advertising",
-          "source": "Veyron design tanger",
+          "source": "Baan Thaï Institut Tanger",
           "signal_type": "meta_ad",
-          "title": "Veyron design tanger · ad #1568291491342617",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1568291491342617",
-          "text": "Veyron design tanger Veyron design tanger ✨ @veyronhills – L’art de vivre autrement. Découvrez une résidence fermée d’exception à Tanger, pensée pour offrir confort, sécurité et qualité de vie à toute la famille. 🏡 Résidence sécurisée et fermée 🏊 Piscine privée 🌿 Jardins privés et espaces verts 👶 Crèche privée 💪 Salle de sport privée 📍 Un emplacement stratégique : • À seulement 2 minutes du Stade Ibn Battouta • 10 minutes de l’Aéroport Ibn Battouta • 15 minutes du centre-ville de Tanger 🎨 Projet conçu et designé par @veyrondesign avec un appartement témoin entièrement réalisé par notre équipe. 🏠 Visite de l’appartement témoin disponible sur rendez-vous. 📞 Pour plus d’informations ou pour planifier votre visite, contactez notre bureau de vente : +212 622 027 077 #veyronhills #interiordesign #temoin #projetimmobilier Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus INSTAGRAM.COM Veyron design tanger Voir le profil Instagram ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBYuXD4VUMiutt4vw9IYdjQoOoI1mKtTHGGq6tpplR7pVA-GAAQO7-LYulO_u6T0ujHDtPq1FjV00F8u9Z31mg1pg4YLsacw3lkc_3kb8L0JGxL-QDNsry-pCL33xaGGRGw2HBSOr7oZSS4",
+          "title": "Baan Thaï Institut Tanger · ad #1611404997026053",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1611404997026053",
+          "text": "Baan Thaï Institut Tanger Baan Thaï Institut Tanger Wellness, beauty and calm, all in one place Ouvert 7/7J - 10:00-22:00 📞 +212 670 708 315 📍Résidence Flamant Rose, angle rue Omar Ibn Abdelaziz et, Rue Ibn Aajeroume, Tanger #baanthaitanger #tanger #maroc #massagethai #hammam #beauté #pochonschaudes #detente #relax #selfcare INSTAGRAM.COM Visit Instagram Profile INSTAGRAM.COM Visit Instagram Profile INSTAGRAM.COM Visit Instagram Profile INSTAGRAM.COM Visit Instagram Profile INSTAGRAM.COM Visit Instagram Profile ​ https://l.facebook.com/l.php?u=https%3A%2F%2Falmaresort.ma%2Flp%2F&h=AUDX7KWVypvs-62eV_PKwqDn5SuVXsVT7rKo9jiF0q4-OTbhrn8xLlSs4r3u4FVbTGaLbeNPQZmSXD7VxSb6ezhUSaMRdaoJI--NWo_E0BpAbvH5k-XyEi3ClFdrDzQVHOfwrYlLe3wLUGsr",
           "is_primary": true,
           "launch_weight": 38,
           "confidence_weight": 42,
           "metadata": {
             "promoter_hint": null,
-            "ad_id": "1568291491342617",
-            "page_name": "Veyron design tanger",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1568291491342617",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBYuXD4VUMiutt4vw9IYdjQoOoI1mKtTHGGq6tpplR7pVA-GAAQO7-LYulO_u6T0ujHDtPq1FjV00F8u9Z31mg1pg4YLsacw3lkc_3kb8L0JGxL-QDNsry-pCL33xaGGRGw2HBSOr7oZSS4",
-            "image_urls": [],
-            "video_urls": [],
-            "query": "résidence Tanger",
-            "city_hint": "Tanger",
-            "zone_hint": null,
-            "availability": {
-              "status": "available",
-              "unit_count": null,
-              "surface_m2": {
-                "min": null,
-                "max": null
-              }
-            }
-          },
-          "reasons": [
-            "publicité Meta exacte détectée: ad_id 1568291491342617",
-            "disponibilité confirmée",
-            "type: apartment_unknown",
-            "ville: Tanger"
-          ],
-          "discovered_at": "2026-09-27T10:28:42.740051+00:00",
-          "city_hint": "Tanger",
-          "zone_hint": null,
-          "promoter_hint": null,
-          "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Veyron design tanger",
-          "price_mad": null,
-          "signal_id": "168b3e9f59ad9eb6fe59d8a85f0f94fa99fc8478"
-        },
-        {
-          "collector": "ads.meta_ads",
-          "channel": "advertising",
-          "source": "Tanger City Center",
-          "signal_type": "meta_ad",
-          "title": "Tanger City Center · ad #938122918817641",
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=938122918817641",
-          "text": "Tanger City Center Tanger City Center Que vous recherchiez votre future résidence principale ou un investissement locatif d'exception à Tanger, View Tower Collection propose de vastes appartements aux prestations haut de gamme. Proche de la Méditerranée tout en restant connecté aux essentiels de Tanger, View Tower Collection s'impose comme l'adresse incontournable de la ville. Pour plus d'informations, contactez-nous via : 🌐 : https://viewtowercollection.tangercitycenter.com/ 📞 : 0663 711 052 #ViewTowerCollection #TangerCityCenter #Tangercityrésidences #Appartements #Tanger Nous rencontrons des problèmes pour lire cette vidéo. En savoir plus FB.ME Tanger City Center Nous contacter ​ http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBYuXD4VUMiutt4vw9IYdjQoOoI1mKtTHGGq6tpplR7pVA-GAAQO7-LYulO_u6T0ujHDtPq1FjV00F8u9Z31mg1pg4YLsacw3lkc_3kb8L0JGxL-QDNsry-pCL33xaGGRGw2HBSOr7oZSS4",
-          "is_primary": true,
-          "launch_weight": 38,
-          "confidence_weight": 42,
-          "metadata": {
-            "promoter_hint": null,
-            "ad_id": "938122918817641",
-            "page_name": "Tanger City Center",
-            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=938122918817641",
-            "landing_page_url": "http://l.facebook.com/l.php?u=http%3A%2F%2Ffb.me%2F&h=AUBYuXD4VUMiutt4vw9IYdjQoOoI1mKtTHGGq6tpplR7pVA-GAAQO7-LYulO_u6T0ujHDtPq1FjV00F8u9Z31mg1pg4YLsacw3lkc_3kb8L0JGxL-QDNsry-pCL33xaGGRGw2HBSOr7oZSS4",
+            "ad_id": "1611404997026053",
+            "page_name": "Baan Thaï Institut Tanger",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=1611404997026053",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Falmaresort.ma%2Flp%2F&h=AUDX7KWVypvs-62eV_PKwqDn5SuVXsVT7rKo9jiF0q4-OTbhrn8xLlSs4r3u4FVbTGaLbeNPQZmSXD7VxSb6ezhUSaMRdaoJI--NWo_E0BpAbvH5k-XyEi3ClFdrDzQVHOfwrYlLe3wLUGsr",
             "image_urls": [],
             "video_urls": [],
             "query": "résidence Tanger",
@@ -2638,18 +1031,63 @@
             }
           },
           "reasons": [
-            "publicité Meta exacte détectée: ad_id 938122918817641",
+            "publicité Meta exacte détectée: ad_id 1611404997026053",
             "type: apartment_unknown",
             "ville: Tanger"
           ],
-          "discovered_at": "2026-09-27T10:28:42.740111+00:00",
+          "discovered_at": "2026-09-30T11:03:19.765865+00:00",
           "city_hint": "Tanger",
           "zone_hint": null,
           "promoter_hint": null,
           "asset_type_hint": "apartment_unknown",
-          "project_name_hint": "Tanger City Center",
+          "project_name_hint": "Baan Thaï Institut Tanger",
           "price_mad": null,
-          "signal_id": "d0926504ede1dc7c3e1e30f9ebaa1de4518899f9"
+          "signal_id": "7c7e694c285d2079124a20bca02d7aa9c0378067"
+        },
+        {
+          "collector": "ads.meta_ads",
+          "channel": "advertising",
+          "source": "Baan Thaï Institut Tanger",
+          "signal_type": "meta_ad",
+          "title": "Baan Thaï Institut Tanger · ad #876459018754778",
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=876459018754778",
+          "text": "Baan Thaï Institut Tanger Baan Thaï Institut Tanger Wellness, beauty and calm, all in one place Ouvert 7/7J - 10:00-22:00 📞 +212 670 708 315 📍Résidence Flamant Rose, angle rue Omar Ibn Abdelaziz et, Rue Ibn Aajeroume, Tanger #baanthaitanger #tanger #maroc #massagethai #hammam #beauté #pochonschaudes #detente #relax #selfcare BAANTHAI.MA Visit Instagram Profile BAANTHAI.MA Visit Instagram Profile BAANTHAI.MA Visit Instagram Profile BAANTHAI.MA Visit Instagram Profile BAANTHAI.MA Visit Instagram Profile Voir plus État du système API Ad LibraryÀ propos des publicités et de l’utilisation des donnéesConfidentialitéConditionsCookies Français (France) https://l.facebook.com/l.php?u=https%3A%2F%2Falmaresort.ma%2Flp%2F&h=AUDX7KWVypvs-62eV_PKwqDn5SuVXsVT7rKo9jiF0q4-OTbhrn8xLlSs4r3u4FVbTGaLbeNPQZmSXD7VxSb6ezhUSaMRdaoJI--NWo_E0BpAbvH5k-XyEi3ClFdrDzQVHOfwrYlLe3wLUGsr",
+          "is_primary": true,
+          "launch_weight": 38,
+          "confidence_weight": 42,
+          "metadata": {
+            "promoter_hint": null,
+            "ad_id": "876459018754778",
+            "page_name": "Baan Thaï Institut Tanger",
+            "ad_snapshot_url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=MA&id=876459018754778",
+            "landing_page_url": "https://l.facebook.com/l.php?u=https%3A%2F%2Falmaresort.ma%2Flp%2F&h=AUDX7KWVypvs-62eV_PKwqDn5SuVXsVT7rKo9jiF0q4-OTbhrn8xLlSs4r3u4FVbTGaLbeNPQZmSXD7VxSb6ezhUSaMRdaoJI--NWo_E0BpAbvH5k-XyEi3ClFdrDzQVHOfwrYlLe3wLUGsr",
+            "image_urls": [],
+            "video_urls": [],
+            "query": "résidence Tanger",
+            "city_hint": "Tanger",
+            "zone_hint": null,
+            "availability": {
+              "status": null,
+              "unit_count": null,
+              "surface_m2": {
+                "min": null,
+                "max": null
+              }
+            }
+          },
+          "reasons": [
+            "publicité Meta exacte détectée: ad_id 876459018754778",
+            "type: apartment_unknown",
+            "ville: Tanger"
+          ],
+          "discovered_at": "2026-09-30T11:03:19.765892+00:00",
+          "city_hint": "Tanger",
+          "zone_hint": null,
+          "promoter_hint": null,
+          "asset_type_hint": "apartment_unknown",
+          "project_name_hint": "Baan Thaï Institut Tanger",
+          "price_mad": null,
+          "signal_id": "a762e705bcbfd75c2171fdb608357cb68c9a94b2"
         }
       ]
     }
